@@ -1,0 +1,171 @@
+#!/usr/bin/env python3
+"""Validate v2 project state, decisions, stage handoffs, and declared hashes."""
+
+from __future__ import annotations
+
+import argparse
+import hashlib
+import json
+from pathlib import Path
+
+
+STAGE_DIRS = {
+    "INTAKE": "01-intake",
+    "DESIGN": "02-design",
+    "PROTOTYPE": "03-prototype",
+    "COMPUTE": "04-compute",
+    "EVIDENCE": "05-evidence",
+    "FIGURE": "06-figure",
+    "PAPER": "07-paper",
+    "AUDIT": "08-audit",
+}
+
+REQUIRED_GATES = {
+    "DESIGN": ("H1-problem.json", {"TEAM_APPROVED"}),
+    "PROTOTYPE": ("H1-problem.json", {"TEAM_APPROVED"}),
+    "COMPUTE": ("H2-model.json", {"TEAM_APPROVED"}),
+    "EVIDENCE": ("H2-model.json", {"TEAM_APPROVED"}),
+    "FIGURE": ("H3-claims.json", {"TEAM_APPROVED"}),
+    "PAPER": ("H3-claims.json", {"TEAM_APPROVED"}),
+    "AUDIT": ("H3-claims.json", {"TEAM_APPROVED"}),
+}
+
+
+def load_json(path: Path, errors: list[str]) -> dict | None:
+    try:
+        value = json.loads(path.read_text(encoding="utf-8"))
+    except FileNotFoundError:
+        errors.append(f"missing file: {path}")
+        return None
+    except json.JSONDecodeError as exc:
+        errors.append(f"invalid JSON {path}: {exc}")
+        return None
+    if not isinstance(value, dict):
+        errors.append(f"JSON root must be an object: {path}")
+        return None
+    return value
+
+
+def resolve_project_path(root: Path, relative: str, errors: list[str]) -> Path | None:
+    candidate = (root / relative).resolve()
+    if candidate != root and root not in candidate.parents:
+        errors.append(f"path escapes PROJECT_ROOT: {relative}")
+        return None
+    return candidate
+
+
+def sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def validate_decision(path: Path, allowed: set[str], errors: list[str]) -> None:
+    decision = load_json(path, errors)
+    if decision is None:
+        return
+    if decision.get("status") not in allowed:
+        errors.append(f"decision not approved: {path}")
+    if not decision.get("confirmed_by"):
+        errors.append(f"approved decision has no team member: {path}")
+    if not decision.get("confirmed_at"):
+        errors.append(f"approved decision has no timestamp: {path}")
+
+
+def validate_handoff(root: Path, stage: str, errors: list[str]) -> None:
+    handoff_path = root / STAGE_DIRS[stage] / "handoff.json"
+    handoff = load_json(handoff_path, errors)
+    if handoff is None:
+        return
+    if handoff.get("schema_version") != "1.0":
+        errors.append(f"unsupported handoff schema: {handoff_path}")
+    if handoff.get("stage") != stage:
+        errors.append(f"handoff stage mismatch: {handoff_path}")
+    if handoff.get("status") != "PASS":
+        errors.append(f"completed stage is not PASS: {handoff_path}")
+
+    for group in ("inputs", "outputs", "frozen_decisions"):
+        records = handoff.get(group, [])
+        if not isinstance(records, list):
+            errors.append(f"{group} must be a list: {handoff_path}")
+            continue
+        for record in records:
+            if not isinstance(record, dict) or "path" not in record or "sha256" not in record:
+                errors.append(f"invalid file record in {handoff_path}: {record!r}")
+                continue
+            path = resolve_project_path(root, str(record["path"]), errors)
+            if path is None:
+                continue
+            if not path.is_file():
+                errors.append(f"declared file missing: {path}")
+                continue
+            actual = sha256(path)
+            if actual.lower() != str(record["sha256"]).lower():
+                errors.append(f"hash mismatch: {path}")
+
+
+def validate_workspace(project_root: Path, require_complete: bool = False) -> list[str]:
+    root = project_root.resolve()
+    errors: list[str] = []
+    required_dirs = ["input", ".workflow", "decisions", *STAGE_DIRS.values()]
+    for directory in required_dirs:
+        if not (root / directory).is_dir():
+            errors.append(f"missing directory: {root / directory}")
+
+    state = load_json(root / ".workflow" / "state.json", errors)
+    load_json(root / ".workflow" / "threads.json", errors)
+    ai_usage = load_json(root / ".workflow" / "ai-usage-log.json", errors)
+    if state is None:
+        return errors
+
+    completed = state.get("completed_stages", [])
+    if not isinstance(completed, list):
+        errors.append("completed_stages must be a list")
+        completed = []
+    for stage in completed:
+        if stage not in STAGE_DIRS:
+            errors.append(f"unknown completed stage: {stage}")
+            continue
+        gate = REQUIRED_GATES.get(stage)
+        if gate:
+            validate_decision(root / "decisions" / gate[0], gate[1], errors)
+        validate_handoff(root, stage, errors)
+        if ai_usage is not None and not any(
+            isinstance(item, dict) and item.get("stage") == stage
+            for item in ai_usage.get("entries", [])
+        ):
+            errors.append(f"completed stage has no AI usage record: {stage}")
+
+    if require_complete:
+        if state.get("status") != "COMPLETE":
+            errors.append("workflow state is not COMPLETE")
+        missing = [stage for stage in STAGE_DIRS if stage not in completed]
+        if missing:
+            errors.append(f"incomplete stages: {', '.join(missing)}")
+        validate_decision(
+            root / "decisions" / "H4-submission.json",
+            {"TEAM_APPROVED_FOR_SUBMISSION"},
+            errors,
+        )
+    return errors
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--project-root", required=True, type=Path)
+    parser.add_argument("--require-complete", action="store_true")
+    args = parser.parse_args()
+    errors = validate_workspace(args.project_root, args.require_complete)
+    if errors:
+        print("Workspace validation failed:")
+        for error in errors:
+            print(f"- {error}")
+        return 1
+    print("Workspace validation passed")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

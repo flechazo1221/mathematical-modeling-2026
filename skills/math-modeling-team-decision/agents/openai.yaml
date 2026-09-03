@@ -1,0 +1,4 @@
+interface:
+  display_name: "数学建模团队决策"
+  short_description: "中立比较建模选项并校验团队人工决策记录"
+  default_prompt: "使用 $math-modeling-team-decision 为当前人工闸门整理中立选择包。"

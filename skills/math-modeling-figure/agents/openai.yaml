@@ -1,0 +1,4 @@
+interface:
+  display_name: "数学建模正式绘图"
+  short_description: "根据已批准主张生成可追溯、经过视觉审计的论文图表"
+  default_prompt: "使用 $math-modeling-figure 从冻结数据生成论文正式图表和图注。"

@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-usage.schema.json",
+  "title": "AI Usage Log",
+  "type": "object",
+  "required": ["schema_version", "competition", "year", "rule_status", "entries"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "competition": {"type": "string"},
+    "year": {"type": "integer", "minimum": 2000},
+    "rule_status": {"enum": ["UNVERIFIED", "PROHIBITED", "DISCLOSURE_REQUIRED", "ALLOWED_NO_FIXED_FORMAT"]},
+    "official_sources": {"type": "array", "items": {"type": "object"}},
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["stage", "tool_or_model", "purpose", "affected_files", "human_review"],
+        "properties": {
+          "stage": {"type": "string"},
+          "tool_or_model": {"type": "string"},
+          "purpose": {"type": "string"},
+          "affected_files": {"type": "array", "items": {"type": "string"}},
+          "human_review": {"type": "string"},
+          "recorded_at": {"type": "string", "format": "date-time"}
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
