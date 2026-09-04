@@ -9,7 +9,7 @@ Read `../../shared/references/quality-principles.md` and `workflow-contract.md`.
 
 ## Inputs and write boundary
 
-- Require `02-design/handoff.json`, model contracts, and validation plan.
+- Require `02-design/handoff.json`, model contracts, validation plan, and `02-design/H2-优化审计与方向.md`.
 - Read original data without modifying it.
 - Write only `PROJECT_ROOT/03-prototype/`.
 
@@ -20,7 +20,10 @@ Read `../../shared/references/quality-principles.md` and `workflow-contract.md`.
 3. Record environment, command, random seed, runtime, convergence, constraint violations, and failures.
 4. Do not give an AI-preferred candidate extra tuning or hide unsuccessful runs.
 5. Compare feasibility, preliminary evidence, interpretability, data fit, cost, and failure modes.
-6. If prototypes would be materially expensive, pause with a costed experiment proposal instead of consuming an unapproved budget.
+6. Evaluate each proposed improvement against its own baseline and pre-registered retention threshold. Mark the evidence as supported, inconclusive, or unsupported; do not equate a numerically higher score with a meaningful or stable gain.
+7. Prioritize sensitivity experiments for influential parameters; run robustness or ablation experiments when required by the design plan. Report failed and near-null improvements instead of hiding them.
+8. In `H2-选择包.md`, include a concise section named “已进行的优化与后续优化方向”. Separate implemented/tested changes from unimplemented directions, and give each item its target defect, evidence status, cost, risk, and retain/rollback recommendation.
+9. If prototypes would be materially expensive, pause with a costed experiment proposal instead of consuming an unapproved budget.
 
 ## Required outputs
 

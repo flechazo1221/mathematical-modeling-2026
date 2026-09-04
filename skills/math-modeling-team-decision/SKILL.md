@@ -26,7 +26,7 @@ Do not bias the package through unequal detail, loaded wording, unfair experimen
 
 - H0: candidate-problem scores, hard-stop risks, uncertainty, and the team's final problem choice.
 - H1: problem meaning, objectives, hard constraints, error costs, and accepted assumptions.
-- H2: primary model, baselines, metrics, weights, innovations, and required validation.
+- H2: primary model, baselines, metrics, weights, innovations, and required validation. The package must also tell the team which optimizations were actually designed or tested, what baseline defect each addresses, the current evidence status, which modules should be retained or rolled back, and which future optimization directions remain conditional. Never present an unimplemented direction as a completed optimization.
 - H3: approved claims, conditional or prohibited claims, key figures, narrative, and limitations.
 - H4: residual risks, AI declaration, human revision, official compliance, and submission approval.
 - C1: optional confirmation of a high-risk visual choice.
