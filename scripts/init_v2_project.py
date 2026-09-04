@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -21,6 +22,18 @@ STAGE_DIRS = [
     "07-paper",
     "08-audit",
 ]
+
+MIN_PYTHON = (3, 10)
+
+
+def diagnose_python() -> None:
+    """Report and enforce the interpreter used for workspace initialization."""
+    version = sys.version_info
+    print(f"Python executable: {Path(sys.executable).resolve()}")
+    print(f"Python version: {version.major}.{version.minor}.{version.micro}")
+    if version < MIN_PYTHON:
+        required = ".".join(map(str, MIN_PYTHON))
+        raise RuntimeError(f"Python {required} or newer is required")
 
 
 def now_iso() -> str:
@@ -140,8 +153,9 @@ def main() -> int:
     args = parser.parse_args()
 
     try:
+        diagnose_python()
         created = initialize(args.project_root, args.contest, args.year, args.project_id)
-    except (OSError, ValueError) as exc:
+    except (OSError, RuntimeError, ValueError) as exc:
         print(f"ERROR: {exc}")
         return 2
 

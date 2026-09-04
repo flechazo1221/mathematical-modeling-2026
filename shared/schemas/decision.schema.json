@@ -9,8 +9,8 @@
     "gate": {"enum": ["H0", "H1", "H2", "H3", "H4", "C1"]},
     "status": {"enum": ["DRAFT", "TEAM_APPROVED", "TEAM_REJECTED", "TEAM_APPROVED_FOR_SUBMISSION"]},
     "question": {"type": "string", "minLength": 1},
-    "selected_options": {"type": "array", "items": {"type": "string"}},
-    "reasons": {"type": "array", "items": {"type": "string"}},
+    "selected_options": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "reasons": {"type": "array", "items": {"type": "string", "minLength": 1}},
     "accepted_assumptions": {"type": "array", "items": {"type": "string"}},
     "rejected_options": {"type": "array", "items": {"type": "string"}},
     "required_validations": {"type": "array", "items": {"type": "string"}},
@@ -29,8 +29,19 @@
       },
       "then": {
         "properties": {
+          "selected_options": {"minItems": 1},
+          "reasons": {"minItems": 1},
           "confirmed_by": {"minItems": 1},
           "confirmed_at": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"status": {"const": "DRAFT"}}, "required": ["status"]},
+      "then": {
+        "properties": {
+          "confirmed_by": {"maxItems": 0},
+          "confirmed_at": {"type": "null"}
         }
       }
     },
@@ -50,5 +61,5 @@
       }
     }
   ],
-  "additionalProperties": true
+  "additionalProperties": false
 }

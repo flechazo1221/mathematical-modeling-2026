@@ -27,6 +27,15 @@ EXPECTED_SKILLS = [
 
 def validate_suite(root: Path) -> list[str]:
     errors: list[str] = []
+
+    for path in root.rglob("*.md"):
+        if re.search(r"(?<![\w-])py\s+-3(?:\s|$)", path.read_text(encoding="utf-8", errors="replace")):
+            errors.append(f"deprecated Windows py launcher command: {path.relative_to(root)}")
+
+    initializer_text = (root / "scripts" / "init_v2_project.py").read_text(encoding="utf-8")
+    for marker in ("def diagnose_python", "sys.executable", "MIN_PYTHON"):
+        if marker not in initializer_text:
+            errors.append(f"initializer lacks Python interpreter diagnostic: {marker}")
     for name in EXPECTED_SKILLS:
         skill_file = root / "skills" / name / "SKILL.md"
         if not skill_file.is_file():
@@ -76,10 +85,26 @@ def validate_suite(root: Path) -> list[str]:
     figure_text = (root / "skills" / "math-modeling-figure" / "SKILL.md").read_text(encoding="utf-8")
     if "no fixed minimum count" not in figure_text.lower():
         errors.append("figure skill must reject fixed figure and chart-type quotas")
-    legacy_figure_text = (root / "tools" / "figure" / "SKILL.md").read_text(encoding="utf-8")
-    for forbidden in ("每类至少 3 张", "合计至少 9 张", "图型种类 ≥ 3"):
-        if forbidden in legacy_figure_text:
-            errors.append(f"legacy figure instructions still contain a fixed quota: {forbidden}")
+    figure_instruction_roots = (
+        root / "tools" / "figure",
+        root / "references" / "roles" / "编程手",
+    )
+    for instruction_root in figure_instruction_roots:
+        for path in instruction_root.rglob("*.md"):
+            text = path.read_text(encoding="utf-8")
+            for forbidden in ("每类至少 3 张", "合计至少 9 张", "图型种类 ≥ 3"):
+                if forbidden in text:
+                    errors.append(
+                        f"figure instructions contain a fixed quota: "
+                        f"{path.relative_to(root)}: {forbidden}"
+                    )
+
+    for legacy_role in ("建模手", "编程手", "论文手"):
+        legacy_root = root / "references" / "roles" / legacy_role
+        if (legacy_root / "SKILL.md").exists():
+            errors.append(f"legacy role remains discoverable as a skill: {legacy_root / 'SKILL.md'}")
+        if not (legacy_root / "ROLE.md").is_file():
+            errors.append(f"missing legacy role guide: {legacy_root / 'ROLE.md'}")
 
     paper_library = root / "skills" / "math-modeling-paper" / "references" / "paper-template-2026"
     for relative in (
@@ -102,6 +127,23 @@ def validate_suite(root: Path) -> list[str]:
         for required in ("权威顺序", "渐进式加载", "示例数据", "62f2c84dba41a491cb31ea915dc2db2957bd0f5b"):
             if required not in integration:
                 errors.append(f"paper integration contract missing: {required}")
+
+    # Markdown navigation is part of the skill interface. Broken links make
+    # progressively disclosed instructions unreachable and waste context.
+    markdown_link = re.compile(r"(?<!!)\[[^\]]*\]\(([^)#]+)")
+    for base in (root / "skills", root / "shared", root / "references", root / "tools"):
+        for path in base.rglob("*.md"):
+            text = path.read_text(encoding="utf-8", errors="replace")
+            for match in markdown_link.finditer(text):
+                target_text = match.group(1).strip().strip("<>")
+                if "://" in target_text or target_text.startswith("#"):
+                    continue
+                target = (path.parent / target_text).resolve()
+                if not target.exists():
+                    line = text.count("\n", 0, match.start()) + 1
+                    errors.append(
+                        f"broken Markdown link: {path.relative_to(root)}:{line} -> {target_text}"
+                    )
 
     paper_skill = (root / "skills" / "math-modeling-paper" / "SKILL.md").read_text(encoding="utf-8")
     paper_contract_markers = (

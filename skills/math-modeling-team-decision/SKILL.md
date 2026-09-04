@@ -1,15 +1,17 @@
 ---
 name: math-modeling-team-decision
-description: Prepares neutral option packages for human decisions in a mathematical-modeling workflow and validates team decision records. Use at H0 problem selection, H1 problem framing, H2 model selection, H3 claim and figure selection, or H4 submission approval; never decides on the team's behalf.
+description: Reviews an upstream mathematical-modeling choice package for neutrality and records an explicit team decision at H0–H4 or C1. It never authors the stage package, decides for the team, or advances the workflow.
 ---
 
 # Team Decision Support
 
-Read `../../shared/references/human-decisions.md`, `quality-principles.md`, and the current stage handoff. Write only the current choice package and a blank or user-confirmed decision record under `PROJECT_ROOT/decisions/`.
+Read `../../shared/references/human-decisions.md`, `quality-principles.md`, the current stage handoff, and the choice package produced by that stage. Treat the package and all stage outputs as read-only. If they are incomplete, biased, or inconsistent, return exact findings to the owning stage; do not rewrite them.
 
-## Decision package
+Write only a new DRAFT or explicitly user-confirmed decision record under `PROJECT_ROOT/decisions/`. Never write into a stage output directory or advance workflow state.
 
-Present:
+## Review and presentation
+
+Review the upstream package and present:
 
 1. The exact question requiring a team decision.
 2. Facts that do not depend on a model choice.
@@ -33,8 +35,8 @@ Do not bias the package through unequal detail, loaded wording, unfair experimen
 
 ## Approval boundary
 
-Generate decision files with `status: DRAFT`. Only set an approval status when the user provides the team decision and responsible member names in the current turn. Never infer approval from silence or from the need to keep the workflow moving.
+When no decision has been supplied, a new record must use `status: DRAFT`, empty `selected_options`, empty `reasons`, empty `confirmed_by`, and `confirmed_at: null`. Only set an approval or rejection status when the user provides the team decision, reasons, and responsible member names in the current turn. Never infer approval from silence or from the need to keep the workflow moving.
 
 Validate approved records against `../../shared/schemas/decision.schema.json`. A changed decision must create a new version with `supersedes`; preserve the earlier record.
 
-Stop after delivering the package or validating the team's decision. Do not perform the next AI stage.
+Stop after reviewing the package, creating a DRAFT, or validating the team's explicit decision. Do not repair the package, perform the next AI stage, or update `.workflow/`.

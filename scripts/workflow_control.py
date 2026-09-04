@@ -144,10 +144,23 @@ def validate_handoff(root: Path, stage: str) -> dict:
         raise ValueError(f"handoff stage mismatch: {handoff.get('stage')} != {stage}")
     if handoff.get("status") != "PASS":
         raise ValueError(f"handoff is not PASS: {handoff.get('status')}")
+    if not handoff.get("completed_at"):
+        raise ValueError("PASS handoff has no completion timestamp")
+    if not handoff.get("outputs"):
+        raise ValueError("PASS handoff has no declared outputs")
     for section in ("inputs", "outputs", "frozen_decisions"):
+        seen_paths: set[str] = set()
         for item in handoff.get(section, []):
             candidate = Path(item["path"])
-            path = candidate if candidate.is_absolute() else root.resolve() / candidate
+            if candidate.is_absolute() or ".." in candidate.parts:
+                raise ValueError(f"handoff path must be PROJECT_ROOT-relative: {candidate}")
+            normalized = candidate.as_posix().casefold()
+            if normalized in seen_paths:
+                raise ValueError(f"duplicate {section} path: {candidate}")
+            seen_paths.add(normalized)
+            path = (root.resolve() / candidate).resolve()
+            if path != root.resolve() and root.resolve() not in path.parents:
+                raise ValueError(f"handoff path escapes PROJECT_ROOT: {candidate}")
             if not path.is_file():
                 raise ValueError(f"handoff file missing: {path}")
             actual = sha256(path)
@@ -207,6 +220,10 @@ def advance_gate(root: Path, gate: str) -> None:
         raise ValueError(f"{gate} requires {expected}")
     if not decision.get("confirmed_by") or not decision.get("confirmed_at"):
         raise ValueError(f"{gate} approval lacks named reviewers or timestamp")
+    if not decision.get("selected_options"):
+        raise ValueError(f"{gate} approval lacks a selected option")
+    if not decision.get("reasons"):
+        raise ValueError(f"{gate} approval lacks a team reason")
     if gate == "H0":
         selected = decision.get("selected_options")
         if not isinstance(selected, list) or len(selected) != 1:

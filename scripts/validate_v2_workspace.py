@@ -83,6 +83,10 @@ def validate_decision(path: Path, allowed: set[str], errors: list[str]) -> None:
         errors.append(f"approved decision has no team member: {path}")
     if not decision.get("confirmed_at"):
         errors.append(f"approved decision has no timestamp: {path}")
+    if not decision.get("selected_options"):
+        errors.append(f"approved decision has no selected option: {path}")
+    if not decision.get("reasons"):
+        errors.append(f"approved decision has no team reason: {path}")
 
 
 def validate_selection_decision(root: Path, errors: list[str]) -> None:
@@ -116,17 +120,28 @@ def validate_handoff(root: Path, stage: str, errors: list[str]) -> None:
         errors.append(f"handoff stage mismatch: {handoff_path}")
     if handoff.get("status") != "PASS":
         errors.append(f"completed stage is not PASS: {handoff_path}")
+    if not handoff.get("completed_at"):
+        errors.append(f"PASS handoff has no completion timestamp: {handoff_path}")
+    if not handoff.get("outputs"):
+        errors.append(f"PASS handoff has no declared outputs: {handoff_path}")
 
     for group in ("inputs", "outputs", "frozen_decisions"):
         records = handoff.get(group, [])
         if not isinstance(records, list):
             errors.append(f"{group} must be a list: {handoff_path}")
             continue
+        seen_paths: set[str] = set()
         for record in records:
             if not isinstance(record, dict) or "path" not in record or "sha256" not in record:
                 errors.append(f"invalid file record in {handoff_path}: {record!r}")
                 continue
-            path = resolve_project_path(root, str(record["path"]), errors)
+            declared_path = str(record["path"])
+            normalized = declared_path.replace("\\", "/").casefold()
+            if normalized in seen_paths:
+                errors.append(f"duplicate {group} path in {handoff_path}: {declared_path}")
+                continue
+            seen_paths.add(normalized)
+            path = resolve_project_path(root, declared_path, errors)
             if path is None:
                 continue
             if not path.is_file():

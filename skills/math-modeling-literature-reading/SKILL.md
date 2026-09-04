@@ -7,6 +7,8 @@ description: Reads user-supplied CAJ, PDF, or text literature after H1, using lo
 
 Turn the team's supplied literature into one traceable knowledge file that DESIGN can use. Read `../../shared/references/quality-principles.md` and `workflow-contract.md` before starting.
 
+`SKILL_ROOT` is this skill's directory. Resolve bundled script paths from it; commands must not depend on the current working directory.
+
 ## Inputs and write boundary
 
 - Require `decisions/H1-problem.json` with `gate: H1` and `status: TEAM_APPROVED`.
@@ -22,7 +24,7 @@ If any `.caj` file is present, read [references/caj-processing.md](references/ca
 First build a local corpus cache:
 
 ```powershell
-py -3 "<SKILL_ROOT>/scripts/prepare_literature_corpus.py" --input-dir "<PROJECT_ROOT>/literature/input" --output-dir "<PROJECT_ROOT>/02-literature/corpus"
+python "<SKILL_ROOT>/scripts/prepare_literature_corpus.py" --input-dir "<PROJECT_ROOT>/literature/input" --output-dir "<PROJECT_ROOT>/02-literature/corpus"
 ```
 
 The script detects mislabeled PDFs, uses an available `caj2pdf` converter or a user-supplied same-stem PDF, checks the PDF text layer, optionally invokes local `ocrmypdf`, and writes page-aware chunks plus `corpus-manifest.json`. If it reports `needs_manual_conversion` or `ocr_required`, stop and request the exact missing conversion; do not compensate by sending every page image to the model.
@@ -30,7 +32,7 @@ The script detects mislabeled PDFs, uses an available `caj2pdf` converter or a u
 Read the corpus manifest and H1 first. Form a small set of retrieval queries covering the H1 domain mechanism, each subproblem, relevant variables, methods, validation, and limitations. Retrieve all first-pass evidence in one bounded call:
 
 ```powershell
-py -3 "<SKILL_ROOT>/scripts/query_literature_corpus.py" --chunks "<PROJECT_ROOT>/02-literature/corpus/chunks.jsonl" --query "<H1 topic>" --query "<method or mechanism>" --top-k 3 --max-chars 18000
+python "<SKILL_ROOT>/scripts/query_literature_corpus.py" --chunks "<PROJECT_ROOT>/02-literature/corpus/chunks.jsonl" --query "<H1 topic>" --query "<method or mechanism>" --top-k 3 --max-chars 18000
 ```
 
 Use a second call only for a specific unresolved claim, normally with `--top-k 2 --max-chars 6000`. Read a full normalized text file only when exact equation context, a table, or a contradiction cannot be resolved from targeted chunks. This retrieval budget is a default ceiling, not a quota.

@@ -40,5 +40,5 @@ If there is only one candidate, perform the same assessment as a go/no-go viabil
 Before reporting `PASS`, run:
 
 ```powershell
-py -3 "<SUITE_ROOT>/scripts/selection_score.py" "<PROJECT_ROOT>/00-selection/选题评分.json"
+python "<SUITE_ROOT>/scripts/selection_score.py" "<PROJECT_ROOT>/00-selection/选题评分.json"
 ```

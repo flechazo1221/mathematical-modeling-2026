@@ -7,15 +7,15 @@
 - `SKILL_ROOT`：本仓库根目录，只读。
 - `PROJECT_ROOT`：用户项目目录，所有产物写入这里。
 
-任何参考文档中的相对路径均以其所属 `SKILL.md` 目录为基准。角色文档通过 `../../..` 回到 `SKILL_ROOT`。
+任何参考文档中的相对路径均以该文档所在目录为基准；入口 Skill 另有明确根目录约定时从其约定。旧角色指南通过 `../../..` 回到 `SKILL_ROOT`。
 
 ## 三角色
 
 | 阶段 | 入口 | 固定交付物 |
 |---|---|---|
-| 建模分析 | `roles/建模手/SKILL.md` | `题目分析报告.md`、`术语表格.md` |
-| 代码实现 | `roles/编程手/SKILL.md` | Python/MATLAB 代码、结果表格、三类各至少 3 张且覆盖全部子问题的候选图、复现清单 |
-| 论文撰写 | `roles/论文手/SKILL.md` | 默认交付 `完整论文.docx`；用户显式要求时同时交付 LaTeX 源码项目与编译 PDF |
+| 旧版建模指南 | `roles/建模手/ROLE.md` | 仅作参考；新工作流使用 `skills/math-modeling-design/` |
+| 旧版编程指南 | `roles/编程手/ROLE.md` | 仅作参考；新工作流使用 COMPUTE 与 FIGURE skills |
+| 旧版论文指南 | `roles/论文手/ROLE.md` | 仅作参考；新工作流使用 `skills/math-modeling-paper/` |
 
 ## 按任务加载
 

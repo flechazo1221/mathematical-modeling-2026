@@ -7,6 +7,8 @@ description: Finds, verifies, and downloads legally available literature from a 
 
 Use this skill after the team has fixed the problem interpretation at H1. It is an optional acquisition assistant for the user-facing literature pause: its goal is a small, relevant, reproducible collection that can be supplied to `$math-modeling-literature-reading`, not a large unscreened download.
 
+`SKILL_ROOT` is this skill's directory. Resolve bundled script paths from it; commands must not depend on the current working directory.
+
 ## Authority and boundary
 
 - `PROJECT_ROOT` is the mathematical-modeling project directory.
@@ -31,7 +33,7 @@ Each query record must contain `query`, `purpose`, `h1_basis`, and optional year
 Run the bundled collector once with all approved queries:
 
 ```powershell
-py -3 scripts/search_literature.py --query "<QUERY 1>" --query "<QUERY 2>" --limit-per-query 12 --output "<PROJECT_ROOT>/literature/acquisition/candidates.json"
+python "<SKILL_ROOT>/scripts/search_literature.py" --query "<QUERY 1>" --query "<QUERY 2>" --limit-per-query 12 --output "<PROJECT_ROOT>/literature/acquisition/candidates.json"
 ```
 
 The collector uses the suite's OpenAlex + AnySearch search implementation, merges DOI and title duplicates, and retains source and query provenance. If one engine is unavailable, record the degraded search in the report; never label single-source results as cross-validated.
@@ -51,7 +53,7 @@ Set `metadata_verified` to true only after checking author, title, year, venue, 
 After screening, download the selected set:
 
 ```powershell
-py -3 scripts/download_open_access.py --input "<PROJECT_ROOT>/literature/acquisition/selected-candidates.json" --output-dir "<PROJECT_ROOT>/literature/input" --manifest "<PROJECT_ROOT>/literature/acquisition/download-manifest.json"
+python "<SKILL_ROOT>/scripts/download_open_access.py" --input "<PROJECT_ROOT>/literature/acquisition/selected-candidates.json" --output-dir "<PROJECT_ROOT>/literature/input" --manifest "<PROJECT_ROOT>/literature/acquisition/download-manifest.json"
 ```
 
 The downloader resolves DOI/title records through OpenAlex, accepts only public HTTP(S) PDF responses, validates the PDF signature, uses stable filenames, and records SHA-256 values. A paywalled record is not a failure: keep its verified citation and record `no_open_access_pdf`. Do not silently substitute a different paper.

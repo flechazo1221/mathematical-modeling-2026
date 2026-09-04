@@ -23,8 +23,10 @@ Create independent Codex tasks only when the user explicitly requests the staged
 Initialize once:
 
 ```powershell
-py -3 "<SUITE_ROOT>/scripts/init_v2_project.py" --project-root "<PROJECT_ROOT>" --contest "<CONTEST>" --year <YEAR>
+python "<SUITE_ROOT>/scripts/init_v2_project.py" --project-root "<PROJECT_ROOT>" --contest "<CONTEST>" --year <YEAR>
 ```
+
+The initializer must report the resolved Python executable and version before creating files. Stop if it reports an unsupported interpreter; do not fall back to the Windows `py` launcher.
 
 ## State machine
 
@@ -75,11 +77,11 @@ For `PAPER` (the `07-paper/` delivery stage), do not create the task until DESIG
 Use `scripts/workflow_control.py` for authorization, task registration, stage completion, gate advancement, and status reads. Do not edit state or task records ad hoc. The task-creation tool itself remains a Codex capability; this script records and validates its result.
 
 ```powershell
-py -3 "<SUITE_ROOT>/scripts/workflow_control.py" --project-root "<PROJECT_ROOT>" authorize-tasks --value yes
-py -3 "<SUITE_ROOT>/scripts/workflow_control.py" --project-root "<PROJECT_ROOT>" start-stage --stage SELECTION --thread-id "<THREAD_ID>" --host-id "<HOST_ID>"
-py -3 "<SUITE_ROOT>/scripts/workflow_control.py" --project-root "<PROJECT_ROOT>" record-ai-use --stage SELECTION --tool-or-model "Codex task (configured model)" --purpose "候选赛题评估与H0材料准备" --affected-file "00-selection/选题评分.json" --human-review "等待H0团队选题"
-py -3 "<SUITE_ROOT>/scripts/workflow_control.py" --project-root "<PROJECT_ROOT>" finish-stage --stage SELECTION
-py -3 "<SUITE_ROOT>/scripts/workflow_control.py" --project-root "<PROJECT_ROOT>" advance-gate --gate H0
+python "<SUITE_ROOT>/scripts/workflow_control.py" --project-root "<PROJECT_ROOT>" authorize-tasks --value yes
+python "<SUITE_ROOT>/scripts/workflow_control.py" --project-root "<PROJECT_ROOT>" start-stage --stage SELECTION --thread-id "<THREAD_ID>" --host-id "<HOST_ID>"
+python "<SUITE_ROOT>/scripts/workflow_control.py" --project-root "<PROJECT_ROOT>" record-ai-use --stage SELECTION --tool-or-model "Codex task (configured model)" --purpose "候选赛题评估与H0材料准备" --affected-file "00-selection/选题评分.json" --human-review "等待H0团队选题"
+python "<SUITE_ROOT>/scripts/workflow_control.py" --project-root "<PROJECT_ROOT>" finish-stage --stage SELECTION
+python "<SUITE_ROOT>/scripts/workflow_control.py" --project-root "<PROJECT_ROOT>" advance-gate --gate H0
 ```
 
 ## Human gates
@@ -111,7 +113,7 @@ A supervision stop precedes failure routing. Preserve the stopped task's artifac
 Run:
 
 ```powershell
-py -3 "<SUITE_ROOT>/scripts/validate_v2_workspace.py" --project-root "<PROJECT_ROOT>" --require-complete
+python "<SUITE_ROOT>/scripts/validate_v2_workspace.py" --project-root "<PROJECT_ROOT>" --require-complete
 ```
 
 Only report complete when validation succeeds and H4 is `TEAM_APPROVED_FOR_SUBMISSION`. Generated work remains draft material until the team reviews and adapts it under the competition's current rules.

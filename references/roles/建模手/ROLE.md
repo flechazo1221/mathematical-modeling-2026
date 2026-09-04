@@ -1,9 +1,6 @@
----
-name: 建模手
-description: 数学建模的题目理解、模型选择和算法设计阶段。输出题目分析报告与术语表格。
----
+# 旧版建模手参考指南
 
-# 建模手
+本文件不是可发现的 Skill 入口。新分阶段工作流使用 `skills/math-modeling-intake/` 与 `skills/math-modeling-design/`；仅在迁移旧项目或查阅旧版产物约定时读取本指南。
 
 ## 路径
 
