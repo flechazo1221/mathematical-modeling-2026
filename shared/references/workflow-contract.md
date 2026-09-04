@@ -10,6 +10,8 @@
 - 队伍：`decisions/`
 - selection：`00-selection/`
 - intake：`01-intake/`
+- 用户提供的文献原文：`literature/input/`（队伍只读输入，AI 不得改写）
+- literature：`02-literature/`
 - design：`02-design/`
 - prototype：`03-prototype/`
 - compute：`04-compute/`
@@ -35,3 +37,5 @@
 主控仅在用户明确允许创建独立任务后启动流水线。每个 AI 阶段使用新任务，提示必须包含：阶段 Skill、`PROJECT_ROOT`、允许读取的文件、唯一写入目录、已批准决议、必需输出和停止条件。不得使用 fork 把上游对话历史带入新阶段。
 
 主控收到新任务 ID 后记录到 `.workflow/threads.json`。阶段完成后先验证回执和哈希，再更新状态。人类闸门未批准时停止，不创建下一任务。
+
+H1 批准后必须进入 `WAITING_FOR_LITERATURE` 并结束当前轮次。用户提供至少一份受支持的文献后，主控才可启动独立的 LITERATURE 任务；DESIGN 必须等待 LITERATURE 的 `PASS` 交接。

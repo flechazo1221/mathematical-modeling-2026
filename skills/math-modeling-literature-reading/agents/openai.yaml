@@ -1,0 +1,5 @@
+interface:
+  display_name: "建模文献精读"
+  short_description: "精读用户提供的领域文献并生成DESIGN阶段知识输入文件"
+  default_prompt: "使用 $math-modeling-literature-reading 精读我提供的赛题相关文献，并生成 DESIGN 阶段的知识输入。"
+

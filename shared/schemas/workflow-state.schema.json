@@ -7,7 +7,7 @@
   "properties": {
     "schema_version": {"const": "1.0"},
     "project_id": {"type": "string", "minLength": 1},
-    "status": {"enum": ["NEW", "RUNNING", "WAITING_FOR_TEAM", "FAIL", "BLOCKED", "COMPLETE"]},
+    "status": {"enum": ["NEW", "RUNNING", "WAITING_FOR_TEAM", "WAITING_FOR_LITERATURE", "FAIL", "BLOCKED", "COMPLETE"]},
     "current_stage": {"type": "string", "minLength": 1},
     "completed_stages": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
     "active_thread_id": {"type": ["string", "null"]},

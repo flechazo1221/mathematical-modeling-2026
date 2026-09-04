@@ -12,6 +12,7 @@ from pathlib import Path
 STAGE_DIRS = [
     "00-selection",
     "01-intake",
+    "02-literature",
     "02-design",
     "03-prototype",
     "04-compute",
@@ -60,7 +61,7 @@ def initialize(project_root: Path, contest: str, year: int, project_id: str | No
         raise ValueError("PROJECT_ROOT must be outside the skill-suite source tree")
 
     root.mkdir(parents=True, exist_ok=True)
-    for directory in ["input", ".workflow", "decisions", *STAGE_DIRS]:
+    for directory in ["input", "literature/input", ".workflow", "decisions", *STAGE_DIRS]:
         (root / directory).mkdir(parents=True, exist_ok=True)
 
     timestamp = now_iso()

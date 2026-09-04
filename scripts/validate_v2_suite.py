@@ -13,6 +13,8 @@ EXPECTED_SKILLS = [
     "math-modeling-team-decision",
     "math-modeling-selection",
     "math-modeling-intake",
+    "math-modeling-literature",
+    "math-modeling-literature-reading",
     "math-modeling-design",
     "math-modeling-prototype",
     "math-modeling-compute",
@@ -114,6 +116,15 @@ def validate_suite(root: Path) -> list[str]:
     for marker in paper_contract_markers:
         if marker not in paper_skill:
             errors.append(f"paper skill missing result-first writing contract: {marker}")
+
+    workflow_skill = (root / "skills" / "math-modeling-workflow" / "SKILL.md").read_text(encoding="utf-8")
+    for marker in ("WAITING_FOR_LITERATURE", "$math-modeling-literature-reading", "02-literature/"):
+        if marker not in workflow_skill:
+            errors.append(f"workflow skill missing literature checkpoint contract: {marker}")
+    design_skill = (root / "skills" / "math-modeling-design" / "SKILL.md").read_text(encoding="utf-8")
+    for marker in ("02-literature/handoff.json", "02-literature/文献阅读结果.md", "文献到模型映射.md"):
+        if marker not in design_skill:
+            errors.append(f"design skill missing literature input contract: {marker}")
     return errors
 
 

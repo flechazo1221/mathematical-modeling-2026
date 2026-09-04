@@ -14,6 +14,7 @@ from selection_score import validate_scorecard
 STAGE_DIRS = {
     "SELECTION": "00-selection",
     "INTAKE": "01-intake",
+    "LITERATURE": "02-literature",
     "DESIGN": "02-design",
     "PROTOTYPE": "03-prototype",
     "COMPUTE": "04-compute",
@@ -25,6 +26,7 @@ STAGE_DIRS = {
 
 REQUIRED_GATES = {
     "INTAKE": ("H0-selection.json", {"TEAM_APPROVED"}),
+    "LITERATURE": ("H1-problem.json", {"TEAM_APPROVED"}),
     "DESIGN": ("H1-problem.json", {"TEAM_APPROVED"}),
     "PROTOTYPE": ("H1-problem.json", {"TEAM_APPROVED"}),
     "COMPUTE": ("H2-model.json", {"TEAM_APPROVED"}),
@@ -35,6 +37,7 @@ REQUIRED_GATES = {
 }
 
 STAGE_PREREQUISITES = {
+    "DESIGN": ("LITERATURE",),
     "PAPER": ("DESIGN", "COMPUTE", "EVIDENCE", "FIGURE"),
 }
 
@@ -137,7 +140,7 @@ def validate_handoff(root: Path, stage: str, errors: list[str]) -> None:
 def validate_workspace(project_root: Path, require_complete: bool = False) -> list[str]:
     root = project_root.resolve()
     errors: list[str] = []
-    required_dirs = ["input", ".workflow", "decisions", *STAGE_DIRS.values()]
+    required_dirs = ["input", "literature/input", ".workflow", "decisions", *STAGE_DIRS.values()]
     for directory in required_dirs:
         if not (root / directory).is_dir():
             errors.append(f"missing directory: {root / directory}")

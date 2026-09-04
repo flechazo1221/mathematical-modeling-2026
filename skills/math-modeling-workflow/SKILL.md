@@ -30,8 +30,9 @@ py -3 "<SUITE_ROOT>/scripts/init_v2_project.py" --project-root "<PROJECT_ROOT>" 
 Run in this order:
 
 ```text
-SELECTION → H0 → INTAKE → H1 → DESIGN → PROTOTYPE → H2 → COMPUTE → EVIDENCE
-       → H3 → FIGURE → optional C1 → PAPER → AUDIT → H4 → COMPLETE
+SELECTION → H0 → INTAKE → H1 → WAITING_FOR_LITERATURE → LITERATURE
+       → DESIGN → PROTOTYPE → H2 → COMPUTE → EVIDENCE → H3
+       → FIGURE → optional C1 → PAPER → AUDIT → H4 → COMPLETE
 ```
 
 For every AI stage:
@@ -45,6 +46,10 @@ For every AI stage:
 7. Update `.workflow/state.json` only after validation.
 
 For `SELECTION`, give the new task every candidate problem and attachment, the fixed rubric, the competition time budget, and the `00-selection/` write boundary. For `INTAKE`, pass only the candidate approved at H0 and its associated attachments; a numeric ranking is not approval.
+
+After H1 is approved, advance the gate and stop at `WAITING_FOR_LITERATURE`. Tell the user to place relevant papers or reports in `PROJECT_ROOT/literature/input/`; they may use `$math-modeling-literature` for optional search and open-access download assistance. Do not create the LITERATURE task in the same turn as H1 approval. Resume only after the user returns and at least one supported literature file exists.
+
+For `LITERATURE`, create a fresh task using only `$math-modeling-literature-reading`. Give it the approved H1 decision, original problem context, `literature/input/` as read-only user material, and `02-literature/` as its sole write directory. Require `文献阅读结果.md`, `文献清单.json`, and a `PASS` handoff. Do not start DESIGN until that handoff and all declared hashes validate.
 
 For `PAPER` (the `07-paper/` delivery stage), do not create the task until DESIGN, COMPUTE, EVIDENCE, and FIGURE have validated `PASS` handoffs and H3 has approved the claims. The new task prompt must name the target contest and year, required output formats, approved paper type or types when known, and require `math-modeling-paper` to apply both its hard writing gate and the bundled `references/paper-template-2026/INTEGRATION.md` routing contract. Explicitly instruct it to organize the paper by each subproblem's approved route, use only executed and confirmed results, auto-bind upstream tables/figures/metrics, explain rather than list results, preserve quantitative validation details, analyze limitations/sensitivity/scope, run formula-code-result-figure-text consistency checks, and polish only after those checks pass. Do not pass the adjacent source repository as a runtime dependency.
 
@@ -60,13 +65,15 @@ py -3 "<SUITE_ROOT>/scripts/workflow_control.py" --project-root "<PROJECT_ROOT>"
 
 ## Human gates
 
-At H0, H1, H2, H3, and H4 set `status` to `WAITING_FOR_TEAM`, report the choice package, and end the turn. H0 selects the problem after the fixed weighted comparison; the controller and selection task must not choose on the team's behalf. Do not create the next task until the corresponding decision file satisfies `shared/schemas/decision.schema.json` and contains a real team approval.
+At H0, H1, H2, H3, and H4 set `status` to `WAITING_FOR_TEAM`, report the choice package, and end the turn. H0 selects the problem after the fixed weighted comparison; the controller and selection task must not choose on the team's behalf. Do not create the next task until the corresponding decision file satisfies `shared/schemas/decision.schema.json` and contains a real team approval. H1 approval leads to a separate `WAITING_FOR_LITERATURE` checkpoint; this is an input pause, not another approval gate.
 
 The controller must never write `TEAM_APPROVED` or `TEAM_APPROVED_FOR_SUBMISSION`. It may validate a decision or record an explicit decision supplied by named team members, but may not infer consent.
 
 ## Failure routing
 
 - Problem definition or assumptions: reopen H1 or rerun DESIGN.
+- Missing, unreadable, or irrelevant user literature: remain at `WAITING_FOR_LITERATURE` or rerun LITERATURE after the user changes the source set.
+- Literature-reading error or unsupported synthesis: rerun LITERATURE; do not patch the DESIGN output to hide the upstream defect.
 - Candidate-problem evidence or viability: rerun SELECTION and reopen H0.
 - Model route or metric: reopen H2.
 - Implementation or numerical evidence: rerun COMPUTE.

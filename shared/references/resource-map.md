@@ -7,6 +7,8 @@
 - PDF：`tools/pdf/SKILL.md`。
 - Excel：`tools/xlsx/SKILL.md`。
 - 论文搜索：`tools/paper_search/SKILL.md`。
+- 文献获取辅助：`skills/math-modeling-literature/SKILL.md`；只负责检索、核验与开放获取下载。
+- 文献精读交接：`skills/math-modeling-literature-reading/SKILL.md`；读取用户提供的全文并生成 DESIGN 的权威知识输入。
 - 科研可视化引擎：`tools/figure/SKILL.md` 及其 `scripts/`、`references/`。
 - Word：`tools/docx/SKILL.md`。
 - LaTeX：`tools/latex/SKILL.md`。

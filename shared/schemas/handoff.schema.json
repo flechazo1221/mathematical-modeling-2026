@@ -6,7 +6,7 @@
   "required": ["schema_version", "stage", "status", "inputs", "outputs", "unknowns", "warnings", "required_next_actions"],
   "properties": {
     "schema_version": {"const": "1.0"},
-    "stage": {"enum": ["SELECTION", "INTAKE", "DESIGN", "PROTOTYPE", "COMPUTE", "EVIDENCE", "FIGURE", "PAPER", "AUDIT"]},
+    "stage": {"enum": ["SELECTION", "INTAKE", "LITERATURE", "DESIGN", "PROTOTYPE", "COMPUTE", "EVIDENCE", "FIGURE", "PAPER", "AUDIT"]},
     "status": {"enum": ["PASS", "FAIL", "BLOCKED"]},
     "inputs": {"type": "array", "items": {"$ref": "#/$defs/file"}},
     "outputs": {"type": "array", "items": {"$ref": "#/$defs/file"}},

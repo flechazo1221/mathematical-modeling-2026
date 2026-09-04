@@ -15,6 +15,7 @@ from selection_score import validate_scorecard
 STAGE_DIRS = {
     "SELECTION": "00-selection",
     "INTAKE": "01-intake",
+    "LITERATURE": "02-literature",
     "DESIGN": "02-design",
     "PROTOTYPE": "03-prototype",
     "COMPUTE": "04-compute",
@@ -26,6 +27,7 @@ STAGE_DIRS = {
 AFTER_STAGE = {
     "SELECTION": ("H0", "WAITING_FOR_TEAM"),
     "INTAKE": ("H1", "WAITING_FOR_TEAM"),
+    "LITERATURE": ("DESIGN", "RUNNING"),
     "DESIGN": ("PROTOTYPE", "RUNNING"),
     "PROTOTYPE": ("H2", "WAITING_FOR_TEAM"),
     "COMPUTE": ("EVIDENCE", "RUNNING"),
@@ -34,7 +36,7 @@ AFTER_STAGE = {
     "PAPER": ("AUDIT", "RUNNING"),
     "AUDIT": ("H4", "WAITING_FOR_TEAM"),
 }
-AFTER_GATE = {"H0": "INTAKE", "H1": "DESIGN", "H2": "COMPUTE", "H3": "FIGURE"}
+AFTER_GATE = {"H0": "INTAKE", "H1": "LITERATURE", "H2": "COMPUTE", "H3": "FIGURE"}
 GATE_FILES = {
     "H0": "H0-selection.json",
     "H1": "H1-problem.json",
@@ -42,6 +44,7 @@ GATE_FILES = {
     "H3": "H3-claims.json",
     "H4": "H4-submission.json",
 }
+SUPPORTED_LITERATURE_SUFFIXES = {".caj", ".pdf", ".docx", ".txt", ".md", ".html", ".htm"}
 
 
 def now_iso() -> str:
@@ -101,6 +104,20 @@ def start_stage(root: Path, stage: str, thread_id: str, host_id: str | None) -> 
         raise ValueError(f"expected next stage {state.get('next_stage')}, not {stage}")
     if state.get("active_thread_id"):
         raise ValueError(f"another task is active: {state['active_thread_id']}")
+    if stage == "DESIGN":
+        if "LITERATURE" not in state.get("completed_stages", []):
+            raise ValueError("DESIGN requires a completed LITERATURE stage")
+        validate_handoff(root, "LITERATURE")
+    if stage == "LITERATURE":
+        input_dir = root.resolve() / "literature" / "input"
+        supplied = [
+            path for path in input_dir.rglob("*")
+            if path.is_file() and path.suffix.lower() in SUPPORTED_LITERATURE_SUFFIXES
+        ] if input_dir.is_dir() else []
+        if not supplied:
+            raise ValueError(
+                "LITERATURE requires at least one supported user file under literature/input"
+            )
 
     threads = load_json(threads_path)
     record = {"thread_id": thread_id, "started_at": now_iso(), "status": "RUNNING"}
@@ -213,6 +230,18 @@ def advance_gate(root: Path, gate: str) -> None:
             updated_at=now_iso(),
         )
         next_stage = None
+    elif gate == "H1":
+        next_stage = AFTER_GATE[gate]
+        state.update(
+            status="WAITING_FOR_LITERATURE",
+            current_stage=next_stage,
+            active_thread_id=None,
+            next_stage=next_stage,
+            blocking_items=[
+                "等待用户将相关领域文献放入 literature/input/，然后启动 LITERATURE 阶段"
+            ],
+            updated_at=now_iso(),
+        )
     else:
         next_stage = AFTER_GATE[gate]
         state.update(
