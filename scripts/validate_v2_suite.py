@@ -76,6 +76,28 @@ def validate_suite(root: Path) -> list[str]:
     for forbidden in ("每类至少 3 张", "合计至少 9 张", "图型种类 ≥ 3"):
         if forbidden in legacy_figure_text:
             errors.append(f"legacy figure instructions still contain a fixed quota: {forbidden}")
+
+    paper_library = root / "skills" / "math-modeling-paper" / "references" / "paper-template-2026"
+    for relative in (
+        "INTEGRATION.md",
+        "SOURCE.md",
+        "LICENSE",
+        "00_LaTeX基础模板与排版/数学建模论文通用LaTeX模板.tex",
+        "01_通用写作规范/提交前检查清单.md",
+        "02_优化类/摘要范例.md",
+        "03_预测类/摘要范例.md",
+        "04_评价类/摘要范例.md",
+        "05_分类类/摘要范例.md",
+        "06_统计分析类/摘要范例.md",
+        "07_机理建模类/摘要范例.md",
+    ):
+        if not (paper_library / relative).is_file():
+            errors.append(f"missing paper-stage resource: {paper_library / relative}")
+    if (paper_library / "INTEGRATION.md").is_file():
+        integration = (paper_library / "INTEGRATION.md").read_text(encoding="utf-8")
+        for required in ("权威顺序", "渐进式加载", "示例数据", "62f2c84dba41a491cb31ea915dc2db2957bd0f5b"):
+            if required not in integration:
+                errors.append(f"paper integration contract missing: {required}")
     return errors
 
 

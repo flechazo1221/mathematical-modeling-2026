@@ -44,6 +44,8 @@ For every AI stage:
 6. Record the task's actual purpose, affected files, model/tool identity when available, and pending or completed human review in `.workflow/ai-usage-log.json`.
 7. Update `.workflow/state.json` only after validation.
 
+For `PAPER` (the `07-paper/` delivery stage), the new task prompt must also name the target contest and year, required output formats, approved paper type or types when known, and require `math-modeling-paper` to apply its bundled `references/paper-template-2026/INTEGRATION.md` routing contract. Do not pass the adjacent source repository as a runtime dependency.
+
 Use `scripts/workflow_control.py` for authorization, task registration, stage completion, gate advancement, and status reads. Do not edit state or task records ad hoc. The task-creation tool itself remains a Codex capability; this script records and validates its result.
 
 ```powershell
