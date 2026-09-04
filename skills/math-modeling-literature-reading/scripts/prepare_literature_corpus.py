@@ -84,9 +84,14 @@ def convert_caj(source: Path, destination: Path, converter: list[str] | None, cw
 
 
 def extract_pdf(path: Path, pdftotext: str) -> tuple[list[str], str]:
-    code, output = run_command([pdftotext, "-enc", "UTF-8", "-layout", str(path), "-"], path.parent)
-    if code != 0:
-        return [], output
+    process = subprocess.run(
+        [pdftotext, "-enc", "UTF-8", "-layout", str(path), "-"],
+        cwd=path.parent, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+        timeout=300, check=False,
+    )
+    output = decode_text(process.stdout)
+    if process.returncode != 0:
+        return [], decode_text(process.stderr)[-8000:]
     pages = [clean_page(page) for page in output.split("\f")]
     while pages and not pages[-1]:
         pages.pop()
