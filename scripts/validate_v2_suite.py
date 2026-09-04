@@ -125,6 +125,18 @@ def validate_suite(root: Path) -> list[str]:
     for marker in ("02-literature/handoff.json", "02-literature/文献阅读结果.md", "文献到模型映射.md"):
         if marker not in design_skill:
             errors.append(f"design skill missing literature input contract: {marker}")
+    literature_reading = root / "skills" / "math-modeling-literature-reading"
+    reading_text = (literature_reading / "SKILL.md").read_text(encoding="utf-8")
+    for marker in ("prepare_literature_corpus.py", "query_literature_corpus.py", "--max-chars 18000", "caj-processing.md"):
+        if marker not in reading_text:
+            errors.append(f"literature-reading skill missing CAJ/token contract: {marker}")
+    for relative in (
+        "scripts/prepare_literature_corpus.py",
+        "scripts/query_literature_corpus.py",
+        "references/caj-processing.md",
+    ):
+        if not (literature_reading / relative).is_file():
+            errors.append(f"missing literature-reading resource: {literature_reading / relative}")
     return errors
 
 
