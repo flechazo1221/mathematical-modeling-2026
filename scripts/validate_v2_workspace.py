@@ -8,8 +8,11 @@ import hashlib
 import json
 from pathlib import Path
 
+from selection_score import validate_scorecard
+
 
 STAGE_DIRS = {
+    "SELECTION": "00-selection",
     "INTAKE": "01-intake",
     "DESIGN": "02-design",
     "PROTOTYPE": "03-prototype",
@@ -21,6 +24,7 @@ STAGE_DIRS = {
 }
 
 REQUIRED_GATES = {
+    "INTAKE": ("H0-selection.json", {"TEAM_APPROVED"}),
     "DESIGN": ("H1-problem.json", {"TEAM_APPROVED"}),
     "PROTOTYPE": ("H1-problem.json", {"TEAM_APPROVED"}),
     "COMPUTE": ("H2-model.json", {"TEAM_APPROVED"}),
@@ -28,6 +32,10 @@ REQUIRED_GATES = {
     "FIGURE": ("H3-claims.json", {"TEAM_APPROVED"}),
     "PAPER": ("H3-claims.json", {"TEAM_APPROVED"}),
     "AUDIT": ("H3-claims.json", {"TEAM_APPROVED"}),
+}
+
+STAGE_PREREQUISITES = {
+    "PAPER": ("DESIGN", "COMPUTE", "EVIDENCE", "FIGURE"),
 }
 
 
@@ -72,6 +80,26 @@ def validate_decision(path: Path, allowed: set[str], errors: list[str]) -> None:
         errors.append(f"approved decision has no team member: {path}")
     if not decision.get("confirmed_at"):
         errors.append(f"approved decision has no timestamp: {path}")
+
+
+def validate_selection_decision(root: Path, errors: list[str]) -> None:
+    decision_path = root / "decisions" / "H0-selection.json"
+    scorecard_path = root / "00-selection" / "选题评分.json"
+    decision = load_json(decision_path, errors)
+    scorecard = load_json(scorecard_path, errors)
+    if decision is None or scorecard is None:
+        return
+    selected = decision.get("selected_options")
+    if not isinstance(selected, list) or len(selected) != 1:
+        errors.append(f"H0 must select exactly one candidate id: {decision_path}")
+        return
+    if not decision.get("reasons"):
+        errors.append(f"H0 approval has no team reason: {decision_path}")
+    candidate_ids = {
+        item.get("id") for item in scorecard.get("candidates", []) if isinstance(item, dict)
+    }
+    if selected[0] not in candidate_ids:
+        errors.append(f"H0 selected unknown candidate {selected[0]}: {decision_path}")
 
 
 def validate_handoff(root: Path, stage: str, errors: list[str]) -> None:
@@ -131,7 +159,14 @@ def validate_workspace(project_root: Path, require_complete: bool = False) -> li
         gate = REQUIRED_GATES.get(stage)
         if gate:
             validate_decision(root / "decisions" / gate[0], gate[1], errors)
+            if stage == "INTAKE":
+                validate_selection_decision(root, errors)
+        for prerequisite in STAGE_PREREQUISITES.get(stage, ()):
+            if prerequisite not in completed:
+                errors.append(f"{stage} completed before required stage: {prerequisite}")
         validate_handoff(root, stage, errors)
+        if stage == "SELECTION":
+            errors.extend(validate_scorecard(root / "00-selection" / "选题评分.json"))
         if ai_usage is not None and not any(
             isinstance(item, dict) and item.get("stage") == stage
             for item in ai_usage.get("entries", [])

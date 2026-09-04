@@ -11,6 +11,7 @@ from pathlib import Path
 EXPECTED_SKILLS = [
     "math-modeling-workflow",
     "math-modeling-team-decision",
+    "math-modeling-selection",
     "math-modeling-intake",
     "math-modeling-design",
     "math-modeling-prototype",
@@ -55,6 +56,7 @@ def validate_suite(root: Path) -> list[str]:
         "decision.schema.json",
         "figure-contract.schema.json",
         "ai-usage.schema.json",
+        "selection-score.schema.json",
     ]
     for name in expected_schemas:
         path = schemas / name
@@ -65,7 +67,7 @@ def validate_suite(root: Path) -> list[str]:
         except json.JSONDecodeError as exc:
             errors.append(f"invalid JSON schema {path}: {exc}")
 
-    for script_name in ("init_v2_project.py", "workflow_control.py", "install_v2_suite.py"):
+    for script_name in ("init_v2_project.py", "workflow_control.py", "install_v2_suite.py", "selection_score.py"):
         if not (root / "scripts" / script_name).is_file():
             errors.append(f"missing workflow script: {script_name}")
 
@@ -98,6 +100,20 @@ def validate_suite(root: Path) -> list[str]:
         for required in ("权威顺序", "渐进式加载", "示例数据", "62f2c84dba41a491cb31ea915dc2db2957bd0f5b"):
             if required not in integration:
                 errors.append(f"paper integration contract missing: {required}")
+
+    paper_skill = (root / "skills" / "math-modeling-paper" / "SKILL.md").read_text(encoding="utf-8")
+    paper_contract_markers = (
+        "## Hard writing gate",
+        "DESIGN, COMPUTE, EVIDENCE, and FIGURE",
+        "actual recorded runs",
+        "Automatically inventory",
+        "strengths, weaknesses, sensitivity or robustness, applicability, and failure boundaries",
+        "formulas, notation, units, code implementation",
+        "Only after the evidence and consistency checks pass",
+    )
+    for marker in paper_contract_markers:
+        if marker not in paper_skill:
+            errors.append(f"paper skill missing result-first writing contract: {marker}")
     return errors
 
 

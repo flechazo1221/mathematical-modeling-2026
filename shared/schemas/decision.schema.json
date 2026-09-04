@@ -6,7 +6,7 @@
   "required": ["schema_version", "gate", "status", "question", "selected_options", "reasons", "confirmed_by", "confirmed_at"],
   "properties": {
     "schema_version": {"const": "1.0"},
-    "gate": {"enum": ["H1", "H2", "H3", "H4", "C1"]},
+    "gate": {"enum": ["H0", "H1", "H2", "H3", "H4", "C1"]},
     "status": {"enum": ["DRAFT", "TEAM_APPROVED", "TEAM_REJECTED", "TEAM_APPROVED_FOR_SUBMISSION"]},
     "question": {"type": "string", "minLength": 1},
     "selected_options": {"type": "array", "items": {"type": "string"}},
@@ -31,6 +31,21 @@
         "properties": {
           "confirmed_by": {"minItems": 1},
           "confirmed_at": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "gate": {"const": "H0"},
+          "status": {"const": "TEAM_APPROVED"}
+        },
+        "required": ["gate", "status"]
+      },
+      "then": {
+        "properties": {
+          "selected_options": {"minItems": 1, "maxItems": 1},
+          "reasons": {"minItems": 1}
         }
       }
     }

@@ -10,6 +10,7 @@ from pathlib import Path
 
 
 STAGE_DIRS = [
+    "00-selection",
     "01-intake",
     "02-design",
     "03-prototype",
@@ -83,7 +84,7 @@ def initialize(project_root: Path, contest: str, year: int, project_id: str | No
             "current_stage": "NEW",
             "completed_stages": [],
             "active_thread_id": None,
-            "next_stage": "INTAKE",
+            "next_stage": "SELECTION",
             "blocking_items": [],
             "updated_at": timestamp,
         },
@@ -103,6 +104,9 @@ def initialize(project_root: Path, contest: str, year: int, project_id: str | No
             "schema_version": "1.0",
             "events": [{"event": "PROJECT_INITIALIZED", "at": timestamp}],
         },
+        root / "decisions" / "H0-selection.json": decision_template(
+            "H0", "确认候选题评分、关键风险和最终选题"
+        ),
         root / "decisions" / "H1-problem.json": decision_template(
             "H1", "确认题意、目标、硬约束、错误代价和关键假设"
         ),

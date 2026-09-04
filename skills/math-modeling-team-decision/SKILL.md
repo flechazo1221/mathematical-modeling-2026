@@ -1,6 +1,6 @@
 ---
 name: math-modeling-team-decision
-description: Prepares neutral option packages for human decisions in a mathematical-modeling workflow and validates team decision records. Use at H1 problem framing, H2 model selection, H3 claim and figure selection, or H4 submission approval; never decides on the team's behalf.
+description: Prepares neutral option packages for human decisions in a mathematical-modeling workflow and validates team decision records. Use at H0 problem selection, H1 problem framing, H2 model selection, H3 claim and figure selection, or H4 submission approval; never decides on the team's behalf.
 ---
 
 # Team Decision Support
@@ -24,6 +24,7 @@ Do not bias the package through unequal detail, loaded wording, unfair experimen
 
 ## Gate scope
 
+- H0: candidate-problem scores, hard-stop risks, uncertainty, and the team's final problem choice.
 - H1: problem meaning, objectives, hard constraints, error costs, and accepted assumptions.
 - H2: primary model, baselines, metrics, weights, innovations, and required validation.
 - H3: approved claims, conditional or prohibited claims, key figures, narrative, and limitations.

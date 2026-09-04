@@ -9,7 +9,8 @@ Read `../../shared/references/quality-principles.md`, `workflow-contract.md`, `a
 
 ## Inputs and write boundary
 
-- Read only `PROJECT_ROOT/input/` and controller configuration.
+- Require an approved `decisions/H0-selection.json` and read the selected candidate's `00-selection/` handoff and score evidence.
+- Read only the selected problem and its attachments under `PROJECT_ROOT/input/`, the H0 decision, selection handoff, and controller configuration. Do not silently intake a higher-ranked but unapproved candidate.
 - Write only `PROJECT_ROOT/01-intake/`.
 - Use the suite PDF and spreadsheet tools when relevant.
 

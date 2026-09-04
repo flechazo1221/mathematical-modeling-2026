@@ -8,6 +8,7 @@
 
 - 主控：`.workflow/`
 - 队伍：`decisions/`
+- selection：`00-selection/`
 - intake：`01-intake/`
 - design：`02-design/`
 - prototype：`03-prototype/`

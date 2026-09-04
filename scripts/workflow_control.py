@@ -9,8 +9,11 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
+from selection_score import validate_scorecard
+
 
 STAGE_DIRS = {
+    "SELECTION": "00-selection",
     "INTAKE": "01-intake",
     "DESIGN": "02-design",
     "PROTOTYPE": "03-prototype",
@@ -21,6 +24,7 @@ STAGE_DIRS = {
     "AUDIT": "08-audit",
 }
 AFTER_STAGE = {
+    "SELECTION": ("H0", "WAITING_FOR_TEAM"),
     "INTAKE": ("H1", "WAITING_FOR_TEAM"),
     "DESIGN": ("PROTOTYPE", "RUNNING"),
     "PROTOTYPE": ("H2", "WAITING_FOR_TEAM"),
@@ -30,8 +34,9 @@ AFTER_STAGE = {
     "PAPER": ("AUDIT", "RUNNING"),
     "AUDIT": ("H4", "WAITING_FOR_TEAM"),
 }
-AFTER_GATE = {"H1": "DESIGN", "H2": "COMPUTE", "H3": "FIGURE"}
+AFTER_GATE = {"H0": "INTAKE", "H1": "DESIGN", "H2": "COMPUTE", "H3": "FIGURE"}
 GATE_FILES = {
+    "H0": "H0-selection.json",
     "H1": "H1-problem.json",
     "H2": "H2-model.json",
     "H3": "H3-claims.json",
@@ -140,6 +145,10 @@ def finish_stage(root: Path, stage: str) -> None:
     if state.get("current_stage") != stage or not state.get("active_thread_id"):
         raise ValueError(f"stage {stage} is not the active task")
     validate_handoff(root, stage)
+    if stage == "SELECTION":
+        score_errors = validate_scorecard(root.resolve() / "00-selection" / "选题评分.json")
+        if score_errors:
+            raise ValueError("invalid selection scorecard: " + "; ".join(score_errors))
     ai_log = load_json(ai_log_path)
     if not any(item.get("stage") == stage for item in ai_log.get("entries", [])):
         raise ValueError(f"AI usage has not been recorded for {stage}")
@@ -181,6 +190,18 @@ def advance_gate(root: Path, gate: str) -> None:
         raise ValueError(f"{gate} requires {expected}")
     if not decision.get("confirmed_by") or not decision.get("confirmed_at"):
         raise ValueError(f"{gate} approval lacks named reviewers or timestamp")
+    if gate == "H0":
+        selected = decision.get("selected_options")
+        if not isinstance(selected, list) or len(selected) != 1:
+            raise ValueError("H0 requires exactly one selected candidate id")
+        if not decision.get("reasons"):
+            raise ValueError("H0 requires at least one team reason")
+        scorecard = load_json(root.resolve() / "00-selection" / "选题评分.json")
+        candidate_ids = {
+            item.get("id") for item in scorecard.get("candidates", []) if isinstance(item, dict)
+        }
+        if selected[0] not in candidate_ids:
+            raise ValueError(f"H0 selected unknown candidate: {selected[0]}")
 
     if gate == "H4":
         state.update(
