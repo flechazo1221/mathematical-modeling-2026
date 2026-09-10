@@ -1,0 +1,4 @@
+interface:
+  display_name: "数学建模赛题接收"
+  short_description: "结构化问题、初筛方法、审计约束与合规要求"
+  default_prompt: "使用 $math-modeling-intake 完成赛题结构化、数据与约束审计、方法族初筛和H1选择包。"

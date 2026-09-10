@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "decision.schema.json",
+  "title": "Human Decision Gate",
+  "type": "object",
+  "required": ["schema_version", "gate", "status", "question", "selected_options", "reasons", "confirmed_by", "confirmed_at"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "gate": {"enum": ["H0", "H1", "H2", "H3", "H4", "C1"]},
+    "status": {"enum": ["DRAFT", "TEAM_APPROVED", "TEAM_REJECTED", "TEAM_APPROVED_FOR_SUBMISSION"]},
+    "question": {"type": "string", "minLength": 1},
+    "selected_options": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "reasons": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "accepted_assumptions": {"type": "array", "items": {"type": "string"}},
+    "rejected_options": {"type": "array", "items": {"type": "string"}},
+    "required_validations": {"type": "array", "items": {"type": "string"}},
+    "prohibited_changes": {"type": "array", "items": {"type": "string"}},
+    "delegations": {"type": "array", "items": {"type": "string"}},
+    "confirmed_by": {"type": "array", "items": {"type": "string"}},
+    "confirmed_at": {"type": ["string", "null"], "format": "date-time"},
+    "supersedes": {"type": ["string", "null"]}
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "status": {"enum": ["TEAM_APPROVED", "TEAM_REJECTED", "TEAM_APPROVED_FOR_SUBMISSION"]}
+        }
+      },
+      "then": {
+        "properties": {
+          "selected_options": {"minItems": 1},
+          "reasons": {"minItems": 1},
+          "confirmed_by": {"minItems": 1},
+          "confirmed_at": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    {
+      "if": {"properties": {"status": {"const": "DRAFT"}}, "required": ["status"]},
+      "then": {
+        "properties": {
+          "confirmed_by": {"maxItems": 0},
+          "confirmed_at": {"type": "null"}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "gate": {"const": "H0"},
+          "status": {"const": "TEAM_APPROVED"}
+        },
+        "required": ["gate", "status"]
+      },
+      "then": {
+        "properties": {
+          "selected_options": {"minItems": 1, "maxItems": 1},
+          "reasons": {"minItems": 1}
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

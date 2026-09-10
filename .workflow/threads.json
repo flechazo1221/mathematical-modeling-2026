@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "threads": {
+    "SELECTION": [
+      {
+        "thread_id": "01a06b8d-46d1-79c0-b06f-5587aee6c1ed",
+        "started_at": "2026-09-04T16:33:45+08:00",
+        "status": "PASS",
+        "host_id": "local",
+        "finished_at": "2026-09-04T16:46:13+08:00"
+      }
+    ]
+  }
+}

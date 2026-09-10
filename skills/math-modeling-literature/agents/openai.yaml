@@ -1,0 +1,4 @@
+interface:
+  display_name: "建模文献检索与下载"
+  short_description: "依据H1已确认赛题检索、核验并下载开放获取文献资料"
+  default_prompt: "使用 $math-modeling-literature 根据 H1 已确认的赛题检索相关文献并下载开放获取 PDF。"
