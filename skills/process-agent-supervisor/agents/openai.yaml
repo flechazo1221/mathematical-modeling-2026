@@ -1,4 +1,0 @@
-interface:
-  display_name: "流程 Agent 监督器"
-  short_description: "持续核对流程目标与授权边界，发现方向偏离立即叫停并汇报"
-  default_prompt: "使用 $process-agent-supervisor 监督当前流程中的 Agent，发现方向偏离时立即停止并汇报。"

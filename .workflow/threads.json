@@ -3,11 +3,19 @@
   "threads": {
     "SELECTION": [
       {
-        "thread_id": "01a06b8d-46d1-79c0-b06f-5587aee6c1ed",
-        "started_at": "2026-09-04T16:33:45+08:00",
+        "thread_id": "01a08af1-c7cc-7cd2-bb4d-3749cb3f6ae6",
+        "started_at": "2026-09-10T18:51:58+08:00",
         "status": "PASS",
         "host_id": "local",
-        "finished_at": "2026-09-04T16:46:13+08:00"
+        "finished_at": "2026-09-10T21:06:21+08:00"
+      }
+    ],
+    "INTAKE": [
+      {
+        "thread_id": "01a08b6e-1f73-7f50-b4fe-594241a837c8",
+        "started_at": "2026-09-10T21:07:40+08:00",
+        "status": "RUNNING",
+        "host_id": "local"
       }
     ]
   }

@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "gate": "H0",
+  "status": "DRAFT",
+  "question": "确认候选题评分、关键风险和最终选题",
+  "selected_options": [],
+  "reasons": [],
+  "accepted_assumptions": [],
+  "rejected_options": [],
+  "required_validations": [],
+  "prohibited_changes": [],
+  "delegations": [],
+  "confirmed_by": [],
+  "confirmed_at": null,
+  "supersedes": null
+}

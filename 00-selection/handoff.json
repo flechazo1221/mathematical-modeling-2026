@@ -1,62 +1,31 @@
 {
-  "schema_version": "1.0",
-  "stage": "SELECTION",
-  "status": "PASS",
-  "inputs": [],
-  "outputs": [
-    {
-      "path": "00-selection/候选题清单.json",
-      "sha256": "924646d1d1a81a5c0a4b855474525248435e2e4b0f79a88851d35b0a2c1a391b"
-    },
-    {
-      "path": "00-selection/选题评分.json",
-      "sha256": "fe5bddabcb1f735db13cb686a5599d0f69490560c23a25452463bcebc50c037f"
-    },
-    {
-      "path": "00-selection/选题分析.md",
-      "sha256": "12025adc037d9a1e8f5d70f3922bee960746fa103ec9f9df31e31efde5c69aa3"
-    },
-    {
-      "path": "00-selection/H0-选择包.md",
-      "sha256": "7769ff7cc65381f5d0aa2a793b9fc6b9c55f7815d6fa264296cc35e00e01fd46"
-    }
+  "schema_version":"1.0",
+  "stage":"SELECTION",
+  "status":"PASS",
+  "inputs":[
+    {"path":"input/A��/A��.pdf","sha256":"052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736"},
+    {"path":"input/format2026.doc","sha256":"d77de49534649b46ca195d32bd9c56a1fbe06dc96fdcf3e1199e6dd7d9831f4a"},
+    {"path":"input/A题/附件/附件1.xlsx","sha256":"7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"},
+    {"path":"input/A题/附件/附件2.xlsx","sha256":"5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"},
+    {"path":"input/B题/B题.pdf","sha256":"81c992a9bee5376308c4768b58719b177f17d6ee1f9861577a851924c5a838ca"},
+    {"path":"input/B题/附件/附件1.docx","sha256":"20a27603ea81efa8f11658b3fa5b859a69aa3ff88fb3664d2abb80d740b47553"},
+    {"path":"input/B题/附件/附件2.docx","sha256":"c882513d5b7e0ec50f3068570ea55fdc1b5c4a5fa2d6e9e54e79b33cf0858cb2"},
+    {"path":"input/C题/C题.pdf","sha256":"2c098f6ae9dd47ae965aebdec3b9facf3de6c173f999783c1012c08fc5fb9d2d"},
+    {"path":"input/C题/附件/附件1.xlsx","sha256":"66b87134f5ecccd68184d3539bb1293ef039f9e0fdd955a589b9bfa7f227c377"},
+    {"path":"input/C题/附件/附件2.xlsx","sha256":"2e95fd446bfafa0d8c59577b5c2e2ea8b3f1def20dde54a3062556f4da9b4c72"},
+    {"path":"input/C题/附件/附件3.xlsx","sha256":"8a61b06c52bd0d639a1cc37c61a7d9f5b75edcbca718f64c1bd3498ec9f9d843"},
+    {"path":"input/C题/附件/附件4.xlsx","sha256":"20e9c93aeab5e8e21ae4dd15587f9e190f7408692504c1319598461cd654fe71"}
   ],
-  "frozen_decisions": [],
-  "assumptions": [
-    "唯一候选仍按固定25/15/20/15/25权重作go/no-go筛查，不把唯一排名解释为团队选择。",
-    "附件中第一行为表头；其后7469行为实测数据。",
-    "H0之前不冻结折射率色散关系、多光束判据、异常值处理或最终模型路线。"
+  "outputs":[
+    {"path":"00-selection/候选题清单.json","sha256":"cde779d1de9e43d57b793c92205655cd0b4fa3cbd03f0a383b748b1e3bcd49de"},
+    {"path":"00-selection/选题评分.json","sha256":"e34444ab34aa979060e636cdbdbd0b7cb1baa5df1d9a4778ae383f93f02e2ac8"},
+    {"path":"00-selection/选题分析.md","sha256":"5cc37592acba55ef16aa8aad06b5bba8096922f5efe1c0c6f02a4d5892136a7b"},
+    {"path":"00-selection/H0-选择包.md","sha256":"a92d6a14d862bbae9108ad73b00f53a80467606a932e6c6ca3f61cfacb3f4659"}
   ],
-  "unknowns": [
-    "队伍的薄膜光学、信号处理能力与剩余时间预算未提供。",
-    "适用的碳化硅/硅折射率色散关系、掺杂浓度、温度与仪器元数据未知。",
-    "没有外延层厚度真值或独立测量基准。",
-    "所在赛区的附加提交要求尚未核验。"
-  ],
-  "claims": [
-    "题面与四个关键附件完整可读，未触发关键附件不可读的hard stop。",
-    "唯一候选2025-B的固定权重可行性得分为77.5/100。",
-    "当前存在可运行的单光束基线和多条内部验证路径，但绝对精度仍缺少真值支撑。",
-    "本阶段仅PASS到H0，不构成TEAM_APPROVED，也不授权进入INTAKE。"
-  ],
-  "evidence": [
-    "四个XLSX均为单工作表、两列、7469条数据，无缺失、公式或Excel错误；波数网格一致且单调唯一。",
-    "附件2最大反射率102.7393552%，四个附件首个反射率均为0，已列为后续数据审计风险。",
-    "selection_score.py已返回Selection scorecard validation passed。",
-    "全国组委会2025赛题页面：https://www.mcm.edu.cn/html_cn/node/03c91a444e62eee81a3740fa97a461a6.html",
-    "全国组委会2025报名和参赛须知：https://www.mcm.edu.cn/upload_cn/node/745/ogFWOgXVc36c27bb3ee3adf21e06f53146b03585.pdf",
-    "项目外只读题面与附件的绝对路径、SHA-256及数据盘点记录于00-selection/候选题清单.json；因handoff schema仅接受PROJECT_ROOT内文件，inputs如实留空，未伪造项目内路径。"
-  ],
-  "warnings": [
-    "77.5分和唯一排名均为非约束性筛查结果，不能写入或解释为团队批准。",
-    "不得把双角度内部一致性误写为绝对精度证明。",
-    "不得无来源臆造折射率、掺杂浓度、仪器参数或多光束判据。",
-    "2025全国规则已核验；所在赛区额外规则仍需队员确认。"
-  ],
-  "required_next_actions": [
-    "停止在H0，等待真实队员审阅00-selection/H0-选择包.md。",
-    "由真实队员在decisions/H0-selection.json中记录唯一选择、理由、接受假设、拒绝/no-go原因、必须验证项、冻结内容、确认成员和时间。",
-    "只有主控验证有效TEAM_APPROVED后，才可启动独立INTAKE任务。"
-  ],
-  "completed_at": "2026-09-04T17:05:00+08:00"
+  "unknowns":["官方format2026.doc未解析","A问题4移动边界离散方案","C预报信息集与结算边界","B模拟器/正式测试可用性"],
+  "warnings":["B存在核心模拟器不可离线复现的hard stop风险","D/E按用户最新指令排除，不在本交接范围"],
+  "claims":["在固定权重下C=84.0、A=78.5、B=52.5，排序C>A>B","本交接不包含团队最终选题或TEAM_APPROVED"],
+  "evidence":["00-selection/选题评分.json已通过CUMCM26/scripts/selection_score.py校验"],
+  "required_next_actions":["真实队员在H0决策中选择唯一A/B/C候选并创建decisions/H0-selection.json","核对format2026.doc官方格式条款","H0批准前保持SELECTION等待，不启动INTAKE"],
+  "completed_at":"2026-09-10T20:10:00+08:00"
 }

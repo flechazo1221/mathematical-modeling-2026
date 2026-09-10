@@ -1,0 +1,300 @@
+{
+  "schema_version": "1.0",
+  "stage": "INTAKE",
+  "project_id": "高教社杯全国大学生数学建模竞赛-2026",
+  "selected_problem": {
+    "id": "A",
+    "title": "药材的烘干问题",
+    "group": "本科组",
+    "h0_status": "TEAM_APPROVED",
+    "confirmed_by": ["朱冠熹"],
+    "statement_path": "input/A��/A��.pdf",
+    "statement_sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+    "statement_pages": 4
+  },
+  "scope_boundary": {
+    "allowed_problem": "A",
+    "excluded_problems": ["B", "C", "D", "E"],
+    "current_stage": "INTAKE",
+    "next_human_gate": "H1",
+    "does_not_select_final_algorithm": true
+  },
+  "known_information": [
+    {
+      "id": "K-BG-01",
+      "class": "background_fact",
+      "statement": "热风烘干包括预热平衡和恒温干燥两个阶段，题目要求用数理分析与数值仿真得到烘干规律。",
+      "source": "A题.pdf p.1",
+      "epistemic_status": "problem_supplied_fact"
+    },
+    {
+      "id": "K-GEO-01",
+      "class": "geometry",
+      "statement": "初始药材近似圆柱，长25 cm，半径2 cm。",
+      "source": "A题.pdf p.1",
+      "epistemic_status": "problem_supplied_fact"
+    },
+    {
+      "id": "K-IC-01",
+      "class": "initial_condition",
+      "statement": "t=0时药材温度28 °C，干基含水率2.55 kg/kg。",
+      "source": "A题.pdf p.1",
+      "epistemic_status": "problem_supplied_fact"
+    },
+    {
+      "id": "K-DATA-01",
+      "class": "field_inventory",
+      "statement": "附件1含时间(s)、烘房温度(°C)、烘房水分浓度(kg/kg)；241条记录，t=0–14400 s，步长60 s。",
+      "source": "input/A题/附件/附件1.xlsx; A题.pdf p.3",
+      "epistemic_status": "verified_input"
+    },
+    {
+      "id": "K-DATA-02",
+      "class": "field_inventory",
+      "statement": "附件2含时间(s)与药材半径(cm)；145条记录，t=0–259200 s，步长1800 s。",
+      "source": "input/A题/附件/附件2.xlsx; A题.pdf p.3",
+      "epistemic_status": "verified_input"
+    },
+    {
+      "id": "K-PAR-01",
+      "class": "parameter",
+      "statement": "问题1给定常数：密度820 kg/m^3，比热2600 J/(kg·K)，导热系数0.36 W/(m·K)，对流换热系数25 W/(m^2·K)，对流传质系数8e-7 m/s。",
+      "source": "A题.pdf p.3",
+      "epistemic_status": "problem_supplied_fact"
+    },
+    {
+      "id": "K-EQ-01",
+      "class": "empirical_formula",
+      "statement": "问题1：D=7e-9*exp(-0.89/C) m^2/s。",
+      "source": "A题.pdf p.3（视觉核对原式）",
+      "epistemic_status": "problem_supplied_fact"
+    },
+    {
+      "id": "K-EQ-23",
+      "class": "empirical_formula",
+      "statement": "问题2、3：rho=650+128C；cp=1450+2736*C/(C+1)；k=0.21+0.38*C/(C+1)；D=2.4e-3*exp(-0.45/C)*exp(-3850/T)。T必须用K。",
+      "source": "A题.pdf p.4（视觉核对原式）",
+      "epistemic_status": "problem_supplied_fact"
+    },
+    {
+      "id": "K-EQ-04",
+      "class": "empirical_formula",
+      "statement": "问题4：rho=760+90C；cp=1850+2150*C/(C+1)；k=0.12+0.20*C/(C+1)；D=4.2e-4*exp(-0.30/C)*exp(-3850/T)。T必须用K。",
+      "source": "A题.pdf p.4（视觉核对原式）",
+      "epistemic_status": "problem_supplied_fact"
+    },
+    {
+      "id": "K-TEAM-01",
+      "class": "team_judgment",
+      "statement": "选择A题的人数较少。",
+      "source": "decisions/H0-selection.json",
+      "epistemic_status": "unverified_team_judgment",
+      "paper_use": "prohibited_as_fact"
+    }
+  ],
+  "requested_questions": [
+    {
+      "id": "Q1.1",
+      "parent": "Q1",
+      "action_keywords": ["建立", "描述"],
+      "target_object": "预热平衡阶段圆柱药材内温度T(r,t)和干基含水率C(r,t)",
+      "decision_user": "烘干工艺分析者",
+      "output_form": "可求解的时空演化模型",
+      "granularity": "t≤1800 s，r∈[0,2 cm]",
+      "units": {"time": "s", "radius": "cm（求解时转m）", "temperature": "°C/K", "moisture": "kg/kg"},
+      "uncertainty_expression": "至少给出网格/时步误差与边界插值敏感性",
+      "success_criterion": "满足初值、中心对称、边界通量和单位一致性"
+    },
+    {
+      "id": "Q1.2",
+      "parent": "Q1",
+      "action_keywords": ["给出", "保留四位小数"],
+      "target_object": "表1和表2的指定时间×半径采样值",
+      "decision_user": "评阅者",
+      "output_form": "论文表格",
+      "granularity": "t={100,300,600,900,1200,1500,1800}s，r={0,0.5,1,1.5,2}cm",
+      "units": {"temperature": "°C", "moisture": "kg/kg"},
+      "uncertainty_expression": "表值来自同一冻结求解结果",
+      "success_criterion": "与Q1.1同源、网格对齐、四位小数"
+    },
+    {
+      "id": "Q1.3",
+      "parent": "Q1",
+      "action_keywords": ["保存"],
+      "target_object": "问题1完整时空结果",
+      "decision_user": "组委会/评阅者",
+      "output_form": "result1.xlsx（温度、水分浓度工作表）",
+      "granularity": "t=1,…,1800s（是否包含t=0待H1确认），r=0:0.1:2cm",
+      "units": {"time": "s", "radius": "cm"},
+      "uncertainty_expression": "文件级完整性和抽样复算",
+      "success_criterion": "工作表名、行列、单位和论文表一致"
+    },
+    {
+      "id": "Q2.1",
+      "parent": "Q2",
+      "action_keywords": ["建立", "模拟"],
+      "target_object": "整个烘干过程的T(r,t)和C(r,t)，采用附录3经验式",
+      "decision_user": "烘干工艺分析者",
+      "output_form": "非线性时空演化模型",
+      "granularity": "至少3h内，r∈[0,2cm]",
+      "units": {"time": "s/h", "temperature_in_formula": "K", "moisture": "kg/kg"},
+      "uncertainty_expression": "经验式适用域和边界延拓方案敏感性",
+      "success_criterion": "系数在每个状态重新计算，无温标错误"
+    },
+    {
+      "id": "Q2.2",
+      "parent": "Q2",
+      "action_keywords": ["给出"],
+      "target_object": "表3、表4的3h采样值",
+      "decision_user": "评阅者",
+      "output_form": "论文表格",
+      "granularity": "t={0.5,1,1.5,2,2.5,3}h，r={0,0.5,1,1.5,2}cm",
+      "units": {"time": "h", "temperature": "°C", "moisture": "kg/kg"},
+      "uncertainty_expression": "与Q2.1同源",
+      "success_criterion": "四位小数且与完整文件一致"
+    },
+    {
+      "id": "Q2.3",
+      "parent": "Q2",
+      "action_keywords": ["保存"],
+      "target_object": "问题2完整时空结果",
+      "decision_user": "组委会/评阅者",
+      "output_form": "result2.xlsx（温度、水分浓度工作表）",
+      "granularity": "每1s、每0.1cm；完整时间范围疑为0–3h，待H1确认",
+      "units": {"time": "s", "radius": "cm"},
+      "uncertainty_expression": "文件级抽样复算",
+      "success_criterion": "模板结构和题面口径一致"
+    },
+    {
+      "id": "Q3.1",
+      "parent": "Q3",
+      "action_keywords": ["确定", "检测首次达标"],
+      "target_object": "药材各处C严格低于0.15 kg/kg的最早烘干时间",
+      "decision_user": "烘干停止决策者",
+      "output_form": "烘干时长(h)",
+      "granularity": "连续时间事件，输出网格60s",
+      "units": {"time": "h", "moisture": "kg/kg"},
+      "uncertainty_expression": "时步收敛区间+阈值容差",
+      "success_criterion": "min{t: max_r C(r,t)<0.15}，不得只检查平均值"
+    },
+    {
+      "id": "Q3.2",
+      "parent": "Q3",
+      "action_keywords": ["给出"],
+      "target_object": "表5的长时程水分场采样",
+      "decision_user": "评阅者",
+      "output_form": "论文表格",
+      "granularity": "每6h，r=0:0.5:2cm，含烘干结束时间",
+      "units": {"time": "h", "moisture": "kg/kg"},
+      "uncertainty_expression": "与Q3.1同源",
+      "success_criterion": "表末时刻与停止判据一致"
+    },
+    {
+      "id": "Q3.3",
+      "parent": "Q3",
+      "action_keywords": ["保存"],
+      "target_object": "固定半径域内至达标时的完整水分场",
+      "decision_user": "组委会/评阅者",
+      "output_form": "result3.xlsx",
+      "granularity": "每60s，r=0:0.1:2cm",
+      "units": {"time": "s", "radius": "cm", "moisture": "kg/kg"},
+      "uncertainty_expression": "全域阈值检查",
+      "success_criterion": "每行完整且最后时刻达标"
+    },
+    {
+      "id": "Q4.1",
+      "parent": "Q4",
+      "action_keywords": ["确定", "移动边界模拟"],
+      "target_object": "使用R(t)与附录4经验式的收缩药材烘干时长",
+      "decision_user": "烘干停止决策者",
+      "output_form": "移动边界水分传递模型与时长(h)",
+      "granularity": "r∈[0,R(t)]，R(t)数据至0–72h",
+      "units": {"time": "s/h", "radius": "cm（求解时转m）", "moisture": "kg/kg"},
+      "uncertainty_expression": "半径插值、移网格、时步与质量守恒误差",
+      "success_criterion": "移动域几何一致、通量守恒、常半径回归测试通过"
+    },
+    {
+      "id": "Q4.2",
+      "parent": "Q4",
+      "action_keywords": ["给出"],
+      "target_object": "表6的移动域水分场采样",
+      "decision_user": "评阅者",
+      "output_form": "论文表格",
+      "granularity": "每6h，每0.5cm且显式给出药材表面",
+      "units": {"time": "h", "radius": "cm", "moisture": "kg/kg"},
+      "uncertainty_expression": "输出插值误差",
+      "success_criterion": "不得对r>R(t)的格点伪造数值"
+    },
+    {
+      "id": "Q4.3",
+      "parent": "Q4",
+      "action_keywords": ["保存"],
+      "target_object": "移动域内至达标时的完整水分场",
+      "decision_user": "组委会/评阅者",
+      "output_form": "result4.xlsx",
+      "granularity": "每60s，名义每0.1cm+精确表面列；矩形表口径待H1确认",
+      "units": {"time": "s", "radius": "cm", "moisture": "kg/kg"},
+      "uncertainty_expression": "输出重采样误差和域外单元标记",
+      "success_criterion": "表面列恒为r=R(t)，域外格点显式缺省而非数值0"
+    }
+  ],
+  "relationships": [
+    {"from": "Q1.1", "to": "Q1.2", "type": "dependency", "detail": "Q1.2由Q1.1同一求解场抽样"},
+    {"from": "Q1.1", "to": "Q1.3", "type": "dependency", "detail": "Q1.3是Q1.1的完整网格导出"},
+    {"from": "Q1.1", "to": "Q2.1", "type": "shared_definition", "detail": "共享T、C、径向几何、初值与边界数据；系数口径不同"},
+    {"from": "Q2.1", "to": "Q3.1", "type": "dependency", "detail": "Q3是Q2模型的长时间延伸与首次阈值事件"},
+    {"from": "Q3.1", "to": "Q3.2", "type": "dependency", "detail": "表5时刻与烘干结束时间由Q3.1决定"},
+    {"from": "Q3.1", "to": "Q3.3", "type": "dependency", "detail": "result3终点由Q3.1决定"},
+    {"from": "Q3.1", "to": "Q4.1", "type": "difference_comparison", "detail": "Q4加入R(t)收缩与附录4系数，应与Q3比较时长差异"},
+    {"from": "Q4.1", "to": "Q4.2", "type": "dependency", "detail": "表6由移动域求解抽样"},
+    {"from": "Q4.1", "to": "Q4.3", "type": "dependency", "detail": "result4由移动域求解重采样"},
+    {"from": "Q3.3", "to": "Q4.3", "type": "trade_off", "detail": "Q3固定半径矩形网格简单；Q4需处理随R(t)变化的有效列"}
+  ],
+  "constraints": [
+    {"id": "C-H0-01", "category": "explicit", "statement": "未重开H0且获团队批准前不得改选其他题。", "source": "decisions/H0-selection.json", "formal_check": "selected_problem.id == 'A'", "scope": ["ALL"], "hardness": "hard", "status": "formalized"},
+    {"id": "C-UNIT-01", "category": "physical", "statement": "内部求解统一SI；r_cm/100转m；经验式中T_K=T_C+273.15。", "source": "A题.pdf pp.1-4", "formal_check": "assert R_m == R_cm/100 and T_K == T_C+273.15", "scope": ["Q1.1", "Q2.1", "Q3.1", "Q4.1"], "hardness": "hard", "status": "formalized"},
+    {"id": "C-GEO-01", "category": "physical", "statement": "固定几何题中0<=r<=0.02m；移动边界中0<=r<=R(t)。", "source": "A题.pdf pp.1-3", "formal_check": "0 <= r <= (0.02 if q in [1,2,3] else R(t))", "scope": ["Q1.1", "Q2.1", "Q3.1", "Q4.1"], "hardness": "hard", "status": "formalized"},
+    {"id": "C-IC-01", "category": "explicit", "statement": "初始T=28°C、C=2.55kg/kg；是否空间均匀为待批准假设。", "source": "A题.pdf p.1", "formal_check": "max_r|T(r,0)-28|<tol and max_r|C(r,0)-2.55|<tol if uniform assumption approved", "scope": ["Q1.1", "Q2.1", "Q3.1", "Q4.1"], "hardness": "hard", "status": "partially_formalized"},
+    {"id": "C-SYM-01", "category": "physical", "statement": "一维径向模型中中心对称：∂T/∂r=∂C/∂r=0 at r=0。", "source": "圆柱几何与径向输出的建模解释", "formal_check": "abs(dT_dr(0,t))<tol and abs(dC_dr(0,t))<tol", "scope": ["Q1.1", "Q2.1", "Q3.1", "Q4.1"], "hardness": "hard_if_1D_radial_approved", "status": "h1_pending"},
+    {"id": "C-BC-01", "category": "explicit", "statement": "问题1表面热/质交换应使用给定的对流系数与附件1环境序列。", "source": "A题.pdf pp.1,3", "formal_check": "-k*dT_dr = h*(T_surface-T_inf); -D*dC_dr = h_m*(C_surface-C_inf), sign convention documented", "scope": ["Q1.1"], "hardness": "hard", "status": "formalized_with_definition_risk"},
+    {"id": "C-BC-02", "category": "data", "statement": "附件1仅到14400s；Q3/Q4长时间边界延拓规则未显式给出。", "source": "附件1.xlsx; A题.pdf p.2", "formal_check": "for t>14400s boundary_policy in team_approved_options", "scope": ["Q3.1", "Q4.1"], "hardness": "hard", "status": "h1_pending"},
+    {"id": "C-BC-03", "category": "data", "statement": "问题2-4的换热/传质系数是否沿用问题1未明示。", "source": "A题.pdf pp.2-4", "formal_check": "coefficient_policy documented and sensitivity tested", "scope": ["Q2.1", "Q3.1", "Q4.1"], "hardness": "hard", "status": "h1_pending"},
+    {"id": "C-DATA-01", "category": "temporal", "statement": "附件1时间严格递增且60s等间隔；输出1s需显式插值，不得使用未来数据做因果预测声称。", "source": "附件1.xlsx", "formal_check": "all(diff(t)==60); interpolation evaluated only within available interval unless approved extension", "scope": ["Q1.1", "Q2.1", "Q3.1", "Q4.1"], "hardness": "hard", "status": "formalized"},
+    {"id": "C-DATA-02", "category": "temporal", "statement": "附件2时间严格递增且1800s等间隔，R(t)非增；求导需处理小数据四舍五入导致的长平台。", "source": "附件2.xlsx", "formal_check": "all(diff(t)==1800) and all(diff(R)<=0)", "scope": ["Q4.1"], "hardness": "hard", "status": "formalized"},
+    {"id": "C-RANGE-01", "category": "practical_domain", "statement": "T>0K，C>=0，rho>0，cp>0，k>0，D>0。", "source": "A题.pdf pp.3-4", "formal_check": "min(T_K)>0 and min(C)>=0 and min(rho,cp,k,D)>0", "scope": ["Q1.1", "Q2.1", "Q3.1", "Q4.1"], "hardness": "hard", "status": "formalized"},
+    {"id": "C-EMP-01", "category": "practical_domain", "statement": "三组经验式的标定范围、数据来源和外推误差均未给出。", "source": "A题.pdf pp.3-4", "formal_check": "flag every evaluation outside observed C/T envelope; run coefficient sensitivity", "scope": ["Q1.1", "Q2.1", "Q3.1", "Q4.1"], "hardness": "soft_but_must_disclose", "status": "unverified_scope"},
+    {"id": "C-STOP-01", "category": "explicit", "statement": "问题3要求药材各处C<0.15kg/kg，严格不等号的数值容差需公布。", "source": "A题.pdf p.2", "formal_check": "max(C[:,t]) < 0.15 - epsilon_reported", "scope": ["Q3.1"], "hardness": "hard", "status": "formalized_with_tolerance_pending"},
+    {"id": "C-STOP-02", "category": "explicit", "statement": "问题4未重述达标阈值，是否继承Q3的0.15kg/kg待H1确认。", "source": "A题.pdf pp.2-3", "formal_check": "q4_stop_rule == team_approved_rule", "scope": ["Q4.1"], "hardness": "hard", "status": "h1_pending"},
+    {"id": "C-MOVE-01", "category": "physical", "statement": "移动边界网格必须满足几何守恒，并在R'(t)=0时回归固定域模型。", "source": "H0 required_validations; A题.pdf p.2", "formal_check": "constant_R regression plus discrete geometric conservation residual < reported tolerance", "scope": ["Q4.1", "Q4.2", "Q4.3"], "hardness": "hard", "status": "formalized_family_level"},
+    {"id": "C-MOVE-02", "category": "physical", "statement": "题面只给半径R(t)，长度是否收缩未给；全局质量守恒需公开长度假设。", "source": "A题.pdf pp.1-3", "formal_check": "length_policy documented before volume/mass audit", "scope": ["Q4.1"], "hardness": "hard_for_global_mass_claim", "status": "h1_pending"},
+    {"id": "C-OUT-01", "category": "explicit", "statement": "所有题目结果保留四位小数，但内部求解不得提前四舍五入。", "source": "A题.pdf p.1", "formal_check": "round only at export; stored solver precision retained", "scope": ["Q1.2", "Q1.3", "Q2.2", "Q2.3", "Q3.2", "Q3.3", "Q4.2", "Q4.3"], "hardness": "hard", "status": "formalized"},
+    {"id": "C-OUT-02", "category": "explicit", "statement": "必须使用result1.xlsx–result4.xlsx指定工作表与单位。", "source": "A题.pdf p.3; 附件3模板", "formal_check": "sheet names and header units match template contracts", "scope": ["Q1.3", "Q2.3", "Q3.3", "Q4.3"], "hardness": "hard", "status": "formalized"},
+    {"id": "C-OUT-03", "category": "explicit", "statement": "result4不能在r>R(t)的域外单元填0或伪数据；矩形输出策略待H1确认。", "source": "A题.pdf p.3; result4.xlsx", "formal_check": "every numeric C cell satisfies r<=R(t), except explicit exact-surface column", "scope": ["Q4.3"], "hardness": "hard", "status": "h1_pending"}
+  ],
+  "deliverables": [
+    {"id": "D-Q1-TABLES", "class": "contest_paper", "questions": ["Q1.2"], "content": "表1温度+表2水分浓度", "format": "论文表格，四位小数", "evidence_source": "Q1.1冻结求解", "acceptance_check": "35个温度+35个水分值均可追溯"},
+    {"id": "D-Q1-XLSX", "class": "contest_support", "questions": ["Q1.3"], "content": "result1.xlsx", "format": "2工作表，1s×0.1cm网格", "evidence_source": "Q1.1", "acceptance_check": "模板合规+抽样复算"},
+    {"id": "D-Q2-TABLES", "class": "contest_paper", "questions": ["Q2.2"], "content": "表3温度+表4水分浓度", "format": "论文表格，四位小数", "evidence_source": "Q2.1", "acceptance_check": "30+30个采样值与result2一致"},
+    {"id": "D-Q2-XLSX", "class": "contest_support", "questions": ["Q2.3"], "content": "result2.xlsx", "format": "2工作表，1s×0.1cm网格", "evidence_source": "Q2.1", "acceptance_check": "时间范围经H1确认后进行完整性检查"},
+    {"id": "D-Q3-TIME", "class": "contest_paper", "questions": ["Q3.1"], "content": "烘干所需时间(h)", "format": "标量+不确定性/网格收敛说明", "evidence_source": "全域首次阈值事件", "acceptance_check": "最后未达标时刻与首个达标时刻均可复核"},
+    {"id": "D-Q3-TABLE", "class": "contest_paper", "questions": ["Q3.2"], "content": "表5", "format": "每6h×0.5cm，含结束时间", "evidence_source": "Q3.1", "acceptance_check": "表值与result3一致"},
+    {"id": "D-Q3-XLSX", "class": "contest_support", "questions": ["Q3.3"], "content": "result3.xlsx", "format": "60s×0.1cm", "evidence_source": "Q3.1", "acceptance_check": "直至达标时且全域有效"},
+    {"id": "D-Q4-TIME", "class": "contest_paper", "questions": ["Q4.1"], "content": "考虑收缩的烘干时长", "format": "标量+与Q3差异解释", "evidence_source": "移动边界全域阈值事件", "acceptance_check": "移动域守恒、收敛和常半径回归检查"},
+    {"id": "D-Q4-TABLE", "class": "contest_paper", "questions": ["Q4.2"], "content": "表6", "format": "每6h，每0.5cm+实际表面", "evidence_source": "Q4.1", "acceptance_check": "所有数值坐标在当时有效域内"},
+    {"id": "D-Q4-XLSX", "class": "contest_support", "questions": ["Q4.3"], "content": "result4.xlsx", "format": "60s×名义0.1cm+表面", "evidence_source": "Q4.1", "acceptance_check": "域外单元显式空缺，表面列与R(t)一致"},
+    {"id": "D-PAPER", "class": "official_submission", "questions": ["Q1.1", "Q1.2", "Q2.1", "Q2.2", "Q3.1", "Q3.2", "Q4.1", "Q4.2"], "content": "摘要、正文、附录、参考文献前AI使用声明", "format": "单一PDF或Word，建议PDF，<=20MB，不压缩", "evidence_source": "2026官方论文格式规范+AI规定", "acceptance_check": "电子版首页为摘要，无身份信息，无承诺书/编号页"},
+    {"id": "D-SUPPORT", "class": "official_submission", "questions": ["Q1.3", "Q2.3", "Q3.3", "Q4.3"], "content": "全部可运行源程序、自查数据、中间结果、四个result文件及AI使用详情PDF", "format": "ZIP或RAR，<=20MB", "evidence_source": "2026官方论文格式规范+AI规定", "acceptance_check": "附录文件清单与压缩包相符，无身份信息"}
+  ],
+  "unresolved_h1_questions": [
+    "是否批准轴对称一维径向模型并忽略轴向端面效应？",
+    "t>14400s时烘房温度和水分浓度采用末值、稳态窗均值，还是其他团队给定工艺值？",
+    "问题2-4是否沿用问题1的对流换热和传质系数？",
+    "附件1的烘房水分浓度与药材干基含水率是否可直接用作同一传质势差？",
+    "result2.xlsx的每1s完整结果是否限定为0–3h，以及各result文件是否包含t=0行？",
+    "问题4是否继承问题3的0.15kg/kg停止阈值？",
+    "问题4中药材长度是否视为恒定？",
+    "result4.xlsx采用固定物理半径列+域外空值+精确表面列，还是归一化坐标列？",
+    "经验公式无标定范围时，团队接受何种敏感性和失效声明？"
+  ],
+  "intake_disposition": "READY_FOR_H1_TEAM_DECISION"
+}

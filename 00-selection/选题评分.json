@@ -1,105 +1,12 @@
 {
-  "schema_version": "1.0",
-  "criteria_weights": {
-    "problem_understanding": 0.25,
-    "data_processability": 0.15,
-    "result_verifiability": 0.20,
-    "model_feasibility": 0.15,
-    "ai_reliability": 0.25
-  },
-  "score_scale": {
-    "min": 0,
-    "max": 10,
-    "higher_is_better": true
-  },
-  "candidates": [
-    {
-      "id": "2025-B",
-      "title": "B 题 碳化硅外延层厚度的确定",
-      "criteria": {
-        "problem_understanding": {
-          "score": 8,
-          "confidence": "HIGH",
-          "evidence": [
-            "题面明确三项递进任务：单次反射模型、碳化硅双角度实测计算与可靠性、多光束条件及硅数据分析并在必要时修正碳化硅结果。",
-            "题面明确四个附件的材料、同片关系、入射角、波数单位和反射率单位。",
-            "预期交付可明确为数学推导、算法、两种材料的厚度结果、可靠性/精度分析及多光束影响判断。"
-          ],
-          "risks": [
-            "折射率随波长和载流子浓度变化，但题面未给定具体色散关系或掺杂浓度，后续需经 H1 冻结解释口径。",
-            "“必要条件”和“消除影响”的操作化判据需结合权威光学资料定义，存在少量会影响路线的领域判断。"
-          ],
-          "score_range": [7, 9]
-        },
-        "data_processability": {
-          "score": 8,
-          "confidence": "HIGH",
-          "evidence": [
-            "四个 XLSX 均可读取，均为单工作表、2 列、7469 条数据，无缺失、公式或 Excel 错误值。",
-            "四份数据波数网格一致，范围 399.6747–4000.122 cm^-1，单调且唯一，便于同片双角度对照。",
-            "文件体量小，适合在竞赛时间内完成异常检测、滤波敏感性与频域/峰值处理。"
-          ],
-          "risks": [
-            "附件2反射率最大值 102.7393552%，超过通常百分比上界；四份附件首个反射率均为0，必须保留原始值并审计仪器基线、归一化与端点异常。",
-            "缺少仪器分辨率、噪声模型、校准记录、折射率/掺杂元数据和厚度真值，限制绝对误差验证。"
-          ],
-          "score_range": [7, 9]
-        },
-        "result_verifiability": {
-          "score": 8,
-          "confidence": "MEDIUM",
-          "evidence": [
-            "同一晶圆片分别在10°与15°测量，可将两角度所得厚度一致性作为独立交叉检查。",
-            "干涉条纹峰间距、频域主峰、残差结构、物理正值与角度折射关系可形成多条可复现实验和失败条件。",
-            "可比较单光束与多光束模型的拟合残差、峰宽/谐波和厚度稳定性，并进行区间、窗口、滤波及折射率敏感性分析。"
-          ],
-          "risks": [
-            "未提供认证厚度真值，因此可充分检验内部一致性与模型相对优劣，但无法仅凭附件证明绝对准确度。",
-            "若折射率色散数据来源不可靠，两个角度的一致结果仍可能存在共同系统偏差。"
-          ],
-          "score_range": [7, 9]
-        },
-        "model_feasibility": {
-          "score": 8,
-          "confidence": "MEDIUM",
-          "evidence": [
-            "单次反射情形可从相位差与条纹级次建立最小可运行基线，并用峰值间距或回归求厚度。",
-            "多光束情形可基于界面反射率、相位叠加及 Airy 型响应建立扩展模型，并以四份一维光谱完成数值实现。",
-            "数据规模仅约3万行，常规数值计算、峰检测、频谱分析、非线性拟合和稳健性检查均不构成算力瓶颈。"
-          ],
-          "risks": [
-            "折射率色散与多光束判据若处理不当会造成系统偏差；后续必须先做简单基线，再以验证增益决定是否保留复杂模型。",
-            "峰选取、相位级次、边缘波段和局部极值可能产生多解或算法敏感性，需要预注册失败条件。"
-          ],
-          "score_range": [7, 9]
-        },
-        "ai_reliability": {
-          "score": 7,
-          "confidence": "MEDIUM",
-          "evidence": [
-            "核心数据、单位、角度与任务均由原始题面和附件锚定，数值结果可由代码、哈希和交叉角度检查复现。",
-            "薄膜干涉的基本方程和半导体材料光学性质可从权威教材、标准或论文核验。",
-            "官方比赛题目与2025报名参赛须知均可由全国组委会官网追溯。"
-          ],
-          "risks": [
-            "AI容易在未给出掺杂浓度时臆造碳化硅/硅折射率公式或参数，也可能把内部一致性误写成绝对精度证明。",
-            "多光束“必要条件”、材料色散和仪器异常解释需要原始文献或专家判断，不能凭模型常识直接定论。",
-            "竞赛期间独立完成、引用、匿名化和提交要求属于高风险合规事项，必须由队员按2025官方文件确认。"
-          ],
-          "score_range": [6, 8]
-        }
-      },
-      "weighted_total": 77.5,
-      "hard_stops": [],
-      "unknowns": [
-        "队伍是否具备薄膜光学、信号处理和数值拟合的实际能力与时间预算尚未提供。",
-        "适用的碳化硅与硅折射率色散关系、掺杂浓度和温度条件尚未冻结。",
-        "四份光谱的仪器型号、分辨率、校准和噪声元数据未知。",
-        "没有外延层厚度真值或独立测量基准，绝对精度只能通过后续外部证据补强。",
-        "所在赛区的附加提交要求尚未核验。"
-      ]
-    }
+  "schema_version":"1.0",
+  "criteria_weights":{"problem_understanding":0.25,"data_processability":0.15,"result_verifiability":0.20,"model_feasibility":0.15,"ai_reliability":0.25},
+  "score_scale":{"min":0,"max":10,"higher_is_better":true},
+  "method_note":"固定0-10量表与25/15/20/15/25权重；weighted_total=sum(score*weight*10)，四舍五入2位。仅比较A/B/C，结果不替团队作H0决定。",
+  "candidates":[
+    {"id":"A","title":"药材的烘干问题","criteria":{"problem_understanding":{"score":9,"confidence":"HIGH","evidence":["input/A题/A题.pdf pp.1-4明确4问、几何尺寸、单位、输出网格和经验公式"],"risks":["问题4移动边界耦合需团队确认"]},"data_processability":{"score":8,"confidence":"HIGH","evidence":["附件1 242×3、0–14400s；附件2 146×2、0–259200s；模板4份可读"],"risks":["采样插值和单位换算需审计"]},"result_verifiability":{"score":8,"confidence":"MEDIUM","evidence":["要求多时刻/半径表格和完整网格，可做守恒、边界、网格收敛检查"],"risks":["经验公式不确定性"]},"model_feasibility":{"score":7,"confidence":"MEDIUM","evidence":["径向热-质传递PDE与给定公式可形成基线"],"risks":["长时数值稳定性、移动边界输出量"]},"ai_reliability":{"score":7,"confidence":"MEDIUM","evidence":["参数、单位、公式、格式显式给出"],"risks":["干基含水率/温标/边界条件易被误读"]}},"weighted_total":78.5,"hard_stops":[],"unknowns":["官方format2026.doc条款未解析","问题4移动边界方案待确认"]},
+    {"id":"B","title":"无线电干扰源的快速自动定位与清除","criteria":{"problem_understanding":{"score":8,"confidence":"HIGH","evidence":["input/B题/B题.pdf pp.1-4和两份协议DOCX明确定位、清除、时间窗、统计指标"],"risks":["黑盒案例真值不可读"]},"data_processability":{"score":3,"confidence":"LOW","evidence":["仅有协议DOCX；未发现模拟器、案例数据或离线回放"],"risks":["核心测试数据由外部随机模拟器提供"]},"result_verifiability":{"score":6,"confidence":"MEDIUM","evidence":["协议给出±1°误差、接收半径、清除半径20m和日志要求"],"risks":["正式测试只有3次且当前无法复现"]},"model_feasibility":{"score":4,"confidence":"LOW","evidence":["可写几何搜索基线，但需HTTP模拟器联调"],"risks":["软件下载、登录联网、实时限时、截止日"]},"ai_reliability":{"score":4,"confidence":"LOW","evidence":["协议约束清楚但定向源与案例不可见"],"risks":["难以从题面验证黑盒覆盖率"]}},"weighted_total":52.5,"hard_stops":["核心正式测试依赖的模拟器/案例不可读或不可离线复现"],"unknowns":["模拟器版本可用性","正式日志和三次表现","联网登录条件"]},
+    {"id":"C","title":"微网与外部电网电力调控策略","criteria":{"problem_understanding":{"score":9,"confidence":"HIGH","evidence":["input/C题/C题.pdf pp.1-3明确4层策略、储能参数、费用规则、输出模板"],"risks":["计划/调整/紧急购电结算边界需统一"]},"data_processability":{"score":9,"confidence":"HIGH","evidence":["附件2两表366×145、附件3 1461×26、附件4 366×145；全年覆盖且模板完整"],"risks":["0:00+1跨日索引"]},"result_verifiability":{"score":8,"confidence":"HIGH","evidence":["功率平衡、SOC上下限/终值、容量和费用可逐时复算，全年回测可用"],"risks":["预报误差需留出评估"]},"model_feasibility":{"score":8,"confidence":"HIGH","evidence":["线性/混合整数调度适合145步长和365天规模"],"risks":["多问题联合结算需控时"]},"ai_reliability":{"score":8,"confidence":"HIGH","evidence":["参数、倍数、字段、日期均由题面/表格明确"],"risks":["效率方向与违约费用易误读"]}},"weighted_total":84.0,"hard_stops":[],"unknowns":["官方format2026.doc条款未解析","预报信息集边界待H1确认"]}
   ],
-  "ranking": ["2025-B"],
-  "method_note": "唯一候选按固定五项权重执行 go/no-go 筛查；评分依据为项目外只读原题与附件的复核记录（绝对路径和 SHA-256 见候选题清单）。77.5 分是证据支持下的可行性估计，不是团队批准。总分=8×2.5+8×1.5+8×2.0+8×1.5+7×2.5=77.5。"
+  "ranking":["C","A","B"]
 }

@@ -1,95 +1,14 @@
 {
-  "schema_version": "1.0",
-  "competition": "2025 年高教社杯全国大学生数学建模竞赛",
-  "selection_mode": "single_candidate_go_no_go",
-  "inventory_completed_at": "2026-09-04T17:05:00+08:00",
-  "source_scope_note": "题面与附件均位于 PROJECT_ROOT 外的只读原题目录；本清单如实记录其绝对路径与 SHA-256。由于 handoff 文件记录只能声明 PROJECT_ROOT 内文件，这些外部原始输入不会列入 handoff.inputs，也不会伪造成项目内相对路径。",
-  "candidates": [
-    {
-      "id": "2025-B",
-      "title": "B 题 碳化硅外延层厚度的确定",
-      "problem_statement": {
-        "path": "C:\\Users\\Lenovo\\Desktop\\数模\\2025年高教社全国大学生数学建模竞赛题目\\B题\\B题.pdf",
-        "sha256": "b0b2ce649282c2d7063af3c30ac9c0d931512dc86014d3147bc765d8f1c8cf87",
-        "pages": 2,
-        "readable": true,
-        "extraction": "pdfplumber text layer; both pages yielded text"
-      },
-      "attachments": [
-        {
-          "name": "附件1.xlsx",
-          "path": "C:\\Users\\Lenovo\\Desktop\\数模\\2025年高教社全国大学生数学建模竞赛题目\\B题\\附件\\附件1.xlsx",
-          "sha256": "b42f8bdabe7497951284cd044386c3cdf9d349b5e8ef4baaa0336e65ff84c67b",
-          "material": "碳化硅晶圆片",
-          "incidence_angle_deg": 10,
-          "sheets": ["Sheet1"],
-          "effective_rows": 7470,
-          "data_rows": 7469,
-          "columns": ["波数 (cm-1)", "反射率 (%)"],
-          "first_data_row": [399.6747, 0],
-          "last_data_row": [4000.122, 18.26850504],
-          "missing_values": 0,
-          "formulas": 0,
-          "excel_errors": [],
-          "readable": true
-        },
-        {
-          "name": "附件2.xlsx",
-          "path": "C:\\Users\\Lenovo\\Desktop\\数模\\2025年高教社全国大学生数学建模竞赛题目\\B题\\附件\\附件2.xlsx",
-          "sha256": "24b3113e80d5ec5458ba4f447df9ed185578481e8b0081bdf0673689505e49d0",
-          "material": "碳化硅晶圆片",
-          "incidence_angle_deg": 15,
-          "sheets": ["Sheet1"],
-          "effective_rows": 7470,
-          "data_rows": 7469,
-          "columns": ["波数 (cm-1)", "反射率 (%)"],
-          "first_data_row": [399.6747, 0],
-          "last_data_row": [4000.122, 19.28237573],
-          "missing_values": 0,
-          "formulas": 0,
-          "excel_errors": [],
-          "readable": true
-        },
-        {
-          "name": "附件3.xlsx",
-          "path": "C:\\Users\\Lenovo\\Desktop\\数模\\2025年高教社全国大学生数学建模竞赛题目\\B题\\附件\\附件3.xlsx",
-          "sha256": "79e9f66a00409f1d1130d9f4f3d76b4d5e5a1ccd3ac2d24dc0af8ecc583d0ec8",
-          "material": "硅晶圆片",
-          "incidence_angle_deg": 10,
-          "sheets": ["Sheet1"],
-          "effective_rows": 7470,
-          "data_rows": 7469,
-          "columns": ["波数 (cm-1)", "反射率 (%)"],
-          "first_data_row": [399.6747, 0],
-          "last_data_row": [4000.122, 28.3130393],
-          "missing_values": 0,
-          "formulas": 0,
-          "excel_errors": [],
-          "readable": true
-        },
-        {
-          "name": "附件4.xlsx",
-          "path": "C:\\Users\\Lenovo\\Desktop\\数模\\2025年高教社全国大学生数学建模竞赛题目\\B题\\附件\\附件4.xlsx",
-          "sha256": "9cf1400404c4560958da06685beb8c2e1e4df5918a6e13863663a54440ba12e3",
-          "material": "硅晶圆片",
-          "incidence_angle_deg": 15,
-          "sheets": ["Sheet1"],
-          "effective_rows": 7470,
-          "data_rows": 7469,
-          "columns": ["波数 (cm-1)", "反射率 (%)"],
-          "first_data_row": [399.6747, 0],
-          "last_data_row": [4000.122, 31.06725458],
-          "missing_values": 0,
-          "formulas": 0,
-          "excel_errors": [],
-          "readable": true
-        }
-      ],
-      "inventory_notes": [
-        "四个附件的波数均从 399.6747 单调递增至 4000.122 cm^-1，且各有 7469 个唯一波数点。",
-        "四个附件首个反射率均为 0；附件2最大反射率为 102.7393552%，超过通常百分比上界，需在后续数据审计中判断仪器基线、归一化或异常值原因。",
-        "题面只给出光谱、材料和入射角，未提供外延层厚度真值、折射率色散参数、掺杂浓度或仪器标定信息。"
-      ]
-    }
+  "schema_version":"1.0",
+  "project_root":"C:/Users/Linza/Documents/CUMCM26-workflow-2026",
+  "scope":"仅比较 A、B、C；按用户最新指令排除 D、E",
+  "A_statement_actual_path":"input/A��/A��.pdf",
+  "inventory_basis":["input/format2026.doc","C:/Users/Linza/Documents/xwechat_files/wxid_x1xhd0a3fqde22_943d/msg/file/2026-09/CUMCM2026Problems.zip"],
+  "zip_cross_check":"压缩包共46个条目；A、B、C题面及附件与项目 input/ 对应。项目中的 A 题目录/文件名显示为 A��/A��.pdf，zip 中同一文件名为 A题/A题.pdf，判定为命名乱码而非缺失。",
+  "official_rules":{"path":"input/format2026.doc","status":"present_legacy_doc_unparsed","note":"旧版 .doc 在当前环境未成功解析；未猜测格式条款，H0/H4 前需人工核对。"},
+  "candidates":[
+    {"id":"A","title":"药材的烘干问题","statement":"input/A题/A题.pdf（实际目录名乱码）","attachments":["input/A题/附件/附件1.xlsx","input/A题/附件/附件2.xlsx","input/A题/附件/附件3/result1.xlsx","input/A题/附件/附件3/result2.xlsx","input/A题/附件/附件3/result3.xlsx","input/A题/附件/附件3/result4.xlsx"],"observed":"附件1为242×3、时间0–14400 s；附件2为146×2、时间0–259200 s且半径2→1.198 cm；4个结果模板可读。"},
+    {"id":"B","title":"无线电干扰源的快速自动定位与清除","statement":"input/B题/B题.pdf","attachments":["input/B题/附件/附件1.docx","input/B题/附件/附件2.docx"],"observed":"题面与协议DOCX可读；依赖外部模拟器、联网登录和三次正式测试，input未含模拟器或案例真值。"},
+    {"id":"C","title":"微网与外部电网电力调控策略","statement":"input/C题/C题.pdf","attachments":["input/C题/附件/附件1.xlsx","input/C题/附件/附件2.xlsx","input/C题/附件/附件3.xlsx","input/C题/附件/附件4.xlsx","input/C题/附件/附件5/result1.xlsx","input/C题/附件/附件5/result2.xlsx","input/C题/附件/附件5/result3.xlsx","input/C题/附件/附件5/result4-2.xlsx","input/C题/附件/附件5/result4-3.xlsx"],"observed":"附件1为145×4；附件2负载/实际光伏各366×145；附件3为1461×26；附件4为366×145；模板完整。"}
   ]
 }

@@ -1,4 +1,0 @@
-interface:
-  display_name: "数学建模论文生产"
-  short_description: "依据冻结决策与真实证据生成LaTeX论文、PDF和如实的AI使用声明"
-  default_prompt: "使用 $math-modeling-paper 根据已批准证据和图表生成以LaTeX为唯一正文源的可审阅论文及编译PDF。"

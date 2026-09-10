@@ -1,4 +1,0 @@
-interface:
-  display_name: "数学建模独立审查"
-  short_description: "独立复核问题对齐、计算复现、论文一致性和AI合规"
-  default_prompt: "使用 $math-modeling-audit 对完成的数学建模项目进行独立终审。"

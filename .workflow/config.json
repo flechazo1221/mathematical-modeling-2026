@@ -1,9 +1,32 @@
 {
   "schema_version": "1.0",
-  "project_id": "高教社杯全国大学生数学建模竞赛-2025",
+  "project_id": "高教社杯全国大学生数学建模竞赛-2026",
   "competition": "高教社杯全国大学生数学建模竞赛",
-  "year": 2025,
+  "year": 2026,
   "task_creation_authorized": true,
   "project_execution": "same-local-directory",
-  "created_at": "2026-09-04T16:32:44+08:00"
+  "workflow_revision": "2026-appendix-reservation-v1",
+  "workflow_extension_manifest": ".workflow/stage-reservations.json",
+  "effective_stage_order": [
+    "SELECTION",
+    "H0",
+    "INTAKE",
+    "H1",
+    "WAITING_FOR_LITERATURE",
+    "LITERATURE",
+    "DESIGN",
+    "PROTOTYPE",
+    "H2",
+    "COMPUTE",
+    "EVIDENCE",
+    "H3",
+    "FIGURE",
+    "C1_OPTIONAL",
+    "APPENDIX",
+    "PAPER",
+    "AUDIT",
+    "H4",
+    "COMPLETE"
+  ],
+  "created_at": "2026-09-10T18:51:16+08:00"
 }

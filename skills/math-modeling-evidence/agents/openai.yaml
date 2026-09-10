@@ -1,4 +1,0 @@
-interface:
-  display_name: "数学建模证据整理"
-  short_description: "把真实计算结果整理为主张证据链、事实清单和图表需求"
-  default_prompt: "使用 $math-modeling-evidence 将验证结果整理为H3所需的主张—证据材料。"

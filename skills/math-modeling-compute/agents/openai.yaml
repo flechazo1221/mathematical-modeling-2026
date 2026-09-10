@@ -1,4 +1,0 @@
-interface:
-  display_name: "数学建模完整计算"
-  short_description: "执行已批准模型并产出可复现计算、诊断和稳健性证据"
-  default_prompt: "使用 $math-modeling-compute 实现并运行团队批准的模型路线。"

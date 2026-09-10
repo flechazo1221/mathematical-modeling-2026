@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "competition": "高教社杯全国大学生数学建模竞赛",
-  "year": 2025,
+  "year": 2026,
   "rule_status": "UNVERIFIED",
   "official_sources": [],
   "entries": [
     {
       "stage": "SELECTION",
-      "tool_or_model": "Codex tasks (configured model; primary 01a06b8d..., repair 01a06b95...)",
-      "purpose": "2025年国赛B题可行性评估、H0材料准备及交接路径修复",
+      "tool_or_model": "Codex task (configured model)",
+      "purpose": "候选赛题评估与H0材料准备",
       "affected_files": [
         "00-selection/候选题清单.json",
         "00-selection/选题评分.json",
@@ -16,8 +16,24 @@
         "00-selection/H0-选择包.md",
         "00-selection/handoff.json"
       ],
-      "human_review": "等待H0团队选择并确认关键风险",
-      "recorded_at": "2026-09-04T16:46:13+08:00"
+      "human_review": "朱冠熹确认H0选择A题",
+      "recorded_at": "2026-09-10T21:06:21+08:00"
+    },
+    {
+      "stage": "INTAKE",
+      "tool_or_model": "Codex task (configured model)",
+      "purpose": "A题结构化、数据审计、方法族筛选与H1材料准备",
+      "affected_files": [
+        "01-intake/赛题结构化说明.json",
+        "01-intake/附件清单.json",
+        "01-intake/数据审计报告.md",
+        "01-intake/问题方法约束矩阵.md",
+        "01-intake/官方规则与AI合规.md",
+        "01-intake/H1-选择包.md",
+        "01-intake/handoff.json"
+      ],
+      "human_review": "等待H1团队确认问题定义与关键假设",
+      "recorded_at": "2026-09-10T21:58:51+08:00"
     }
   ]
 }

@@ -1,4 +1,0 @@
-interface:
-  display_name: "数学建模原型比较"
-  short_description: "公平实现候选模型最小原型，为H2提供真实证据"
-  default_prompt: "使用 $math-modeling-prototype 对已批准候选方案进行公平的最小原型比较。"

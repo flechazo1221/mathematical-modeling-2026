@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "workflow_revision": "2026-appendix-reservation-v1",
+  "reservations": [
+    {
+      "stage": "APPENDIX",
+      "display_name": "附录撰写",
+      "status": "RESERVED_SKILL_PENDING",
+      "required": true,
+      "position": {
+        "after": "FIGURE_OR_OPTIONAL_C1",
+        "before": "PAPER"
+      },
+      "write_directory": "07-appendix",
+      "skill": null,
+      "substantive_generation_allowed": false,
+      "activation_condition": "用户提供并批准具体附录撰写Skill后，完成控制脚本、初始化目录、handoff schema、监督基线和PAPER输入合同接线。",
+      "paper_guard": {
+        "rule": "PAPER不得在APPENDIX阶段产生并验证PASS handoff之前启动。",
+        "current_behavior": "若流程在具体Skill接入前到达该位置，必须停止并报告BLOCKED，不得跳过占位。"
+      },
+      "inputs": "TBD_BY_FUTURE_SKILL",
+      "required_outputs": "TBD_BY_FUTURE_SKILL",
+      "handoff_contract": "TBD_BY_FUTURE_SKILL",
+      "notes": [
+        "本预留不生成附录实质内容。",
+        "保留现有07-paper目录名称，避免重编号既有阶段；07-appendix在逻辑顺序上严格位于完整论文之前。",
+        "附录阶段是否读取FIGURE、EVIDENCE、COMPUTE或其他材料，由未来Skill明确，不在当前占位中推断。",
+        "未来接入不得绕过H3、可选C1、AI披露或人类提交闸门。"
+      ]
+    }
+  ]
+}

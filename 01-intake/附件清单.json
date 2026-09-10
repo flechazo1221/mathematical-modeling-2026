@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "stage": "INTAKE",
+  "selected_problem": "A",
+  "inventory_completed_at": "2026-09-10T21:45:45+08:00",
+  "files": [
+    {
+      "id": "A-STATEMENT",
+      "path": "input/A��/A��.pdf",
+      "logical_name": "A题.pdf",
+      "role": "selected_problem_statement",
+      "type": "application/pdf",
+      "size_bytes": 553320,
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+      "read_status": "PASS",
+      "structure": {"pages": 4, "text_layer": true},
+      "notes": ["文件目录名与文件名含乱码，通过H0 handoff的SHA-256唯一识别。", "公式已结合原页图视觉复核。"]
+    },
+    {
+      "id": "OFFICIAL-FORMAT-LOCAL",
+      "path": "input/format2026.doc",
+      "logical_name": "全国大学生数学建模竞赛论文格式规范（2026年修订稿）",
+      "role": "official_format_and_cover_template",
+      "type": "application/msword",
+      "size_bytes": 71168,
+      "sha256": "d77de49534649b46ca195d32bd9c56a1fbe06dc96fdcf3e1199e6dd7d9831f4a",
+      "read_status": "PASS",
+      "structure": {"legacy_word_binary": true, "contains": ["格式规范", "说明", "承诺书", "编号专用页"]},
+      "notes": ["通过本机Word只读解析。", "第1–13条与竞赛官网2026修订稿公开文本一致。"]
+    },
+    {
+      "id": "A-ATT-01",
+      "path": "input/A题/附件/附件1.xlsx",
+      "logical_name": "附件1-烘房初期环境序列",
+      "role": "boundary_condition_data",
+      "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 16586,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "read_status": "PASS",
+      "structure": {"sheets": ["Sheet1"], "rows_including_header": 242, "columns": 3, "headers": ["时间", "温度", "水分浓度"], "formula_cells": 0, "merged_ranges": 0},
+      "data_profile": {"records": 241, "time_s": [0, 14400], "time_step_s": 60, "temperature_C": [28.0, 50.246], "ambient_moisture_kg_per_kg": [0.01963, 0.05025], "missing_cells": 0, "duplicate_rows": 0}
+    },
+    {
+      "id": "A-ATT-02",
+      "path": "input/A题/附件/附件2.xlsx",
+      "logical_name": "附件2-药材半径时序",
+      "role": "moving_boundary_data",
+      "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 11485,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "read_status": "PASS",
+      "structure": {"sheets": ["Sheet1"], "rows_including_header": 146, "columns": 2, "headers": ["时间", "半径"], "formula_cells": 0, "merged_ranges": 0},
+      "data_profile": {"records": 145, "time_s": [0, 259200], "time_step_s": 1800, "radius_cm": [1.198, 2.0], "monotonic_nonincreasing": true, "missing_cells": 0, "duplicate_rows": 0}
+    },
+    {
+      "id": "A-TEMPLATE-1",
+      "path": "input/A题/附件/附件3/result1.xlsx",
+      "logical_name": "问题1结果模板",
+      "role": "required_output_template",
+      "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "read_status": "PASS",
+      "structure": {"sheets": ["温度", "水分浓度"], "illustrative_only": true, "header_examples_cm": [0, 0.1, 0.2, "...", 2], "time_examples_s": [1, 2, 3, "..."]},
+      "notes": ["模板只示意首行、前三个时刻与省略号，不是已预分配的全网格。"]
+    },
+    {
+      "id": "A-TEMPLATE-2",
+      "path": "input/A题/附件/附件3/result2.xlsx",
+      "logical_name": "问题2结果模板",
+      "role": "required_output_template",
+      "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 10073,
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "read_status": "PASS",
+      "structure": {"sheets": ["温度", "水分浓度"], "illustrative_only": true, "header_examples_cm": [0, 0.1, 0.2, "...", 2], "time_examples_s": [1, 2, 3, "..."]},
+      "notes": ["result1.xlsx与result2.xlsx的原始模板二进制内容与SHA-256完全相同；语义由题面指定。"]
+    },
+    {
+      "id": "A-TEMPLATE-3",
+      "path": "input/A题/附件/附件3/result3.xlsx",
+      "logical_name": "问题3结果模板",
+      "role": "required_output_template",
+      "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 9345,
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "read_status": "PASS",
+      "structure": {"sheets": ["Sheet1"], "illustrative_only": true, "header_examples_cm": [0, 0.1, 0.2, "...", 2], "time_examples_s": [60, 120, 180, "..."]}
+    },
+    {
+      "id": "A-TEMPLATE-4",
+      "path": "input/A题/附件/附件3/result4.xlsx",
+      "logical_name": "问题4结果模板",
+      "role": "required_output_template",
+      "type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+      "size_bytes": 9351,
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+      "read_status": "PASS",
+      "structure": {"sheets": ["Sheet1"], "illustrative_only": true, "header_examples_cm": [0, 0.1, 0.2, "...", "药材表面"], "time_examples_s": [60, 120, 180, "..."]},
+      "notes": ["表面位置随R(t)变化；模板未规定域外列填法，必须在H1确认。"]
+    }
+  ],
+  "completeness": {
+    "statement_present": true,
+    "data_attachments_present": true,
+    "all_four_result_templates_present": true,
+    "official_format_present": true,
+    "hashes_match_selection_handoff_where_declared": true,
+    "upstream_handoff_omits_result_templates": true,
+    "blocking_missing_input": false
+  }
+}
