@@ -140,6 +140,8 @@ def audit_layout(fig, clip_tol_px: float = 2.0, overlap_tol_px: float = 1.0
         1. 缺字乱码（FAIL）—— 中文/特殊符号字体未命中。
         2. 文字越界裁切（WARN）—— 标题/轴标签/标注超出画布。
         3. 刻度标签重叠（WARN）—— x/y 轴相邻刻度包围盒相交。
+        4. 自由标注与图例重叠（WARN）—— 数值/注释可能被图例遮住。
+        5. 半透明 patch 互相叠加（WARN）—— 背景可能出现意外深浅色块。
 
     非破坏性：只渲染测量，不修改 fig 内容。
     """
@@ -217,7 +219,65 @@ def audit_layout(fig, clip_tol_px: float = 2.0, overlap_tol_px: float = 1.0
             "y 轴：增大子图高度或减少刻度数。"
         ))
 
+    # ---- 4. 自由标注与图例重叠 ----
+    legend_conflicts: list[str] = []
+    for ax in fig.axes:
+        legend = ax.get_legend()
+        if legend is None or not legend.get_visible():
+            continue
+        try:
+            legend_bb = legend.get_window_extent(renderer)
+        except Exception:
+            continue
+        for t in ax.texts:
+            try:
+                if not t.get_visible() or not t.get_text().strip():
+                    continue
+                text_bb = t.get_window_extent(renderer)
+                if _bbox_intersection_area(text_bb, legend_bb) > 1.0:
+                    legend_conflicts.append(t.get_text().strip().replace("\n", " ")[:24])
+            except Exception:
+                continue
+    if legend_conflicts:
+        uniq = list(dict.fromkeys(legend_conflicts))[:6]
+        issues.append((
+            "WARN",
+            f"以下自由标注与图例重叠，可能显示不完整：{uniq}。"
+            "移动图例或把数值标注移到有明确留白的位置，重渲后逐字符核对。"
+        ))
+
+    # ---- 5. 半透明 patch 叠加 ----
+    translucent_conflicts = 0
+    for ax in fig.axes:
+        patches = []
+        for patch in ax.patches:
+            try:
+                alpha = patch.get_alpha()
+                if patch.get_visible() and alpha is not None and 0 < alpha < 1:
+                    bb = patch.get_window_extent(renderer)
+                    if bb.width > 1 and bb.height > 1:
+                        patches.append(bb)
+            except Exception:
+                continue
+        for i, first in enumerate(patches):
+            for second in patches[i + 1:]:
+                if _bbox_intersection_area(first, second) > 4.0:
+                    translucent_conflicts += 1
+    if translucent_conflicts:
+        issues.append((
+            "WARN",
+            f"检测到 {translucent_conflicts} 处半透明 patch 重叠，背景可能产生意外深浅色块。"
+            "若叠色不编码数据，请改用边界线/括号，或拆成互不重叠的填充区间。"
+        ))
+
     return issues
+
+
+def _bbox_intersection_area(a, b) -> float:
+    """返回两个显示坐标包围盒的交叠面积（像素平方）。"""
+    width = min(a.x1, b.x1) - max(a.x0, b.x0)
+    height = min(a.y1, b.y1) - max(a.y0, b.y0)
+    return max(0.0, width) * max(0.0, height)
 
 
 def _ticklabels_overlap(labels, renderer, axis: str, tol: float) -> bool:

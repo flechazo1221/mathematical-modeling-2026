@@ -1,0 +1,1289 @@
+{
+  "schema_version": "1.0",
+  "stage": "INTAKE",
+  "decision_status": "H1_PENDING",
+  "problem": {
+    "year": 2025,
+    "id": "B",
+    "title": "碳化硅外延层厚度的确定",
+    "primary_questions": 3,
+    "subquestions": 15,
+    "decomposition_note": "3主问：Q1.1；Q2.1–Q2.3；Q3.1–Q3.9（其中Q3.7隐式触发判断、Q3.8–Q3.9条件显式）；I1–I2为跨问支持，共15项。"
+  },
+  "known_information": [
+    {
+      "id": "K01",
+      "category": "background",
+      "source": "PDF:p1背景",
+      "evidence_type": "题面事实转述",
+      "statement": "红外干涉法用于无损厚度测量；外延层/衬底掺杂差异影响折射率。"
+    },
+    {
+      "id": "K02",
+      "category": "background",
+      "source": "PDF:p1折射率段",
+      "evidence_type": "题面事实转述",
+      "statement": "外延层折射率通常不是常数，与波长及载流子浓度等有关；题目未提供具体关系。"
+    },
+    {
+      "id": "K03",
+      "category": "fields",
+      "source": "PDF:p2附件说明及附件Sheet1 A1:B7470",
+      "evidence_type": "题面事实与机器审计",
+      "statement": "四份附件各两字段：波数cm^-1和反射率%；材料/角度由题面定义，见附件清单profiles。"
+    },
+    {
+      "id": "K04",
+      "category": "files",
+      "source": "附件清单.json:inputs",
+      "evidence_type": "哈希核验",
+      "statement": "12项指定输入的大小、类型、SHA-256和重新审计字段详见附件清单；旧材料隔离，不是已批准阶段产物。"
+    },
+    {
+      "id": "K05",
+      "category": "rules",
+      "source": "官方规则与AI合规.md:R1/R2/R3",
+      "evidence_type": "2026全国官方网页直接核验",
+      "statement": "2025题目+2026规则；参赛、格式、AI三项全国规定适用，赛区学校未知。"
+    },
+    {
+      "id": "K06",
+      "category": "assumption",
+      "source": "分析者解释，H1待确认",
+      "evidence_type": "解释非题面给定",
+      "statement": "采用μm报告物理厚度；测量准确性无真值时只给条件性证据；不默认常数折射率。"
+    }
+  ],
+  "requested_questions": [
+    {
+      "id": "Q1.1",
+      "parent": "1",
+      "kind": "explicit",
+      "source": "input/B题/B题.pdf:p1问题1",
+      "action_keywords": [
+        "建立"
+      ],
+      "target": "一次反射/透射条件下的外延层厚度关系",
+      "decision_user": "队伍及厚度测量结果使用者",
+      "output": "符号模型、假设和适用边界；厚度单位μm",
+      "granularity": "按材料/晶圆/角度/候选波段追溯；理论项按条件；非总体外推",
+      "horizon": "无时间预测范围",
+      "uncertainty": "条件性、参数及测量误差；无真值限制",
+      "evaluation_criterion": "量纲、光程与退化极限自洽",
+      "relationships": [
+        {
+          "question_id": "Q2.1",
+          "type": "dependency/input"
+        }
+      ],
+      "primary_task_type": "机理建模",
+      "secondary_task_type": null,
+      "baseline": "受限两束干涉光程关系（折射率保留符号）",
+      "provisional_family": "光学机理/相位关系",
+      "data_basis": "题面p1图1与问题1；无折射率数据",
+      "constraint_ids": [
+        "C01",
+        "C03",
+        "C04",
+        "C05"
+      ],
+      "validation_path": "符号量纲、法向入射极限、单次反射范围检查",
+      "failure_condition": "吸收或相位变化不可忽略而关系未覆盖时失效",
+      "rejected_families": "不采用纯数据黑箱：无厚度标签且题目要求模型",
+      "unknowns_H1": "折射率函数和相位假设待文献、团队决定",
+      "deliverable_ids": [
+        "D-Q1.1"
+      ]
+    },
+    {
+      "id": "Q2.1",
+      "parent": "2",
+      "kind": "explicit",
+      "source": "input/B题/B题.pdf:p1问题2",
+      "action_keywords": [
+        "设计"
+      ],
+      "target": "问题1的厚度计算过程",
+      "decision_user": "队伍及厚度测量结果使用者",
+      "output": "可复现算法说明、输入输出和失败返回",
+      "granularity": "按材料/晶圆/角度/候选波段追溯；理论项按条件；非总体外推",
+      "horizon": "无时间预测范围",
+      "uncertainty": "条件性、参数及测量误差；无真值限制",
+      "evaluation_criterion": "算法与Q1定义一致，保留追溯记录",
+      "relationships": [
+        {
+          "question_id": "Q2.2",
+          "type": "dependency/input"
+        }
+      ],
+      "primary_task_type": "参数估计",
+      "secondary_task_type": "数据分析",
+      "baseline": "在明确波段/折射率条件下用条纹间距估计作为比较基线",
+      "provisional_family": "物理约束参数反演；谱周期或相位提取为候选",
+      "data_basis": "附件1/2有稠密有序双角光谱",
+      "constraint_ids": [
+        "C01",
+        "C03",
+        "C04",
+        "C06",
+        "C07"
+      ],
+      "validation_path": "未来用已知参数合成谱及多窗口稳定性验证",
+      "failure_condition": "条纹不足、重叠频率、色散或不等间距处理不当时失败",
+      "rejected_families": "不先定拟合算法；监督学习无标注样本",
+      "unknowns_H1": "波段、预处理、参数边界与算法以后决定",
+      "deliverable_ids": [
+        "D-Q2.1"
+      ]
+    },
+    {
+      "id": "Q2.2",
+      "parent": "2",
+      "kind": "explicit",
+      "source": "input/B题/B题.pdf:p1问题2",
+      "action_keywords": [
+        "计算"
+      ],
+      "target": "同一SiC晶圆厚度",
+      "decision_user": "队伍及厚度测量结果使用者",
+      "output": "两角度条件估计及共同厚度结论，μm并说明条件",
+      "granularity": "按材料/晶圆/角度/候选波段追溯；理论项按条件；非总体外推",
+      "horizon": "无时间预测范围",
+      "uncertainty": "条件性、参数及测量误差；无真值限制",
+      "evaluation_criterion": "跨角一致性与可复现性，不能宣称真值精度",
+      "relationships": [
+        {
+          "question_id": "Q2.3",
+          "type": "dependency/input"
+        },
+        {
+          "question_id": "Q3.9",
+          "type": "difference/comparison"
+        }
+      ],
+      "primary_task_type": "参数估计",
+      "secondary_task_type": null,
+      "baseline": "分别按Q2.1估计，暂不强制联合共享",
+      "provisional_family": "受物理约束的独立/联合反演候选",
+      "data_basis": "附件1/2对应同一晶圆10°/15°",
+      "constraint_ids": [
+        "C02",
+        "C03",
+        "C04",
+        "C06",
+        "C08"
+      ],
+      "validation_path": "比较独立估计差异、保留角度检验与残差",
+      "failure_condition": "多个厚度/折射率组合同样解释数据则不能报唯一值",
+      "rejected_families": "不做外推预测：无目标时间；不把两材料合并",
+      "unknowns_H1": "共享厚度可作题面结构约束；共享光学参数需另证",
+      "deliverable_ids": [
+        "D-Q2.2"
+      ]
+    },
+    {
+      "id": "Q2.3",
+      "parent": "2",
+      "kind": "explicit",
+      "source": "input/B题/B题.pdf:p1问题2",
+      "action_keywords": [
+        "分析"
+      ],
+      "target": "SiC结果可靠性",
+      "decision_user": "队伍及厚度测量结果使用者",
+      "output": "不确定性来源、敏感性、残差及局限",
+      "granularity": "按材料/晶圆/角度/候选波段追溯；理论项按条件；非总体外推",
+      "horizon": "无时间预测范围",
+      "uncertainty": "条件性、参数及测量误差；无真值限制",
+      "evaluation_criterion": "区分重复性/稳定性和绝对准确度",
+      "relationships": [
+        {
+          "question_id": "Q3.2",
+          "type": "consistent/shared definition"
+        }
+      ],
+      "primary_task_type": "不确定性评价",
+      "secondary_task_type": "数据分析",
+      "baseline": "波段与折射率扰动下的估计范围比较",
+      "provisional_family": "敏感性/可识别性/结构化重采样候选",
+      "data_basis": "无真值；每材料仅一晶圆；光谱相邻相关",
+      "constraint_ids": [
+        "C04",
+        "C06",
+        "C08",
+        "C09"
+      ],
+      "validation_path": "扰动角度、n、窗口、异常处理；未来分块检验",
+      "failure_condition": "把相邻点当独立重复会低估区间；校准误差未知",
+      "rejected_families": "拒绝随机点训练测试准确率与AHP评分：无真值且不是排序问题",
+      "unknowns_H1": "容忍差异阈值与误差成本待H1",
+      "deliverable_ids": [
+        "D-Q2.3"
+      ]
+    },
+    {
+      "id": "Q3.1",
+      "parent": "3",
+      "kind": "explicit",
+      "source": "input/B题/B题.pdf:p1问题3",
+      "action_keywords": [
+        "推导"
+      ],
+      "target": "多光束干涉必要条件",
+      "decision_user": "队伍及厚度测量结果使用者",
+      "output": "条件清单与数学推导；必要不等于充分",
+      "granularity": "按材料/晶圆/角度/候选波段追溯；理论项按条件；非总体外推",
+      "horizon": "无时间预测范围",
+      "uncertainty": "条件性、参数及测量误差；无真值限制",
+      "evaluation_criterion": "反射路径、相干性、衰减、可观测性区分",
+      "relationships": [
+        {
+          "question_id": "Q3.3",
+          "type": "dependency/input"
+        },
+        {
+          "question_id": "Q3.7",
+          "type": "dependency/input"
+        }
+      ],
+      "primary_task_type": "机理建模",
+      "secondary_task_type": null,
+      "baseline": "列出非零多次返回振幅及相位相干的必要条件",
+      "provisional_family": "复振幅叠加/边界传播机制候选",
+      "data_basis": "题面p1问题3、p2图2；相干长度/吸收未给",
+      "constraint_ids": [
+        "C03",
+        "C05",
+        "C10"
+      ],
+      "validation_path": "未来检查反射消失、强衰减、不相干极限",
+      "failure_condition": "仅见尖峰不能推出多光束；必要条件不保证可辨识",
+      "rejected_families": "不使用有监督分类器：无多光束标签",
+      "unknowns_H1": "相干、吸收、分辨率阈值待文献，禁止设未经证实阈值",
+      "deliverable_ids": [
+        "D-Q3.1"
+      ]
+    },
+    {
+      "id": "Q3.2",
+      "parent": "3",
+      "kind": "explicit",
+      "source": "input/B题/B题.pdf:p1问题3",
+      "action_keywords": [
+        "分析"
+      ],
+      "target": "多光束对厚度精度的影响",
+      "decision_user": "队伍及厚度测量结果使用者",
+      "output": "偏差机制、方向的条件性说明及误差对照计划",
+      "granularity": "按材料/晶圆/角度/候选波段追溯；理论项按条件；非总体外推",
+      "horizon": "无时间预测范围",
+      "uncertainty": "条件性、参数及测量误差；无真值限制",
+      "evaluation_criterion": "不能无证据宣称固定变厚/变薄",
+      "relationships": [
+        {
+          "question_id": "Q3.7",
+          "type": "dependency/input"
+        }
+      ],
+      "primary_task_type": "误差分析",
+      "secondary_task_type": "机理模拟",
+      "baseline": "在相同参数/噪声下比较单次与多次生成机制的未来实验",
+      "provisional_family": "受控机制对照与灵敏度分析",
+      "data_basis": "题面要求影响分析，无实测真值",
+      "constraint_ids": [
+        "C03",
+        "C08",
+        "C09",
+        "C10"
+      ],
+      "validation_path": "未来合成对照固定d与n，比较偏差和覆盖",
+      "failure_condition": "模拟参数不代表真实材料；未识别时只能条件结论",
+      "rejected_families": "拒绝只按拟合残差降低声称精度提高",
+      "unknowns_H1": "影响阈值、复杂度与误判成本待H1",
+      "deliverable_ids": [
+        "D-Q3.2"
+      ]
+    },
+    {
+      "id": "Q3.3",
+      "parent": "3",
+      "kind": "explicit",
+      "source": "input/B题/B题.pdf:p1问题3",
+      "action_keywords": [
+        "判断"
+      ],
+      "target": "Si附件3/4的多光束证据",
+      "decision_user": "队伍及厚度测量结果使用者",
+      "output": "每角及合并的证据、反证与不确定判断",
+      "granularity": "按材料/晶圆/角度/候选波段追溯；理论项按条件；非总体外推",
+      "horizon": "无时间预测范围",
+      "uncertainty": "条件性、参数及测量误差；无真值限制",
+      "evaluation_criterion": "必要条件与光谱证据共同支持，允许证据不足",
+      "relationships": [
+        {
+          "question_id": "Q3.4",
+          "type": "dependency/input"
+        }
+      ],
+      "primary_task_type": "机制诊断",
+      "secondary_task_type": "数据分析",
+      "baseline": "以受限干涉基准残差为参照而非预设存在",
+      "provisional_family": "物理假设比较/残差结构诊断",
+      "data_basis": "附件3/4同一Si晶圆双角；无标签/光学常数",
+      "constraint_ids": [
+        "C02",
+        "C04",
+        "C05",
+        "C10"
+      ],
+      "validation_path": "未来跨角、跨窗口稳定性与替代解释检验",
+      "failure_condition": "色散/基线/仪器结构也能解释形态则无法唯一判断",
+      "rejected_families": "拒绝凭单个峰形直接下结论；聚类不提供物理标签",
+      "unknowns_H1": "三态存在/未获支持/证据不足定义待H1",
+      "deliverable_ids": [
+        "D-Q3.3"
+      ]
+    },
+    {
+      "id": "Q3.4",
+      "parent": "3",
+      "kind": "explicit",
+      "source": "input/B题/B题.pdf:p1问题3",
+      "action_keywords": [
+        "建模"
+      ],
+      "target": "Si外延层厚度关系",
+      "decision_user": "队伍及厚度测量结果使用者",
+      "output": "适配Q3.3证据的模型与边界",
+      "granularity": "按材料/晶圆/角度/候选波段追溯；理论项按条件；非总体外推",
+      "horizon": "无时间预测范围",
+      "uncertainty": "条件性、参数及测量误差；无真值限制",
+      "evaluation_criterion": "与Si材料参数及多光束结论一致",
+      "relationships": [
+        {
+          "question_id": "Q3.5",
+          "type": "dependency/input"
+        }
+      ],
+      "primary_task_type": "机理建模",
+      "secondary_task_type": null,
+      "baseline": "保留受限光程模型作为比较项",
+      "provisional_family": "多次反射机理或受限模型候选，依证据取舍",
+      "data_basis": "附件3/4；Si不能沿用SiC折射率",
+      "constraint_ids": [
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C10"
+      ],
+      "validation_path": "未来退化到基准、能量/边界检查",
+      "failure_condition": "光学常数和厚度强耦合或参数过多导致不可识别",
+      "rejected_families": "不因题面提多光束就冻结高复杂度模型",
+      "unknowns_H1": "最终路线H2决定",
+      "deliverable_ids": [
+        "D-Q3.4"
+      ]
+    },
+    {
+      "id": "Q3.5",
+      "parent": "3",
+      "kind": "explicit",
+      "source": "input/B题/B题.pdf:p1问题3",
+      "action_keywords": [
+        "设计算法"
+      ],
+      "target": "Si厚度估计程序",
+      "decision_user": "队伍及厚度测量结果使用者",
+      "output": "可复现步骤、参数与失败条件",
+      "granularity": "按材料/晶圆/角度/候选波段追溯；理论项按条件；非总体外推",
+      "horizon": "无时间预测范围",
+      "uncertainty": "条件性、参数及测量误差；无真值限制",
+      "evaluation_criterion": "与Q3.4数学定义及数据一致",
+      "relationships": [
+        {
+          "question_id": "Q3.6",
+          "type": "dependency/input"
+        }
+      ],
+      "primary_task_type": "参数估计",
+      "secondary_task_type": null,
+      "baseline": "与Q2.1相同的可比基准计算协议，改用Si条件",
+      "provisional_family": "约束反演/谱特征候选",
+      "data_basis": "附件3/4有双角光谱",
+      "constraint_ids": [
+        "C03",
+        "C04",
+        "C06",
+        "C07"
+      ],
+      "validation_path": "未来合成恢复、多初值/边界及角度检验",
+      "failure_condition": "局部解不稳定或分辨率不足则返回不可识别",
+      "rejected_families": "拒绝预先指定全局优化器为必要方案：尚无目标函数",
+      "unknowns_H1": "搜索边界、拟合算法留DESIGN/H2",
+      "deliverable_ids": [
+        "D-Q3.5"
+      ]
+    },
+    {
+      "id": "Q3.6",
+      "parent": "3",
+      "kind": "explicit",
+      "source": "input/B题/B题.pdf:p1问题3",
+      "action_keywords": [
+        "计算"
+      ],
+      "target": "Si晶圆厚度",
+      "decision_user": "队伍及厚度测量结果使用者",
+      "output": "双角度及合并条件结果μm、局限",
+      "granularity": "按材料/晶圆/角度/候选波段追溯；理论项按条件；非总体外推",
+      "horizon": "无时间预测范围",
+      "uncertainty": "条件性、参数及测量误差；无真值限制",
+      "evaluation_criterion": "可复现且不与Q3.3结论矛盾",
+      "relationships": [
+        {
+          "question_id": "Q2.2",
+          "type": "difference/comparison"
+        }
+      ],
+      "primary_task_type": "参数估计",
+      "secondary_task_type": null,
+      "baseline": "独立角度估计与共同结论对照",
+      "provisional_family": "物理约束独立/联合反演候选",
+      "data_basis": "附件3/4，不是SiC晶圆",
+      "constraint_ids": [
+        "C02",
+        "C03",
+        "C04",
+        "C08"
+      ],
+      "validation_path": "未来角度差异、窗口与参数稳定性",
+      "failure_condition": "多组等价解则报告范围或条件结果",
+      "rejected_families": "拒绝把Si结果视作SiC真值或校准标签",
+      "unknowns_H1": "可信区间的定义待H1",
+      "deliverable_ids": [
+        "D-Q3.6"
+      ]
+    },
+    {
+      "id": "Q3.7",
+      "parent": "3",
+      "kind": "implicit",
+      "source": "input/B题/B题.pdf:p1问题3",
+      "action_keywords": [
+        "检验"
+      ],
+      "target": "SiC中多光束是否存在且影响厚度",
+      "decision_user": "队伍及厚度测量结果使用者",
+      "output": "触发/不触发/证据不足及理由",
+      "granularity": "按材料/晶圆/角度/候选波段追溯；理论项按条件；非总体外推",
+      "horizon": "无时间预测范围",
+      "uncertainty": "条件性、参数及测量误差；无真值限制",
+      "evaluation_criterion": "分别判断机制存在与精度影响",
+      "relationships": [
+        {
+          "question_id": "Q3.8",
+          "type": "dependency/input"
+        }
+      ],
+      "primary_task_type": "机制诊断",
+      "secondary_task_type": "误差分析",
+      "baseline": "保持Q2基准，对照未来可识别的替代机制",
+      "provisional_family": "物理假设检验和敏感性对照",
+      "data_basis": "题面问题3末段条件句；附件1/2异常率需区分",
+      "constraint_ids": [
+        "C04",
+        "C06",
+        "C08",
+        "C10"
+      ],
+      "validation_path": "未来同时检验跨角稳定性、结构残差与厚度差",
+      "failure_condition": "只因R>100或残差改善就触发修正为失败",
+      "rejected_families": "拒绝把测量异常直接归因多光束",
+      "unknowns_H1": "条件分支解释由H1确认",
+      "deliverable_ids": [
+        "D-Q3.7"
+      ]
+    },
+    {
+      "id": "Q3.8",
+      "parent": "3",
+      "kind": "conditional_explicit",
+      "source": "input/B题/B题.pdf:p1问题3",
+      "action_keywords": [
+        "消除影响"
+      ],
+      "target": "受多光束影响的SiC估计",
+      "decision_user": "队伍及厚度测量结果使用者",
+      "output": "针对性修正方案；注明剩余误差",
+      "granularity": "按材料/晶圆/角度/候选波段追溯；理论项按条件；非总体外推",
+      "horizon": "无时间预测范围",
+      "uncertainty": "条件性、参数及测量误差；无真值限制",
+      "evaluation_criterion": "只在Q3.7触发时执行，并可验证增益",
+      "relationships": [
+        {
+          "question_id": "Q3.9",
+          "type": "dependency/input"
+        },
+        {
+          "question_id": "Q2.3",
+          "type": "trade-off/conflict"
+        }
+      ],
+      "primary_task_type": "机理修正",
+      "secondary_task_type": "参数估计",
+      "baseline": "未经修正Q2结果作为同口径基线",
+      "provisional_family": "物理机理修正或证据支持的稳健反演候选",
+      "data_basis": "附件1/2与Q3.7；并无无误差参考",
+      "constraint_ids": [
+        "C03",
+        "C04",
+        "C06",
+        "C09",
+        "C10"
+      ],
+      "validation_path": "未来固定比较口径检查跨角与敏感性，不能仅看残差",
+      "failure_condition": "修正引入无法识别的参数或无增益则不保留",
+      "rejected_families": "拒绝删异常后称多光束已消除；拒绝无依据复杂化",
+      "unknowns_H1": "消除理解为校正/减弱，不能保证零误差",
+      "deliverable_ids": [
+        "D-Q3.8"
+      ]
+    },
+    {
+      "id": "Q3.9",
+      "parent": "3",
+      "kind": "conditional_explicit",
+      "source": "input/B题/B题.pdf:p1问题3",
+      "action_keywords": [
+        "计算"
+      ],
+      "target": "SiC修正后的厚度",
+      "decision_user": "队伍及厚度测量结果使用者",
+      "output": "修正前后双角/共同厚度及不确定性表",
+      "granularity": "按材料/晶圆/角度/候选波段追溯；理论项按条件；非总体外推",
+      "horizon": "无时间预测范围",
+      "uncertainty": "条件性、参数及测量误差；无真值限制",
+      "evaluation_criterion": "相同波段和假设口径，诚实报告未消除部分",
+      "relationships": [
+        {
+          "question_id": "Q2.2",
+          "type": "difference/comparison"
+        }
+      ],
+      "primary_task_type": "参数估计",
+      "secondary_task_type": "误差分析",
+      "baseline": "Q2.2/Q2.3原始基准",
+      "provisional_family": "可比对照估计与不确定性传播",
+      "data_basis": "Q3.8成立时附件1/2",
+      "constraint_ids": [
+        "C02",
+        "C03",
+        "C04",
+        "C08",
+        "C09"
+      ],
+      "validation_path": "未来差值、敏感性、机制对照增益检验",
+      "failure_condition": "无真值不能声明真实误差已降低指定百分比",
+      "rejected_families": "拒绝只报更好数字或强迫两角相等",
+      "unknowns_H1": "未触发时以论证替代数值，不伪造修正值",
+      "deliverable_ids": [
+        "D-Q3.9"
+      ]
+    },
+    {
+      "id": "I1",
+      "parent": "cross",
+      "kind": "implicit",
+      "source": "input/B题/B题.pdf:p1折射率背景及p2附件说明（分析者推定的支持任务）",
+      "action_keywords": [
+        "审计"
+      ],
+      "target": "四份光谱数据和所有预处理",
+      "decision_user": "队伍及厚度测量结果使用者",
+      "output": "字段/异常/掩码/处理记录",
+      "granularity": "按材料/晶圆/角度/候选波段追溯；理论项按条件；非总体外推",
+      "horizon": "无时间预测范围",
+      "uncertainty": "条件性、参数及测量误差；无真值限制",
+      "evaluation_criterion": "原始值保留并可追溯到Excel行",
+      "relationships": [
+        {
+          "question_id": "Q2.1",
+          "type": "dependency/input"
+        },
+        {
+          "question_id": "Q3.5",
+          "type": "dependency/input"
+        }
+      ],
+      "primary_task_type": "数据分析",
+      "secondary_task_type": null,
+      "baseline": "原始描述统计与异常标记，不清洗",
+      "provisional_family": "描述审计/成对敏感性方案",
+      "data_basis": "四附件共29876谱点",
+      "constraint_ids": [
+        "C02",
+        "C06",
+        "C07",
+        "C11"
+      ],
+      "validation_path": "行数、哈希、异常行及原值复核",
+      "failure_condition": "静默截断/补值/平滑导致无法追溯",
+      "rejected_families": "拒绝无条件裁剪到100%：原因未知",
+      "unknowns_H1": "异常处置选项H1决定",
+      "deliverable_ids": [
+        "D-I1"
+      ]
+    },
+    {
+      "id": "I2",
+      "parent": "cross",
+      "kind": "implicit",
+      "source": "input/B题/B题.pdf:p1折射率背景及p2附件说明（分析者推定的支持任务）",
+      "action_keywords": [
+        "界定"
+      ],
+      "target": "厚度/光学常数可识别性与误差代价",
+      "decision_user": "队伍及厚度测量结果使用者",
+      "output": "未知参数、条件结论范围及失败返回",
+      "granularity": "按材料/晶圆/角度/候选波段追溯；理论项按条件；非总体外推",
+      "horizon": "无时间预测范围",
+      "uncertainty": "条件性、参数及测量误差；无真值限制",
+      "evaluation_criterion": "n与d混淆不伪装唯一物理厚度",
+      "relationships": [
+        {
+          "question_id": "Q2.2",
+          "type": "dependency/input"
+        },
+        {
+          "question_id": "Q3.6",
+          "type": "dependency/input"
+        }
+      ],
+      "primary_task_type": "可识别性分析",
+      "secondary_task_type": "误差分析",
+      "baseline": "保留n符号并列候选外部信息需求",
+      "provisional_family": "结构/实际可识别性和敏感性分析",
+      "data_basis": "题面称n随波长/浓度变化但不给数值",
+      "constraint_ids": [
+        "C03",
+        "C04",
+        "C08",
+        "C09"
+      ],
+      "validation_path": "未来参数相关性、剖面或等价解检查",
+      "failure_condition": "n函数完全自由时厚度通常不可唯一辨识",
+      "rejected_families": "拒绝无依据常数n；拒绝用Si参数替SiC",
+      "unknowns_H1": "光学厚度可作中间量，不能替代题目所需物理厚度",
+      "deliverable_ids": [
+        "D-I2"
+      ]
+    }
+  ],
+  "constraints": [
+    {
+      "id": "C01",
+      "category": "explicit",
+      "source": "PDF:p1问题1/2",
+      "statement": "Q1限一次反射透射且Q2基于Q1",
+      "formal_check": "Q1.reflection_order == 1; Q2.model_reference == Q1",
+      "scope": [
+        "Q1.1",
+        "Q2.1"
+      ],
+      "hardness": "hard",
+      "status": "已明确",
+      "affected_questions": [
+        "Q1.1",
+        "Q2.1"
+      ]
+    },
+    {
+      "id": "C02",
+      "category": "data",
+      "source": "PDF:p2附件说明",
+      "statement": "同材料两个角对应同一晶圆；两材料是不同晶圆",
+      "formal_check": "group(1)==group(2);group(3)==group(4);group(1)!=group(3);angles=[10,15,10,15]",
+      "scope": [
+        "Q2.2",
+        "Q3.3",
+        "Q3.4",
+        "Q3.6",
+        "Q3.9",
+        "I1"
+      ],
+      "hardness": "hard",
+      "status": "已核验",
+      "affected_questions": [
+        "Q2.2",
+        "Q3.3",
+        "Q3.4",
+        "Q3.6",
+        "Q3.9",
+        "I1"
+      ]
+    },
+    {
+      "id": "C03",
+      "category": "physical",
+      "source": "PDF:p1厚度/入射角/折射率背景；单位为分析者形式化",
+      "statement": "物理厚度为正，单位与角度一致",
+      "formal_check": "d_um>0;d_cm=d_um*1e-4;lambda_um=1e4/sigma_cm_inv;theta_rad=theta_deg*pi/180",
+      "scope": [
+        "Q1.1",
+        "Q2.1",
+        "Q2.2",
+        "Q3.1",
+        "Q3.2",
+        "Q3.4",
+        "Q3.5",
+        "Q3.6",
+        "Q3.8",
+        "Q3.9",
+        "I2"
+      ],
+      "hardness": "hard",
+      "status": "厚度上限未给；波数真空口径需确认",
+      "affected_questions": [
+        "Q1.1",
+        "Q2.1",
+        "Q2.2",
+        "Q3.1",
+        "Q3.2",
+        "Q3.4",
+        "Q3.5",
+        "Q3.6",
+        "Q3.8",
+        "Q3.9",
+        "I2"
+      ]
+    },
+    {
+      "id": "C04",
+      "category": "data",
+      "source": "PDF:p1折射率段及附件无n字段",
+      "statement": "折射率色散/掺杂未知，n与d耦合",
+      "formal_check": "if n_unconstrained or multiple_equivalent_solutions: report conditional_or_nonidentifiable; no unique_d_claim",
+      "scope": [
+        "Q1.1",
+        "Q2.1",
+        "Q2.2",
+        "Q2.3",
+        "Q3.3",
+        "Q3.4",
+        "Q3.5",
+        "Q3.6",
+        "Q3.7",
+        "Q3.8",
+        "Q3.9",
+        "I2"
+      ],
+      "hardness": "hard",
+      "status": "缺光学常数、浓度、温度、晶型与吸收信息",
+      "affected_questions": [
+        "Q1.1",
+        "Q2.1",
+        "Q2.2",
+        "Q2.3",
+        "Q3.3",
+        "Q3.4",
+        "Q3.5",
+        "Q3.6",
+        "Q3.7",
+        "Q3.8",
+        "Q3.9",
+        "I2"
+      ]
+    },
+    {
+      "id": "C05",
+      "category": "physical",
+      "source": "PDF:p1图1/p2图2；物理约束为候选形式化",
+      "statement": "边界折射、相干和能量约束适用条件必须标明",
+      "formal_check": "for passive calibrated power: 0<=R,T,A<=1 and R+T+A=1; lossless real_n: n0*sin(theta0)=n1*sin(theta1)",
+      "scope": [
+        "Q1.1",
+        "Q3.1",
+        "Q3.3",
+        "Q3.4"
+      ],
+      "hardness": "hard",
+      "status": "含吸收时须复数处理；只有R数据不能完整核验能量",
+      "affected_questions": [
+        "Q1.1",
+        "Q3.1",
+        "Q3.3",
+        "Q3.4"
+      ]
+    },
+    {
+      "id": "C06",
+      "category": "data",
+      "source": "附件2 Sheet1 B列；四表Excel第2行",
+      "statement": "异常测量不能静默当真实反射率或清洗",
+      "formal_check": "flag=(R_percent<0 or R_percent>100 or R_percent==0); original_hash_unchanged; every_mask_has_row_and_reason",
+      "scope": [
+        "Q2.1",
+        "Q2.2",
+        "Q2.3",
+        "Q3.5",
+        "Q3.7",
+        "Q3.8",
+        "I1"
+      ],
+      "hardness": "hard",
+      "status": "262个>100%；四个首点0；成因未知",
+      "affected_questions": [
+        "Q2.1",
+        "Q2.2",
+        "Q2.3",
+        "Q3.5",
+        "Q3.7",
+        "Q3.8",
+        "I1"
+      ]
+    },
+    {
+      "id": "C07",
+      "category": "temporal/order",
+      "source": "四表A列审计",
+      "statement": "横轴为有序波数，非时间；步长非精确常数",
+      "formal_check": "all(diff(sigma)>0); no_random_point_validation_as_independent; resampling_requires_record",
+      "scope": [
+        "Q2.1",
+        "Q3.5",
+        "I1"
+      ],
+      "hardness": "hard",
+      "status": "四表相同网格，精度/仪器分辨率未给",
+      "affected_questions": [
+        "Q2.1",
+        "Q3.5",
+        "I1"
+      ]
+    },
+    {
+      "id": "C08",
+      "category": "data",
+      "source": "四表仅两字段及题面p2",
+      "statement": "无厚度真值，晶圆层面每材料n=1",
+      "formal_check": "no_absolute_accuracy_claim_without_reference; n_independent_wafer_per_material=1",
+      "scope": [
+        "Q2.2",
+        "Q2.3",
+        "Q3.2",
+        "Q3.6",
+        "Q3.7",
+        "Q3.9",
+        "I2"
+      ],
+      "hardness": "hard",
+      "status": "相邻点相关性未估计；不进行总体推广",
+      "affected_questions": [
+        "Q2.2",
+        "Q2.3",
+        "Q3.2",
+        "Q3.6",
+        "Q3.7",
+        "Q3.9",
+        "I2"
+      ]
+    },
+    {
+      "id": "C09",
+      "category": "practical",
+      "source": "H0理由与required_validations；分析者误差成本定义",
+      "statement": "新增模块须针对缺陷且验证增益；容忍度尚无",
+      "formal_check": "retain_improvement only if documented_defect and validation_gain and identifiable; numerical_tolerance=None",
+      "scope": [
+        "Q2.3",
+        "Q3.2",
+        "Q3.8",
+        "Q3.9",
+        "I2"
+      ],
+      "hardness": "soft",
+      "status": "H1需选评价口径，H2前定量化阈值",
+      "affected_questions": [
+        "Q2.3",
+        "Q3.2",
+        "Q3.8",
+        "Q3.9",
+        "I2"
+      ]
+    },
+    {
+      "id": "C10",
+      "category": "explicit",
+      "source": "PDF:p1问题3",
+      "statement": "必要条件与存在判断分开；SiC修正有条件触发",
+      "formal_check": "execute(Q3.8,Q3.9) iff supported(SiC_multibeam) and supported(thickness_impact); else document_reason_or_insufficient_evidence",
+      "scope": [
+        "Q3.1",
+        "Q3.2",
+        "Q3.3",
+        "Q3.4",
+        "Q3.7",
+        "Q3.8"
+      ],
+      "hardness": "hard",
+      "status": "影响可否支持待后续验证",
+      "affected_questions": [
+        "Q3.1",
+        "Q3.2",
+        "Q3.3",
+        "Q3.4",
+        "Q3.7",
+        "Q3.8"
+      ]
+    },
+    {
+      "id": "C11",
+      "category": "workflow",
+      "source": "任务恢复基线/H0",
+      "statement": "只写01-intake；H1停止，不作最终路线选择",
+      "formal_check": "all(write_paths under 01-intake); no_thickness_fit; no_TEAM_APPROVED_write; next_gate=H1",
+      "scope": [
+        "I1"
+      ],
+      "hardness": "hard",
+      "status": "当前执行边界",
+      "affected_questions": [
+        "I1"
+      ]
+    },
+    {
+      "id": "C12",
+      "category": "official",
+      "source": "R2条1–11",
+      "statement": "2026格式及提交要求",
+      "formal_check": "A4; margins_cm>=2.5; abstract_pages<=1 in_principle; body_pages<=30; no_TOC; appendix_complete_code; anonymous; electronic_first_page=abstract; single_PDF_or_Word; paper_bytes<=20000000; support_ZIP_or_RAR_bytes<=20000000",
+      "scope": [
+        "官方提交/工作流"
+      ],
+      "hardness": "hard",
+      "status": "已核验；20MB按20,000,000字节保守验收，摘要超页需人工确认；附录不限页",
+      "affected_questions": []
+    },
+    {
+      "id": "C13",
+      "category": "official",
+      "source": "R3条2–6",
+      "statement": "团队主导核心建模分析；AI逐项人工核验、声明、详情",
+      "formal_check": "declaration_before_references; support contains AI工具使用详情.pdf; details has model,purpose,prompt_process,adoption,manual_modification,verification; human_review_each_item",
+      "scope": [
+        "官方提交/工作流"
+      ],
+      "hardness": "hard",
+      "status": "规则已核验；人工复核待完成，不能由机器PASS替代",
+      "affected_questions": []
+    },
+    {
+      "id": "C14",
+      "category": "official",
+      "source": "R1条3–6；R2条8",
+      "statement": "赛时独立完成与交流平台禁令；学校赛区未知",
+      "formal_check": "during_contest: no_external_guidance and no_browse_publish_discuss_problem_on_communication_platforms; regional_school_requirements=UNVERIFIED",
+      "scope": [
+        "官方提交/工作流"
+      ],
+      "hardness": "hard",
+      "status": "全国规则明确；赛区学校附加要求未形式化，待队长核验",
+      "affected_questions": []
+    }
+  ],
+  "mandatory_deliverables": [
+    {
+      "id": "D-Q1.1",
+      "question_ids": [
+        "Q1.1"
+      ],
+      "source": "input/B题/B题.pdf:p1问题1",
+      "content": "符号模型、假设和适用边界；厚度单位μm",
+      "format": "论文对应小节+可复核证据；计算项另附代码/结果表（后续阶段）",
+      "limit": "题面未给单项篇幅/文件限制",
+      "acceptance": "量纲、光程与退化极限自洽",
+      "conditional": false
+    },
+    {
+      "id": "D-Q2.1",
+      "question_ids": [
+        "Q2.1"
+      ],
+      "source": "input/B题/B题.pdf:p1问题2",
+      "content": "可复现算法说明、输入输出和失败返回",
+      "format": "论文对应小节+可复核证据；计算项另附代码/结果表（后续阶段）",
+      "limit": "题面未给单项篇幅/文件限制",
+      "acceptance": "算法与Q1定义一致，保留追溯记录",
+      "conditional": false
+    },
+    {
+      "id": "D-Q2.2",
+      "question_ids": [
+        "Q2.2"
+      ],
+      "source": "input/B题/B题.pdf:p1问题2",
+      "content": "两角度条件估计及共同厚度结论，μm并说明条件",
+      "format": "论文对应小节+可复核证据；计算项另附代码/结果表（后续阶段）",
+      "limit": "题面未给单项篇幅/文件限制",
+      "acceptance": "跨角一致性与可复现性，不能宣称真值精度",
+      "conditional": false
+    },
+    {
+      "id": "D-Q2.3",
+      "question_ids": [
+        "Q2.3"
+      ],
+      "source": "input/B题/B题.pdf:p1问题2",
+      "content": "不确定性来源、敏感性、残差及局限",
+      "format": "论文对应小节+可复核证据；计算项另附代码/结果表（后续阶段）",
+      "limit": "题面未给单项篇幅/文件限制",
+      "acceptance": "区分重复性/稳定性和绝对准确度",
+      "conditional": false
+    },
+    {
+      "id": "D-Q3.1",
+      "question_ids": [
+        "Q3.1"
+      ],
+      "source": "input/B题/B题.pdf:p1问题3",
+      "content": "条件清单与数学推导；必要不等于充分",
+      "format": "论文对应小节+可复核证据；计算项另附代码/结果表（后续阶段）",
+      "limit": "题面未给单项篇幅/文件限制",
+      "acceptance": "反射路径、相干性、衰减、可观测性区分",
+      "conditional": false
+    },
+    {
+      "id": "D-Q3.2",
+      "question_ids": [
+        "Q3.2"
+      ],
+      "source": "input/B题/B题.pdf:p1问题3",
+      "content": "偏差机制、方向的条件性说明及误差对照计划",
+      "format": "论文对应小节+可复核证据；计算项另附代码/结果表（后续阶段）",
+      "limit": "题面未给单项篇幅/文件限制",
+      "acceptance": "不能无证据宣称固定变厚/变薄",
+      "conditional": false
+    },
+    {
+      "id": "D-Q3.3",
+      "question_ids": [
+        "Q3.3"
+      ],
+      "source": "input/B题/B题.pdf:p1问题3",
+      "content": "每角及合并的证据、反证与不确定判断",
+      "format": "论文对应小节+可复核证据；计算项另附代码/结果表（后续阶段）",
+      "limit": "题面未给单项篇幅/文件限制",
+      "acceptance": "必要条件与光谱证据共同支持，允许证据不足",
+      "conditional": false
+    },
+    {
+      "id": "D-Q3.4",
+      "question_ids": [
+        "Q3.4"
+      ],
+      "source": "input/B题/B题.pdf:p1问题3",
+      "content": "适配Q3.3证据的模型与边界",
+      "format": "论文对应小节+可复核证据；计算项另附代码/结果表（后续阶段）",
+      "limit": "题面未给单项篇幅/文件限制",
+      "acceptance": "与Si材料参数及多光束结论一致",
+      "conditional": false
+    },
+    {
+      "id": "D-Q3.5",
+      "question_ids": [
+        "Q3.5"
+      ],
+      "source": "input/B题/B题.pdf:p1问题3",
+      "content": "可复现步骤、参数与失败条件",
+      "format": "论文对应小节+可复核证据；计算项另附代码/结果表（后续阶段）",
+      "limit": "题面未给单项篇幅/文件限制",
+      "acceptance": "与Q3.4数学定义及数据一致",
+      "conditional": false
+    },
+    {
+      "id": "D-Q3.6",
+      "question_ids": [
+        "Q3.6"
+      ],
+      "source": "input/B题/B题.pdf:p1问题3",
+      "content": "双角度及合并条件结果μm、局限",
+      "format": "论文对应小节+可复核证据；计算项另附代码/结果表（后续阶段）",
+      "limit": "题面未给单项篇幅/文件限制",
+      "acceptance": "可复现且不与Q3.3结论矛盾",
+      "conditional": false
+    },
+    {
+      "id": "D-Q3.7",
+      "question_ids": [
+        "Q3.7"
+      ],
+      "source": "input/B题/B题.pdf:p1问题3",
+      "content": "触发/不触发/证据不足及理由",
+      "format": "论文对应小节+可复核证据；计算项另附代码/结果表（后续阶段）",
+      "limit": "题面未给单项篇幅/文件限制",
+      "acceptance": "分别判断机制存在与精度影响",
+      "conditional": false
+    },
+    {
+      "id": "D-Q3.8",
+      "question_ids": [
+        "Q3.8"
+      ],
+      "source": "input/B题/B题.pdf:p1问题3",
+      "content": "针对性修正方案；注明剩余误差",
+      "format": "论文对应小节+可复核证据；计算项另附代码/结果表（后续阶段）",
+      "limit": "题面未给单项篇幅/文件限制",
+      "acceptance": "只在Q3.7触发时执行，并可验证增益",
+      "conditional": true
+    },
+    {
+      "id": "D-Q3.9",
+      "question_ids": [
+        "Q3.9"
+      ],
+      "source": "input/B题/B题.pdf:p1问题3",
+      "content": "修正前后双角/共同厚度及不确定性表",
+      "format": "论文对应小节+可复核证据；计算项另附代码/结果表（后续阶段）",
+      "limit": "题面未给单项篇幅/文件限制",
+      "acceptance": "相同波段和假设口径，诚实报告未消除部分",
+      "conditional": true
+    },
+    {
+      "id": "D-I1",
+      "question_ids": [
+        "I1"
+      ],
+      "source": "input/B题/B题.pdf:p1折射率背景及p2附件说明（分析者推定的支持任务）",
+      "content": "字段/异常/掩码/处理记录",
+      "format": "论文对应小节+可复核证据；计算项另附代码/结果表（后续阶段）",
+      "limit": "题面未给单项篇幅/文件限制",
+      "acceptance": "原始值保留并可追溯到Excel行",
+      "conditional": false
+    },
+    {
+      "id": "D-I2",
+      "question_ids": [
+        "I2"
+      ],
+      "source": "input/B题/B题.pdf:p1折射率背景及p2附件说明（分析者推定的支持任务）",
+      "content": "未知参数、条件结论范围及失败返回",
+      "format": "论文对应小节+可复核证据；计算项另附代码/结果表（后续阶段）",
+      "limit": "题面未给单项篇幅/文件限制",
+      "acceptance": "n与d混淆不伪装唯一物理厚度",
+      "conditional": false
+    },
+    {
+      "id": "S1",
+      "question_ids": [],
+      "official_rule": "C12",
+      "content": "匿名电子论文：摘要专页原则一页，正文无目录且不超过30页；附录不限页，完整可运行代码与材料列表",
+      "format": "匿名电子论文：摘要专页原则一页，正文无目录且不超过30页；附录不限页，完整可运行代码与材料列表",
+      "limit": "单PDF或Word，建议PDF，<=20MB；不含承诺书/编号页；与纸本一致",
+      "acceptance": "单PDF或Word，建议PDF，<=20MB；不含承诺书/编号页；与纸本一致",
+      "conditional": false
+    },
+    {
+      "id": "S2",
+      "question_ids": [],
+      "official_rule": "C12",
+      "content": "匿名支撑ZIP/RAR：代码、外部数据及必要中间材料，原题数据可不重复",
+      "format": "匿名支撑ZIP/RAR：代码、外部数据及必要中间材料，原题数据可不重复",
+      "limit": "<=20MB；清单进入附录；不含承诺书/编号页",
+      "acceptance": "<=20MB；清单进入附录；不含承诺书/编号页",
+      "conditional": false
+    },
+    {
+      "id": "S3",
+      "question_ids": [],
+      "official_rule": "C12",
+      "content": "纸质A4论文及专用页",
+      "format": "纸质A4论文及专用页",
+      "limit": "四边距至少2.5cm；承诺书/编号页另按纸质顺序；摘要起页脚中部连续页码",
+      "acceptance": "四边距至少2.5cm；承诺书/编号页另按纸质顺序；摘要起页脚中部连续页码",
+      "conditional": false
+    },
+    {
+      "id": "S4",
+      "question_ids": [],
+      "official_rule": "C13",
+      "content": "参考文献之前的AI工具使用声明及支撑材料AI工具使用详情.pdf",
+      "format": "参考文献之前的AI工具使用声明及支撑材料AI工具使用详情.pdf",
+      "limit": "工具/模型、用途环节、主要提示与过程、采纳/人工修改/核验可追溯",
+      "acceptance": "工具/模型、用途环节、主要提示与过程、采纳/人工修改/核验可追溯",
+      "conditional": false
+    },
+    {
+      "id": "S5",
+      "question_ids": [],
+      "official_rule": "C14",
+      "content": "赛区/学校附加要求及正式专用页核验记录",
+      "format": "赛区/学校附加要求及正式专用页核验记录",
+      "limit": "队长提交明确来源；当前未核验",
+      "acceptance": "队长提交明确来源；当前未核验",
+      "conditional": false
+    }
+  ],
+  "shared_definitions": {
+    "sigma": "波数cm^-1，非时间",
+    "R_observed": "原始反射率%，不强迫落在[0,100]",
+    "R_physical": "适用被动校准条件下的功率比例[0,1]",
+    "d": "晶圆物理外延厚度μm",
+    "n": "材料与波段相关折射率；未指定函数",
+    "accuracy": "对真值的误差，当前不可直接验证",
+    "stability": "扰动/窗口/角度下的变化，不等于accuracy"
+  },
+  "error_costs": [
+    {
+      "error": "把多光束误判为存在",
+      "cost": "引入冗余参数、不可识别或错误修正",
+      "numeric_cost": null
+    },
+    {
+      "error": "漏判真实多光束/色散",
+      "cost": "厚度系统偏差与区间过窄",
+      "numeric_cost": null
+    },
+    {
+      "error": "删去真实结构或保留失真点当物理反射率",
+      "cost": "相位/条纹偏差，需对照处理",
+      "numeric_cost": null
+    },
+    {
+      "error": "把拟合优度当绝对准确度",
+      "cost": "测试标准不可信，错误器件质量判断",
+      "numeric_cost": null
+    }
+  ],
+  "H1_options_reference": "H1-选择包.md",
+  "final_model_selected": false,
+  "thickness_model_run": false,
+  "compliance_year": 2026,
+  "precedence": "最新用户基线覆盖config.year及00-selection中的旧合规推断；H0只批准B题。",
+  "rule_sources": [
+    {
+      "id": "R1",
+      "url": "https://www.mcm.edu.cn/html_cn/node/9d8e511fe7a1447b35f53a82c908e2e0.html",
+      "published": "2026-03-03",
+      "effective": "2026-03-01",
+      "verified_on": "2026-09-05",
+      "applicability": "APPLICABLE_BY_USER_BASELINE"
+    },
+    {
+      "id": "R2",
+      "url": "https://www.mcm.edu.cn/html_cn/node/4cd596519c9eb9fbd866398f6df0caa3.html",
+      "published": "2026-03-03",
+      "effective": "2026-03-03",
+      "verified_on": "2026-09-05",
+      "applicability": "APPLICABLE_BY_USER_BASELINE"
+    },
+    {
+      "id": "R3",
+      "url": "https://www.mcm.edu.cn/html_cn/node/fef94648f2836ab6cc81586f4c38512b.html",
+      "published": "2026-08-03",
+      "effective": "2026-09-01",
+      "verified_on": "2026-09-05",
+      "applicability": "APPLICABLE_BY_USER_BASELINE"
+    }
+  ]
+}

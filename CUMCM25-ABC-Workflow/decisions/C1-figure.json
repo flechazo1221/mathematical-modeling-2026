@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "gate": "C1",
+  "status": "DRAFT",
+  "question": "仅在视觉表达可能改变解释时确认核心图表",
+  "selected_options": [],
+  "reasons": [],
+  "accepted_assumptions": [],
+  "rejected_options": [],
+  "required_validations": [],
+  "prohibited_changes": [],
+  "delegations": [],
+  "confirmed_by": [],
+  "confirmed_at": null,
+  "supersedes": null
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "project_id": "高教社杯全国大学生数学建模竞赛-2025",
+  "status": "WAITING_FOR_TEAM",
+  "current_stage": "H0",
+  "completed_stages": [
+    "SELECTION"
+  ],
+  "active_thread_id": null,
+  "next_stage": "H0",
+  "blocking_items": [],
+  "updated_at": "2026-09-04T16:46:13+08:00"
+}

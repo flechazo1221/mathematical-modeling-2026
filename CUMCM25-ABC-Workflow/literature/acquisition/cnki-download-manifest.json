@@ -1,0 +1,9 @@
+{
+  "schema_version":"1.0",
+  "updated_at":"2026-09-10T16:43:00+08:00",
+  "attempts":[
+    {"title":"基于光谱非均匀傅里叶变换的薄膜厚度测量技术研究","outcome":"downloaded","local_relative_path":"literature/input/基于光谱非均匀傅里叶变换的薄膜厚度测量技术研究_郝然.caj","size_bytes":3603201,"sha256":"61ACF2AB01CD2BF65EB44D1E0B80DBA0DF2DD11F3A3E231859DF72D2A775759D","signature_check":"CAJ header"},
+    {"title":"掺Sb衬底外延片厚度测量及误差分析","outcome":"downloaded","local_relative_path":"literature/input/掺Sb衬底外延片厚度测量及误差分析_常素珍.caj","size_bytes":229892,"sha256":"681122901F124FE7F0DAE9898DA108BA56300861049188CA977A08E428ED653C","signature_check":"HN/CAJ-family header"},
+    {"title":"基于光栅+傅里叶光谱的宽波段大角度光谱椭偏技术研究","outcome":"downloaded","local_relative_path":"literature/input/基于光栅+傅里叶光谱的宽波段大角度光谱椭偏技术研究_张瑞.caj","size_bytes":420727,"sha256":"2394D517AF464CC68CDEB26CED6736F22325DF3F599F917A607E8F4001E68B19","signature_check":"KDH 2.00/CAJ-family header"}
+  ]
+}

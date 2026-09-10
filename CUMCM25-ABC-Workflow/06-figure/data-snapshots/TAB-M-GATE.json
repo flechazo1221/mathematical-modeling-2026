@@ -1,0 +1,15 @@
+{
+  "model": "M",
+  "admitted": false,
+  "status": "GATE_NOT_TRIGGERED",
+  "mechanism_evidence": "INSUFFICIENT_EVIDENCE",
+  "thickness_effect": "NOT_ESTIMATED",
+  "degenerate_limits": {
+    "zero_back_interface_reflection": "PASS_BY_CONSTRUCTION",
+    "strong_attenuation": "PASS_GEOMETRIC_TERMS_VANISH",
+    "incoherent_limit": "PASS_PHASE_INTERFERENCE_REMOVED",
+    "status": "GATE_NOT_TRIGGERED",
+    "admitted": false
+  },
+  "note": "M remained closed exactly as H2 required; no correction or parameter fit was executed."
+}

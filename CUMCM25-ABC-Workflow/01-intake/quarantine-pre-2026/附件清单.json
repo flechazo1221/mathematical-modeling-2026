@@ -1,0 +1,256 @@
+{
+  "schema_version": "1.0",
+  "stage_status": "BLOCKED",
+  "inventory_scope": "仅指定12个输入；未扫描或读取其他题目原件",
+  "inputs": [
+    {
+      "path": "decisions/H0-selection.json",
+      "sha256": "0c5c1f543489f91f857bb0bb215bf0706d592893814a2bacf7c7e91287f671a6",
+      "size_bytes": 1669,
+      "type": ".json"
+    },
+    {
+      "path": ".workflow/config.json",
+      "sha256": "6bdce292ee593bb7ce55ae1d6dd722cfc951e450fdcc7ef4cdacde35ae35dc90",
+      "size_bytes": 319,
+      "type": ".json"
+    },
+    {
+      "path": "00-selection/handoff.json",
+      "sha256": "c02157133a2138ffa04477c1f2762364de534b3d560d886da88641097997892b",
+      "size_bytes": 3103,
+      "type": ".json"
+    },
+    {
+      "path": "00-selection/候选题清单.json",
+      "sha256": "f1eebc2ecb4692f3d153e9b6a295af67a94e5f47818dde3ae7162f9a84932e72",
+      "size_bytes": 5314,
+      "type": ".json"
+    },
+    {
+      "path": "00-selection/选题评分.json",
+      "sha256": "1d0cad8423142b830721ffc8659be708fec65e0cbbced3ac76b4e11773aa67d5",
+      "size_bytes": 8561,
+      "type": ".json"
+    },
+    {
+      "path": "00-selection/选题分析.md",
+      "sha256": "f95690299f74fffdf9a6156c0f14cb5c6b21420d97d1986bed442f038c1dab64",
+      "size_bytes": 8154,
+      "type": ".md"
+    },
+    {
+      "path": "00-selection/H0-选择包.md",
+      "sha256": "f122f9d7fd47281c3317d21fa17f3bdfa5c440d62d58b691e58680ee1d7a6123",
+      "size_bytes": 4371,
+      "type": ".md"
+    },
+    {
+      "path": "input/B题/B题.pdf",
+      "sha256": "b0b2ce649282c2d7063af3c30ac9c0d931512dc86014d3147bc765d8f1c8cf87",
+      "size_bytes": 277238,
+      "type": ".pdf"
+    },
+    {
+      "path": "input/B题/附件/附件1.xlsx",
+      "sha256": "b42f8bdabe7497951284cd044386c3cdf9d349b5e8ef4baaa0336e65ff84c67b",
+      "size_bytes": 187625,
+      "type": ".xlsx"
+    },
+    {
+      "path": "input/B题/附件/附件2.xlsx",
+      "sha256": "24b3113e80d5ec5458ba4f447df9ed185578481e8b0081bdf0673689505e49d0",
+      "size_bytes": 186957,
+      "type": ".xlsx"
+    },
+    {
+      "path": "input/B题/附件/附件3.xlsx",
+      "sha256": "79e9f66a00409f1d1130d9f4f3d76b4d5e5a1ccd3ac2d24dc0af8ecc583d0ec8",
+      "size_bytes": 189278,
+      "type": ".xlsx"
+    },
+    {
+      "path": "input/B题/附件/附件4.xlsx",
+      "sha256": "9cf1400404c4560958da06685beb8c2e1e4df5918a6e13863663a54440ba12e3",
+      "size_bytes": 189423,
+      "type": ".xlsx"
+    }
+  ],
+  "B_copy_hashes_match_upstream": true,
+  "selection_output_hashes_match": true,
+  "data_profiles": [
+    {
+      "path": "input/B题/附件/附件1.xlsx",
+      "sheet": "Sheet1",
+      "worksheet_rows": 7470,
+      "columns": 2,
+      "header": [
+        "波数 (cm-1)",
+        "反射率 (%)"
+      ],
+      "data_rows": 7469,
+      "first_data_excel_row": 2,
+      "last_data_excel_row": 7470,
+      "first": [
+        399.6747,
+        0
+      ],
+      "last": [
+        4000.122,
+        18.26850504
+      ],
+      "material": "SiC",
+      "angle_deg": 10,
+      "group": "SiC-wafer",
+      "missing_cells": 0,
+      "wavenumber_unit": "cm^-1",
+      "reflectance_unit": "%",
+      "wavenumber_range": [
+        399.6747,
+        4000.122
+      ],
+      "reflectance_range": [
+        0,
+        95.38499492
+      ],
+      "step_range": [
+        0.48099999999976717,
+        0.4830000000001746
+      ],
+      "above_100_count": 0,
+      "zero_count": 1,
+      "negative_count": 0,
+      "strictly_increasing": true
+    },
+    {
+      "path": "input/B题/附件/附件2.xlsx",
+      "sheet": "Sheet1",
+      "worksheet_rows": 7470,
+      "columns": 2,
+      "header": [
+        "波数 (cm-1)",
+        "反射率 (%)"
+      ],
+      "data_rows": 7469,
+      "first_data_excel_row": 2,
+      "last_data_excel_row": 7470,
+      "first": [
+        399.6747,
+        0
+      ],
+      "last": [
+        4000.122,
+        19.28237573
+      ],
+      "material": "SiC",
+      "angle_deg": 15,
+      "group": "SiC-wafer",
+      "missing_cells": 0,
+      "wavenumber_unit": "cm^-1",
+      "reflectance_unit": "%",
+      "wavenumber_range": [
+        399.6747,
+        4000.122
+      ],
+      "reflectance_range": [
+        0,
+        102.7393552
+      ],
+      "step_range": [
+        0.48099999999976717,
+        0.4830000000001746
+      ],
+      "above_100_count": 262,
+      "zero_count": 1,
+      "negative_count": 0,
+      "strictly_increasing": true
+    },
+    {
+      "path": "input/B题/附件/附件3.xlsx",
+      "sheet": "Sheet1",
+      "worksheet_rows": 7470,
+      "columns": 2,
+      "header": [
+        "波数 (cm-1)",
+        "反射率 (%)"
+      ],
+      "data_rows": 7469,
+      "first_data_excel_row": 2,
+      "last_data_excel_row": 7470,
+      "first": [
+        399.6747,
+        0
+      ],
+      "last": [
+        4000.122,
+        28.3130393
+      ],
+      "material": "Si",
+      "angle_deg": 10,
+      "group": "Si-wafer",
+      "missing_cells": 0,
+      "wavenumber_unit": "cm^-1",
+      "reflectance_unit": "%",
+      "wavenumber_range": [
+        399.6747,
+        4000.122
+      ],
+      "reflectance_range": [
+        0,
+        79.8019744
+      ],
+      "step_range": [
+        0.48099999999976717,
+        0.4830000000001746
+      ],
+      "above_100_count": 0,
+      "zero_count": 1,
+      "negative_count": 0,
+      "strictly_increasing": true
+    },
+    {
+      "path": "input/B题/附件/附件4.xlsx",
+      "sheet": "Sheet1",
+      "worksheet_rows": 7470,
+      "columns": 2,
+      "header": [
+        "波数 (cm-1)",
+        "反射率 (%)"
+      ],
+      "data_rows": 7469,
+      "first_data_excel_row": 2,
+      "last_data_excel_row": 7470,
+      "first": [
+        399.6747,
+        0
+      ],
+      "last": [
+        4000.122,
+        31.06725458
+      ],
+      "material": "Si",
+      "angle_deg": 15,
+      "group": "Si-wafer",
+      "missing_cells": 0,
+      "wavenumber_unit": "cm^-1",
+      "reflectance_unit": "%",
+      "wavenumber_range": [
+        399.6747,
+        4000.122
+      ],
+      "reflectance_range": [
+        0,
+        91.48944351
+      ],
+      "step_range": [
+        0.48099999999976717,
+        0.4830000000001746
+      ],
+      "above_100_count": 0,
+      "zero_count": 1,
+      "negative_count": 0,
+      "strictly_increasing": true
+    }
+  ],
+  "audit_status": "初步统计已完成，完整字段/格式/隐藏内容审计因规则基线冲突停止"
+}

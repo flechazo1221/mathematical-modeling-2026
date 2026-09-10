@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-09-05T20:45:44+08:00",
+  "input_dir": "C:\\Users\\Lenovo\\Desktop\\数模\\CUMCM26-Workflow test\\CUMCM25-ABC-Workflow\\literature\\input",
+  "tools": {
+    "caj2pdf": null,
+    "pdftotext": "C:\\Program Files\\Git\\mingw64\\bin\\pdftotext.EXE",
+    "ocrmypdf": null
+  },
+  "source_count": 4,
+  "ready_count": 4,
+  "chunk_count": 339,
+  "sources": [
+    {
+      "source_id": "L01",
+      "path": "C:\\Users\\Lenovo\\Desktop\\数模\\CUMCM26-Workflow test\\CUMCM25-ABC-Workflow\\literature\\input\\baker_finch_2014_free_carrier_absorption.pdf",
+      "relative_path": "baker_finch_2014_free_carrier_absorption.pdf",
+      "sha256": "4faf03732d380c6835ffb1a76c278df46e953c7a8ebd9d7653e22976d5907c71",
+      "bytes": 3605792,
+      "source_format": "pdf",
+      "status": "ready",
+      "page_count": 13,
+      "text_chars": 77150,
+      "chunk_count": 61,
+      "text_path": "C:\\Users\\Lenovo\\Desktop\\数模\\CUMCM26-Workflow test\\CUMCM25-ABC-Workflow\\02-literature\\corpus\\text\\L01.txt",
+      "text_sha256": "6c154c4f6cc2071783318917dda8a41913306b9642670026f9f1aa80d309cb36"
+    },
+    {
+      "source_id": "L02",
+      "path": "C:\\Users\\Lenovo\\Desktop\\数模\\CUMCM26-Workflow test\\CUMCM25-ABC-Workflow\\literature\\input\\ballester_2025_wedged_thin_films.pdf",
+      "relative_path": "ballester_2025_wedged_thin_films.pdf",
+      "sha256": "55398cc1a933f15fa5a7c152a01e021b48e73cd25162d1ff28fd7b2e6da3e3b5",
+      "bytes": 2553596,
+      "source_format": "pdf",
+      "status": "ready",
+      "page_count": 22,
+      "text_chars": 144149,
+      "chunk_count": 114,
+      "text_path": "C:\\Users\\Lenovo\\Desktop\\数模\\CUMCM26-Workflow test\\CUMCM25-ABC-Workflow\\02-literature\\corpus\\text\\L02.txt",
+      "text_sha256": "b6fcb879e5cddf163538138b796c4a9da1bbeaf5b29b021fceaacfb60dff03fb"
+    },
+    {
+      "source_id": "L03",
+      "path": "C:\\Users\\Lenovo\\Desktop\\数模\\CUMCM26-Workflow test\\CUMCM25-ABC-Workflow\\literature\\input\\ou_2023_silicon_carbide_photonics.pdf",
+      "relative_path": "ou_2023_silicon_carbide_photonics.pdf",
+      "sha256": "80498024a411c81411a19096402e04632722c34e31f2b4bcc10d9b1c2ebabd02",
+      "bytes": 9171041,
+      "source_format": "pdf",
+      "status": "ready",
+      "page_count": 29,
+      "text_chars": 139645,
+      "chunk_count": 112,
+      "text_path": "C:\\Users\\Lenovo\\Desktop\\数模\\CUMCM26-Workflow test\\CUMCM25-ABC-Workflow\\02-literature\\corpus\\text\\L03.txt",
+      "text_sha256": "e4ab670cd94ff80fdab02dff1a317ff635e51582cbc79106924ae2020154fa28"
+    },
+    {
+      "source_id": "L04",
+      "path": "C:\\Users\\Lenovo\\Desktop\\数模\\CUMCM26-Workflow test\\CUMCM25-ABC-Workflow\\literature\\input\\quinten_2019_fft_layer_thickness.pdf",
+      "relative_path": "quinten_2019_fft_layer_thickness.pdf",
+      "sha256": "8d24b00f37911bff53a16efaa07ca1e8c404c512a2d0ac872e33f6f733a7b74e",
+      "bytes": 1294774,
+      "source_format": "pdf",
+      "status": "ready",
+      "page_count": 12,
+      "text_chars": 64527,
+      "chunk_count": 52,
+      "text_path": "C:\\Users\\Lenovo\\Desktop\\数模\\CUMCM26-Workflow test\\CUMCM25-ABC-Workflow\\02-literature\\corpus\\text\\L04.txt",
+      "text_sha256": "543e0ada4b0445a13a0f72a6fd84173f2a70a94387fc487823fae6ef0add85b0"
+    }
+  ]
+}

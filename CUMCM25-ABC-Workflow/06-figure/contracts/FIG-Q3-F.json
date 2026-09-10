@@ -1,0 +1,52 @@
+{
+  "figure_id": "FIG-Q3-F",
+  "claim_ids": [
+    "Q3.5-O1",
+    "Q3.6-O1"
+  ],
+  "question": "Si 的批准F结果在三个固定窗口、双角与raw/reasoned下给出何种条件光学厚度q及离散分辨率？",
+  "source_files": [
+    {
+      "path": "04-compute/results/observed_all_models.csv",
+      "sha256": "99d84af1a96feaca5ae575fcff4629805da82e6441b9dd1a9fb69375b4a285e5"
+    },
+    {
+      "path": "06-figure/data-snapshots/FIG-Q3-F.csv",
+      "sha256": "46cc9244c34a13676cb52fb81e876118ed83411812091fff2972fe648848f5fe"
+    }
+  ],
+  "required_comparisons": [
+    "W1/W2/W3 all shown",
+    "10°/15° paired",
+    "raw/reasoned paired"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "select favorable windows or categories",
+    "remove failures",
+    "redefine metrics",
+    "claim true accuracy from internal consistency",
+    "use log/broken/normalized axes without C1"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 300,
+  "final_size_inches": [
+    7.2,
+    4.4
+  ],
+  "language": "zh-CN",
+  "color_encoding": "Okabe-Ito-like palette with marker/line-style redundancy",
+  "x": {
+    "field": "angle_deg",
+    "unit": "deg"
+  },
+  "y": {
+    "field": "q_um",
+    "unit": "μm",
+    "uncertainty_field": "q_bin_resolution_um"
+  },
+  "uncertainty": "FFT discrete-bin resolution; not statistical CI"
+}

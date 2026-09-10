@@ -1,0 +1,41 @@
+{
+  "figure_id": "TAB-DN",
+  "claim_ids": [
+    "Q1.1-D1",
+    "I2-D1"
+  ],
+  "question": "q与条件厚度 d(n) 的关系（原始 / 有依据掩码）",
+  "source_files": [
+    {
+      "path": "04-compute/results/conditional_sensitivity.csv",
+      "sha256": "d0637c4e9ff2f4083abac9b4fe9a5b814074dd3654d536467b8aae629e9d545b"
+    },
+    {
+      "path": "06-figure/data-snapshots/TAB-DN.csv",
+      "sha256": "d0637c4e9ff2f4083abac9b4fe9a5b814074dd3654d536467b8aae629e9d545b"
+    }
+  ],
+  "required_comparisons": [
+    "all approved states/conditions shown"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "select favorable windows or categories",
+    "remove failures",
+    "redefine metrics",
+    "claim true accuracy from internal consistency",
+    "use log/broken/normalized axes without C1"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 300,
+  "final_size_inches": [
+    7.2,
+    3.8
+  ],
+  "language": "zh-CN",
+  "color_encoding": "Okabe-Ito-like palette with marker/line-style redundancy",
+  "artifact_type": "formal_table"
+}

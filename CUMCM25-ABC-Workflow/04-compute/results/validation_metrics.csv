@@ -1,0 +1,85 @@
+﻿validation,model,material,mask,n,relative_range,interpretation,window,relative_difference,angle_deg,raw_status,reasoned_status
+cross_window_all_angles,B,SiC,raw,6,3.164753136448336,internal stability only,,,,,
+cross_window_all_angles,B,SiC,reasoned,6,3.1650098874261703,internal stability only,,,,,
+dual_angle_independent,B,SiC,raw,,,internal consistency; not true accuracy,W1,0.002920557394051825,,,
+dual_angle_independent,B,SiC,reasoned,,,internal consistency; not true accuracy,W1,0.02201665040915104,,,
+dual_angle_independent,B,SiC,raw,,,internal consistency; not true accuracy,W2,1.9707514795781782,,,
+dual_angle_independent,B,SiC,reasoned,,,internal consistency; not true accuracy,W2,1.9707514795781782,,,
+dual_angle_independent,B,SiC,raw,,,internal consistency; not true accuracy,W3,0.2589736725135327,,,
+dual_angle_independent,B,SiC,reasoned,,,internal consistency; not true accuracy,W3,0.2589736725135327,,,
+cross_window_all_angles,B,Si,raw,6,3.6744140370213283,internal stability only,,,,,
+cross_window_all_angles,B,Si,reasoned,6,3.6744140370213283,internal stability only,,,,,
+dual_angle_independent,B,Si,raw,,,internal consistency; not true accuracy,W1,0.06705981503071072,,,
+dual_angle_independent,B,Si,reasoned,,,internal consistency; not true accuracy,W1,0.06705981503071072,,,
+dual_angle_independent,B,Si,raw,,,internal consistency; not true accuracy,W2,0.02701916988310459,,,
+dual_angle_independent,B,Si,reasoned,,,internal consistency; not true accuracy,W2,0.02701916988310459,,,
+dual_angle_independent,B,Si,raw,,,internal consistency; not true accuracy,W3,0.7372811631874976,,,
+dual_angle_independent,B,Si,reasoned,,,internal consistency; not true accuracy,W3,0.7372811631874976,,,
+raw_reasoned_pair,B,SiC,,,,,W1,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,B,SiC,,,,,W2,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,B,SiC,,,,,W3,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,B,SiC,,,,,W1,0.019096399993983534,15,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,B,SiC,,,,,W2,0.0,15,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,B,SiC,,,,,W3,0.0,15,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,B,Si,,,,,W1,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,B,Si,,,,,W2,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,B,Si,,,,,W3,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,B,Si,,,,,W1,0.0,15,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,B,Si,,,,,W2,0.0,15,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,B,Si,,,,,W3,0.0,15,OK_CONDITIONAL,OK_CONDITIONAL
+cross_window_all_angles,F,SiC,raw,6,0.6392658579508064,internal stability only,,,,,
+cross_window_all_angles,F,SiC,reasoned,6,0.639311409456865,internal stability only,,,,,
+dual_angle_independent,F,SiC,raw,,,internal consistency; not true accuracy,W1,0.0,,,
+dual_angle_independent,F,SiC,reasoned,,,internal consistency; not true accuracy,W1,6.975236593441059e-05,,,
+dual_angle_independent,F,SiC,raw,,,internal consistency; not true accuracy,W2,0.0,,,
+dual_angle_independent,F,SiC,reasoned,,,internal consistency; not true accuracy,W2,0.0,,,
+dual_angle_independent,F,SiC,raw,,,internal consistency; not true accuracy,W3,0.0,,,
+dual_angle_independent,F,SiC,reasoned,,,internal consistency; not true accuracy,W3,0.0,,,
+cross_window_all_angles,F,Si,raw,6,0.400011087781958,internal stability only,,,,,
+cross_window_all_angles,F,Si,reasoned,6,0.400011087781958,internal stability only,,,,,
+dual_angle_independent,F,Si,raw,,,internal consistency; not true accuracy,W1,0.0,,,
+dual_angle_independent,F,Si,reasoned,,,internal consistency; not true accuracy,W1,0.0,,,
+dual_angle_independent,F,Si,raw,,,internal consistency; not true accuracy,W2,0.0,,,
+dual_angle_independent,F,Si,reasoned,,,internal consistency; not true accuracy,W2,0.0,,,
+dual_angle_independent,F,Si,raw,,,internal consistency; not true accuracy,W3,0.0,,,
+dual_angle_independent,F,Si,reasoned,,,internal consistency; not true accuracy,W3,0.0,,,
+raw_reasoned_pair,F,SiC,,,,,W1,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,F,SiC,,,,,W2,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,F,SiC,,,,,W3,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,F,SiC,,,,,W1,6.975236593441059e-05,15,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,F,SiC,,,,,W2,0.0,15,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,F,SiC,,,,,W3,0.0,15,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,F,Si,,,,,W1,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,F,Si,,,,,W2,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,F,Si,,,,,W3,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,F,Si,,,,,W1,0.0,15,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,F,Si,,,,,W2,0.0,15,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,F,Si,,,,,W3,0.0,15,OK_CONDITIONAL,OK_CONDITIONAL
+cross_window_all_angles,P,SiC,raw,6,0.7111210996957321,internal stability only,,,,,
+cross_window_all_angles,P,SiC,reasoned,6,0.740602448192025,internal stability only,,,,,
+dual_angle_independent,P,SiC,raw,,,internal consistency; not true accuracy,W1,0.0,,,
+dual_angle_independent,P,SiC,reasoned,,,internal consistency; not true accuracy,W1,0.050369109383506035,,,
+dual_angle_independent,P,SiC,raw,,,internal consistency; not true accuracy,W2,0.006282722513089151,,,
+dual_angle_independent,P,SiC,reasoned,,,internal consistency; not true accuracy,W2,0.006282722513089151,,,
+dual_angle_independent,P,SiC,raw,,,internal consistency; not true accuracy,W3,0.013757961783439373,,,
+dual_angle_independent,P,SiC,reasoned,,,internal consistency; not true accuracy,W3,0.013757961783439373,,,
+cross_window_all_angles,P,Si,raw,6,0.13973474231197136,internal stability only,,,,,
+cross_window_all_angles,P,Si,reasoned,6,0.13973474231197136,internal stability only,,,,,
+dual_angle_independent,P,Si,raw,,,internal consistency; not true accuracy,W1,0.0034032898468520987,,,
+dual_angle_independent,P,Si,reasoned,,,internal consistency; not true accuracy,W1,0.0034032898468520987,,,
+dual_angle_independent,P,Si,raw,,,internal consistency; not true accuracy,W2,0.0032068412613575764,,,
+dual_angle_independent,P,Si,reasoned,,,internal consistency; not true accuracy,W2,0.0032068412613575764,,,
+dual_angle_independent,P,Si,raw,,,internal consistency; not true accuracy,W3,0.006475285991797883,,,
+dual_angle_independent,P,Si,reasoned,,,internal consistency; not true accuracy,W3,0.006475285991797883,,,
+raw_reasoned_pair,P,SiC,,,,,W1,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,P,SiC,,,,,W2,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,P,SiC,,,,,W3,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,P,SiC,,,,,W1,0.050369109383506035,15,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,P,SiC,,,,,W2,0.0,15,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,P,SiC,,,,,W3,0.0,15,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,P,Si,,,,,W1,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,P,Si,,,,,W2,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,P,Si,,,,,W3,0.0,10,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,P,Si,,,,,W1,0.0,15,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,P,Si,,,,,W2,0.0,15,OK_CONDITIONAL,OK_CONDITIONAL
+raw_reasoned_pair,P,Si,,,,,W3,0.0,15,OK_CONDITIONAL,OK_CONDITIONAL

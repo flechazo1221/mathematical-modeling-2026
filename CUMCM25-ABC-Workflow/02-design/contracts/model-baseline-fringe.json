@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "model_id": "B-local-fringe-two-beam",
+  "role": "simplest_credible_baseline",
+  "covers": ["Q1.1", "Q2.1", "Q2.2", "Q2.3", "Q3.4", "Q3.5", "Q3.6", "I1", "I2"],
+  "decision_question": "在给定折射率条件或区间下，由双角反射谱给出外延层条件厚度并诚实返回不可识别状态",
+  "inputs": {
+    "sigma_cm_inv": {"type": "array[number]", "constraints": ["strictly_increasing", "finite"], "sampling": "not_assumed_equidistant"},
+    "R_percent": {"type": "array[number]", "constraints": ["finite", "same_length_as_sigma"], "policy": "retain_raw_and_flag_out_of_physical_range"},
+    "theta0_deg": {"type": "number", "allowed_observed": [10, 15]},
+    "material": {"type": "string", "enum": ["SiC", "Si"]},
+    "n_model": {"type": "symbolic_or_approved_bounded_function", "unit": "1"},
+    "window_cm_inv": {"type": "approved_interval"},
+    "mask": {"type": "boolean_array", "variants_required": ["raw", "reasoned_sensitivity"]}
+  },
+  "equations": [
+    "lambda_um=10000/sigma_cm_inv",
+    "d_cm=1e-4*d_um",
+    "n0*sin(theta0)=n*sin(theta1)",
+    "phi=4*pi*n*d_cm*cos(theta1)*sigma+phi_r",
+    "d_um=10000/(2*n_eff*cos(theta1)*Delta_sigma_cm_inv)"
+  ],
+  "outputs": ["conditional_d_um_by_angle", "optical_thickness", "fringe_trace", "sensitivity_pair", "status_code"],
+  "status_codes": ["OK_CONDITIONAL", "INSUFFICIENT_FRINGES", "FRINGE_AMBIGUOUS", "N_D_NONIDENTIFIABLE", "WINDOW_UNAPPROVED", "ASSUMPTION_UNAPPROVED"],
+  "assumptions_requiring_captain": ["A1", "A2", "A3", "A6", "A7"],
+  "identifiability": "If n scale is unconstrained, report optical thickness or d(n), never a unique physical d.",
+  "units_check": "n*cos(theta1)*d_cm*sigma_cm_inv is dimensionless; output conversion is cm to um by 1e4.",
+  "cost": "low",
+  "forbidden_claim": "internal consistency or fit quality proves true thickness accuracy"
+}

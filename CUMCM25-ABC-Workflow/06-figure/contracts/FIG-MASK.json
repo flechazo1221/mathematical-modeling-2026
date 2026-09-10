@@ -1,0 +1,62 @@
+{
+  "figure_id": "FIG-MASK",
+  "claim_ids": [
+    "I1-O1"
+  ],
+  "question": "异常测量位于何处，以及raw/reasoned成对处理对各模型q的内部敏感性如何？",
+  "source_files": [
+    {
+      "path": "04-compute/results/mask_exclusions.csv",
+      "sha256": "471305d083f80ef0e7b43842265b36483a7525201231cffa9cc2fd43915d3cb4"
+    },
+    {
+      "path": "06-figure/data-snapshots/FIG-MASK-anomalies.csv",
+      "sha256": "471305d083f80ef0e7b43842265b36483a7525201231cffa9cc2fd43915d3cb4"
+    },
+    {
+      "path": "04-compute/results/validation_metrics.csv",
+      "sha256": "e724e0b28115086fb7c9b61edd173422bd361926fbb89b4ff0d4245b2274f59d"
+    },
+    {
+      "path": "06-figure/data-snapshots/FIG-MASK-sensitivity.csv",
+      "sha256": "555e57338cbad5ed05d8e7c2c570b8f199381078b6b844dd2211eee90f3348d0"
+    }
+  ],
+  "required_comparisons": [
+    "262 R>100% points",
+    "four first-row zeros",
+    "raw/reasoned paired for B/F/P"
+  ],
+  "must_show_failures": true,
+  "prohibited_operations": [
+    "select favorable windows or categories",
+    "remove failures",
+    "redefine metrics",
+    "claim true accuracy from internal consistency",
+    "use log/broken/normalized axes without C1"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 300,
+  "final_size_inches": [
+    7.2,
+    4.4
+  ],
+  "language": "zh-CN",
+  "color_encoding": "Okabe-Ito-like palette with marker/line-style redundancy",
+  "x": {
+    "fields": [
+      "sigma_cm_inv",
+      "model/window/material/angle"
+    ]
+  },
+  "y": {
+    "fields": [
+      "R_percent",
+      "relative_difference"
+    ]
+  },
+  "uncertainty": "none; all enumerated records"
+}

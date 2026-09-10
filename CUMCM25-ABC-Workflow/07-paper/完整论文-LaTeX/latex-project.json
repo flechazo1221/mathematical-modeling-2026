@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "contest": "cumcm",
+  "main_tex": "main.tex",
+  "template": {
+    "path": "C:\\Users\\Lenovo\\.codex\\skills\\math-modeling-v2\\tools\\latex\\assets\\templates\\cumcm",
+    "source": null,
+    "version": null,
+    "sha256": "b58d44f4941ddffe4f19a0b78684d3e6015c2f72b8d5354fe2b2b685202b6186"
+  },
+  "template_files": {
+    "main.tex": "bcdcb449176640a60ff540210aa7b7a64d6a5e77465d5d06877bdb46d44de276",
+    "references.bib": "e19b906154ccbe9f86d9f9c550cda438357622483e23ceb0d1ba8900ca768a69"
+  },
+  "resource_bindings": [
+    {
+      "source": "冻结图表/FIG-Q2-F.png",
+      "destination": "figs/FIG-Q2-F.png",
+      "sha256": "c6142134220b14451fe91f51d16304f3d0f5c9d3e0ee511a4ba209a1bbe35e48",
+      "hash_mode": "content",
+      "bound_at": "2026-09-10T08:12:42.558155+00:00"
+    },
+    {
+      "source": "冻结图表/FIG-Q3-F.png",
+      "destination": "figs/FIG-Q3-F.png",
+      "sha256": "9be23efdc9e8146546e122c8011958f3e6f45a99d05a795f8a93374898847cc1",
+      "hash_mode": "content",
+      "bound_at": "2026-09-10T08:12:42.754692+00:00"
+    },
+    {
+      "source": "冻结图表/FIG-SYNTH.png",
+      "destination": "figs/FIG-SYNTH.png",
+      "sha256": "2052370d553b79b8fd1a6248e817af1f1965a85c8fe5253de6230fec28db567f",
+      "hash_mode": "content",
+      "bound_at": "2026-09-10T08:12:42.954851+00:00"
+    },
+    {
+      "source": "冻结图表/FIG-ROBUST.png",
+      "destination": "figs/FIG-ROBUST.png",
+      "sha256": "e8dabbb75ee6b642d787586e65c2c02be7d5ed38a518e6248886bbff8f8c327f",
+      "hash_mode": "content",
+      "bound_at": "2026-09-10T08:12:43.116543+00:00"
+    },
+    {
+      "source": "冻结图表/FIG-MASK.png",
+      "destination": "figs/FIG-MASK.png",
+      "sha256": "4c59804b89fb2374ea4c77ffb26ab1d1239749deb67a9b3d29cb3dede2c98fa5",
+      "hash_mode": "content",
+      "bound_at": "2026-09-10T08:12:43.320166+00:00"
+    },
+    {
+      "source": "冻结图表/FIG-PRINCIPLE.png",
+      "destination": "figs/FIG-PRINCIPLE.png",
+      "sha256": "4e507fee8bbbd63f5a91a54fd3e2590efea7fd2dff02d59cc05c6d1f7ee867d7",
+      "hash_mode": "content",
+      "bound_at": "2026-09-10T08:13:19.573739+00:00"
+    },
+    {
+      "source": "冻结图表/FIG-PRINCIPLE-print.png",
+      "destination": "figs/FIG-PRINCIPLE-print.png",
+      "sha256": "2ecfe3c3ddb73cd5c8853dbfea4e74ef0c755ca1c16293b5583864ae500e88ca",
+      "hash_mode": "content",
+      "bound_at": "2026-09-10T08:13:19.765927+00:00"
+    },
+    {
+      "source": "冻结图表/TAB-DN.csv",
+      "destination": "tables/TAB-DN.csv",
+      "sha256": "f743fdd35431514d292ee088a2d50ecb14d894c80625e212302a41485a0b149f",
+      "hash_mode": "content",
+      "bound_at": "2026-09-10T08:38:34.987599+00:00"
+    },
+    {
+      "source": "冻结图表/TAB-M-GATE.csv",
+      "destination": "tables/TAB-M-GATE.csv",
+      "sha256": "cd30f634b80f15cd1c65b87e911ab540403ea5976781aa07df95f2ee6a79f46d",
+      "hash_mode": "content",
+      "bound_at": "2026-09-10T08:38:35.189693+00:00"
+    }
+  ],
+  "created_at": "2026-09-08T03:08:49.457367+00:00"
+}

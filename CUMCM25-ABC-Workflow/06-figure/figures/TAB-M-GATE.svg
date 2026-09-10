@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="416.16pt" height="250.970687pt" viewBox="0 0 416.16 250.970687" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-08T10:45:15.926204</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 250.970687 
+L 416.16 250.970687 
+L 416.16 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="table_1">
+    <g id="patch_2">
+     <path d="M 7.2 92.162687 
+L 99.6048 92.162687 
+L 99.6048 74.762687 
+L 7.2 74.762687 
+z
+" style="fill: #ddebf7; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_1">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="16.44048" y="85.417766" transform="rotate(-0 16.44048 85.417766)">项目</text>
+    </g>
+    <g id="patch_3">
+     <path d="M 99.6048 92.162687 
+L 236.2032 92.162687 
+L 236.2032 74.762687 
+L 99.6048 74.762687 
+z
+" style="fill: #ddebf7; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_2">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="113.26464" y="85.499865" transform="rotate(-0 113.26464 85.499865)">计算证据</text>
+    </g>
+    <g id="patch_4">
+     <path d="M 236.2032 92.162687 
+L 408.96 92.162687 
+L 408.96 74.762687 
+L 236.2032 74.762687 
+z
+" style="fill: #ddebf7; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_3">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="253.47888" y="85.506428" transform="rotate(-0 253.47888 85.506428)">解释边界</text>
+    </g>
+    <g id="patch_5">
+     <path d="M 7.2 109.562687 
+L 99.6048 109.562687 
+L 99.6048 92.162687 
+L 7.2 92.162687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_4">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="16.44048" y="102.913537" transform="rotate(-0 16.44048 102.913537)">准入状态</text>
+    </g>
+    <g id="patch_6">
+     <path d="M 99.6048 109.562687 
+L 236.2032 109.562687 
+L 236.2032 92.162687 
+L 99.6048 92.162687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_5">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(113.26464 99.06675)">GATE_NOT_</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(113.26464 106.568781)">TRIGGERED</text>
+    </g>
+    <g id="patch_7">
+     <path d="M 236.2032 109.562687 
+L 408.96 109.562687 
+L 408.96 92.162687 
+L 236.2032 92.162687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="253.47888" y="102.896584" transform="rotate(-0 253.47888 102.896584)">未触发；M保持关闭</text>
+    </g>
+    <g id="patch_8">
+     <path d="M 7.2 126.962687 
+L 99.6048 126.962687 
+L 99.6048 109.562687 
+L 7.2 109.562687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="16.44048" y="120.299865" transform="rotate(-0 16.44048 120.299865)">机制证据门</text>
+    </g>
+    <g id="patch_9">
+     <path d="M 99.6048 126.962687 
+L 236.2032 126.962687 
+L 236.2032 109.562687 
+L 99.6048 109.562687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_8">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(113.26464 116.46675)">INSUFFICIENT_</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(113.26464 123.968781)">EVIDENCE</text>
+    </g>
+    <g id="patch_10">
+     <path d="M 236.2032 126.962687 
+L 408.96 126.962687 
+L 408.96 109.562687 
+L 236.2032 109.562687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_9">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="253.47888" y="120.306428" transform="rotate(-0 253.47888 120.306428)">证据不足（不等于不存在）</text>
+    </g>
+    <g id="patch_11">
+     <path d="M 7.2 144.362687 
+L 99.6048 144.362687 
+L 99.6048 126.962687 
+L 7.2 126.962687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="16.44048" y="137.723928" transform="rotate(-0 16.44048 137.723928)">厚度影响门</text>
+    </g>
+    <g id="patch_12">
+     <path d="M 99.6048 144.362687 
+L 236.2032 144.362687 
+L 236.2032 126.962687 
+L 99.6048 126.962687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_11">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="113.26464" y="137.611135" transform="rotate(-0 113.26464 137.611135)">NOT_ESTIMATED</text>
+    </g>
+    <g id="patch_13">
+     <path d="M 236.2032 144.362687 
+L 408.96 144.362687 
+L 408.96 126.962687 
+L 236.2032 126.962687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_12">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="253.47888" y="137.710256" transform="rotate(-0 253.47888 137.710256)">未估计；不生成修正结果</text>
+    </g>
+    <g id="patch_14">
+     <path d="M 7.2 161.762687 
+L 99.6048 161.762687 
+L 99.6048 144.362687 
+L 7.2 144.362687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_13">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="16.44048" y="155.106428" transform="rotate(-0 16.44048 155.106428)">后界面反射→0</text>
+    </g>
+    <g id="patch_15">
+     <path d="M 99.6048 161.762687 
+L 236.2032 161.762687 
+L 236.2032 144.362687 
+L 99.6048 144.362687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(113.26464 151.26675)">PASS_BY_</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(113.26464 158.768781)">CONSTRUCTION</text>
+    </g>
+    <g id="patch_16">
+     <path d="M 236.2032 161.762687 
+L 408.96 161.762687 
+L 408.96 144.362687 
+L 236.2032 144.362687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="253.47888" y="155.089475" transform="rotate(-0 253.47888 155.089475)">退化检查通过</text>
+    </g>
+    <g id="patch_17">
+     <path d="M 7.2 179.162687 
+L 99.6048 179.162687 
+L 99.6048 161.762687 
+L 7.2 161.762687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_16">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="16.44048" y="172.496584" transform="rotate(-0 16.44048 172.496584)">强衰减</text>
+    </g>
+    <g id="patch_18">
+     <path d="M 99.6048 179.162687 
+L 236.2032 179.162687 
+L 236.2032 161.762687 
+L 99.6048 161.762687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_17">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(113.26464 168.660119)">PASS_GEOMETRIC_</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(113.26464 176.16215)">TERMS_VANISH</text>
+    </g>
+    <g id="patch_19">
+     <path d="M 236.2032 179.162687 
+L 408.96 179.162687 
+L 408.96 161.762687 
+L 236.2032 161.762687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_18">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="253.47888" y="172.492756" transform="rotate(-0 253.47888 172.492756)">几何级次消失</text>
+    </g>
+    <g id="patch_20">
+     <path d="M 7.2 196.562687 
+L 99.6048 196.562687 
+L 99.6048 179.162687 
+L 7.2 179.162687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_19">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="16.44048" y="189.879084" transform="rotate(-0 16.44048 189.879084)">失相干</text>
+    </g>
+    <g id="patch_21">
+     <path d="M 99.6048 196.562687 
+L 236.2032 196.562687 
+L 236.2032 179.162687 
+L 99.6048 179.162687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_20">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(113.26464 186.060119)">PASS_PHASE_</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(113.26464 193.56215)">INTERFERENCE_REMOVED</text>
+    </g>
+    <g id="patch_22">
+     <path d="M 236.2032 196.562687 
+L 408.96 196.562687 
+L 408.96 179.162687 
+L 236.2032 179.162687 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_21">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="253.47888" y="189.903146" transform="rotate(-0 253.47888 189.903146)">相位干涉项移除</text>
+    </g>
+   </g>
+   <g id="text_22">
+    <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="208.08" y="15.554687" transform="rotate(-0 208.08 15.554687)">M模型双门与退化极限</text>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,1750 @@
+{
+  "schema_version": "1.0",
+  "inputs": [
+    {
+      "path": "decisions/H0-selection.json",
+      "sha256": "0c5c1f543489f91f857bb0bb215bf0706d592893814a2bacf7c7e91287f671a6",
+      "size_bytes": 1669,
+      "type": ".json"
+    },
+    {
+      "path": ".workflow/config.json",
+      "sha256": "6bdce292ee593bb7ce55ae1d6dd722cfc951e450fdcc7ef4cdacde35ae35dc90",
+      "size_bytes": 319,
+      "type": ".json"
+    },
+    {
+      "path": "00-selection/H0-选择包.md",
+      "sha256": "f122f9d7fd47281c3317d21fa17f3bdfa5c440d62d58b691e58680ee1d7a6123",
+      "size_bytes": 4371,
+      "type": ".md"
+    },
+    {
+      "path": "00-selection/handoff.json",
+      "sha256": "c02157133a2138ffa04477c1f2762364de534b3d560d886da88641097997892b",
+      "size_bytes": 3103,
+      "type": ".json"
+    },
+    {
+      "path": "00-selection/候选题清单.json",
+      "sha256": "f1eebc2ecb4692f3d153e9b6a295af67a94e5f47818dde3ae7162f9a84932e72",
+      "size_bytes": 5314,
+      "type": ".json"
+    },
+    {
+      "path": "00-selection/选题分析.md",
+      "sha256": "f95690299f74fffdf9a6156c0f14cb5c6b21420d97d1986bed442f038c1dab64",
+      "size_bytes": 8154,
+      "type": ".md"
+    },
+    {
+      "path": "00-selection/选题评分.json",
+      "sha256": "1d0cad8423142b830721ffc8659be708fec65e0cbbced3ac76b4e11773aa67d5",
+      "size_bytes": 8561,
+      "type": ".json"
+    },
+    {
+      "path": "input/B题/B题.pdf",
+      "sha256": "b0b2ce649282c2d7063af3c30ac9c0d931512dc86014d3147bc765d8f1c8cf87",
+      "size_bytes": 277238,
+      "type": ".pdf"
+    },
+    {
+      "path": "input/B题/附件/附件1.xlsx",
+      "sha256": "b42f8bdabe7497951284cd044386c3cdf9d349b5e8ef4baaa0336e65ff84c67b",
+      "size_bytes": 187625,
+      "type": ".xlsx"
+    },
+    {
+      "path": "input/B题/附件/附件2.xlsx",
+      "sha256": "24b3113e80d5ec5458ba4f447df9ed185578481e8b0081bdf0673689505e49d0",
+      "size_bytes": 186957,
+      "type": ".xlsx"
+    },
+    {
+      "path": "input/B题/附件/附件3.xlsx",
+      "sha256": "79e9f66a00409f1d1130d9f4f3d76b4d5e5a1ccd3ac2d24dc0af8ecc583d0ec8",
+      "size_bytes": 189278,
+      "type": ".xlsx"
+    },
+    {
+      "path": "input/B题/附件/附件4.xlsx",
+      "sha256": "9cf1400404c4560958da06685beb8c2e1e4df5918a6e13863663a54440ba12e3",
+      "size_bytes": 189423,
+      "type": ".xlsx"
+    }
+  ],
+  "pdf_pages": 2,
+  "profiles": [
+    {
+      "path": "input/B题/附件/附件1.xlsx",
+      "sheet": "Sheet1",
+      "sheet_state": "visible",
+      "worksheet_rows": 7470,
+      "columns": 2,
+      "header": [
+        "波数 (cm-1)",
+        "反射率 (%)"
+      ],
+      "data_rows": 7469,
+      "first_data_excel_row": 2,
+      "last_data_excel_row": 7470,
+      "first": [
+        399.6747,
+        0
+      ],
+      "last": [
+        4000.122,
+        18.26850504
+      ],
+      "material": "SiC",
+      "angle_deg": 10,
+      "wafer_group": "SiC-one-wafer",
+      "fields": [
+        {
+          "column": "A",
+          "meaning": "真空波数（真空口径为物理解释，题面仅写波数）",
+          "type": "finite numeric",
+          "unit": "cm^-1",
+          "missing": 0,
+          "min": 399.6747,
+          "max": 4000.122
+        },
+        {
+          "column": "B",
+          "meaning": "实测反射率",
+          "type": "finite numeric",
+          "unit": "%",
+          "missing": 0,
+          "min": 0,
+          "max": 95.38499492
+        }
+      ],
+      "strictly_increasing": true,
+      "step_range": [
+        0.48099999999976717,
+        0.4830000000001746
+      ],
+      "step_median": 0.4819999999999709,
+      "duplicate_wavenumbers": 0,
+      "duplicate_rows": 0,
+      "missing_cells": 0,
+      "negative_count": 0,
+      "above_100_count": 0,
+      "zero_count": 1,
+      "reflectance_mean": 22.266821665287186,
+      "reflectance_sd": 17.589175259641884,
+      "reflectance_quartiles": [
+        16.65391899,
+        17.98559953,
+        18.418312555
+      ],
+      "formula_count": 0,
+      "error_cells": [],
+      "hidden_rows": [],
+      "hidden_columns": [],
+      "merged_ranges": [],
+      "comments": [],
+      "hyperlinks": [],
+      "defined_names": [],
+      "external_links_count": 0,
+      "macro_parts": [],
+      "tables": [],
+      "autofilter": null,
+      "number_formats": [
+        "General"
+      ],
+      "abnormal_records": [
+        {
+          "excel_row": 2,
+          "wavenumber": 399.6747,
+          "reflectance_percent": 0
+        }
+      ],
+      "time_or_space": "波数顺序；无采样时间与空间位置字段",
+      "label_balance": "无厚度真值/多光束标签；分类平衡不适用"
+    },
+    {
+      "path": "input/B题/附件/附件2.xlsx",
+      "sheet": "Sheet1",
+      "sheet_state": "visible",
+      "worksheet_rows": 7470,
+      "columns": 2,
+      "header": [
+        "波数 (cm-1)",
+        "反射率 (%)"
+      ],
+      "data_rows": 7469,
+      "first_data_excel_row": 2,
+      "last_data_excel_row": 7470,
+      "first": [
+        399.6747,
+        0
+      ],
+      "last": [
+        4000.122,
+        19.28237573
+      ],
+      "material": "SiC",
+      "angle_deg": 15,
+      "wafer_group": "SiC-one-wafer",
+      "fields": [
+        {
+          "column": "A",
+          "meaning": "真空波数（真空口径为物理解释，题面仅写波数）",
+          "type": "finite numeric",
+          "unit": "cm^-1",
+          "missing": 0,
+          "min": 399.6747,
+          "max": 4000.122
+        },
+        {
+          "column": "B",
+          "meaning": "实测反射率",
+          "type": "finite numeric",
+          "unit": "%",
+          "missing": 0,
+          "min": 0,
+          "max": 102.7393552
+        }
+      ],
+      "strictly_increasing": true,
+      "step_range": [
+        0.48099999999976717,
+        0.4830000000001746
+      ],
+      "step_median": 0.4819999999999709,
+      "duplicate_wavenumbers": 0,
+      "duplicate_rows": 0,
+      "missing_cells": 0,
+      "negative_count": 0,
+      "above_100_count": 262,
+      "zero_count": 1,
+      "reflectance_mean": 23.59146189164426,
+      "reflectance_sd": 18.98493324694616,
+      "reflectance_quartiles": [
+        17.362238849999997,
+        18.73009172,
+        19.365962455000002
+      ],
+      "formula_count": 0,
+      "error_cells": [],
+      "hidden_rows": [],
+      "hidden_columns": [],
+      "merged_ranges": [],
+      "comments": [],
+      "hyperlinks": [],
+      "defined_names": [],
+      "external_links_count": 0,
+      "macro_parts": [],
+      "tables": [],
+      "autofilter": null,
+      "number_formats": [
+        "General"
+      ],
+      "abnormal_records": [
+        {
+          "excel_row": 2,
+          "wavenumber": 399.6747,
+          "reflectance_percent": 0
+        },
+        {
+          "excel_row": 835,
+          "wavenumber": 801.278,
+          "reflectance_percent": 100.2210701
+        },
+        {
+          "excel_row": 836,
+          "wavenumber": 801.76,
+          "reflectance_percent": 100.5514397
+        },
+        {
+          "excel_row": 837,
+          "wavenumber": 802.2422,
+          "reflectance_percent": 100.8119658
+        },
+        {
+          "excel_row": 838,
+          "wavenumber": 802.7242,
+          "reflectance_percent": 101.029481
+        },
+        {
+          "excel_row": 839,
+          "wavenumber": 803.2064,
+          "reflectance_percent": 101.1935566
+        },
+        {
+          "excel_row": 840,
+          "wavenumber": 803.6885,
+          "reflectance_percent": 101.3311622
+        },
+        {
+          "excel_row": 841,
+          "wavenumber": 804.1707,
+          "reflectance_percent": 101.4411049
+        },
+        {
+          "excel_row": 842,
+          "wavenumber": 804.6527,
+          "reflectance_percent": 101.5307995
+        },
+        {
+          "excel_row": 843,
+          "wavenumber": 805.1349,
+          "reflectance_percent": 101.6155518
+        },
+        {
+          "excel_row": 844,
+          "wavenumber": 805.6169,
+          "reflectance_percent": 101.6616755
+        },
+        {
+          "excel_row": 845,
+          "wavenumber": 806.0991,
+          "reflectance_percent": 101.7668845
+        },
+        {
+          "excel_row": 846,
+          "wavenumber": 806.5812,
+          "reflectance_percent": 101.8131753
+        },
+        {
+          "excel_row": 847,
+          "wavenumber": 807.0634,
+          "reflectance_percent": 101.8345506
+        },
+        {
+          "excel_row": 848,
+          "wavenumber": 807.5454,
+          "reflectance_percent": 101.8804942
+        },
+        {
+          "excel_row": 849,
+          "wavenumber": 808.0276,
+          "reflectance_percent": 101.9382973
+        },
+        {
+          "excel_row": 850,
+          "wavenumber": 808.5096,
+          "reflectance_percent": 101.9693877
+        },
+        {
+          "excel_row": 851,
+          "wavenumber": 808.9918,
+          "reflectance_percent": 102.0129645
+        },
+        {
+          "excel_row": 852,
+          "wavenumber": 809.4739,
+          "reflectance_percent": 102.0827286
+        },
+        {
+          "excel_row": 853,
+          "wavenumber": 809.9561,
+          "reflectance_percent": 102.1129038
+        },
+        {
+          "excel_row": 854,
+          "wavenumber": 810.4381,
+          "reflectance_percent": 102.1427075
+        },
+        {
+          "excel_row": 855,
+          "wavenumber": 810.9203,
+          "reflectance_percent": 102.1892925
+        },
+        {
+          "excel_row": 856,
+          "wavenumber": 811.4023,
+          "reflectance_percent": 102.235774
+        },
+        {
+          "excel_row": 857,
+          "wavenumber": 811.8845,
+          "reflectance_percent": 102.2618493
+        },
+        {
+          "excel_row": 858,
+          "wavenumber": 812.3666,
+          "reflectance_percent": 102.2960981
+        },
+        {
+          "excel_row": 859,
+          "wavenumber": 812.8488,
+          "reflectance_percent": 102.3126604
+        },
+        {
+          "excel_row": 860,
+          "wavenumber": 813.3308,
+          "reflectance_percent": 102.336637
+        },
+        {
+          "excel_row": 861,
+          "wavenumber": 813.813,
+          "reflectance_percent": 102.345406
+        },
+        {
+          "excel_row": 862,
+          "wavenumber": 814.295,
+          "reflectance_percent": 102.3621051
+        },
+        {
+          "excel_row": 863,
+          "wavenumber": 814.7772,
+          "reflectance_percent": 102.3795074
+        },
+        {
+          "excel_row": 864,
+          "wavenumber": 815.2593,
+          "reflectance_percent": 102.3826323
+        },
+        {
+          "excel_row": 865,
+          "wavenumber": 815.7415,
+          "reflectance_percent": 102.4160634
+        },
+        {
+          "excel_row": 866,
+          "wavenumber": 816.2235,
+          "reflectance_percent": 102.4260135
+        },
+        {
+          "excel_row": 867,
+          "wavenumber": 816.7057,
+          "reflectance_percent": 102.4267845
+        },
+        {
+          "excel_row": 868,
+          "wavenumber": 817.1877,
+          "reflectance_percent": 102.4483204
+        },
+        {
+          "excel_row": 869,
+          "wavenumber": 817.6699,
+          "reflectance_percent": 102.431023
+        },
+        {
+          "excel_row": 870,
+          "wavenumber": 818.152,
+          "reflectance_percent": 102.4677633
+        },
+        {
+          "excel_row": 871,
+          "wavenumber": 818.6342,
+          "reflectance_percent": 102.4631796
+        },
+        {
+          "excel_row": 872,
+          "wavenumber": 819.1162,
+          "reflectance_percent": 102.4828347
+        },
+        {
+          "excel_row": 873,
+          "wavenumber": 819.5984,
+          "reflectance_percent": 102.4927996
+        },
+        {
+          "excel_row": 874,
+          "wavenumber": 820.0804,
+          "reflectance_percent": 102.4896563
+        },
+        {
+          "excel_row": 875,
+          "wavenumber": 820.5626,
+          "reflectance_percent": 102.5051847
+        },
+        {
+          "excel_row": 876,
+          "wavenumber": 821.0447,
+          "reflectance_percent": 102.5086224
+        },
+        {
+          "excel_row": 877,
+          "wavenumber": 821.5269,
+          "reflectance_percent": 102.5198431
+        },
+        {
+          "excel_row": 878,
+          "wavenumber": 822.0089,
+          "reflectance_percent": 102.5384764
+        },
+        {
+          "excel_row": 879,
+          "wavenumber": 822.4911,
+          "reflectance_percent": 102.5730943
+        },
+        {
+          "excel_row": 880,
+          "wavenumber": 822.9731,
+          "reflectance_percent": 102.566056
+        },
+        {
+          "excel_row": 881,
+          "wavenumber": 823.4553,
+          "reflectance_percent": 102.5824267
+        },
+        {
+          "excel_row": 882,
+          "wavenumber": 823.9374,
+          "reflectance_percent": 102.6116388
+        },
+        {
+          "excel_row": 883,
+          "wavenumber": 824.4196,
+          "reflectance_percent": 102.6251439
+        },
+        {
+          "excel_row": 884,
+          "wavenumber": 824.9016,
+          "reflectance_percent": 102.6390067
+        },
+        {
+          "excel_row": 885,
+          "wavenumber": 825.3838,
+          "reflectance_percent": 102.6535604
+        },
+        {
+          "excel_row": 886,
+          "wavenumber": 825.8658,
+          "reflectance_percent": 102.6519755
+        },
+        {
+          "excel_row": 887,
+          "wavenumber": 826.348,
+          "reflectance_percent": 102.672697
+        },
+        {
+          "excel_row": 888,
+          "wavenumber": 826.8301,
+          "reflectance_percent": 102.682131
+        },
+        {
+          "excel_row": 889,
+          "wavenumber": 827.3123,
+          "reflectance_percent": 102.6984172
+        },
+        {
+          "excel_row": 890,
+          "wavenumber": 827.7943,
+          "reflectance_percent": 102.6904694
+        },
+        {
+          "excel_row": 891,
+          "wavenumber": 828.2765,
+          "reflectance_percent": 102.7147599
+        },
+        {
+          "excel_row": 892,
+          "wavenumber": 828.7585,
+          "reflectance_percent": 102.7113124
+        },
+        {
+          "excel_row": 893,
+          "wavenumber": 829.2407,
+          "reflectance_percent": 102.7079554
+        },
+        {
+          "excel_row": 894,
+          "wavenumber": 829.7228,
+          "reflectance_percent": 102.7393552
+        },
+        {
+          "excel_row": 895,
+          "wavenumber": 830.205,
+          "reflectance_percent": 102.7197714
+        },
+        {
+          "excel_row": 896,
+          "wavenumber": 830.687,
+          "reflectance_percent": 102.7214959
+        },
+        {
+          "excel_row": 897,
+          "wavenumber": 831.1692,
+          "reflectance_percent": 102.7140446
+        },
+        {
+          "excel_row": 898,
+          "wavenumber": 831.6512,
+          "reflectance_percent": 102.7229786
+        },
+        {
+          "excel_row": 899,
+          "wavenumber": 832.1334,
+          "reflectance_percent": 102.7197958
+        },
+        {
+          "excel_row": 900,
+          "wavenumber": 832.6155,
+          "reflectance_percent": 102.726924
+        },
+        {
+          "excel_row": 901,
+          "wavenumber": 833.0977,
+          "reflectance_percent": 102.6965123
+        },
+        {
+          "excel_row": 902,
+          "wavenumber": 833.5797,
+          "reflectance_percent": 102.6926578
+        },
+        {
+          "excel_row": 903,
+          "wavenumber": 834.0619,
+          "reflectance_percent": 102.6903122
+        },
+        {
+          "excel_row": 904,
+          "wavenumber": 834.5439,
+          "reflectance_percent": 102.6662576
+        },
+        {
+          "excel_row": 905,
+          "wavenumber": 835.0261,
+          "reflectance_percent": 102.6676736
+        },
+        {
+          "excel_row": 906,
+          "wavenumber": 835.5082,
+          "reflectance_percent": 102.6404801
+        },
+        {
+          "excel_row": 907,
+          "wavenumber": 835.9904,
+          "reflectance_percent": 102.6056643
+        },
+        {
+          "excel_row": 908,
+          "wavenumber": 836.4724,
+          "reflectance_percent": 102.5923301
+        },
+        {
+          "excel_row": 909,
+          "wavenumber": 836.9546,
+          "reflectance_percent": 102.5763119
+        },
+        {
+          "excel_row": 910,
+          "wavenumber": 837.4366,
+          "reflectance_percent": 102.5511296
+        },
+        {
+          "excel_row": 911,
+          "wavenumber": 837.9188,
+          "reflectance_percent": 102.5440507
+        },
+        {
+          "excel_row": 912,
+          "wavenumber": 838.4009,
+          "reflectance_percent": 102.5354133
+        },
+        {
+          "excel_row": 913,
+          "wavenumber": 838.8831,
+          "reflectance_percent": 102.5199808
+        },
+        {
+          "excel_row": 914,
+          "wavenumber": 839.3651,
+          "reflectance_percent": 102.4931721
+        },
+        {
+          "excel_row": 915,
+          "wavenumber": 839.8473,
+          "reflectance_percent": 102.4999874
+        },
+        {
+          "excel_row": 916,
+          "wavenumber": 840.3293,
+          "reflectance_percent": 102.502292
+        },
+        {
+          "excel_row": 917,
+          "wavenumber": 840.8115,
+          "reflectance_percent": 102.5165465
+        },
+        {
+          "excel_row": 918,
+          "wavenumber": 841.2936,
+          "reflectance_percent": 102.5054474
+        },
+        {
+          "excel_row": 919,
+          "wavenumber": 841.7758,
+          "reflectance_percent": 102.529346
+        },
+        {
+          "excel_row": 920,
+          "wavenumber": 842.2578,
+          "reflectance_percent": 102.5434619
+        },
+        {
+          "excel_row": 921,
+          "wavenumber": 842.74,
+          "reflectance_percent": 102.5508448
+        },
+        {
+          "excel_row": 922,
+          "wavenumber": 843.222,
+          "reflectance_percent": 102.5648925
+        },
+        {
+          "excel_row": 923,
+          "wavenumber": 843.7042,
+          "reflectance_percent": 102.5515574
+        },
+        {
+          "excel_row": 924,
+          "wavenumber": 844.1863,
+          "reflectance_percent": 102.5866837
+        },
+        {
+          "excel_row": 925,
+          "wavenumber": 844.6685,
+          "reflectance_percent": 102.5829825
+        },
+        {
+          "excel_row": 926,
+          "wavenumber": 845.1505,
+          "reflectance_percent": 102.5963474
+        },
+        {
+          "excel_row": 927,
+          "wavenumber": 845.6327,
+          "reflectance_percent": 102.6021626
+        },
+        {
+          "excel_row": 928,
+          "wavenumber": 846.1147,
+          "reflectance_percent": 102.614342
+        },
+        {
+          "excel_row": 929,
+          "wavenumber": 846.5969,
+          "reflectance_percent": 102.5938066
+        },
+        {
+          "excel_row": 930,
+          "wavenumber": 847.079,
+          "reflectance_percent": 102.5790456
+        },
+        {
+          "excel_row": 931,
+          "wavenumber": 847.5612,
+          "reflectance_percent": 102.5826257
+        },
+        {
+          "excel_row": 932,
+          "wavenumber": 848.0432,
+          "reflectance_percent": 102.576267
+        },
+        {
+          "excel_row": 933,
+          "wavenumber": 848.5254,
+          "reflectance_percent": 102.5885147
+        },
+        {
+          "excel_row": 934,
+          "wavenumber": 849.0074,
+          "reflectance_percent": 102.5946132
+        },
+        {
+          "excel_row": 935,
+          "wavenumber": 849.4896,
+          "reflectance_percent": 102.5599059
+        },
+        {
+          "excel_row": 936,
+          "wavenumber": 849.9717,
+          "reflectance_percent": 102.5912448
+        },
+        {
+          "excel_row": 937,
+          "wavenumber": 850.4539,
+          "reflectance_percent": 102.5687939
+        },
+        {
+          "excel_row": 938,
+          "wavenumber": 850.9359,
+          "reflectance_percent": 102.5939628
+        },
+        {
+          "excel_row": 939,
+          "wavenumber": 851.4181,
+          "reflectance_percent": 102.5736641
+        },
+        {
+          "excel_row": 940,
+          "wavenumber": 851.9001,
+          "reflectance_percent": 102.5717811
+        },
+        {
+          "excel_row": 941,
+          "wavenumber": 852.3823,
+          "reflectance_percent": 102.568921
+        },
+        {
+          "excel_row": 942,
+          "wavenumber": 852.8644,
+          "reflectance_percent": 102.5829972
+        },
+        {
+          "excel_row": 943,
+          "wavenumber": 853.3466,
+          "reflectance_percent": 102.5649611
+        },
+        {
+          "excel_row": 944,
+          "wavenumber": 853.8286,
+          "reflectance_percent": 102.5427932
+        },
+        {
+          "excel_row": 945,
+          "wavenumber": 854.3108,
+          "reflectance_percent": 102.5638014
+        },
+        {
+          "excel_row": 946,
+          "wavenumber": 854.7928,
+          "reflectance_percent": 102.5558235
+        },
+        {
+          "excel_row": 947,
+          "wavenumber": 855.275,
+          "reflectance_percent": 102.5561616
+        },
+        {
+          "excel_row": 948,
+          "wavenumber": 855.7571,
+          "reflectance_percent": 102.5415628
+        },
+        {
+          "excel_row": 949,
+          "wavenumber": 856.2393,
+          "reflectance_percent": 102.5465728
+        },
+        {
+          "excel_row": 950,
+          "wavenumber": 856.7213,
+          "reflectance_percent": 102.5306449
+        },
+        {
+          "excel_row": 951,
+          "wavenumber": 857.2035,
+          "reflectance_percent": 102.5617652
+        },
+        {
+          "excel_row": 952,
+          "wavenumber": 857.6855,
+          "reflectance_percent": 102.5523716
+        },
+        {
+          "excel_row": 953,
+          "wavenumber": 858.1677,
+          "reflectance_percent": 102.5564143
+        },
+        {
+          "excel_row": 954,
+          "wavenumber": 858.6498,
+          "reflectance_percent": 102.5585146
+        },
+        {
+          "excel_row": 955,
+          "wavenumber": 859.132,
+          "reflectance_percent": 102.5688827
+        },
+        {
+          "excel_row": 956,
+          "wavenumber": 859.614,
+          "reflectance_percent": 102.5571229
+        },
+        {
+          "excel_row": 957,
+          "wavenumber": 860.0962,
+          "reflectance_percent": 102.5766213
+        },
+        {
+          "excel_row": 958,
+          "wavenumber": 860.5782,
+          "reflectance_percent": 102.5898906
+        },
+        {
+          "excel_row": 959,
+          "wavenumber": 861.0604,
+          "reflectance_percent": 102.597592
+        },
+        {
+          "excel_row": 960,
+          "wavenumber": 861.5425,
+          "reflectance_percent": 102.6024672
+        },
+        {
+          "excel_row": 961,
+          "wavenumber": 862.0247,
+          "reflectance_percent": 102.5964241
+        },
+        {
+          "excel_row": 962,
+          "wavenumber": 862.5067,
+          "reflectance_percent": 102.6117072
+        },
+        {
+          "excel_row": 963,
+          "wavenumber": 862.9889,
+          "reflectance_percent": 102.630978
+        },
+        {
+          "excel_row": 964,
+          "wavenumber": 863.4709,
+          "reflectance_percent": 102.6133761
+        },
+        {
+          "excel_row": 965,
+          "wavenumber": 863.9531,
+          "reflectance_percent": 102.6252538
+        },
+        {
+          "excel_row": 966,
+          "wavenumber": 864.4352,
+          "reflectance_percent": 102.6248734
+        },
+        {
+          "excel_row": 967,
+          "wavenumber": 864.9174,
+          "reflectance_percent": 102.6060746
+        },
+        {
+          "excel_row": 968,
+          "wavenumber": 865.3994,
+          "reflectance_percent": 102.5921749
+        },
+        {
+          "excel_row": 969,
+          "wavenumber": 865.8816,
+          "reflectance_percent": 102.5961248
+        },
+        {
+          "excel_row": 970,
+          "wavenumber": 866.3636,
+          "reflectance_percent": 102.5973379
+        },
+        {
+          "excel_row": 971,
+          "wavenumber": 866.8458,
+          "reflectance_percent": 102.5926271
+        },
+        {
+          "excel_row": 972,
+          "wavenumber": 867.3279,
+          "reflectance_percent": 102.576321
+        },
+        {
+          "excel_row": 973,
+          "wavenumber": 867.8101,
+          "reflectance_percent": 102.5526408
+        },
+        {
+          "excel_row": 974,
+          "wavenumber": 868.2921,
+          "reflectance_percent": 102.5640502
+        },
+        {
+          "excel_row": 975,
+          "wavenumber": 868.7743,
+          "reflectance_percent": 102.5392472
+        },
+        {
+          "excel_row": 976,
+          "wavenumber": 869.2563,
+          "reflectance_percent": 102.5323585
+        },
+        {
+          "excel_row": 977,
+          "wavenumber": 869.7385,
+          "reflectance_percent": 102.5217576
+        },
+        {
+          "excel_row": 978,
+          "wavenumber": 870.2206,
+          "reflectance_percent": 102.5219775
+        },
+        {
+          "excel_row": 979,
+          "wavenumber": 870.7028,
+          "reflectance_percent": 102.5154424
+        },
+        {
+          "excel_row": 980,
+          "wavenumber": 871.1848,
+          "reflectance_percent": 102.4921585
+        },
+        {
+          "excel_row": 981,
+          "wavenumber": 871.667,
+          "reflectance_percent": 102.5313363
+        },
+        {
+          "excel_row": 982,
+          "wavenumber": 872.149,
+          "reflectance_percent": 102.5107604
+        },
+        {
+          "excel_row": 983,
+          "wavenumber": 872.6312,
+          "reflectance_percent": 102.512454
+        },
+        {
+          "excel_row": 984,
+          "wavenumber": 873.1133,
+          "reflectance_percent": 102.5276335
+        },
+        {
+          "excel_row": 985,
+          "wavenumber": 873.5955,
+          "reflectance_percent": 102.5140769
+        },
+        {
+          "excel_row": 986,
+          "wavenumber": 874.0775,
+          "reflectance_percent": 102.521976
+        },
+        {
+          "excel_row": 987,
+          "wavenumber": 874.5597,
+          "reflectance_percent": 102.4816837
+        },
+        {
+          "excel_row": 988,
+          "wavenumber": 875.0417,
+          "reflectance_percent": 102.5127646
+        },
+        {
+          "excel_row": 989,
+          "wavenumber": 875.5239,
+          "reflectance_percent": 102.505112
+        },
+        {
+          "excel_row": 990,
+          "wavenumber": 876.006,
+          "reflectance_percent": 102.4930759
+        },
+        {
+          "excel_row": 991,
+          "wavenumber": 876.4882,
+          "reflectance_percent": 102.4948401
+        },
+        {
+          "excel_row": 992,
+          "wavenumber": 876.9702,
+          "reflectance_percent": 102.4941274
+        },
+        {
+          "excel_row": 993,
+          "wavenumber": 877.4524,
+          "reflectance_percent": 102.4790139
+        },
+        {
+          "excel_row": 994,
+          "wavenumber": 877.9344,
+          "reflectance_percent": 102.4885511
+        },
+        {
+          "excel_row": 995,
+          "wavenumber": 878.4166,
+          "reflectance_percent": 102.4855374
+        },
+        {
+          "excel_row": 996,
+          "wavenumber": 878.8987,
+          "reflectance_percent": 102.4927731
+        },
+        {
+          "excel_row": 997,
+          "wavenumber": 879.3809,
+          "reflectance_percent": 102.4807516
+        },
+        {
+          "excel_row": 998,
+          "wavenumber": 879.8629,
+          "reflectance_percent": 102.4914104
+        },
+        {
+          "excel_row": 999,
+          "wavenumber": 880.3451,
+          "reflectance_percent": 102.4657164
+        },
+        {
+          "excel_row": 1000,
+          "wavenumber": 880.8271,
+          "reflectance_percent": 102.4533962
+        },
+        {
+          "excel_row": 1001,
+          "wavenumber": 881.3093,
+          "reflectance_percent": 102.4605341
+        },
+        {
+          "excel_row": 1002,
+          "wavenumber": 881.7914,
+          "reflectance_percent": 102.4661478
+        },
+        {
+          "excel_row": 1003,
+          "wavenumber": 882.2736,
+          "reflectance_percent": 102.4240146
+        },
+        {
+          "excel_row": 1004,
+          "wavenumber": 882.7556,
+          "reflectance_percent": 102.4078119
+        },
+        {
+          "excel_row": 1005,
+          "wavenumber": 883.2378,
+          "reflectance_percent": 102.3887955
+        },
+        {
+          "excel_row": 1006,
+          "wavenumber": 883.7198,
+          "reflectance_percent": 102.3868827
+        },
+        {
+          "excel_row": 1007,
+          "wavenumber": 884.202,
+          "reflectance_percent": 102.3510613
+        },
+        {
+          "excel_row": 1008,
+          "wavenumber": 884.6841,
+          "reflectance_percent": 102.3408021
+        },
+        {
+          "excel_row": 1009,
+          "wavenumber": 885.1663,
+          "reflectance_percent": 102.312238
+        },
+        {
+          "excel_row": 1010,
+          "wavenumber": 885.6483,
+          "reflectance_percent": 102.2961511
+        },
+        {
+          "excel_row": 1011,
+          "wavenumber": 886.1305,
+          "reflectance_percent": 102.2937683
+        },
+        {
+          "excel_row": 1012,
+          "wavenumber": 886.6125,
+          "reflectance_percent": 102.2683062
+        },
+        {
+          "excel_row": 1013,
+          "wavenumber": 887.0947,
+          "reflectance_percent": 102.2594039
+        },
+        {
+          "excel_row": 1014,
+          "wavenumber": 887.5768,
+          "reflectance_percent": 102.2173021
+        },
+        {
+          "excel_row": 1015,
+          "wavenumber": 888.059,
+          "reflectance_percent": 102.21962
+        },
+        {
+          "excel_row": 1016,
+          "wavenumber": 888.541,
+          "reflectance_percent": 102.2184949
+        },
+        {
+          "excel_row": 1017,
+          "wavenumber": 889.0232,
+          "reflectance_percent": 102.1957341
+        },
+        {
+          "excel_row": 1018,
+          "wavenumber": 889.5052,
+          "reflectance_percent": 102.1724474
+        },
+        {
+          "excel_row": 1019,
+          "wavenumber": 889.9874,
+          "reflectance_percent": 102.1632454
+        },
+        {
+          "excel_row": 1020,
+          "wavenumber": 890.4695,
+          "reflectance_percent": 102.13893
+        },
+        {
+          "excel_row": 1021,
+          "wavenumber": 890.9517,
+          "reflectance_percent": 102.1173285
+        },
+        {
+          "excel_row": 1022,
+          "wavenumber": 891.4337,
+          "reflectance_percent": 102.1137053
+        },
+        {
+          "excel_row": 1023,
+          "wavenumber": 891.9159,
+          "reflectance_percent": 102.0766276
+        },
+        {
+          "excel_row": 1024,
+          "wavenumber": 892.3979,
+          "reflectance_percent": 102.0730385
+        },
+        {
+          "excel_row": 1025,
+          "wavenumber": 892.8801,
+          "reflectance_percent": 102.0231194
+        },
+        {
+          "excel_row": 1026,
+          "wavenumber": 893.3622,
+          "reflectance_percent": 102.0217729
+        },
+        {
+          "excel_row": 1027,
+          "wavenumber": 893.8444,
+          "reflectance_percent": 102.0024885
+        },
+        {
+          "excel_row": 1028,
+          "wavenumber": 894.3264,
+          "reflectance_percent": 101.9903823
+        },
+        {
+          "excel_row": 1029,
+          "wavenumber": 894.8086,
+          "reflectance_percent": 101.9625754
+        },
+        {
+          "excel_row": 1030,
+          "wavenumber": 895.2906,
+          "reflectance_percent": 101.953099
+        },
+        {
+          "excel_row": 1031,
+          "wavenumber": 895.7728,
+          "reflectance_percent": 101.9218581
+        },
+        {
+          "excel_row": 1032,
+          "wavenumber": 896.2549,
+          "reflectance_percent": 101.9138569
+        },
+        {
+          "excel_row": 1033,
+          "wavenumber": 896.7371,
+          "reflectance_percent": 101.9048203
+        },
+        {
+          "excel_row": 1034,
+          "wavenumber": 897.2191,
+          "reflectance_percent": 101.8738751
+        },
+        {
+          "excel_row": 1035,
+          "wavenumber": 897.7013,
+          "reflectance_percent": 101.850664
+        },
+        {
+          "excel_row": 1036,
+          "wavenumber": 898.1833,
+          "reflectance_percent": 101.8161132
+        },
+        {
+          "excel_row": 1037,
+          "wavenumber": 898.6655,
+          "reflectance_percent": 101.7879421
+        },
+        {
+          "excel_row": 1038,
+          "wavenumber": 899.1476,
+          "reflectance_percent": 101.7771217
+        },
+        {
+          "excel_row": 1039,
+          "wavenumber": 899.6298,
+          "reflectance_percent": 101.7325334
+        },
+        {
+          "excel_row": 1040,
+          "wavenumber": 900.1118,
+          "reflectance_percent": 101.7295593
+        },
+        {
+          "excel_row": 1041,
+          "wavenumber": 900.594,
+          "reflectance_percent": 101.6852902
+        },
+        {
+          "excel_row": 1042,
+          "wavenumber": 901.076,
+          "reflectance_percent": 101.6704837
+        },
+        {
+          "excel_row": 1043,
+          "wavenumber": 901.5582,
+          "reflectance_percent": 101.6642556
+        },
+        {
+          "excel_row": 1044,
+          "wavenumber": 902.0403,
+          "reflectance_percent": 101.6471716
+        },
+        {
+          "excel_row": 1045,
+          "wavenumber": 902.5225,
+          "reflectance_percent": 101.6258941
+        },
+        {
+          "excel_row": 1046,
+          "wavenumber": 903.0045,
+          "reflectance_percent": 101.6314966
+        },
+        {
+          "excel_row": 1047,
+          "wavenumber": 903.4867,
+          "reflectance_percent": 101.6046151
+        },
+        {
+          "excel_row": 1048,
+          "wavenumber": 903.9688,
+          "reflectance_percent": 101.595971
+        },
+        {
+          "excel_row": 1049,
+          "wavenumber": 904.4509,
+          "reflectance_percent": 101.5748809
+        },
+        {
+          "excel_row": 1050,
+          "wavenumber": 904.933,
+          "reflectance_percent": 101.5751221
+        },
+        {
+          "excel_row": 1051,
+          "wavenumber": 905.4152,
+          "reflectance_percent": 101.545102
+        },
+        {
+          "excel_row": 1052,
+          "wavenumber": 905.8972,
+          "reflectance_percent": 101.543689
+        },
+        {
+          "excel_row": 1053,
+          "wavenumber": 906.3794,
+          "reflectance_percent": 101.5266206
+        },
+        {
+          "excel_row": 1054,
+          "wavenumber": 906.8615,
+          "reflectance_percent": 101.515876
+        },
+        {
+          "excel_row": 1055,
+          "wavenumber": 907.3436,
+          "reflectance_percent": 101.4808487
+        },
+        {
+          "excel_row": 1056,
+          "wavenumber": 907.8257,
+          "reflectance_percent": 101.4689774
+        },
+        {
+          "excel_row": 1057,
+          "wavenumber": 908.3079,
+          "reflectance_percent": 101.4379443
+        },
+        {
+          "excel_row": 1058,
+          "wavenumber": 908.7899,
+          "reflectance_percent": 101.4280591
+        },
+        {
+          "excel_row": 1059,
+          "wavenumber": 909.2721,
+          "reflectance_percent": 101.4052685
+        },
+        {
+          "excel_row": 1060,
+          "wavenumber": 909.7542,
+          "reflectance_percent": 101.3744017
+        },
+        {
+          "excel_row": 1061,
+          "wavenumber": 910.2363,
+          "reflectance_percent": 101.3877146
+        },
+        {
+          "excel_row": 1062,
+          "wavenumber": 910.7184,
+          "reflectance_percent": 101.3497988
+        },
+        {
+          "excel_row": 1063,
+          "wavenumber": 911.2006,
+          "reflectance_percent": 101.3369971
+        },
+        {
+          "excel_row": 1064,
+          "wavenumber": 911.6826,
+          "reflectance_percent": 101.3103572
+        },
+        {
+          "excel_row": 1065,
+          "wavenumber": 912.1647,
+          "reflectance_percent": 101.3142964
+        },
+        {
+          "excel_row": 1066,
+          "wavenumber": 912.6469,
+          "reflectance_percent": 101.2743294
+        },
+        {
+          "excel_row": 1067,
+          "wavenumber": 913.129,
+          "reflectance_percent": 101.2557764
+        },
+        {
+          "excel_row": 1068,
+          "wavenumber": 913.6111,
+          "reflectance_percent": 101.2286686
+        },
+        {
+          "excel_row": 1069,
+          "wavenumber": 914.0932,
+          "reflectance_percent": 101.2250418
+        },
+        {
+          "excel_row": 1070,
+          "wavenumber": 914.5753,
+          "reflectance_percent": 101.2012727
+        },
+        {
+          "excel_row": 1071,
+          "wavenumber": 915.0574,
+          "reflectance_percent": 101.169686
+        },
+        {
+          "excel_row": 1072,
+          "wavenumber": 915.5396,
+          "reflectance_percent": 101.1612703
+        },
+        {
+          "excel_row": 1073,
+          "wavenumber": 916.0217,
+          "reflectance_percent": 101.1158163
+        },
+        {
+          "excel_row": 1074,
+          "wavenumber": 916.5038,
+          "reflectance_percent": 101.0638971
+        },
+        {
+          "excel_row": 1075,
+          "wavenumber": 916.9859,
+          "reflectance_percent": 101.0405634
+        },
+        {
+          "excel_row": 1076,
+          "wavenumber": 917.468,
+          "reflectance_percent": 101.0163334
+        },
+        {
+          "excel_row": 1077,
+          "wavenumber": 917.9501,
+          "reflectance_percent": 100.9542444
+        },
+        {
+          "excel_row": 1078,
+          "wavenumber": 918.4323,
+          "reflectance_percent": 100.9300867
+        },
+        {
+          "excel_row": 1079,
+          "wavenumber": 918.9144,
+          "reflectance_percent": 100.8857702
+        },
+        {
+          "excel_row": 1080,
+          "wavenumber": 919.3965,
+          "reflectance_percent": 100.8799158
+        },
+        {
+          "excel_row": 1081,
+          "wavenumber": 919.8786,
+          "reflectance_percent": 100.8162322
+        },
+        {
+          "excel_row": 1082,
+          "wavenumber": 920.3607,
+          "reflectance_percent": 100.7978287
+        },
+        {
+          "excel_row": 1083,
+          "wavenumber": 920.8428,
+          "reflectance_percent": 100.7632353
+        },
+        {
+          "excel_row": 1084,
+          "wavenumber": 921.325,
+          "reflectance_percent": 100.7208821
+        },
+        {
+          "excel_row": 1085,
+          "wavenumber": 921.8071,
+          "reflectance_percent": 100.6816772
+        },
+        {
+          "excel_row": 1086,
+          "wavenumber": 922.2892,
+          "reflectance_percent": 100.6511997
+        },
+        {
+          "excel_row": 1087,
+          "wavenumber": 922.7713,
+          "reflectance_percent": 100.5806148
+        },
+        {
+          "excel_row": 1088,
+          "wavenumber": 923.2534,
+          "reflectance_percent": 100.5445905
+        },
+        {
+          "excel_row": 1089,
+          "wavenumber": 923.7355,
+          "reflectance_percent": 100.4842071
+        },
+        {
+          "excel_row": 1090,
+          "wavenumber": 924.2177,
+          "reflectance_percent": 100.4557016
+        },
+        {
+          "excel_row": 1091,
+          "wavenumber": 924.6998,
+          "reflectance_percent": 100.4008665
+        },
+        {
+          "excel_row": 1092,
+          "wavenumber": 925.1819,
+          "reflectance_percent": 100.3219458
+        },
+        {
+          "excel_row": 1093,
+          "wavenumber": 925.664,
+          "reflectance_percent": 100.2504994
+        },
+        {
+          "excel_row": 1094,
+          "wavenumber": 926.1461,
+          "reflectance_percent": 100.1968985
+        },
+        {
+          "excel_row": 1095,
+          "wavenumber": 926.6282,
+          "reflectance_percent": 100.1160369
+        },
+        {
+          "excel_row": 1096,
+          "wavenumber": 927.1104,
+          "reflectance_percent": 100.0619838
+        }
+      ],
+      "time_or_space": "波数顺序；无采样时间与空间位置字段",
+      "label_balance": "无厚度真值/多光束标签；分类平衡不适用"
+    },
+    {
+      "path": "input/B题/附件/附件3.xlsx",
+      "sheet": "Sheet1",
+      "sheet_state": "visible",
+      "worksheet_rows": 7470,
+      "columns": 2,
+      "header": [
+        "波数 (cm-1)",
+        "反射率 (%)"
+      ],
+      "data_rows": 7469,
+      "first_data_excel_row": 2,
+      "last_data_excel_row": 7470,
+      "first": [
+        399.6747,
+        0
+      ],
+      "last": [
+        4000.122,
+        28.3130393
+      ],
+      "material": "Si",
+      "angle_deg": 10,
+      "wafer_group": "Si-one-wafer",
+      "fields": [
+        {
+          "column": "A",
+          "meaning": "真空波数（真空口径为物理解释，题面仅写波数）",
+          "type": "finite numeric",
+          "unit": "cm^-1",
+          "missing": 0,
+          "min": 399.6747,
+          "max": 4000.122
+        },
+        {
+          "column": "B",
+          "meaning": "实测反射率",
+          "type": "finite numeric",
+          "unit": "%",
+          "missing": 0,
+          "min": 0,
+          "max": 79.8019744
+        }
+      ],
+      "strictly_increasing": true,
+      "step_range": [
+        0.48099999999976717,
+        0.4830000000001746
+      ],
+      "step_median": 0.4819999999999709,
+      "duplicate_wavenumbers": 0,
+      "duplicate_rows": 0,
+      "missing_cells": 0,
+      "negative_count": 0,
+      "above_100_count": 0,
+      "zero_count": 1,
+      "reflectance_mean": 32.09966928664078,
+      "reflectance_sd": 13.416428941613145,
+      "reflectance_quartiles": [
+        27.21067326,
+        28.34986762,
+        32.016864580000004
+      ],
+      "formula_count": 0,
+      "error_cells": [],
+      "hidden_rows": [],
+      "hidden_columns": [],
+      "merged_ranges": [],
+      "comments": [],
+      "hyperlinks": [],
+      "defined_names": [],
+      "external_links_count": 0,
+      "macro_parts": [],
+      "tables": [],
+      "autofilter": null,
+      "number_formats": [
+        "General"
+      ],
+      "abnormal_records": [
+        {
+          "excel_row": 2,
+          "wavenumber": 399.6747,
+          "reflectance_percent": 0
+        }
+      ],
+      "time_or_space": "波数顺序；无采样时间与空间位置字段",
+      "label_balance": "无厚度真值/多光束标签；分类平衡不适用"
+    },
+    {
+      "path": "input/B题/附件/附件4.xlsx",
+      "sheet": "Sheet1",
+      "sheet_state": "visible",
+      "worksheet_rows": 7470,
+      "columns": 2,
+      "header": [
+        "波数 (cm-1)",
+        "反射率 (%)"
+      ],
+      "data_rows": 7469,
+      "first_data_excel_row": 2,
+      "last_data_excel_row": 7470,
+      "first": [
+        399.6747,
+        0
+      ],
+      "last": [
+        4000.122,
+        31.06725458
+      ],
+      "material": "Si",
+      "angle_deg": 15,
+      "wafer_group": "Si-one-wafer",
+      "fields": [
+        {
+          "column": "A",
+          "meaning": "真空波数（真空口径为物理解释，题面仅写波数）",
+          "type": "finite numeric",
+          "unit": "cm^-1",
+          "missing": 0,
+          "min": 399.6747,
+          "max": 4000.122
+        },
+        {
+          "column": "B",
+          "meaning": "实测反射率",
+          "type": "finite numeric",
+          "unit": "%",
+          "missing": 0,
+          "min": 0,
+          "max": 91.48944351
+        }
+      ],
+      "strictly_increasing": true,
+      "step_range": [
+        0.48099999999976717,
+        0.4830000000001746
+      ],
+      "step_median": 0.4819999999999709,
+      "duplicate_wavenumbers": 0,
+      "duplicate_rows": 0,
+      "missing_cells": 0,
+      "negative_count": 0,
+      "above_100_count": 0,
+      "zero_count": 1,
+      "reflectance_mean": 35.35166367073437,
+      "reflectance_sd": 15.017528686041006,
+      "reflectance_quartiles": [
+        29.741080015,
+        31.15163909,
+        35.204616224999995
+      ],
+      "formula_count": 0,
+      "error_cells": [],
+      "hidden_rows": [],
+      "hidden_columns": [],
+      "merged_ranges": [],
+      "comments": [],
+      "hyperlinks": [],
+      "defined_names": [],
+      "external_links_count": 0,
+      "macro_parts": [],
+      "tables": [],
+      "autofilter": null,
+      "number_formats": [
+        "General"
+      ],
+      "abnormal_records": [
+        {
+          "excel_row": 2,
+          "wavenumber": 399.6747,
+          "reflectance_percent": 0
+        }
+      ],
+      "time_or_space": "波数顺序；无采样时间与空间位置字段",
+      "label_balance": "无厚度真值/多光束标签；分类平衡不适用"
+    }
+  ],
+  "all_four_wavenumber_grids_identical": true,
+  "upstream_output_hashes_verified": true,
+  "raw_inputs_modified": false,
+  "independent_wafer_count": {
+    "SiC": 1,
+    "Si": 1
+  },
+  "quarantine": "quarantine-pre-2026 excluded from current handoff; not approved input"
+}

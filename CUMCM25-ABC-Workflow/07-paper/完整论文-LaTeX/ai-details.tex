@@ -1,0 +1,37 @@
+\documentclass[UTF8,11pt,a4paper]{ctexart}
+\usepackage{geometry,booktabs,longtable,array,hyperref}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\hypersetup{hidelinks}\setlength{\parindent}{2em}
+\title{AI工具使用详情}\author{}\date{2026年9月}
+\begin{document}\maketitle
+\section{使用概况}
+本项目使用Codex任务环境中的配置模型辅助完成数学建模工作流。工作流日志只保存“configured model”及各任务标识，未暴露可验证的精确模型版本，故本详情不虚构版本号。使用范围覆盖候选题分析、问题结构化、文献阅读、模型设计、原型、正式计算、证据整理、图表和论文构建。未隐瞒AI参与；未以检测率判断是否使用AI。
+
+\section{分阶段用途与采纳}
+\scriptsize
+\begin{longtable}{p{2.0cm}p{4.3cm}p{4.1cm}p{2.8cm}}
+\toprule 阶段&主要用途&采纳或影响范围&核验状态\\\midrule\endfirsthead
+\toprule 阶段&主要用途&采纳或影响范围&核验状态\\\midrule\endhead
+SELECTION&对A/B/C题作可行性比较&候选清单、评分与H0材料&队长在H0选择B题\\
+INTAKE&题面、数据、约束及2026规则结构化&H1问题定义与合规材料&队长批准H1\\
+LITERATURE&4篇开放获取全文的定位阅读&文献卡、迁移限制&全文和页码记录可追溯\\
+DESIGN&建立B/F/P/M候选合同与验证计划&候选方案和H2材料&未代替团队选型\\
+PROTOTYPE&公平小型实验和预注册比较&原型结果与H2选择包&队长批准H2路线\\
+COMPUTE&实现并运行B/F/P，M保持关闭&代码、全量结果和日志&完整运行PASS；独立复核PASS\\
+EVIDENCE&建立逐问主张—证据映射&事实清单和H3材料&队长批准H3主张\\
+FIGURE&按冻结证据生成5图2表&正式图表和图注&哈希、360 dpi和彩灰检查PASS\\
+PAPER&公式—代码—结果一致性检查、中文成文与构建&07-paper内论文及交付物&自动编译、PDF审计和逐页检查\\
+\bottomrule
+\end{longtable}
+\normalsize
+\section{典型指令与过程说明}
+关键指令包括：要求各阶段只能读取批准输入并只写入本阶段目录；要求B为基线、F为$n$点Hann离散FFT主模型、P仅作补充、M门未触发；要求三个固定波段全部报告；要求F的宽松通过阈值、中位数、最大误差、P失败、异常点和压力测试均不得隐藏；要求只报告$q$与条件$d(n)$。AI据此执行代码、证据和写作任务。
+
+曾出现旧COMPUTE实现把F改为8倍零填充并加入亚栅格插值、把P改为601点网格的偏离。监督停止该实现；恢复任务按冻结合同修正，并经独立P1复核后才运行全量计算。该历史保留在支撑材料日志中。
+
+\section{人工决策与未完成核验}
+队长已明确作出H0至H3的关键决策，包括选题、问题边界、最终模型路线和可写主张。当前没有证据表明队员已逐字审阅论文、逐项复算全部数字或确认最终上传版本。因此这些事项不写成已完成；参赛队应在提交前完成H4人工审查、匿名核查、赛区附加规则核查和最终提交确认。
+
+\section{责任与数据边界}
+论文不声称AI输出天然正确。所有数值来自已记录的实际运行；没有独立厚度真值时，只给光学量$q$和条件厚度$d(n)$。AI使用日志的完整逐阶段记录保存在项目工作流文件中；本详情PDF仅按最小必要原则汇总，不包含个人信息。
+\end{document}

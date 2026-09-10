@@ -1,0 +1,39 @@
+{
+  "figure_id": "FIG-DATA-AUDIT-DEBUG",
+  "question": "四附件原始光谱、异常记录、分布与采样网格呈现何种数据质量结构？",
+  "source_files": [
+    "input/B题/附件/附件1.xlsx",
+    "input/B题/附件/附件2.xlsx",
+    "input/B题/附件/附件3.xlsx",
+    "input/B题/附件/附件4.xlsx"
+  ],
+  "transformations": [
+    "按附件原顺序读取全部记录",
+    "仅计算描述统计与相邻波数差分",
+    "不删除、不裁剪、不补值、不平滑"
+  ],
+  "fixed_windows_cm_inv": {
+    "W1": [
+      600,
+      1600
+    ],
+    "W2": [
+      1600,
+      2800
+    ],
+    "W3": [
+      2800,
+      3800
+    ]
+  },
+  "common_wavenumber_grid": true,
+  "target_formats": [
+    "png",
+    "svg"
+  ],
+  "minimum_dpi": 300,
+  "final_size_inches": [
+    7.2,
+    5.0
+  ]
+}

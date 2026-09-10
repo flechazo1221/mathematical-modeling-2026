@@ -1,0 +1,10 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.3.5",
+  "openpyxl_module": "available",
+  "seed": 20260907,
+  "command": "\"C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" \"C:\\Users\\Lenovo\\Desktop\\数模\\CUMCM26-Workflow test\\CUMCM25-ABC-Workflow\\03-prototype\\run_prototypes.py\"",
+  "runtime_s": 9.88190089998534,
+  "stop_rule": "finish fixed grid once; no adaptive expansion"
+}

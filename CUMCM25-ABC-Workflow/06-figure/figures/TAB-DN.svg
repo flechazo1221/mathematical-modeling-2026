@@ -1,0 +1,1330 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="416.16pt" height="400.727437pt" viewBox="0 0 416.16 400.727437" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-08T10:45:16.807676</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 400.727437 
+L 416.16 400.727437 
+L 416.16 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="table_1">
+    <g id="patch_2">
+     <path d="M 7.2 114.875437 
+L 39.3408 114.875437 
+L 39.3408 97.475437 
+L 7.2 97.475437 
+z
+" style="fill: #ddebf7; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_1">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="10.41408" y="108.202225" transform="rotate(-0 10.41408 108.202225)">材料</text>
+    </g>
+    <g id="patch_3">
+     <path d="M 39.3408 114.875437 
+L 75.4992 114.875437 
+L 75.4992 97.475437 
+L 39.3408 97.475437 
+z
+" style="fill: #ddebf7; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_2">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="42.95664" y="108.219178" transform="rotate(-0 42.95664 108.219178)">角度 (°)</text>
+    </g>
+    <g id="patch_4">
+     <path d="M 75.4992 114.875437 
+L 103.6224 114.875437 
+L 103.6224 97.475437 
+L 75.4992 97.475437 
+z
+" style="fill: #ddebf7; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_3">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="78.31152" y="108.212615" transform="rotate(-0 78.31152 108.212615)">窗口</text>
+    </g>
+    <g id="patch_5">
+     <path d="M 103.6224 114.875437 
+L 179.9568 114.875437 
+L 179.9568 97.475437 
+L 103.6224 97.475437 
+z
+" style="fill: #ddebf7; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_4">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 104.297469)">q (μm)</text>
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 111.963562)">原始 / 掩码</text>
+    </g>
+    <g id="patch_6">
+     <path d="M 179.9568 114.875437 
+L 296.4672 114.875437 
+L 296.4672 97.475437 
+L 179.9568 97.475437 
+z
+" style="fill: #ddebf7; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_5">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="191.60784" y="108.219178" transform="rotate(-0 191.60784 108.219178)">条件厚度公式</text>
+    </g>
+    <g id="patch_7">
+     <path d="M 296.4672 114.875437 
+L 408.96 114.875437 
+L 408.96 97.475437 
+L 296.4672 97.475437 
+z
+" style="fill: #ddebf7; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_6">
+     <text style="font-weight: 700; font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="307.71648" y="108.219178" transform="rotate(-0 307.71648 108.219178)">有效域 / 边界</text>
+    </g>
+    <g id="patch_8">
+     <path d="M 7.2 132.275437 
+L 39.3408 132.275437 
+L 39.3408 114.875437 
+L 7.2 114.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="10.41408" y="125.530516" transform="rotate(-0 10.41408 125.530516)">SiC</text>
+    </g>
+    <g id="patch_9">
+     <path d="M 39.3408 132.275437 
+L 75.4992 132.275437 
+L 75.4992 114.875437 
+L 39.3408 114.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_8">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="42.95664" y="125.530516" transform="rotate(-0 42.95664 125.530516)">10</text>
+    </g>
+    <g id="patch_10">
+     <path d="M 75.4992 132.275437 
+L 103.6224 132.275437 
+L 103.6224 114.875437 
+L 75.4992 114.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_9">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="78.31152" y="125.530516" transform="rotate(-0 78.31152 125.530516)">W1</text>
+    </g>
+    <g id="patch_11">
+     <path d="M 103.6224 132.275437 
+L 179.9568 132.275437 
+L 179.9568 114.875437 
+L 103.6224 114.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 121.786131)">10.00090 /</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 129.2749)">10.00090</text>
+    </g>
+    <g id="patch_12">
+     <path d="M 179.9568 132.275437 
+L 296.4672 132.275437 
+L 296.4672 114.875437 
+L 179.9568 114.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_11">
+     <!-- $d(n)=\frac{q}{\sqrt{n^2-\sin^2\theta_0}}$ -->
+     <g transform="translate(191.60784 123.645437)">
+      <text>
+       <tspan x="0" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">d</tspan>
+       <tspan x="7.174316" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="4.443359" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">(</tspan>
+       <tspan x="11.61084" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">)</tspan>
+       <tspan x="15.705566" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">=</tspan>
+       <tspan x="27.926888" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="38.37207" y="-4.254688" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">q</tspan>
+       <tspan x="49.770201" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="23.37207" y="4.144" style="font-size: 3.729947px; font-family: 'STIXSizeOneSym'">√</tspan>
+       <tspan x="31.260483" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="46.658398" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="52.768101" y="5.678541" style="font-size: 3.43px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="34.531376" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">−</tspan>
+       <tspan x="39.591679" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="42.14456" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="43.505937" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+      </text>
+      <rect x="23.37207" y="-3.373438" width="32.324786" height="0.4375"/>
+      <rect x="27.314388" y="-2.629688" width="28.382468" height="0.30625"/>
+     </g>
+    </g>
+    <g id="patch_13">
+     <path d="M 296.4672 132.275437 
+L 408.96 132.275437 
+L 408.96 114.875437 
+L 296.4672 114.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_12">
+     <!-- $n&gt;\sin\theta_0$； -->
+     <g transform="translate(307.71648 121.690359)">
+      <text>
+       <tspan x="0" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="24.194115" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="5.800293" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">&gt;</tspan>
+       <tspan x="13.029297" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="16.67627" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="18.621094" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="28.476829" y="0.424997" style="font-size: 4.9px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="31.785765" y="-0.625" style="font-size: 7px; font-family: 'Microsoft YaHei'">；</tspan>
+      </text>
+     </g>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(307.71648 129.370672)">无批准的折射率数值边界</text>
+    </g>
+    <g id="patch_14">
+     <path d="M 7.2 149.675437 
+L 39.3408 149.675437 
+L 39.3408 132.275437 
+L 7.2 132.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_13">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="10.41408" y="142.930516" transform="rotate(-0 10.41408 142.930516)">SiC</text>
+    </g>
+    <g id="patch_15">
+     <path d="M 39.3408 149.675437 
+L 75.4992 149.675437 
+L 75.4992 132.275437 
+L 39.3408 132.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="42.95664" y="142.930516" transform="rotate(-0 42.95664 142.930516)">10</text>
+    </g>
+    <g id="patch_16">
+     <path d="M 75.4992 149.675437 
+L 103.6224 149.675437 
+L 103.6224 132.275437 
+L 75.4992 132.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="78.31152" y="142.930516" transform="rotate(-0 78.31152 142.930516)">W2</text>
+    </g>
+    <g id="patch_17">
+     <path d="M 103.6224 149.675437 
+L 179.9568 149.675437 
+L 179.9568 132.275437 
+L 103.6224 132.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_16">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 139.186131)">20.83352 /</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 146.6749)">20.83352</text>
+    </g>
+    <g id="patch_18">
+     <path d="M 179.9568 149.675437 
+L 296.4672 149.675437 
+L 296.4672 132.275437 
+L 179.9568 132.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_17">
+     <!-- $d(n)=\frac{q}{\sqrt{n^2-\sin^2\theta_0}}$ -->
+     <g transform="translate(191.60784 141.045437)">
+      <text>
+       <tspan x="0" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">d</tspan>
+       <tspan x="7.174316" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="4.443359" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">(</tspan>
+       <tspan x="11.61084" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">)</tspan>
+       <tspan x="15.705566" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">=</tspan>
+       <tspan x="27.926888" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="38.37207" y="-4.254688" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">q</tspan>
+       <tspan x="49.770201" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="23.37207" y="4.144" style="font-size: 3.729947px; font-family: 'STIXSizeOneSym'">√</tspan>
+       <tspan x="31.260483" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="46.658398" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="52.768101" y="5.678541" style="font-size: 3.43px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="34.531376" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">−</tspan>
+       <tspan x="39.591679" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="42.14456" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="43.505937" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+      </text>
+      <rect x="23.37207" y="-3.373438" width="32.324786" height="0.4375"/>
+      <rect x="27.314388" y="-2.629688" width="28.382468" height="0.30625"/>
+     </g>
+    </g>
+    <g id="patch_19">
+     <path d="M 296.4672 149.675437 
+L 408.96 149.675437 
+L 408.96 132.275437 
+L 296.4672 132.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_18">
+     <!-- $n&gt;\sin\theta_0$； -->
+     <g transform="translate(307.71648 139.090359)">
+      <text>
+       <tspan x="0" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="24.194115" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="5.800293" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">&gt;</tspan>
+       <tspan x="13.029297" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="16.67627" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="18.621094" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="28.476829" y="0.424997" style="font-size: 4.9px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="31.785765" y="-0.625" style="font-size: 7px; font-family: 'Microsoft YaHei'">；</tspan>
+      </text>
+     </g>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(307.71648 146.770672)">无批准的折射率数值边界</text>
+    </g>
+    <g id="patch_20">
+     <path d="M 7.2 167.075437 
+L 39.3408 167.075437 
+L 39.3408 149.675437 
+L 7.2 149.675437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_19">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="10.41408" y="160.330516" transform="rotate(-0 10.41408 160.330516)">SiC</text>
+    </g>
+    <g id="patch_21">
+     <path d="M 39.3408 167.075437 
+L 75.4992 167.075437 
+L 75.4992 149.675437 
+L 39.3408 149.675437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_20">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="42.95664" y="160.330516" transform="rotate(-0 42.95664 160.330516)">10</text>
+    </g>
+    <g id="patch_22">
+     <path d="M 75.4992 167.075437 
+L 103.6224 167.075437 
+L 103.6224 149.675437 
+L 75.4992 149.675437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_21">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="78.31152" y="160.330516" transform="rotate(-0 78.31152 160.330516)">W3</text>
+    </g>
+    <g id="patch_23">
+     <path d="M 103.6224 167.075437 
+L 179.9568 167.075437 
+L 179.9568 149.675437 
+L 103.6224 149.675437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_22">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 156.586131)">20.00180 /</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 164.0749)">20.00180</text>
+    </g>
+    <g id="patch_24">
+     <path d="M 179.9568 167.075437 
+L 296.4672 167.075437 
+L 296.4672 149.675437 
+L 179.9568 149.675437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_23">
+     <!-- $d(n)=\frac{q}{\sqrt{n^2-\sin^2\theta_0}}$ -->
+     <g transform="translate(191.60784 158.445437)">
+      <text>
+       <tspan x="0" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">d</tspan>
+       <tspan x="7.174316" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="4.443359" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">(</tspan>
+       <tspan x="11.61084" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">)</tspan>
+       <tspan x="15.705566" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">=</tspan>
+       <tspan x="27.926888" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="38.37207" y="-4.254688" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">q</tspan>
+       <tspan x="49.770201" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="23.37207" y="4.144" style="font-size: 3.729947px; font-family: 'STIXSizeOneSym'">√</tspan>
+       <tspan x="31.260483" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="46.658398" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="52.768101" y="5.678541" style="font-size: 3.43px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="34.531376" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">−</tspan>
+       <tspan x="39.591679" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="42.14456" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="43.505937" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+      </text>
+      <rect x="23.37207" y="-3.373438" width="32.324786" height="0.4375"/>
+      <rect x="27.314388" y="-2.629688" width="28.382468" height="0.30625"/>
+     </g>
+    </g>
+    <g id="patch_25">
+     <path d="M 296.4672 167.075437 
+L 408.96 167.075437 
+L 408.96 149.675437 
+L 296.4672 149.675437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_24">
+     <!-- $n&gt;\sin\theta_0$； -->
+     <g transform="translate(307.71648 156.490359)">
+      <text>
+       <tspan x="0" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="24.194115" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="5.800293" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">&gt;</tspan>
+       <tspan x="13.029297" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="16.67627" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="18.621094" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="28.476829" y="0.424997" style="font-size: 4.9px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="31.785765" y="-0.625" style="font-size: 7px; font-family: 'Microsoft YaHei'">；</tspan>
+      </text>
+     </g>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(307.71648 164.170672)">无批准的折射率数值边界</text>
+    </g>
+    <g id="patch_26">
+     <path d="M 7.2 184.475437 
+L 39.3408 184.475437 
+L 39.3408 167.075437 
+L 7.2 167.075437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_25">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="10.41408" y="177.730516" transform="rotate(-0 10.41408 177.730516)">SiC</text>
+    </g>
+    <g id="patch_27">
+     <path d="M 39.3408 184.475437 
+L 75.4992 184.475437 
+L 75.4992 167.075437 
+L 39.3408 167.075437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_26">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="42.95664" y="177.730516" transform="rotate(-0 42.95664 177.730516)">15</text>
+    </g>
+    <g id="patch_28">
+     <path d="M 75.4992 184.475437 
+L 103.6224 184.475437 
+L 103.6224 167.075437 
+L 75.4992 167.075437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_27">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="78.31152" y="177.730516" transform="rotate(-0 78.31152 177.730516)">W1</text>
+    </g>
+    <g id="patch_29">
+     <path d="M 103.6224 184.475437 
+L 179.9568 184.475437 
+L 179.9568 167.075437 
+L 103.6224 167.075437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_28">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 173.986131)">10.00090 /</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 181.4749)">10.00020</text>
+    </g>
+    <g id="patch_30">
+     <path d="M 179.9568 184.475437 
+L 296.4672 184.475437 
+L 296.4672 167.075437 
+L 179.9568 167.075437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_29">
+     <!-- $d(n)=\frac{q}{\sqrt{n^2-\sin^2\theta_0}}$ -->
+     <g transform="translate(191.60784 175.845437)">
+      <text>
+       <tspan x="0" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">d</tspan>
+       <tspan x="7.174316" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="4.443359" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">(</tspan>
+       <tspan x="11.61084" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">)</tspan>
+       <tspan x="15.705566" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">=</tspan>
+       <tspan x="27.926888" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="38.37207" y="-4.254688" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">q</tspan>
+       <tspan x="49.770201" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="23.37207" y="4.144" style="font-size: 3.729947px; font-family: 'STIXSizeOneSym'">√</tspan>
+       <tspan x="31.260483" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="46.658398" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="52.768101" y="5.678541" style="font-size: 3.43px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="34.531376" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">−</tspan>
+       <tspan x="39.591679" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="42.14456" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="43.505937" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+      </text>
+      <rect x="23.37207" y="-3.373438" width="32.324786" height="0.4375"/>
+      <rect x="27.314388" y="-2.629688" width="28.382468" height="0.30625"/>
+     </g>
+    </g>
+    <g id="patch_31">
+     <path d="M 296.4672 184.475437 
+L 408.96 184.475437 
+L 408.96 167.075437 
+L 296.4672 167.075437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_30">
+     <!-- $n&gt;\sin\theta_0$； -->
+     <g transform="translate(307.71648 173.890359)">
+      <text>
+       <tspan x="0" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="24.194115" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="5.800293" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">&gt;</tspan>
+       <tspan x="13.029297" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="16.67627" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="18.621094" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="28.476829" y="0.424997" style="font-size: 4.9px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="31.785765" y="-0.625" style="font-size: 7px; font-family: 'Microsoft YaHei'">；</tspan>
+      </text>
+     </g>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(307.71648 181.570672)">无批准的折射率数值边界</text>
+    </g>
+    <g id="patch_32">
+     <path d="M 7.2 201.875437 
+L 39.3408 201.875437 
+L 39.3408 184.475437 
+L 7.2 184.475437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_31">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="10.41408" y="195.130516" transform="rotate(-0 10.41408 195.130516)">SiC</text>
+    </g>
+    <g id="patch_33">
+     <path d="M 39.3408 201.875437 
+L 75.4992 201.875437 
+L 75.4992 184.475437 
+L 39.3408 184.475437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_32">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="42.95664" y="195.130516" transform="rotate(-0 42.95664 195.130516)">15</text>
+    </g>
+    <g id="patch_34">
+     <path d="M 75.4992 201.875437 
+L 103.6224 201.875437 
+L 103.6224 184.475437 
+L 75.4992 184.475437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_33">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="78.31152" y="195.130516" transform="rotate(-0 78.31152 195.130516)">W2</text>
+    </g>
+    <g id="patch_35">
+     <path d="M 103.6224 201.875437 
+L 179.9568 201.875437 
+L 179.9568 184.475437 
+L 103.6224 184.475437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_34">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 191.386131)">20.83352 /</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 198.8749)">20.83352</text>
+    </g>
+    <g id="patch_36">
+     <path d="M 179.9568 201.875437 
+L 296.4672 201.875437 
+L 296.4672 184.475437 
+L 179.9568 184.475437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_35">
+     <!-- $d(n)=\frac{q}{\sqrt{n^2-\sin^2\theta_0}}$ -->
+     <g transform="translate(191.60784 193.245437)">
+      <text>
+       <tspan x="0" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">d</tspan>
+       <tspan x="7.174316" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="4.443359" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">(</tspan>
+       <tspan x="11.61084" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">)</tspan>
+       <tspan x="15.705566" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">=</tspan>
+       <tspan x="27.926888" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="38.37207" y="-4.254688" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">q</tspan>
+       <tspan x="49.770201" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="23.37207" y="4.144" style="font-size: 3.729947px; font-family: 'STIXSizeOneSym'">√</tspan>
+       <tspan x="31.260483" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="46.658398" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="52.768101" y="5.678541" style="font-size: 3.43px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="34.531376" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">−</tspan>
+       <tspan x="39.591679" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="42.14456" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="43.505937" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+      </text>
+      <rect x="23.37207" y="-3.373438" width="32.324786" height="0.4375"/>
+      <rect x="27.314388" y="-2.629688" width="28.382468" height="0.30625"/>
+     </g>
+    </g>
+    <g id="patch_37">
+     <path d="M 296.4672 201.875437 
+L 408.96 201.875437 
+L 408.96 184.475437 
+L 296.4672 184.475437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_36">
+     <!-- $n&gt;\sin\theta_0$； -->
+     <g transform="translate(307.71648 191.290359)">
+      <text>
+       <tspan x="0" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="24.194115" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="5.800293" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">&gt;</tspan>
+       <tspan x="13.029297" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="16.67627" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="18.621094" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="28.476829" y="0.424997" style="font-size: 4.9px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="31.785765" y="-0.625" style="font-size: 7px; font-family: 'Microsoft YaHei'">；</tspan>
+      </text>
+     </g>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(307.71648 198.970672)">无批准的折射率数值边界</text>
+    </g>
+    <g id="patch_38">
+     <path d="M 7.2 219.275437 
+L 39.3408 219.275437 
+L 39.3408 201.875437 
+L 7.2 201.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_37">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="10.41408" y="212.530516" transform="rotate(-0 10.41408 212.530516)">SiC</text>
+    </g>
+    <g id="patch_39">
+     <path d="M 39.3408 219.275437 
+L 75.4992 219.275437 
+L 75.4992 201.875437 
+L 39.3408 201.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_38">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="42.95664" y="212.530516" transform="rotate(-0 42.95664 212.530516)">15</text>
+    </g>
+    <g id="patch_40">
+     <path d="M 75.4992 219.275437 
+L 103.6224 219.275437 
+L 103.6224 201.875437 
+L 75.4992 201.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_39">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="78.31152" y="212.530516" transform="rotate(-0 78.31152 212.530516)">W3</text>
+    </g>
+    <g id="patch_41">
+     <path d="M 103.6224 219.275437 
+L 179.9568 219.275437 
+L 179.9568 201.875437 
+L 103.6224 201.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_40">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 208.786131)">20.00180 /</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 216.2749)">20.00180</text>
+    </g>
+    <g id="patch_42">
+     <path d="M 179.9568 219.275437 
+L 296.4672 219.275437 
+L 296.4672 201.875437 
+L 179.9568 201.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_41">
+     <!-- $d(n)=\frac{q}{\sqrt{n^2-\sin^2\theta_0}}$ -->
+     <g transform="translate(191.60784 210.645437)">
+      <text>
+       <tspan x="0" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">d</tspan>
+       <tspan x="7.174316" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="4.443359" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">(</tspan>
+       <tspan x="11.61084" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">)</tspan>
+       <tspan x="15.705566" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">=</tspan>
+       <tspan x="27.926888" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="38.37207" y="-4.254688" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">q</tspan>
+       <tspan x="49.770201" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="23.37207" y="4.144" style="font-size: 3.729947px; font-family: 'STIXSizeOneSym'">√</tspan>
+       <tspan x="31.260483" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="46.658398" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="52.768101" y="5.678541" style="font-size: 3.43px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="34.531376" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">−</tspan>
+       <tspan x="39.591679" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="42.14456" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="43.505937" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+      </text>
+      <rect x="23.37207" y="-3.373438" width="32.324786" height="0.4375"/>
+      <rect x="27.314388" y="-2.629688" width="28.382468" height="0.30625"/>
+     </g>
+    </g>
+    <g id="patch_43">
+     <path d="M 296.4672 219.275437 
+L 408.96 219.275437 
+L 408.96 201.875437 
+L 296.4672 201.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_42">
+     <!-- $n&gt;\sin\theta_0$； -->
+     <g transform="translate(307.71648 208.690359)">
+      <text>
+       <tspan x="0" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="24.194115" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="5.800293" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">&gt;</tspan>
+       <tspan x="13.029297" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="16.67627" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="18.621094" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="28.476829" y="0.424997" style="font-size: 4.9px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="31.785765" y="-0.625" style="font-size: 7px; font-family: 'Microsoft YaHei'">；</tspan>
+      </text>
+     </g>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(307.71648 216.370672)">无批准的折射率数值边界</text>
+    </g>
+    <g id="patch_44">
+     <path d="M 7.2 236.675437 
+L 39.3408 236.675437 
+L 39.3408 219.275437 
+L 7.2 219.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_43">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="10.41408" y="229.930516" transform="rotate(-0 10.41408 229.930516)">Si</text>
+    </g>
+    <g id="patch_45">
+     <path d="M 39.3408 236.675437 
+L 75.4992 236.675437 
+L 75.4992 219.275437 
+L 39.3408 219.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_44">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="42.95664" y="229.930516" transform="rotate(-0 42.95664 229.930516)">10</text>
+    </g>
+    <g id="patch_46">
+     <path d="M 75.4992 236.675437 
+L 103.6224 236.675437 
+L 103.6224 219.275437 
+L 75.4992 219.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_45">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="78.31152" y="229.930516" transform="rotate(-0 78.31152 229.930516)">W1</text>
+    </g>
+    <g id="patch_47">
+     <path d="M 103.6224 236.675437 
+L 179.9568 236.675437 
+L 179.9568 219.275437 
+L 103.6224 219.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_46">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 226.186131)">15.00135 /</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 233.6749)">15.00135</text>
+    </g>
+    <g id="patch_48">
+     <path d="M 179.9568 236.675437 
+L 296.4672 236.675437 
+L 296.4672 219.275437 
+L 179.9568 219.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_47">
+     <!-- $d(n)=\frac{q}{\sqrt{n^2-\sin^2\theta_0}}$ -->
+     <g transform="translate(191.60784 228.045437)">
+      <text>
+       <tspan x="0" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">d</tspan>
+       <tspan x="7.174316" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="4.443359" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">(</tspan>
+       <tspan x="11.61084" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">)</tspan>
+       <tspan x="15.705566" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">=</tspan>
+       <tspan x="27.926888" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="38.37207" y="-4.254688" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">q</tspan>
+       <tspan x="49.770201" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="23.37207" y="4.144" style="font-size: 3.729947px; font-family: 'STIXSizeOneSym'">√</tspan>
+       <tspan x="31.260483" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="46.658398" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="52.768101" y="5.678541" style="font-size: 3.43px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="34.531376" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">−</tspan>
+       <tspan x="39.591679" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="42.14456" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="43.505937" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+      </text>
+      <rect x="23.37207" y="-3.373438" width="32.324786" height="0.4375"/>
+      <rect x="27.314388" y="-2.629688" width="28.382468" height="0.30625"/>
+     </g>
+    </g>
+    <g id="patch_49">
+     <path d="M 296.4672 236.675437 
+L 408.96 236.675437 
+L 408.96 219.275437 
+L 296.4672 219.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_48">
+     <!-- $n&gt;\sin\theta_0$； -->
+     <g transform="translate(307.71648 226.090359)">
+      <text>
+       <tspan x="0" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="24.194115" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="5.800293" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">&gt;</tspan>
+       <tspan x="13.029297" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="16.67627" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="18.621094" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="28.476829" y="0.424997" style="font-size: 4.9px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="31.785765" y="-0.625" style="font-size: 7px; font-family: 'Microsoft YaHei'">；</tspan>
+      </text>
+     </g>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(307.71648 233.770672)">无批准的折射率数值边界</text>
+    </g>
+    <g id="patch_50">
+     <path d="M 7.2 254.075437 
+L 39.3408 254.075437 
+L 39.3408 236.675437 
+L 7.2 236.675437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_49">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="10.41408" y="247.330516" transform="rotate(-0 10.41408 247.330516)">Si</text>
+    </g>
+    <g id="patch_51">
+     <path d="M 39.3408 254.075437 
+L 75.4992 254.075437 
+L 75.4992 236.675437 
+L 39.3408 236.675437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_50">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="42.95664" y="247.330516" transform="rotate(-0 42.95664 247.330516)">10</text>
+    </g>
+    <g id="patch_52">
+     <path d="M 75.4992 254.075437 
+L 103.6224 254.075437 
+L 103.6224 236.675437 
+L 75.4992 236.675437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_51">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="78.31152" y="247.330516" transform="rotate(-0 78.31152 247.330516)">W2</text>
+    </g>
+    <g id="patch_53">
+     <path d="M 103.6224 254.075437 
+L 179.9568 254.075437 
+L 179.9568 236.675437 
+L 103.6224 236.675437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_52">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 243.586131)">12.50011 /</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 251.0749)">12.50011</text>
+    </g>
+    <g id="patch_54">
+     <path d="M 179.9568 254.075437 
+L 296.4672 254.075437 
+L 296.4672 236.675437 
+L 179.9568 236.675437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_53">
+     <!-- $d(n)=\frac{q}{\sqrt{n^2-\sin^2\theta_0}}$ -->
+     <g transform="translate(191.60784 245.445437)">
+      <text>
+       <tspan x="0" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">d</tspan>
+       <tspan x="7.174316" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="4.443359" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">(</tspan>
+       <tspan x="11.61084" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">)</tspan>
+       <tspan x="15.705566" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">=</tspan>
+       <tspan x="27.926888" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="38.37207" y="-4.254688" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">q</tspan>
+       <tspan x="49.770201" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="23.37207" y="4.144" style="font-size: 3.729947px; font-family: 'STIXSizeOneSym'">√</tspan>
+       <tspan x="31.260483" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="46.658398" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="52.768101" y="5.678541" style="font-size: 3.43px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="34.531376" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">−</tspan>
+       <tspan x="39.591679" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="42.14456" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="43.505937" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+      </text>
+      <rect x="23.37207" y="-3.373438" width="32.324786" height="0.4375"/>
+      <rect x="27.314388" y="-2.629688" width="28.382468" height="0.30625"/>
+     </g>
+    </g>
+    <g id="patch_55">
+     <path d="M 296.4672 254.075437 
+L 408.96 254.075437 
+L 408.96 236.675437 
+L 296.4672 236.675437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_54">
+     <!-- $n&gt;\sin\theta_0$； -->
+     <g transform="translate(307.71648 243.490359)">
+      <text>
+       <tspan x="0" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="24.194115" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="5.800293" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">&gt;</tspan>
+       <tspan x="13.029297" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="16.67627" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="18.621094" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="28.476829" y="0.424997" style="font-size: 4.9px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="31.785765" y="-0.625" style="font-size: 7px; font-family: 'Microsoft YaHei'">；</tspan>
+      </text>
+     </g>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(307.71648 251.170672)">无批准的折射率数值边界</text>
+    </g>
+    <g id="patch_56">
+     <path d="M 7.2 271.475437 
+L 39.3408 271.475437 
+L 39.3408 254.075437 
+L 7.2 254.075437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_55">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="10.41408" y="264.730516" transform="rotate(-0 10.41408 264.730516)">Si</text>
+    </g>
+    <g id="patch_57">
+     <path d="M 39.3408 271.475437 
+L 75.4992 271.475437 
+L 75.4992 254.075437 
+L 39.3408 254.075437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_56">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="42.95664" y="264.730516" transform="rotate(-0 42.95664 264.730516)">10</text>
+    </g>
+    <g id="patch_58">
+     <path d="M 75.4992 271.475437 
+L 103.6224 271.475437 
+L 103.6224 254.075437 
+L 75.4992 254.075437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_57">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="78.31152" y="264.730516" transform="rotate(-0 78.31152 264.730516)">W3</text>
+    </g>
+    <g id="patch_59">
+     <path d="M 103.6224 271.475437 
+L 179.9568 271.475437 
+L 179.9568 254.075437 
+L 103.6224 254.075437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_58">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 260.986131)">10.00090 /</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 268.4749)">10.00090</text>
+    </g>
+    <g id="patch_60">
+     <path d="M 179.9568 271.475437 
+L 296.4672 271.475437 
+L 296.4672 254.075437 
+L 179.9568 254.075437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_59">
+     <!-- $d(n)=\frac{q}{\sqrt{n^2-\sin^2\theta_0}}$ -->
+     <g transform="translate(191.60784 262.845437)">
+      <text>
+       <tspan x="0" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">d</tspan>
+       <tspan x="7.174316" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="4.443359" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">(</tspan>
+       <tspan x="11.61084" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">)</tspan>
+       <tspan x="15.705566" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">=</tspan>
+       <tspan x="27.926888" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="38.37207" y="-4.254688" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">q</tspan>
+       <tspan x="49.770201" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="23.37207" y="4.144" style="font-size: 3.729947px; font-family: 'STIXSizeOneSym'">√</tspan>
+       <tspan x="31.260483" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="46.658398" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="52.768101" y="5.678541" style="font-size: 3.43px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="34.531376" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">−</tspan>
+       <tspan x="39.591679" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="42.14456" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="43.505937" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+      </text>
+      <rect x="23.37207" y="-3.373438" width="32.324786" height="0.4375"/>
+      <rect x="27.314388" y="-2.629688" width="28.382468" height="0.30625"/>
+     </g>
+    </g>
+    <g id="patch_61">
+     <path d="M 296.4672 271.475437 
+L 408.96 271.475437 
+L 408.96 254.075437 
+L 296.4672 254.075437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_60">
+     <!-- $n&gt;\sin\theta_0$； -->
+     <g transform="translate(307.71648 260.890359)">
+      <text>
+       <tspan x="0" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="24.194115" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="5.800293" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">&gt;</tspan>
+       <tspan x="13.029297" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="16.67627" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="18.621094" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="28.476829" y="0.424997" style="font-size: 4.9px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="31.785765" y="-0.625" style="font-size: 7px; font-family: 'Microsoft YaHei'">；</tspan>
+      </text>
+     </g>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(307.71648 268.570672)">无批准的折射率数值边界</text>
+    </g>
+    <g id="patch_62">
+     <path d="M 7.2 288.875437 
+L 39.3408 288.875437 
+L 39.3408 271.475437 
+L 7.2 271.475437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_61">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="10.41408" y="282.130516" transform="rotate(-0 10.41408 282.130516)">Si</text>
+    </g>
+    <g id="patch_63">
+     <path d="M 39.3408 288.875437 
+L 75.4992 288.875437 
+L 75.4992 271.475437 
+L 39.3408 271.475437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_62">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="42.95664" y="282.130516" transform="rotate(-0 42.95664 282.130516)">15</text>
+    </g>
+    <g id="patch_64">
+     <path d="M 75.4992 288.875437 
+L 103.6224 288.875437 
+L 103.6224 271.475437 
+L 75.4992 271.475437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_63">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="78.31152" y="282.130516" transform="rotate(-0 78.31152 282.130516)">W1</text>
+    </g>
+    <g id="patch_65">
+     <path d="M 103.6224 288.875437 
+L 179.9568 288.875437 
+L 179.9568 271.475437 
+L 103.6224 271.475437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_64">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 278.386131)">15.00135 /</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 285.8749)">15.00135</text>
+    </g>
+    <g id="patch_66">
+     <path d="M 179.9568 288.875437 
+L 296.4672 288.875437 
+L 296.4672 271.475437 
+L 179.9568 271.475437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_65">
+     <!-- $d(n)=\frac{q}{\sqrt{n^2-\sin^2\theta_0}}$ -->
+     <g transform="translate(191.60784 280.245437)">
+      <text>
+       <tspan x="0" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">d</tspan>
+       <tspan x="7.174316" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="4.443359" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">(</tspan>
+       <tspan x="11.61084" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">)</tspan>
+       <tspan x="15.705566" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">=</tspan>
+       <tspan x="27.926888" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="38.37207" y="-4.254688" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">q</tspan>
+       <tspan x="49.770201" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="23.37207" y="4.144" style="font-size: 3.729947px; font-family: 'STIXSizeOneSym'">√</tspan>
+       <tspan x="31.260483" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="46.658398" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="52.768101" y="5.678541" style="font-size: 3.43px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="34.531376" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">−</tspan>
+       <tspan x="39.591679" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="42.14456" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="43.505937" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+      </text>
+      <rect x="23.37207" y="-3.373438" width="32.324786" height="0.4375"/>
+      <rect x="27.314388" y="-2.629688" width="28.382468" height="0.30625"/>
+     </g>
+    </g>
+    <g id="patch_67">
+     <path d="M 296.4672 288.875437 
+L 408.96 288.875437 
+L 408.96 271.475437 
+L 296.4672 271.475437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_66">
+     <!-- $n&gt;\sin\theta_0$； -->
+     <g transform="translate(307.71648 278.290359)">
+      <text>
+       <tspan x="0" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="24.194115" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="5.800293" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">&gt;</tspan>
+       <tspan x="13.029297" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="16.67627" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="18.621094" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="28.476829" y="0.424997" style="font-size: 4.9px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="31.785765" y="-0.625" style="font-size: 7px; font-family: 'Microsoft YaHei'">；</tspan>
+      </text>
+     </g>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(307.71648 285.970672)">无批准的折射率数值边界</text>
+    </g>
+    <g id="patch_68">
+     <path d="M 7.2 306.275437 
+L 39.3408 306.275437 
+L 39.3408 288.875437 
+L 7.2 288.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_67">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="10.41408" y="299.530516" transform="rotate(-0 10.41408 299.530516)">Si</text>
+    </g>
+    <g id="patch_69">
+     <path d="M 39.3408 306.275437 
+L 75.4992 306.275437 
+L 75.4992 288.875437 
+L 39.3408 288.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_68">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="42.95664" y="299.530516" transform="rotate(-0 42.95664 299.530516)">15</text>
+    </g>
+    <g id="patch_70">
+     <path d="M 75.4992 306.275437 
+L 103.6224 306.275437 
+L 103.6224 288.875437 
+L 75.4992 288.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_69">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="78.31152" y="299.530516" transform="rotate(-0 78.31152 299.530516)">W2</text>
+    </g>
+    <g id="patch_71">
+     <path d="M 103.6224 306.275437 
+L 179.9568 306.275437 
+L 179.9568 288.875437 
+L 103.6224 288.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_70">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 295.786131)">12.50011 /</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 303.2749)">12.50011</text>
+    </g>
+    <g id="patch_72">
+     <path d="M 179.9568 306.275437 
+L 296.4672 306.275437 
+L 296.4672 288.875437 
+L 179.9568 288.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_71">
+     <!-- $d(n)=\frac{q}{\sqrt{n^2-\sin^2\theta_0}}$ -->
+     <g transform="translate(191.60784 297.645437)">
+      <text>
+       <tspan x="0" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">d</tspan>
+       <tspan x="7.174316" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="4.443359" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">(</tspan>
+       <tspan x="11.61084" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">)</tspan>
+       <tspan x="15.705566" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">=</tspan>
+       <tspan x="27.926888" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="38.37207" y="-4.254688" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">q</tspan>
+       <tspan x="49.770201" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="23.37207" y="4.144" style="font-size: 3.729947px; font-family: 'STIXSizeOneSym'">√</tspan>
+       <tspan x="31.260483" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="46.658398" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="52.768101" y="5.678541" style="font-size: 3.43px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="34.531376" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">−</tspan>
+       <tspan x="39.591679" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="42.14456" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="43.505937" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+      </text>
+      <rect x="23.37207" y="-3.373438" width="32.324786" height="0.4375"/>
+      <rect x="27.314388" y="-2.629688" width="28.382468" height="0.30625"/>
+     </g>
+    </g>
+    <g id="patch_73">
+     <path d="M 296.4672 306.275437 
+L 408.96 306.275437 
+L 408.96 288.875437 
+L 296.4672 288.875437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.25; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_72">
+     <!-- $n&gt;\sin\theta_0$； -->
+     <g transform="translate(307.71648 295.690359)">
+      <text>
+       <tspan x="0" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="24.194115" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="5.800293" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">&gt;</tspan>
+       <tspan x="13.029297" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="16.67627" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="18.621094" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="28.476829" y="0.424997" style="font-size: 4.9px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="31.785765" y="-0.625" style="font-size: 7px; font-family: 'Microsoft YaHei'">；</tspan>
+      </text>
+     </g>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(307.71648 303.370672)">无批准的折射率数值边界</text>
+    </g>
+    <g id="patch_74">
+     <path d="M 7.2 323.675437 
+L 39.3408 323.675437 
+L 39.3408 306.275437 
+L 7.2 306.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_73">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="10.41408" y="316.930516" transform="rotate(-0 10.41408 316.930516)">Si</text>
+    </g>
+    <g id="patch_75">
+     <path d="M 39.3408 323.675437 
+L 75.4992 323.675437 
+L 75.4992 306.275437 
+L 39.3408 306.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_74">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="42.95664" y="316.930516" transform="rotate(-0 42.95664 316.930516)">15</text>
+    </g>
+    <g id="patch_76">
+     <path d="M 75.4992 323.675437 
+L 103.6224 323.675437 
+L 103.6224 306.275437 
+L 75.4992 306.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_75">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: start" x="78.31152" y="316.930516" transform="rotate(-0 78.31152 316.930516)">W3</text>
+    </g>
+    <g id="patch_77">
+     <path d="M 103.6224 323.675437 
+L 179.9568 323.675437 
+L 179.9568 306.275437 
+L 103.6224 306.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_76">
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 313.186131)">10.00090 /</text>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(111.25584 320.6749)">10.00090</text>
+    </g>
+    <g id="patch_78">
+     <path d="M 179.9568 323.675437 
+L 296.4672 323.675437 
+L 296.4672 306.275437 
+L 179.9568 306.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_77">
+     <!-- $d(n)=\frac{q}{\sqrt{n^2-\sin^2\theta_0}}$ -->
+     <g transform="translate(191.60784 315.045437)">
+      <text>
+       <tspan x="0" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">d</tspan>
+       <tspan x="7.174316" y="-0.842188" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="4.443359" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">(</tspan>
+       <tspan x="11.61084" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">)</tspan>
+       <tspan x="15.705566" y="-0.842188" style="font-size: 7px; font-family: 'DejaVu Sans'">=</tspan>
+       <tspan x="27.926888" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="38.37207" y="-4.254688" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">q</tspan>
+       <tspan x="49.770201" y="4.943544" style="font-style: oblique; font-size: 4.9px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="23.37207" y="4.144" style="font-size: 3.729947px; font-family: 'STIXSizeOneSym'">√</tspan>
+       <tspan x="31.260483" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="46.658398" y="2.919844" style="font-size: 3.43px; font-family: 'DejaVu Sans'">2</tspan>
+       <tspan x="52.768101" y="5.678541" style="font-size: 3.43px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="34.531376" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">−</tspan>
+       <tspan x="39.591679" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="42.14456" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="43.505937" y="4.943544" style="font-size: 4.9px; font-family: 'DejaVu Sans'">n</tspan>
+      </text>
+      <rect x="23.37207" y="-3.373438" width="32.324786" height="0.4375"/>
+      <rect x="27.314388" y="-2.629688" width="28.382468" height="0.30625"/>
+     </g>
+    </g>
+    <g id="patch_79">
+     <path d="M 296.4672 323.675437 
+L 408.96 323.675437 
+L 408.96 306.275437 
+L 296.4672 306.275437 
+z
+" style="fill: #ffffff; stroke: #444444; stroke-width: 0.55; stroke-linejoin: miter"/>
+    </g>
+    <g id="text_78">
+     <!-- $n&gt;\sin\theta_0$； -->
+     <g transform="translate(307.71648 313.090359)">
+      <text>
+       <tspan x="0" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="24.194115" y="-0.625" style="font-style: oblique; font-size: 7px; font-family: 'DejaVu Sans'">θ</tspan>
+       <tspan x="5.800293" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">&gt;</tspan>
+       <tspan x="13.029297" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">s</tspan>
+       <tspan x="16.67627" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">i</tspan>
+       <tspan x="18.621094" y="-0.625" style="font-size: 7px; font-family: 'DejaVu Sans'">n</tspan>
+       <tspan x="28.476829" y="0.424997" style="font-size: 4.9px; font-family: 'DejaVu Sans'">0</tspan>
+       <tspan x="31.785765" y="-0.625" style="font-size: 7px; font-family: 'Microsoft YaHei'">；</tspan>
+      </text>
+     </g>
+     <text style="font-size: 7px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif" transform="translate(307.71648 320.770672)">无批准的折射率数值边界</text>
+    </g>
+   </g>
+   <g id="text_79">
+    <text style="font-size: 10px; font-family: 'Microsoft YaHei', 'SimHei', 'DejaVu Sans', sans-serif; text-anchor: middle" x="208.08" y="15.623437" transform="rotate(-0 208.08 15.623437)">q与条件厚度 d(n) 的关系（原始 / 有依据掩码）</text>
+   </g>
+  </g>
+ </g>
+</svg>
