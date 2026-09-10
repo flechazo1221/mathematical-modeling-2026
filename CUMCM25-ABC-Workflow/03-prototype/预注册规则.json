@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "frozen_before_observed_outputs": true,
+  "seed": 20260907,
+  "scope": "small_prototype_only",
+  "assumption_boundary": ["A1", "A2", "A3", "A4", "A5", "A6", "A7"],
+  "comparison": {
+    "models": ["B", "F", "P"],
+    "diagnostic_only": ["M"],
+    "windows_cm_inv": [[600.0, 1600.0], [1600.0, 2800.0], [2800.0, 3800.0]],
+    "masks": ["raw", "reasoned"],
+    "reasoned_mask": "finite AND first-row-zero excluded AND R_percent<=100; exclusions retain row-level reason",
+    "angles": [10, 15],
+    "split": "ordered continuous windows; never random adjacent-point split",
+    "budget": "one deterministic run per material-angle-window-mask plus 144 synthetic cases (432 model-runs); no tuning after observed outputs",
+    "stopping_rule": "finish fixed grid once; no adaptive expansion"
+  },
+  "synthetic_calibration": {
+    "optical_thickness_um": [5.0, 10.0, 20.0, 40.0],
+    "noise_sd_fraction": [0.0, 0.02, 0.05],
+    "baseline_slope_fraction": [0.0, 0.10],
+    "replicates": 2,
+    "signal": "0.5+0.25*cos(4*pi*q_um*1e-4*sigma+phase)+linear_baseline+Gaussian_noise",
+    "note": "dimensionless algorithmic calibration grid; not a claimed material refractive index or true sample thickness"
+  },
+  "thresholds": {
+    "synthetic_recovery_pass": "relative error <= max(0.02, 2/(window_span*2*q_cm))",
+    "minimum_complete_fringe_cycles": 1.0,
+    "improvement_supported": "median synthetic error at least 20% below B, win rate >=0.75, and observed cross-window/dual-angle/mask diagnostics do not degrade by >10% relative to B",
+    "inconclusive": "numerical gain exists but support, stability, or identifiability condition is not met",
+    "unsupported": "no targeted gain or a rejection rule is triggered",
+    "M_gate": "mechanism evidence must be stable across both angles, at least two windows and both masks AND a stable >=5% conditional optical-thickness effect must be estimable; otherwise no admission"
+  },
+  "truth_limit": "Observed data have no independent thickness truth. Report q=n*d*cos(theta1) or d(n), never a unique physical n or true thickness."
+}

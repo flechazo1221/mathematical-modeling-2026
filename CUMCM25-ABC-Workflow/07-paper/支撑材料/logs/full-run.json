@@ -1,0 +1,172 @@
+{
+  "started_or_completed_at": "2026-09-07T19:18:20.511103+08:00",
+  "mode": "full",
+  "status": "PASS",
+  "runtime_s": 5.973626699997112,
+  "smoke": {
+    "status": "PASS",
+    "profiles": [
+      {
+        "file": "附件1.xlsx",
+        "worksheet_rows": 7470,
+        "data_rows": 7469,
+        "header": [
+          "波数 (cm-1)",
+          "反射率 (%)"
+        ],
+        "first": [
+          399.6747,
+          0.0
+        ],
+        "last": [
+          4000.122,
+          18.26850504
+        ],
+        "sigma_min": 399.6747,
+        "sigma_max": 4000.122,
+        "step_min": 0.48099999999976717,
+        "step_max": 0.4830000000001746,
+        "strictly_increasing": true,
+        "finite_count": 7469,
+        "R_min_percent": 0.0,
+        "R_max_percent": 95.38499492,
+        "R_gt_100_count": 0,
+        "R_zero_count": 1
+      },
+      {
+        "file": "附件2.xlsx",
+        "worksheet_rows": 7470,
+        "data_rows": 7469,
+        "header": [
+          "波数 (cm-1)",
+          "反射率 (%)"
+        ],
+        "first": [
+          399.6747,
+          0.0
+        ],
+        "last": [
+          4000.122,
+          19.28237573
+        ],
+        "sigma_min": 399.6747,
+        "sigma_max": 4000.122,
+        "step_min": 0.48099999999976717,
+        "step_max": 0.4830000000001746,
+        "strictly_increasing": true,
+        "finite_count": 7469,
+        "R_min_percent": 0.0,
+        "R_max_percent": 102.7393552,
+        "R_gt_100_count": 262,
+        "R_zero_count": 1
+      },
+      {
+        "file": "附件3.xlsx",
+        "worksheet_rows": 7470,
+        "data_rows": 7469,
+        "header": [
+          "波数 (cm-1)",
+          "反射率 (%)"
+        ],
+        "first": [
+          399.6747,
+          0.0
+        ],
+        "last": [
+          4000.122,
+          28.3130393
+        ],
+        "sigma_min": 399.6747,
+        "sigma_max": 4000.122,
+        "step_min": 0.48099999999976717,
+        "step_max": 0.4830000000001746,
+        "strictly_increasing": true,
+        "finite_count": 7469,
+        "R_min_percent": 0.0,
+        "R_max_percent": 79.8019744,
+        "R_gt_100_count": 0,
+        "R_zero_count": 1
+      },
+      {
+        "file": "附件4.xlsx",
+        "worksheet_rows": 7470,
+        "data_rows": 7469,
+        "header": [
+          "波数 (cm-1)",
+          "反射率 (%)"
+        ],
+        "first": [
+          399.6747,
+          0.0
+        ],
+        "last": [
+          4000.122,
+          31.06725458
+        ],
+        "sigma_min": 399.6747,
+        "sigma_max": 4000.122,
+        "step_min": 0.48099999999976717,
+        "step_max": 0.4830000000001746,
+        "strictly_increasing": true,
+        "finite_count": 7469,
+        "R_min_percent": 0.0,
+        "R_max_percent": 91.48944351,
+        "R_gt_100_count": 0,
+        "R_zero_count": 1
+      }
+    ],
+    "synthetic_F": {
+      "q_um": 19.990234375001137,
+      "status": "OK_CONDITIONAL",
+      "peak_frequency_per_cm_inv": 0.0039980468750002275,
+      "peak_width_per_cm_inv": 0.0019990234375001133,
+      "peak_ambiguity": 0.00015738423510889177,
+      "cycles": 3.9980468750002274,
+      "grid_step_cm_inv": 0.4885197850512668,
+      "grid_points": 2048,
+      "nfft": 2048,
+      "zero_pad_factor": 1,
+      "rayleigh_frequency_resolution_per_cm_inv": 0.001,
+      "q_bin_resolution_um": 5.0,
+      "detrend_degree": 2,
+      "detrend_coefficients": [
+        0.5113959576417312,
+        0.019216512121172376,
+        -0.03450081436480197
+      ],
+      "window_function": "hann"
+    },
+    "dimensionless_phase_check": "PASS",
+    "M_degenerate_limits": {
+      "zero_back_interface_reflection": "PASS_BY_CONSTRUCTION",
+      "strong_attenuation": "PASS_GEOMETRIC_TERMS_VANISH",
+      "incoherent_limit": "PASS_PHASE_INTERFERENCE_REMOVED",
+      "status": "GATE_NOT_TRIGGERED",
+      "admitted": false
+    }
+  },
+  "structural": {
+    "F_vs_B_synthetic_median_error_ratio": 0.0003650361736292037,
+    "F_vs_B_win_rate": 0.7986111111111112,
+    "F_recovery_pass_rate": 1.0,
+    "F_structure_feasible": true,
+    "interpretation": "algorithm recovery under approved synthetic model; not observed true accuracy"
+  },
+  "row_counts": {
+    "observed": 72,
+    "synthetic": 432,
+    "validations": 84,
+    "mask_exclusions": 266,
+    "fft_spectrum_source": 26389,
+    "conditional_sensitivity": 48,
+    "fft_pressure": 72
+  },
+  "figures": [
+    "04-compute/diagnostic-figures/diagnostic_observed_q_all.png",
+    "04-compute/diagnostic-figures/diagnostic_observed_q_all.svg",
+    "04-compute/diagnostic-figures/diagnostic_synthetic_recovery.png",
+    "04-compute/diagnostic-figures/diagnostic_synthetic_recovery.svg",
+    "04-compute/diagnostic-figures/diagnostic_fft_pressure.png",
+    "04-compute/diagnostic-figures/diagnostic_fft_pressure.svg"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "gate": "H2",
+  "status": "DRAFT",
+  "question": "确认主模型、基线、评价指标、权重和验证要求",
+  "selected_options": [],
+  "reasons": [],
+  "accepted_assumptions": [],
+  "rejected_options": [],
+  "required_validations": [],
+  "prohibited_changes": [],
+  "delegations": [],
+  "confirmed_by": [],
+  "confirmed_at": null,
+  "supersedes": null
+}

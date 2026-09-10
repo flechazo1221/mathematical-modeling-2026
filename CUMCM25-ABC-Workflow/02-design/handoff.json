@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "stage": "DESIGN",
+  "status": "PASS",
+  "inputs": [
+    {"path": "decisions/H1-problem.json", "sha256": "17c2c7142ca1a05c63cce41e3b003856320fd69ec5ecb35eda02c7d8fe6ed835"},
+    {"path": "input/B题/B题.pdf", "sha256": "b0b2ce649282c2d7063af3c30ac9c0d931512dc86014d3147bc765d8f1c8cf87"},
+    {"path": "input/B题/附件/附件1.xlsx", "sha256": "b42f8bdabe7497951284cd044386c3cdf9d349b5e8ef4baaa0336e65ff84c67b"},
+    {"path": "input/B题/附件/附件2.xlsx", "sha256": "24b3113e80d5ec5458ba4f447df9ed185578481e8b0081bdf0673689505e49d0"},
+    {"path": "input/B题/附件/附件3.xlsx", "sha256": "79e9f66a00409f1d1130d9f4f3d76b4d5e5a1ccd3ac2d24dc0af8ecc583d0ec8"},
+    {"path": "input/B题/附件/附件4.xlsx", "sha256": "9cf1400404c4560958da06685beb8c2e1e4df5918a6e13863663a54440ba12e3"},
+    {"path": "01-intake/赛题结构化说明.json", "sha256": "6befeac2c39bbc784f1a5c78ef9627ce143a51e2bc2d0151c55a8c5a8571eda4"},
+    {"path": "01-intake/handoff.json", "sha256": "1e5ad8b23662e8aa8d675b8ccaa7d77f8dd03b9c64f6c262fd3bfb19255eeabc"},
+    {"path": "02-literature/handoff.json", "sha256": "e6e60dcb8dd0a6bc051c0e88536928869fcdb8a0ac380104fdba201283aec1b5"},
+    {"path": "02-literature/文献清单.json", "sha256": "43c9d78b03b70b1d4582fc62d1cb6ebdb8c725e4158630c849d63a49fc167352"},
+    {"path": "02-literature/文献阅读结果.md", "sha256": "e9391e654e71a453955c04db878d6b05509f8f846fd9b1a4e482245dea52bb03"}
+  ],
+  "outputs": [
+    {"path": "02-design/题目分析报告.md", "sha256": "c9fa0d927f72cb617202229f61fe9d27c80e3700949df903e8943508c522afdb"},
+    {"path": "02-design/术语表格.md", "sha256": "cecd955b4624834104bb6192213281efc7204b11d57666da9f5a2d4d2185dc8d"},
+    {"path": "02-design/候选模型方案.md", "sha256": "5fcc86ed48e55d5d8e9134c9eadd4ed0f75c98400130d7105c309e27e8b47ecb"},
+    {"path": "02-design/H2-优化审计与方向.md", "sha256": "24454cb8aede1dd933b0fbb9c4fa62d86533ef44a5bab6a05fedf990e94dc9c6"},
+    {"path": "02-design/文献到模型映射.md", "sha256": "251c8bcf315a2751df95ecb160dda065e8de6981d6e8872d0227ae15d78ee318"},
+    {"path": "02-design/contracts/model-baseline-fringe.json", "sha256": "c06d9c2a1033312bb0e63dec9d43d71e8daa425fde080eed6e8a2222977bef71"},
+    {"path": "02-design/contracts/model-fft-optical.json", "sha256": "8b2d6d77d38561a098199807e893d4a987af1a12bdc29ae58ea9133722261e8a"},
+    {"path": "02-design/contracts/model-physical-regression.json", "sha256": "86b96c97e2986f540c67cf85c3489d3f825211bfbe3922ace6c6d9ba5a21cfb8"},
+    {"path": "02-design/contracts/model-multibeam-transfer.json", "sha256": "8fe01a49e768cbced0511c917310bda326b29cf2dd0478a0eac14eedb855375f"},
+    {"path": "02-design/验证计划.json", "sha256": "b955613e967389fad2d9ee4bc7126707713e9e1f2021987838cae5864d8ccfe7"}
+  ],
+  "frozen_decisions": [
+    {"path": "decisions/H1-problem.json", "sha256": "17c2c7142ca1a05c63cce41e3b003856320fd69ec5ecb35eda02c7d8fe6ed835"}
+  ],
+  "assumptions": [],
+  "unknowns": [
+    "题目样品与波段匹配的SiC及Si线性n(sigma)、kappa(sigma)及其多型、掺杂、温度、偏振适用域仍缺直接证据。",
+    "仪器分辨率、相干长度、角度误差、表面粗糙度、楔度及独立厚度真值未知。",
+    "A1-A7涉及结构、参数或结论，均等待队长确认；多光束证据阈值、厚度影响门槛、窗口与参数边界尚未批准。"
+  ],
+  "claims": [
+    "15项H1任务均已映射到决策用途、输入、输出、约束与验证。",
+    "已为每个相关决策问题保留可运行的两束局部条纹基线，并提出FFT、物理谱回归及条件多光束三个实质不同候选。",
+    "每项复杂候选均记录baseline到缺陷、针对性改变、预期证据与拒绝规则。",
+    "验证计划固定同数据、同窗口、同掩码对、同指标与同口径，显式覆盖非等距波数、双角、n-d可识别性、异常敏感性及无真值限制。",
+    "未选择H2路线、未运行完整求解、未产生最终厚度数值。"
+  ],
+  "evidence": [
+    "题目分析报告.md含15项任务合同、量纲推导及A1-A7审批表。",
+    "候选模型方案.md与contracts/model-*.json提供四个可实现模型合同和失败返回。",
+    "验证计划.json提供V01-V12预注册检查及公平比较规则。",
+    "文献到模型映射.md仅使用已验证L01-L04定位并保留迁移限制。"
+  ],
+  "warnings": [
+    "PASS表示DESIGN材料完整，不表示A1-A7或任何H2路线已获队伍批准。",
+    "L03非线性折射率n2不得作为线性n；L01参数不得外推；不得自行补入缺失n/k。",
+    "双角、跨窗口、残差与稳定性仅为内部证据，不能冒充真实准确度。",
+    "SiC多光束修正只有在机制证据和厚度影响均获支持且门槛已批准时才可执行。",
+    "handoff.json自引用哈希不可实现；其余全部DESIGN产物哈希均列于outputs，handoff自身哈希另存handoff.sha256。"
+  ],
+  "required_next_actions": [
+    "主控验证本handoff schema、全部输入输出哈希及handoff.sha256。",
+    "队长在H2中中立审查候选路线及A1-A7，明确批准/拒绝的假设、窗口、参数边界与保留门槛。",
+    "H2未明确批准前不得进入PROTOTYPE；任何候选均不得把条件厚度写成唯一真实厚度。"
+  ],
+  "completed_at": "2026-09-07T00:00:00+08:00"
+}

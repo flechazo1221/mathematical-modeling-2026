@@ -1,0 +1,16 @@
+{
+  "schema_version":"1.0",
+  "stage":"EVIDENCE",
+  "usage":"仅供H3选择摘要候选事实；未经团队批准不得视为最终摘要。",
+  "truth_boundary":"没有独立厚度真值。所有观测结果只报告光学厚度q及条件d(n)，双角、跨窗、掩码和拟合稳定性不是外部准确度。",
+  "verified_facts":[
+    {"id":"A01","text":"冻结F在批准的144个合成案例中通过率为100%，但通过阈值是相对误差≤2.0；中位相对误差为0.020883152687082608，最大为1.0001803830790537。","source":"04-compute/results/failure_summary.csv第4行；synthetic_recovery.csv中model=F记录"},
+    {"id":"A02","text":"SiC的F光学厚度q在三个固定窗口约为10.0002–20.8335 μm，Si约为10.0009–15.0014 μm；窗口间差异必须逐窗保留，不能合并成唯一厚度。","source":"04-compute/results/observed_all_models.csv中model=F的24条记录"},
+    {"id":"A03","text":"F的SiC双角最大相对差为6.975236593441059e-05，Si为0；这只表明当前离散F口径下的内部一致性。","source":"04-compute/results/validation_metrics.csv中F双角记录"},
+    {"id":"A04","text":"FFT零填充/窗函数压力测试相对批准F的最大q变化为18.75%，表明数值选择边界必须披露。","source":"04-compute/results/fft_pressure_test.csv第52、55、70、73行"},
+    {"id":"A05","text":"B合成恢复通过率为45.8333%；P有36/144个合成失败，因此B仅作基准、P仅作补充诊断。","source":"04-compute/results/failure_summary.csv第2、6行"},
+    {"id":"A06","text":"附件2记录了262个R>100%点，四附件各有首行零值；raw/reasoned敏感性均被保留，异常成因未被擅自解释。","source":"04-compute/results/mask_exclusions.csv第2–267行"},
+    {"id":"A07","text":"M为GATE_NOT_TRIGGERED，机制证据不足且厚度影响未估计，故没有执行多光束修正。","source":"04-compute/results/M_diagnostic.json"}
+  ],
+  "forbidden_abstract_phrases":["得到唯一真实厚度","验证了真实准确性","证明多光束不存在","多光束修正降低了误差","F的所有误差均很小","P优于F且无失败"]
+}

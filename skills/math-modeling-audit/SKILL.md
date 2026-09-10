@@ -20,7 +20,7 @@ Read `../../shared/references/quality-principles.md`, `workflow-contract.md`, `h
 3. Look for leakage, proxy-target mismatch, non-identifiability, weak baselines, causal overreach, hidden failures, and unsupported generalization.
 4. Trace every core paper claim to formulas, real outputs, figures, or verified literature.
 5. Check publication figures against frozen data snapshots and contracts; detect misleading axes, selective presentation, or missing uncertainty.
-6. Check Word and optional LaTeX/PDF structure, citations, rendering, official rules, and cross-format consistency.
+6. Check the canonical LaTeX project and its compiled PDF for structure, citations, source/PDF hash consistency, rendering, and official-rule compliance. If an official platform required a derived DOCX, verify that it was exported from the frozen LaTeX source and has no substantive drift.
 7. Compare the AI declaration with the actual usage log and affected files.
 
 ## Required outputs

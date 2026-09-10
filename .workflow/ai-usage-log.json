@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "competition": "高教社杯全国大学生数学建模竞赛",
+  "year": 2025,
+  "rule_status": "UNVERIFIED",
+  "official_sources": [],
+  "entries": [
+    {
+      "stage": "SELECTION",
+      "tool_or_model": "Codex tasks (configured model; primary 01a06b8d..., repair 01a06b95...)",
+      "purpose": "2025年国赛B题可行性评估、H0材料准备及交接路径修复",
+      "affected_files": [
+        "00-selection/候选题清单.json",
+        "00-selection/选题评分.json",
+        "00-selection/选题分析.md",
+        "00-selection/H0-选择包.md",
+        "00-selection/handoff.json"
+      ],
+      "human_review": "等待H0团队选择并确认关键风险",
+      "recorded_at": "2026-09-04T16:46:13+08:00"
+    }
+  ]
+}

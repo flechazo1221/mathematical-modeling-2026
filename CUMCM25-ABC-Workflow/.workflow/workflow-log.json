@@ -1,0 +1,255 @@
+{
+  "schema_version": "1.0",
+  "events": [
+    {
+      "event": "PROJECT_INITIALIZED",
+      "at": "2026-09-04T16:48:38+08:00"
+    },
+    {
+      "event": "TASK_CREATION_AUTHORIZATION_CHANGED",
+      "at": "2026-09-04T16:48:38+08:00",
+      "authorized": true
+    },
+    {
+      "event": "STAGE_STARTED",
+      "at": "2026-09-04T16:49:11+08:00",
+      "stage": "SELECTION",
+      "thread_id": "01a06b9b-4968-7d90-9d63-2038bbcd3116"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-04T16:55:57+08:00",
+      "stage": "SELECTION",
+      "affected_files": [
+        "00-selection/候选题清单.json",
+        "00-selection/选题评分.json",
+        "00-selection/选题分析.md",
+        "00-selection/H0-选择包.md",
+        "00-selection/handoff.json"
+      ]
+    },
+    {
+      "event": "STAGE_COMPLETED",
+      "at": "2026-09-04T16:55:57+08:00",
+      "stage": "SELECTION",
+      "next_stage": "H0"
+    },
+    {
+      "event": "GATE_APPROVED",
+      "at": "2026-09-05T19:56:08+08:00",
+      "gate": "H0",
+      "next_stage": "INTAKE"
+    },
+    {
+      "event": "STAGE_STARTED",
+      "at": "2026-09-05T19:57:11+08:00",
+      "stage": "INTAKE",
+      "thread_id": "01a0716d-eb31-7d22-a4ed-1fe60a6be88b"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-05T20:18:20+08:00",
+      "stage": "INTAKE",
+      "affected_files": [
+        "01-intake/赛题结构化说明.json",
+        "01-intake/附件清单.json",
+        "01-intake/数据审计报告.md",
+        "01-intake/问题方法约束矩阵.md",
+        "01-intake/官方规则与AI合规.md",
+        "01-intake/H1-选择包.md",
+        "01-intake/题面文本.txt",
+        "01-intake/handoff.json"
+      ]
+    },
+    {
+      "event": "STAGE_COMPLETED",
+      "at": "2026-09-05T20:18:21+08:00",
+      "stage": "INTAKE",
+      "next_stage": "H1"
+    },
+    {
+      "event": "GATE_APPROVED",
+      "at": "2026-09-05T20:22:52+08:00",
+      "gate": "H1",
+      "next_stage": "LITERATURE"
+    },
+    {
+      "event": "STAGE_STARTED",
+      "at": "2026-09-05T20:43:28+08:00",
+      "stage": "LITERATURE",
+      "thread_id": "01a07198-490a-7383-a85e-5764c8703562"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-07T10:34:20+08:00",
+      "stage": "LITERATURE",
+      "affected_files": [
+        "02-literature/文献清单.json",
+        "02-literature/文献阅读结果.md",
+        "02-literature/handoff.json"
+      ]
+    },
+    {
+      "event": "STAGE_COMPLETED",
+      "at": "2026-09-07T10:34:20+08:00",
+      "stage": "LITERATURE",
+      "next_stage": "DESIGN"
+    },
+    {
+      "event": "STAGE_STARTED",
+      "at": "2026-09-07T10:34:55+08:00",
+      "stage": "DESIGN",
+      "thread_id": "01a079b7-da3b-7080-9e57-f30032357cd9"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-07T10:42:05+08:00",
+      "stage": "DESIGN",
+      "affected_files": [
+        "02-design/候选模型方案.md",
+        "02-design/H2-优化审计与方向.md",
+        "02-design/验证计划.json",
+        "02-design/handoff.json"
+      ]
+    },
+    {
+      "event": "STAGE_COMPLETED",
+      "at": "2026-09-07T10:42:05+08:00",
+      "stage": "DESIGN",
+      "next_stage": "PROTOTYPE"
+    },
+    {
+      "event": "STAGE_STARTED",
+      "at": "2026-09-07T10:45:57+08:00",
+      "stage": "PROTOTYPE",
+      "thread_id": "01a079c1-f58a-76b2-a3fd-6b407553da53"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-07T10:52:37+08:00",
+      "stage": "PROTOTYPE",
+      "affected_files": [
+        "03-prototype/原型结果.csv",
+        "03-prototype/候选方案对比.md",
+        "03-prototype/H2-选择包.md",
+        "03-prototype/handoff.json"
+      ]
+    },
+    {
+      "event": "STAGE_COMPLETED",
+      "at": "2026-09-07T10:52:38+08:00",
+      "stage": "PROTOTYPE",
+      "next_stage": "H2"
+    },
+    {
+      "event": "GATE_APPROVED",
+      "at": "2026-09-07T19:02:15+08:00",
+      "gate": "H2",
+      "next_stage": "COMPUTE"
+    },
+    {
+      "event": "STAGE_STARTED",
+      "at": "2026-09-07T19:03:12+08:00",
+      "stage": "COMPUTE",
+      "thread_id": "01a07b89-3043-7313-9af3-c8e4b49cd308"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-07T19:22:25+08:00",
+      "stage": "COMPUTE",
+      "affected_files": [
+        "04-compute/results/observed_all_models.csv",
+        "04-compute/results/validation_metrics.csv",
+        "04-compute/复现清单.json",
+        "04-compute/证据索引.json",
+        "04-compute/handoff.json"
+      ]
+    },
+    {
+      "event": "STAGE_COMPLETED",
+      "at": "2026-09-07T19:22:25+08:00",
+      "stage": "COMPUTE",
+      "next_stage": "EVIDENCE"
+    },
+    {
+      "event": "STAGE_STARTED",
+      "at": "2026-09-07T19:23:15+08:00",
+      "stage": "EVIDENCE",
+      "thread_id": "01a07b9b-8d99-7fb1-8d3a-996ccd983d45"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-07T19:34:38+08:00",
+      "stage": "EVIDENCE",
+      "affected_files": [
+        "05-evidence/主张证据映射.json",
+        "05-evidence/摘要事实清单.json",
+        "05-evidence/正式图表需求.json",
+        "05-evidence/H3-选择包.md",
+        "05-evidence/handoff.json"
+      ]
+    },
+    {
+      "event": "STAGE_COMPLETED",
+      "at": "2026-09-07T19:34:38+08:00",
+      "stage": "EVIDENCE",
+      "next_stage": "H3"
+    },
+    {
+      "event": "GATE_APPROVED",
+      "at": "2026-09-08T10:29:11+08:00",
+      "gate": "H3",
+      "next_stage": "FIGURE"
+    },
+    {
+      "event": "STAGE_STARTED",
+      "at": "2026-09-08T10:30:10+08:00",
+      "stage": "FIGURE",
+      "thread_id": "01a07ed9-d0c0-7723-91a8-4f4f1eea5366"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-08T10:42:43+08:00",
+      "stage": "FIGURE",
+      "affected_files": [
+        "06-figure/figure-manifest.json",
+        "06-figure/figures",
+        "06-figure/图注.md",
+        "06-figure/visual-audit.md",
+        "06-figure/handoff.json"
+      ]
+    },
+    {
+      "event": "STAGE_COMPLETED",
+      "at": "2026-09-08T10:42:43+08:00",
+      "stage": "FIGURE",
+      "next_stage": "PAPER"
+    },
+    {
+      "event": "STAGE_STARTED",
+      "at": "2026-09-08T11:05:57+08:00",
+      "stage": "PAPER",
+      "thread_id": "01a07efa-9068-7522-809f-a2d1aa9c95c0"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-10T16:58:31+08:00",
+      "stage": "PAPER",
+      "affected_files": [
+        "07-paper"
+      ]
+    },
+    {
+      "event": "STAGE_COMPLETED",
+      "at": "2026-09-10T16:58:32+08:00",
+      "stage": "PAPER",
+      "next_stage": "AUDIT"
+    },
+    {
+      "event": "STAGE_STARTED",
+      "at": "2026-09-10T16:59:11+08:00",
+      "stage": "AUDIT",
+      "thread_id": "01a08a8a-ae8e-7952-a2a9-63b1f4e9c399"
+    }
+  ]
+}

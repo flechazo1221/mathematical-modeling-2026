@@ -1,0 +1,48 @@
+{
+  "figure_id": "FIG-SYNTH",
+  "claim_ids": [
+    "NEG-B",
+    "NEG-F",
+    "NEG-P"
+  ],
+  "question": "B/F/P在同一批准合成案例上的恢复误差、通过与失败如何公平比较？",
+  "source_files": [
+    {
+      "path": "04-compute/results/synthetic_recovery.csv",
+      "sha256": "9e1c458a55269250c3fa7a65b3e00506ff41d61acf7df126d97f043d5f1417aa"
+    },
+    {
+      "path": "06-figure/data-snapshots/FIG-SYNTH.csv",
+      "sha256": "9e1c458a55269250c3fa7a65b3e00506ff41d61acf7df126d97f043d5f1417aa"
+    }
+  ],
+  "required_comparisons": [
+    "same 144 cases per model",
+    "successful-error distribution plus explicit failures",
+    "threshold=2.0"
+  ],
+  "must_show_failures": true,
+  "prohibited_operations": [
+    "select favorable windows or categories",
+    "remove failures",
+    "redefine metrics",
+    "claim true accuracy from internal consistency",
+    "use log/broken/normalized axes without C1"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 300,
+  "final_size_inches": [
+    7.2,
+    4.4
+  ],
+  "language": "zh-CN",
+  "color_encoding": "Okabe-Ito-like palette with marker/line-style redundancy",
+  "x": {
+    "field": "relative_error",
+    "scale": "linear"
+  },
+  "uncertainty": "full empirical distribution; no CI"
+}

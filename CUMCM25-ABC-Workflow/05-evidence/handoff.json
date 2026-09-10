@@ -1,0 +1,52 @@
+{
+  "schema_version":"1.0",
+  "stage":"EVIDENCE",
+  "status":"PASS",
+  "inputs":[
+    {"path":"decisions/H1-problem.json","sha256":"17c2c7142ca1a05c63cce41e3b003856320fd69ec5ecb35eda02c7d8fe6ed835"},
+    {"path":"decisions/H2-model.json","sha256":"84dad8391f99a8e46c1a41af777a80be5d6fc841eaa16a085ae994798c67693a"},
+    {"path":"decisions/prototype-authorization.json","sha256":"2e71d5264db8edf2f30c257c45029f7c72a32f33b7a8a0f8e813e3fea67f90a1"},
+    {"path":"01-intake/赛题结构化说明.json","sha256":"6befeac2c39bbc784f1a5c78ef9627ce143a51e2bc2d0151c55a8c5a8571eda4"},
+    {"path":"01-intake/问题方法约束矩阵.md","sha256":"1e509477538f3b0d7720a174a28ea4379b84b9793bbe0e982d80dd8b4a5437a0"},
+    {"path":"02-literature/文献阅读结果.md","sha256":"e9391e654e71a453955c04db878d6b05509f8f846fd9b1a4e482245dea52bb03"},
+    {"path":"02-design/题目分析报告.md","sha256":"c9fa0d927f72cb617202229f61fe9d27c80e3700949df903e8943508c522afdb"},
+    {"path":"02-design/验证计划.json","sha256":"b955613e967389fad2d9ee4bc7126707713e9e1f2021987838cae5864d8ccfe7"},
+    {"path":"03-prototype/预注册规则.json","sha256":"65aa8491340c746aa4ce12cd0e5d127353fd8fdd4990ba45620c4f344ca22747"},
+    {"path":"03-prototype/原型结果.csv","sha256":"62a206c171e5087e2dee319ed0d7daa07e6c9ddce2c156194cd265e2fb598ddc"},
+    {"path":"03-prototype/handoff.json","sha256":"413867561f55d2bfc698dab454da8dcdcc5dca296de8744b858c9f9affce1897"},
+    {"path":"04-compute/handoff.json","sha256":"ee1eb3e2ad117c388e90d7a95748cae1145f8ee81ccf9c6e8635821e8c051227"},
+    {"path":"04-compute/证据索引.json","sha256":"9fca31b620b0fd1603f6fc8274e95c6b7c51c708d8ad9c9d299d80af4cacbdad"},
+    {"path":"04-compute/复现清单.json","sha256":"36e662af4c12a144da5dce77cc7759c44110f173c96239ea4516bf3cfc821787"},
+    {"path":"04-compute/results/observed_all_models.csv","sha256":"99d84af1a96feaca5ae575fcff4629805da82e6441b9dd1a9fb69375b4a285e5"},
+    {"path":"04-compute/results/validation_metrics.csv","sha256":"e724e0b28115086fb7c9b61edd173422bd361926fbb89b4ff0d4245b2274f59d"},
+    {"path":"04-compute/results/synthetic_recovery.csv","sha256":"9e1c458a55269250c3fa7a65b3e00506ff41d61acf7df126d97f043d5f1417aa"},
+    {"path":"04-compute/results/failure_summary.csv","sha256":"9b334d26c1fe425936a4ac3fb48edc0f0732362f535f3514e284e54e78bab95e"},
+    {"path":"04-compute/results/fft_pressure_test.csv","sha256":"3626e8794fe23fa9ca9f3b3aa1f56ddd92513a13d6d36d5d967d26c1b7f6a0c3"},
+    {"path":"04-compute/results/mask_exclusions.csv","sha256":"471305d083f80ef0e7b43842265b36483a7525201231cffa9cc2fd43915d3cb4"},
+    {"path":"04-compute/results/conditional_sensitivity.csv","sha256":"d0637c4e9ff2f4083abac9b4fe9a5b814074dd3654d536467b8aae629e9d545b"},
+    {"path":"04-compute/results/structural_feasibility.json","sha256":"19abf3e78664b2275fa2d75719597fcb70e56739fb002cac2ea7f868aa576afb"},
+    {"path":"04-compute/results/M_diagnostic.json","sha256":"e1ebdfb975cc4c576b5001f5938dbfcd0d0d5bbd5f8f777484c7364ff91cd7dc"},
+    {"path":"04-compute/logs/恢复审查记录.md","sha256":"cb19b051712ebed56d0f35782c93c1330a7029ee4cdb17a264d0dbcdfe7e29c5"},
+    {"path":"04-compute/logs/p1-independent-review.json","sha256":"06e071ddb0b0dd902e1a48ca4462f90f327d0b6ba762920a543948c1de2f6bb3"},
+    {"path":"04-compute/src/run_compute.py","sha256":"aa63435a9cc88c42ec5df29e8c18a939d16d20c0fd77d438caeedacecb37e623"}
+  ],
+  "outputs":[
+    {"path":"05-evidence/主张证据映射.json","sha256":"e1c1409d84e6786476d5b64838e2820503faf429a118bd2a170687bd14c280ce"},
+    {"path":"05-evidence/结果事实清单.json","sha256":"985dcd6dfc7ef62a58596365c36fc8c8d6ab914df35b48dba0f303557f12f13d"},
+    {"path":"05-evidence/摘要事实清单.json","sha256":"be9eece8465fffc15f05118f584b01364609b10705f7349b69d5fe12e00db5b4"},
+    {"path":"05-evidence/正式图表需求.json","sha256":"4608abd896bc06cd905dbbb40347763023eed5914d3ac293ec00fd3efed6584c"},
+    {"path":"05-evidence/论文证据大纲.md","sha256":"5f0030af487b3de187f40a342886f5a225e360fc25b35e1aa612a2f8f8fffe0f"},
+    {"path":"05-evidence/H3-选择包.md","sha256":"902cad9f52b251c8770be78c56d12eecc79ec207061b4a86ad2a2020c6feba3d"}
+  ],
+  "frozen_decisions":[
+    {"path":"decisions/H1-problem.json","sha256":"17c2c7142ca1a05c63cce41e3b003856320fd69ec5ecb35eda02c7d8fe6ed835"},
+    {"path":"decisions/H2-model.json","sha256":"84dad8391f99a8e46c1a41af777a80be5d6fc841eaa16a085ae994798c67693a"}
+  ],
+  "assumptions":["未新增任何影响结构、参数或结论的假设；只使用团队批准的H1、A1–A7和H2冻结口径。"],
+  "unknowns":["匹配样品与波段的n(σ)、k(σ)、角度误差量级、仪器分辨率、相干长度和独立厚度真值仍不可用。","附件2超100%点和四表首零值的成因未知。","多光束机制证据不足且厚度影响未估计。"],
+  "claims":["15项H1验收任务均已映射到可支持、不可支持的主张及精确证据。","三个固定窗口、双角、raw/reasoned及B/F/P/M角色均完整保留。","摘要事实只含已验证数值并显式绑定真值边界。","H3选择包保持中立，非约束性AI建议已单列。"],
+  "evidence":["05-evidence/主张证据映射.json绑定真实结果文件、记录筛选、字段、指标、公式、文献定位和复现命令。","05-evidence/结果事实清单.json和摘要事实清单.json保留F判据口径、B低通过率、P 36个失败、FFT最大压力变化、262个异常点、恢复P1 PASS和M未触发。","05-evidence/正式图表需求.json逐问规定数据、比较口径、不确定性/失败展示和禁止视觉暗示。"],
+  "warnings":["F的100%合成通过率使用relative_error<=2.0的判据；最大相对误差为1.0001803830790537，二者必须并列解释。","观测双角、跨窗口、掩码和拟合稳定性不是独立真值验证。","旧COMPUTE偏离历史必须保留且不得与恢复后输出混用。","未经H3团队批准不得确定最终主张、图表、限制或叙事。"],
+  "required_next_actions":["主控验证本handoff schema及全部输入/输出哈希。","停止在H3，等待真实队员审议并记录TEAM_REQUIRED决议；不得自动进入FIGURE或PAPER。"],
+  "completed_at":"2026-09-07T20:05:00+08:00"
+}

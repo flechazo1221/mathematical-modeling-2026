@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "review": "P1 independent minimal-command quality review",
+  "reviewer_role": "independent read-only reviewer",
+  "completed_at": "2026-09-07T19:16:26+08:00",
+  "status": "PASS",
+  "scope": {
+    "project_root": "C:/Users/Lenovo/Desktop/数模/CUMCM26-Workflow test/CUMCM25-ABC-Workflow",
+    "code_modified": false,
+    "full_run_executed": false,
+    "write_boundary": "04-compute/logs/p1-independent-review.json only, in addition to the smoke command's own 04-compute/logs/p1-smoke.json",
+    "authorization_location_note": "The requested 03-prototype/prototype-authorization.json path does not exist; the authoritative TEAM_APPROVED file was found and reviewed at decisions/prototype-authorization.json."
+  },
+  "inputs_reviewed": [
+    "C:/Users/Lenovo/.codex/skills/math-modeling-v2/skills/math-modeling-compute/SKILL.md",
+    "C:/Users/Lenovo/.codex/skills/math-modeling-v2/shared/references/quality-principles.md",
+    "C:/Users/Lenovo/.codex/skills/math-modeling-v2/shared/references/workflow-contract.md",
+    "C:/Users/Lenovo/.codex/skills/math-modeling-v2/shared/references/resource-map.md",
+    "decisions/H2-model.json",
+    "decisions/prototype-authorization.json",
+    "03-prototype/预注册规则.json",
+    "03-prototype/run_prototypes.py",
+    "04-compute/src/run_compute.py",
+    "04-compute/logs/恢复审查记录.md"
+  ],
+  "checks": [
+    {
+      "item": "H2 authority and assumption boundary",
+      "status": "PASS",
+      "evidence": "H2-model.json is TEAM_APPROVED; implementation stays within A1-A7 and does not introduce a new structural, parameter, or conclusion-changing assumption."
+    },
+    {
+      "item": "F window, FFT length, and discrete peak",
+      "status": "PASS",
+      "evidence": "run_compute.py lines 182-247 use np.hanning(len(grid)); estimate_f calls fft_details(x,y,'hann',1); nfft=len(grid); peak is argmax over discrete bins with no parabolic or other sub-bin interpolation. This matches the prototype's n-point Hann rFFT discrete-peak rule."
+    },
+    {
+      "item": "F low-frequency-bin rule",
+      "status": "PASS",
+      "evidence": "run_compute.py lines 199-204 select valid=np.arange(2,len(freq)), exactly matching prototype behavior spec[:2]=0 followed by argmax."
+    },
+    {
+      "item": "No zero padding or sub-grid refinement in main F",
+      "status": "PASS",
+      "evidence": "All main/synthetic/observed F calls route through estimate_f -> fft_details(...,'hann',1). No sub-grid interpolation exists in the main estimator."
+    },
+    {
+      "item": "P frozen 401-point discrete grid",
+      "status": "PASS",
+      "evidence": "run_compute.py lines 258-282 use np.linspace(lower,upper,401), select int(np.argmin(rss)), and use freqs[k] directly without interpolation; boundary solutions retain an explicit failure code."
+    },
+    {
+      "item": "Eightfold zero padding confined to labelled diagnostics",
+      "status": "PASS",
+      "evidence": "zero_pad_factor=8 occurs only in sensitivity_rows pressure variants hann_zp8_diagnostic and rectangular_zp8; each row is labelled 'FFT numerical pressure test; not model substitution' and is written to fft_pressure_test.csv, while approved F remains hann_n_approved."
+    },
+    {
+      "item": "Model roles",
+      "status": "PASS",
+      "evidence": "B, F, P are computed with B retained as baseline, F as approved main route, P as supplemental diagnostic; M is not in ESTIMATORS and remains admitted=false/GATE_NOT_TRIGGERED."
+    },
+    {
+      "item": "Fixed windows and paired masks",
+      "status": "PASS",
+      "evidence": "WINDOWS are exactly W1=600-1600, W2=1600-2800, W3=2800-3800 cm^-1; observed_runs reports raw and reasoned for every material-angle-window-model combination. reasoned mask is finite AND R<=100 with first row excluded and row-level reasons retained."
+    },
+    {
+      "item": "Dual-angle independence and q/d(n) boundary",
+      "status": "PASS",
+      "evidence": "Angles 10 and 15 are processed independently; no joint fit exists. Results report q_um and conditional d_um(n)=q_um/sqrt(n^2-sin(theta)^2), explicitly state no approved numeric n bounds, and do not claim unique true thickness or true accuracy."
+    },
+    {
+      "item": "Recovery history preserved",
+      "status": "PASS",
+      "evidence": "恢复审查记录.md explicitly retains the prior 8x-zero-padding/sub-grid and 601-point/sub-grid deviations and documents the current correction; no prior log was deleted."
+    },
+    {
+      "item": "Minimal smoke execution",
+      "status": "PASS",
+      "evidence": "The authorized command exited 0 and emitted status=PASS. All four workbooks had 7469 data rows; attachment 2 had 262 R>100 points; synthetic F returned q_um=19.990234375001137 for q_true=20, status OK_CONDITIONAL, Hann, grid_points=2048, nfft=2048, zero_pad_factor=1; M remained admitted=false."
+    }
+  ],
+  "command": {
+    "working_directory": "C:/Users/Lenovo/Desktop/数模/CUMCM26-Workflow test/CUMCM25-ABC-Workflow",
+    "argv": "python 04-compute/src/run_compute.py --smoke",
+    "exit_code": 0,
+    "output_log": "04-compute/logs/p1-smoke.json",
+    "key_output": {
+      "status": "PASS",
+      "synthetic_F_q_um": 19.990234375001137,
+      "synthetic_F_status": "OK_CONDITIONAL",
+      "synthetic_F_window_function": "hann",
+      "synthetic_F_grid_points": 2048,
+      "synthetic_F_nfft": 2048,
+      "synthetic_F_zero_pad_factor": 1,
+      "M_admitted": false
+    }
+  },
+  "sha256": {
+    "decisions/H2-model.json": "84dad8391f99a8e46c1a41af777a80be5d6fc841eaa16a085ae994798c67693a",
+    "decisions/prototype-authorization.json": "2e71d5264db8edf2f30c257c45029f7c72a32f33b7a8a0f8e813e3fea67f90a1",
+    "03-prototype/预注册规则.json": "65aa8491340c746aa4ce12cd0e5d127353fd8fdd4990ba45620c4f344ca22747",
+    "03-prototype/run_prototypes.py": "47c5ce19830d5c2efbcf5cfbd7341830f2d2a9b9b05cc4345f1b73bfa31f2e4b",
+    "04-compute/src/run_compute.py": "aa63435a9cc88c42ec5df29e8c18a939d16d20c0fd77d438caeedacecb37e623",
+    "04-compute/logs/恢复审查记录.md": "cb19b051712ebed56d0f35782c93c1330a7029ee4cdb17a264d0dbcDFE7E29C5",
+    "04-compute/logs/p1-smoke.json": "b5652b1ab8e57a25abefec33e01e3d64bf84c8e229525ae0e56d88d5703e0c8e"
+  },
+  "conclusion": "PASS: static implementation review and the real minimal smoke command both satisfy the frozen P1 acceptance conditions. Full execution may proceed under the parent COMPUTE task; this independent reviewer did not run it."
+}

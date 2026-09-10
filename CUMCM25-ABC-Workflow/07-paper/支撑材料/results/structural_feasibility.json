@@ -1,0 +1,7 @@
+{
+  "F_vs_B_synthetic_median_error_ratio": 0.0003650361736292037,
+  "F_vs_B_win_rate": 0.7986111111111112,
+  "F_recovery_pass_rate": 1.0,
+  "F_structure_feasible": true,
+  "interpretation": "algorithm recovery under approved synthetic model; not observed true accuracy"
+}

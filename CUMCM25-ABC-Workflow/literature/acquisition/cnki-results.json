@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "searched_at": "2026-09-10T16:42:00+08:00",
+  "scope": "2025年国赛B题中文补充检索；总库、中文、相关度排序；每式筛前20条",
+  "queries_executed": [
+    {"id":"CNKI-B1","visible_result_count":3,"status":"completed"},
+    {"id":"CNKI-B2","visible_result_count":null,"status":"not_captured","note":"页面结果未在下一次检索前稳定，不能把上一检索的3条误记为本式结果"},
+    {"id":"CNKI-B3","visible_result_count":4,"status":"completed"},
+    {"id":"CNKI-B4","visible_result_count":null,"status":"site_error","note":"知网显示：抱歉，暂无数据，请稍后重试"},
+    {"id":"CNKI-B5","visible_result_count":null,"status":"site_error","note":"知网显示：抱歉，暂无数据，请稍后重试"},
+    {"id":"CNKI-B6","visible_result_count":2,"status":"completed"},
+    {"id":"CNKI-B7","visible_result_count":21,"status":"completed","note":"最终稳定结果为21条；首次短暂显示2条，不采用该瞬时数值"}
+  ],
+  "retained": [
+    {"query_id":"CNKI-B7","title":"基于光谱非均匀傅里叶变换的薄膜厚度测量技术研究","authors":["郝然"],"venue":"天津大学","year":2020,"document_type":"硕士","stable_cnki_detail_url":null,"relevance_decision":"优先；直接支持频域/非均匀傅里叶厚度反演","supports":["Q2厚度反演","频域算法","误差与适用性分析"],"metadata_verified":true,"access_status":"downloaded"},
+    {"query_id":"CNKI-B7","title":"掺Sb衬底外延片厚度测量及误差分析","authors":["常素珍","肖凌","封慧峰"],"venue":"科技风","year":2014,"document_type":"期刊","stable_cnki_detail_url":null,"relevance_decision":"优先；直接支持外延片测厚误差分析","supports":["Q2厚度测量","误差分析","外延片工程背景"],"metadata_verified":true,"access_status":"downloaded"},
+    {"query_id":"CNKI-B7","title":"基于光栅+傅里叶光谱的宽波段大角度光谱椭偏技术研究","authors":["张瑞","白沁","徐承雨","王赛飞","孔泉慧子"],"venue":"光谱学与光谱分析","year":2025,"document_type":"期刊","stable_cnki_detail_url":null,"relevance_decision":"备选；支持宽波段光谱测厚与参数反演，但并非红外干涉外延层直接研究","supports":["宽波段参数反演","光谱测厚交叉验证"],"metadata_verified":true,"access_status":"downloaded"},
+    {"query_id":"CNKI-B3","title":"碳化硅晶体的可见近红外透射光谱分析","authors":["于元勋","连洁","官文栎","王公堂","李娟","徐现刚"],"venue":"山东大学学报(工学版)","year":2011,"document_type":"期刊","stable_cnki_detail_url":null,"relevance_decision":"备选；可核验SiC近红外光谱性质，波段与外延层适用性仍需阅读全文判断","supports":["SiC光学性质","红外适用范围"],"metadata_verified":true,"access_status":"metadata-only"}
+  ],
+  "excluded": [
+    {"query_id":"CNKI-B1","title":"非线性最小二乘拟合驱动的碳化硅外延层厚度测量方法研究","reason":"与赛题高度同构且发表于赛后，需先排查竞赛二次解题与证据循环"},
+    {"query_id":"CNKI-B1","title":"基于Drude-Lorentz模型与红外反射光谱干涉条纹的碳化硅外延层厚度反演方法","reason":"与赛题高度同构且发表于赛后，暂不作为独立物理依据"},
+    {"query_id":"CNKI-B1","title":"基于红外干涉法与多光束干涉修正的碳化硅外延层厚度测量模型","reason":"与2025 B题措辞高度同构，存在证据循环风险"},
+    {"query_id":"CNKI-B3","title":"N/Si/B-掺杂闪蒸纳米材料实验和理论研究","reason":"研究对象和尺度不匹配"},
+    {"query_id":"CNKI-B3","title":"飞秒激光辐照下碳化硅热响应与熔化阈值模拟","reason":"关注激光热响应而非红外测厚"},
+    {"query_id":"CNKI-B3","title":"掺杂纳米碳化硅薄膜的制备及光学特性研究","reason":"纳米薄膜对象与外延晶圆测厚问题不完全匹配"},
+    {"query_id":"CNKI-B6","title":"红外干涉法测量外延层厚度的建模分析","reason":"发表于2026且题名高度贴合赛题，需排查竞赛衍生材料"},
+    {"query_id":"CNKI-B6","title":"基于色散修正与全谱拟合的红外干涉测厚模型研究","reason":"发表于2026且题名高度贴合赛题，暂不作为独立依据"}
+  ]
+}

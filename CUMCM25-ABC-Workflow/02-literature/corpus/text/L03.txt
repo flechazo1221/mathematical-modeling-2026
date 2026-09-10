@@ -1,0 +1,1646 @@
+[[PAGE 1]]
+materials
+
+Review
+
+Novel Photonic Applications of Silicon Carbide
+
+Haiyan Ou 1,* , Xiaodong Shi 1 , Yaoqin Lu 1, Manuel Kollmuss 2 , Johannes Steiner 2 , Vincent Tabouret 3,
+Mikael Syväjärvi 4,* , Peter Wellmann 2,* and Didier Chaussende 3,*
+
+                                          1 Department of Electrical and Photonics Engineering, Technical University of Denmark, Ørsteds Plads,
+
+                                               Building 343, 2800 Kongens Lyngby, Denmark
+                                          2 Crystal Growth Lab, Materials Department 6 (I-Meet), FAU Friedrich-Alexander University
+
+                                               Erlangen-Nürnberg, Martensstr. 7, D-91058 Erlangen, Germany
+                                          3 Université Grenoble Alpes, CNRS, Grenoble INP, SIMaP, 38000 Grenoble, France
+                                          4 Alminica AB, Åsorp 2, 59053 Ulrika, Sweden
+
+                                          * Correspondence: haou@dtu.dk (H.O.); mikael@alminica.se (M.S.); peter.wellmann@fau.de (P.W.);
+
+                                               didier.chaussende@grenoble-inp.fr (D.C.)
+
+                                          Abstract: Silicon carbide (SiC) is emerging rapidly in novel photonic applications thanks to its unique
+                                          photonic properties facilitated by the advances of nanotechnologies such as nanofabrication and nanofilm
+                                          transfer. This review paper will start with the introduction of exceptional optical properties of silicon
+                                          carbide. Then, a key structure, i.e., silicon carbide on insulator stack (SiCOI), is discussed which lays
+                                          solid fundament for tight light confinement and strong light-SiC interaction in high quality factor
+                                          and low volume optical cavities. As examples, microring resonator, microdisk and photonic crystal
+                                          cavities are summarized in terms of quality (Q) factor, volume and polytypes. A main challenge for SiC
+                                          photonic application is complementary metal-oxide-semiconductor (CMOS) compatibility and low-loss
+                                          material growth. The state-of-the-art SiC with different polytypes and growth methods are reviewed
+                                          and a roadmap for the loss reduction is predicted for photonic applications. Combining the fact that
+                                          SiC possesses many different color centers with the SiCOI platform, SiC is also deemed to be a very
+                                          competitive platform for future quantum photonic integrated circuit applications. Its perspectives and
+                                          potential impacts are included at the end of this review paper.
+
+Citation: Ou, H.; Shi, X.; Lu, Y.;        Keywords: silicon carbide; integrated photonics; material growth
+Kollmuss, M.; Steiner, J.; Tabouret, V.;
+Syväjärvi, M.; Wellmann, P.;              1. Introduction
+Chaussende, D. Novel Photonic                   Photonic integrated circuits (PIC), also named integrated lightwave circuits (ILC) or
+Applications of Silicon Carbide.
+Materials 2023, 16, 1014. https://        photonic lightwave circuits (PLC), have been discussed to overcome the predicted bottle-
+doi.org/10.3390/ma16031014                neck for integrated circuits for more than half a century. During the development of PIC,
+                                          a lot of different material platforms have been investigated, such as silicon (Si), silicon
+Academic Editors: Marilena Vivona         dioxide (SiO2), silicon nitride (SiN), aluminum gallium arsenide (AlGaAs), indium phos-
+and Mike Jennings                         phide (InP), and the emerging gallium nitride (GaN), lithium niobate (LiNbO3), silicon
+                                          carbide (SiC), etc. Although Si is playing the most important role in this area, beneﬁting
+Received: 19 December 2022                from the well-established complementary metal-oxide-semiconductor (CMOS) processing,
+Revised: 5 January 2023                   it is limited by its own optical properties, such as indirect bandgap, strong two-photon ab-
+Accepted: 17 January 2023                 sorption at telecommunication wavelength and zero second-order nonlinearity. Therefore,
+Published: 22 January 2023                other material platforms are developed either monolithically on their own or as hybrid
+                                          platforms that are integrated with an Si substrate. Among them, SiC is emerging rapidly in
+Copyright: © 2023 by the authors.         this ﬁeld, partially because of the commercially available high-quality crystal SiC wafers
+Licensee MDPI, Basel, Switzerland.        and mature micro and nanofabrication of SiC in the promotion of SiC powered electronic
+This article is an open access article    devices, a similar story as Si. Unlike many well deﬁned ﬁgures of merit (FOM), such
+distributed under the terms and           as Johnson FOM, Keyes FOM, Baliga FOM, and Baliga high-frequency FOM, for direct
+conditions of the Creative Commons        comparison of different material platforms in electronics, photonic material platforms are
+Attribution (CC BY) license (https://     usually compared in terms of bandgap, refractive index, second-order nonlinearity, and
+creativecommons.org/licenses/by/          third-order nonlinearity.
+4.0/).
+
+Materials 2023, 16, 1014. https://doi.org/10.3390/ma16031014  https://www.mdpi.com/journal/materials
+
+[[PAGE 2]]
+Materials 2023, 16, 1014                                                                                    2 of 29
+
+                                Normally, for an ideal PIC material platform, it has low loss at the working wavelength;
+                          has a high refractive index for strong light–matter interaction; has strong second-order
+                          nonlinearity for electro-optical modulation and second-harmonic generation; and has high
+                          third-order nonlinearity for efﬁcient wavelength conversion. As shown in Table 1, SiC
+                          fulﬁlls all the demanded optical properties: high refractive index, wide bandgap, and
+                          high second-order and third order nonlinearities. Additionally, SiC is CMOS compatible.
+                          Therefore, extensive investigations on SiC optical devices are emerging.
+
+                          Table 1. Main material platforms for PICs. n: refractive index, BG: bandgap, n2: nonlinear refractive
+                          index, χ(2): second-order susceptibility.
+
+                          Materials                      Key Features          Pros                   Cons
+                                                n
+                                                   BG    n2 (m2/W)     χ(2)
+                                                   (eV)                (pm/V)
+
+                          Si [1–5]    3.48         1.12  4.5 × 10−18   200     High   refractive      Small bandgap,
+                                                                       1                              strong two photon
+                                                                       100     index, compact,        absorption
+                                                                       27
+                                                                       33      CMOS compatible,       Low refractive in-
+                                                                                                      dex, low nonlinear-
+                                                                               cost-effective         ity
+                                                                                                      Low nonlinearity
+                          SiO2 [6,7]  1.5          9     3 × 10−20             CMOS incompatible,
+                                                                               low loss               Low nonlinearity
+
+                          SiN [8–10]  2.0          5     2.5 × 10−19           CMOS compatible,       Cost-ineffective,
+                                                                               cost-effective         CMOS incompatible
+                          Hydex [11]  1.7          1.8   1.2 × 10−19
+                                                                               CMOS compatible,       Cost-ineffective,
+                          GaP [12–14] 3.1          2.26  1.2 × 10−17           cost-effective         CMOS incompatible
+                                                                                                      Cost-ineffective, dif-
+                          AlN [15,16] 2.1          6     2.3 × 10−19           High refractive in-    ﬁcult to etch
+                          Diamond [17] 2.4                                     dex, high nonlinear-
+                                                                               ity                    Small bandgap, cost-
+                                                                                                      ineffective, CMOS
+                                                                               Efﬁcient light source  incompatible
+                                                                                                      CMOS incompatible,
+                                                   5.5   8.2 × 10−20           CMOS compatible,       difﬁcult to etch
+                                                                               wide bandgap
+                                                                                                      Cost-ineffective
+                          AlGaAs      3.3          1.4–2 2.6 × 10−17           High refractive in-
+
+                          [18,19]                                              dex, high nonlinear-
+                                                                               ity
+
+                          LiNbO3      2.2          4                           Well-known op-
+
+                          [20–22]                                              tical  properties,
+
+                                                                               cost-effective
+
+                          SiC [23]    2.6          2.4–  1.3 × 10−18           High refractive in-
+                                                                               dex, compact, CMOS
+                                                   3.2                         compatible, high
+                                                                               nonlinearity, light
+                                                                               emitter
+
+                          2. Silicon Carbide Photonic Integrated Platforms
+
+                                Planar optical waveguides are key structures where the light is conﬁned and trans-
+                          mitted by obeying total internal reﬂection (TIR). For SiC waveguides, it is indispensable
+                          to form an index contrast where SiC has a higher refractive index than the surroundings.
+                          At the beginning of this research, ﬂoating SiC in the air has been applied because the
+                          commercial SiC epilayers on Si substrates were available. Since Si has a higher refractive
+                          index than SiC, it has to be removed near the SiC waveguides. But this structure has restric-
+                          tions on the post-etching process, such as patterning and top-cladding deposition. Instead,
+                          silicon carbide on insulator stacks is developed and applied in most of the publications
+                          currently. There are generally three different methods to form SiCOI, as shown in Figure 1.
+                          For method 1, smart/ion cut method is adopted from silicon-on-insulator (SOI) stack’s
+                          formation, where Si wafer is replaced by a SiC wafer [24,25]. But since SiC and Si have
+                          very different physical properties, the material loss in SiCOI is still quite high compared to
+                          SOI, after ion implantation. This method mainly delivers 4H SiCOI stacks. For method 2,
+                          the bonded SiC is thinned down directly by using grinding and later chemical mechanical
+                          polishing (CMP) to smoothen the surface. In this way, the ion implantation step in the
+
+[[PAGE 3]]
+Materials 2023, 16, 1014                                                                                                                                              3 of 29
+
+                          smart/ion cut is skipped and SiCOI stacks achieve very low loss. This method delivers 4H
+                          and 3C SiCOI stacks. For method 3, amorphous SiC is directly deposited on the Si substrate
+                          with an SiO2 layer between. The amorphous SiC deposition could be completed through
+                          plasma-enhanced chemical vapor deposition (PECVD) and sputtering. Both methods are
+                          CMOS compatible.
+
+                          Figure 1. Three SiCOI stack formation methods.
+
+                                Table 2 listed the state of the art of SiCOI waveguides in terms of waveguide structure,
+                          dimension, forming method, propagation loss, and quality factor (Q) of a microring res-
+                          onator and the measured nonlinear refractive index. The active SiC layers have a thickness
+                          of hundreds of nm, which is extremely difﬁcult to control in the process of thinning down
+                          SiC from hundreds of µm to nm. So far, 4H SiCOI waveguides formed from method 2 show
+                          the lowest loss of 0.38 dB/cm. 3C SiCOI from method 2 and amorphous SiC from method
+                          3 have quite close losses of about 3 dB/cm. The loss of 4H SiCOI formed by method 1
+                          could be derived from the quality factor of the microring, which is about 6.5 dB/cm. The
+                          waveguide loss is related to both the material loss and the waveguide fabrication imperfec-
+                          tion. Nanofabrication technology has been well developed for other material platforms,
+                          such as SOI. SiC could be etched by using the same machine and precursors as Si. So, the
+                          fabrication-related loss is reduced to a negligible level for SiC in a very short time, while
+                          the supply of low-loss SiCOI stacks remains challenging. Comparing the listed 3 methods,
+                          method 2 shows the best performance, while method 1 and 3 have the similar performance,
+                          currently. However, with regard to the cost, method 2 is the most expensive one, followed
+                          by method 1 and 3 with reduced cost. In addition to the unique optical properties, SiC
+                          has the potential for easy scale-up. From this point of view, method 3 shows advantages
+                          because it is not limited by the rather small SiC wafers available, unlike method 1 and 2.
+                          Looking forward to quantum applications of SiCOI, many optically addressable defects in
+                          crystalline SiC such as 4H, 3C and 6H have been published [26,27], which are promising as
+                          candidates for single photon sources. But no report on optically addressable defects from
+                          amorphous SiC have been revealed yet. 6H SiCOI has been reported for usage in optical
+                          cavities [28–32]. It is used less, as 4H SiC is becoming dominant because of its better crystal
+                          quality, which is crucial for high quality-factor optical cavities. Moreover, many physical
+                          and optical properties of 6H SiC lie between 3C and 4H SiC, making it less interesting.
+
+[[PAGE 4]]
+Materials 2023, 16, 1014                                                                                              4 of 29
+
+                          Table 2. State of the art of SiC waveguides.
+
+                          Material           Stack   Method      Size (nm2)          Loss (dB/cm)   Q              n2 (m2/W)
+                          3C SiC [33]        SiC-Si  Floating    730 × 500           2.9                           5.3 × 10−19
+                                                                                     3              1.42 × 105
+                          3C SiC [34]        SiCOI 2             1700 × 500                         1.6 × 105      4.8 × 10−18
+                          a SiC [35]         SiCOI 3             800 × 350           0.38           7.3 × 104
+                                                                                                                   8.6 × 10−19
+                          4H SiC [36]        SiCOI 1             750 × 500                          1.1 × 106      6.9 × 10−19
+
+                          4H SiC [37]        SiCOI 1             2700 × 600
+
+                          4H SiC [38]        SiCOI 2             3000 × 530
+
+                          3. Silicon Carbide Photonic Cavities
+
+                                The light-matter interaction could be enhanced by an optical cavity. Normally, a higher
+                          quality factor and a smaller mode volume are preferred. As an example for a quantitative
+                          relation, power threshold for parametric oscillation is determined by the waveguide loss
+                          (described by the loaded quality factors QL,s , QL,i , and QL,p of the signal, idler, and pump
+                          modes, respectively) and the conﬁnement, given by
+
+                                                      Pth        =  ω0n2    QL,p     V                                          (1)
+                                                                    8ηn2c            Q L,s Q L,i
+
+                          where  n  is  the  modal   refractive  index,  V  is  the  mode  volume,  and  η=  QL,p  ,  where  Qc,p
+                                                                                                             Qc,p
+
+                          accounts for coupling from the pump mode to the waveguide, n2 is the nonlinear refractive
+
+                          index and ω0 is the angular frequency [38]. For SiC, three types of optical cavities have
+
+                          been published: photonic crystal cavities (PhC), microring resonators (MRR) and microdisk
+
+                          resonators (MDR). Their evolvement during the past ten years is shown in Figure 2.
+
+                          Figure 2. State of the art of SiC optical cavities [23,25,28,32,34–36,38–58].
+
+                                Among the different forms of SiC (3C, 4H and 6H polytypes, and amorphous), there
+                          has been no further progress for 6H SiC in recent years. 4H SiCOI microring resonators
+                          made by method 2 have demonstrated a quality factor of more than 1 million. Based on it,
+                          advanced applications such as optical frequency combs have been demonstrated as well.
+
+                          3.1. Microring and Microdisk Resonators
+                                Thanks to the advanced nanofabrication technologies, SiC microresonators, including
+
+                          MRR and MDR, with low loss and high quality factors, have been demonstrated. The loss
+                          is jointly contributed by the material absorption loss and the light scattering loss due to the
+                          surface roughness. Figure 3 shows scanning electron microscope (SEM) images of several
+                          high-performance SiC microresonators.
+
+[[PAGE 5]]
+Materials 2023, 16, 1014                 5 of 29
+
+                               (a)
+
+                          (b)       (c)
+
+                          Figure 3. Scanning electron microscope images of (a) 4H SiCOI MMR, reprinted with permission
+                          from [36] ©The Optical Society, (b) 3C SiC MDR [59], and (c) 4H SiCOI MDR [56].
+
+                                For 3C SiC, using the freestanding SiC, grown on the Si substrate, quality factors
+                          of 2.4 × 104 and 5.12 × 104 have been reported for MRR and MDR, respectively [42,49].
+                          The high loss mainly comes from the material absorption and is associated to the high
+                          density of extended defects, inherently linked to the 3C-SiC/Si heteroepitaxial system, and
+                          discussed in the coming section. The highly defective layer, which is close to the 3C-SiC/Si
+                          interface, can be removed, if preparing 3C SiCOI stacks. As a result, microresonators with
+                          much higher quality factors can be achieved, which are 1.42 × 105 and 2.42 × 105, for MRR
+                          and MDR, respectively [34,53]. For 4H SiC thin ﬁlm prepared through the smart/ion cut
+                          method, quality factors of 7.3 × 104 and 5.25 × 103 have been reported for MRR and MDR,
+                          respectively [36,60]. Chemical-mechanical polishing and post-oxidation processes can also
+                          help to reduce the roughness of the top surface and the sidewall of the waveguides, and thus
+                          improve the quality factors of SiC microresonators, for both 3C and 4H SiC [34,36,61,62]. For
+                          4H SiC thin ﬁlm prepared through the grinding and CMP method, ultra-high quality factors
+                          of 1.1 × 106 and 6.75 × 106 have been reported for MRR and MDR, respectively [38,56].
+                          Regarding the amorphous SiC deposited by PECVD, the MRR with a quality factor as high
+                          as 1.6 × 105 has been reported [35]. Based on these demonstrations of high-performance
+                          SiC microresonators, as well as other SiC integrated devices, SiC integrated platforms can
+                          be potentially applied to classical and nonclassical optical communication systems for
+                          signal processing, logic gate, modulation, ﬁltering, (de)multiplexing, etc. [5,24,63–68].
+
+                                The ﬁeld enhancement in the microresonators can be reﬂected by the photon density.
+                          With SiC microresonators, efﬁcient nonlinear effects-based frequency conversion has been
+                          observed and studied, according to the material-based second- and third-order nonlineari-
+                          ties in SiC. Second harmonic generation in 4H SiCOI MRRs has been demonstrated with
+                          sub-milliwatt power, through the mode-phase-matching method [52]. Besides, basic third-
+                          order nonlinear phenomena, such as self-phase modulation, four-wave mixing, cascaded
+                          four-wave mixing, and optical parametric oscillation have also been demonstrated in 3C,
+                          4H, and amorphous SiC or SiCOI microresonators [33,35,37,38,55,62,69,70]. Through these
+                          experiments, the nonlinear refractive index of 3C and amorphous SiC has been extracted to
+                          be 5.3 × 10−19 m2/W, and 4.8 × 10−18 m2/W, respectively [33,55]. The birefringence of the
+                          third-order nonlinearity of 4H SiC has been experimentally demonstrated, the nonlinear
+                          refractive index along the extraordinary and the ordinary axis of 4H SiC is measured to be
+                          1.31 × 10−18 m2/W and 7.0 × 10−19 m2/W, respectively, which indicates the transverse
+                          magnetic polarization can perform more efﬁcient wavelength conversion [23]. Moreover,
+                          classical and quantum frequency combs in 4H SiCOI MMR and MDR with ultra-high
+                          quality factors are observed, including octave-spanning Kerr frequency combs, Raman
+                          combs, and quantum solitons, which are shown in Figure 4 [56,57,71]. The excellent optical
+
+[[PAGE 6]]
+Materials 2023, 16, 1014                                                                                                                                              6 of 29
+
+                          nonlinear properties of SiC, as well as these nonlinear phenomenon demonstrations, make
+                          SiC integrated platforms possible for plenty of nonlinear optical applications, such as light
+                          sources with multiple wavelength for optical communication, photon-pair sources for
+                          quantum computing and communication, spectroscopy, metrology, sensing, etc. [3,4,72].
+
+                               (a)
+
+                          (b)                     (c)
+
+                          Figure 4. Experimental spectra of (a) octave-spanning Kerr frequency comb reprinted with permis-
+                          sion from [57], (b) Raman comb, reprinted with permission from [56], and (c) quantum soliton comb,
+                          reprinted with permission from [71] in SiC microresonators.
+
+                                Additionally, the thermo-optic behaviors of the MRRs in 3C, 4H and amorphous SiC
+                          integrated platforms have been studied. The external temperature induced resonance
+                          shift and the material absorption-induced bistability in 4H and amorphous SiCOI are
+                          investigated [55,58,62]. Micro-heaters have been integrated with the 3C SiCOI MRR for
+                          efﬁcient thermo-optic phase shifting [51]. Meanwhile, the thermo-optic coefﬁcients of
+                          3C, 4H and amorphous SiC are measured to be 2.67 × 10−5/K, 4.21 × 10−5/K, and
+                          1.4 × 10−4/K, respectively [51,55,62]. Devices made of 3C and 4H SiC that have small
+                          thermo-optic coefﬁcients, can exhibit high thermal stability, but amorphous SiC, having
+                          a large thermo-optic coefﬁcient, allows efﬁcient modulation. The electro-optic effect in
+                          3C SiCOI has also been observed, and the Pockels coefﬁcient is extracted to be 2.6 pm/V,
+                          which enables high-speed electro-optic modulation [73,74]. An all-optical Kerr switching
+                          intensity modulator at 25 Gbps in amorphous SiCOI has been reported [75].
+
+                          3.2. Photonic Crystal Cavities
+
+                                Besides the microring and microdisk, the cavities realized by photonic crystal struc-
+                          tures are also widely studied in the SiCOI platform. Because of the potential of emitting
+                          single photons by defects in SiC, photonic crystal cavities are studied to enhance the emis-
+                          sion rate of the defects by addressing the defects in the cavities. The ampliﬁed magnitude
+                          of the modiﬁed emission rate comparing with the defects in free space is expressed by the
+                          Purcell factor in Equation (2) [76]. In this equation, Fp is the Purcell factor, Q is the quality
+                          factor of a certain cavity mode, V0 is the mode volume, and λ is the wavelength of light
+                          transmitting in the dielectric material.
+
+                                    Fp  =  3Qλ3        (2)
+                                           4π2V0
+
+                                In order to realize a large increase of the emission rate of photons from defects in SiC,
+                          the strong light–matter interaction is required. From Equation (2), the quality factor of the
+                          photonic crystal cavity should be as large as possible, and the mode volume is preferred to
+
+[[PAGE 7]]
+Materials 2023, 16, 1014                                                                                                                                              7 of 29
+
+                          be kept small. Due to the large scattering loss, the quality factor of the PhC cavity is much
+                          smaller than that in the microring or microdisk.
+
+                                The photonic crystal can be brieﬂy classiﬁed into one-dimensional (1D) photonic
+                          crystal and two-dimensional (2D) photonic crystal in SiCOI platform. A 1D photonic
+                          crystal waveguide is also called a photonic crystal nanobeam. As long as the holes are
+                          modiﬁed in terms of positions or radius, a nanocavity will form and can support several
+                          modes in the nanobeam. A 2D photonic crystal can further be transformed into a 2D
+                          photonic crystal cavity by removing several holes in the center, such as one hole (H1 cavity)
+                          or three holes (L3 cavity), or a 2D photonic crystal waveguide by removing a line of holes.
+                          By tuning the lattice constant along the photonic crystal waveguide direction in several
+                          periods, a heterostructure cavity will be formed [77]. Regarding the application of color
+                          center photoluminescence enhancement, a 1D nanobeam is preferred to 2D photonic crystal
+                          structures because of its lower modal volume and the feasibility of the undercut to have a
+                          larger refractive index contrast.
+
+                                For 6H SiC prepared by smart-cut, the L3 cavity and heterostructure cavity were
+                          ﬁrstly fabricated in a smart-cut SiCOI platform [28]. The quality factor of an optimized
+                          L3 cavity of 2 × 103 and the quality factor of the heterostructure cavity of 4.5 × 103 have
+                          been reported. These two kinds of cavities on 6H SiCOI were improved to 1 × 104 quickly
+                          afterwards [29–31]. A second harmonic generation has been realized in a photonic crystal
+                          heterostructure cavity in the same platform [32]. For 3C SiC, the L3 cavities were realized
+                          with an initial quality factor of around 0.8 × 103 in an epitaxially grown thin ﬁlm [41]. The
+                          more detailed results have been reported with the quality factor of 1.5 × 103 for L3 and
+                          around 1 × 103 for H1, despite a theoretical prediction of 1.7 × 104 and 4.5 × 104, respec-
+                          tively [43]. The imperfection of fabrication and deviation of the hole radius or positions
+                          are likely to cause a low quality factor. For amorphous SiC, the highest reported experi-
+                          mental quality factor of 1D photonic crystal cavity is 7.69 × 104, and the mode volume is
+                          around 0.6 × (λ/n)3 [45]. The Purcell factor is calculated to be around 104. This cavity is a
+                          suspended 1D photonic crystal nanobeam cavity. The decline of experimentally measured
+                          quality factor, compared with a simulation result of 1.75 × 106, is mainly from the scattering
+                          of imperfect sidewalls. For 4H SiC, the high experimental quality factor of 6.3 ×105 is
+                          achieved in a ground SiCOI platform in a heterostructure cavity [50]. A photonic crystal
+                          nanocavity with such a high quality factor enables strong second-harmonic generation con-
+                          version efﬁciency. The scheme of the structure and the SEM images are shown in Figure 5b.
+                          In a 1D photonic crystal nanobeam cavity, the quality factor is smaller: 1.93 × 104 [52]. The
+                          color centers inside the nanobeam cavity can enhance the emission efﬁciency; the structure
+                          is shown in Figure 5a. All these works point out the great reduction of experimental quality
+                          factor as compared with simulated or calculated quality factor. The non-vertical sidewall
+                          angle is the main cause of this difference. The other attributions include the sidewall
+                          roughness, deviation of hole radius or position, and material absorption.
+
+[[PAGE 8]]
+Materials 2023, 16, 1014            8 of 29
+
+                          (a)  (b)
+
+                          Figure 5. Scanning electron microscope images of (a) 1D photonic crystal nanobeam cavities, reprinted
+                          with permission from [52] and (b) 2D photonic crystal heterostructure cavity, reprinted with permis-
+                          sion from [50] ©The Optical Society.
+
+                          4. Silicon Carbide Materials
+
+                                Different from the electronic devices, the material requirements for SiC photonic
+                          applications handle surface roughness, ﬁlm thickness and uniformity in nanometer scale,
+                          which poses big challenges on the material quality, transfer and processing. As mentioned
+                          in Section 2, 4H, 3C and amorphous SiC have shown loss at different levels. If we assume
+                          the nanofabrication has been optimized and the fabrication-related loss is negligible, the
+                          loss level indeed reﬂects the material loss. The material loss consists of absorption and the
+                          scattering of defects in the material. The most promising large-area thin-ﬁlm-deposition
+                          processes (amorphous and micro-crystalline material) are of particular interest due to their
+                          huge variability in terms of stacking thin optical ﬁlms on almost any kind of substrate and
+                          because of their comparably low manufacturing costs. The currently mid-range optical
+                          loss may be reduced by further improvement of the deposition processes. Therefore, in the
+                          following an overview on all SiC-based thin ﬁlm methods currently under development
+                          will be given. The lowest optical loss may be achieved in single-crystalline SiC material
+                          exhibiting a dislocation density that is as low as possible, as well as unintentional doping.
+                          At the same time, by adaption of the single-crystal growth process, intrinsic point defects
+                          may be generated for single-photon-source or qubit applications. Besides the preparation of
+                          high-quality 4H-SiC crystals and wafers, also bulk growth of 3C-SiC will be outlined. The
+                          latter material exhibits a higher defect density than 4H-SiC. However, its higher crystalline
+                          symmetry may be of advantage at a certain stage if optical active centers (point defects and
+                          intentional doping) are added as a functionality to the electrical-optical devices.
+
+                          4.1. Amorphous Silicon Carbide
+
+                                Contrary to the SiC polytypes, which have a well-deﬁned crystalline structure and
+                          composition, amorphous Silicon Carbide (a-SiC) is a very versatile material. It can vary
+                          in stoichiometry, such as the Si:C ratio, in density, and of course in the resulting optical,
+                          electronic and mechanical properties. Depending on the deposition method, it can also
+                          contain hydrogen (H:SiC), which provides even further tuning of the properties. At the
+                          ﬁrst order, the primary parameter which determines the formation of amorphous SiC is the
+                          temperature, as it enhances the relaxation of the “structure” towards crystalline materials.
+                          There is thus a temperature threshold above which crystallization will systematically
+                          occur. This temperature is not precisely determined in the literature as it also depends
+                          on secondary parameters like supersaturation, reaction pathway, presence of impurities
+
+[[PAGE 9]]
+Materials 2023, 16, 1014                                                                                                                                              9 of 29
+
+                          and so on. It is nevertheless strictly inferior to 800 °C. We review in the following the low
+                          temperature, vapour-phase deposition methods that allow the formation of amorphous
+                          SiC thin ﬁlms.
+
+                          4.1.1. Low Temperature Chemical Vapour Deposition
+
+                                A ﬁrst process which can lead to amorphous SiC is the Low Temperature Chemical
+                          Vapour Deposition. Using standard chemistry (Si-C-H or Si-C-H-Cl), such as is discussed in
+                          the next section for epitaxial growth, it is not possible to deposit in the targeted temperature
+                          range, as the gaseous species are too stable. Differently said, the reaction kinetics are
+                          inﬁnitely slow. However, with organometallic precursors such as monomethylsilane (MMS),
+                          a deposition temperature lower than 650 °C and down to room temperature can form a-
+                          SiC [78–80].
+
+                                Contrary to the standard CVD, where the initial cracking of the precursors in the
+                          gas phase provides reactive intermediates, the MMS is directly adsorbed on the surface
+                          of the sample. For that, the surface reactivity is promoted either by the deposition of a
+                          hydrogenated silicon layer or by a plasma etching [81], which enhances the adsorption
+                          efﬁciency. The hydrogen atoms get desorbed during this reaction. However, because of the
+                          low temperature of the process and the needed hydrogen desorption, the stoichiometry
+                          of the SiC becomes hard to control [80,81]. No optical study using ﬁlms deposited by this
+                          process was found in the literature.
+
+                          4.1.2. Plasma-Enhanced Chemical Vapour Deposition
+
+                                Plasma-Enhanced CVD (PECVD) is probably the most widely used technique for
+                          the deposition of a-SiC thin ﬁlms [82,83]. The substrate is kept at a temperature lower
+                          than 500 °C, and often even lower than 300 °C. The chemical reactions are induced in a
+                          plasma (usually in Argon and/or hydrogen), which drastically increases the reactivity of
+                          the intermediate gaseous species. The ionic species produced are then adsorbed on the
+                          surface, whereas the organic wastes are evacuated. The energy of the ion bombardment
+                          allows the migration of the adsorbed species and the formation of dense layers. The use of
+                          hydrogen as carrier gas systematically leads to the hydrogenation of the SiC ﬁlms. This
+                          limits the maximum refractive index achievable, which is typically around 2.36 [83]. The
+                          refractive index decreases with the density, which can be tuned by varying the plasma
+                          power [83–86], as shown in Figure 6.
+
+                          Figure 6. Evolution of the refractive index (left) and the density (right) as a function of the power
+                          applied on the substrate PT measured by Frischmuth team [83]. Reprinted with permission from El-
+                          sevier.
+
+                                An increase of the substrate temperature and of the pressure cause an increase of the
+                          refractive index [85,86] and the decrease of the roughness down to 1 nm [86].
+
+[[PAGE 10]]
+Materials 2023, 16, 1014                                                                                                                                             10 of 29
+
+                          4.1.3. Hot Wire Chemical Vapour Deposition
+
+                                Known as one of the pioneer CVD methods, Hot Wire CVD (HWCVD), also called Hot
+                          Filament CVD (HFCVD) is also well adapted for the deposition of amorphous SiC [87–89].
+                          In this case, the energy necessary to crack the precursors and generate highly reactive
+                          intermediates is provided by a metallic ﬁlament composed of Rhenium, Tantalum or
+                          Tungsten placed upstream in the reaction chamber and heated at high temperature, typically
+                          around 2000 °C [90,91]. The thermally activated species are then adsorbed on the substrate,
+                          which can be kept at a low temperature, even lower than 500 °C. The presence of hydrogen
+                          radicals (H*) generated at high temperature by the ﬁlament produces an etching reaction
+                          of the surface, which can remove the adsorbed species located in unstable positions. A
+                          high concentration of H* can thus produce crystalline layers, with the possibility to tune
+                          the crystallite size with the H* concentration [87,92–94]. The formation of a stoichiometric,
+                          crystalline SiC layer is ensured by decomposing the carbon-containing precursor (typically
+                          CH4) at a temperature higher than 2000 °C [93]. At a temperature lower than 2000 °C, with
+                          low pressure and a low amount of hydrogen, the formation of an amorphous SiC layer
+                          can be obtained. Similarly to PECVD, this technique causes the incorporation of hydrogen
+                          inside the amorphous SiC ﬁlm, decreasing the refractive index. The roughness of the SiC
+                          deposit can be also very low, in the nm range [95].
+
+                          4.1.4. Radio Frequency Magnetron Sputtering
+
+                                Amorphous SiC can be deposited with a magnetron sputtering method. In this process,
+                          one or several targets with the composition aimed are eroded with a plasma. Then, the
+                          ionized species formed are adsorbed on the surface of the sample [96–100]. Non-conductive
+                          compounds used as targets, such as SiC or Si, require the use of Radio Frequency Magnetron
+                          Sputtering to prevent the accumulation of electric charge [101]. Amorphous layers can
+                          be deposited with a temperature lower than 500 °C [102,103]. As a rule, a low deposition
+                          temperature increases the refractive index up to 3.2 at a wavelentgh of 630 nm [103,104];
+                          whereas it diminishes the transmittance of amorphous SiC [104], as shown in Figure 7.
+
+                          (a)  (b)
+
+                          Figure 7. Evolution of (a) the transmittance and (b) the refractive index as a function of the tempera-
+                          ture of the substrate, after Seo team [104]. Reprinted with permission from Elsevier.
+
+                                Moreover, lowering the electrical power applied on the target increases the transmit-
+                          tance and diminishes the concentration of carbon clusters [103,105], as shown in Figure 8.
+                          Tang reported that decreasing the power diminishes the size of the particles and mod-
+                          iﬁes their shapes from a dense globular-shaped structure to columns. This change of
+                          particle morphology diminishes the roughness [106]. The optical gap is evaluated at
+                          3.5 eV [105,107], but the presence of graphite in the amorphous SiC can put the gap be-
+                          tween 1.3 to 1.7 eV [103,105,108].
+
+[[PAGE 11]]
+Materials 2023, 16, 1014  11 of 29
+
+                          Figure 8. Evolution of the transmittance of SiC ﬁlms in function of the RF power, measured by
+
+                          Wang [105]. Reprinted with permission from Elsevier.
+
+                          4.2. 3C Silicon Carbide
+
+                          4.2.1. Growth of 3C-SiC-on-Si Heteroepitaxy
+
+                                Compared to its hexagonal counterparts (4H- and 6H-SiC) for the cubic polytype (3C-
+                          SiC), bulk growth using Physical vapour transport (PVT) is not established as “standard”
+                          method yet, which is mainly attributed to the lack of suitable seeding substrates. However,
+                          3C-SiC is the only polytype that can be nucleated using heteroepitaxial chemical vapour
+                          deposition (CVD) on Si. Moreover, due to the higher process control available in CVD,
+                          the ﬁne tuning of material properties especially the doping concentration is increased
+                          compared to PVT systems, especially for the goal of low-doped material. While silicon as a
+                          starting material can lower the cost for device fabrication due to the availability of large area
+                          substrates, a series of challenges have to be solved. The two main obstacles to overcome are
+                          the difference in the lattice constant of approx. 20% and the thermal expansion coefﬁcient
+                          (TEC) of ca. 8% at room temperature between 3C-SiC and Si [109,110]. These misﬁts
+                          are responsible for a variety of defects formed at the interface, e.g., stacking faults (SFs),
+                          anti-phase boundaries (APB) or even three-dimensional defects such as protrusions [111]
+                          and additionally result in wafer-bending after the cool-down to room temperature [112].
+                          The two most common defects in heteroepitaxial growth of 3C-SiC on Si are SFs and APB.
+                          SF along the {111} planes are mostly described as an intrinsic defect, based on the lattice
+                          mismatch and difference in TEC between 3C-SiC and Si. However, a decrease in the SF
+                          density could be achieved by annihilation during growth of thicker 3C layers [113] or
+                          advanced growth methods, such as the “switch back” epitaxy on undulated substrates
+                          described by Nagasawa et al. [114]. Different APBs are 2D defects that are formed by
+                          two 3C-SiC crystals, which are rotated 180° around the [110] axes. While getting rid of
+                          SF completely is somehow still impossible, the application of an off-axis Si substrate can
+                          lead to an APB-free material, as described in [115]. Today, the “standard” heteroepitaxial
+                          CVD growth process consists of a hydrogen etching step to remove the native oxide layer
+                          from the Si substrate, the growth of a buffer layer or carbonization layer and the main
+                          growth step, using Si and carbon (C) precursors followed by the cool down of the system.
+                          Traditionally silane (SiH4) and propane (C3H8) or ethylene (C2H4) are used while hydrogen
+                          (H2) acts as the carrier gas. However, a variety of different approaches can be found in
+                          the literature using different precursors or adding additional gas species. Often chlorine
+                          is added either in the form of hydrogen chlorine (HCl) or chlorine-based precursors like
+                          trichlorosilane (HCl3Si) to improve the material quality and increase the growth rate [116].
+                          One of the most important aspects regardless of the used gases is the C/Si ratio during the
+                          main growth step. Tuning this parameter has not only an inﬂuence on the growth rate but
+                          also strongly inﬂuences the material quality. Chassagne et al. showed that for too-low C/Si
+                          ratios, the layer morphology and crystalline quality quickly degrade [117]. Meanwhile for
+
+[[PAGE 12]]
+Materials 2023, 16, 1014                                                                                                                                             12 of 29
+
+                          too high ratios, homogenous gas phase reactions can occur leading to SiC clusters on the
+                          surface. Besides the correct adjustment of the C/Si ratio, the formation of the mentioned
+                          buffer layer is crucial when it comes to material quality. The ﬁrst vital studies on this topic
+                          were conducted by Nishino et al. [118] and later by Liaw and Davis [112]. Both groups
+                          described the importance of a buffer layer formed by introducing a carbon-containing
+                          precursor prior to the main growth step during the heat up of the system. During this step
+                          the gaseous carbon species will produce an initial layer of SiC by reacting with the Si of the
+                          substrate. Due to the formation of this buffer layer the lattice mismatch between 3C-SiC
+                          and Si can be reduced signiﬁcantly, leading to lower defect densities and increased material
+                          quality. A setback of the buffer layer is the formation of voids at the interface 3C-SiC/Si.
+                          Several theories can be found in the literature explaining this phenomenon. Most likely,
+                          the formation of voids is attributed to the surface diffusion of Si [119]. After the initial
+                          3C-SiC seeds are formed due to the deposited carbon, Si is removed from the open substrate
+                          surface between these seeds to supply the formation of 3C-SiC, resulting in the observable
+                          voids (see Figure 9). Since voids can locally favor the formation of dislocations and SFs, a
+                          lot of research has been conducted to date to improve the buffer layer quality and reduce
+                          void formation. Possible approaches include the variation of the C/H2 ratio [120,121], the
+                          process pressure [122] or the initiation of Si precursors ﬂow during the formation of the
+                          buffer layer [123].
+
+                               (a)
+
+                          (b)       (c)
+
+                          Figure 9. (a) Scheme of the formation of voids at the 3C-SiC/Si interface. (b) Top view scanning
+                          electron microscopy (SEM) image of a 3C on Si sample grown at 1200 °C. The darker areas are
+                          attributed to voids underneath the 3C-SiC layer. (c) Crosscut SEM image of a void at the Interface
+                          3C-SiC/Si.
+
+                                Based on the lattice mismatch between 3C-SiC and Si, additional focus has to be given
+                          to the management of thermal stress induced by the difference of TECs between Si and
+                          3C-SiC, leading to wafer-bending after the cool down from growth temperature. Zielinski
+                          et al. [109] also showed that the TEC mismatch cannot be changed; the ﬁnal wafer-bow
+                          of heteroepitaxial grown 3C on Si can be controlled based on the C/Si ratio, ﬁnal layer
+                          thickness or the growth rate during the deposition. Another approach was introduced
+                          by Anzalone et. al by in situ melting of the silicon substrate once a certain 3C thickness
+                          was reached, eliminating the inﬂuence of TEC during the cool-down [124,125]. After the
+                          silicon removal, it is also possible to further increase the growth temperature, enabling
+                          growth of a few 100 µm-thick freestanding 3C-SiC wafers with reasonable growth rates and
+                          diameters up to 150 mm. While the 3C-SiC heteroepitaxy on Si is mostly performed above
+
+[[PAGE 13]]
+Materials 2023, 16, 1014                                                                                                                                             13 of 29
+
+                          1300 °C and near to the melting point of Si [126], low temperature CVD between 1000 °C
+                          and 1200 °C represents a different approach for the growth of 3C SiC on Si [127,128]. To
+                          compensate for the lower temperatures resulting in decreased growth rates, chlorine is
+                          often added either in the form of HCl or chlorine-containing precursors [129]. Although
+                          the quality of the achieved layers is not the same as for high temperature processes yet,
+                          the low temperatures open up the route for the integration into existing CMOS fabrication
+                          technology.
+
+                          4.2.2. Heteroepitaxial Deposition on Hexagonal Substrates 4H SiC (CVD and PVT)
+
+                                Additionally to CVD heteroepitaxy on Si, cubic SiC can be grown heteroepitaxially on
+                          hexagonal SiC substrates in either a CVD or physical vapour transport (PVT) setup. Using
+                          SiC as starting material enables higher growth temperature of up to 2000 °C and reduces
+                          the lattice mismatch as well as the difference in thermal expansion between substrate
+                          and epitaxial layer. For both cases (CVD and PVT), a (0001) orientated SiC substrate is
+                          usually used as a starting point, which will result in a (111) orientated 3C SiC top layer by
+                          “pseudomorph growth” [130]. During homoepitaxial growth of hexagonal SiC polytypes
+                          “step-controlled epitaxy” is preferred to ensure stable reproduction of the substrate polytype
+                          during growth [131–133]. Conditions favoring this growth regime are a low supersaturation
+                          at the growth surface as well as high off-axis angles (3–8◦) resulting in a high number of
+                          atomic growth steps. The high step density and small terrace width, respectively, lead to
+                          a migration of adatoms towards step edges where they reproduce the substrate polytype
+                          during incorporation into the crystal. For the nucleation of 3C SiC on the hexagonal
+                          substrate, the growth conditions have to be tweaked from the nominal step ﬂow towards
+                          the formation of 2D nucleation on the growth terraces. This growth regime can be promoted
+                          if the probability of adatoms reaching a growth step is reduced by either lowering of the
+                          growth temperature, increasing the terrace width by growth on “on-axis” substrates or
+                          increased supersaturation. A schematic scheme of the two growth modes are depicted
+                          in Figure 10.
+
+                          Figure 10. Scheme of two different growth schemes for the epitaxial growth. On the lower terrace,
+                          migration of the adatom at the edge of a growth step occurs, reproducing the substrate polytype. On
+                          the upper terrace, 2D nucleation takes place, which can lead to a switch in polytype.
+
+                                Various studies can be found in the literature [134–138] working on the heteroepitaxial
+                          growth of 3C SiC on (0001) orientated hexagonal SiC up to a thickness of 2.5 mm using the
+                          sublimation epitaxy (SE) growth technique. They used a different off-axis substrate, on
+                          which an on axis facet will be formed at the initial growth stage, acting as a preferential
+                          nucleation side for the cubic polytype. Starting from this side, the 3C will laterally expand
+                          due to step ﬂow growth covering the hexagonal substrate completely. The thickness
+                          necessary for a complete coverage is thereby predetermined by the use of the cut angle of the
+
+[[PAGE 14]]
+Materials 2023, 16, 1014                                                                                                                                             14 of 29
+
+                          substrate and will increase for higher off-cuts. The SE setup creates a high supersaturation
+                          based on a small distance between source and seed and high temperature gradients,
+                          enhancing the polytype change towards 3C SiC. Additionally, the growth temperature
+                          is kept under 2000 °C in combination with an Si rich gas phase, which further stabilizes
+                          the cubic polytype. However, the nucleation of 3C SiC on hexagonal SiC polytypes is
+                          usually accompanied by the formation of double position boundaries (DPBs). During the
+                          nucleation of 3C SiC on hexagonal polytypes, the stacking sequence will be continued
+                          thermodynamically, dictated based on the underlying two bilayers [139]. Thus, if growth
+                          steps are present on the hexagonal substrate, 3C Seeds with varying stacking sequences
+                          will be formed on the different terraces, leading to defective merging during the lateral
+                          expansion of the 3C SiC, resulting in DPBs and SFs. Neudeck et al. [139] have presented
+                          a process to effectively eliminate the formation of DBPs during heteroepitaxial 3C SiC
+                          growth on 4H SiC substrates. They ﬁrst produced a mesa-like structure by dry etching
+                          of (0001) orientated on-axis 4H SiC wafers. Afterwards, they used a homoepitaxial CVD
+                          growth process to completely remove atomistic growth steps from the mesas, followed by
+                          decreasing the temperature by 50–200 °C to initiate island growth of the cubic polytype.
+                          The lack of growth steps leads to the formation of 3C SiC seeds with the identical stacking
+                          sequence. Therefore, no DPBS will be formed during the merging of the 3C SiC seeds during
+                          lateral expansion. Note: The maximum size of the mesas was limited to 400 × 400 mm2
+                          and DPB-free mesas can only be obtained if threading screw dislocations (TSD) are absent
+                          in the 4H substrate underneath the mesas. TSDs will act as an inﬁnite source of growth
+                          steps, inevitably leading to the formation of stacking defects.
+
+                          4.2.3. Sublimation Growth
+
+                                Different from the heteroepitaxial growth methods presented above, seeding material
+                          for the homoepitaxial growth of 3C SiC is not widely available yet. However, remarkable
+                          progress has been made on this topic in recent years. Schuh et al. [140] developed a
+                          transfer process to fabricate high-temperature stable 3C seeding stacks. Starting from 3C
+                          SiC grown heteroepitaxially on Si, the substrate was removed by wet chemical etching
+                          and the remaining free-standing 3C SiC was bonded to a polycrystalline SiC carrier using
+                          a carbon contain glue. By eliminating the low melting point of Si (1419 °C), the seeding
+                          stacks are suitable for the use in high-temperature sublimation growth processes, such as
+                          close space PVT (CS-PVT). Further information regarding the CS PVT setup can be found
+                          in [141] and chapter 5 of [142].
+
+                                Using CS PVT and the mentioned seeding stacks, free-standing 3C SiC samples with
+                          diameters up to 100 mm and a thickness up to 3 mm could be realized [143,144]. The
+                          progress for the increase of sample diameter is depicted in Figure 11. Although the large
+                          area samples still suffer from cracking of the thin 3C SiC ﬁlm during the removal of the
+                          CVD silicon substrate, the grown crystals show a high material quality, proved by the
+                          low full width half maximum (FWHM) of X-ray diffraction (XRD) measurements of the
+                          (002) reﬂex, which were as low as 140 arcsec. Note: Although a lot of research has been
+                          conducted to improve the material quality, the FWHM XRD rocking curve values for
+                          3C SiC are still higher compared to 4H SiC where values in the range of 10 arcsec can
+                          be found in the literature [145,146]. Besides low FWHM values, it could be shown that
+                          the SF density as well as the overall stress in sublimation-grown 3C SiC crystal could be
+                          decreased compared to the heteroepitaxial-grown material on Si [143,147]. Based on the
+                          work of Anzalone et al. [124,125], which was already mentioned previously, free-standing,
+                          homoepitaxial-grown 3C SiC samples have become available. Although the material still
+                          has some setbacks, e.g., wafer bow, it is suitable as a starting point for the sublimation
+                          growth of 3C-SiC. Similar to the described seeding stacks, the homoepitaxial-grown seeds
+                          allow the growth of DBP-free material, as nucleating seeds will all have the same stacking
+                          sequence contrary to the heteroepitaxial growth on hexagonal SiC. However, compared to
+                          the seeding stacks, no transfer process is necessary for the homoepitaxial seeds, reducing
+                          the cracking probability and, consequently, increasing the up-scale potential. In fact, the
+
+[[PAGE 15]]
+Materials 2023, 16, 1014                                                                                                                                             15 of 29
+
+                          ﬁrst crack-free, free-standing large-scale 3C SiC crystals up to 650 µm thickness could be
+                          produced using this homoepitaxial seeding material, as can be seen in Figure 12 [148].
+                          Further, Schöler et al. [149]) reported an overgrowth mechanism for protrusion defects
+                          using homoepitaxial seeds with an 4◦ off-cut towards the [100] direction. Protrusions
+                          represent a setback that hinders the growth of bulk material up to several millimeters in
+                          thickness. This three-dimensional defect forms close to the interface between silicon and
+                          3C SiC during heteroepitaxial growth on silicon and can therefore be viewed as intrinsic
+                          for the used seeding material. During further growth, this defect will latterly increase with
+                          increasing layer thickness and distort the material quality. Inevitably, the surface of grown
+                          crystal will be covered by protrusions at some point during the growth, depending on the
+                          defect density. Although efforts have been made to reduce the protrusion density [111,150],
+                          this problem is far from being solved, as complete elimination of the defect is required for
+                          real bulk growth with boules thicknesses up to 10 mm or more.
+
+                          Figure 11. Evolution of diameters for bulk 3C-SiC crystals grown by sublimation growth during
+                          CHALLENGE project with indicated timeline. With permission from [145].
+
+                          Figure 12. High resolution scan of free-standing 3C-SiC crystal grown by CS PVT on homoepitaxial
+                          seeding layer with a diameter of 92 mm and a thickness of 650 µm. With permission from [148].
+
+                          4.3. 4H Silicon Carbide
+                          4.3.1. Bulk Growth of 4H SiC
+
+                                The growth of bulk 4H SiC is mainly carried out by utilizing the physical vapour
+                          transport (PVT) method. Demonstrated in 1978 by Tairov and Tsvetkov [151], PVT enabled
+                          large-diameter and gas-phase single crystalline growth of hexagonal SiC, and is employed
+                          to grow crystals of up to 200 mm in diameter (see Figures 13 and 14). Other solution growth
+                          methods, such as top-seeded solution growth (TSSG) of SiC, are also conceivable. However,
+                          this method is held back by the low solubility of carbon in a silicon melt. According
+                          to the phase diagram, SiC exhibits a peritectic decomposition at approximately 2830 °C
+                          into carbon and an Si-rich Si-C solution [152]. It has to be mentioned that crystal growth
+                          from the melt is thermodynamically advantageous compared to vapour phase growth and
+
+[[PAGE 16]]
+Materials 2023, 16, 1014                                                                                                                                             16 of 29
+
+                          very high-quality SiC crystals have been demonstrated with TSSG [153]. However, the
+                          obstacles of the non-stoichiometric melt composition, combined with the early availability
+                          and comparative ease of the implementation of PVT growth, led to an almost exclusive use
+                          of PVT for the production of commercial SiC substrates.
+
+                          (a)  (b)
+
+                          Figure 13. (a) Phase diagram of Si and C. (b) Schematic setup of a typical PVT growth cell and
+                          isolation. With permission from [154].
+
+                          Figure 14. 100 mm (left) and 150 mm (right) 4H-SiC crystal.
+
+                                Crystal growth by PVT is taking place by inductively heating a graphite crucible
+                          to temperatures above 2000 °C. While the high temperatures of the PVT process allow
+                          good-quality crystals to grow, it also prevents any kind of CMOS compatibility. Inside the
+                          crucible, a SiC source, predominantly a powder, is placed below a single crystalline seed. A
+                          temperature gradient between the source powder and the seed ensures that mass transport
+                          will take place once sufﬁcient growth temperatures are reached. The SiC powder source
+                          will sublimate and the resulting SiC gas species will recrystallize at the slightly colder seed.
+                          The mass transport, and therefore the growth rate, can be adjusted by varying the growth
+                          temperature in general, the axial temperature gradient inside the crucible or the growth
+                          pressure. All materials inside the growth chamber of the PVT setup need to be stable at
+                          high growth temperatures without breaking down in order to prevent changing growth
+                          conditions during the growth run or unintentional doping of the growing crystal. For this
+                          reason, graphite parts and isolations are utilized combined with a gas composition of argon
+                          and, if necessary, nitrogen for n-type doping. P-type doping with aluminium is possible as
+                          well, as demonstrated by Wellmann et al. [155]. The crystal growth is started by heating up
+                          to growth temperatures and the subsequent lowering of the pressure. The growth rate lies
+                          in the range of 50 to 500 µm/h but, depending on the growth cell design, can be set to rates
+                          up to 1 mm/h. Since hexagonal polytypes of SiC are grown at much higher temperatures
+                          than the cubic polytype, the crystal quality also tends to be of a higher quality with less
+
+[[PAGE 17]]
+Materials 2023, 16, 1014                                                                                                                                             17 of 29
+
+                          structural defects. A more extensive description of the mechanics of PVT growth can be
+                          read elsewhere [156,157].
+
+                          4.3.2. Defects in Hexagonal SiC
+
+                                The main challenge in PVT growth lies in the minimization of defects present in
+                          the crystal lattice. The diminishing effect of defects on the performance of SiC-based
+                          devices has been reported extensively. Micropipes (MP) can lead to breakdowns of p-
+                          n junctions [158,159], high densities of threading screw dislocations (TSD) have been
+                          correlated to lower breakdown voltages of 4H-SiC rectiﬁers and basal plane dislocations
+                          (BPD) are reported to increase the leakage current in MOSFETs [160] or JFETs [161]. While
+                          threading edge dislocations (TED) are also reported to reduce the breakdown voltage
+                          of Schottky devices [162], they have the least impact of the aforementioned defect types.
+                          Defects can either be generated due to process conditions or are inherited from the seed.
+                          MPs, TSDs and TEDs lie parallel to the growth direction while BPDs lie within the basal
+                          plane perpendicular to the growth direction. Dislocations can be revealed by selective
+                          etching with molten KOH at 500–520 °C for 5–10 min [163]. Only the Si-terminated face (so
+                          the (0001)-plane) is etched in an anisotropic fashion. The (0001)-plane or C-face is etched
+                          with an etching rate four times as fast and does not reveal any etch pits [164].
+
+                                Figure 15 depicts a typical SiC wafer surface etched with molten KOH. All main defect
+                          types are shown. The BPD exhibits a characteristic elongated etch pit since the dislocation
+                          line lies perpendicular to the growth direction. BPDs are only visible in KOH-etched
+                          samples if there is a slight off-axis angle in respect to the (0001)-plane. TEDs are expressed
+                          by a small circular etch pit while TSD etch pits have a more pronounced hexagonal shape.
+                          In Figure 15, you can see several sizes of TSD etch pits. The reason for that lies in the
+                          different values the burgers vectors of TSDs can assume. It was demonstrated that TSDs
+                          exist with burgers vectors b ≤ 3c [165]. The different sizes of the TSDs in the depicted
+                          KOH-image most likely correlate to different amounts of b. The largest etch pits belong to
+                          MPs. Since MPs are essentially TSDs with an open core and burgers vectors b ≥ 3c [166],
+                          the etch pit looks up-scaled but similar. The overlap between MPs and TSDs at 3c means
+                          that, without directly observing the open core of MPs, it is very difﬁcult to differentiate
+                          between a 3c MP and a 3c TSD in a KOH etching image. Other defect characterization
+                          methods worth mentioning are photoluminescent mapping, X-ray topography or Raman
+                          spectroscopy. A more extensive overview can be found in [167].
+
+                                MPs are formed by carbon inclusions [168], adsorbing onto the growth interface during
+                          the process and inhibiting the step-ﬂow, polytype switches during the growth [169] and
+                          insufﬁcient backside protection against sublimation of the crystal [170,171]. These issues
+                          are largely resolved by now, demonstrated by growing MP-free 4H-SiC single crystals of
+                          up to 200 mm diameter [172]. The main focus currently lies in the reduction of the TSD and
+                          BPD density. TSDs are known to be formed due to the formation of independent growth
+                          islands during the initial seeding phase [173]. This can be remedied by utilizing off-axis
+                          seeds. BPDs, on the other hand, are induced by stress in the crystal, either during or after
+                          the growth is concluded, since deformation in hexagonal SiC polytypes takes place in the
+                          <1120¯>{0001} slip system. As a conclusion, the stress present in the crystal and the BPD
+                          density is closely connected. To reduce the BPD density, the different sources of stress have
+                          to be considered. One is the difference in the coefﬁcient of thermal expansion (CTE) of the
+                          different materials utilized in PVT growth. A crystal can be considered to be growing in a
+                          stress-free manner at growth temperatures since the thermal energy will enable it to include
+                          dislocations to adapt to present strain immediately. If the crystal is ﬁrmly connected to
+                          graphite parts, such as the seed holder or the crucible wall, during cool-down, the different
+                          CTEs of SiC and graphite will lead to stress and the generation of BPDs before reaching
+                          the ductile-brittle transition temperature of 1050 °C [174]. However, even if all contact to
+                          graphite is prevented, the temperature gradients inside the crystal before cooling down will
+                          induce stress once room temperature is reached [175,176]. This is also true for the radial
+                          temperature gradient. It was demonstrated numerically and experimentally that, from
+
+[[PAGE 18]]
+Materials 2023, 16, 1014                                                                                                                                             18 of 29
+
+                          the shoulder region of a crystal, BPD arrays form and propagate into the crystal [177,178].
+                          Therefore, low radial and axial gradients are preferred, without either inducing a concave
+                          growth interface or reducing the mass transport between source and seed too much. The
+                          control of the temperature gradients becomes even more important if bigger diameters
+                          of crystals, such as 200 mm, are to be grown since the total difference in temperature
+                          between the center of the crystal and its edge increases. Additionally, nitrogen doping in
+                          SiC modiﬁes the CTE of hexagonal SiC [179]. Due to the nature of PVT growth, during
+                          the seeding phase, adsorbed nitrogen gas species can release from the graphite isolations,
+                          which subsequently leads to a sharp increase of doping for the ﬁrst few µm of crystal
+                          growth. This, in turn, leads to a high amount of stress during the cool-down phase [180]. A
+                          controlled gradual increase of the nitrogen gas ﬂux during the start of growth will prevent
+                          the inhomogeneous doping and therefore avoid excessive BPD formation. In addition, the
+                          utilized graphite parts should be of high purity, in the range of 6N, optimally combined
+                          with a purging step prior to growing. This is especially important if semi-insulating SiC for
+                          the novel photonic application in the topic of quantum information is desired, elevating
+                          the need for purity into magnitudes of 7N to 8N.
+
+                          Figure 15. Microscopic image of typical etch pits in a 4H/6H-SiC wafer, etched with KOH.
+
+                          4.3.3. X-ray Imaging
+
+                                The high temperatures during the PVT process prevent a direct observation of the
+                          growing crystal. PVT setups are mostly limited to measure the temperatures above and
+                          below the growth cell with optical pyrometers through thin channels in the graphite
+                          isolation. However, it is possible to utilize 2D X-ray imaging to approximate the in situ
+                          growth rate and powder consumption [181–183], enabling the ﬁne-tuning of parameters,
+                          such as the thermal ﬁeld and consumption rate of the SiC source. For more speciﬁc
+                          inquiries of the growth process, advanced 3D imaging can be employed. Such sophisticated
+                          systems are not commercially viable due to the technical complexities; however, in an R&D
+                          environment, they have been proven to be incredibly valuable in considering problems
+                          such as the evolution of the crystal’s facet during growth [184], the speciﬁc morphology of
+                          the powder source for the determination of dynamic source material properties [185], as
+                          well as the impact of the curvature of the growth interface on the defect distribution in the
+                          resulting crystal [186].
+
+                          4.3.4. Numerical Modeling
+
+                                Besides X-ray imaging, numerical modeling is utilized to further characterize the
+                          growth cell. This tool can be used to adjust a wide range of parameters, such as the shape
+                          of the temperature ﬁeld inside the crucible, without having to perform time- and material-
+                          consuming test runs [185,187,188]. Figure 16 depicts a typical modeling result. To obtain a
+                          high accuracy of the modeling results, the main task is a precise knowledge of the material’s
+                          properties over a wide range of temperature. Laser ﬂash analysis can be employed to obtain
+                          the temperature-dependent thermal conductivity while dilatometry is useful to characterize
+
+[[PAGE 19]]
+Materials 2023, 16, 1014                                                                                                                                             19 of 29
+
+                          the thermal expansion. The temperature measurements provided by pyrometers can be
+                          used to validate the model. Further research of the SiC material system allowed to model
+                          the mass ﬂow inside the crucible during a process [187,189,190]. In [190], 13C was utilized
+                          in the powder source, combined with X-ray imaging to track the mass ﬂow during a PVT
+                          growth run and the results were subsequently compared with the numerical calculations.
+                          The growth kinetics within the growth cell and the stress acting on the growing crystal
+                          were investigated by several workgroups [180,191,192], followed by the assessment of the
+                          formation and movement of dislocations [136,177,193,194]. State-of-the-art modeling of the
+                          PVT growth cell allows the accurate depiction of the conditions present during the growth
+                          process, which would otherwise not be obtainable.
+
+                          Figure 16. Calculated temperature ﬁeld of a typical growth cell in a PVT reactor.
+
+                          4.3.5. CVD Growth of 4H-SiC
+
+                                Like the cubic polytype, 4H-SiC can also be epitaxially grown employing the CVD
+                          method, as was ﬁrst reported by Matsunami and Kimoto [195]. Since the 3C polytype is
+                          thermodynamically more stable than the hexagonal polytypes at the typical growth tem-
+                          peratures of the CVD process, homoepitaxial growth of 4H-SiC needs off-cut substrates to
+                          prevent polytype switches. As long as the step-ﬂow growth mode, as described by the BCF
+                          model, is retained [196], the polytype of the substrate can be reproduced even though the
+                          thermodynamic conditions for hexagonal SiC are unfavorable at lower temperatures [197].
+                          This holds true as long as there are no growth islands on large-area terraces. One important
+                          advantage of the CVD-growth of 4H-SiC layers is the conversion of BPDs to TEDs through
+                          image-force effects present at lower off-cut angles, such as 2 to 4◦ [198,199]. To some
+                          degree, this conversion is also happening in PVT-growth, although there, it is much less
+                          controllable. The general mechanics of homoepitaxial CVD growth are the same as for the
+                          heteroepitaxial growth of 3C on Si, described in the previous section. Special care has to be
+                          taken to prevent disruptions of the step-ﬂow caused by side reactions during the growth
+                          process, such as condensation of Si atoms and resulting Si droplets. While a lower off-cut
+                          angle of the substrate increases the image-force and, therefore, the conversion of BPDs into
+                          TEDs, it also increases the size of terraces and the probability of 3C-SiC islands. To prevent
+                          this, the diffusion length of an adsorbed Si or C atom on the substrate should at least reach
+                          half of the terrace width. The main parameters to vary are the growth temperature and
+
+[[PAGE 20]]
+Materials 2023, 16, 1014                                                                                                                                             20 of 29
+
+                          the gas ﬂuxes of the precursor gases silane and propane. Compared to PVT-growth, the
+                          growth rate seldom reaches values above 50 µm/h, making CVD-growth unsuitable for
+                          bulk growth of SiC. However, the process temperature can be set to values below 1200 °C,
+                          making a CMOS compatibility possible.
+
+                          5. Conclusion and Perspectives
+
+                                The exceptional optical properties of bulk SiC will be enhanced when light is conﬁned
+                          in nanoscale waveguides, so that the devices become more compact and energy efﬁcient.
+                          Broadly speaking, SiC has been used in the photonic ﬁeld in such cases as being a substrate
+                          for high-efﬁciency GaN-based LED because of its small lattice mismatch to GaN, emitting
+                          light by doping donar-acceptor pairs and forming porous structures [200,201]. In this
+                          review paper, a novel photonic application of SiC is presented. Although this ﬁeld is
+                          very young, about 10 years old, many breakthroughs have been achieved, thanks to the
+                          already mature SiC growth and fabrication technologies. Compared to the longer-existing
+                          material platforms for photonic integrated circuits (Si, SiO2, SiN, LiNbO3, AlGaAs, etc.),
+                          SiC is outperforming on both its nonlinear optical properties and its potential as a perfect
+                          candidate for a single photon source for future quantum photonic integrated circuits. SiCOI
+                          stacks with a polytype of 4H, 3C and amorphous have been demonstrated by different
+                          formation methods, and high-quality-factor (>1 million) microring resonators have been
+                          reported. A lot of passive and active devices are demonstrated, such as beam splitter,
+                          polarization beam splitter, modulator, frequency comb, etc [23,38,63,74].
+
+                                From a loss reduction point of view, any defects causing absorption and scattering of
+                          light at the device working wavelength should be eliminated. However, there are a bunch
+                          of point defects in SiC which are optically addressable and could be potentially used for a
+                          single photon source, a key device for quantum technology. Integrating SiC single photon
+                          source, monolithically, with other building blocks enables SiCOI a game-changer for the
+                          future of quantum PIC [202].
+
+                                But, before SiC really plays a crucial role in QPIC, further research and development
+                          are needed:
+
+                          (1) Low-loss SiCOI stacks are widely available.
+                          (2) The insertion loss of the chip, including propagation loss and coupling should be less
+
+                                 than 3 dB.
+                          (3) More SiC-based quantum devices should be demonstrated, such as quantum memory,
+
+                                 detectors, etc.
+                          (4) SiC color centers should be further explored and prepared as a competitive candidate
+
+                                 for a single photon source for real applications in communication, computing, etc.
+
+                          6. Impacts of Novel Photonic Applications of SiC
+
+                                The research in silicon carbide started to have strong momentum in the 1990s. That
+                          decade had a heavy focus in research and in Europe several EU projects were initiated. The
+                          ﬁrst ones were mainly in bulk growth and included some epitaxy and device development.
+                          Epitaxy and device challenges were heavily related to defects in research-grade wafers, and
+                          epitaxy recipes and issues such as stable electrical contacts were not in place. Test devices
+                          suffered from structural variations within wafer areas, as well as between wafers. The ﬁrst
+                          European wafer suppliers emerged 20–25 years ago and slowly substrates became more
+                          available for device development. The market started to grow slowly, ﬁrstly by the sale
+                          of materials. It was only when devices became available that the market started to grow
+                          faster. The SiC diodes and power electronics pushed the market, and also started to require
+                          more wafers. As a consequence, the wafer prices have steadily decreased and volume
+                          manufacturing is now established. Today, many market players are entering and the SiC
+                          device market will grow to billions of US dollars annually. The journey from research to a
+                          strong, growing SiC market has taken about 30 years.
+
+                                The efforts in the research decade created a strong momentum in Europe. Researchers
+                          built their competence and gained network and personal relations. While conducting
+
+[[PAGE 21]]
+Materials 2023, 16, 1014                                                                                                                                             21 of 29
+
+                          present projects, new ideas emerged through the exchange between researchers. The
+                          ﬂuorescent silicon carbide for a new white LED was one of the European avenues which
+                          gathered a cluster of research groups in the year 2010, with teams from Denmark, Germany
+                          and Sweden, which now present this review article. They have continued to collaborate
+                          and propose new projects with other partners having complementary expertise. In such a
+                          way, silicon carbide research expanded to other avenues and started to grow to applications
+                          other than the original ones that were related to power devices. The European efforts in
+                          SiC from the 1990s have grown momentum.
+
+                                The next phase of momentum is given by impact creation. Projects are typically
+                          described by complementary partners and value chains. The motivations are given by
+                          technical advantages and better performances. Increasingly, there are aims like the Green
+                          Deal, Sustainable Development Goals (SDGs), and others which have a long-term aspect.
+                          Even though those are reasonable motivations, there should be sooner goals which show
+                          synergies. This is where regional development of Smart Specialisation Strategies (S3) comes
+                          in. It is a place-based innovation policy concept in which regional priorities are supported.
+                          This is achieved through the entrepreneurial discovery process in innovative sectors, ﬁelds
+                          or technologies. It applies a bottom-up approach to ﬁnd and support regional scientiﬁc
+                          and technological development. The S3 is, in simpliﬁed terms, described as ways to create
+                          more economical growth in European regions. By ﬁnding areas of strength and specializing
+                          in more efforts such as this one, there will be a sustainable way to increase economic
+                          growth. This is basically achieved by ﬁnding partners in regions and collaboration in
+                          regions which are complementary. It, in fact, describes various ways to have value chains.
+                          Thus, value chains are common in both technology and smart specialization motivations
+                          and implementation. The S3 was introduced about ten years ago. To date, more than 120
+                          Smart Specialization Strategies are developed in EU regions and Member States. Now
+                          comes Sustainable Smart Specialization Strategies (S4). The S4 has an emphasis on the
+                          importance of taking a long-term view of the development of a region. It should not just be
+                          as an adaptive path, rather, it should be a proactive path.
+
+                                The SiComb project is an H2020 EU-FET Open project that explores the photonic
+                          application using SiC, as described in the technical part of this paper. The EU FET Open,
+                          and EIC Pathﬁnder, as denoted in the Horizon Europe Programme, are projects that present
+                          ideas with potential radical technology leaps, looking forward 10–20 years. These are early
+                          stages of research with potential for high gain, if the research and technology challenges
+                          can be managed.
+
+                                Clearly, there can be synergies and proactive development by aligning technology and
+                          regional development and their motivations to gather stakeholders. Creating exchange
+                          between different stakeholders, such as researchers, regional development actors, policy
+                          makers, citizens, and other relevant players will produce the momentum which aligns the
+                          development of smart specialization and technology for society. The common overall aim of
+                          sustainable approaches for SDGs and the Green Deal will be more efﬁcient by considering
+                          such joint impact creation.
+
+                          Author Contributions: Conceptualization, H.O. and P.W.; validation, P.W. and D.C.; investigation,
+                          H.O., X.S., Y.L., M.K., J.S. and V.T.; writing—original draft preparation, H.O., X.S., Y.L., M.K., J.S., V.T.,
+                          M.S., P.W. and D.C.; writing—review and editing, H.O., X.S., Y.L. and D.C.; visualization, H.O., X.S.,
+                          Y.L., M.K. and J.S.; supervision, H.O., P.W. and D.C.; funding acquisition, H.O. and P.W; utilisation
+                          and innovation, M.S. All authors have read and agreed to the published version of the manuscript.
+
+                          Funding: This research was funded by European Union’s Horizon 2020 FET Open (SiComb, No.
+                          899679) and VILLUM FONDEN (VIL50293).
+
+                          Institutional Review Board Statement: Not applicable.
+
+                          Informed Consent Statement: Not applicable.
+
+                          Data Availability Statement: The data presented in this study are available on request from the
+                          corresponding author.
+
+[[PAGE 22]]
+Materials 2023, 16, 1014  22 of 29
+
+                                            Conﬂicts of Interest: The authors declare no conﬂict of interest.
+
+References
+
+1. Dinu, M.; Quochi, F.; Garcia, H. Third-order nonlinearities in silicon at telecom wavelengths. Appl. Phys. Lett. 2003, 82, 2954–2956.
+       [CrossRef]
+
+2. Grifﬁth, A.G.; Lau, R.K.; Cardenas, J.; Okawachi, Y.; Mohanty, A.; Fain, R.; Lee, Y.H.D.; Yu, M.; Phare, C.T.; Poitras, C.B.; et al.
+       Silicon-chip mid-infrared frequency comb generation. Nat. Commun. 2015, 6, 6299. [CrossRef] [PubMed]
+
+3. Guo, K.; Shi, X.; Wang, X.; Yang, J.; Ding, Y.; Ou, H.; Zhao, Y. Generation rate scaling: The quality factor optimization of microring
+       resonators for photon-pair sources. Photonics Res. 2018, 6, 587–596. [CrossRef]
+
+4. Guo, K.; Yang, L.; Shi, X.; Liu, X.; Cao, Y.; Zhang, J.; Wang, X.; Yang, J.; Ou, H.; Zhao, Y. Nonclassical optical bistability and
+       resonance-locked regime of photon-pair sources using silicon microring resonator. Phys. Rev. Appl. 2019, 11, 034007. [CrossRef]
+
+5. Shi, X.; Guo, K.; Christensen, J.B.; Castaneda, M.A.U.; Liu, X.; Ou, H.; Rottwitt, K. Multichannel photon-pair generation with
+       strong and uniform spectral correlation in a silicon microring resonator. Phys. Rev. Appl. 2019, 12, 034053. [CrossRef]
+
+6. Kippenberg, T.J.A. Nonlinear Optics in Ultra-High-Q Whispering-Gallery Optical Microcavities; California Institute of Technology:
+       Pasadena, CA, USA, 2004.
+
+7. Ou, H. Different index contrast silica-on-silicon waveguides by PECVD. Electron. Lett. 2003, 39, 1. [CrossRef]
+8. Xuan, Y.; Liu, Y.; Xue, X.; Wang, P.H.; Wang, J.; Niu, B.; Han, K.; Teng, M.; Leaird, D.E.; Weiner, A.M.; et al. High-Q silicon nitride
+
+       microresonator for low power frequency comb initiation at normal dispersion regime. In Proceedings of the CLEO: Science and
+       Innovations, San Jose, CA, USA, 10–15 May 2015; Optica Publishing Group: Washington, DC, USA, 2015.
+9. Wang, L.; Chang, L.; Volet, N.; Pfeiffer, M.H.; Zervas, M.; Guo, H.; Kippenberg, T.J.; Bowers, J.E. Frequency comb generation in
+       the green using silicon nitride microresonators. Laser Photonics Rev. 2016, 10, 631–638. [CrossRef]
+10. Philipp, H.T.; Andersen, K.N.; Svendsen, W.; Ou, H. Amorphous silicon rich silicon nitride optical waveguides for high density
+       integrated optics. Electron. Lett. 2004, 40, 1. [CrossRef]
+11. Razzari, L.; Duchesne, D.; Ferrera, M.; Morandotti, R.; Chu, S.; Little, B.E.; Moss, D.J. CMOS-compatible integrated optical
+       hyper-parametric oscillator. Nat. Photonics 2010, 4, 41–45. [CrossRef]
+12. Martin, A.; Combrié, S.; de Rossi, A.; Beaudoin, G.; Sagnes, I.; Raineri, F. Nonlinear gallium phosphide nanoscale photonics.
+       Photonics Res. 2018, 6, B43–B49. [CrossRef]
+13. Wilson, D.J.; Schneider, K.; Hönl, S.; Anderson, M.; Baumgartner, Y.; Czornomaz, L.; Kippenberg, T.J.; Seidler, P. Integrated
+       gallium phosphide nonlinear photonics. Nat. Photonics 2020, 14, 57–62. [CrossRef]
+14. Golovan, L.A.; Mel’nikov, V.A.; Konorov, S.O.; Fedotov, A.B.; Gavrilov, S.A.; Zheltikov, A.M.; Kashkarov, P.K.; Timoshenko, V.Y.;
+       Petrov, G.I.; Li, L.; et al. Efﬁcient second-harmonic generation by scattering from porous gallium phosphide. J. Exp. Theor. Phys.
+       Lett. 2003, 78, 193–197. [CrossRef]
+15. Jung, H.; Xiong, C.; Fong, K.Y.; Zhang, X.; Tang, H.X. Optical frequency comb generation from aluminum nitride microring
+       resonator. Opt. Lett. 2013, 38, 2810–2813. [CrossRef] [PubMed]
+16. Jung, H.; Stoll, R.; Guo, X.; Fischer, D.; Tang, H.X. Green, red, and IR frequency comb line generation from single IR pump in AlN
+       microring resonator. Optica 2014, 1, 396–399. [CrossRef]
+17. Hausmann, B.; Bulu, I.; Venkataraman, V.; Deotare, P.; Loncˇar, M. Diamond nonlinear photonics. Nat. Photonics 2014, 8, 369–374.
+       [CrossRef]
+18. Pu, M.; Ottaviano, L.; Semenova, E.; Yvind, K. Efﬁcient frequency comb generation in AlGaAs-on-insulator. Optica 2016,
+       3, 823–826. [CrossRef]
+19. Marino, G.; Gigli, C.; Rocco, D.; Lemaitre, A.; Favero, I.; De Angelis, C.; Leo, G. Zero-order second harmonic generation from
+       AlGaAs-on-insulator metasurfaces. ACS Photonics 2019, 6, 1226–1231. [CrossRef]
+20. Zhu, D.; Shao, L.; Yu, M.; Cheng, R.; Desiatov, B.; Xin, C.; Hu, Y.; Holzgrafe, J.; Ghosh, S.; Shams-Ansari, A.; et al. Integrated
+       photonics on thin-ﬁlm lithium niobate. Adv. Opt. Photonics 2021, 13, 242–352.
+21. Qin, H.; Shi, X.; Ou, H. Exceptional points at bound states in the continuum in photonic integrated circuits. Nanophotonics 2022,
+       11, 4909–4917. [CrossRef]
+22. Liang, X.; Fu, L.; Yu, Q.; Xue, Z.; Shi, X.; Lu, Y.; Chen, H.; Zhang, B.; Luo, Y.; Hu, Q.; et al. Efﬁcient and Broadband Trident
+       Spot-Size Convertor for Thin-Film Lithium Niobate Integrated Device. IEEE Photonics Technol. Lett. 2023, 35, 35–38. [CrossRef]
+23. Shi, X.; Fan, W.; Lu, Y.; Hansen, A.K.; Chi, M.; Yi, A.; Ou, X.; Rottwitt, K.; Ou, H. Polarization and spatial mode dependent
+       four-wave mixing in a 4H-silicon carbide microring resonator. APL Photonics 2021, 6, 076106. [CrossRef]
+24. Shi, X.; Zhang, J.; Fan, W.; Lu, Y.; Peng, N.; Rottwitt, K.; Ou, H. Compact low-birefringence polarization beam splitter using
+       vertical-dual-slot waveguides in silicon carbide integrated platforms. Photonics Res. 2022, 10, A8–A13.
+25. Yi, A.; Zheng, Y.; Huang, H.; Lin, J.; Yan, Y.; You, T.; Huang, K.; Zhang, S.; Shen, C.; Zhou, M.; et al. Wafer-scale 4H-silicon
+       carbide-on-insulator (4H–SiCOI) platform for nonlinear integrated optical devices. Opt. Mater. 2020, 107, 109990.
+26. Castelletto, S.; Peruzzo, A.; Bonato, C.; Johnson, B.C.; Radulaski, M.; Ou, H.; Kaiser, F.; Wrachtrup, J. Silicon Carbide Photonics
+       Bridging Quantum Technology. ACS Photonics 2022, 9, 1434–1457.
+27. Lukin, D.M.; Guidry, M.A.; Vucˇkovic´, J. Integrated quantum photonics with silicon carbide: Challenges and prospects. PRX
+       Quantum 2020, 1, 020102.
+
+[[PAGE 23]]
+Materials 2023, 16, 1014  23 of 29
+
+28. Song, B.S.; Yamada, S.; Asano, T.; Noda, S. Demonstration of two-dimensional photonic crystals based on silicon carbide. Opt.
+       Express 2011, 19, 11084–11089. [CrossRef]
+
+29. Yamada, S.; Song, B.S.; Asano, T.; Noda, S. Experimental investigation of thermo-optic effects in SiC and Si photonic crystal
+       nanocavities. Opt. Lett. 2011, 36, 3981–3983. [CrossRef]
+
+30. Yamada, S.; Song, B.S.; Asano, T.; Noda, S. Silicon carbide-based photonic crystal nanocavities for ultra-broadband operation
+       from infrared to visible wavelengths. Appl. Phys. Lett. 2011, 99, 201102. [CrossRef]
+
+31. Yamada, S.; Song, B.S.; Upham, J.; Asano, T.; Tanaka, Y.; Noda, S. Suppression of multiple photon absorption in a SiC photonic
+       crystal nanocavity operating at 1.55 µm. Opt. Express 2012, 20, 14789–14796. [CrossRef]
+
+32. Yamada, S.; Song, B.S.; Jeon, S.; Upham, J.; Tanaka, Y.; Asano, T.; Noda, S. Second-harmonic generation in a silicon-carbide-based
+       photonic crystal nanocavity. Opt. Lett. 2014, 39, 1768–1771. [CrossRef]
+
+33. Martini, F.; Politi, A. Four wave mixing in 3C SiC ring resonators. Appl. Phys. Lett. 2018, 112, 251110. [CrossRef]
+34. Fan, T.; Moradinejad, H.; Wu, X.; Eftekhar, A.A.; Adibi, A. High-Q integrated photonic microresonators on 3C-SiC-on-insulator
+
+       (SiCOI) platform. Opt. Express 2018, 26, 25814–25826. [CrossRef]
+35. Xing, P.; Ma, D.; Ooi, K.J.; Choi, J.W.; Agarwal, A.M.; Tan, D. CMOS-compatible PECVD silicon carbide platform for linear and
+
+       nonlinear optics. ACS Photonics 2019, 6, 1162–1167.
+36. Zheng, Y.; Pu, M.; Yi, A.; Chang, B.; You, T.; Huang, K.; Kamel, A.N.; Henriksen, M.R.; Jørgensen, A.A.; Ou, X.; et al. High-quality
+
+       factor, high-conﬁnement microring resonators in 4H-silicon carbide-on-insulator. Opt. Express 2019, 27, 13053–13060. [PubMed]
+37. Cardenas, J.; Yu, M.; Okawachi, Y.; Poitras, C.B.; Lau, R.K.; Dutt, A.; Gaeta, A.L.; Lipson, M. Optical nonlinearities in high-
+
+       conﬁnement silicon carbide waveguides. Opt. Lett. 2015, 40, 4138–4141. [PubMed]
+38. Guidry, M.A.; Yang, K.Y.; Lukin, D.M.; Markosyan, A.; Yang, J.; Fejer, M.M.; Vucˇkovic´, J. Optical parametric oscillation in silicon
+
+       carbide nanophotonics. Optica 2020, 7, 1139–1142.
+39. Lu, X.; Lee, J.Y.; Feng, P.X.L.; Lin, Q. Silicon carbide microdisk resonator. Opt. Lett. 2013, 38, 1304–1306.
+40. Cardenas, J.; Zhang, M.; Phare, C.T.; Shah, S.Y.; Poitras, C.B.; Guha, B.; Lipson, M. High q sic microresonators. Opt. Express 2013,
+
+       21, 16882–16887.
+41. Radulaski, M.; Babinec, T.M.; Buckley, S.; Rundquist, A.; Provine, J.; Alassaad, K.; Ferro, G.; Vucˇkovic´, J. Photonic crystal cavities
+
+       in cubic (3C) polytype silicon carbide ﬁlms. Opt. Express 2013, 21, 32623–32629.
+42. Lu, X.; Lee, J.Y.; Feng, P.X.L.; Lin, Q. High Q silicon carbide microdisk resonator. Appl. Phys. Lett. 2014, 104, 181103.
+43. Calusine, G.; Politi, A.; Awschalom, D.D. Silicon carbide photonic crystal cavities with integrated color centers. Appl. Phys. Lett.
+
+       2014, 105, 011123.
+44. Lu, X.; Lee, J.Y.; Rogers, S.; Lin, Q. Optical Kerr nonlinearity in a high-Q silicon carbide microresonator. Opt. Express 2014,
+
+       22, 30826–30832. [PubMed]
+45. Lee, J.Y.; Lu, X.; Lin, Q. High-Q silicon carbide photonic-crystal cavities. Appl. Phys. Lett. 2015, 106, 041106.
+46. Bracher, D.O.; Hu, E.L. Fabrication of high-Q nanobeam photonic crystals in epitaxially grown 4H-SiC. Nano Lett. 2015,
+
+       15, 6202–6207.
+47. Lohrmann, A.; Karle, T.J.; Sewani, V.K.; Laucht, A.; Bosi, M.; Negri, M.; Castelletto, S.; Prawer, S.; McCallum, J.C.; Johnson, B.C.
+
+       Integration of single-photon emitters into 3C-SiC microdisk resonators. ACS Photonics 2017, 4, 462–468.
+48. Bracher, D.O.; Zhang, X.; Hu, E.L. Selective Purcell enhancement of two closely linked zero-phonon transitions of a silicon carbide
+
+       color center. Proc. Natl. Acad. Sci. USA 2017, 114, 4060–4065.
+49. Martini, F.; Politi, A. Linear integrated optics in 3C silicon carbide. Opt. Express 2017, 25, 10735–10742. [CrossRef]
+50. Song, B.S.; Asano, T.; Jeon, S.; Kim, H.; Chen, C.; Kang, D.D.; Noda, S. Ultrahigh-Q photonic crystal nanocavities based on 4H
+
+       silicon carbide. Optica 2019, 6, 991–995.
+51. Wu, X.; Fan, T.; Eftekhar, A.A.; Adibi, A. High-Q microresonators integrated with microheaters on a 3C-SiC-on-insulator platform.
+
+       Opt. Lett. 2019, 44, 4941–4944.
+52. Lukin, D.M.; Dory, C.; Guidry, M.A.; Yang, K.Y.; Mishra, S.D.; Trivedi, R.; Radulaski, M.; Sun, S.; Vercruysse, D.; Ahn, G.H.; et al.
+
+       4H-silicon-carbide-on-insulator for integrated quantum and nonlinear photonics. Nat. Photonics 2020, 14, 330–334.
+53. Fan, T.; Wu, X.; Eftekhar, A.A.; Bosi, M.; Moradinejad, H.; Woods, E.V.; Adibi, A. High-quality integrated microdisk resonators in
+
+       the visible-to-near-infrared wavelength range on a 3C-silicon carbide-on-insulator platform. Opt. Lett. 2020, 45, 153–156.
+54. Crook, A.L.; Anderson, C.P.; Miao, K.C.; Bourassa, A.; Lee, H.; Bayliss, S.L.; Bracher, D.O.; Zhang, X.; Abe, H.; Ohshima, T.; et al.
+
+       Purcell enhancement of a single silicon carbide color center with coherent spin control. Nano Lett. 2020, 20, 3427–3434. [PubMed]
+55. Xing, P.; Ma, D.; Kimerling, L.C.; Agarwal, A.M.; Tan, D.T. High efﬁciency four wave mixing and optical bistability in amorphous
+
+       silicon carbide ring resonators. APL Photonics 2020, 5, 076110. [CrossRef]
+56. Wang, C.; Fang, Z.; Yi, A.; Yang, B.; Wang, Z.; Zhou, L.; Shen, C.; Zhu, Y.; Zhou, Y.; Bao, R.; et al. High-Q microresonators on
+
+       4H-silicon-carbide-on-insulator platform for nonlinear photonics. Light. Sci. Appl. 2021, 10, 139. [PubMed]
+57. Cai, L.; Li, J.; Wang, R.; Li, Q. Octave-spanning microcomb generation in 4H-silicon-carbide-on-insulator photonics platform.
+
+       Photonics Res. 2022, 10, 870–876.
+58. Lu, Y.; Shi, X.; Chaussende, D.; Rottwitt, K.; Ou, H. Thermal-tuning of Amorphous Silicon Carbide Nanophotonic Devices. In
+
+       Proceedings of the CLEO: Science and Innovations, San Jose, CA, USA, 15–20 May 2022; Optica Publishing Group: Washington,
+       DC, USA, 2022.
+
+[[PAGE 24]]
+Materials 2023, 16, 1014  24 of 29
+
+59. Allioux, D.; Belarouci, A.; Hudson, D.; Magi, E.; Sinobad, M.; Beaudin, G.; Michon, A.; Singh, N.; Orobtchouk, R.; Grillet, C.
+       Toward mid-infrared nonlinear optics applications of silicon carbide microdisks engineered by lateral under-etching. Photonics
+       Res. 2018, 6, B74–B81.
+
+60. Wang, C.; Shen, C.; Yi, A.; Yang, S.; Zhou, L.; Zhu, Y.; Huang, K.; Song, S.; Zhou, M.; Zhang, J.; et al. Visible and near-infrared
+       microdisk resonators on a 4H-silicon-carbide-on-insulator platform. Opt. Lett. 2021, 46, 2952–2955.
+
+61. Powell, K.; Shams-Ansari, A.; Desai, S.; Austin, M.; Deng, J.; Sinclair, N.; Loncˇar, M.; Yi, X. High-Q suspended optical resonators
+       in 3C silicon carbide obtained by thermal annealing. Opt. Express 2020, 28, 4938–4949.
+
+62. Shi, X.; Fan, W.; Lu, Y.; Yi, A.; Ou, X.; Rottwitt, K.; Ou, H. Thermal oxidation assisted chemical mechanical polishing for low-loss
+       4H-SiC integrated photonic devices. In Proceedings of the 47th Micro and Nano Engineering Conference, Turin, Italy, 20–23
+       September 2021.
+
+63. Shi, X.; Lu, Y.; Peng, N.; Rottwitt, K.; Ou, H. High-performance polarization-independent beam splitters and MZI in silicon
+       carbide integrated platforms for single-photon manipulation. J. Light. Technol. 2022, 40, 7626–7633.
+
+64. Shi, X.; Lu, Y.; Ou, H. High-performance silicon carbide polarization beam splitting based on the asymmetric directional coupler
+       for mode conversion. Opt. Lett. 2022, 48, 1–5.
+
+65. Bogaerts, W.; De Heyn, P.; Van Vaerenbergh, T.; De Vos, K.; Kumar Selvaraja, S.; Claes, T.; Dumon, P.; Bienstman, P.; Van Thourhout,
+       D.; Baets, R. Silicon microring resonators. Laser Photonics Rev. 2012, 6, 47–73.
+
+66. Xiong, M.; Lei, L.; Ding, Y.; Huang, B.; Ou, H.; Peucheret, C.; Zhang, X. All-optical 10 Gb/s AND logic gate in a silicon microring
+       resonator. Opt. Express 2013, 21, 25772–25779. [PubMed]
+
+67. Xiong, M.; Ozolins, O.; Ding, Y.; Huang, B.; An, Y.; Ou, H.; Peucheret, C.; Zhang, X. Simultaneous RZ-OOK to NRZ-OOK and
+       RZ-DPSK to NRZ-DPSK format conversion in a silicon microring resonator. Opt. Express 2012, 20, 27263–27272. [CrossRef]
+       [PubMed]
+
+68. Ding, Y.; Hu, H.; Galili, M.; Xu, J.; Liu, L.; Pu, M.; Mulvad, H.C.H.; Oxenløwe, L.K.; Peucheret, C.; Jeppesen, P.; et al. Generation
+       of a 640 Gbit/s NRZ OTDM signal using a silicon microring resonator. Opt. Express 2011, 19, 6471–6477. [PubMed]
+
+69. Zheng, Y.; Pu, M.; Yi, A.; Ou, X.; Ou, H. 4H-SiC microring resonators for nonlinear integrated photonics. Opt. Lett. 2019,
+       44, 5784–5787.
+
+70. Shi, X.; Fan, W.; Yi, A.; Ou, X.; Rottwitt, K.; Ou, H. Dual-pump Optical Parametric Oscillation in a 4H-SiC-on-insulator Microring
+       Resonator. In Proceedings of the European Conference on Lasers and Electro-Optics, Munich, Germany, 21–25 June 2021; Optica
+       Publishing Group: Washington, DC, USA, 2021; p. cd_p_22.
+
+71. Guidry, M.A.; Lukin, D.M.; Yang, K.Y.; Trivedi, R.; Vucˇkovic´, J. Quantum optics of soliton microcombs. Nat. Photonics 2022,
+       16, 52–58.
+
+72. Fortier, T.; Baumann, E. 20 years of developments in optical frequency comb technology and applications. Commun. Phys. 2019,
+       2, 153.
+
+73. Fan, T.; Wu, X.; Vangapandu, S.R.; Hosseinnia, A.H.; Eftekhar, A.A.; Adibi, A. Racetrack microresonator based electro-optic phase
+       shifters on a 3C silicon-carbide-on-insulator platform. Opt. Lett. 2021, 46, 2135–2138.
+
+74. Powell, K.; Li, L.; Shams-Ansari, A.; Wang, J.; Meng, D.; Sinclair, N.; Deng, J.; Loncˇar, M.; Yi, X. Integrated silicon carbide
+       electro-optic modulator. Nat. Commun. 2022, 13, 1851.
+
+75. Cheng, C.H.; Fu, C.S.; Set, S.Y.; Yamashita, S.; Lin, G.R. All-Optical 25-Gbps Silicon Carbide Kerr Switching Intensity Modulator
+       On Silicon Platform. In Proceedings of the 2022 Conference on Lasers and Electro-Optics (CLEO), San Jose, CA, USA, 15–20 May
+       2022; pp. 1–2.
+
+76. Pelton, M. Modiﬁed spontaneous emission in nanophotonic structures. Nat. Photonics 2015, 9, 427–435.
+77. Song, B.S.; Noda, S.; Asano, T.; Akahane, Y. Ultra-high-Q photonic double-heterostructure nanocavity. Nat. Mater. 2005,
+
+       4, 207–210.
+78. Stoldt, Conrad ad Carraro, C.; Ashurt, R.; Gao, D.; Howe, R.; Maboudian, R. A low-temperature CVD process for silicon carbide
+
+       MEMS. Sens. Actuators A Phys. 2002, 97–98, 410–415.
+79. Habuka, H.; Ando, Y.; Tsuji, M. Room temperature process for chemical vapor deposition of amorphous silicon carbide thin ﬁlm
+
+       using monomethylsilane gas. Surf. Coat. Technol. 2011, 206, 1503–1506.
+80. Wang, L. Dependence of chemical composition and bonding of amorphous SiC on deposition temperature and the choice of
+
+       substrate. J. -Non-Cryst. Solids 2011, 357, 1063–1069.
+81. Habuka, H.; Tsuji, M. Chemical vapor deposition of amorphous silicon carbide thin ﬁlms on metal surfaces using monomethylsi-
+
+       lane gas at low temperatures. Surf. Coatings Technol. 2013, 217, 88–93.
+82. Yoshino, M.; Shimozuma, M.; Date, H.; Itoh, H.; Tagashira, H. Deposition of SiC ﬁlms by ion-enhanced plasma chemical vapor
+
+       deposition using tetramethylsilane+ H2. Thin Solid Film. 2005, 492, 207–211.
+83. Frischmuth, T.; Schneider, M.; Radovic, I.; Siketic, Z.; Maurer, D.; Grille, T.; Shmid, U. Low temperature deposition of a-SiC:H
+
+       thin ﬁlms applying a dual plasma source process. Thin Solid Film. 2016, 616, 164–171.
+84. Kwon, S.; Park, Y.; Ban, W.; Youn, C.; Lee, S.; Yang, J.; Jung, D.; Choi, T. Effect of plasma power on properties of hydrogenated
+
+       amorphous silicon carbide hardmask ﬁlms deposited by PECVD. Vacuum 2020, 174, 109187.
+85. Jung, C.; Lim, D.; Jee, H.; Park, M.; Ku, S.; Yu, K.; Hong, B.; Lee, S.; Boo, J. Hydrogenated amorphous and crystalline SiC thin
+
+       ﬁlms grown by RF-PECVD and thermal MOCVD; comparative study of structural and optical properties. Surf. Coat. Technol.
+       2003, 171, 46–50.
+
+[[PAGE 25]]
+Materials 2023, 16, 1014  25 of 29
+
+86. Chen, E.; Du, G.; Zhang, Y.; Qin, X.; Lai, H.; Shi, W. RF-PECVD deposition and optical properties of hydrogenated amorphous
+       silicon carbide thin ﬁlms. Ceram. Int. 2014, 40, 9791–9797.
+
+87. Hoshide, Y.; Komura, Y.; Tabata, A.; Kitagawa, A.; Kondo, A. Importance of H2 gas for growth of hot-wire CVD nanocrystalline
+       3C-SiC from SiH4/CH4/H2. Thin Solid Film. 2009, 517, 3520–3523. [CrossRef]
+
+88. Tabata, A.; Komura, Y.; Narita, T.; Kondo, A. Growth of silicon carbide thin ﬁlms by hot-wire chemical vapor deposition from
+       SiH4/CH4/H2. Thin Solid Film. 2009, 517, 3516–3519. [CrossRef]
+
+89. Klein, S.; Carius, R.; Finger, F.; Houben, L. Low substrate temperature deposition of crystalline SiC using HWCVD. Thin Solid
+       Film. 2006, 501, 169–172. [CrossRef]
+
+90. Finger, F.; Astakhov, O.; Bronger, T.; Carius, R.; Chen, T.; Dasgupta, A.; Gordijn, A.; Houben, L.; Huang, Y.; Klein, S.; et al.
+       Microcrystalline silicon carbide alloys prepared with HWCVD as highly transparent and conductive window layers for thin ﬁlm
+       solar cells. Thin Solid Film. 2009, 517, 3507–3512. [CrossRef]
+
+91. Zeiler, E.; Schwars, S.; Rosiwal, S.; Singer, R. Structural changes of tungsten heating ﬁlaments during CVD of diamond. Mater.
+       Sci. Eng. A 2002, 355, 236–245. [CrossRef]
+
+92. Tabata, A.; Naito, A. Structural changes in tungsten wire and their effect on the properties of hydrogenated nanocrystalline cubic
+       silicon carbide thin ﬁlms. Thin Solid Film. 2011, 519, 4451–4454. [CrossRef]
+
+93. Komura, Y.; Tabata, A.; Narita, T.; Kondo, A. Inﬂuence of gas pressure on low-temperature preparation and ﬁlm properties of
+       nanocrystalline 3C-SiC thin ﬁlms by HW-CVD using SiH4/CH4/H2 system. Thin Solid Film. 2008, 516, 633–636. [CrossRef]
+
+94. Zhao, Q.; Li, J.; Zhou, H.; Wang, H.; Wang, B.; Yan, H. Parameters determining crystallinity in β-SiC thin ﬁlms prepared by
+       catalytic chemical vapor deposition. J. Cryst. Growth 2004, 260, 176–180. [CrossRef]
+
+95. Swain, B.; Dusane, R. Multiphase structure of hydrogen diluted a-SiC:H deposited by HWCVD. Mater. Chem. Phys. 2006,
+       99, 240–246. [CrossRef]
+
+96. Mahmood, A.; Muhl, S.; Machorro, R.; Lousa, A.; Esteve, J.; Heiras, J. Surface and optical analysis of SiCx ﬁlms prepared by
+       RF-RMS technique. Diam. Relat. Mater. 2006, 15, 71–79. [CrossRef]
+
+97. Tang, H.; Tan, S.; Huang, Z.; Dong, S.; Jiang, D. Surface morphology of α-SIC coatings deposited by RF magnetron sputtering.
+       Surf. Coat. Technol. 2005, 197, 161–167. [CrossRef]
+
+98. Manivannan, R.; Sundararaj, S.; Dheenasagar, R.; Giridharan, K.; Sivaraman, P.; Udhayarani, V. Inﬂuence of Al2O3, SiC and B4C
+       covalent multilayer PVD coating on surface properties of HSS rod. Mater. Today Proc. 2021, 39, 700–707. [CrossRef]
+
+99. Liu, M.; Yang, Y.; Mao, Q.; Wei, Y.; Li, Y.; Ma, N.; Liu, H.; Liu, X.; Huang, Z. Inﬂuence of radio frequency magnetron sputtering
+       parameters on the structure and performance of SiC ﬁlms. Ceram. Int. 2021, 47, 24098–24105. [CrossRef]
+
+100. Tavsanoglu, T.; Zayim, E.; Agirseven, O.; Yildirim, S.; Yucel, O. Optical, electrical and microstructural properties of SiC thin ﬁlms
+       deposited by reactive dc magnetron sputtering. Thin Solid Film. 2019, 674, 1–6. [CrossRef]
+
+101. Gou, L.; Qi, C.; Ran, J.; Zheng, C. SiC ﬁlm deposition by DC magnetron sputtering. Thin Solid Film. 1999, 345, 42–44. [CrossRef]
+102. Knotek, O.; Löfﬂer, F.; Wolkers, L. Amorphous SiC PVD coatings. Diam. Relat. Mater. 1993, 2, 528–530. [CrossRef]
+103. Cheng, Y.; Huang, X.; Du, Z.; Xiao, J. Effect of sputtering power on the structure and optical band gap of SiC thin ﬁlms. Opt.
+
+       Mater. 2017, 73, 723–728. [CrossRef]
+104. Seo, J.K.; Joung, Y.H.; Park, Y.; Won-Seok, C. Substrate temperature effect on the SiC passivation layer synthesized by an RF
+
+       magnetron sputtering method. Thin Solid Film. 2011, 519, 6654–6657. [CrossRef]
+105. Wang, Y.; Tuofu, Z.M.; Yue, Z.; Sun, H.; Gong, J.; Gao, J. Research on adhesion strength and optical properties of SiC ﬁlms
+
+       obtained via RF magnetron sputtering. Chin. J. Phys. 2020, 64, 79–86. [CrossRef]
+106. Tang, H.; Tan, S.; Huang, Z. SiC Coatings Deposited by RF Magnetron Sputtering. Key Eng. Mater. 2007, 280–283, 1309–1312.
+
+       [CrossRef]
+107. Akshara, P.; Rajaram, G.; Krishna, G. Single composite target magnetron sputter deposition of crystalline and amorphous SiC
+
+       thin ﬁlms. Mater. Res. Express 2018, 5, 036410. [CrossRef]
+108. Robertson, J. Diamond-like amorphous carbon. Mater. Sci. Eng. R Rep. 2002, 37, 129–281. [CrossRef]
+109. Zielinski, M.; S Ndiaye, T.C.; Juillaguet, S.; Lewandowska, R.; Portail, M.; Leycuras, A.; Camassel, J. Strain and wafer curvature of
+
+       3C-SiC ﬁlms on silicon: Inﬂuence of the growth conditions. Phys. Status Solidi A 2007, 204, 981–986. [CrossRef]
+110. Cimalla, V.; Pezoldt, J.; Ambacherand, O. Group III nitride and SiC based MEMS and NEMS: Materials properties, technology
+
+       and applications. J. Phys. D Appl. Phys. 2007, 40, 6386.
+111. Zimbone, M.; Mauceri, M.; Litrico, G.; Barbagiovanni, E.G.; Bongiorno, C.; La Via, F. Protrusions reduction in 3C-SiC thin ﬁlm on
+
+       Si. J. Cryst. Growth 2018, 498, 248–257. [CrossRef]
+112. Liaw, P.; Davis, R. Epitaxial growth and characterization of β-SiC thin ﬁlms. J. Electrochem. Soc. 1985, 132, 642. [CrossRef]
+113. Zimbone, M.; Sarikov, A.; Bongiorno, C.; Marzegalli, A.; Scuderi, V.; Calabretta, C.; Miglio, L.; La Via, F. Extended defects in
+
+       3C-SiC: Stacking faults, threading partial dislocations, and inverted domain boundaries. Acta Mater. 2021, 213, 116915. [CrossRef]
+114. Nagasawa, H.; Yagi, K.; Kawahara, T.; Hatta, N. Reducing planar defects in 3C–SiC. Chem. Vap. Depos. 2006, 12, 502–508.
+
+       [CrossRef]
+115. Shibahara, K.; Nishino, S.; Matsunami, H. Antiphase-domain-free growth of cubic SiC on Si (100). Appl. Phys. Lett. 1987,
+
+       50, 1888–1890. [CrossRef]
+116. La Via, F.; Camarda, M.; Canino, A.; Severino, A.; LA MAGNA, A.; Mauceri, M.; Vecchio, C.; Crippa, D. Fast growth rate epitaxy
+
+       by chloride precursors. Mater. Sci. Forum 2013, 740, 167–172. [CrossRef]
+
+[[PAGE 26]]
+Materials 2023, 16, 1014  26 of 29
+
+117. Chassagne, T.; Ferro, G.; Chaussende, D.; Cauwet, F.; Monteil, Y.; Bouix, J. A comprehensive study of SiC growth processes in a
+       VPE reactor. Thin Solid Film. 2002, 402, 83–89. [CrossRef]
+
+118. Nishino, S.; Powell, J.A.; Will, H.A. Production of large-area single-crystal wafers of cubic SiC for semiconductor devices. Appl.
+       Phys. Lett. 1983, 42, 460–462. [CrossRef]
+
+119. Björketun, L.O.; Hultman, L.; Ivanov, I.; Wahab, Q.; Sundgren, J.E. Interfacial void formation during vapor phase growth of
+       3C-SiC on Si (0 0 1) and Si (1 1 1) substrates. Characterization by transmission electron microscopy. J. Cryst. Growth 1997,
+       182, 379–388. [CrossRef]
+
+120. Anzalone, R.; Litrico, G.; Piluso, N.; Reitano, R.; Alberti, A.; Fiorenza, P.; Coffa, S.; La Via, F. Carbonization and transition layer
+       effects on 3C-SiC ﬁlm residual stress. J. Cryst. Growth 2017, 473, 11–19. [CrossRef]
+
+121. Nagasawa, H.; Yamaguchi, Y. Suppression of etch pit and hillock formation on carbonization of Si substrate and low temperature
+       growth of SiC. J. Cryst. Growth 1991, 115, 612–616. [CrossRef]
+
+122. Kordina, O.; Björketun, L.O.; Henry, A.; Hallin, C.; Glass, R.; Hultman, L.; Sundgren, J.E.; Janzen, E. Growth of 3CSiC on on-axis
+       Si (100) substrates by chemical vapor deposition. J. Cryst. Growth 1995, 154, 303–314. [CrossRef]
+
+123. Portail, M.; Zielinski, M.; Chassagne, T.; Roy, S.; Nemoz, M. Comparative study of the role of the nucleation stage on the ﬁnal
+       crystalline quality of (111) and (100) silicon carbide ﬁlms deposited on silicon substrates. J. Appl. Phys. 2009, 105, 083505.
+       [CrossRef]
+
+124. Anzalone, R.; Frazzeto, N.; La Via, F. Apparatus for growing a semiconductor wafer and associated manufacturing process, 2021.
+125. Anzalone, R.; Zimbone, M.; Calabretta, C.; Mauceri, M.; Alberti, A.; Reitano, R.; La Via, F. Temperature Investigation on 3C-SiC
+
+       Homo-Epitaxy on Four-Inch Wafers. Materials 2019, 12, 3293. [CrossRef]
+126. Anzalone, R.; Camarda, M.; Locke, C.; Carballo, J.; Piluso, N.; La Magna, A.; Volinsky, A.A.; Saddow, S.E.; La Via, F. Stress nature
+
+       investigation on heteroepitaxial 3C–SiC ﬁlm on (100) Si substrates. J. Mater. Res. 2013, 28, 129–135. [CrossRef]
+127. Kollmuss, M.; Köhler, J.; Ou, H.Y.; Fan, W.C.; Chaussende, D.; Hock, R.; Wellmann, P.J. Chemical Vapor Deposition of 3C-SiC on
+
+       [100] Oriented Silicon at Low Temperature< 1200◦ C for Photonic Applications. Mater. Sci. Forum 2022, 1062, 119–124.
+128. Wilhelm, M.; Rieth, M.; Brandl, M.; Wibowo, R.A.; Hock, R.; Wellmann, P. Optimization of growth parameters for growth of high
+
+       quality heteroepitaxial 3C–SiC ﬁlms at 1200 C. Thin Solid Film. 2015, 577, 88–93. [CrossRef]
+129. Gao, Y.; Edgar, J.; Chaudhuri, J.; Cheema, S.; Sidorov, M.; Braski, D. Low-temperature chemical-vapor deposition of 3C–SiC ﬁlms
+
+       on Si (1 0 0) using SiH4–C2H4–HCl–H2. J. Cryst. Growth 1998, 191, 439–445. [CrossRef]
+130. Fissel, A.; Schröter, B.; Kaiser, U.; Richter, W. Advances in the molecular-beam epitaxial growth of artiﬁcially layered heteropoly-
+
+       typic structures of SiC. Appl. Phys. Lett. 2000, 77, 2418–2420. [CrossRef]
+131. Kimoto, T.; Itoh, A.; Matsunami, H. Step-controlled epitaxial growth of high-quality SiC layers. Phys. Status Solidi B 1997,
+
+       202, 247–262. [CrossRef]
+132. Matsunami, H. Technological breakthroughs in growth control of silicon carbide for high power electronic devices. Jpn. J. Appl.
+
+       Phys. 2004, 43, 6835. [CrossRef]
+133. Powell, J.; Larkin, D. Process-induced morphological defects in epitaxial CVD silicon carbide. Phys. Status Solidi B 1997,
+
+       202, 529–548. [CrossRef]
+134. Jokubavicius, V.; Yazdi, G.R.; Liljedahl, R.; Ivanov, I.G.; Yakimova, R.; Syväjärvi, M. Lateral enlargement growth mechanism of
+
+       3C-SiC on off-oriented 4H-SiC substrates. Cryst. Growth Des. 2014, 14, 6514–6520. [CrossRef]
+135. Jokubavicius, V.; Yazdi, G.R.; Liljedahl, R.; Ivanov, I.G.; Sun, J.; Liu, X.; Schuh, P.; Wilhelm, M.; Wellmann, P.; Yakimova, R. Single
+
+       domain 3C-SiC growth on off-oriented 4H-SiC substrates. Cryst. Growth Des. 2015, 15, 2940–2947. [CrossRef]
+136. Shi, Y.; Jokubavicius, V.; Höjer, P.; Ivanov, I.G.; Yazdi, G.R.; Yakimova, R.; Syväjärvi, M.; Sun, J. A comparative study of
+
+       high-quality C-face and Si-face 3C-SiC (1 1 1) grown on off-oriented 4H-SiC substrates. J. Phys. D Appl. Phys. 2019, 52, 345103.
+       [CrossRef]
+137. Vasiliauskas, R.; Marinova, M.; Hens, P.; Wellmann, P.; Syvajarvi, M.; Yakimova, R. Nucleation control of cubic silicon carbide on
+       6H-substrates. Cryst. Growth Des. 2012, 12, 197–204. [CrossRef]
+138. Vasiliauskas, R.; Marinova, M.; Syväjärvi, M.; Mantzari, A.; Andreadou, A.; Polychroniadis, E.K.; Yakimova, R. Sublimation
+       epitaxy of cubic silicon carbide in vacuum. J. Phys. Conf. Ser. 2010, 223, 012014. [CrossRef]
+139. Neudeck, P.G.; Trunek, A.J.; Spry, D.J.; Powell, J.A.; Du, H.; Skowronski, M.; Huang, X.R.; Dudley, M. CVD Growth of 3C-SiC on
+       4H/6H Mesas. Chem. Vap. Depos. 2006, 12, 531–540. [CrossRef]
+140. Schuh, P.; Vecera, P.; Hirsch, A.; Syväjärvi, M.; Litrico, G.; La Via, F.; Mauceri, M.; Wellmann, P.J. Physical vapor growth of double
+       position boundary free, quasi-bulk 3C-SiC on high quality 3C-SiC on Si CVD templates. Mater. Sci. Forum 2016, 858, 89–92.
+       [CrossRef]
+141. Wellmann, P.J.; Schuh, P.; Kollmuss, M.; Schöler, M.; Steiner, J.; Zielinski, M.; Mauceri, M.; La Via, F. Prospects of Bulk Growth of
+       3C-SiC Using Sublimation Growth. Mater. Sci. Forum 2020, 1004, 113–119. [CrossRef]
+142. Wellmann, P.; Ohtani, N.; Rupp, R. Wide Bandgap Semiconductors for Power Electronics: Materials, Devices, Applications; John Wiley &
+       Sons: Weinheim, Germany, 2021.
+143. Schuh, P.; La Via, F.; Mauceri, M.; Zielinski, M.; Wellmann, P.J. Growth of large-area, stress-free, and bulk-like 3C-SiC (100) using
+       3C-SiC-on-Si in vapor phase growth. Materials 2019, 12, 2179. [CrossRef]
+144. Schuh, P.; Steiner, J.; La Via, F.; Mauceri, M.; Zielinski, M.; Wellmann, P.J. Limitations during vapor phase growth of bulk (100)
+       3C-SiC using 3C-SiC-on-SiC seeding stacks. Materials 2019, 12, 2353. [CrossRef]
+
+[[PAGE 27]]
+Materials 2023, 16, 1014  27 of 29
+
+145. La Via, F.; Zimbone, M.; Bongiorno, C.; La Magna, A.; Fisicaro, G.; Deretzis, I.; Scuderi, V.; Calabretta, C.; Giannazzo, F.; Zielinski,
+       M. New Approaches and Understandings in the Growth of Cubic Silicon Carbide. Materials 2021, 14, 5348. [CrossRef]
+
+146. Dubecky` , F.; Gombia, E.; Ferrari, C.; Zat’ko, B.; Vanko, G.; Baldini, M.; Kovácˇ, J.; Bacˇek, D.; Kovácˇ, P.; Hrkút, P.; et al.
+       Characterization of epitaxial 4H-SiC for photon detectors. J. Instrum. 2012, 7, P09005. [CrossRef]
+
+147. Schoeler, M. Characterization of protrusions and stacking faults in 3C-SiC grown by sublimation epitaxy using 3C-SiC-on-Si
+       seeding layers. Adv. Mater. Proc. 2017, 2, 774–778.
+
+148. Kollmuss, M.; Schöler, M.; Anzalone, R.; Mauceri, M.; La Via, F.; Wellmann, P.J. Large Area Growth of Cubic Silicon Carbide
+       Using Close Space PVT by Application of Homoepitaxial Seeding. Mater. Sci. Forum 2022, 1062, 74–78. [CrossRef]
+
+149. Schöler, M.; La Via, F.; Mauceri, M.; Wellmann, P. Overgrowth of Protrusion Defects during Sublimation Growth of Cubic Silicon
+       Carbide Using Free-Standing Cubic Silicon Carbide Substrates. Cryst. Growth Des. 2021, 21, 4046–4054. [CrossRef]
+
+150. Schuh, P.; Künecke, U.; Litrico, G.; Mauceri, M.; La Via, F.; Monnoye, S.; Zielinski, M.; Wellmann, P.J. Vapor Growth of 3C-SiC
+       Using the Transition Layer of 3C-SiC on Si CVD Templates. Mater. Sci. Forum 2019, 963, 149–152. [CrossRef]
+
+151. Tairov, Y.M.; Tsvetkov, V.F. Investigation of growth processes of ingots of silicon carbide single crystals. J. Cryst. Growth 1978,
+       43, 209–212. [CrossRef]
+
+152. Scace, R.I.; Slack, G.A. Solubility of Carbon in Silicon and Germanium. J. Chem. Phys. 1959, 30, 1551–1555. [CrossRef]
+153. Harada, S.; Yamamoto, Y.; Xiao, S.; Koike, D.; Mutoh, T.; Murayama, K.; Aoyagi, K.; Sakai, T.; Tagawa, M.; Ujihara, T. Dislocation
+
+       Conversion During SiC Solution Growth for High-Quality Crystals. Mater. Sci. Forum 2015, 821–823, 3–8. [CrossRef]
+154. Wellmann, P.J. Power Electronic Semiconductor Materials for Automotive and Energy Saving Applications—SiC, GaN, Ga2O3,
+
+       and Diamond. Z. Anorg. Allg. Chem. 2017, 643, 1312–1322. [CrossRef]
+155. Wellmann, P.; Straubinger, T.; Desperrier, P.; Mueller, R.; ünecke, U.; Sakwe, S.A.; Schmitt, H.; Winnacker, A.; Blanquet, E.;
+
+       Dedulle, J.M.; et al. Modiﬁed Physical Vapor Transport Growth of SiC—Control of Gas Phase Composition for Improved Process
+       Conditions. Mat. Sci. Forum 2005, 483–485, 25–30. [CrossRef]
+156. Chaussende, D.; Ohtani, N. Silicon carbide. In Single Crystals of Electronic Materials; Elsevier: Amsterdam, The Netherlands, 2019;
+       pp. 129–179.
+157. Wellmann, P.J. Review of SiC crystal growth technology. Semicond. Sci. Technol. 2018, 33, 103001. [CrossRef]
+158. Koga, K.; Fujikawa, Y.; Ueda, Y.; Yamaguchi, T. Growth and characterization of 6H-SiC bulk crystals by the sublimation method.
+       In Amorphous and Crystalline Silicon Carbide IV; Springer: Berlin/Heidelberg, Germany, 1992; pp. 96–100.
+159. Neudeck, P.G.; Powell, J.A. Performance limiting micropipe defects in silicon carbide wafers. IEEE Electron Device Lett. 1994,
+       15, 63–65. [CrossRef]
+160. Agarwal, A.; Fatima, H.; Haney, S.; Ryu, S.H. A New Degradation Mechanism in High-Voltage SiC Power MOSFETs. IEEE
+       Electron Device Lett. 2007, 28, 587–589. [CrossRef]
+161. Veliadis, V.; Hearne, H.; Stewart, E.J.; Snook, M.; Chang, W.; Caldwell, J.D.; Ha, H.C.; El-Hinnawy, N.; Borodulin, P.; Howell,
+       R.S.; et al. Degradation and Full Recovery in High-Voltage Implanted-Gate SiC JFETs Subjected to Bipolar Current Stress. IEEE
+       Electron Device Lett. 2012, 33, 952–954. [CrossRef]
+162. Chen, H.; Raghothamachar, B.; Vetter, W.; Dudley, M.; Wang, Y.; Skromme, B.J. Effects of Different Defect Types on the Performance
+       of Devices Fabricated on a 4H-SiC Homoepitaxial Layer. MRS Proc. 2006, 911. [CrossRef]
+163. Sakwe, S.; Jang, Y.S.; Wellmann, P. Defect Etching of SiC on non-polar faces. Mater. Sci. Forum 2007, 556–557, 243–246. [CrossRef]
+164. Katsuno, M.; Ohtani, N.; Takahashi, J.; Yashiro, H.; Kanaya, M. Mechanism of Molten KOH Etching of SiC Single Crystals:
+       Comparative Study with Thermal Oxidation. Jpn. J. Appl. Phys. 1999, 38, 4661–4665. [CrossRef]
+165. Vetter, W.M.; Dudley, M. Micropipes and the closure of axial screw dislocation cores in silicon carbide crystals. J. Appl. Phys. 2004,
+       96, 348–353. [CrossRef]
+166. Vetter, W.M.; Dudley, M. Micropipes in Silicon Carbide Crystals: Do all Screw Dislocations have Open Cores? J. Mater. Res. 2011,
+       15, 1649–1652. [CrossRef]
+167. Chen, P.C.; Miao, W.C.; Ahmed, T.; Pan, Y.Y.; Lin, C.L.; Chen, S.C.; Kuo, H.C.; Tsui, B.Y.; Lien, D.H. Defect Inspection Techniques
+       in SiC. Nanoscale Res. Lett. 2022, 17, 30. [CrossRef]
+168. Dudley, M.; Huang, X.R.; Huang, W.; Powell, A.; Wang, S.; Neudeck, P.; Skowronski, M. The mechanism of micropipe nucleation
+       at inclusions in silicon carbide. Appl. Phys. Lett. 1999, 75, 784–786. [CrossRef]
+169. Hofmann, D.; Schmitt, E.; Bickermann, M.; Kölbl, M.; Wellmann, P.J.; Winnacker, A. Analysis on defect generation during the SiC
+       bulk growth process. Mater. Sci. Eng. 1999, 61–62, 48–53. [CrossRef]
+170. Kuhr, T.A.; Sanchez, E.K.; Skowronski, M.; Vetter, W.M.; Dudley, M. Hexagonal voids and the formation of micropipes during SiC
+       sublimation growth. J. Appl. Phys. 2001, 89, 4625–4630. [CrossRef]
+171. Sanchez, E.K.; Kuhr, T.; Heydemann, V.D.; Snyder, D.W.; Rohrer, G.S.; Skowronski, M. Formation of thermal decomposition
+       cavities in physical vapor transport of silicon carbide. J. Electron. Mater. 2000, 29, 347–352. [CrossRef]
+172. Powell, A.R.; Sumakeris, J.J.; Khlebnikov, Y.; Paisley, M.J.; Leonard, R.T.; Deyneka, E.; Gangwal, S.; Ambati, J.; Tsevtkov, V.;
+       Seaman, J.; et al. Bulk Growth of Large Area SiC Crystals. Mater. Sci. Forum 2016, 858, 5–10. [CrossRef]
+173. Sanchez, E.K.; Liu, J.Q.; De Graef, M.; Skowronski, M.; Vetter, W.M.; Dudley, M. Nucleation of threading dislocations in
+       sublimation grown silicon carbide. J. Appl. Phys. 2002, 91, 1143–1148. [CrossRef]
+174. Pirouz, P.; Zhang, M.; Demenet, J.L.; Hobgood, H.M. Transition from brittleness to ductility in SiC. J. Phys. Condens. Matter 2002,
+       14, 12929–12945. [CrossRef]
+
+[[PAGE 28]]
+Materials 2023, 16, 1014  28 of 29
+
+175. Ohtani, N.; Katsuno, M.; Fujimoto, T.; Nakabayashi, M.; Tsuge, H.; Yashiro, H.; Aigo, T.; Hirano, H.; Hoshino, T.; Ohashi, W.
+       Analysis of Basal Plane Bending and Basal Plane Dislocations in 4H-SiC Single Crystals. Jpn. J. Appl. Phys. 2009, 48, 065503.
+       [CrossRef]
+
+176. Shioura, K.; Shinagawa, N.; Izawa, T.; Ohtani, N. Structural characterization of the grown crystal/seed interface of physical vapor
+       transport grown 4H-SiC crystals using Raman microscopy and x-ray topography. J. Cryst. Growth 2019, 515, 58–65. [CrossRef]
+
+177. Gao, B.; Kakimoto, K. Three-Dimensional Modeling of Basal Plane Dislocations in 4H-SiC Single Crystals Grown by the Physical
+       Vapor Transport Method. Cryst. Growth Des. 2014, 14, 1272–1278. [CrossRef]
+
+178. Nakano, T.; Shinagawa, N.; Yabu, M.; Ohtani, N. Formation and multiplication of basal plane dislocations during physical vapor
+       transport growth of 4H-SiC crystals. J. Cryst. Growth 2019, 516, 51–56. [CrossRef]
+
+179. Stockmeier, M.; Muller, R.; Sakwe, S.A.; Wellmann, P.J.; Magerl, A. On the lattice parameters of silicon carbide. J. Appl. Phys. 2009,
+       105, 033511. [CrossRef]
+
+180. Steiner, J.; Wellmann, P.J. Impact of Mechanical Stress and Nitrogen Doping on the Defect Distribution in the Initial Stage of the
+       4H-SiC PVT Growth Process. Materials 2022, 15, 1897. [CrossRef]
+
+181. Ellefsen, O.M.; Arzig, M.; Steiner, J.; Wellmann, P.; Runde, P. Optimization of the SiC Powder Source Material for Improved
+       Process Conditions During PVT Growth of SiC Boules. Materials 2019, 12, 3272. [CrossRef]
+
+182. Steiner, J.; Arzig, M.; Hsiao, T.C.; Wellmann, P.J. Optimization of the SiC Powder Source Size Distribution for the Sublimation
+       Growth of Long Crystals Boules. Mater. Sci. Forum 2019, 963, 42–45. [CrossRef]
+
+183. Wellmann, P.; Bickermann, M.; Hofmann, D.; Kadinski, L.; Selder, M.; Straubinger, T.; Winnacker, A. In situ visualization and
+       analysis of silicon carbide physical vapor transport growth using digital X-ray imaging. J. Cryst. Growth 2000, 216, 263–272.
+       [CrossRef]
+
+184. Arzig, M.; Salamon, M.; Uhlmann, N.; Wellmann, P.J. Investigation of the Growth Kinetics of SiC Crystals during Physical Vapor
+       Transport Growth by the Application of In Situ 3D Computed Tomography Visualization. Adv. Eng. Mater. 2019, 22. [CrossRef]
+
+185. Arzig, M.; Steiner, J.; Salamon, M.; Uhlmann, N.; Wellmann, P.J. Inﬂuence of Morphological Changes in a Source Material on the
+       Growth Interface of 4h-Sic Single Crystals. Materials 2019, 12, 2591. [CrossRef] [PubMed]
+
+186. Arzig, M.; Salamon, M.; Hsiao, T.C.; Uhlmann, N.; Wellmann, P.J. Inﬂuence of the growth interface shape on the defect
+       characteristics in the facet region of 4H-SiC single crystals. J. Cryst. Growth 2020, 532, 125436. [CrossRef]
+
+187. Kitanin, E.L.; Ramm, M.S.; Ris, V.V.; Schmidt, A.A. Heat transfer through source powder in sublimation growth of SiC crystal.
+       Mater. Sci. Eng. B 1998, 55, 174–183. [CrossRef]
+
+188. Ma, R.H.; Zhang, H.; Dudley, M.; Prasad, V. Thermal system design and dislocation reduction for growth of wide band gap
+       crystals. J. Cryst. Growth 2003, 258, 318–330. [CrossRef]
+
+189. Selder, M.; Kadinski, L.; Makarov, Y.; Durst, F.; Wellmann, P.; Straubinger, T.; Hofmann, D.; Karpov, S.; Ramm, M. Global
+       numerical simulation of heat and mass transfer for SiC bulk crystal growth by PVT. J. Cryst. Growth 2000, 211, 333–338. [CrossRef]
+
+190. Wellmann, P.; Herro, Z.; Selder, M.; Durst, F.; Püsche, R.; Hundhausen, M.; Ley, L.; Winnacker, A. Investigation of mass transport
+       during SiC PVT growth using digital X-ray imaging, 13C labeling of source material and numerical modeling. Mat. Sci. Forum
+       2003, 433–436, 9–12. [CrossRef]
+
+191. Ma, R.H.; Zhang, H.; Prasad, V.; Dudley, M. Growth kinetics and thermal stress in the sublimation growth of silicon carbide.
+       Cryst. Growth Des. 2002, 2, 213–220. [CrossRef]
+
+192. Selder, M.; Kadinski, L.; Durst, F.; Straubinger, T.; Wellmann, P.; Hofmann, D. Numerical simulation of thermal stress formation
+       during PVT-growth of SiC bulk crystals. Mat. Sci. Forum 2001, 353–356, 65–68. [CrossRef]
+
+193. Gallien, B.; Albaric, M.; Duffar, T.; Kakimoto, K.; M’Hamdi, M. Study on the usage of a commercial software (Comsol-Multiphysics)
+       for dislocation multiplication model. J. Cryst. Growth 2017, 457, 60–64. [CrossRef]
+
+194. Nguyen, B.D.; Rausch, A.M.; Steiner, J.; Wellmann, P.; Sandfeld, S. On the importance of dislocation ﬂow in continuum plasticity
+       models for semiconductor materials. J. Cryst. Growth 2020, 532, 125414. [CrossRef]
+
+195. Matsunami, H.; Kimoto, T. Step-controlled epitaxial growth of SiC: High quality homoepitaxy. Mater. Sci. Eng. R-Rep. 1997,
+       20, 125–166. [CrossRef]
+
+196. Burton, W.; Cabrera, N.; Frank, F. The growth of crystals and the equilibrium structure of their surfaces. Philos. Trans. R. Soc.
+       Lond. Ser. A Math. Phys. Sci. 1951, 243, 299–358.
+
+197. Jepps, N.W.; Page, T.F. Polytypic transformations in silicon carbide. Prog. Cryst. Growth Charact. 1983, 7, 259–307. [CrossRef]
+198. Kallinger, B.; Polster, S.; Berwian, P.; Friedrich, J.; Danilewsky, A.N. Experimental veriﬁcation of the model by Klapper for 4H-SiC
+
+       homoepitaxy on vicinal substrates. J. Appl. Phys. 2013, 114, 183507. [CrossRef]
+199. Kallinger, B.; Thomas, B.; Polster, S.; Berwian, P.; Friedrich, J. Dislocation Conversion and Propagation during Homoepitaxial
+
+       Growth of 4H-SiC. Mater. Sci. Forum 2010, 645–648, 299–302. [CrossRef]
+200. Ou, H.; Ou, Y.; Argyraki, A.; Schimmel, S.; Kaiser, M.; Wellmann, P.; Linnarsson, M.K.; Jokubavicius, V.; Sun, J.; Liljedahl, R.; et al.
+
+       Advances in wide bandgap SiC for optoelectronics. Eur. Phys. J. B 2014, 87, 58. [CrossRef]
+
+[[PAGE 29]]
+Materials 2023, 16, 1014  29 of 29
+
+201. Lu, W.; Ou, Y.; Fiordaliso, E.M.; Iwasa, Y.; Jokubavicius, V.; Syväjärvi, M.; Kamiyama, S.; Petersen, P.M.; Ou, H. White light
+       emission from ﬂuorescent SiC with porous surface. Sci. Rep. 2017, 7, 9798. [CrossRef] [PubMed]
+
+202. Tarekegne, A.T.; Shi, X.; Gan, Y.; Chen, Y.; Ou, H. Dependence of Photoluminescence Emission on Excitation Power and
+       Temperature in Highly Doped 6H-SiC. Phys. Rev. Appl. 2020, 13, 064002. [CrossRef]
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.

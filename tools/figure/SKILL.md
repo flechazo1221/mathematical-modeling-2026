@@ -14,7 +14,7 @@ description: Create or revise evidence-driven statistical and scientific data fi
 3. 依据数据语义与论证目标选图；不确定或用户指定图型可能误导时读取 [chart_selection.md](references/chart-types/chart_selection.md)。不为表面多样性设置图数或图型配额。
 4. 使用最终物理尺寸绘制。颜色需色盲友好并辅以线型、标记或纹理；误差必须说明 SD、SEM、CI、样本量和检验口径。
 5. 导出 SVG，以及至少 300 DPI PNG（官方规范另有要求时从其规定）。不得通过手工修改位图改变数据表达。
-6. 运行 `scripts/check_figure.py --strict`，再检查彩色和灰度预览中的缺字、裁切、遮挡、比例、轴、单位、图例和面板一致性；失败则修改源代码并重渲。
+6. 导出前运行 `scripts/visual_qa.py` 的 `audit_layout(fig)`，导出后运行 `scripts/check_figure.py --strict`；再以论文实际显示尺寸检查彩色和灰度预览。多面板图必须逐区放大核对数值标注、图例、边框及背景层：数值文本须完整且不得与图例/边框重叠；窄柱或窄图元放不下完整文本时应外置标注并预留空间；除非重叠色块本身编码数据，否则不得叠加半透明背景，分区优先用边界线、括号或互不重叠的色块。发现问题必须改源代码、重渲并复查，不得仅凭格式检查 PASS 交付。
 
 ## 渐进加载
 

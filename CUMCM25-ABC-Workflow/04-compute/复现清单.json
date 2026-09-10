@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0",
+  "stage": "COMPUTE",
+  "seed": 20260907,
+  "parameters": {
+    "windows_cm_inv": [
+      [
+        600.0,
+        1600.0
+      ],
+      [
+        1600.0,
+        2800.0
+      ],
+      [
+        2800.0,
+        3800.0
+      ]
+    ],
+    "masks": [
+      "raw",
+      "reasoned"
+    ],
+    "angles_deg": [
+      10,
+      15
+    ],
+    "F": "n-point Hann rFFT; discrete peak from bin 2 onward; no zero padding or sub-grid interpolation",
+    "P": "401-point discrete frequency grid; no sub-grid interpolation; supplementary diagnostic only",
+    "M": "closed"
+  },
+  "commands": [
+    "python 04-compute/src/run_compute.py --smoke",
+    "python 04-compute/src/run_compute.py",
+    "python 04-compute/src/build_handoff.py"
+  ],
+  "working_directory": ".",
+  "environment": {
+    "python": "3.13.14 (tags/v3.13.14:fd17997, Jun 10 2026, 13:03:48) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "packages": {
+      "numpy": "2.5.2",
+      "matplotlib": "3.11.1",
+      "openpyxl": "unavailable (not required by the built-in XLSX reader)"
+    }
+  },
+  "inputs": [
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "17c2c7142ca1a05c63cce41e3b003856320fd69ec5ecb35eda02c7d8fe6ed835"
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "84dad8391f99a8e46c1a41af777a80be5d6fc841eaa16a085ae994798c67693a"
+    },
+    {
+      "path": "decisions/prototype-authorization.json",
+      "sha256": "2e71d5264db8edf2f30c257c45029f7c72a32f33b7a8a0f8e813e3fea67f90a1"
+    },
+    {
+      "path": "02-design/验证计划.json",
+      "sha256": "b955613e967389fad2d9ee4bc7126707713e9e1f2021987838cae5864d8ccfe7"
+    },
+    {
+      "path": "03-prototype/预注册规则.json",
+      "sha256": "65aa8491340c746aa4ce12cd0e5d127353fd8fdd4990ba45620c4f344ca22747"
+    },
+    {
+      "path": "03-prototype/run_prototypes.py",
+      "sha256": "47c5ce19830d5c2efbcf5cfbd7341830f2d2a9b9b05cc4345f1b73bfa31f2e4b"
+    },
+    {
+      "path": "input/B题/附件/附件1.xlsx",
+      "sha256": "b42f8bdabe7497951284cd044386c3cdf9d349b5e8ef4baaa0336e65ff84c67b"
+    },
+    {
+      "path": "input/B题/附件/附件2.xlsx",
+      "sha256": "24b3113e80d5ec5458ba4f447df9ed185578481e8b0081bdf0673689505e49d0"
+    },
+    {
+      "path": "input/B题/附件/附件3.xlsx",
+      "sha256": "79e9f66a00409f1d1130d9f4f3d76b4d5e5a1ccd3ac2d24dc0af8ecc583d0ec8"
+    },
+    {
+      "path": "input/B题/附件/附件4.xlsx",
+      "sha256": "9cf1400404c4560958da06685beb8c2e1e4df5918a6e13863663a54440ba12e3"
+    }
+  ],
+  "outputs_before_manifest": [
+    {
+      "path": "04-compute/diagnostic-figures/diagnostic_fft_pressure.png",
+      "sha256": "58fcc22214a74f3fe03680aa52bd6dd2f3a0e69f813c4627d58a86e5394dbaad"
+    },
+    {
+      "path": "04-compute/diagnostic-figures/diagnostic_fft_pressure.svg",
+      "sha256": "3d35ff41565a61b569e9215c7f4b0b308e03596b399cd6a95e53b139d6176f09"
+    },
+    {
+      "path": "04-compute/diagnostic-figures/diagnostic_observed_q_all.png",
+      "sha256": "8040ecd124a11ab0d57b90866895c8754c9ff20084a1dd6e6dbafc653a56638f"
+    },
+    {
+      "path": "04-compute/diagnostic-figures/diagnostic_observed_q_all.svg",
+      "sha256": "45138f3469dfee976c1744df6c586b9be04898a0ca45ce186c0419fc029259eb"
+    },
+    {
+      "path": "04-compute/diagnostic-figures/diagnostic_synthetic_recovery.png",
+      "sha256": "76bb508d123b2e68e0bc5892cf93a13c8f8960049604083b8467195ab0e7fef5"
+    },
+    {
+      "path": "04-compute/diagnostic-figures/diagnostic_synthetic_recovery.svg",
+      "sha256": "73abaaaca1f12bd70eb98b32c2a503d8ba449236c2bce69cbc8d0e3ffd04056f"
+    },
+    {
+      "path": "04-compute/logs/full-run.json",
+      "sha256": "34617cae0804aa5c25626febe6ea7d7be16e577a39281ca8f144a2cdc3f6f786"
+    },
+    {
+      "path": "04-compute/logs/p1-independent-review.json",
+      "sha256": "06e071ddb0b0dd902e1a48ca4462f90f327d0b6ba762920a543948c1de2f6bb3"
+    },
+    {
+      "path": "04-compute/logs/p1-smoke.json",
+      "sha256": "b5652b1ab8e57a25abefec33e01e3d64bf84c8e229525ae0e56d88d5703e0c8e"
+    },
+    {
+      "path": "04-compute/logs/恢复审查记录.md",
+      "sha256": "cb19b051712ebed56d0f35782c93c1330a7029ee4cdb17a264d0dbcdfe7e29c5"
+    },
+    {
+      "path": "04-compute/results/M_diagnostic.json",
+      "sha256": "e1ebdfb975cc4c576b5001f5938dbfcd0d0d5bbd5f8f777484c7364ff91cd7dc"
+    },
+    {
+      "path": "04-compute/results/conditional_sensitivity.csv",
+      "sha256": "d0637c4e9ff2f4083abac9b4fe9a5b814074dd3654d536467b8aae629e9d545b"
+    },
+    {
+      "path": "04-compute/results/failure_summary.csv",
+      "sha256": "9b334d26c1fe425936a4ac3fb48edc0f0732362f535f3514e284e54e78bab95e"
+    },
+    {
+      "path": "04-compute/results/fft_pressure_test.csv",
+      "sha256": "3626e8794fe23fa9ca9f3b3aa1f56ddd92513a13d6d36d5d967d26c1b7f6a0c3"
+    },
+    {
+      "path": "04-compute/results/fft_spectrum_source.csv",
+      "sha256": "510bef8710ee6897e79e7c0e5bf6101577432a1450bbdcfb679fde0478b88136"
+    },
+    {
+      "path": "04-compute/results/mask_exclusions.csv",
+      "sha256": "471305d083f80ef0e7b43842265b36483a7525201231cffa9cc2fd43915d3cb4"
+    },
+    {
+      "path": "04-compute/results/observed_all_models.csv",
+      "sha256": "99d84af1a96feaca5ae575fcff4629805da82e6441b9dd1a9fb69375b4a285e5"
+    },
+    {
+      "path": "04-compute/results/structural_feasibility.json",
+      "sha256": "19abf3e78664b2275fa2d75719597fcb70e56739fb002cac2ea7f868aa576afb"
+    },
+    {
+      "path": "04-compute/results/synthetic_recovery.csv",
+      "sha256": "9e1c458a55269250c3fa7a65b3e00506ff41d61acf7df126d97f043d5f1417aa"
+    },
+    {
+      "path": "04-compute/results/validation_metrics.csv",
+      "sha256": "e724e0b28115086fb7c9b61edd173422bd361926fbb89b4ff0d4245b2274f59d"
+    },
+    {
+      "path": "04-compute/src/build_handoff.py",
+      "sha256": "6fff2395b28afd301a301232e886488d1b525d32126001b33141b858083b01a8"
+    },
+    {
+      "path": "04-compute/src/run_compute.py",
+      "sha256": "aa63435a9cc88c42ec5df29e8c18a939d16d20c0fd77d438caeedacecb37e623"
+    },
+    {
+      "path": "04-compute/证据索引.json",
+      "sha256": "9fca31b620b0fd1603f6fc8274e95c6b7c51c708d8ad9c9d299d80af4cacbdad"
+    }
+  ],
+  "key_values": {
+    "runtime_s": 5.973626699997112,
+    "row_counts": {
+      "observed": 72,
+      "synthetic": 432,
+      "validations": 84,
+      "mask_exclusions": 266,
+      "fft_spectrum_source": 26389,
+      "conditional_sensitivity": 48,
+      "fft_pressure": 72
+    },
+    "structural": {
+      "F_vs_B_synthetic_median_error_ratio": 0.0003650361736292037,
+      "F_vs_B_win_rate": 0.7986111111111112,
+      "F_recovery_pass_rate": 1.0,
+      "F_structure_feasible": true,
+      "interpretation": "algorithm recovery under approved synthetic model; not observed true accuracy"
+    },
+    "maximum_fft_pressure_relative_change": {
+      "hann_n_approved": 0.0,
+      "hann_zp8_diagnostic": 0.12500000000000008,
+      "rectangular_zp8": 0.18749999999999994
+    }
+  }
+}
