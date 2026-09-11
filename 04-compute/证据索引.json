@@ -41,9 +41,10 @@
     },
     {
       "id": "C-ROBUST",
-      "claim": "Boundary, empirical-law, terminal-window and radius-interpolation pressure tests are reported without claiming causal or observational validation.",
+      "claim": "Boundary, empirical-law, terminal-window and radius-interpolation pressure tests are reported without claiming causal or observational validation. Formerly 72 h-censored cases were continued to their first threshold crossing.",
       "evidence": [
-        "04-compute/results/sensitivity.csv"
+        "04-compute/results/sensitivity.csv",
+        "04-compute/results/sensitivity-extended.csv"
       ]
     }
   ],

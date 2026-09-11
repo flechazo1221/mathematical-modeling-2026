@@ -1,18 +1,19 @@
 {
   "schema_version": "1.0",
   "project_id": "高教社杯全国大学生数学建模竞赛-2026",
-  "status": "RUNNING",
-  "current_stage": "EVIDENCE",
+  "status": "WAITING_FOR_TEAM",
+  "current_stage": "H3",
   "completed_stages": [
     "SELECTION",
     "INTAKE",
     "LITERATURE",
     "DESIGN",
     "PROTOTYPE",
-    "COMPUTE"
+    "COMPUTE",
+    "EVIDENCE"
   ],
   "active_thread_id": null,
-  "next_stage": "EVIDENCE",
+  "next_stage": "H3",
   "blocking_items": [],
-  "updated_at": "2026-09-11T18:10:12+08:00"
+  "updated_at": "2026-09-11T22:03:44+08:00"
 }

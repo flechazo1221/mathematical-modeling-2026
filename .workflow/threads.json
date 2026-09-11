@@ -62,6 +62,15 @@
         "host_id": "local",
         "finished_at": "2026-09-11T18:10:12+08:00"
       }
+    ],
+    "EVIDENCE": [
+      {
+        "thread_id": "01a090be-cb1e-7590-ae65-efeddb2c6cf4",
+        "started_at": "2026-09-11T21:53:46+08:00",
+        "status": "PASS",
+        "host_id": "local",
+        "finished_at": "2026-09-11T22:03:44+08:00"
+      }
     ]
   }
 }

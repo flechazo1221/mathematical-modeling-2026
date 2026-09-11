@@ -633,6 +633,54 @@ def full_suite(log):
     return summary,convergence,sensitivity,{"q1":q1,"q2":q2,"q2_const":q2_const,"q2_m4":q2_m4,"q3":q3,"q3_m4":q3_m4,"q4":q4,"q4_moving":q4_moving,"q4_abl":q4_abl}
 
 
+def extended_threshold_suite(log):
+    """Continue the formerly 72 h-censored sensitivity cases to first crossing.
+
+    The problem statement places no 72 h cap on Q3/Q4.  After the available
+    inputs end, the already-approved continuation remains in force: the
+    chamber boundary uses its terminal-window value and Q4 radius holds the
+    final observed radius.  Thirty days is only a numerical fail-safe; every
+    accepted row must stop by the threshold event, not by that guard.
+    """
+    guard_s = 30 * 24 * 3600
+    cases = [
+        ("Q3", "pref", "low", 0.8,
+         RunConfig("Q3-sens-pref-low-extended", 10, 20, 60, guard_s, 3, "M3",
+                   pref=0.8, stop_threshold=.15-1e-6, sample_every=3600)),
+        ("Q3", "exponent", "high", 1.2,
+         RunConfig("Q3-sens-exponent-high-extended", 10, 20, 60, guard_s, 3, "M3",
+                   exponent=1.2, stop_threshold=.15-1e-6, sample_every=3600)),
+        ("Q3", "combined_boundary_empirical", "low", "(0.8, 0.8, 0.8, 1.2)",
+         RunConfig("Q3-combination-low-extended", 10, 20, 60, guard_s, 3, "M3",
+                   h_mult=.8, hm_mult=.8, pref=.8, exponent=1.2,
+                   stop_threshold=.15-1e-6, sample_every=3600)),
+        ("Q4", "combined_boundary_empirical", "low", "(0.8, 0.8, 0.8, 1.2)",
+         RunConfig("Q4-combination-low-extended", 10, 20, 60, guard_s, 4, "M3",
+                   moving_impl="reference", h_mult=.8, hm_mult=.8, pref=.8,
+                   exponent=1.2, stop_threshold=.15-1e-6, sample_every=3600)),
+    ]
+    rows = []
+    for scope, factor, level, value, cfg in cases:
+        log.write(f"START {cfg.label} {datetime.now(timezone.utc).isoformat()}\n"); log.flush()
+        run = simulate(cfg); metrics = run["metrics"]
+        if metrics["threshold_bracket"] is None:
+            raise RuntimeError(f"{cfg.label} did not reach threshold before 30-day safety guard")
+        row = {
+            "scope": scope, "factor": factor, "level": level, "value": value,
+            "interpolated_event_time_s": metrics["interpolated_event_time_s"],
+            "reported_event_time_s": metrics["reported_event_time_s"],
+            "event_time_h": metrics["reported_event_time_s"] / 3600,
+            "final_max_C": metrics["final_max_C"],
+            "final_mean_C": metrics["final_mean_C"],
+            "threshold": .15-1e-6,
+            "post_72h_boundary_policy": "terminal-window chamber values; final observed Q4 radius held constant",
+        }
+        rows.append(row)
+        log.write("DONE "+json.dumps(row,ensure_ascii=False)+"\n"); log.flush()
+    save_csv(RESULTS/"sensitivity-extended.csv", rows)
+    return rows
+
+
 def make_plots(convergence,sensitivity,key):
     def line_plot(path, series, ylabel, threshold=None):
         w,h=1100,650; pad=(100,45,55,90); im=Image.new("RGB",(w,h),"white"); d=ImageDraw.Draw(im)
@@ -706,12 +754,15 @@ def write_metadata(p1rows,summary,convergence,sensitivity,key):
 
 
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument("--mode",choices=["p1","full"],default="full"); args=ap.parse_args()
+    ap=argparse.ArgumentParser(); ap.add_argument("--mode",choices=["p1","full","extended"],default="full"); args=ap.parse_args()
     RESULTS.mkdir(parents=True,exist_ok=True); FIGURES.mkdir(parents=True,exist_ok=True); LOGS.mkdir(parents=True,exist_ok=True)
-    logpath=LOGS/("p1.log" if args.mode=="p1" else "full.log")
+    logpath=LOGS/("p1.log" if args.mode=="p1" else "extended.log" if args.mode=="extended" else "full.log")
     with logpath.open("a" if args.mode=="full" else "w",encoding="utf-8") as log:
         log.write("\n=== NEW RUN ===\n")
         log.write(f"command={' '.join(sys.argv)}\npython={sys.version}\nplatform={platform.platform()}\n")
+        if args.mode=="extended":
+            extended_threshold_suite(log)
+            return
         p1rows=p1_suite(log)
         if args.mode=="p1": return
         summary,conv,sens,key=full_suite(log); make_plots(conv,sens,key); write_metadata(p1rows,summary,conv,sens,key)

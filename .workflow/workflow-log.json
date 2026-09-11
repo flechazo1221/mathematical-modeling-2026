@@ -215,6 +215,34 @@
         "03-prototype/supplemental-extensions",
         "04-compute/supplemental-extensions"
       ]
+    },
+    {
+      "event": "STAGE_STARTED",
+      "at": "2026-09-11T21:53:46+08:00",
+      "stage": "EVIDENCE",
+      "thread_id": "01a090be-cb1e-7590-ae65-efeddb2c6cf4"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-11T22:03:44+08:00",
+      "stage": "EVIDENCE",
+      "affected_files": [
+        "05-evidence/handoff.json"
+      ]
+    },
+    {
+      "event": "STAGE_COMPLETED",
+      "at": "2026-09-11T22:03:44+08:00",
+      "stage": "EVIDENCE",
+      "next_stage": "H3"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-11T22:40:59+08:00",
+      "stage": "EVIDENCE",
+      "affected_files": [
+        "05-evidence/正式图表需求.json"
+      ]
     }
   ]
 }

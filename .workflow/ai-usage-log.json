@@ -108,6 +108,26 @@
       ],
       "human_review": "等待团队审阅补充实验结论及论文采用边界",
       "recorded_at": "2026-09-11T19:48:25+08:00"
+    },
+    {
+      "stage": "EVIDENCE",
+      "tool_or_model": "Codex task (configured model), math-modeling-evidence",
+      "purpose": "整理Q1-Q4主张证据、事实清单、图表需求与H3中立选择包，并纳入不替换M1-M4的补充实验限制",
+      "affected_files": [
+        "05-evidence/handoff.json"
+      ],
+      "human_review": "等待H3团队审核主张、图表与叙事",
+      "recorded_at": "2026-09-11T22:03:44+08:00"
+    },
+    {
+      "stage": "EVIDENCE",
+      "tool_or_model": "Codex task (configured model), math-modeling-evidence",
+      "purpose": "按团队要求扩充H3逐点图表设计，从9项细化为38项可追溯需求",
+      "affected_files": [
+        "05-evidence/正式图表需求.json"
+      ],
+      "human_review": "等待H3团队选择叙事方案与最小集/扩展集",
+      "recorded_at": "2026-09-11T22:40:59+08:00"
     }
   ]
 }
