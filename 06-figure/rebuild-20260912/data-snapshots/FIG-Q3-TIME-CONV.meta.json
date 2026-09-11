@@ -1,0 +1,15 @@
+{
+  "figure_id": "FIG-Q3-TIME-CONV",
+  "snapshot_sha256": "7a8e697954ac3d7bc85553c0470ae981208e457eae11cad44502821f2f0bf21a",
+  "sources": [
+    {
+      "path": "04-compute/results/convergence.csv",
+      "sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f"
+    },
+    {
+      "path": "04-compute/results/validation-register.csv",
+      "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb"
+    }
+  ],
+  "created_from": "authoritative upstream data only; no 06-figure source permitted"
+}

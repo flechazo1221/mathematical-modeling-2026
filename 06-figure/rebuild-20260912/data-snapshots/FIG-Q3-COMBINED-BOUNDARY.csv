@@ -1,0 +1,3 @@
+﻿scope,factor,level,value,t_star_s,final_max_C,final_mean_C,crossed
+Q3,combined_boundary_empirical,low,"(0.8, 0.8, 0.8, 1.2)",259200.0,0.1824933498937684,0.1509152061417538,False
+Q3,combined_boundary_empirical,high,"(1.2, 1.2, 1.2, 0.8)",111780.0,0.149991380789267,0.1188876554353132,True

@@ -1,0 +1,41 @@
+{
+  "figure_id": "FIG-Q3-SENS-ONEFACTOR",
+  "claim_ids": [
+    "Q3 / Q3-ROB-01"
+  ],
+  "question": "单因素扰动如何改变达标或造成失败？",
+  "source_files": [
+    {
+      "path": "04-compute/results/sensitivity.csv",
+      "sha256": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf"
+    }
+  ],
+  "x": {
+    "definition": "x=scenario; y=t_star(h),72h右删失"
+  },
+  "y": {
+    "definition": "x=scenario; y=t_star(h),72h右删失"
+  },
+  "groups": [
+    "Q3全部单因素"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "pref-low、exponent-high未达标"
+  ],
+  "must_show_failures": true,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q3-SENS-ONEFACTOR.csv",
+    "sha256": "085287c7efa82f3020cc1a1782f5b1048160c2e70e77601c05f07fe7da2f146b"
+  }
+}

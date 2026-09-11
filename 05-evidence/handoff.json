@@ -17,8 +17,8 @@
     {"path":"02-design/contracts/model-q4-m1-reference.json","sha256":"88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5"},
     {"path":"02-design/contracts/model-q4-m2-moving-fv.json","sha256":"c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f"},
     {"path":"03-prototype/handoff.json","sha256":"8d4f161cc4b4b3b84f679273f23db5bf674f610754727efaf7a53f7635ff07e6"},
-    {"path":"04-compute/handoff.json","sha256":"cb093e7497eb4ea4ad53c87c9345ab803473509dde686535f083b91f37bce19e"},
-    {"path":"04-compute/复现清单.json","sha256":"96723addf431f681d458787a2c92f7761ac53802e9b0ae3308e53df336fe66bc"},
+    {"path":"04-compute/handoff.json","sha256":"21b736c942d5aa79ea08c4da9a93129854271f101c89c426dcbb79d9da73eb95"},
+    {"path":"04-compute/复现清单.json","sha256":"291f65c629479ad44b2ef49096f525254b0c3a68653b3ee42ccb3c5db3d1bdee"},
     {"path":"04-compute/证据索引.json","sha256":"1c33297088e7505845dbccea6bcdef4a8b8c31ff3855324e0ea85ca44d27a9f3"},
     {"path":"04-compute/results/key-metrics.json","sha256":"584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"},
     {"path":"04-compute/results/validation-register.csv","sha256":"cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb"},
@@ -85,5 +85,5 @@
     "A real team member reviews H3-选择包.md and records the selected claims, narrative, minimum/extended set, main-text/appendix allocation, supplemental S0-S3 choice and limitations in a new H3 decision.",
     "Stop at H3; do not create publication figures or draft the full paper before TEAM_APPROVED H3."
   ],
-  "completed_at": "2026-09-11T23:30:00+08:00"
+  "completed_at": "2026-09-12T01:01:31.5042601+08:00"
 }

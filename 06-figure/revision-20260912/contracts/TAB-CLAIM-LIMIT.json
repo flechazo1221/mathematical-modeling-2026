@@ -1,0 +1,35 @@
+{
+  "figure_id": "TAB-CLAIM-LIMIT",
+  "claim_ids": [
+    "全部主张"
+  ],
+  "question": "每个结论能说到哪一步？",
+  "source_files": [
+    {
+      "path": "05-evidence/主张证据映射.json",
+      "sha256": "f2f3eab255f3e0a13fdc1f76d0e2c4e0d75e20023bd4c1203f11f07b54b83fc1"
+    }
+  ],
+  "x": null,
+  "y": null,
+  "groups": [],
+  "uncertainty": null,
+  "required_comparisons": [
+    "主张—证据—限制矩阵"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "recompute model",
+    "change metric",
+    "omit failures",
+    "present conditional simulation as observation"
+  ],
+  "target_formats": [
+    "svg"
+  ],
+  "minimum_dpi": 600,
+  "placement": "附录",
+  "mandatory_limit": "保持主张类别边界",
+  "snapshot": "06-figure/data-snapshots/TAB-CLAIM-LIMIT.csv",
+  "snapshot_sha256": "797dc5c44ce125fa67d4ba06c9012f66924079fe3567bc0762f687c66b3f95dc"
+}

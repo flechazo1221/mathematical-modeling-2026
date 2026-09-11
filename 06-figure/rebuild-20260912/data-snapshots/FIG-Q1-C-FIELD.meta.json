@@ -1,0 +1,11 @@
+{
+  "figure_id": "FIG-Q1-C-FIELD",
+  "snapshot_sha256": "370c0da992b7ada9cdcc517d33771a8908b0c7d357eae414e7af2f9541928436",
+  "sources": [
+    {
+      "path": "04-compute/results/q1-samples.csv",
+      "sha256": "e214e5f23b1c1787357c59ec841791d461414190d5b72379022c2e7db47bdc8d"
+    }
+  ],
+  "created_from": "authoritative upstream data only; no 06-figure source permitted"
+}

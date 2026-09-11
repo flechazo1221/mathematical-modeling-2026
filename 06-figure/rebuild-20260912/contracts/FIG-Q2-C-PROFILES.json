@@ -1,0 +1,41 @@
+{
+  "figure_id": "FIG-Q2-C-PROFILES",
+  "claim_ids": [
+    "Q2 / Q2-OBS-01"
+  ],
+  "question": "M3在0.5–3h的水分剖面如何变化？",
+  "source_files": [
+    {
+      "path": "04-compute/results/q2-samples.csv",
+      "sha256": "bf287f00761f6cba72f225c455d0ee1290d546874d135a7936ed8a4567dd4f21"
+    }
+  ],
+  "x": {
+    "definition": "x=radius_cm(cm); y=C(kg/kg干基)"
+  },
+  "y": {
+    "definition": "x=radius_cm(cm); y=C(kg/kg干基)"
+  },
+  "groups": [
+    "全部登记时刻"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "3h中心1.72784639；表面0.99560298"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q2-C-PROFILES.csv",
+    "sha256": "a84c14955ec38a4de587203d6a9d3847678cdaf7b6850f6471eb1345410195ec"
+  }
+}

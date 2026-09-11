@@ -1,0 +1,41 @@
+{
+  "figure_id": "FIG-Q3-COMBINED-BOUNDARY",
+  "claim_ids": [
+    "Q3 / Q3-ROB-01"
+  ],
+  "question": "组合边界是否出现72h未达标？",
+  "source_files": [
+    {
+      "path": "04-compute/results/sensitivity.csv",
+      "sha256": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf"
+    }
+  ],
+  "x": {
+    "definition": "x=combined scenario; y=time(h)"
+  },
+  "y": {
+    "definition": "x=combined scenario; y=time(h)"
+  },
+  "groups": [
+    "combined_boundary_empirical全部层级"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "combined-low未达标；259200s上限"
+  ],
+  "must_show_failures": true,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q3-COMBINED-BOUNDARY.csv",
+    "sha256": "6e325dab2b174e38b30662d9d23a01c2ab72266c0ab2756c63cbdfb3e95076b5"
+  }
+}

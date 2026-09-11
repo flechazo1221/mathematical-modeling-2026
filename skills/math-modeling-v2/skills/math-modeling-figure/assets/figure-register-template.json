@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "status": "PROPOSED",
+  "project": "",
+  "route_confirmed": false,
+  "coverage": {
+    "model_domain_schematic": {"status": "required", "reason": "Explain geometry, coordinates, and boundaries."},
+    "model_hierarchy_schematic": {"status": "required", "reason": "Explain model nesting and mechanisms."},
+    "input_data_processing": {"status": "required", "reason": "Show consequential preprocessing from raw observations."},
+    "core_results": {"status": "required", "reason": "Answer approved subproblems."},
+    "validation_robustness": {"status": "required", "reason": "Expose numerical quality and failure boundaries."}
+  },
+  "global_visual_spec": {
+    "language": "zh-CN",
+    "fonts": {"cjk": "Source Han Serif SC", "latin": "Times New Roman", "math": "STIX Two Math"},
+    "label_policy": "panel letters (a), (b); variables italic; units upright and parenthesized",
+    "color_semantics": {},
+    "grayscale": "Every group remains distinguishable by line style, marker, hatch, boundary, or direct label.",
+    "accessibility": "Colorblind-safe palette; no meaning encoded by color alone; minimum final-size text 7.5 pt.",
+    "dimensions_mm": {"single_column_width": 80, "double_column_width": 166, "max_height": 205},
+    "formats": ["svg", "png@300dpi"]
+  },
+  "items": [
+    {
+      "id": "FIG-Q1-EXAMPLE",
+      "kind": "figure",
+      "subproblem": "Q1",
+      "claim_or_question": "Exact question answered by this item.",
+      "source_data": [{"path": "relative/path.csv", "sha256": "TBD", "fields": ["x", "y"]}],
+      "model_result_version": "model/version or immutable result ID",
+      "evidence_class": "quantitative",
+      "visual_family": "line-chart",
+      "axes": [{"axis": "x", "label": "Time", "unit": "s", "scale": "linear"}, {"axis": "y", "label": "Temperature", "unit": "degC", "scale": "linear"}],
+      "groups": [],
+      "uncertainty": {"display": "none", "definition": "not available", "sample_size": null},
+      "annotations": [],
+      "expected_reading": "One sentence stating what the reader should see.",
+      "argument_role": "core_results",
+      "information_gain": "Why this visual changes understanding beyond a sentence or table.",
+      "render_or_table_reason": "Why a figure is superior to a table/sentence, or why this item is a table.",
+      "generation": {"tool": "MATLAB", "formats": ["svg", "png@300dpi"]},
+      "placement": "body",
+      "provenance": {"owner": "team", "privacy": "internal", "license": "team-generated"},
+      "limitations": ["State the evidence boundary."],
+      "prohibited_interpretations": ["State what this item cannot establish."],
+      "confirmation": "PENDING"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "figure_id": "FIG-Q2-V02-MARGIN",
+  "claim_ids": [
+    "Q2 / Q2-OBS-02"
+  ],
+  "question": "V02离验收边界多近？",
+  "source_files": [
+    {
+      "path": "04-compute/results/convergence.csv",
+      "sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f"
+    },
+    {
+      "path": "04-compute/results/validation-register.csv",
+      "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb"
+    }
+  ],
+  "x": {
+    "definition": "x=absolute_change(kg/kg干基); y=V02"
+  },
+  "y": {
+    "definition": "x=absolute_change(kg/kg干基); y=V02"
+  },
+  "groups": [
+    "观测值与5e-5线"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "4.00114e-5；5e-5；剩余裕量"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q2-V02-MARGIN.csv",
+    "sha256": "701af799e02b4b2f26bc948b8ed6902045f567be4412a31c8cbfa58f783b9549"
+  }
+}

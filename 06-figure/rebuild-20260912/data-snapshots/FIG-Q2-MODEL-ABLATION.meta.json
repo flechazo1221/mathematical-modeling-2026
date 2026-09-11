@@ -1,0 +1,11 @@
+{
+  "figure_id": "FIG-Q2-MODEL-ABLATION",
+  "snapshot_sha256": "6f9dd5e91af21297fd94794af20c75fb612cacc336f8f184badbf9deb9ccdd8e",
+  "sources": [
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"
+    }
+  ],
+  "created_from": "authoritative upstream data only; no 06-figure source permitted"
+}

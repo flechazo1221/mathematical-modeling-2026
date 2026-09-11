@@ -1,0 +1,45 @@
+{
+  "figure_id": "FIG-Q4-DRY-SOLID-CONTINUITY",
+  "claim_ids": [
+    "Q4 / Q4-DED-01"
+  ],
+  "question": "干固体、局部连续性与几何是否一致？",
+  "source_files": [
+    {
+      "path": "04-compute/results/run-summary.csv",
+      "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"
+    },
+    {
+      "path": "04-compute/results/validation-register.csv",
+      "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb"
+    }
+  ],
+  "x": {
+    "definition": "x=metric; y=error/residual(-,log;0单标)"
+  },
+  "y": {
+    "definition": "x=metric; y=error/residual(-,log;0单标)"
+  },
+  "groups": [
+    "inventory,continuity,geometry"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "4.441e-16；2.384e-13；0"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-DRY-SOLID-CONTINUITY.csv",
+    "sha256": "022f55bb5480b31bbd3c9e84fa47c31563127410d88df3282f8aab51611b5e74"
+  }
+}

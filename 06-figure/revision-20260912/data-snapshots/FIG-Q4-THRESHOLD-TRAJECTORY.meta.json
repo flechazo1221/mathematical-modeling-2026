@@ -1,0 +1,19 @@
+{
+  "figure_id": "FIG-Q4-THRESHOLD-TRAJECTORY",
+  "snapshot": "06-figure/data-snapshots/FIG-Q4-THRESHOLD-TRAJECTORY.csv",
+  "snapshot_sha256": "16e83f9d135e255cb154561a9fa4fa1496177a0c752224ef9832f9d621c5d15a",
+  "sources": [
+    {
+      "path": "04-compute/results/q4-threshold-trajectory.csv",
+      "sha256": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8"
+    }
+  ],
+  "rows": 3065,
+  "columns": [
+    "time_s",
+    "max_C",
+    "mean_C",
+    "center_C",
+    "surface_C"
+  ]
+}

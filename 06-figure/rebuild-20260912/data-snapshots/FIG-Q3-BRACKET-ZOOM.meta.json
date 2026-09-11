@@ -1,0 +1,15 @@
+{
+  "figure_id": "FIG-Q3-BRACKET-ZOOM",
+  "snapshot_sha256": "433dc4bd5e77fccba0fb37d11c46d7b8d684a0467e5af252e429f7ddecfc77c4",
+  "sources": [
+    {
+      "path": "04-compute/results/q3-threshold-trajectory.csv",
+      "sha256": "68d78e1922d192eac3d74b6056713b595371c29447c52ea37cc4874c1898f244"
+    },
+    {
+      "path": "04-compute/results/run-summary.csv",
+      "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"
+    }
+  ],
+  "created_from": "authoritative upstream data only; no 06-figure source permitted"
+}

@@ -1,0 +1,1990 @@
+{
+  "schema_version": "1.0",
+  "status": "VALIDATED",
+  "project": "CUMCM2026 A题正式图件修订",
+  "route_confirmed": true,
+  "global_visual_spec": {
+    "language": "zh-CN",
+    "fonts": {
+      "cjk": "Microsoft YaHei",
+      "latin": "Times New Roman",
+      "math": "STIX Two Math"
+    },
+    "label_policy": "中文轴标题；变量与单位并列；关键数值直接标注；不设装饰性总标题",
+    "color_semantics": {
+      "primary": "#0072B2",
+      "comparison": "#E69F00",
+      "failure": "#D55E00",
+      "neutral": "#666666"
+    },
+    "grayscale": "颜色之外同时使用线型、marker、空心符号或直接标签；灰度预览逐图检查。",
+    "accessibility": "Okabe-Ito 色盲安全语义；任何结论不只依赖颜色；最终尺寸最小文字7.5 pt。",
+    "dimensions_mm": {
+      "single_column_width": 80,
+      "double_column_width": 166,
+      "max_height": 205
+    },
+    "formats": [
+      "svg",
+      "png@600dpi"
+    ]
+  },
+  "items": [
+    {
+      "id": "FIG-Q1-C-FIELD",
+      "kind": "figure",
+      "subproblem": "Q1",
+      "claim_or_question": "含水率径向非均匀性如何形成？",
+      "source_data": [
+        {
+          "path": "04-compute/results/q1-samples.csv",
+          "sha256": "e214e5f23b1c1787357c59ec841791d461414190d5b72379022c2e7db47bdc8d",
+          "fields": [
+            "time_s",
+            "radius_cm",
+            "C_kg_per_kg"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "多时刻径向剖面",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=radius_cm(cm); y=C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=radius_cm(cm); y=C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "全部登记时刻"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "1800s中心2.5499915369；表面1.5101482988"
+      ],
+      "expected_reading": "含水率径向非均匀性如何形成？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "模型场，非实测"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q1-END-EFFECT",
+      "kind": "figure",
+      "subproblem": "Q1",
+      "claim_or_question": "二维端面效应使总体含水率改变多少？",
+      "source_data": [
+        {
+          "path": "04-compute/results/run-summary.csv",
+          "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "fields": [
+            "label",
+            "final_mean_C",
+            "scope",
+            "family",
+            "metric",
+            "absolute_change"
+          ]
+        },
+        {
+          "path": "04-compute/results/convergence.csv",
+          "sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f",
+          "fields": [
+            "label",
+            "final_mean_C",
+            "scope",
+            "family",
+            "metric",
+            "absolute_change"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "M1/M2哑铃图",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=final_mean_C(kg/kg干基); y=model",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=final_mean_C(kg/kg干基); y=model",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "Q1-M1-base,Q1-M2-base"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "差0.0185457085；1800s"
+      ],
+      "expected_reading": "二维端面效应使总体含水率改变多少？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "模型差异非精度提升"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q2-C-PROFILES",
+      "kind": "figure",
+      "subproblem": "Q2",
+      "claim_or_question": "M3在0.5–3h的水分剖面如何变化？",
+      "source_data": [
+        {
+          "path": "04-compute/results/q2-samples.csv",
+          "sha256": "bf287f00761f6cba72f225c455d0ee1290d546874d135a7936ed8a4567dd4f21",
+          "fields": [
+            "time_s",
+            "radius_cm",
+            "C_kg_per_kg"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "多时刻径向剖面",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=radius_cm(cm); y=C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=radius_cm(cm); y=C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "全部登记时刻"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "3h中心1.72784639；表面0.99560298"
+      ],
+      "expected_reading": "M3在0.5–3h的水分剖面如何变化？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "条件仿真非拟合"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q2-MODEL-ABLATION",
+      "kind": "figure",
+      "subproblem": "Q2",
+      "claim_or_question": "M2/M3/M4在3h终值有何差异？",
+      "source_data": [
+        {
+          "path": "04-compute/results/key-metrics.json",
+          "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91",
+          "fields": [
+            "q2_m2_constant_final_max_C",
+            "q2_m3_final_max_C",
+            "q2_m4_final_max_C"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "三模型点图",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=model; y=final_max_C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=model; y=final_max_C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "M2常物性,M3主路线,M4消融"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "2.1599687487；1.7278463920；1.7645199232"
+      ],
+      "expected_reading": "M2/M3/M4在3h终值有何差异？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "不代表经验准确率排序"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q2-GRID-CONV",
+      "kind": "figure",
+      "subproblem": "Q2",
+      "claim_or_question": "M3终值随网格如何收敛？",
+      "source_data": [
+        {
+          "path": "04-compute/results/field-grid-convergence.csv",
+          "sha256": "36e8cd85789d68c6c07efb304441425bd7948430473fbd14593c6c3fef3d57f5",
+          "fields": [
+            "scope",
+            "family",
+            "nr",
+            "nz",
+            "metric",
+            "value",
+            "adjacent_change"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "网格收敛图",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=nr×nz; y=final_max_C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=nr×nz; y=final_max_C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "Q2 M3网格层级"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "4.00114e-5；阈值5e-5"
+      ],
+      "expected_reading": "M3终值随网格如何收敛？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "必须标窄裕量PASS"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q3-THRESHOLD-TRAJECTORY",
+      "kind": "figure",
+      "subproblem": "Q3",
+      "claim_or_question": "全域最大含水率何时接近判据？",
+      "source_data": [
+        {
+          "path": "04-compute/results/q3-threshold-trajectory.csv",
+          "sha256": "68d78e1922d192eac3d74b6056713b595371c29447c52ea37cc4874c1898f244",
+          "fields": [
+            "time_s",
+            "max_C",
+            "mean_C",
+            "center_C",
+            "surface_C"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "全程阈值轨迹",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=time(h); y=C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=time(h); y=C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "max/mean/center/surface"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "判据0.15-1e-6；206820s"
+      ],
+      "expected_reading": "全域最大含水率何时接近判据？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "非精确物理真值"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q3-BRACKET-ZOOM",
+      "kind": "figure",
+      "subproblem": "Q3",
+      "claim_or_question": "插值时刻如何由前后点夹逼？",
+      "source_data": [
+        {
+          "path": "04-compute/results/q3-threshold-trajectory.csv",
+          "sha256": "68d78e1922d192eac3d74b6056713b595371c29447c52ea37cc4874c1898f244",
+          "fields": [
+            "time_s",
+            "max_C",
+            "threshold_bracket",
+            "interpolated_event_time_s",
+            "reported_event_time_s"
+          ]
+        },
+        {
+          "path": "04-compute/results/run-summary.csv",
+          "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "fields": [
+            "time_s",
+            "max_C",
+            "threshold_bracket",
+            "interpolated_event_time_s",
+            "reported_event_time_s"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "阈值邻域放大",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=time(s); y=max_C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=time(s); y=max_C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "邻域点与插值线"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "206818.7114s；206820s"
+      ],
+      "expected_reading": "插值时刻如何由前后点夹逼？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "不得暗示秒级物理精度"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q3-TIME-CONV",
+      "kind": "figure",
+      "subproblem": "Q3",
+      "claim_or_question": "时间细化是否满足60s目标？",
+      "source_data": [
+        {
+          "path": "04-compute/results/convergence.csv",
+          "sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f",
+          "fields": [
+            "scope",
+            "family",
+            "metric",
+            "base",
+            "fine",
+            "absolute_change",
+            "id",
+            "evidence"
+          ]
+        },
+        {
+          "path": "04-compute/results/validation-register.csv",
+          "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
+          "fields": [
+            "scope",
+            "family",
+            "metric",
+            "base",
+            "fine",
+            "absolute_change",
+            "id",
+            "evidence"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "配对差与验收线",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=time-step pair; y=change(s)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=time-step pair; y=change(s)",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "Q3时间细化登记对"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "47.5654s；登记48s；目标60s"
+      ],
+      "expected_reading": "时间细化是否满足60s目标？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "有限裕量非零误差"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q3-SENS-ONEFACTOR",
+      "kind": "figure",
+      "subproblem": "Q3",
+      "claim_or_question": "单因素扰动如何改变达标或造成失败？",
+      "source_data": [
+        {
+          "path": "04-compute/results/sensitivity.csv",
+          "sha256": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf",
+          "fields": [
+            "scope",
+            "factor",
+            "level",
+            "value",
+            "t_star_s",
+            "final_max_C"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "分组情景点图",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=scenario; y=t_star(h),72h右删失",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=scenario; y=t_star(h),72h右删失",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "Q3全部单因素"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "pref-low、exponent-high未达标"
+      ],
+      "expected_reading": "单因素扰动如何改变达标或造成失败？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "压力测试非概率/置信区间"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q3-COMBINED-BOUNDARY",
+      "kind": "figure",
+      "subproblem": "Q3",
+      "claim_or_question": "组合边界是否出现72h未达标？",
+      "source_data": [
+        {
+          "path": "04-compute/results/sensitivity.csv",
+          "sha256": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf",
+          "fields": [
+            "scope",
+            "factor",
+            "level",
+            "t_star_s",
+            "final_max_C"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "组合状态—时间图",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=combined scenario; y=time(h)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=combined scenario; y=time(h)",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "combined_boundary_empirical全部层级"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "combined-low未达标；259200s上限"
+      ],
+      "expected_reading": "组合边界是否出现72h未达标？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "72h不得画成达标"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q4-RADIUS-TIME",
+      "kind": "figure",
+      "subproblem": "Q4",
+      "claim_or_question": "移动边界半径如何收缩？",
+      "source_data": [
+        {
+          "path": "04-compute/results/q4-threshold-trajectory.csv",
+          "sha256": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8",
+          "fields": [
+            "time_s",
+            "radius_m"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "半径—时间曲线",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=time(h); y=radius(m)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=time(h); y=radius(m)",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "Q4 reference"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "初始/阈值半径；域外NA"
+      ],
+      "expected_reading": "移动边界半径如何收缩？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "冻结收缩律，非尺寸实测"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q4-THRESHOLD-TRAJECTORY",
+      "kind": "figure",
+      "subproblem": "Q4",
+      "claim_or_question": "收缩域何时达到全域判据？",
+      "source_data": [
+        {
+          "path": "04-compute/results/q4-threshold-trajectory.csv",
+          "sha256": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8",
+          "fields": [
+            "time_s",
+            "max_C",
+            "mean_C",
+            "center_C",
+            "surface_C"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "移动域阈值轨迹",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=time(h); y=C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=time(h); y=C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "max/mean/center/surface"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "183780–183840s；报告183840s"
+      ],
+      "expected_reading": "收缩域何时达到全域判据？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "不可外推为真实时刻"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q4-IMPLEMENTATION-AGREEMENT",
+      "kind": "figure",
+      "subproblem": "Q4",
+      "claim_or_question": "reference与moving-FV能否复现同一事件？",
+      "source_data": [
+        {
+          "path": "04-compute/results/run-summary.csv",
+          "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "fields": [
+            "label",
+            "interpolated_event_time_s",
+            "reported_event_time_s",
+            "scope",
+            "metric",
+            "absolute_change"
+          ]
+        },
+        {
+          "path": "04-compute/results/convergence.csv",
+          "sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f",
+          "fields": [
+            "label",
+            "interpolated_event_time_s",
+            "reported_event_time_s",
+            "scope",
+            "metric",
+            "absolute_change"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "配对点与差值放大",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=implementation; y=time(s)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=implementation; y=time(s)",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "reference,moving-FV"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "差5.82e-10s；均183840s"
+      ],
+      "expected_reading": "reference与moving-FV能否复现同一事件？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "一致性不等于现实准确性"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q4-JACOBIAN-ABLATION",
+      "kind": "figure",
+      "subproblem": "Q4",
+      "claim_or_question": "删除Jacobian修正如何破坏守恒？",
+      "source_data": [
+        {
+          "path": "04-compute/results/key-metrics.json",
+          "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91",
+          "fields": [
+            "maximum_approved_route_balance_error",
+            "jacobian_ablation_balance_error",
+            "id",
+            "status",
+            "evidence"
+          ]
+        },
+        {
+          "path": "04-compute/results/validation-register.csv",
+          "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
+          "fields": [
+            "maximum_approved_route_balance_error",
+            "jacobian_ablation_balance_error",
+            "id",
+            "status",
+            "evidence"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "对数误差对比",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=route; y=balance error(-,log)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=route; y=balance error(-,log)",
+          "unit": "见标签",
+          "scale": "log"
+        }
+      ],
+      "groups": [
+        "批准路线,Jacobian消融"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "9.6451610e-8；0.5936318973；V10失败"
+      ],
+      "expected_reading": "删除Jacobian修正如何破坏守恒？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "失败必须保留；守恒非现实准确性"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q4-COMBINED-BOUNDARY",
+      "kind": "figure",
+      "subproblem": "Q4",
+      "claim_or_question": "组合扰动的成功和失败边界是什么？",
+      "source_data": [
+        {
+          "path": "04-compute/results/sensitivity.csv",
+          "sha256": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf",
+          "fields": [
+            "scope",
+            "factor",
+            "level",
+            "t_star_s",
+            "final_max_C"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "组合状态—时间图",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=scenario; y=time(h),72h右删失",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=scenario; y=time(h),72h右删失",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "combined low/base/high"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "low>72h且final_max_C=.1669767340；high=118680s"
+      ],
+      "expected_reading": "组合扰动的成功和失败边界是什么？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "259200s是上限非达标时刻"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-VAL-BALANCE-RESIDUAL",
+      "kind": "figure",
+      "subproblem": "VAL/H3",
+      "claim_or_question": "正式运行的守恒和线性残差量级如何？",
+      "source_data": [
+        {
+          "path": "04-compute/results/run-summary.csv",
+          "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "fields": [
+            "label",
+            "normalized_moisture_balance_error",
+            "max_linear_relative_residual",
+            "maximum_approved_route_balance_error",
+            "maximum_linear_residual"
+          ]
+        },
+        {
+          "path": "04-compute/results/key-metrics.json",
+          "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91",
+          "fields": [
+            "label",
+            "normalized_moisture_balance_error",
+            "max_linear_relative_residual",
+            "maximum_approved_route_balance_error",
+            "maximum_linear_residual"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "双指标对数点图",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=run; y=dimensionless error(log)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=run; y=dimensionless error(log)",
+          "unit": "见标签",
+          "scale": "log"
+        }
+      ],
+      "groups": [
+        "balance,residual"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "最大9.6451610e-8；5.0000647e-11"
+      ],
+      "expected_reading": "正式运行的守恒和线性残差量级如何？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "数值质量非现实准确性"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q1-GRID-CONV",
+      "kind": "figure",
+      "subproblem": "Q1",
+      "claim_or_question": "M1/M2场量随空间加密是否稳定？",
+      "source_data": [
+        {
+          "path": "04-compute/results/field-grid-convergence.csv",
+          "sha256": "36e8cd85789d68c6c07efb304441425bd7948430473fbd14593c6c3fef3d57f5",
+          "fields": [
+            "scope",
+            "family",
+            "nr",
+            "nz",
+            "metric",
+            "value",
+            "adjacent_change"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "分面收敛点线图",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=nr×nz; y=final C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=nr×nz; y=final C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "Q1 M1/M2及两项metric"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "最细相邻变化"
+      ],
+      "expected_reading": "M1/M2场量随空间加密是否稳定？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "appendix",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "模型差和网格差分开"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q2-V02-MARGIN",
+      "kind": "figure",
+      "subproblem": "Q2",
+      "claim_or_question": "V02离验收边界多近？",
+      "source_data": [
+        {
+          "path": "04-compute/results/convergence.csv",
+          "sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f",
+          "fields": [
+            "scope",
+            "family",
+            "metric",
+            "absolute_change",
+            "id",
+            "status",
+            "evidence"
+          ]
+        },
+        {
+          "path": "04-compute/results/validation-register.csv",
+          "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
+          "fields": [
+            "scope",
+            "family",
+            "metric",
+            "absolute_change",
+            "id",
+            "status",
+            "evidence"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "阈值子弹图",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=absolute_change(kg/kg干基); y=V02",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=absolute_change(kg/kg干基); y=V02",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "观测值与5e-5线"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "4.00114e-5；5e-5；剩余裕量"
+      ],
+      "expected_reading": "V02离验收边界多近？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "appendix",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "不得写成宽裕或零误差"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q3-SPACE-CONV",
+      "kind": "figure",
+      "subproblem": "Q3",
+      "claim_or_question": "事件时刻对空间网格是否稳定？",
+      "source_data": [
+        {
+          "path": "04-compute/results/threshold-grid-convergence.csv",
+          "sha256": "8ba2aa18d42e13169db3f569cb7a6c1d5e8fd836c7f6818a8d0eb42fefd811f6",
+          "fields": [
+            "scope",
+            "nr",
+            "nz",
+            "interpolated_event_time_s",
+            "reported_event_time_s",
+            "adjacent_change_s"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "网格—事件收敛图",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=nr; y=event time(h)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=nr; y=event time(h)",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "Q3全部网格"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "206924.7881；206853.8296；206818.7114"
+      ],
+      "expected_reading": "事件时刻对空间网格是否稳定？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "appendix",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "不替代时间步验证"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q4-BRACKET-ZOOM",
+      "kind": "figure",
+      "subproblem": "Q4",
+      "claim_or_question": "插值时刻与60s报告值如何对应？",
+      "source_data": [
+        {
+          "path": "04-compute/results/q4-threshold-trajectory.csv",
+          "sha256": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8",
+          "fields": [
+            "time_s",
+            "max_C",
+            "threshold_bracket",
+            "interpolated_event_time_s",
+            "reported_event_time_s"
+          ]
+        },
+        {
+          "path": "04-compute/results/run-summary.csv",
+          "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "fields": [
+            "time_s",
+            "max_C",
+            "threshold_bracket",
+            "interpolated_event_time_s",
+            "reported_event_time_s"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "阈值邻域放大",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=time(s); y=max_C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=time(s); y=max_C(kg/kg干基)",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "邻域点"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "183789.3317s；183840s"
+      ],
+      "expected_reading": "插值时刻与60s报告值如何对应？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "appendix",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "插值非额外实验精度"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q4-SPACE-CONV",
+      "kind": "figure",
+      "subproblem": "Q4",
+      "claim_or_question": "Q4事件时刻随网格如何稳定？",
+      "source_data": [
+        {
+          "path": "04-compute/results/threshold-grid-convergence.csv",
+          "sha256": "8ba2aa18d42e13169db3f569cb7a6c1d5e8fd836c7f6818a8d0eb42fefd811f6",
+          "fields": [
+            "scope",
+            "nr",
+            "nz",
+            "interpolated_event_time_s",
+            "reported_event_time_s",
+            "adjacent_change_s"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "网格—事件收敛图",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=nr; y=event time(h)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=nr; y=event time(h)",
+          "unit": "见标签",
+          "scale": "linear"
+        }
+      ],
+      "groups": [
+        "Q4全部网格"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "最细183789.3317s；相邻变化"
+      ],
+      "expected_reading": "Q4事件时刻随网格如何稳定？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "appendix",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "仅证明数值稳定"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "FIG-Q4-DRY-SOLID-CONTINUITY",
+      "kind": "figure",
+      "subproblem": "Q4",
+      "claim_or_question": "干固体、局部连续性与几何是否一致？",
+      "source_data": [
+        {
+          "path": "04-compute/results/validation-register.csv",
+          "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
+          "fields": [
+            "id",
+            "evidence",
+            "dry_solid_inventory_relative_error",
+            "geometry_relative_error",
+            "max_local_dry_continuity_relative_residual"
+          ]
+        },
+        {
+          "path": "04-compute/results/run-summary.csv",
+          "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "fields": [
+            "id",
+            "evidence",
+            "dry_solid_inventory_relative_error",
+            "geometry_relative_error",
+            "max_local_dry_continuity_relative_residual"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "三指标对数棒棒糖",
+      "axes": [
+        {
+          "axis": "x",
+          "label": "x=metric; y=error/residual(-,log;0单标)",
+          "unit": "见标签",
+          "scale": "linear"
+        },
+        {
+          "axis": "y",
+          "label": "x=metric; y=error/residual(-,log;0单标)",
+          "unit": "见标签",
+          "scale": "log"
+        }
+      ],
+      "groups": [
+        "inventory,continuity,geometry"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "4.441e-16；2.384e-13；0"
+      ],
+      "expected_reading": "干固体、局部连续性与几何是否一致？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "svg",
+          "png@600dpi"
+        ]
+      },
+      "placement": "appendix",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "数值诊断非真实性验证"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "TAB-Q2-MODEL-CONTRACT",
+      "kind": "table",
+      "subproblem": "VAL/H3",
+      "claim_or_question": "三模型改变什么且能支持什么？",
+      "source_data": [
+        {
+          "path": "decisions/H3-claims.json",
+          "sha256": "f21ac63c8c778b2e6cb7c476bc82354aa99bf6a5f2a882f15bed6046d232c8a8",
+          "fields": [
+            "route",
+            "model roles",
+            "Q2 metrics"
+          ]
+        },
+        {
+          "path": "04-compute/results/key-metrics.json",
+          "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91",
+          "fields": [
+            "route",
+            "model roles",
+            "Q2 metrics"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "模型角色表",
+      "axes": [],
+      "groups": [
+        "M2,M3,M4"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "M3主路线；M4消融"
+      ],
+      "expected_reading": "三模型改变什么且能支持什么？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "csv",
+          "md"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "不得升级消融路线"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "TAB-APPLICABILITY-FAILURE",
+      "kind": "table",
+      "subproblem": "VAL/H3",
+      "claim_or_question": "何时可用、何时必须降级结论？",
+      "source_data": [
+        {
+          "path": "decisions/H3-claims.json",
+          "sha256": "f21ac63c8c778b2e6cb7c476bc82354aa99bf6a5f2a882f15bed6046d232c8a8",
+          "fields": [
+            "accepted_assumptions",
+            "prohibited_changes",
+            "unknowns",
+            "warnings",
+            "limits"
+          ]
+        },
+        {
+          "path": "04-compute/results/key-metrics.json",
+          "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91",
+          "fields": [
+            "accepted_assumptions",
+            "prohibited_changes",
+            "unknowns",
+            "warnings",
+            "limits"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "适用条件—失效边界表",
+      "axes": [],
+      "groups": [
+        "经验律,边界延拓,观测缺口,敏感性,扩展模型"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "72h未达标；无内部观测；UNSUP-01/02"
+      ],
+      "expected_reading": "何时可用、何时必须降级结论？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "csv",
+          "md"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "核心限制须正文/摘要出现"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "TAB-STRATEGY-ASSUMPTION",
+      "kind": "table",
+      "subproblem": "VAL/H3",
+      "claim_or_question": "H3冻结表项",
+      "source_data": [
+        {
+          "path": "decisions/H3-claims.json",
+          "sha256": "f21ac63c8c778b2e6cb7c476bc82354aa99bf6a5f2a882f15bed6046d232c8a8",
+          "fields": [
+            "frozen table fields"
+          ]
+        },
+        {
+          "path": "04-compute/results/key-metrics.json",
+          "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91",
+          "fields": [
+            "frozen table fields"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "evidence table",
+      "axes": [],
+      "groups": [
+        "冻结登记组"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "按H3冻结值"
+      ],
+      "expected_reading": "按冻结表项读取",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "csv",
+          "md"
+        ]
+      },
+      "placement": "body",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "条件仿真而非现实验证"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "TAB-VAL-V01-V12",
+      "kind": "table",
+      "subproblem": "VAL/H3",
+      "claim_or_question": "所有验证项是否完整报告？",
+      "source_data": [
+        {
+          "path": "04-compute/results/validation-register.csv",
+          "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
+          "fields": [
+            "id",
+            "status",
+            "evidence"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "完整验证表",
+      "axes": [],
+      "groups": [
+        "V01–V12"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "V02窄裕量；V06 48/60；V10失败；V12"
+      ],
+      "expected_reading": "所有验证项是否完整报告？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "csv",
+          "md"
+        ]
+      },
+      "placement": "appendix",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "不得只报PASS"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "TAB-CLAIM-LIMIT",
+      "kind": "table",
+      "subproblem": "VAL/H3",
+      "claim_or_question": "每个结论能说到哪一步？",
+      "source_data": [
+        {
+          "path": "05-evidence/主张证据映射.json",
+          "sha256": "f2f3eab255f3e0a13fdc1f76d0e2c4e0d75e20023bd4c1203f11f07b54b83fc1",
+          "fields": [
+            "id",
+            "class",
+            "candidate_claim",
+            "support_level",
+            "evidence",
+            "limits"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "主张—证据—限制矩阵",
+      "axes": [],
+      "groups": [
+        "全部claim ids"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "UNSUP-01/02"
+      ],
+      "expected_reading": "每个结论能说到哪一步？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "csv",
+          "md"
+        ]
+      },
+      "placement": "appendix",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "保持主张类别边界"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "figure_id": "FIG-Q2-C-PROFILES",
+  "snapshot_sha256": "a84c14955ec38a4de587203d6a9d3847678cdaf7b6850f6471eb1345410195ec",
+  "sources": [
+    {
+      "path": "04-compute/results/q2-samples.csv",
+      "sha256": "bf287f00761f6cba72f225c455d0ee1290d546874d135a7936ed8a4567dd4f21"
+    }
+  ],
+  "created_from": "authoritative upstream data only; no 06-figure source permitted"
+}

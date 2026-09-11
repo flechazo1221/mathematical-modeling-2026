@@ -1,0 +1,11 @@
+{
+  "figure_id": "TAB-CLAIM-LIMIT",
+  "snapshot_sha256": "a9021d9ce7efa7e3406273e88ffcb25dfdf407783ea72d0c59593930e4d317f3",
+  "sources": [
+    {
+      "path": "05-evidence/主张证据映射.json",
+      "sha256": "f2f3eab255f3e0a13fdc1f76d0e2c4e0d75e20023bd4c1203f11f07b54b83fc1"
+    }
+  ],
+  "created_from": "authoritative upstream data only; no 06-figure source permitted"
+}

@@ -1,0 +1,15 @@
+{
+  "figure_id": "FIG-Q2-V02-MARGIN",
+  "snapshot_sha256": "701af799e02b4b2f26bc948b8ed6902045f567be4412a31c8cbfa58f783b9549",
+  "sources": [
+    {
+      "path": "04-compute/results/convergence.csv",
+      "sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f"
+    },
+    {
+      "path": "04-compute/results/validation-register.csv",
+      "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb"
+    }
+  ],
+  "created_from": "authoritative upstream data only; no 06-figure source permitted"
+}

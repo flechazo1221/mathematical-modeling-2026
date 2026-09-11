@@ -1,0 +1,11 @@
+{
+  "figure_id": "FIG-Q3-SENS-ONEFACTOR",
+  "snapshot_sha256": "085287c7efa82f3020cc1a1782f5b1048160c2e70e77601c05f07fe7da2f146b",
+  "sources": [
+    {
+      "path": "04-compute/results/sensitivity.csv",
+      "sha256": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf"
+    }
+  ],
+  "created_from": "authoritative upstream data only; no 06-figure source permitted"
+}

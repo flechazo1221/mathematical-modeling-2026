@@ -1,0 +1,22 @@
+{
+  "figure_id": "TAB-Q2-MODEL-CONTRACT",
+  "snapshot": "06-figure/data-snapshots/TAB-Q2-MODEL-CONTRACT.csv",
+  "snapshot_sha256": "185e1e8d6dcf1cef2487c2df489b0d54757ecb41c9f70c39c76cdda6f4ed4fee",
+  "sources": [
+    {
+      "path": "decisions/H3-claims.json",
+      "sha256": "f21ac63c8c778b2e6cb7c476bc82354aa99bf6a5f2a882f15bed6046d232c8a8"
+    },
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"
+    }
+  ],
+  "rows": 3,
+  "columns": [
+    "模型",
+    "作用",
+    "当前指标",
+    "支持边界"
+  ]
+}

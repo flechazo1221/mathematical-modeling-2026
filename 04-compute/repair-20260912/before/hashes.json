@@ -1,0 +1,24 @@
+{
+  "captured_at": "2026-09-12T00:51:00+08:00",
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "source": "04-compute/logs/extended.log",
+      "backup": "04-compute/repair-20260912/before/extended.log",
+      "bytes": 2071,
+      "sha256": "5e6773145284b9c8078a2b9d8cd00c0771e7e957bbfb52c897dc4b0b69844a41"
+    },
+    {
+      "source": "04-compute/results/sensitivity-extended.csv",
+      "backup": "04-compute/repair-20260912/before/sensitivity-extended.csv",
+      "bytes": 943,
+      "sha256": "f778eb33975d0df7eb3c25a54eb05cb46f3d5e2f797948cdbd7168eaf3038903"
+    },
+    {
+      "source": "04-compute/复现清单.json",
+      "backup": "04-compute/repair-20260912/before/复现清单.json",
+      "bytes": 10354,
+      "sha256": "ac85af019da06572da96525ee30b484cc8bd09f1b1b98dc3d89f7ff700b67b85"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "figure_id": "FIG-Q4-IMPLEMENTATION-AGREEMENT",
+  "claim_ids": [
+    "Q4 / Q4-OBS-01"
+  ],
+  "question": "reference与moving-FV能否复现同一事件？",
+  "source_files": [
+    {
+      "path": "04-compute/results/run-summary.csv",
+      "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"
+    },
+    {
+      "path": "04-compute/results/convergence.csv",
+      "sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f"
+    }
+  ],
+  "x": {
+    "definition": "x=implementation; y=time(s)"
+  },
+  "y": {
+    "definition": "x=implementation; y=time(s)"
+  },
+  "groups": [
+    "reference,moving-FV"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "差5.82e-10s；均183840s"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-IMPLEMENTATION-AGREEMENT.csv",
+    "sha256": "c97164a3a05225d7b40e36bbda950b805bf72120ce5bd57598670d3f660358ed"
+  }
+}

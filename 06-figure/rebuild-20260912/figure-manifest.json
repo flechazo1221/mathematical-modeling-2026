@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "pipeline": "NEW_FROM_COMPUTE",
+  "items": [
+    {
+      "id": "FIG-Q1-C-FIELD",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q1-C-FIELD.png",
+      "png_sha256": "c96d46c9f60c5d4eb2c6e68d0160898592bad340a7f99e2b9c947ded1fec59e6",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q1-C-FIELD.svg",
+      "svg_sha256": "350254adbc6d0922e3823ed0e7da82226e1c5b5de8ab31299dfdb9ceba8835fa",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q1-END-EFFECT",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q1-END-EFFECT.png",
+      "png_sha256": "ab240c5420071c0c7085f19317c1b1928ddb6e307afac750fd7299d53b053b49",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q1-END-EFFECT.svg",
+      "svg_sha256": "2923fc7ca5db2be044ed5dbbdc98508af6f6894f3d61675260e445f28bd0bebf",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q2-C-PROFILES",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q2-C-PROFILES.png",
+      "png_sha256": "aa2eb21e15e35dde6bb94af2a4e95e5a639fd562b69ce94a9b17f9d40346cf1e",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q2-C-PROFILES.svg",
+      "svg_sha256": "066a47e77d722780135e441bd1a3b654799a61d067510186d7e0069d3e972ffc",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q2-MODEL-ABLATION",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q2-MODEL-ABLATION.png",
+      "png_sha256": "dadda19f86ce9eca55129976b4b8f6f686b83630e23a1520060dc635e183c008",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q2-MODEL-ABLATION.svg",
+      "svg_sha256": "8573e5f7dd92fc329fd3ad7764fff10df9a25d6481ffa4365b6a1916a2e2fa54",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q2-GRID-CONV",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q2-GRID-CONV.png",
+      "png_sha256": "41a0dd1602b8ec265b29a7d28b9c20cd652c3730a8fc975c21e5f184a45e3589",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q2-GRID-CONV.svg",
+      "svg_sha256": "4851831f865cd73d387d4eb36cc44e8d0057e7f4127de921d450e6f3aa3b5d89",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q3-THRESHOLD-TRAJECTORY",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q3-THRESHOLD-TRAJECTORY.png",
+      "png_sha256": "469e997563cda499c37e2d10a8c799974b0259b2b18d1c9de5de30e9d3d47e01",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q3-THRESHOLD-TRAJECTORY.svg",
+      "svg_sha256": "87aea3f3f67626db95b75c843118ed185ab60edd959bd6dfe87d3649e05d8d18",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q3-BRACKET-ZOOM",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q3-BRACKET-ZOOM.png",
+      "png_sha256": "1aa7d92d9e54c29f94d43fc1efa99cd5ce9687ba3aa22f305cb4b4fa876f1baa",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q3-BRACKET-ZOOM.svg",
+      "svg_sha256": "8a5c6fe432fc1c304b486a706efe9a3dbe67613a546477f87f85c74640d0bea0",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q3-TIME-CONV",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q3-TIME-CONV.png",
+      "png_sha256": "ca30d93cd401be392d4fbdb2efddcb687db71b651f6612d94f257fdb02d602d4",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q3-TIME-CONV.svg",
+      "svg_sha256": "9c75b4455497e22fa77f442936e620599d79e4537d6c16e483d1ed4c6f919295",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q3-SENS-ONEFACTOR",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q3-SENS-ONEFACTOR.png",
+      "png_sha256": "9ffe59bbf8c9ec5fb26e4ceaf9e7260796fde1ec11bdf807562a72dbc8c8edf6",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q3-SENS-ONEFACTOR.svg",
+      "svg_sha256": "d09155b6a50228412fe07e93b8b48d5314353a552cf6bc7a39fda381c85ee270",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q3-COMBINED-BOUNDARY",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q3-COMBINED-BOUNDARY.png",
+      "png_sha256": "fd96b79eebdfd9d258780de38c73f5a520761958b73ec9fff34186b2abc0cbf2",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q3-COMBINED-BOUNDARY.svg",
+      "svg_sha256": "7a2568e17981a9438e44f1206af938a9864cdeacfe9e4fc17b4d20a66d5ff653",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q4-RADIUS-TIME",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q4-RADIUS-TIME.png",
+      "png_sha256": "cf5218846f296d7f3049a4bbd772ad9e7082b3ccb1703ae35d3febaed696db06",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q4-RADIUS-TIME.svg",
+      "svg_sha256": "0ac720ac63fee58714390835ede05f112c6d8653bf4bc28a28524ebec4905cb0",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q4-THRESHOLD-TRAJECTORY",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q4-THRESHOLD-TRAJECTORY.png",
+      "png_sha256": "9eb7d46d10eb21e77d83e3d0fad43ad4b80454e30d725a17798be40fdd54824b",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q4-THRESHOLD-TRAJECTORY.svg",
+      "svg_sha256": "6fda5539f10197d6e539ae0d6b2e17e4438b86c0cdc4b03103dbea820dc72d1e",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q4-IMPLEMENTATION-AGREEMENT",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.png",
+      "png_sha256": "ac14dc6043d1d062f1c694cb558c22453207abfc076caadc3ae592ae7859f936",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.svg",
+      "svg_sha256": "7477e1bb6ef0ed4f778f5a62cf6989851073795f5dd727a186f94800613ffb33",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q4-JACOBIAN-ABLATION",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q4-JACOBIAN-ABLATION.png",
+      "png_sha256": "7b28c3e6c8a04921537032864dee372b656c9b8d506823cdab128e6116019655",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q4-JACOBIAN-ABLATION.svg",
+      "svg_sha256": "f6095c1405bb48fc48e1a962642230e33bbf3363edcb41558c4f70cbb54f6d62",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q4-COMBINED-BOUNDARY",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q4-COMBINED-BOUNDARY.png",
+      "png_sha256": "bf9de0936188d4c063f1747445339a77773161e89dcd2e5b934c84bd92be7588",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q4-COMBINED-BOUNDARY.svg",
+      "svg_sha256": "3f0c4624de0f025a41e76efe1d1417815dd7f48268fc1f73c1c2d8a762b52323",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-VAL-BALANCE-RESIDUAL",
+      "png": "06-figure/rebuild-20260912/figures/FIG-VAL-BALANCE-RESIDUAL.png",
+      "png_sha256": "cc5a843bb373543bf576caaa68ec33f9cb156d8c37c37a598e44184d69110560",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-VAL-BALANCE-RESIDUAL.svg",
+      "svg_sha256": "0f569f6853f88a1cdd7e3b184340f39aa83767e3e3bdc0ca13cc4f1816b86427",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q1-GRID-CONV",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q1-GRID-CONV.png",
+      "png_sha256": "fb063f9a1c41cee9d01461efc98707a85464050be5c3196a1866fcfbcd259f56",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q1-GRID-CONV.svg",
+      "svg_sha256": "cd79978e93d1d6fe043ad75ee7939ab82e789a858f42a93907186400d1700b79",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q2-V02-MARGIN",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q2-V02-MARGIN.png",
+      "png_sha256": "47025fe65f1700590c6840e563a9122bc4e46b89ebf8a2b3f1589c51c80ff3d5",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q2-V02-MARGIN.svg",
+      "svg_sha256": "e0187a858498de44d17936f3f1851fafe647c4ad3869660d0eb6f6849c5aafd6",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q3-SPACE-CONV",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q3-SPACE-CONV.png",
+      "png_sha256": "a6c34598a0acce2bc85d91b6370570177f3294d0663ad16c23d5e0c514a9aa1f",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q3-SPACE-CONV.svg",
+      "svg_sha256": "14aa52bbe18c9a99376ec95bc39df08bd74864a122fe39bbd0ac23fd0efd1789",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q4-BRACKET-ZOOM",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q4-BRACKET-ZOOM.png",
+      "png_sha256": "7b90fbeed2a960784603575b2fd6fc38bde930c3f98e210c6be7fe226178115e",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q4-BRACKET-ZOOM.svg",
+      "svg_sha256": "6ea10cd36dfa8b7501e7ee430eca330ed888a1980b126031ec654178ee5f8275",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q4-SPACE-CONV",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q4-SPACE-CONV.png",
+      "png_sha256": "d75fc7ed3c073fa0c7803188fa38ad8f7267bd3ef8aa62098afd60defa5c0dba",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q4-SPACE-CONV.svg",
+      "svg_sha256": "46ea56a11a98daa6ebf6c0ef9d87cc8e07656cde50116e8f5e949613e23e4c67",
+      "dpi": 599.9988
+    },
+    {
+      "id": "FIG-Q4-DRY-SOLID-CONTINUITY",
+      "png": "06-figure/rebuild-20260912/figures/FIG-Q4-DRY-SOLID-CONTINUITY.png",
+      "png_sha256": "1e887da12f6ffd715c0c6f6cc814fb111143c89522f606508a2db96de792dcc9",
+      "svg": "06-figure/rebuild-20260912/figures/FIG-Q4-DRY-SOLID-CONTINUITY.svg",
+      "svg_sha256": "a264ef28587b4f3899f3a78821612ce762e05819889a48cead3caeaa84df2a6c",
+      "dpi": 599.9988
+    },
+    {
+      "id": "TAB-Q2-MODEL-CONTRACT",
+      "csv": "06-figure/rebuild-20260912/figures/TAB-Q2-MODEL-CONTRACT.csv",
+      "csv_sha256": "ea1fc7ad74442e2decd5306ea69f4002e40e80139fa7df3fd4fca92420363ae0",
+      "markdown": "06-figure/rebuild-20260912/figures/TAB-Q2-MODEL-CONTRACT.md",
+      "markdown_sha256": "218aa78f25dadaf8ee3c2fff141a907057953a51109b224edcfe64ff75a1f2ea"
+    },
+    {
+      "id": "TAB-APPLICABILITY-FAILURE",
+      "csv": "06-figure/rebuild-20260912/figures/TAB-APPLICABILITY-FAILURE.csv",
+      "csv_sha256": "9f0b4500dc4d3eafbeea1dcfc0dd429b594031458768ecea049aafb06949bb7c",
+      "markdown": "06-figure/rebuild-20260912/figures/TAB-APPLICABILITY-FAILURE.md",
+      "markdown_sha256": "7e02da45c17634364ecef58bd9696ad23142987985f46927cc28d78b1d7c7e85"
+    },
+    {
+      "id": "TAB-STRATEGY-ASSUMPTION",
+      "csv": "06-figure/rebuild-20260912/figures/TAB-STRATEGY-ASSUMPTION.csv",
+      "csv_sha256": "a3e571821d52cef3acf5187a450488259e5264171840af50d3c8301cf0feb865",
+      "markdown": "06-figure/rebuild-20260912/figures/TAB-STRATEGY-ASSUMPTION.md",
+      "markdown_sha256": "d027fb4ebb9142463ec7804957da8afd65a7e314ef8ba34fa33b91fc4a3dcfea"
+    },
+    {
+      "id": "TAB-VAL-V01-V12",
+      "csv": "06-figure/rebuild-20260912/figures/TAB-VAL-V01-V12.csv",
+      "csv_sha256": "4bff2426f87fa1197d8f184dad9b372e702db81c01ae71027fd35ee51b18ecae",
+      "markdown": "06-figure/rebuild-20260912/figures/TAB-VAL-V01-V12.md",
+      "markdown_sha256": "640c66b6cced92dddbfa3a9d54f1673448dd017fc1dd05ce53a8d0f298f284da"
+    },
+    {
+      "id": "TAB-CLAIM-LIMIT",
+      "csv": "06-figure/rebuild-20260912/figures/TAB-CLAIM-LIMIT.csv",
+      "csv_sha256": "a9021d9ce7efa7e3406273e88ffcb25dfdf407783ea72d0c59593930e4d317f3",
+      "markdown": "06-figure/rebuild-20260912/figures/TAB-CLAIM-LIMIT.md",
+      "markdown_sha256": "8d559c0f9ff235b350fc61adfed95c9b851e37121119aaca068a6f3bbb78f9b0"
+    }
+  ]
+}

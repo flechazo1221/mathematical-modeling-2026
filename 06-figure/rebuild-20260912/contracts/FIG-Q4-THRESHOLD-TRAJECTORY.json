@@ -1,0 +1,41 @@
+{
+  "figure_id": "FIG-Q4-THRESHOLD-TRAJECTORY",
+  "claim_ids": [
+    "Q4 / Q4-OBS-01"
+  ],
+  "question": "收缩域何时达到全域判据？",
+  "source_files": [
+    {
+      "path": "04-compute/results/q4-threshold-trajectory.csv",
+      "sha256": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8"
+    }
+  ],
+  "x": {
+    "definition": "x=time(h); y=C(kg/kg干基)"
+  },
+  "y": {
+    "definition": "x=time(h); y=C(kg/kg干基)"
+  },
+  "groups": [
+    "max/mean/center/surface"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "183780–183840s；报告183840s"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-THRESHOLD-TRAJECTORY.csv",
+    "sha256": "c3a131b2ba104c538061338a5f1bc97a06ad6be0ed880f03f673ddc6695b0082"
+  }
+}

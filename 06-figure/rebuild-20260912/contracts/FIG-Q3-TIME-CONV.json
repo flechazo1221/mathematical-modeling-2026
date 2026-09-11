@@ -1,0 +1,45 @@
+{
+  "figure_id": "FIG-Q3-TIME-CONV",
+  "claim_ids": [
+    "Q3 / Q3-OBS-02"
+  ],
+  "question": "时间细化是否满足60s目标？",
+  "source_files": [
+    {
+      "path": "04-compute/results/convergence.csv",
+      "sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f"
+    },
+    {
+      "path": "04-compute/results/validation-register.csv",
+      "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb"
+    }
+  ],
+  "x": {
+    "definition": "x=time-step pair; y=change(s)"
+  },
+  "y": {
+    "definition": "x=time-step pair; y=change(s)"
+  },
+  "groups": [
+    "Q3时间细化登记对"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "47.5654s；登记48s；目标60s"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q3-TIME-CONV.csv",
+    "sha256": "7a8e697954ac3d7bc85553c0470ae981208e457eae11cad44502821f2f0bf21a"
+  }
+}

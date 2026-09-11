@@ -1,0 +1,40 @@
+{
+  "figure_id": "FIG-Q4-BRACKET-ZOOM",
+  "claim_ids": [
+    "Q4-OBS-01"
+  ],
+  "question": "插值时刻与60s报告值如何对应？",
+  "source_files": [
+    {
+      "path": "04-compute/results/q4-threshold-trajectory.csv",
+      "sha256": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8"
+    },
+    {
+      "path": "04-compute/results/run-summary.csv",
+      "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"
+    }
+  ],
+  "x": null,
+  "y": null,
+  "groups": [],
+  "uncertainty": null,
+  "required_comparisons": [
+    "阈值邻域放大"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "recompute model",
+    "change metric",
+    "omit failures",
+    "present conditional simulation as observation"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "placement": "附录",
+  "mandatory_limit": "插值非额外实验精度",
+  "snapshot": "06-figure/data-snapshots/FIG-Q4-BRACKET-ZOOM.csv",
+  "snapshot_sha256": "a245bb0f1d00b81e61df9fba29bdd5485b6e61878341a5378327ad85f7585863"
+}

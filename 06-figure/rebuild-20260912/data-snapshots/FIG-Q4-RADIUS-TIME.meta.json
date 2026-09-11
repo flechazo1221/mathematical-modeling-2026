@@ -1,0 +1,11 @@
+{
+  "figure_id": "FIG-Q4-RADIUS-TIME",
+  "snapshot_sha256": "c24229b30ed4f2fd02236eb572fc59c1cd35488d3e57ff0a49846111d09a4a76",
+  "sources": [
+    {
+      "path": "04-compute/results/q4-threshold-trajectory.csv",
+      "sha256": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8"
+    }
+  ],
+  "created_from": "authoritative upstream data only; no 06-figure source permitted"
+}

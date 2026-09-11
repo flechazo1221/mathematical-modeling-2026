@@ -1,0 +1,41 @@
+{
+  "figure_id": "FIG-Q1-GRID-CONV",
+  "claim_ids": [
+    "Q1 / Q1-OBS-01"
+  ],
+  "question": "M1/M2场量随空间加密是否稳定？",
+  "source_files": [
+    {
+      "path": "04-compute/results/field-grid-convergence.csv",
+      "sha256": "36e8cd85789d68c6c07efb304441425bd7948430473fbd14593c6c3fef3d57f5"
+    }
+  ],
+  "x": {
+    "definition": "x=nr×nz; y=final C(kg/kg干基)"
+  },
+  "y": {
+    "definition": "x=nr×nz; y=final C(kg/kg干基)"
+  },
+  "groups": [
+    "Q1 M1/M2及两项metric"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "最细相邻变化"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q1-GRID-CONV.csv",
+    "sha256": "ddfc3f2d562918c7bd2aa2f9a12b9e077f53d324768194d05d4da7045cce25b1"
+  }
+}

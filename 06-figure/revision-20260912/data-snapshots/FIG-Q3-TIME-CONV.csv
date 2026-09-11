@@ -1,0 +1,3 @@
+﻿scope,family,metric,base,fine,absolute_change,acceptance_pair
+Q3,M3,t_star_space,206853.8296112381,206818.71137262788,35.118238610215485,True
+Q3,M3,t_star_time,206723.71251173425,206676.14712249584,47.56538923838525,True

@@ -1,0 +1,23 @@
+{
+  "figure_id": "TAB-STRATEGY-ASSUMPTION",
+  "snapshot": "06-figure/data-snapshots/TAB-STRATEGY-ASSUMPTION.csv",
+  "snapshot_sha256": "1ea97dbbf4b2c2db60557d4bff0e4d845e78b2fd0578c84542a34a8d9053b217",
+  "sources": [
+    {
+      "path": "decisions/H3-claims.json",
+      "sha256": "f21ac63c8c778b2e6cb7c476bc82354aa99bf6a5f2a882f15bed6046d232c8a8"
+    },
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"
+    }
+  ],
+  "rows": 5,
+  "columns": [
+    "策略/假设",
+    "考虑原因",
+    "检验方式",
+    "当前结论",
+    "适用边界"
+  ]
+}

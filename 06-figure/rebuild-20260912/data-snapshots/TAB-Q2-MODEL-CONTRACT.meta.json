@@ -1,0 +1,15 @@
+{
+  "figure_id": "TAB-Q2-MODEL-CONTRACT",
+  "snapshot_sha256": "ea1fc7ad74442e2decd5306ea69f4002e40e80139fa7df3fd4fca92420363ae0",
+  "sources": [
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"
+    },
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"
+    }
+  ],
+  "created_from": "authoritative upstream data only; no 06-figure source permitted"
+}

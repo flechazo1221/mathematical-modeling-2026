@@ -1,0 +1,11 @@
+{
+  "figure_id": "FIG-Q4-SPACE-CONV",
+  "snapshot_sha256": "3940dfcae8bfdfc6bf619d609aceebab537980ed4205ef2f9d3c50f1e07e5d88",
+  "sources": [
+    {
+      "path": "04-compute/results/threshold-grid-convergence.csv",
+      "sha256": "8ba2aa18d42e13169db3f569cb7a6c1d5e8fd836c7f6818a8d0eb42fefd811f6"
+    }
+  ],
+  "created_from": "authoritative upstream data only; no 06-figure source permitted"
+}

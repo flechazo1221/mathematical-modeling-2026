@@ -1,0 +1,41 @@
+{
+  "figure_id": "FIG-Q2-GRID-CONV",
+  "claim_ids": [
+    "Q2 / Q2-OBS-02"
+  ],
+  "question": "M3终值随网格如何收敛？",
+  "source_files": [
+    {
+      "path": "04-compute/results/field-grid-convergence.csv",
+      "sha256": "36e8cd85789d68c6c07efb304441425bd7948430473fbd14593c6c3fef3d57f5"
+    }
+  ],
+  "x": {
+    "definition": "x=nr×nz; y=final_max_C(kg/kg干基)"
+  },
+  "y": {
+    "definition": "x=nr×nz; y=final_max_C(kg/kg干基)"
+  },
+  "groups": [
+    "Q2 M3网格层级"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "4.00114e-5；阈值5e-5"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q2-GRID-CONV.csv",
+    "sha256": "d8a9ca7c399aaa16357bf8e2b059484f92c733d950fd76b69ea6acc9ea1a7f0a"
+  }
+}

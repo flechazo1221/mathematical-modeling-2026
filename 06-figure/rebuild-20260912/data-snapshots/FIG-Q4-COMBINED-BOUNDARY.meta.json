@@ -1,0 +1,11 @@
+{
+  "figure_id": "FIG-Q4-COMBINED-BOUNDARY",
+  "snapshot_sha256": "136d8f3478cda359a5a9e2fc11c61e764f8a2801c4de17a03083806321d8b701",
+  "sources": [
+    {
+      "path": "04-compute/results/sensitivity.csv",
+      "sha256": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf"
+    }
+  ],
+  "created_from": "authoritative upstream data only; no 06-figure source permitted"
+}

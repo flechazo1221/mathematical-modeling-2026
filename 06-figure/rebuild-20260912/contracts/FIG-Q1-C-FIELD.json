@@ -1,0 +1,41 @@
+{
+  "figure_id": "FIG-Q1-C-FIELD",
+  "claim_ids": [
+    "Q1 / Q1-OBS-02"
+  ],
+  "question": "含水率径向非均匀性如何形成？",
+  "source_files": [
+    {
+      "path": "04-compute/results/q1-samples.csv",
+      "sha256": "e214e5f23b1c1787357c59ec841791d461414190d5b72379022c2e7db47bdc8d"
+    }
+  ],
+  "x": {
+    "definition": "x=radius_cm(cm); y=C(kg/kg干基)"
+  },
+  "y": {
+    "definition": "x=radius_cm(cm); y=C(kg/kg干基)"
+  },
+  "groups": [
+    "全部登记时刻"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "1800s中心2.5499915369；表面1.5101482988"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q1-C-FIELD.csv",
+    "sha256": "370c0da992b7ada9cdcc517d33771a8908b0c7d357eae414e7af2f9541928436"
+  }
+}

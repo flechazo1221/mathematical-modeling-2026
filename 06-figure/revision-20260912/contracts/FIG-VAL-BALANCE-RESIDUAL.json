@@ -1,0 +1,40 @@
+{
+  "figure_id": "FIG-VAL-BALANCE-RESIDUAL",
+  "claim_ids": [
+    "VAL-OBS-01"
+  ],
+  "question": "正式运行的守恒和线性残差量级如何？",
+  "source_files": [
+    {
+      "path": "04-compute/results/run-summary.csv",
+      "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"
+    },
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"
+    }
+  ],
+  "x": null,
+  "y": null,
+  "groups": [],
+  "uncertainty": null,
+  "required_comparisons": [
+    "双指标对数点图"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "recompute model",
+    "change metric",
+    "omit failures",
+    "present conditional simulation as observation"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "placement": "主文",
+  "mandatory_limit": "数值质量非现实准确性",
+  "snapshot": "06-figure/data-snapshots/FIG-VAL-BALANCE-RESIDUAL.csv",
+  "snapshot_sha256": "55f1681115b2899090b340a436d9165e7b836761c5b231627244f44123071eca"
+}

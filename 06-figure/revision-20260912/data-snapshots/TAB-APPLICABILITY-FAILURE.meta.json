@@ -1,0 +1,23 @@
+{
+  "figure_id": "TAB-APPLICABILITY-FAILURE",
+  "snapshot": "06-figure/data-snapshots/TAB-APPLICABILITY-FAILURE.csv",
+  "snapshot_sha256": "6ea5ee992aa7fa96fc6f3036ec15d1c9b62d61898188b51acb206a77e56d8b8f",
+  "sources": [
+    {
+      "path": "decisions/H3-claims.json",
+      "sha256": "f21ac63c8c778b2e6cb7c476bc82354aa99bf6a5f2a882f15bed6046d232c8a8"
+    },
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"
+    }
+  ],
+  "rows": 4,
+  "columns": [
+    "条件",
+    "可支持",
+    "失败/降级",
+    "禁外推",
+    "新增证据"
+  ]
+}

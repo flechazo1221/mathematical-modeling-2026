@@ -1,0 +1,11 @@
+{
+  "figure_id": "FIG-Q3-THRESHOLD-TRAJECTORY",
+  "snapshot_sha256": "6a451ec21f93328e29fec15a851eb62ac37fdc7a0b906d7f7616619d818e0614",
+  "sources": [
+    {
+      "path": "04-compute/results/q3-threshold-trajectory.csv",
+      "sha256": "68d78e1922d192eac3d74b6056713b595371c29447c52ea37cc4874c1898f244"
+    }
+  ],
+  "created_from": "authoritative upstream data only; no 06-figure source permitted"
+}

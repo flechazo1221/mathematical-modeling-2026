@@ -1,0 +1,42 @@
+{
+  "figure_id": "TAB-STRATEGY-ASSUMPTION",
+  "claim_ids": [
+    "H3 / 策略假设"
+  ],
+  "question": "为何采用这些策略，如何验证？",
+  "source_files": [
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"
+    },
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"
+    }
+  ],
+  "x": null,
+  "y": null,
+  "groups": [
+    "五项策略"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "冻结边界"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [],
+  "minimum_dpi": 300,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/TAB-STRATEGY-ASSUMPTION.csv",
+    "sha256": "a3e571821d52cef3acf5187a450488259e5264171840af50d3c8301cf0feb865"
+  }
+}

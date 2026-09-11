@@ -1,0 +1,5 @@
+﻿scope,factor,level,value,interpolated_event_time_s,reported_event_time_s,event_time_h,final_max_C,final_mean_C,threshold,post_72h_boundary_policy
+Q3,pref,low,0.8,264200.2505199322,264240.0,73.4,0.1499903949258012,0.12342381369014149,0.149999,terminal-window chamber values; final observed Q4 radius held constant
+Q3,exponent,high,1.2,369690.7605725541,369720.0,102.7,0.14999538969771767,0.12711461015135583,0.149999,terminal-window chamber values; final observed Q4 radius held constant
+Q3,combined_boundary_empirical,low,"(0.8, 0.8, 0.8, 1.2)",461974.37903714814,462000.0,128.33333333333334,0.14999646908985917,0.12711532942255388,0.149999,terminal-window chamber values; final observed Q4 radius held constant
+Q4,combined_boundary_empirical,low,"(0.8, 0.8, 0.8, 1.2)",318323.6712576198,318360.0,88.43333333333334,0.14999056247319387,0.12056917506073725,0.149999,terminal-window chamber values; final observed Q4 radius held constant

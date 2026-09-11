@@ -1,0 +1,42 @@
+{
+  "figure_id": "TAB-APPLICABILITY-FAILURE",
+  "claim_ids": [
+    "Q1-Q4 / 限制"
+  ],
+  "question": "何时可用、何时必须降级结论？",
+  "source_files": [
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"
+    },
+    {
+      "path": "05-evidence/主张证据映射.json",
+      "sha256": "f2f3eab255f3e0a13fdc1f76d0e2c4e0d75e20023bd4c1203f11f07b54b83fc1"
+    }
+  ],
+  "x": null,
+  "y": null,
+  "groups": [
+    "经验律,边界延拓,观测缺口,敏感性,扩展模型"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "72h未达标；无内部观测；UNSUP-01/02"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [],
+  "minimum_dpi": 300,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/TAB-APPLICABILITY-FAILURE.csv",
+    "sha256": "9f0b4500dc4d3eafbeea1dcfc0dd429b594031458768ecea049aafb06949bb7c"
+  }
+}

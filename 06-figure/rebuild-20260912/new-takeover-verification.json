@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "generation": "NEW_PIPELINE_FROM_COMPUTE",
+  "registered_items": 27,
+  "matlab_quantitative_items": 27,
+  "old_figure_dependencies": 0,
+  "new_script_hashes": {
+    "prepare_from_compute.py": "de8df5f37012d6eaaf970a64aeed0a47bbecf811b28ccd2af9b8f8174a39fe01",
+    "render_from_compute.m": "173b2fa4c376981ae54030ab49538bf1dfc2bdde745399d6895ba7cb88ee7edd",
+    "verify_new_takeover.py": "2d493106ad127208576e90b4be93df9606a03b24e4bd5d34218ec289099ac4af",
+    "finalize_from_compute.py": "b0040c4410d4c1759ceeac1676a447e878d913f1005aa2a989ea92bdaa18e5ec"
+  },
+  "failures": []
+}

@@ -1,0 +1,15 @@
+{
+  "figure_id": "FIG-Q4-JACOBIAN-ABLATION",
+  "snapshot_sha256": "88a90c5dd230ecc1ea3a413b0bf14b190258a5721f6522e4f76c71c7de19d4f4",
+  "sources": [
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"
+    },
+    {
+      "path": "04-compute/results/validation-register.csv",
+      "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb"
+    }
+  ],
+  "created_from": "authoritative upstream data only; no 06-figure source permitted"
+}

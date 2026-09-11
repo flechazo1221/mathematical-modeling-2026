@@ -1,0 +1,11 @@
+{
+  "figure_id": "FIG-Q1-END-EFFECT",
+  "snapshot_sha256": "9db497f8ae95fcbdebe11afedf65c427ee567353f303c1f872390b768705626d",
+  "sources": [
+    {
+      "path": "04-compute/results/run-summary.csv",
+      "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"
+    }
+  ],
+  "created_from": "authoritative upstream data only; no 06-figure source permitted"
+}

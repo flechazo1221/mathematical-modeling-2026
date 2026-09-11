@@ -1,0 +1,38 @@
+{
+  "figure_id": "TAB-Q2-MODEL-CONTRACT",
+  "claim_ids": [
+    "Q2 / 模型角色"
+  ],
+  "question": "三模型改变什么且能支持什么？",
+  "source_files": [
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"
+    },
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"
+    }
+  ],
+  "x": null,
+  "y": null,
+  "groups": [
+    "M2,M3,M4"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "M3主路线；M4消融"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [],
+  "minimum_dpi": 300,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/TAB-Q2-MODEL-CONTRACT.csv",
+    "sha256": "ea1fc7ad74442e2decd5306ea69f4002e40e80139fa7df3fd4fca92420363ae0"
+  }
+}

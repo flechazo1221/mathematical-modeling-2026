@@ -1,0 +1,221 @@
+
+--- 06-figure/revision-20260912/figures\FIG-Q1-C-FIELD.png ---
+  category: raster  ext: png  size: 298345 B
+  pixels: 3308x2284  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.51��3.81 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q1-END-EFFECT.png ---
+  category: raster  ext: png  size: 100763 B
+  pixels: 3212x2267  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.35��3.78 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q1-GRID-CONV.png ---
+  category: raster  ext: png  size: 281474 B
+  pixels: 3721x2308  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 6.20��3.85 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q2-C-PROFILES.png ---
+  category: raster  ext: png  size: 300274 B
+  pixels: 3308x2284  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.51��3.81 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q2-GRID-CONV.png ---
+  category: raster  ext: png  size: 163010 B
+  pixels: 3797x2392  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 6.33��3.99 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q2-MODEL-ABLATION.png ---
+  category: raster  ext: png  size: 136458 B
+  pixels: 3437x2185  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.73��3.64 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q2-V02-MARGIN.png ---
+  category: raster  ext: png  size: 104349 B
+  pixels: 3523x2267  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.87��3.78 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q3-BRACKET-ZOOM.png ---
+  category: raster  ext: png  size: 227938 B
+  pixels: 3527x2284  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.88��3.81 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q3-COMBINED-BOUNDARY.png ---
+  category: raster  ext: png  size: 139716 B
+  pixels: 3305x2280  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.51��3.80 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q3-SENS-ONEFACTOR.png ---
+  category: raster  ext: png  size: 210885 B
+  pixels: 3362x2323  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.60��3.87 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q3-SPACE-CONV.png ---
+  category: raster  ext: png  size: 165516 B
+  pixels: 3443x2274  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.74��3.79 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q3-THRESHOLD-TRAJECTORY.png ---
+  category: raster  ext: png  size: 214557 B
+  pixels: 3306x2284  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.51��3.81 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q3-TIME-CONV.png ---
+  category: raster  ext: png  size: 84950 B
+  pixels: 3597x2191  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 6.00��3.65 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q4-BRACKET-ZOOM.png ---
+  category: raster  ext: png  size: 208376 B
+  pixels: 3527x2284  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.88��3.81 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q4-COMBINED-BOUNDARY.png ---
+  category: raster  ext: png  size: 139683 B
+  pixels: 3305x2280  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.51��3.80 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q4-DRY-SOLID-CONTINUITY.png ---
+  category: raster  ext: png  size: 171074 B
+  pixels: 3344x2316  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.57��3.86 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q4-IMPLEMENTATION-AGREEMENT.png ---
+  category: raster  ext: png  size: 155277 B
+  pixels: 3445x2170  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.74��3.62 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q4-JACOBIAN-ABLATION.png ---
+  category: raster  ext: png  size: 156382 B
+  pixels: 3529x2200  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.88��3.67 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q4-RADIUS-TIME.png ---
+  category: raster  ext: png  size: 124030 B
+  pixels: 3306x2284  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.51��3.81 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q4-SPACE-CONV.png ---
+  category: raster  ext: png  size: 196388 B
+  pixels: 3443x2274  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.74��3.79 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q4-THRESHOLD-TRAJECTORY.png ---
+  category: raster  ext: png  size: 224086 B
+  pixels: 3306x2284  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.51��3.81 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-VAL-BALANCE-RESIDUAL.png ---
+  category: raster  ext: png  size: 287403 B
+  pixels: 3378x2297  dpi: (599.9988, 599.9988)
+  [WARN] ʵ�ʳߴ� �� 5.63��3.83 in��Ŀ�� 6.535��4.15 in�����ڻ�ͼʱֱ���� figsize=(6.535, 4.15)����Ҫ�� Word/LaTeX ��������š�
+  >>> verdict: WARN
+
+--- 06-figure/revision-20260912/figures\FIG-Q1-C-FIELD.svg ---
+  category: vector  ext: svg  size: 119155 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q1-END-EFFECT.svg ---
+  category: vector  ext: svg  size: 88853 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q1-GRID-CONV.svg ---
+  category: vector  ext: svg  size: 197910 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q2-C-PROFILES.svg ---
+  category: vector  ext: svg  size: 93961 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q2-GRID-CONV.svg ---
+  category: vector  ext: svg  size: 86764 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q2-MODEL-ABLATION.svg ---
+  category: vector  ext: svg  size: 79178 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q2-V02-MARGIN.svg ---
+  category: vector  ext: svg  size: 58106 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q3-BRACKET-ZOOM.svg ---
+  category: vector  ext: svg  size: 137886 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q3-COMBINED-BOUNDARY.svg ---
+  category: vector  ext: svg  size: 69262 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q3-SENS-ONEFACTOR.svg ---
+  category: vector  ext: svg  size: 121321 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q3-SPACE-CONV.svg ---
+  category: vector  ext: svg  size: 81867 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q3-THRESHOLD-TRAJECTORY.svg ---
+  category: vector  ext: svg  size: 307219 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q3-TIME-CONV.svg ---
+  category: vector  ext: svg  size: 59925 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q4-BRACKET-ZOOM.svg ---
+  category: vector  ext: svg  size: 137037 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q4-COMBINED-BOUNDARY.svg ---
+  category: vector  ext: svg  size: 69262 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q4-DRY-SOLID-CONTINUITY.svg ---
+  category: vector  ext: svg  size: 80631 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q4-IMPLEMENTATION-AGREEMENT.svg ---
+  category: vector  ext: svg  size: 100288 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q4-JACOBIAN-ABLATION.svg ---
+  category: vector  ext: svg  size: 88990 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q4-RADIUS-TIME.svg ---
+  category: vector  ext: svg  size: 108313 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q4-SPACE-CONV.svg ---
+  category: vector  ext: svg  size: 98995 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-Q4-THRESHOLD-TRAJECTORY.svg ---
+  category: vector  ext: svg  size: 282921 B
+  [PASS] �����⡣
+
+--- 06-figure/revision-20260912/figures\FIG-VAL-BALANCE-RESIDUAL.svg ---
+  category: vector  ext: svg  size: 150443 B
+  [PASS] �����⡣
+

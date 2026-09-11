@@ -1,0 +1,19 @@
+{
+  "figure_id": "TAB-STRATEGY-ASSUMPTION",
+  "snapshot_sha256": "a3e571821d52cef3acf5187a450488259e5264171840af50d3c8301cf0feb865",
+  "sources": [
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"
+    },
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"
+    }
+  ],
+  "created_from": "authoritative upstream data only; no 06-figure source permitted"
+}

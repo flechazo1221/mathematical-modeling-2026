@@ -1,0 +1,41 @@
+{
+  "figure_id": "FIG-Q2-MODEL-ABLATION",
+  "claim_ids": [
+    "Q2 / Q2-OBS-01"
+  ],
+  "question": "M2/M3/M4在3h终值有何差异？",
+  "source_files": [
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"
+    }
+  ],
+  "x": {
+    "definition": "x=model; y=final_max_C(kg/kg干基)"
+  },
+  "y": {
+    "definition": "x=model; y=final_max_C(kg/kg干基)"
+  },
+  "groups": [
+    "M2常物性,M3主路线,M4消融"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "2.1599687487；1.7278463920；1.7645199232"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q2-MODEL-ABLATION.csv",
+    "sha256": "6f9dd5e91af21297fd94794af20c75fb612cacc336f8f184badbf9deb9ccdd8e"
+  }
+}

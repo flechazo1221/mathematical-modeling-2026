@@ -1,0 +1,45 @@
+{
+  "figure_id": "FIG-Q3-BRACKET-ZOOM",
+  "claim_ids": [
+    "Q3 / Q3-OBS-01"
+  ],
+  "question": "插值时刻如何由前后点夹逼？",
+  "source_files": [
+    {
+      "path": "04-compute/results/q3-threshold-trajectory.csv",
+      "sha256": "68d78e1922d192eac3d74b6056713b595371c29447c52ea37cc4874c1898f244"
+    },
+    {
+      "path": "04-compute/results/run-summary.csv",
+      "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"
+    }
+  ],
+  "x": {
+    "definition": "x=time(s); y=max_C(kg/kg干基)"
+  },
+  "y": {
+    "definition": "x=time(s); y=max_C(kg/kg干基)"
+  },
+  "groups": [
+    "邻域点与插值线"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "206818.7114s；206820s"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q3-BRACKET-ZOOM.csv",
+    "sha256": "433dc4bd5e77fccba0fb37d11c46d7b8d684a0467e5af252e429f7ddecfc77c4"
+  }
+}

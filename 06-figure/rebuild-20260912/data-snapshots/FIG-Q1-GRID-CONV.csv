@@ -1,0 +1,13 @@
+﻿scope,family,nr,nz,grid_strategy,fixed_dt_s,metric,value,adjacent_change
+Q1,M1,81,1,two-sided-local,0.5,final_max_C,2.5499912970758025,
+Q1,M1,81,1,two-sided-local,0.5,final_mean_C,2.293600559346259,
+Q1,M1,122,1,two-sided-local,0.5,final_max_C,2.549991848659056,5.515832528502074e-07
+Q1,M1,122,1,two-sided-local,0.5,final_mean_C,2.293580557001432,2.000234482713026e-05
+Q1,M1,183,1,two-sided-local,0.5,final_max_C,2.54999208604702,2.373879648409627e-07
+Q1,M1,183,1,two-sided-local,0.5,final_mean_C,2.2935717980486228,8.758952809273524e-06
+Q1,M2,62,54,two-sided-local,0.5,final_max_C,2.54999058031691,
+Q1,M2,62,54,two-sided-local,0.5,final_mean_C,2.2750685088526623,
+Q1,M2,93,54,two-sided-local,0.5,final_max_C,2.549991536865617,9.565487073537329e-07
+Q1,M2,93,54,two-sided-local,0.5,final_mean_C,2.2750348485276963,3.3660324965989474e-05
+Q1,M2,140,54,two-sided-local,0.5,final_max_C,2.549991951771023,4.1490540558797306e-07
+Q1,M2,140,54,two-sided-local,0.5,final_mean_C,2.275019795585558,1.505294213854924e-05

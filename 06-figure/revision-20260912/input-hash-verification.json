@@ -1,0 +1,753 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "handoff": "04-compute/handoff.json",
+      "handoff_sha256": "21b736c942d5aa79ea08c4da9a93129854271f101c89c426dcbb79d9da73eb95",
+      "declared_inputs": 16,
+      "declared_outputs": 45,
+      "declared_frozen_decisions": 2,
+      "verified": [
+        {
+          "section": "inputs",
+          "path": "decisions/H2-model.json",
+          "expected": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+          "actual": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "decisions/H1-problem.json",
+          "expected": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d",
+          "actual": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "03-prototype/handoff.json",
+          "expected": "8d4f161cc4b4b3b84f679273f23db5bf674f610754727efaf7a53f7635ff07e6",
+          "actual": "8d4f161cc4b4b3b84f679273f23db5bf674f610754727efaf7a53f7635ff07e6",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-design/候选模型方案.md",
+          "expected": "ced11bfb105fad81a7e1690cbaa9b4edfcc077ab17dbda25924def4cfbc63c17",
+          "actual": "ced11bfb105fad81a7e1690cbaa9b4edfcc077ab17dbda25924def4cfbc63c17",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-design/H2-优化审计与方向.md",
+          "expected": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33",
+          "actual": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-design/验证计划.json",
+          "expected": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb",
+          "actual": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-design/contracts/model-q1-fixed.json",
+          "expected": "8581a6ff4abe76ed7e4457a529a8fc5dd8062ec604133bb4d4d5b3630c502998",
+          "actual": "8581a6ff4abe76ed7e4457a529a8fc5dd8062ec604133bb4d4d5b3630c502998",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-design/contracts/model-q23-fixed.json",
+          "expected": "b3f8327a02dba8de5e97906822641639b4c953aa48cfc6aaefda14986ace9fd1",
+          "actual": "b3f8327a02dba8de5e97906822641639b4c953aa48cfc6aaefda14986ace9fd1",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-design/contracts/model-q4-m1-reference.json",
+          "expected": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5",
+          "actual": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-design/contracts/model-q4-m2-moving-fv.json",
+          "expected": "c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f",
+          "actual": "c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "input/A题/附件/附件1.xlsx",
+          "expected": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+          "actual": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "input/A题/附件/附件2.xlsx",
+          "expected": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+          "actual": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "input/A题/附件/附件3/result1.xlsx",
+          "expected": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+          "actual": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "input/A题/附件/附件3/result2.xlsx",
+          "expected": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+          "actual": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "input/A题/附件/附件3/result3.xlsx",
+          "expected": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+          "actual": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "input/A题/附件/附件3/result4.xlsx",
+          "expected": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+          "actual": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/diagnostic-figures/diagnostic-convergence.png",
+          "expected": "00d512743d2a56a52b4204242a31ecbf7d7f80056f5306557f5991b1b5388a71",
+          "actual": "00d512743d2a56a52b4204242a31ecbf7d7f80056f5306557f5991b1b5388a71",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/diagnostic-figures/diagnostic-sensitivity.png",
+          "expected": "c02fe6019ad685d0476b8054b6f74de8b548620ee832ffe154d4d46ec9a10f92",
+          "actual": "c02fe6019ad685d0476b8054b6f74de8b548620ee832ffe154d4d46ec9a10f92",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/diagnostic-figures/diagnostic-threshold.png",
+          "expected": "dbe105d72ef82f911f00e09fa587eab32b99067607f23ab6358f845b925b9298",
+          "actual": "dbe105d72ef82f911f00e09fa587eab32b99067607f23ab6358f845b925b9298",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/logs/extended.log",
+          "expected": "0f6d90cb7d4b5f1d28f6d266f74135780cae7823d1060f78d522baaf11d26cfd",
+          "actual": "0f6d90cb7d4b5f1d28f6d266f74135780cae7823d1060f78d522baaf11d26cfd",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/logs/full.log",
+          "expected": "4551645125f73031cbb49ad9a8bb38b4821d0ac92c98309bd2cf595d33b07acd",
+          "actual": "4551645125f73031cbb49ad9a8bb38b4821d0ac92c98309bd2cf595d33b07acd",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/logs/p1.log",
+          "expected": "618efea6a7ce0914cdff5debc4ed85b31a25e7e821bab1de358921c13104aa28",
+          "actual": "618efea6a7ce0914cdff5debc4ed85b31a25e7e821bab1de358921c13104aa28",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/logs/repair-probe-high.log",
+          "expected": "ee4b10c302db898c6b029b219f9ec02e1d1130f8cfccf49ed102f9404e3e2d98",
+          "actual": "ee4b10c302db898c6b029b219f9ec02e1d1130f8cfccf49ed102f9404e3e2d98",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/logs/repair-probe-q4.log",
+          "expected": "8058e5133cd2a87268e3b5a5033ec58ad3cd342314e237a70eedba6d22cbf0db",
+          "actual": "8058e5133cd2a87268e3b5a5033ec58ad3cd342314e237a70eedba6d22cbf0db",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/logs/repair-probe.log",
+          "expected": "715be1eee4373762020a5b0f1042a291a9c28eec91193d36f9e87a6ffa9f7c87",
+          "actual": "715be1eee4373762020a5b0f1042a291a9c28eec91193d36f9e87a6ffa9f7c87",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/convergence.csv",
+          "expected": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f",
+          "actual": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/field-grid-convergence.csv",
+          "expected": "36e8cd85789d68c6c07efb304441425bd7948430473fbd14593c6c3fef3d57f5",
+          "actual": "36e8cd85789d68c6c07efb304441425bd7948430473fbd14593c6c3fef3d57f5",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/key-metrics.json",
+          "expected": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91",
+          "actual": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/p1-check.csv",
+          "expected": "0f5fa37d65fe761ae6a30ac811126fb229421091e7cf4522eb3c579cfc6b85f8",
+          "actual": "0f5fa37d65fe761ae6a30ac811126fb229421091e7cf4522eb3c579cfc6b85f8",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/q1-samples.csv",
+          "expected": "e214e5f23b1c1787357c59ec841791d461414190d5b72379022c2e7db47bdc8d",
+          "actual": "e214e5f23b1c1787357c59ec841791d461414190d5b72379022c2e7db47bdc8d",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/q2-samples.csv",
+          "expected": "bf287f00761f6cba72f225c455d0ee1290d546874d135a7936ed8a4567dd4f21",
+          "actual": "bf287f00761f6cba72f225c455d0ee1290d546874d135a7936ed8a4567dd4f21",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/q3-threshold-trajectory.csv",
+          "expected": "68d78e1922d192eac3d74b6056713b595371c29447c52ea37cc4874c1898f244",
+          "actual": "68d78e1922d192eac3d74b6056713b595371c29447c52ea37cc4874c1898f244",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/q4-threshold-trajectory.csv",
+          "expected": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8",
+          "actual": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/repair-probe.json",
+          "expected": "40783b394eb2b9a144b1b89ecb00efcc773cc416a1834f9c11a9a58577afdf54",
+          "actual": "40783b394eb2b9a144b1b89ecb00efcc773cc416a1834f9c11a9a58577afdf54",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/result1.xlsx",
+          "expected": "49eeb7192df9a50ed39377b0dc7cd2719e5a231fb847730b1c6e898f78841807",
+          "actual": "49eeb7192df9a50ed39377b0dc7cd2719e5a231fb847730b1c6e898f78841807",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/result2.xlsx",
+          "expected": "dd70d05a2bbc245c1a1a2fffe7edcb5cb3409f0dce31d7e54063db3ce3d5078d",
+          "actual": "dd70d05a2bbc245c1a1a2fffe7edcb5cb3409f0dce31d7e54063db3ce3d5078d",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/result3.xlsx",
+          "expected": "661e8fcab835f9b42276010eb04e4d14149b0503eb3444e52a2d8c3f7c84b344",
+          "actual": "661e8fcab835f9b42276010eb04e4d14149b0503eb3444e52a2d8c3f7c84b344",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/result4.xlsx",
+          "expected": "ddd95c812f50e78b5cfab1df7df522f32ff6dadb8d0e08a986c73d504a98ac7b",
+          "actual": "ddd95c812f50e78b5cfab1df7df522f32ff6dadb8d0e08a986c73d504a98ac7b",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/run-summary.csv",
+          "expected": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "actual": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/sensitivity-extended.csv",
+          "expected": "f778eb33975d0df7eb3c25a54eb05cb46f3d5e2f797948cdbd7168eaf3038903",
+          "actual": "f778eb33975d0df7eb3c25a54eb05cb46f3d5e2f797948cdbd7168eaf3038903",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/sensitivity.csv",
+          "expected": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf",
+          "actual": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/threshold-grid-convergence.csv",
+          "expected": "8ba2aa18d42e13169db3f569cb7a6c1d5e8fd836c7f6818a8d0eb42fefd811f6",
+          "actual": "8ba2aa18d42e13169db3f569cb7a6c1d5e8fd836c7f6818a8d0eb42fefd811f6",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/validation-register.csv",
+          "expected": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
+          "actual": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/src/finalize_compute.py",
+          "expected": "db42bf1398722d58bf6be526d464896f232b4b827118793ad45b68631ee254d1",
+          "actual": "db42bf1398722d58bf6be526d464896f232b4b827118793ad45b68631ee254d1",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/src/formal_compute.py",
+          "expected": "e76fb6167449df6111a4d56b253878b60d71b582b9ddc474ceaab22bfc179975",
+          "actual": "e76fb6167449df6111a4d56b253878b60d71b582b9ddc474ceaab22bfc179975",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/src/repair_probe.py",
+          "expected": "cdbe7b7d5401ede078cc9c62662573dcee3803ee459eea994c8e7e63b37114b7",
+          "actual": "cdbe7b7d5401ede078cc9c62662573dcee3803ee459eea994c8e7e63b37114b7",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/supplemental-extensions/cfd-convergence.csv",
+          "expected": "1f43e57bf789e2134897d6221b0855bbcea10f1282294c47e4c3053bdb9efcc6",
+          "actual": "1f43e57bf789e2134897d6221b0855bbcea10f1282294c47e4c3053bdb9efcc6",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/supplemental-extensions/finalize.py",
+          "expected": "4ebc92ecce774b4e0b205cb222c69399b64d5d48dc820e88923b184ae765ec37",
+          "actual": "4ebc92ecce774b4e0b205cb222c69399b64d5d48dc820e88923b184ae765ec37",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/supplemental-extensions/pde-fields-120.npz",
+          "expected": "f80312b342ed5520cea9906c697b54486f5814edb00cbbed73a431244c72d650",
+          "actual": "f80312b342ed5520cea9906c697b54486f5814edb00cbbed73a431244c72d650",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/supplemental-extensions/pde-scenarios-120.csv",
+          "expected": "35617baf067293372483dce4e10f5cef13a264dab41e357a0a27e8364d57b85a",
+          "actual": "35617baf067293372483dce4e10f5cef13a264dab41e357a0a27e8364d57b85a",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/supplemental-extensions/pinn-metrics.csv",
+          "expected": "2c1a48d597ef7e5877f0c7489f8aa3df2ceff707cba8b83fa7086b487bed98c8",
+          "actual": "2c1a48d597ef7e5877f0c7489f8aa3df2ceff707cba8b83fa7086b487bed98c8",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/supplemental-extensions/pure-ml-metrics.csv",
+          "expected": "08c5d9eccf4586e32dbf6c6ee5cc5a925edf5507224d920376efa69e8d93dda9",
+          "actual": "08c5d9eccf4586e32dbf6c6ee5cc5a925edf5507224d920376efa69e8d93dda9",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/supplemental-extensions/run_validation.py",
+          "expected": "c5bce8679c76f1ee0d7923b2f3abb0ba03893208d801102fe29c35f79f5ace7a",
+          "actual": "c5bce8679c76f1ee0d7923b2f3abb0ba03893208d801102fe29c35f79f5ace7a",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/supplemental-extensions/split-manifest.json",
+          "expected": "f008585c3d1bf683af7bd4468ddb37ae9964618c2040586f635ba599e0d6fe69",
+          "actual": "f008585c3d1bf683af7bd4468ddb37ae9964618c2040586f635ba599e0d6fe69",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/supplemental-extensions/summary.json",
+          "expected": "8b26e207070d4e16cfd339f924ae7fba6c494913dcf5518535ab14d0578c41ef",
+          "actual": "8b26e207070d4e16cfd339f924ae7fba6c494913dcf5518535ab14d0578c41ef",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/supplemental-extensions/surrogate-metrics.csv",
+          "expected": "caaa95e99308ac58ad2820d17346d0acbe50ab9e3554b824ebc75bed78c34245",
+          "actual": "caaa95e99308ac58ad2820d17346d0acbe50ab9e3554b824ebc75bed78c34245",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/supplemental-extensions/复现清单.json",
+          "expected": "39eb16882e79ffcd5dbd0880dc94d250a2a03187e845ba598a4e8fedd6492ca9",
+          "actual": "39eb16882e79ffcd5dbd0880dc94d250a2a03187e845ba598a4e8fedd6492ca9",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/supplemental-extensions/小白版报告.md",
+          "expected": "7622f2a87e4eddee6d72cdb1bb7b985c5b40ec550effe038597242cf809e63da",
+          "actual": "7622f2a87e4eddee6d72cdb1bb7b985c5b40ec550effe038597242cf809e63da",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/supplemental-extensions/比较报告.md",
+          "expected": "044ebada9e5882b250cc0625c587e393031a4d6cafb405ff494193d144486087",
+          "actual": "044ebada9e5882b250cc0625c587e393031a4d6cafb405ff494193d144486087",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/复现清单.json",
+          "expected": "291f65c629479ad44b2ef49096f525254b0c3a68653b3ee42ccb3c5db3d1bdee",
+          "actual": "291f65c629479ad44b2ef49096f525254b0c3a68653b3ee42ccb3c5db3d1bdee",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/证据索引.json",
+          "expected": "1c33297088e7505845dbccea6bcdef4a8b8c31ff3855324e0ea85ca44d27a9f3",
+          "actual": "1c33297088e7505845dbccea6bcdef4a8b8c31ff3855324e0ea85ca44d27a9f3",
+          "status": "PASS"
+        },
+        {
+          "section": "frozen_decisions",
+          "path": "decisions/H1-problem.json",
+          "expected": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d",
+          "actual": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d",
+          "status": "PASS"
+        },
+        {
+          "section": "frozen_decisions",
+          "path": "decisions/H2-model.json",
+          "expected": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+          "actual": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+          "status": "PASS"
+        }
+      ],
+      "mismatches": []
+    },
+    {
+      "handoff": "05-evidence/handoff.json",
+      "handoff_sha256": "063086dfe74aaf789ba711dfa441b0bc53e68dc99630ca0f898f9ecbae84c6f0",
+      "declared_inputs": 33,
+      "declared_outputs": 6,
+      "declared_frozen_decisions": 2,
+      "verified": [
+        {
+          "section": "inputs",
+          "path": "decisions/H1-problem.json",
+          "expected": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d",
+          "actual": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "decisions/H2-model.json",
+          "expected": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+          "actual": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-literature/handoff.json",
+          "expected": "5681198a6ffaf434b0c8e4f0121d540b0609947906da04ed665b27f1a760e61e",
+          "actual": "5681198a6ffaf434b0c8e4f0121d540b0609947906da04ed665b27f1a760e61e",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-literature/文献清单.json",
+          "expected": "23a86badf3ac8f35607b30ec45b48b5da7bcbed5761b2b5cdd1ddfaba19b2bbd",
+          "actual": "23a86badf3ac8f35607b30ec45b48b5da7bcbed5761b2b5cdd1ddfaba19b2bbd",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-literature/文献阅读结果.md",
+          "expected": "31cb88d8a1cb8de37c193dfa5824f234e0097f96c0284037d82201f15ad915a8",
+          "actual": "31cb88d8a1cb8de37c193dfa5824f234e0097f96c0284037d82201f15ad915a8",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-design/handoff.json",
+          "expected": "5f2579e4fdad88eb19f68cfad1de065046e186b27e55d0d86422576be3f7ccc0",
+          "actual": "5f2579e4fdad88eb19f68cfad1de065046e186b27e55d0d86422576be3f7ccc0",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-design/候选模型方案.md",
+          "expected": "ced11bfb105fad81a7e1690cbaa9b4edfcc077ab17dbda25924def4cfbc63c17",
+          "actual": "ced11bfb105fad81a7e1690cbaa9b4edfcc077ab17dbda25924def4cfbc63c17",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-design/H2-优化审计与方向.md",
+          "expected": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33",
+          "actual": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-design/验证计划.json",
+          "expected": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb",
+          "actual": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-design/contracts/model-q1-fixed.json",
+          "expected": "8581a6ff4abe76ed7e4457a529a8fc5dd8062ec604133bb4d4d5b3630c502998",
+          "actual": "8581a6ff4abe76ed7e4457a529a8fc5dd8062ec604133bb4d4d5b3630c502998",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-design/contracts/model-q23-fixed.json",
+          "expected": "b3f8327a02dba8de5e97906822641639b4c953aa48cfc6aaefda14986ace9fd1",
+          "actual": "b3f8327a02dba8de5e97906822641639b4c953aa48cfc6aaefda14986ace9fd1",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-design/contracts/model-q4-m1-reference.json",
+          "expected": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5",
+          "actual": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "02-design/contracts/model-q4-m2-moving-fv.json",
+          "expected": "c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f",
+          "actual": "c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "03-prototype/handoff.json",
+          "expected": "8d4f161cc4b4b3b84f679273f23db5bf674f610754727efaf7a53f7635ff07e6",
+          "actual": "8d4f161cc4b4b3b84f679273f23db5bf674f610754727efaf7a53f7635ff07e6",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/handoff.json",
+          "expected": "21b736c942d5aa79ea08c4da9a93129854271f101c89c426dcbb79d9da73eb95",
+          "actual": "21b736c942d5aa79ea08c4da9a93129854271f101c89c426dcbb79d9da73eb95",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/复现清单.json",
+          "expected": "291f65c629479ad44b2ef49096f525254b0c3a68653b3ee42ccb3c5db3d1bdee",
+          "actual": "291f65c629479ad44b2ef49096f525254b0c3a68653b3ee42ccb3c5db3d1bdee",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/证据索引.json",
+          "expected": "1c33297088e7505845dbccea6bcdef4a8b8c31ff3855324e0ea85ca44d27a9f3",
+          "actual": "1c33297088e7505845dbccea6bcdef4a8b8c31ff3855324e0ea85ca44d27a9f3",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/results/key-metrics.json",
+          "expected": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91",
+          "actual": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/results/validation-register.csv",
+          "expected": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
+          "actual": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/results/run-summary.csv",
+          "expected": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "actual": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/results/convergence.csv",
+          "expected": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f",
+          "actual": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/results/field-grid-convergence.csv",
+          "expected": "36e8cd85789d68c6c07efb304441425bd7948430473fbd14593c6c3fef3d57f5",
+          "actual": "36e8cd85789d68c6c07efb304441425bd7948430473fbd14593c6c3fef3d57f5",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/results/threshold-grid-convergence.csv",
+          "expected": "8ba2aa18d42e13169db3f569cb7a6c1d5e8fd836c7f6818a8d0eb42fefd811f6",
+          "actual": "8ba2aa18d42e13169db3f569cb7a6c1d5e8fd836c7f6818a8d0eb42fefd811f6",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/results/sensitivity.csv",
+          "expected": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf",
+          "actual": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/results/q1-samples.csv",
+          "expected": "e214e5f23b1c1787357c59ec841791d461414190d5b72379022c2e7db47bdc8d",
+          "actual": "e214e5f23b1c1787357c59ec841791d461414190d5b72379022c2e7db47bdc8d",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/results/q2-samples.csv",
+          "expected": "bf287f00761f6cba72f225c455d0ee1290d546874d135a7936ed8a4567dd4f21",
+          "actual": "bf287f00761f6cba72f225c455d0ee1290d546874d135a7936ed8a4567dd4f21",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/results/q3-threshold-trajectory.csv",
+          "expected": "68d78e1922d192eac3d74b6056713b595371c29447c52ea37cc4874c1898f244",
+          "actual": "68d78e1922d192eac3d74b6056713b595371c29447c52ea37cc4874c1898f244",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/results/q4-threshold-trajectory.csv",
+          "expected": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8",
+          "actual": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/src/formal_compute.py",
+          "expected": "e76fb6167449df6111a4d56b253878b60d71b582b9ddc474ceaab22bfc179975",
+          "actual": "e76fb6167449df6111a4d56b253878b60d71b582b9ddc474ceaab22bfc179975",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/src/finalize_compute.py",
+          "expected": "db42bf1398722d58bf6be526d464896f232b4b827118793ad45b68631ee254d1",
+          "actual": "db42bf1398722d58bf6be526d464896f232b4b827118793ad45b68631ee254d1",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/supplemental-extensions/handoff.json",
+          "expected": "e914ddfcdd81b2a53b0fe7861b893a1e7a471ffccffc916d7350c31b9b059186",
+          "actual": "e914ddfcdd81b2a53b0fe7861b893a1e7a471ffccffc916d7350c31b9b059186",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/supplemental-extensions/summary.json",
+          "expected": "8b26e207070d4e16cfd339f924ae7fba6c494913dcf5518535ab14d0578c41ef",
+          "actual": "8b26e207070d4e16cfd339f924ae7fba6c494913dcf5518535ab14d0578c41ef",
+          "status": "PASS"
+        },
+        {
+          "section": "inputs",
+          "path": "04-compute/supplemental-extensions/复现清单.json",
+          "expected": "39eb16882e79ffcd5dbd0880dc94d250a2a03187e845ba598a4e8fedd6492ca9",
+          "actual": "39eb16882e79ffcd5dbd0880dc94d250a2a03187e845ba598a4e8fedd6492ca9",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "05-evidence/主张证据映射.json",
+          "expected": "f2f3eab255f3e0a13fdc1f76d0e2c4e0d75e20023bd4c1203f11f07b54b83fc1",
+          "actual": "f2f3eab255f3e0a13fdc1f76d0e2c4e0d75e20023bd4c1203f11f07b54b83fc1",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "05-evidence/结果事实清单.json",
+          "expected": "b908db65f229747f192b1e34b3011158cf1937eafd3ab305d1d3a67fe5fde256",
+          "actual": "b908db65f229747f192b1e34b3011158cf1937eafd3ab305d1d3a67fe5fde256",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "05-evidence/摘要事实清单.json",
+          "expected": "063913d219921e275109d004e3ac86bb28f5f05d994de4bf7d4188b06953cb83",
+          "actual": "063913d219921e275109d004e3ac86bb28f5f05d994de4bf7d4188b06953cb83",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "05-evidence/正式图表需求.json",
+          "expected": "8c0464e43869ea3c775e05463561861b82a39330e2666775962ebd9da3c67078",
+          "actual": "8c0464e43869ea3c775e05463561861b82a39330e2666775962ebd9da3c67078",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "05-evidence/论文证据大纲.md",
+          "expected": "df7b1c0ade72b008ddb655bf08ea5b8f15bdb0d0c241aa9bba93c40e134edae5",
+          "actual": "df7b1c0ade72b008ddb655bf08ea5b8f15bdb0d0c241aa9bba93c40e134edae5",
+          "status": "PASS"
+        },
+        {
+          "section": "outputs",
+          "path": "05-evidence/H3-选择包.md",
+          "expected": "ce410146bce7f1f54de4bcb4bf74a0399d03355cad16dca3691dc9c933932ac5",
+          "actual": "ce410146bce7f1f54de4bcb4bf74a0399d03355cad16dca3691dc9c933932ac5",
+          "status": "PASS"
+        },
+        {
+          "section": "frozen_decisions",
+          "path": "decisions/H1-problem.json",
+          "expected": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d",
+          "actual": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d",
+          "status": "PASS"
+        },
+        {
+          "section": "frozen_decisions",
+          "path": "decisions/H2-model.json",
+          "expected": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+          "actual": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+          "status": "PASS"
+        }
+      ],
+      "mismatches": []
+    }
+  ]
+}

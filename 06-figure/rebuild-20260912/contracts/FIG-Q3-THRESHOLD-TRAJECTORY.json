@@ -1,0 +1,41 @@
+{
+  "figure_id": "FIG-Q3-THRESHOLD-TRAJECTORY",
+  "claim_ids": [
+    "Q3 / Q3-OBS-01"
+  ],
+  "question": "全域最大含水率何时接近判据？",
+  "source_files": [
+    {
+      "path": "04-compute/results/q3-threshold-trajectory.csv",
+      "sha256": "68d78e1922d192eac3d74b6056713b595371c29447c52ea37cc4874c1898f244"
+    }
+  ],
+  "x": {
+    "definition": "x=time(h); y=C(kg/kg干基)"
+  },
+  "y": {
+    "definition": "x=time(h); y=C(kg/kg干基)"
+  },
+  "groups": [
+    "max/mean/center/surface"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "判据0.15-1e-6；206820s"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q3-THRESHOLD-TRAJECTORY.csv",
+    "sha256": "6a451ec21f93328e29fec15a851eb62ac37fdc7a0b906d7f7616619d818e0614"
+  }
+}

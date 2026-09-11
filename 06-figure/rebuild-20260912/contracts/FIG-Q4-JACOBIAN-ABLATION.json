@@ -1,0 +1,45 @@
+{
+  "figure_id": "FIG-Q4-JACOBIAN-ABLATION",
+  "claim_ids": [
+    "Q4 / Q4-DED-01"
+  ],
+  "question": "删除Jacobian修正如何破坏守恒？",
+  "source_files": [
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"
+    },
+    {
+      "path": "04-compute/results/validation-register.csv",
+      "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb"
+    }
+  ],
+  "x": {
+    "definition": "x=route; y=balance error(-,log)"
+  },
+  "y": {
+    "definition": "x=route; y=balance error(-,log)"
+  },
+  "groups": [
+    "批准路线,Jacobian消融"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "9.6451610e-8；0.5936318973；V10失败"
+  ],
+  "must_show_failures": true,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-JACOBIAN-ABLATION.csv",
+    "sha256": "88a90c5dd230ecc1ea3a413b0bf14b190258a5721f6522e4f76c71c7de19d4f4"
+  }
+}

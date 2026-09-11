@@ -1,0 +1,45 @@
+{
+  "figure_id": "FIG-Q4-BRACKET-ZOOM",
+  "claim_ids": [
+    "Q4 / Q4-OBS-01"
+  ],
+  "question": "插值时刻与60s报告值如何对应？",
+  "source_files": [
+    {
+      "path": "04-compute/results/q4-threshold-trajectory.csv",
+      "sha256": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8"
+    },
+    {
+      "path": "04-compute/results/run-summary.csv",
+      "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"
+    }
+  ],
+  "x": {
+    "definition": "x=time(s); y=max_C(kg/kg干基)"
+  },
+  "y": {
+    "definition": "x=time(s); y=max_C(kg/kg干基)"
+  },
+  "groups": [
+    "邻域点"
+  ],
+  "uncertainty": "确定性条件仿真，无抽样误差",
+  "required_comparisons": [
+    "183789.3317s；183840s"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "不得读取06-figure旧产物",
+    "不得改写源数据、阈值或指标",
+    "不得隐藏失败或有限裕量"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "snapshot": {
+    "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-BRACKET-ZOOM.csv",
+    "sha256": "fa7e31c1e3e790b04932ddcb84a82d26ced2f3daaa80c6cf5f8c72a16ac3e4a9"
+  }
+}
