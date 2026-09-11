@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "A-SUPPLEMENT-FAIR-COMPARISON-2026",
+  "status": "DESIGN_ONLY_NOT_EXECUTED",
+  "role": "不替换M1-M4的补充实验层",
+  "frozen_authority": {
+    "primary_route": "M1-M4仍是正式路线；M2为二维主干，M3为主要非线性模型，M4仅按已批准口径消融/比较",
+    "q3_reference_event_s": 206820,
+    "q4_reference_event_s": 183840,
+    "threshold": "max_active_domain(C) < 0.15 kg/kg, epsilon=1e-6, 60 s report resolution with local bracketing",
+    "reference_balance_error_max": 9.645160999057142e-8,
+    "reference_linear_residual_max": 5.000064734843474e-11,
+    "interpretation": "以上为COMPUTE PASS数值参考，不是扩展模型结果或现实精度证据"
+  },
+  "scenario_space": {
+    "generator": "仅由已验证M3/Q3与M4/Q4有限体积求解器生成标签；不得用代理自身生成真值",
+    "coordinates": ["model_family in {Q3-fixed,Q4-moving}", "h multiplier", "hm multiplier", "empirical prefactor multiplier", "empirical exponent multiplier", "terminal-window_s", "boundary-profile perturbation coefficients"],
+    "bounded_core": {
+      "h_multiplier": [0.8, 1.2],
+      "hm_multiplier": [0.8, 1.2],
+      "prefactor_multiplier": [0.9, 1.1],
+      "exponent_multiplier": [0.95, 1.05],
+      "terminal_window_s": [1800, 7200],
+      "boundary_profile_perturbation": "保持附件1端点和物理范围的低维平滑扰动；幅值不得超出预注册范围"
+    },
+    "extrapolation_shell": "每次仅一个连续参数落在核心区间外10%-25%，其余保持核心区间；不得越过正物性、正半径和经验式定义域",
+    "minimum_total_scenarios": 120,
+    "sampling": "固定候选池上的maximin Latin hypercube；Q3/Q4各60工况"
+  },
+  "split": {
+    "unit": "整条工况轨迹；同一工况的所有空间点和时刻只能属于一个集合",
+    "train_interpolation": 72,
+    "validation_interpolation": 16,
+    "test_interpolation": 16,
+    "test_extrapolation": 16,
+    "frozen_manifest_required": true,
+    "no_leakage": ["标准化统计量只由训练集计算", "早停与超参数只看训练/验证集", "测试集只在模型冻结后评一次", "网格节点随机拆分禁止"]
+  },
+  "evaluation_grid": {
+    "coordinate": "xi=r/R(t) for common field comparison; additionally report physical r where active",
+    "space": "xi=0:0.05:1",
+    "time": "0:1800:216000 s plus each reference threshold bracket and prescribed result-grid times",
+    "interpolation": "all outputs conservatively mapped from native grid to this fixed evaluation grid"
+  },
+  "metrics": {
+    "field": [
+      "volume-weighted RMSE for T and C",
+      "volume-weighted MAE for T and C",
+      "maximum absolute error for T and C",
+      "relative L2 error with denominator floor declared before execution"
+    ],
+    "events": [
+      "absolute and signed Q3 threshold-time error in s",
+      "absolute and signed Q4 threshold-time error in s",
+      "false-safe rate: predicted max(C)<0.15 while reference does not"
+    ],
+    "physics": [
+      "normalized global moisture balance residual",
+      "normalized global energy balance residual where T is solved",
+      "cellwise PDE residual L2 and Linf on an independent audit stencil",
+      "Robin boundary residual and axis-symmetry residual",
+      "positivity/range violations",
+      "Q4 dry-solid continuity, geometry/Jacobian error and outside-domain prediction count"
+    ],
+    "cost": ["wall-clock training/calibration time", "single-scenario inference/solve median and p95", "peak resident memory", "trainable parameter count or degrees of freedom", "serialized model size", "break-even number of calls against M3/M4"],
+    "stability": ["per-seed mean/std/worst metric", "convergence/failure count", "ranking consistency"],
+    "data_sensitivity": ["same metrics at 18, 36 and 72 training scenarios"]
+  },
+  "seeds": [20260911, 20260912, 20260913],
+  "timing_protocol": "same machine, software environment and precision; one warm-up, then at least 20 inference repetitions; PDE/CFD solve timing includes assembly and solve but excludes common input parsing; training time includes preprocessing and early stopping",
+  "retention_rules": {
+    "surrogate_or_ml": ["interpolation C relative-L2 <= 0.02", "interpolation max |C error| <= 0.02 kg/kg", "median Q3/Q4 absolute event error <= 600 s and worst <= 1800 s", "false-safe rate = 0", "median inference speedup >= 10x after amortization", "all three seeds meet safety rules"],
+    "pinn": ["beats the same-observation unconstrained inverse baseline by >=20% median parameter relative error or field RMSE", "identified parameter 95% interval has finite width and covers synthetic truth in >=90% of trials", "no worse than 600 s median threshold-time error", "physics residual is lower than pure-ML baseline on the independent audit stencil"],
+    "cfd": ["new phase/capillary mechanism changes a preregistered decision metric by more than combined discretization uncertainty", "mass balance <=1e-5 and mesh/time refinement changes event time <=60 s", "added parameters pass profile-identifiability or are fixed from allowed literature", "runtime and memory stay within the stated budget"]
+  },
+  "rejection_and_fallback": [
+    "任何方法出现测试泄漏、非物理解、未报告失败运行或无法复现，直接拒绝该补充模型",
+    "外推不达门槛时仅允许标注为核心区间内插值器，不得扩大适用域",
+    "复杂模型未超过对应简单基线的预注册门槛时回退到简单基线",
+    "补充实验无论成败均不得修改M1-M4、COMPUTE PASS或result1-result4"
+  ]
+}

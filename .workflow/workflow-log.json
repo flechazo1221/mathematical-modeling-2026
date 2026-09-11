@@ -177,6 +177,44 @@
       "at": "2026-09-11T15:28:36+08:00",
       "stage": "COMPUTE",
       "thread_id": "01a08f5e-25cf-7193-9ab9-00fd52e5911e"
+    },
+    {
+      "event": "STAGE_RECOVERY_AUTHORIZED",
+      "at": "2026-09-11T17:11:02+08:00",
+      "stage": "COMPUTE",
+      "failed_thread_id": "01a08f5e-25cf-7193-9ab9-00fd52e5911e",
+      "reason": "Task unavailable and COMPUTE handoff is FAIL",
+      "team_direction": "Keep the physical model and validation thresholds frozen; repair spatial discretization first, then locally refine time near thresholds"
+    },
+    {
+      "event": "STAGE_STARTED",
+      "at": "2026-09-11T17:11:48+08:00",
+      "stage": "COMPUTE",
+      "thread_id": "01a08fbc-a10a-7f40-8eba-f094766d2540"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-11T17:11:48+08:00",
+      "stage": "COMPUTE",
+      "affected_files": [
+        "04-compute"
+      ]
+    },
+    {
+      "event": "STAGE_COMPLETED",
+      "at": "2026-09-11T18:10:12+08:00",
+      "stage": "COMPUTE",
+      "next_stage": "EVIDENCE"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-11T19:48:25+08:00",
+      "stage": "COMPUTE",
+      "affected_files": [
+        "02-design/supplemental-extensions",
+        "03-prototype/supplemental-extensions",
+        "04-compute/supplemental-extensions"
+      ]
     }
   ]
 }

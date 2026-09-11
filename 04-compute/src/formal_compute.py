@@ -125,12 +125,18 @@ class Grid:
     nz: int
     radius: float = R0
     stretch: float = 1.7
+    radial_strategy: str = "two-sided-local"
 
     def __post_init__(self):
         s = np.linspace(0, 1, self.nr + 1)
         # Smooth two-sided radial refinement: resolve both the symmetry-axis
         # maximum and the outer Robin boundary layer without zero-width cells.
-        self.rf = self.radius * (s - 0.65 * np.sin(2 * np.pi * s) / (2 * np.pi))
+        if self.radial_strategy == "uniform":
+            self.rf = self.radius * s
+        elif self.radial_strategy == "two-sided-local":
+            self.rf = self.radius * (s - 0.65 * np.sin(2 * np.pi * s) / (2 * np.pi))
+        else:
+            raise ValueError(f"unknown radial strategy: {self.radial_strategy}")
         self.rc = (2.0/3.0) * (self.rf[1:]**3-self.rf[:-1]**3) / np.maximum(self.rf[1:]**2-self.rf[:-1]**2,1e-300)
         if self.nz == 1:
             self.zf = np.array([0.0, LENGTH]); self.zc = np.array([LENGTH / 2])
@@ -322,12 +328,14 @@ class RunConfig:
     radius_mode: str = "pchip"
     moving_impl: str = "fixed"
     sample_every: float = 60.0
+    radial_strategy: str = "two-sided-local"
 
 
 def simulate(cfg: RunConfig, initial=None):
     moving = cfg.q == 4
     radius = radius_at(0, cfg.radius_mode) if moving else R0
-    grid = Grid(cfg.nr, cfg.nz, radius); ref_grid = Grid(cfg.nr, cfg.nz, R0)
+    grid = Grid(cfg.nr, cfg.nz, radius, radial_strategy=cfg.radial_strategy)
+    ref_grid = Grid(cfg.nr, cfg.nz, R0, radial_strategy=cfg.radial_strategy)
     c = np.full((cfg.nr, cfg.nz), 2.55) if initial is None else initial[0].copy()
     temp = np.full_like(c, 301.15) if initial is None else initial[1].copy()
     initial_inventory = float(np.sum(c * grid.vol))
@@ -341,7 +349,7 @@ def simulate(cfg: RunConfig, initial=None):
         tenv, cenv = outside(t, cfg.window_s)
         current_radius = radius_at(t, cfg.radius_mode) if moving else R0
         if moving and abs(current_radius - grid.radius) > 1e-15:
-            old_grid = grid; grid = Grid(cfg.nr, cfg.nz, current_radius)
+            old_grid = grid; grid = Grid(cfg.nr, cfg.nz, current_radius, radial_strategy=cfg.radial_strategy)
             # Material-coordinate cells retain C and T; dry density follows continuity.
             geom_rel = max(geom_rel, abs(np.sum(grid.vol) / (math.pi * current_radius**2 * grid.axial_extent) - 1))
         if t + 1e-9 >= next_sample or step == nsteps:
@@ -365,7 +373,7 @@ def simulate(cfg: RunConfig, initial=None):
         tnext = min(t + cfg.dt, cfg.duration); dt = tnext - t
         tenv1, cenv1 = outside(tnext, cfg.window_s)
         rnext = radius_at(tnext, cfg.radius_mode) if moving else R0
-        next_grid = Grid(cfg.nr, cfg.nz, rnext)
+        next_grid = Grid(cfg.nr, cfg.nz, rnext, radial_strategy=cfg.radial_strategy)
         guess_c, guess_t = c.copy(), temp.copy()
         for pic in range(1, 25):
             if cfg.q == 1:
@@ -426,13 +434,26 @@ def simulate(cfg: RunConfig, initial=None):
         if not np.all(np.isfinite(c)) or not np.all(np.isfinite(temp)) or float(c.min()) < -1e-10:
             raise FloatingPointError(f"physical guard failed in {cfg.label} at {tnext}")
     runtime = time.perf_counter() - start
+    interpolated_event_time = None
+    reported_event_time = None
+    if bracket is not None:
+        t0, t1, y0, y1 = bracket
+        target = cfg.stop_threshold
+        if y1 != y0:
+            interpolated_event_time = float(t0 + (target-y0)*(t1-t0)/(y1-y0))
+        else:
+            interpolated_event_time = float(t1)
+        reported_event_time = float(60 * math.ceil(interpolated_event_time / 60 - 1e-12))
     return {"config": cfg.__dict__, "records": records, "states": states, "final_c": c, "final_t": temp,
             "metrics": {"runtime_s": runtime, "max_cg_iterations": max_cg, "max_linear_relative_residual": max_linres,
                         "max_picard_iterations": max_picard, "normalized_moisture_balance_error": max_balance,
                         "max_terminal_picard_update":max_picard_update,
                         "dry_solid_inventory_relative_error": dry_inventory_rel, "geometry_relative_error": geom_rel,
                         "max_local_dry_continuity_relative_residual":local_dry_residual,
-                        "threshold_bracket": bracket, "final_time_s": bracket[1] if bracket else records[-1]["time_s"],
+                        "threshold_bracket": bracket,
+                        "interpolated_event_time_s": interpolated_event_time,
+                        "reported_event_time_s": reported_event_time,
+                        "final_time_s": reported_event_time if bracket else records[-1]["time_s"],
                         "final_max_C": current_max, "final_mean_C": float(np.sum(c*grid.vol)/np.sum(grid.vol))}}
 
 
@@ -501,7 +522,7 @@ def p1_suite(log):
 
 
 def full_suite(log):
-    summary=[]; convergence=[]; sensitivity=[]
+    summary=[]; convergence=[]; sensitivity=[]; grid_rows=[]; threshold_grid_rows=[]
     def execute(cfg):
         log.write(f"START {cfg.label} {datetime.now(timezone.utc).isoformat()}\n"); log.flush()
         run=simulate(cfg); row={"label":cfg.label,**run["metrics"]}; summary.append(row)
@@ -509,38 +530,55 @@ def full_suite(log):
 
     # Q1: M1 baseline and M2 backbone, separate mesh and time refinements.
     q1_runs={}
-    for label,nr,nz,dt in [("Q1-M1-coarse",16,1,2),("Q1-M1-base",24,1,1),("Q1-M1-fine",36,1,.5),
-                           ("Q1-M2-coarse",12,24,2),("Q1-M2-base",18,36,1),("Q1-M2-fine",27,54,.5)]:
+    for label,nr,nz,dt in [("Q1-M1-coarse",81,1,.5),("Q1-M1-base",122,1,.5),("Q1-M1-fine",183,1,.5),
+                           ("Q1-M2-coarse",62,54,.5),("Q1-M2-base",93,54,.5),("Q1-M2-fine",140,54,.5)]:
         q1_runs[label]=execute(RunConfig(label,nr,nz,dt,1800,1,"M1" if nz==1 else "M2",sample_every=1))
     q1=q1_runs["Q1-M2-base"]; write_field_xlsx(RESULTS/"result1.xlsx",q1["states"],temperature=True)
     save_csv(RESULTS/"q1-samples.csv",sample_rows(q1,[100,300,600,900,1200,1500,1800],prefix="Q1"))
     for family in ("M1","M2"):
-        a=q1_runs[f"Q1-{family}-base"]; b=q1_runs[f"Q1-{family}-fine"]
-        for metric in ("final_max_C","final_mean_C"):
-            convergence.append({"scope":"Q1","family":family,"metric":metric,"base":a["metrics"][metric],"fine":b["metrics"][metric],"absolute_change":abs(a["metrics"][metric]-b["metrics"][metric])})
+        runs=[q1_runs[f"Q1-{family}-{level}"] for level in ("coarse","base","fine")]
+        for i,r in enumerate(runs):
+            prev=runs[i-1] if i else None
+            for metric in ("final_max_C","final_mean_C"):
+                change="" if prev is None else abs(r["metrics"][metric]-prev["metrics"][metric])
+                grid_rows.append({"scope":"Q1","family":family,"nr":r["config"]["nr"],"nz":r["config"]["nz"],"grid_strategy":r["config"]["radial_strategy"],"fixed_dt_s":r["config"]["dt"],"metric":metric,"value":r["metrics"][metric],"adjacent_change":change})
+                if i==2: convergence.append({"scope":"Q1","family":family,"metric":metric,"base":prev["metrics"][metric],"fine":r["metrics"][metric],"absolute_change":change,"acceptance_pair":True})
     m1=q1_runs["Q1-M1-base"]; convergence.append({"scope":"Q1","family":"M1-vs-M2","metric":"final_mean_C","base":m1["metrics"]["final_mean_C"],"fine":q1["metrics"]["final_mean_C"],"absolute_change":abs(m1["metrics"]["final_mean_C"]-q1["metrics"]["final_mean_C"])})
 
     # Q2: constant M2 comparator, M3 main route, and M4 controlled ablation.
     q2_const=execute(RunConfig("Q2-M2-constant",18,36,10,10800,2,"M2",sample_every=1))
-    q2=execute(RunConfig("Q2-M3-main",18,36,10,10800,2,"M3",sample_every=1))
-    q2_time=execute(RunConfig("Q2-M3-time-refined",18,36,5,10800,2,"M3",sample_every=60))
+    q2_space=[]
+    for nr in (62,93,140):
+        q2_space.append(execute(RunConfig(f"Q2-M3-nr{nr}",nr,36,5,10800,2,"M3",sample_every=(1 if nr==140 else 3600))))
+    q2=q2_space[-1]
     q2_m4=execute(RunConfig("Q2-M4-ablation",18,36,10,10800,2,"M4",sample_every=60))
     write_field_xlsx(RESULTS/"result2.xlsx",interpolate_states(q2["states"],1),temperature=True)
     save_csv(RESULTS/"q2-samples.csv",sample_rows(q2,[1800,3600,5400,7200,9000,10800],prefix="Q2"))
-    convergence.append({"scope":"Q2","family":"M3","metric":"final_max_C","base":q2["metrics"]["final_max_C"],"fine":q2_time["metrics"]["final_max_C"],"absolute_change":abs(q2["metrics"]["final_max_C"]-q2_time["metrics"]["final_max_C"])})
+    for i,r in enumerate(q2_space):
+        prev=q2_space[i-1] if i else None
+        for metric in ("final_max_C","final_mean_C"):
+            change="" if prev is None else abs(r["metrics"][metric]-prev["metrics"][metric])
+            grid_rows.append({"scope":"Q2","family":"M3","nr":r["config"]["nr"],"nz":r["config"]["nz"],"grid_strategy":r["config"]["radial_strategy"],"fixed_dt_s":r["config"]["dt"],"metric":metric,"value":r["metrics"][metric],"adjacent_change":change})
+            if i==2: convergence.append({"scope":"Q2","family":"M3","metric":metric,"base":prev["metrics"][metric],"fine":r["metrics"][metric],"absolute_change":change,"acceptance_pair":True})
     for factor,lo,hi in [("h_mult",.8,1.2),("hm_mult",.8,1.2),("pref",.8,1.2),("exponent",.8,1.2)]:
         for level,val in [("low",lo),("high",hi)]:
             kw={factor:val}; r=execute(RunConfig(f"Q2-sens-{factor}-{level}",12,24,20,10800,2,"M3",sample_every=3600,**kw))
             sensitivity.append({"scope":"Q2","factor":factor,"level":level,"value":val,"t_star_s":"","final_max_C":r["metrics"]["final_max_C"],"final_mean_C":r["metrics"]["final_mean_C"]})
 
     # Q3: 2-D M3 event, mesh/time convergence, 60 s bracket and M4 ablation.
-    q3=execute(RunConfig("Q3-M3-main",18,36,60,259200,3,"M3",stop_threshold=.15-1e-6,sample_every=60))
-    q3_time=execute(RunConfig("Q3-M3-time-refined",18,36,30,259200,3,"M3",stop_threshold=.15-1e-6,sample_every=60))
-    q3_coarse=execute(RunConfig("Q3-M3-coarse",12,24,60,259200,3,"M3",stop_threshold=.15-1e-6,sample_every=60))
+    q3_space=[]
+    for nr in (93,140,210):
+        q3_space.append(execute(RunConfig(f"Q3-M3-nr{nr}",nr,36,60,259200,3,"M3",stop_threshold=.15-1e-6,sample_every=60)))
+    q3=q3_space[-1]
+    q3_time=execute(RunConfig("Q3-M3-dt30",210,36,30,259200,3,"M3",stop_threshold=.15-1e-6,sample_every=60))
+    q3_time_fine=execute(RunConfig("Q3-M3-dt15",210,36,15,259200,3,"M3",stop_threshold=.15-1e-6,sample_every=60))
     q3_m4=execute(RunConfig("Q3-M4-ablation",12,24,60,259200,3,"M4",stop_threshold=.15-1e-6,sample_every=60))
     write_field_xlsx(RESULTS/"result3.xlsx",q3["states"],temperature=False)
-    for other,name in [(q3_time,"time"),(q3_coarse,"space")]:
-        convergence.append({"scope":"Q3","family":"M3","metric":f"t_star_{name}","base":q3["metrics"]["final_time_s"],"fine":other["metrics"]["final_time_s"],"absolute_change":abs(q3["metrics"]["final_time_s"]-other["metrics"]["final_time_s"])})
+    for i,r in enumerate(q3_space):
+        prev=q3_space[i-1] if i else None; et=r["metrics"]["interpolated_event_time_s"]
+        threshold_grid_rows.append({"scope":"Q3","nr":r["config"]["nr"],"nz":r["config"]["nz"],"grid_strategy":r["config"]["radial_strategy"],"fixed_dt_s":60,"interpolated_event_time_s":et,"reported_event_time_s":r["metrics"]["reported_event_time_s"],"adjacent_change_s":"" if prev is None else abs(et-prev["metrics"]["interpolated_event_time_s"])})
+    convergence.append({"scope":"Q3","family":"M3","metric":"t_star_space","base":q3_space[-2]["metrics"]["interpolated_event_time_s"],"fine":q3["metrics"]["interpolated_event_time_s"],"absolute_change":abs(q3_space[-2]["metrics"]["interpolated_event_time_s"]-q3["metrics"]["interpolated_event_time_s"]),"acceptance_pair":True})
+    convergence.append({"scope":"Q3","family":"M3","metric":"t_star_time","base":q3_time["metrics"]["interpolated_event_time_s"],"fine":q3_time_fine["metrics"]["interpolated_event_time_s"],"absolute_change":abs(q3_time["metrics"]["interpolated_event_time_s"]-q3_time_fine["metrics"]["interpolated_event_time_s"]),"acceptance_pair":True})
     for window in (1800,3600,7200):
         r=execute(RunConfig(f"Q3-window-{window}",10,20,60,259200,3,"M3",window_s=window,stop_threshold=.15-1e-6,sample_every=3600))
         sensitivity.append({"scope":"Q3","factor":"terminal_window_s","level":str(window),"value":window,"t_star_s":r["metrics"]["final_time_s"],"final_max_C":r["metrics"]["final_max_C"],"final_mean_C":r["metrics"]["final_mean_C"]})
@@ -553,16 +591,24 @@ def full_suite(log):
         sensitivity.append({"scope":"Q3","factor":"combined_boundary_empirical","level":level,"value":str(vals),"t_star_s":r["metrics"]["final_time_s"],"final_max_C":r["metrics"]["final_max_C"],"final_mean_C":r["metrics"]["final_mean_C"]})
 
     # Q4: moving reference/ALE FV implementations plus regressions and ablation.
-    q4=execute(RunConfig("Q4-reference-main",16,32,60,259200,4,"M3",moving_impl="reference",stop_threshold=.15-1e-6,sample_every=60))
-    q4_moving=execute(RunConfig("Q4-moving-fv",16,32,60,259200,4,"M3",moving_impl="moving",stop_threshold=.15-1e-6,sample_every=60))
-    q4_time=execute(RunConfig("Q4-reference-time-refined",16,32,30,259200,4,"M3",moving_impl="reference",stop_threshold=.15-1e-6,sample_every=60))
-    q4_coarse=execute(RunConfig("Q4-reference-coarse",10,20,60,259200,4,"M3",moving_impl="reference",stop_threshold=.15-1e-6,sample_every=60))
+    q4_space=[]
+    for nr in (93,140,210):
+        q4_space.append(execute(RunConfig(f"Q4-reference-nr{nr}",nr,32,60,259200,4,"M3",moving_impl="reference",stop_threshold=.15-1e-6,sample_every=60)))
+    q4=q4_space[-1]
+    q4_moving=execute(RunConfig("Q4-moving-fv",210,32,60,259200,4,"M3",moving_impl="moving",stop_threshold=.15-1e-6,sample_every=60))
+    q4_time=execute(RunConfig("Q4-reference-dt30",210,32,30,259200,4,"M3",moving_impl="reference",stop_threshold=.15-1e-6,sample_every=60))
+    q4_time_fine=execute(RunConfig("Q4-reference-dt15",210,32,15,259200,4,"M3",moving_impl="reference",stop_threshold=.15-1e-6,sample_every=60))
     q4_abl=execute(RunConfig("Q4-jacobian-ablation",10,20,60,259200,4,"M3",moving_impl="ablated",stop_threshold=.15-1e-6,sample_every=60))
     q4_const_ref=execute(RunConfig("Q4-constant-radius-reference",10,20,60,43200,4,"M3",moving_impl="reference",radius_mode="constant",sample_every=3600))
     q4_const_mov=execute(RunConfig("Q4-constant-radius-moving",10,20,60,43200,4,"M3",moving_impl="moving",radius_mode="constant",sample_every=3600))
     write_field_xlsx(RESULTS/"result4.xlsx",q4["states"],temperature=False,moving=True)
-    for other,name in [(q4_moving,"implementation"),(q4_time,"time"),(q4_coarse,"space"),(q4_abl,"ablation")]:
-        convergence.append({"scope":"Q4","family":"moving-domain","metric":f"t_star_{name}","base":q4["metrics"]["final_time_s"],"fine":other["metrics"]["final_time_s"],"absolute_change":abs(q4["metrics"]["final_time_s"]-other["metrics"]["final_time_s"])})
+    for i,r in enumerate(q4_space):
+        prev=q4_space[i-1] if i else None; et=r["metrics"]["interpolated_event_time_s"]
+        threshold_grid_rows.append({"scope":"Q4","nr":r["config"]["nr"],"nz":r["config"]["nz"],"grid_strategy":r["config"]["radial_strategy"],"fixed_dt_s":60,"interpolated_event_time_s":et,"reported_event_time_s":r["metrics"]["reported_event_time_s"],"adjacent_change_s":"" if prev is None else abs(et-prev["metrics"]["interpolated_event_time_s"])})
+    convergence.append({"scope":"Q4","family":"moving-domain","metric":"t_star_space","base":q4_space[-2]["metrics"]["interpolated_event_time_s"],"fine":q4["metrics"]["interpolated_event_time_s"],"absolute_change":abs(q4_space[-2]["metrics"]["interpolated_event_time_s"]-q4["metrics"]["interpolated_event_time_s"]),"acceptance_pair":True})
+    for other,name in [(q4_moving,"implementation"),(q4_abl,"ablation")]:
+        convergence.append({"scope":"Q4","family":"moving-domain","metric":f"t_star_{name}","base":q4["metrics"]["interpolated_event_time_s"],"fine":other["metrics"]["interpolated_event_time_s"],"absolute_change":abs(q4["metrics"]["interpolated_event_time_s"]-other["metrics"]["interpolated_event_time_s"]),"acceptance_pair":False})
+    convergence.append({"scope":"Q4","family":"moving-domain","metric":"t_star_time","base":q4_time["metrics"]["interpolated_event_time_s"],"fine":q4_time_fine["metrics"]["interpolated_event_time_s"],"absolute_change":abs(q4_time["metrics"]["interpolated_event_time_s"]-q4_time_fine["metrics"]["interpolated_event_time_s"]),"acceptance_pair":True})
     convergence.append({"scope":"Q4","family":"constant-radius-regression","metric":"final_max_C","base":q4_const_ref["metrics"]["final_max_C"],"fine":q4_const_mov["metrics"]["final_max_C"],"absolute_change":abs(q4_const_ref["metrics"]["final_max_C"]-q4_const_mov["metrics"]["final_max_C"])})
     for mode in ("pchip","linear"):
         r=execute(RunConfig(f"Q4-radius-{mode}",10,20,60,259200,4,"M3",moving_impl="reference",radius_mode=mode,stop_threshold=.15-1e-6,sample_every=3600))
@@ -579,6 +625,8 @@ def full_suite(log):
         sensitivity.append({"scope":"Q4","factor":"combined_boundary_empirical","level":level,"value":str(vals),"t_star_s":r["metrics"]["final_time_s"],"final_max_C":r["metrics"]["final_max_C"],"final_mean_C":r["metrics"]["final_mean_C"]})
 
     save_csv(RESULTS/"run-summary.csv",summary); save_csv(RESULTS/"convergence.csv",convergence); save_csv(RESULTS/"sensitivity.csv",sensitivity)
+    save_csv(RESULTS/"field-grid-convergence.csv",grid_rows)
+    save_csv(RESULTS/"threshold-grid-convergence.csv",threshold_grid_rows)
     # Traceable diagnostic source tables.
     save_csv(RESULTS/"q3-threshold-trajectory.csv",q3["records"])
     save_csv(RESULTS/"q4-threshold-trajectory.csv",q4["records"])

@@ -1,0 +1,6 @@
+﻿model,role,accuracy_basis,median_s,status
+M3/M4 low-resolution PDE reference,reference,self,1.13566809999611,RETAIN_PRIMARY
+reduced two-phase CFD,mechanism probe,single-field limit/total inventory,0.0502725999976974,MECHANISM_DIFFERENCE
+PINN-ELM,sparse inverse prototype,analytic diffusion truth,0.06849530000181403,SUPPORTED_PROTOTYPE
+graph surrogate,PDE acceleration prototype,held-out PDE fields,7.183333461095269e-07,LIMITED_TO_INTERPOLATION
+pure ML ridge,negative/control baseline,held-out PDE event times,3.9416675766309104e-07,CONTROL_ONLY

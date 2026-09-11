@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "status": "PREREGISTERED_NOT_RUN",
+  "common_split_contract": "统一比较合同.json",
+  "frozen_seeds": [20260911, 20260912, 20260913],
+  "phases": [
+    {"id":"E0","purpose":"数据与基准冻结","runs":["生成120个PDE工况并写只读manifest","复算M3/M4基准守恒、阈值和网格误差","按整工况冻结72/16/16/16划分"],"stop_rule":"任一基准不能复现COMPUTE PASS口径则停止全部补充实验"},
+    {"id":"E1-CFD","model":"model-cfd.json","minimum_runs":74,"breakdown":{"limit_regression":4,"mechanism_ablations":6,"mesh_time_convergence":12,"shared_test_scenarios":32,"sensitivity":14,"identifiability_profiles":6},"priority":"conditional","stop_early":"single-phase limit mismatch>combined discretization error, balance residual>1e-5 after refinement, or unidentifiable fitted scales"},
+    {"id":"E2-PINN","model":"model-pinn.json","minimum_trainings":126,"breakdown":{"q3_density_noise_seed":81,"q4_noise_seed":9,"one_parameter_inverse":18,"conditional_two_parameter_inverse":9,"ablations":9},"priority":"high for identifiability study","stop_early":"validation loss diverges for all seeds, identifiability gate fails, or false-safe event prediction occurs"},
+    {"id":"E3-SURROGATE","model":"model-surrogate.json","minimum_trainings":30,"breakdown":{"POD_ridge_data_sizes":3,"GNN_data_size_seed":9,"rollout_horizon_checks":9,"ablations":6,"timing_modes":3},"priority":"high for repeated-query acceleration","stop_early":"GNN does not beat POD-ridge on validation C-RMSE or violates false-safe rule; then retain only POD-ridge comparison"},
+    {"id":"E4-PURE-ML","model":"model-pure-ml.json","minimum_trainings":15,"breakdown":{"ridge_data_sizes":3,"MLP_data_size_seed":9,"feature_ablation":3},"priority":"mandatory negative/control baseline","stop_early":"MLP fails to improve >=10% over ridge on validation C-RMSE; thereafter ridge alone"}
+  ],
+  "reporting_rows": ["model x split x seed x data_size","field RMSE/MAE/max error for T,C","Q3/Q4 signed and absolute threshold error plus false-safe flag","mass/energy/PDE/boundary/geometry violation","train/solve/inference time, peak memory, parameter count and file size","failure reason and retained/rejected/limited-domain decision"],
+  "fairness_exceptions": ["CFD has no supervised training; it is evaluated on identical test scenarios and receives only training-set observations for optional calibration","POD/GNN state inputs differ from pointwise PINN/MLP inputs; labels, splits, grid and metrics remain identical","hardware acceleration is reported separately; CPU comparison is mandatory"],
+  "execution_order": ["E0","E4","E2","E3","E1-CFD"],
+  "order_rationale": "先建立廉价无物理基线和PINN可识别性，再测试代理加速；CFD参数与代价最高，只有前述证据和资源允许时执行"
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "model": "physics-informed ELM/PINN prototype",
+    "seed": 20260911,
+    "D_true": 0.18,
+    "D_hat": 0.18,
+    "parameter_relative_error": 0.0,
+    "field": {
+      "rmse": 0.003507231200710669,
+      "mae": 0.0027606340955473826,
+      "max_abs": 0.01229813798401233
+    },
+    "unconstrained_field": {
+      "rmse": 0.06330224029774337,
+      "mae": 0.04511830254210251,
+      "max_abs": 0.23706565773102534
+    },
+    "pde_residual_l2": 0.0867737308272652,
+    "train_s": 0.06849530000181403,
+    "parameters": 37,
+    "claim_limit": "规范化扩散方程的合成稀疏观测原型；未证明M3/M4全方程可识别"
+  },
+  {
+    "model": "physics-informed ELM/PINN prototype",
+    "seed": 20260912,
+    "D_true": 0.18,
+    "D_hat": 0.1775,
+    "parameter_relative_error": 0.013888888888888902,
+    "field": {
+      "rmse": 0.0026861109252601773,
+      "mae": 0.002166125778233416,
+      "max_abs": 0.00765425982888053
+    },
+    "unconstrained_field": {
+      "rmse": 0.09352075199473901,
+      "mae": 0.061905008764561696,
+      "max_abs": 0.3571943608745424
+    },
+    "pde_residual_l2": 0.08301496028536945,
+    "train_s": 0.06886519999534357,
+    "parameters": 37,
+    "claim_limit": "规范化扩散方程的合成稀疏观测原型；未证明M3/M4全方程可识别"
+  },
+  {
+    "model": "physics-informed ELM/PINN prototype",
+    "seed": 20260913,
+    "D_true": 0.18,
+    "D_hat": 0.18,
+    "parameter_relative_error": 0.0,
+    "field": {
+      "rmse": 0.0028634723132273388,
+      "mae": 0.0022481392996665803,
+      "max_abs": 0.01111607158010225
+    },
+    "unconstrained_field": {
+      "rmse": 0.07691125904275911,
+      "mae": 0.033855740724874066,
+      "max_abs": 0.6988754568708303
+    },
+    "pde_residual_l2": 0.053931889099366255,
+    "train_s": 0.07364240000606515,
+    "parameters": 37,
+    "claim_limit": "规范化扩散方程的合成稀疏观测原型；未证明M3/M4全方程可识别"
+  }
+]

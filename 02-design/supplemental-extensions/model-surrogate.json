@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "model_id": "SUP-GNN-mesh-surrogate",
+  "status": "CANDIDATE_DESIGN_NOT_RUN",
+  "representative_choice": "最小可运行代表为消息传递GNN；若torch_geometric不可用，预注册回退为纯PyTorch固定邻接图卷积，不切换到更大模型",
+  "baseline": "verified M3/M4 PDE solver for accuracy and POD-ridge reduced-order surrogate for speed/complexity",
+  "target_defect": "大量重复工况调用M3/M4的时间成本；不主张修复物理真实性",
+  "new_mechanism": "在轴对称有限体积邻接图上学习一个时间推进算子，节点状态含T,C,xi,zeta和体积，边特征含距离、面面积与法向；全局条件含h,hm,经验式参数、边界历史编码和R(t)",
+  "operator": "U^{n+1}=U^n+Delta_t*G_theta(U^n,E,p,b_n); boundary nodes receive encoded Robin data; Q4 volumes/R(t) are explicit inputs",
+  "rollout": "teacher forcing only in training; validation/test always autoregressive to the threshold event",
+  "inputs": ["verified PDE trajectories on the unified scenarios", "mesh graph and cylindrical control volumes", "scenario/global boundary features"],
+  "outputs": ["T,C fields per step", "Q3/Q4 threshold times", "rollout uncertainty across seeds"],
+  "identifiability": "network weights have no physical-parameter interpretation; only input-output sensitivity is reported. No causal or material-property claim is allowed",
+  "dependencies": ["Python>=3.12", "numpy", "scipy", "PyTorch", "torch_geometric optional"],
+  "resource_budget": {"trainable_parameters_max": 500000, "ram_gb": 8, "cpu_training_h_per_seed": 2, "optional_gpu_h_per_seed": 0.5, "training_scenarios_max": 72},
+  "minimum_experiment_matrix": [
+    "POD-ridge baseline and GNN on 18,36,72 training scenarios",
+    "Q3/Q4 interpolation and one-factor extrapolation splits",
+    "three random seeds",
+    "rollout horizons 3 h, 24 h and threshold horizon",
+    "ablations: remove volume/Jacobian features, remove boundary encoding, one-step versus autoregressive",
+    "timing at batch size 1 and 16 with break-even analysis"
+  ],
+  "expected_evidence": "sample-out field/event accuracy, drift with horizon, geometry-aware ablation, speed and model size",
+  "retention_threshold": "use surrogate rule in 统一比较合同.json and additionally outperform POD-ridge in C-RMSE by >=10% without violating safety rules",
+  "fallback": "if dependencies fail or GNN does not beat POD-ridge, retain POD-ridge as the only supplementary surrogate; if extrapolation fails, restrict to registered interpolation box",
+  "claim_limit": "accuracy is relative to M3/M4 synthetic labels, not independent experimental truth",
+  "literature_transfer": ["P17/L18 directly motivates region-aware graph surrogates for porous-media drying but its dataset, architecture and performance do not transfer", "P15/L05 supports mechanistic-simulation-generated learning data and hybrid role"]
+}

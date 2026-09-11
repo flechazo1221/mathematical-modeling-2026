@@ -1,13 +1,13 @@
 ﻿id,status,evidence
 V01,PASS,"input shape/endpoints, Kelvin conversion, zero-flux axis and Robin signs checked in code"
-V03,PASS,maximum normalized balance error=4.866e-08
+V03,PASS,maximum normalized balance error=9.645e-08
 V04,PASS,maximum implicit linear residual=5.000e-11; axis flux is exactly zero by construction
-V02,FAIL,maximum registered field change=0.000452022; four-decimal tolerance target=5e-5
+V02,PASS,maximum registered field change=4.00114e-05; four-decimal tolerance target=5e-5
 V05,PASS,M1/M2 required-point and inventory differences recorded separately from mesh error
-V06,FAIL,maximum event-time change under time refinement=120 s; target<=60 s
+V06,PASS,maximum event-time change under time refinement=48 s; target<=60 s
 V07,PASS,"h, hm, terminal window, empirical prefactor/exponent single-factor scenarios recorded for Q2-Q4 where applicable"
 V08,PASS,constant-radius and moving reference/FV implementation comparisons recorded
 V09,PASS,"PCHIP/linear radius cases, positive volumes and exact radius-volume relation recorded"
 V10,PASS,Jacobian ablation normalized imbalance=0.593632; ablated route rejected
 V11,PASS,bounded low/base/high scenarios recorded without stability claim
-V12,PASS,"dry-solid relative error=4.441e-16, local continuity residual=1.166e-14, geometry error=0.000e+00"
+V12,PASS,"dry-solid relative error=4.441e-16, local continuity residual=2.384e-13, geometry error=0.000e+00"

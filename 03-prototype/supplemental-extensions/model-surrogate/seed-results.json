@@ -1,0 +1,59 @@
+[
+  {
+    "model": "fixed-adjacency graph message surrogate",
+    "seed": 20260911,
+    "train_s": 8.909999451134354e-05,
+    "inference_s_per_case": 7.183333461095269e-07,
+    "parameters": 100,
+    "test_field_C": {
+      "rmse": 0.09393569878437244,
+      "mae": 0.07918351045032783,
+      "max_abs": 0.2585358825221828
+    },
+    "extrapolation_field_C": {
+      "rmse": 0.09449477486563485,
+      "mae": 0.07968071992821897,
+      "max_abs": 0.2615078787941994
+    },
+    "negative_prediction_count": 2262,
+    "claim_limit": "低分辨率PDE代理原型，不是高保真神经算子"
+  },
+  {
+    "model": "fixed-adjacency graph message surrogate",
+    "seed": 20260912,
+    "train_s": 6.079999729990959e-05,
+    "inference_s_per_case": 2.499999633679787e-07,
+    "parameters": 100,
+    "test_field_C": {
+      "rmse": 0.09607311834351677,
+      "mae": 0.08031305418167957,
+      "max_abs": 0.2360096445178126
+    },
+    "extrapolation_field_C": {
+      "rmse": 0.09646670589954252,
+      "mae": 0.08065997444609889,
+      "max_abs": 0.2386168954024583
+    },
+    "negative_prediction_count": 2746,
+    "claim_limit": "低分辨率PDE代理原型，不是高保真神经算子"
+  },
+  {
+    "model": "fixed-adjacency graph message surrogate",
+    "seed": 20260913,
+    "train_s": 6.0300008044578135e-05,
+    "inference_s_per_case": 2.2500001553756495e-07,
+    "parameters": 100,
+    "test_field_C": {
+      "rmse": 0.08564652233057626,
+      "mae": 0.07301702959913542,
+      "max_abs": 0.2096981302335663
+    },
+    "extrapolation_field_C": {
+      "rmse": 0.0859264055439892,
+      "mae": 0.07326764864667755,
+      "max_abs": 0.2123575045165133
+    },
+    "negative_prediction_count": 1323,
+    "claim_limit": "低分辨率PDE代理原型，不是高保真神经算子"
+  }
+]

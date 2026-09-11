@@ -35,23 +35,56 @@
       "sha256": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb"
     },
     {
+      "path": "02-design/contracts/model-q1-fixed.json",
+      "sha256": "8581a6ff4abe76ed7e4457a529a8fc5dd8062ec604133bb4d4d5b3630c502998"
+    },
+    {
+      "path": "02-design/contracts/model-q23-fixed.json",
+      "sha256": "b3f8327a02dba8de5e97906822641639b4c953aa48cfc6aaefda14986ace9fd1"
+    },
+    {
+      "path": "02-design/contracts/model-q4-m1-reference.json",
+      "sha256": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5"
+    },
+    {
+      "path": "02-design/contracts/model-q4-m2-moving-fv.json",
+      "sha256": "c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f"
+    },
+    {
       "path": "input/A题/附件/附件1.xlsx",
       "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
     },
     {
       "path": "input/A题/附件/附件2.xlsx",
       "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    },
+    {
+      "path": "input/A题/附件/附件3/result1.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "input/A题/附件/附件3/result2.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "input/A题/附件/附件3/result3.xlsx",
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+    },
+    {
+      "path": "input/A题/附件/附件3/result4.xlsx",
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
     }
   ],
   "commands": [
-    "C:/Users/Linza/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe 04-compute/src/formal_compute.py --mode p1",
-    "C:/Users/Linza/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe 04-compute/src/formal_compute.py --mode full",
-    "C:/Users/Linza/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe 04-compute/src/finalize_compute.py"
+    "\"C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" 04-compute/src/formal_compute.py --mode p1",
+    "\"C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" 04-compute/src/formal_compute.py --mode full",
+    "\"C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" 04-compute/src/finalize_compute.py"
   ],
   "numerical_contract": {
-    "method": "cell-centered conservative axisymmetric FV; backward-Euler coefficient Picard; preconditioned CG",
+    "method": "cell-centered conservative axisymmetric FV on two-sided locally refined radial grids; backward-Euler coefficient Picard; preconditioned CG",
     "picard_absolute_update_tolerance": 1e-07,
     "threshold": "max(C)<0.15-1e-6",
+    "event_time": "linear interpolation inside the first-crossing bracket, then conservative ceiling to 60 s for reporting",
     "report_resolution_s": 60,
     "radius": "shape-preserving PCHIP",
     "terminal_window_base_s": 3600
@@ -59,7 +92,7 @@
   "outputs": [
     {
       "path": "04-compute/diagnostic-figures/diagnostic-convergence.png",
-      "sha256": "90eeb8e75d5b20155b2d8f4e30ddf1dd15fe46d03a7129ab4e648e098518c328"
+      "sha256": "00d512743d2a56a52b4204242a31ecbf7d7f80056f5306557f5991b1b5388a71"
     },
     {
       "path": "04-compute/diagnostic-figures/diagnostic-sensitivity.png",
@@ -67,87 +100,119 @@
     },
     {
       "path": "04-compute/diagnostic-figures/diagnostic-threshold.png",
-      "sha256": "c16bce51b7d3cbdd3cc412f4a707b1c2ddd1f8437a71e96f8f9787cf1d3d757a"
+      "sha256": "dbe105d72ef82f911f00e09fa587eab32b99067607f23ab6358f845b925b9298"
     },
     {
       "path": "04-compute/logs/full.log",
-      "sha256": "6d2b341b4d13b7e1c92d38ba21fde716fc687a0965ca4800227df2b180a657a2"
+      "sha256": "d983f97c726c6232df633f8bb943fbf3b0e40feaea5207d72fa7527af5debc96"
     },
     {
       "path": "04-compute/logs/p1.log",
-      "sha256": "ffbad893745915f55a405156df82477e0397e45b390a95f452d843bcc4a5a58f"
+      "sha256": "3fcef469fd26b6bec649a02320174783d1049c6e345a4a0ca25f96b6bc97bb67"
+    },
+    {
+      "path": "04-compute/logs/repair-probe-high.log",
+      "sha256": "878edfa66c3b4e34b25aeca65e5c1903a7e96a59fc5f6c5f44525a68758d48cc"
+    },
+    {
+      "path": "04-compute/logs/repair-probe-q4.log",
+      "sha256": "cb0847fd97dd60c7d110dd3a6f2234b682d9d47ef8ad570610e3539d4ac6f95d"
+    },
+    {
+      "path": "04-compute/logs/repair-probe.log",
+      "sha256": "0075cb994c564c6b5828200f66660287362f8ff64c792f85595e665a5561efe3"
     },
     {
       "path": "04-compute/results/convergence.csv",
-      "sha256": "eaf5eaddac73212094db7aa3b7c0e5d26dd540935b8f4b7af9edc1bb99f6ef56"
+      "sha256": "2e5a010ad933d583d03720b66968019209a586f75139ead7ad9b5bbb93f93a26"
+    },
+    {
+      "path": "04-compute/results/field-grid-convergence.csv",
+      "sha256": "9399953b215209048db52bc0de3fb3ef627a153f41cc9f1ddd9f109d751abdce"
     },
     {
       "path": "04-compute/results/key-metrics.json",
-      "sha256": "c612ba65f051a3a6de6250ead52138dc8649258d7885273ee68bb729666c67be"
+      "sha256": "337f435b7aefb6ce5931c7373700c6723f64e97f55a402d87092e7008d3e06e2"
     },
     {
       "path": "04-compute/results/p1-check.csv",
-      "sha256": "af2a63105f8f2a202969654e84cbe0c9cda4ef2377f930dea5d96ee0fa6742f3"
+      "sha256": "a7f34cffe28326a005e00b80101fbed9075ba21068c8227cd34ba3b47f729744"
     },
     {
       "path": "04-compute/results/q1-samples.csv",
-      "sha256": "8efa03b08e02f978a4d4d90bfacce9f8ac286d2731d189deadd166308d0aefef"
+      "sha256": "d50a4dfd86e562bd7c8a2e42b556cd55cfe79292063d56bc874e4d476dd7dbee"
     },
     {
       "path": "04-compute/results/q2-samples.csv",
-      "sha256": "13f6c2101a03d5f59795a78dfd00e5fe36822acc6bb56e0f863c3464b86fcd02"
+      "sha256": "56aa87b04dcb0bef6aa089155c3ce581f54b9cc77e624c5785621ae0847c3961"
     },
     {
       "path": "04-compute/results/q3-threshold-trajectory.csv",
-      "sha256": "2b067d33450d1c6edc8b9aceef3bf3fca41f9362500d00db5d2c73982eae1f27"
+      "sha256": "5184862127bdaebefab6b7b1518cce031e05b7d843a13bd9811b203f384dbf81"
     },
     {
       "path": "04-compute/results/q4-threshold-trajectory.csv",
-      "sha256": "33b858f36cd67f2d7a594d393e180b8aeb4fbbad53285f7f3b9864e51d6a3552"
+      "sha256": "fbc0c5d5471339f21d64cda93960f003f73a927bd6a0f49c3a6a5041ad349e45"
+    },
+    {
+      "path": "04-compute/results/repair-probe.json",
+      "sha256": "dfa226cc9a770cb05282babcf8b47431edc2addadd6825ff55b3b44f9fa8c777"
     },
     {
       "path": "04-compute/results/result1.xlsx",
-      "sha256": "693c60af57f815d36be54c81494547731151cffd06470eaf7f923e7866de994c"
+      "sha256": "49eeb7192df9a50ed39377b0dc7cd2719e5a231fb847730b1c6e898f78841807"
     },
     {
       "path": "04-compute/results/result2.xlsx",
-      "sha256": "32e26d6c42d1896ba165c82abfe046b2c5a64d2bfc9faf47d31504358a3c426f"
+      "sha256": "dd70d05a2bbc245c1a1a2fffe7edcb5cb3409f0dce31d7e54063db3ce3d5078d"
     },
     {
       "path": "04-compute/results/result3.xlsx",
-      "sha256": "137edb762edea8645fd4ecbe2f493595fe9b25e8f6050db826b147775cd0b0ac"
+      "sha256": "661e8fcab835f9b42276010eb04e4d14149b0503eb3444e52a2d8c3f7c84b344"
     },
     {
       "path": "04-compute/results/result4.xlsx",
-      "sha256": "a9741840f6576627d2ce401aaa2f56e72d841339ceaa37082e0cdb594baf6135"
+      "sha256": "ddd95c812f50e78b5cfab1df7df522f32ff6dadb8d0e08a986c73d504a98ac7b"
     },
     {
       "path": "04-compute/results/run-summary.csv",
-      "sha256": "22054e0b05988c5b7a8a26ea349872ba28116d7c0ce9a2443118fc90898d1c1f"
+      "sha256": "741515867db5eae9188916c0aeb629395ad5af1c4037e1d84de7d015fade3c6c"
     },
     {
       "path": "04-compute/results/sensitivity.csv",
-      "sha256": "eee7a1b207d4f03735e718ea69eb3df4a89a1a014293fb14ee6f99c2d8237573"
+      "sha256": "b70593f893a7ca70368c86b08c8ee9c68e375590c303ff57b9578f87dfc1458e"
+    },
+    {
+      "path": "04-compute/results/threshold-grid-convergence.csv",
+      "sha256": "cb64d799d6d729705ec7333f21d21ba42ba4388d613997a2cb05378c51df55bb"
     },
     {
       "path": "04-compute/results/validation-register.csv",
-      "sha256": "7cf7c1d4e21ffa5c1f181ffd768c39ae2067dfd4086e23ab830b36b62b9269fd"
+      "sha256": "4bff2426f87fa1197d8f184dad9b372e702db81c01ae71027fd35ee51b18ecae"
     },
     {
       "path": "04-compute/src/__pycache__/finalize_compute.cpython-312.pyc",
-      "sha256": "69e3f45d74c718a783cced8e45cfa7b36426151533072b95cbc55c231b10a757"
+      "sha256": "4ed269738725faeca536f7a5c6bb260717045c55280f021dd5ffe3ed522143ae"
     },
     {
       "path": "04-compute/src/__pycache__/formal_compute.cpython-312.pyc",
-      "sha256": "0f52e16ae0dded413fbd4f8f94629112241ad2581c54e8fabb3d8bca0114afe4"
+      "sha256": "05096f8736cb1ffc4e59fd139cd69e184af0ba88be1b49019f8af616534a9ccb"
+    },
+    {
+      "path": "04-compute/src/__pycache__/formal_compute.cpython-313.pyc",
+      "sha256": "cf45ff5d5d607ace0868565626c8fd2e4d93f995806b2228b0e580289c5ef108"
     },
     {
       "path": "04-compute/src/finalize_compute.py",
-      "sha256": "78a27e4ad811daf57b45577802601ac6c4f83a4a190d06b499f87d325d38d971"
+      "sha256": "2e02f920ae7b679834e4549268b993f151901c125b44554a375f4171c09830bd"
     },
     {
       "path": "04-compute/src/formal_compute.py",
-      "sha256": "6c98a0e999cf2d652ff7bf92a9adedaad153ef47061501a8a4ac52a5523b66e4"
+      "sha256": "b731f94801be81744db1406f7de34abd60469c35ef9998baf9c8d68f6fedbb6e"
+    },
+    {
+      "path": "04-compute/src/repair_probe.py",
+      "sha256": "cdbe7b7d5401ede078cc9c62662573dcee3803ee459eea994c8e7e63b37114b7"
     }
   ]
 }

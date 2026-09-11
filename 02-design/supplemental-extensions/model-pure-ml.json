@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "model_id": "SUP-ML-no-physics-MLP",
+  "status": "CANDIDATE_DESIGN_NOT_RUN",
+  "class": "不含PDE或守恒残差的纯数据回归基线",
+  "baseline": "multi-output ridge regression on the identical features and labels",
+  "target_defect": "量化物理约束是否真正贡献于样本效率、外推和守恒，而非为了追求最低训练误差",
+  "new_mechanism": "small residual MLP mapping (xi,zeta,t,scenario features,R(t)) to (T,C); loss contains supervised MSE only",
+  "loss": "Ldata = mean[((T_hat-T)/sT)^2 + ((C_hat-C)/sC)^2]; no PDE, boundary or conservation penalty",
+  "inputs": ["same verified M3/M4 labels", "same coordinates, scenario parameters and split as PINN/GNN", "training-only normalization"],
+  "outputs": ["pointwise T,C", "derived Q3/Q4 threshold times after dense-grid evaluation"],
+  "identifiability": "none: coefficients/weights are predictive associations relative to synthetic solver output and cannot identify physical parameters",
+  "dependencies": ["Python>=3.12", "numpy", "scikit-learn; PyTorch only if shared with other candidates"],
+  "resource_budget": {"trainable_parameters_max": 100000, "ram_gb": 4, "cpu_training_min_per_seed": 30, "seeds": [20260911, 20260912, 20260913]},
+  "minimum_experiment_matrix": [
+    "ridge and MLP at 18,36,72 training scenarios",
+    "same Q3/Q4 interpolation and extrapolation sets",
+    "three seeds for MLP",
+    "coordinate-only versus coordinate+physics-input features",
+    "post-hoc physics audit on independent stencil, never added to training"
+  ],
+  "expected_evidence": "fair lower-bound comparison for prediction error, data hunger, extrapolation, threshold safety and physics violations",
+  "retention_threshold": "may be retained only as a comparison baseline; even if accurate against PDE labels it cannot replace M1-M4 or claim real-world accuracy",
+  "fallback": "if MLP fails to beat ridge by >=10% C-RMSE across seeds, use ridge alone as pure-ML baseline",
+  "claim_limit": "没有独立实验数据时，只能声称复现PDE数值映射的精度，不能声称现实药材烘干精度或泛化"
+}

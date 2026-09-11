@@ -1,0 +1,15 @@
+{
+  "command": "\"C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" 04-compute/supplemental-extensions/run_validation.py",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.3.5",
+    "seeds": [
+      20260911,
+      20260912,
+      20260913
+    ],
+    "runtime_s": 127.7331087999919
+  }
+}

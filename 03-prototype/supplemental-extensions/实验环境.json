@@ -1,0 +1,19 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.3.5",
+  "seeds": [
+    20260911,
+    20260912,
+    20260913
+  ],
+  "scenario_count": 120,
+  "missing_optional": [
+    "scipy in bundled runtime",
+    "scikit-learn",
+    "torch",
+    "torch_geometric",
+    "jax"
+  ]
+}

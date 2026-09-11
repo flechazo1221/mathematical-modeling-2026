@@ -1,0 +1,21 @@
+{
+  "model": "physics-informed ELM/PINN prototype",
+  "seed": 20260913,
+  "D_true": 0.18,
+  "D_hat": 0.18,
+  "parameter_relative_error": 0.0,
+  "field": {
+    "rmse": 0.0028634723132273388,
+    "mae": 0.0022481392996665803,
+    "max_abs": 0.01111607158010225
+  },
+  "unconstrained_field": {
+    "rmse": 0.07691125904275911,
+    "mae": 0.033855740724874066,
+    "max_abs": 0.6988754568708303
+  },
+  "pde_residual_l2": 0.053931889099366255,
+  "train_s": 0.07364240000606515,
+  "parameters": 37,
+  "claim_limit": "规范化扩散方程的合成稀疏观测原型；未证明M3/M4全方程可识别"
+}

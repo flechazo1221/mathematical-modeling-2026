@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "model_id": "SUP-CFD-2D-axisymmetric-two-moisture-FV",
+  "status": "CANDIDATE_DESIGN_NOT_RUN",
+  "class": "缩减多孔多相CFD原型；不是工业级三维CFD",
+  "baseline": "冻结M3/Q3与M4/Q4守恒有限体积模型",
+  "target_defect": "检验单一有效扩散场是否掩盖液态毛细迁移与气相蒸汽扩散的相对贡献；现阶段只是可检验缺陷，不是已观察到的失配",
+  "new_mechanism": "在二维轴对称多孔骨架中分解液态饱和度Sl与气相蒸汽浓度cv，以局部相变源Gamma耦合；气相压力取常压、Darcy对流默认为零，避免无入口压差时引入不可识别速度场",
+  "equations": [
+    "d(phi*rho_l*Sl)/dt + div(j_l) = -Gamma",
+    "d(phi*(1-Sl)*cv)/dt + div(j_v) = Gamma",
+    "j_l = -rho_l*K*kr_l(Sl)/mu_l * grad(pc(Sl))",
+    "j_v = -phi*(1-Sl)*D_v_eff(T,Sl)*grad(cv)",
+    "rho_cp(C,T)*dT/dt = div(k(C,T)*grad(T)) - L_v*Gamma (latent term only in the registered ablation)",
+    "C = [phi*rho_l*Sl + phi*(1-Sl)*cv]/rho_d",
+    "Gamma = k_evap*(cv_eq(T,Sl)-cv), clipped only by nonnegative phase inventories"
+  ],
+  "domain_and_boundary": "Q3固定圆柱或Q4 xi=r/R(t)移动域；轴线/端面对称口径与M3/M4一致；表面总水分通量严格等于冻结hm驱动通量并在液/汽两相间按注册规则分配",
+  "inputs": ["附件1边界T与水分口径", "附件2 R(t)", "冻结h/hm与M3/M4物性", "porosity phi", "intrinsic permeability K", "capillary curve pc(Sl)", "relative permeability kr_l", "vapor diffusivity D_v_eff", "phase-change rate k_evap"],
+  "outputs": ["T,C,Sl,cv fields", "liquid/vapor/total boundary flux", "Q3/Q4 threshold time", "phase inventory and conservation diagnostics"],
+  "identifiability": {
+    "estimable_from_sparse_synthetic_T_C": ["at most one scale multiplier for K*|dpc/dSl|", "at most one D_v_eff multiplier", "optionally k_evap only if independent cv observations are added"],
+    "not_jointly_identifiable_without_phase_data": ["K, pc curve parameters and kr_l exponents separately", "porosity and dry-solid density simultaneously", "k_evap and equilibrium relation parameters simultaneously"],
+    "rule": "先固定文献允许的曲线形状，只识别至多两个尺度参数；Fisher/Jacobian condition number>1e8 or profile interval touching bounds triggers non-identifiable"
+  },
+  "numerics": "cell-centered conservative finite volume, backward Euler, bounded Newton/Picard, harmonic face mobility, exact cylindrical volumes and Q4 geometric conservation law",
+  "dependencies": ["Python>=3.12", "numpy", "scipy", "pandas"],
+  "resource_budget": {"cpu": "<=8 logical cores", "ram_gb": 8, "wall_clock_per_case_min": 20, "mesh_levels": ["31x41", "47x61", "71x91"], "time_steps_s": [120, 60, 30]},
+  "minimum_experiment_matrix": [
+    "single-phase limit regression to M3/M4",
+    "liquid-only, vapor-only and coupled phase ablations",
+    "Q3 and Q4 base cases at three meshes and two refined time steps",
+    "same 16 interpolation and 16 extrapolation test scenarios from unified split",
+    "one-at-a-time K-capillary scale and D_v_eff sensitivity",
+    "profile-identifiability for every fitted scale"
+  ],
+  "expected_evidence": "phase-resolved fluxes, mechanism ablations, conservation and event-time differences beyond numerical uncertainty",
+  "retention_threshold": "use the CFD rule in 统一比较合同.json; complexity alone is never evidence",
+  "fallback": "if limits do not reproduce M3/M4, conservation fails, parameters are not identifiable, or decision metrics stay inside numerical uncertainty, reject CFD and retain M3/M4",
+  "literature_transfer": ["P07/L04 supports coupled heat-vapour-liquid porous transport structure but material and boundary parameters do not transfer directly", "P10/L08 supports multiscale caution and parameter burden", "P04/L01 and P05/L02 support treating shrinkage/porosity as state-dependent but not importing their material coefficients"]
+}

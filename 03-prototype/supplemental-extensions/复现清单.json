@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "seed": 20260911,
+  "command": "\"C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" 03-prototype/supplemental-extensions/run_all.py",
+  "runtime_s": 137.19536479999078,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.3.5",
+    "seeds": [
+      20260911,
+      20260912,
+      20260913
+    ],
+    "scenario_count": 120,
+    "missing_optional": [
+      "scipy in bundled runtime",
+      "scikit-learn",
+      "torch",
+      "torch_geometric",
+      "jax"
+    ]
+  },
+  "outputs": [
+    {
+      "path": "03-prototype/supplemental-extensions/__pycache__/run_all.cpython-313.pyc",
+      "sha256": "4deab656b25cc7f4046bfcea1bf9f295584e9a54f3328694395131bbf3573565"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/data/scenario-manifest.csv",
+      "sha256": "13165f783088db7209f9057bb70725f75c23134859faaf13ef1adf57fdb42d79"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/logs/reference-run.log",
+      "sha256": "ce50feda9e3b4726aca795f09d777577e6c5625e595c586a02a9143257261987"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/logs/run.log",
+      "sha256": "c4f6eaa2d81d48443dc27de09d09a978c61623b83cc3ff54d960b3854f1caa11"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/model-cfd/fields.npz",
+      "sha256": "d64e1afc6f092eae8c8e1ebc83442e33d53f2b2c62985f17e3772e9f05738a46"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/model-cfd/README.md",
+      "sha256": "9caa51c12af9ba1950da92bbca0b97230b56dd914283044028acf377665e23a5"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/model-cfd/result.json",
+      "sha256": "5a7c44844e771acf4423e8149e09a6f11aa2266473b774481ad0a857960261cf"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/model-pinn/model.npz",
+      "sha256": "c0c20725052be973870f5496c474c50b1bd6017ca5d566beae17251b9932888a"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/model-pinn/README.md",
+      "sha256": "280cb623b160319807aa281b9887699a5540a5d547f8dcfdf5c3770cc2fc6f02"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/model-pinn/result.json",
+      "sha256": "1b639cac707d9970f4f980b585c6c13f4f5ec8aba920eaf4bd816b0451778d7e"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/model-pinn/seed-results.json",
+      "sha256": "6f10504ad4c34dbbc8cbe423e4204a94bd1ca96ab71d27407ac1dec6a04e7ed8"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/model-pure-ml/model.npz",
+      "sha256": "51f4aa43cc0a45b65f34cecfb31a09fe97238dd09837ca6afb8e2f8bc58defb3"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/model-pure-ml/README.md",
+      "sha256": "1283e91f9e984f9dbee4eb12f943defdcc97fa3d042ea483ef6107fba3580ece"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/model-pure-ml/result.json",
+      "sha256": "bb91c16ccc9c1b1214c7fb7b2f0bc8e0d6ae36a84bd5dcd52a0028756287d2cc"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/model-surrogate/model.npz",
+      "sha256": "3d49574ae33c331241826cefff1e8edce8b89b7fca801413278e32149a367b89"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/model-surrogate/README.md",
+      "sha256": "8383f79814beeb9feba01412fc95384796d7ee6157ed457089a290577d54f483"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/model-surrogate/result.json",
+      "sha256": "39daae17260241b600f9903269ca185e95fe8169b4925f69120e9d0d367523fa"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/model-surrogate/seed-results.json",
+      "sha256": "1dd79b4d9449d0fdd66d19e56c95b90b63dbbf2ff61a0198de7432ad92e7664c"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/pde-scenarios.csv",
+      "sha256": "6a24cba071026f8c1663078098e13ea7595cd751df5e55e69672723916f3c442"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/run_all.py",
+      "sha256": "6e86c7902a4dcad8d7c39aaa6a0b524e2a522fb41bd85b1d49a36144e81caf3a"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/split-manifest.json",
+      "sha256": "a3f95c8bed04ecb077ec8893ff14381a6951b5fb7b3d811511e7d4d7ce5de08b"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/候选方案对比.md",
+      "sha256": "87378bbcd588073226980090527574a2d2279a141241266eb5fed841a6cb85c6"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/原型结果.csv",
+      "sha256": "98bf3bea0faf02be76422e288238beb4a5c09cc1191629de5985c40d6a0d6258"
+    },
+    {
+      "path": "03-prototype/supplemental-extensions/实验环境.json",
+      "sha256": "df99e3c5d6af5e3c044bc08eab41ff9b05c200fd048b9ed2c44221dbe835b8f9"
+    }
+  ]
+}

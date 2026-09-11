@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "comparison": [
+    {
+      "model": "M3/M4 low-resolution PDE reference",
+      "role": "reference",
+      "accuracy_basis": "self",
+      "median_s": 1.1124928999997792,
+      "status": "RETAIN_PRIMARY"
+    },
+    {
+      "model": "reduced two-phase CFD",
+      "role": "mechanism probe",
+      "accuracy_basis": "single-field limit/total inventory",
+      "median_s": 0.060369600003468804,
+      "status": "MECHANISM_DIFFERENCE"
+    },
+    {
+      "model": "PINN-ELM",
+      "role": "sparse inverse prototype",
+      "accuracy_basis": "analytic diffusion truth",
+      "median_s": 0.11084459999983665,
+      "status": "SUPPORTED_PROTOTYPE"
+    },
+    {
+      "model": "graph surrogate",
+      "role": "PDE acceleration prototype",
+      "accuracy_basis": "held-out PDE fields",
+      "median_s": 1.8333333476524178e-06,
+      "status": "LIMITED_TO_INTERPOLATION"
+    },
+    {
+      "model": "pure ML ridge",
+      "role": "negative/control baseline",
+      "accuracy_basis": "held-out PDE event times",
+      "median_s": 1.504166599867555e-06,
+      "status": "CONTROL_ONLY"
+    }
+  ],
+  "runtime_s": 28.841220000002068
+}

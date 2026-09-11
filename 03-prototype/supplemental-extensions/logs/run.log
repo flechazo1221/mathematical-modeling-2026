@@ -1,0 +1,6 @@
+C:\Users\Lenovo\Documents\ChatGPT\CUMCM2026\03-prototype\supplemental-extensions\run_all.py:129: RuntimeWarning: overflow encountered in exp
+  w=v[:-1];d=np.exp(v[-1]); pred=H@w; rdata=(pred[obs_idx]-y[obs_idx])/.01; ric=(pred[:NODES]-2.45)/.01; rbc=(pred.reshape(len(t),NODES)[:,-1]-.08)/.2
+C:\Users\Lenovo\Documents\ChatGPT\CUMCM2026\03-prototype\supplemental-extensions\run_all.py:141: RuntimeWarning: overflow encountered in multiply
+  total=phi*rho*Sl+phi*(1-Sl)*cv; flux=.0008*(total[-1]-.08); frac=.7; dl=np.zeros(n);dv=np.zeros(n);Dl=2e-6;Dv=8e-6
+C:\Users\Lenovo\Documents\ChatGPT\CUMCM2026\03-prototype\supplemental-extensions\run_all.py:144: RuntimeWarning: overflow encountered in multiply
+  runtime=time.perf_counter()-tic;m1=np.sum(phi*rho*Sl+phi*(1-Sl)*cv);bal=abs((m0-m1)-bout)/(abs(m0)+1e-12)

@@ -1,0 +1,33 @@
+{
+  "scope": "supplemental only; M1-M4 unchanged",
+  "pde_cases": 120,
+  "pde_median_runtime_s": 0.9996831499956897,
+  "CFD": {
+    "max_balance_error": 3.8702977234812205e-12,
+    "fine_space_change": 0.0016181189894479697,
+    "fine_time_change": 1.344872992414814e-06,
+    "status": "INCONCLUSIVE_MECHANISM_PROBE"
+  },
+  "PINN": {
+    "mean_D_relative_error": 0.016975308641975325,
+    "mean_field_rmse": 0.004511862891746195,
+    "mean_unconstrained_rmse": 2.2463611982025586,
+    "mean_pde_residual": 0.16017838561308512,
+    "status": "SUPPORTED_CANONICAL_ONLY"
+  },
+  "SURROGATE": {
+    "test_rmse": 0.0005262254021491104,
+    "test_relative_l2": 0.0042363077745172385,
+    "extrapolation_rmse": 0.000611522624818755,
+    "negative_count": 0,
+    "mean_inference_s": 5.063888642729985e-07,
+    "status": "RETAIN_INTERPOLATION_ONLY"
+  },
+  "PURE_ML": {
+    "test_event_rmse_s": 2808.0454447659977,
+    "extrapolation_event_rmse_s": 4469.710856237006,
+    "test_max_error_s": 6800.515963724155,
+    "mean_inference_s": 1.9750000824893098e-07,
+    "status": "CONTROL_ONLY"
+  }
+}

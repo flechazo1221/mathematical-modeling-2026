@@ -86,6 +86,28 @@
       ],
       "human_review": "林子垚已明确要求完成PROTOTYPE后直接审批H2并进入下一阶段",
       "recorded_at": "2026-09-11T15:27:20+08:00"
+    },
+    {
+      "stage": "COMPUTE",
+      "tool_or_model": "Codex task (configured model)",
+      "purpose": "在冻结物理模型与验证阈值下修复V02空间离散误差，并在空间稳定后修复V06阈值时间精度",
+      "affected_files": [
+        "04-compute"
+      ],
+      "human_review": "林子垚批准空间优先修复路线；等待COMPUTE交接验证",
+      "recorded_at": "2026-09-11T17:11:48+08:00"
+    },
+    {
+      "stage": "COMPUTE",
+      "tool_or_model": "Codex + NumPy low-resolution experiment suite",
+      "purpose": "补充实现并比较缩减多相CFD、PINN-ELM、图/POD代理与纯机器学习；不替换M1-M4",
+      "affected_files": [
+        "02-design/supplemental-extensions",
+        "03-prototype/supplemental-extensions",
+        "04-compute/supplemental-extensions"
+      ],
+      "human_review": "等待团队审阅补充实验结论及论文采用边界",
+      "recorded_at": "2026-09-11T19:48:25+08:00"
     }
   ]
 }

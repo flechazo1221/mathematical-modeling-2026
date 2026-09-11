@@ -50,8 +50,17 @@
       {
         "thread_id": "01a08f5e-25cf-7193-9ab9-00fd52e5911e",
         "started_at": "2026-09-11T15:28:36+08:00",
-        "status": "RUNNING",
-        "host_id": "local"
+        "status": "FAIL",
+        "host_id": "local",
+        "finished_at": "2026-09-11T17:11:02+08:00",
+        "failure_reason": "Task unavailable on current host; preserved FAIL handoff for supervised recovery"
+      },
+      {
+        "thread_id": "01a08fbc-a10a-7f40-8eba-f094766d2540",
+        "started_at": "2026-09-11T17:11:48+08:00",
+        "status": "PASS",
+        "host_id": "local",
+        "finished_at": "2026-09-11T18:10:12+08:00"
       }
     ]
   }

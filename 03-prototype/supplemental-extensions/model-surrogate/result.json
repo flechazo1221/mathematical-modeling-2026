@@ -1,0 +1,19 @@
+{
+  "model": "fixed-adjacency graph message surrogate",
+  "seed": 20260913,
+  "train_s": 6.0300008044578135e-05,
+  "inference_s_per_case": 2.2500001553756495e-07,
+  "parameters": 100,
+  "test_field_C": {
+    "rmse": 0.08564652233057626,
+    "mae": 0.07301702959913542,
+    "max_abs": 0.2096981302335663
+  },
+  "extrapolation_field_C": {
+    "rmse": 0.0859264055439892,
+    "mae": 0.07326764864667755,
+    "max_abs": 0.2123575045165133
+  },
+  "negative_prediction_count": 1323,
+  "claim_limit": "低分辨率PDE代理原型，不是高保真神经算子"
+}
