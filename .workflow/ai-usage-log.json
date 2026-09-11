@@ -34,6 +34,32 @@
       ],
       "human_review": "等待H1团队确认问题定义与关键假设",
       "recorded_at": "2026-09-10T21:58:51+08:00"
+    },
+    {
+      "stage": "LITERATURE",
+      "tool_or_model": "Codex",
+      "purpose": "检索与下载合法可得文献、解析用户提供全文、生成可追溯证据卡和L1审核材料",
+      "affected_files": [
+        "02-literature/文献清单.json",
+        "02-literature/文献阅读结果.md",
+        "02-literature/L1-文献审核包.md",
+        "02-literature/handoff.json"
+      ],
+      "human_review": "等待L1由具名团队成员审核文献覆盖、可靠性、相关性和引用边界",
+      "recorded_at": "2026-09-11T08:24:36+08:00"
+    },
+    {
+      "stage": "LITERATURE",
+      "tool_or_model": "Codex task (configured model)",
+      "purpose": "按团队缩减范围完成16篇全文精读返工与L1材料更新",
+      "affected_files": [
+        "02-literature/文献阅读结果.md",
+        "02-literature/文献清单.json",
+        "02-literature/L1-文献审核包.md",
+        "02-literature/handoff.json"
+      ],
+      "human_review": "等待L1团队文献审核",
+      "recorded_at": "2026-09-11T09:28:09+08:00"
     }
   ]
 }

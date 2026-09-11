@@ -1,0 +1,1560 @@
+[[PAGE 1]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+Analysis of convective heat and mass transfer coefficients for convective
+drying of a porous flat plate by conjugate modelling
+
+Thijs Defraeye a,c *, Bert Blocken b, Jan Carmeliet c,d
+
+a
+    Laboratory of Building Physics, Department of Civil Engineering, Katholieke Universiteit Leuven, Kasteelpark
+Arenberg 40, 3001 Heverlee, Belgium
+b
+    Building Physics and Systems, Eindhoven University of Technology, P.O. Box 513, 5600 Eindhoven, The
+Netherlands
+c
+    Chair of Building Physics, Swiss Federal Institute of Technology Zurich (ETHZ), Wolfgang-Pauli-Strasse 15,
+8093 Zürich, Switzerland
+d
+    Laboratory for Building Science and Technology, Swiss Federal Laboratories for Materials Testing and
+Research (Empa), Überlandstrasse 129, 8600 Dübendorf, Switzerland
+
+Keywords
+convective transfer coefficient; conjugate; porous material; computational fluid dynamics; drying; flat plate
+
+Abstract
+Convective drying of an unsaturated porous flat plate at low Reynolds numbers (103) is analysed by means of
+conjugate modelling of heat and mass transport in the air flow and the porous material. Conjugate modelling
+does not require knowledge of convective transfer coefficients (CTCs) but allows determining the CTCs a-
+posteriori, hence identifying their spatial and temporal variability, which is the main focus of this study.
+Comparison is made with porous-material modelling using spatially and/or temporally constant CTCs. Both
+spatial and temporal variations of the convective boundary conditions are found to have a distinct impact on the
+drying behaviour: the spatial CTC variation results in two-dimensional drying of the porous material due to
+leading-edge effects; the temporal CTC variation identifies distinct maxima in the drying rates at the surface
+right before the surface dries out locally. The CTCs obtained with conjugate modelling remain approximately
+constant during the constant and decreasing drying rate period (CDRP and DDRP, respectively), but a distinct
+variation is noticed at the transition of CDRP to DDRP. The heat and mass transfer analogy is found to be valid
+during the CDRP and to a lesser extent during the DDRP but large discrepancies are found during the transition
+of CDRP to DDRP. The advantages of conjugate modelling are indicated in this study but the need for detailed
+modelling of convective boundary conditions is however strongly dependent on the drying behaviour of the
+porous material and is not always required.
+
+Nomenclature
+Dva                 binary diffusion coefficient between dry air and water vapour, δvRvT (m²/s)
+
+*
+    Corresponding author. Tel.: +32 (0)16321348; Fax: +32 (0)16321980.
+    E-mail address: thijs.defraeye@bwk.kuleuven.be
+
+                                                                                                                   1
+
+[[PAGE 2]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+DPM             thickness of porous material (m)
+cp              specific heat capacity (J/kgK)
+g               diffusive or convective mass flux (vector) (kg/m²s)
+gacc            gravitational acceleration (vector) (m/s²)
+gv,w            convective water vapour flux (vector) at the air-porous material interface/wall (kg/m²s)
+h               enthalpy (J/kg)
+H               channel height (m)
+Kl              liquid permeability (s)
+L               characteristic length (m)
+Le              Lewis number (-)
+LPM             length of porous material (m)
+Lvref           heat of vaporisation at Tref,0 (J/kg)
+n               unit vector normal to the interface
+Nu              Nusselt number, CHTC·L/λg (-)
+p               static pressure (Pa)
+pc              capillary pressure (Pa)
+pv,ref          reference vapour pressure (Pa)
+pv,w            vapour pressure at the air-porous material interface (Pa)
+pv,w,sat        saturation vapour pressure at the air-porous material interface (Pa)
+Pr              Prandtl number, (μg/ρg)/(λg/(ρgcp,g)) (-)
+qc,w            convective heat flux (vector) at the air-porous material interface (W/m²)
+q               conductive heat flux (vector) (W/m²)
+Rv              specific gas constant of water vapour (461.524 J/kgK)
+Sc              Schmidt number, (μg/ρg)/Dva (-)
+Sh              Sherwood number, CMTC·L/δv (-)
+t               time (s)
+T               temperature (K)
+Tref            reference temperature (K)
+Tref,0          reference temperature (K)
+Tw              temperature at the air-porous material interface (K)
+Twb             wet bulb temperature (K)
+Ub              bulk air speed (m/s)
+v               velocity vector (m/s)
+x               coordinate (m)
+xi              mass fraction of mixture component (kg/kg)
+y               coordinate (m)
+wi              porous material component content (kgi/m³PM)
+wcap            capillary moisture content (kg/m³PM)
+
+Abbreviations
+
+                                                                                                           2
+
+[[PAGE 3]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+avg             surface-averaged
+AFcc            analogy factor based on the heat and mass transfer analogy (Chilton-Colburn analogy)
+AFCDRP          analogy factor based on CDRP drying
+CDRP            constant drying rate period
+CFD             computational fluid dynamics
+CHTC            convective heat transfer coefficient
+CMTC            convective mass transfer coefficient
+CTC             convective transfer coefficient
+DDRP            decreasing drying rate period
+HAM             heat-air-moisture
+RH              relative humidity
+
+Greek symbols
+γ               normalised derivative of the surface tension to the temperature (-)
+δv              water vapour diffusion coefficient (s)
+λ               thermal conductivity (W/mK)
+μ               dynamic viscosity (kg/ms)
+μdry            vapour resistance factor of the dry porous material (-)
+ρ               density (kg/m³)
+
+Subscripts
+a               dry air
+cc              Chilton Colburn
+CDRP            constant drying rate period
+i               index indicating a specific mixture/material component
+g               moist air (gas)
+l               liquid water
+PM              porous material
+ref             reference condition
+s               solid material matrix
+SC              scaled
+v               water vapour
+w               wall/ air-porous material interface
+
+Superscripts
+fl
+                fluid
+pm
+                porous material
+
+                                                                                                         3
+
+[[PAGE 4]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+1. Introduction
+Convective drying of porous materials is of interest for many industrial applications [1], such as production of
+building materials (concrete, brick, gypsum board, …), food processing or wood and paper production.
+Optimisation of the drying process is required to enhance processing efficiency, in terms of energy usage and
+production time, without compromising the product quality, for example by excessive shrinkage or warping.
+Many numerical modelling approaches have been developed to model the coupled heat and moisture transport in
+porous materials, such as pore network models (e.g. [2-4]) or macroscopic models (e.g. [5,6]). In these models,
+the convective heat and mass exchange with the external air flow is often modelled by means of convective heat
+and mass transfer coefficients, i.e. CHTCs and CMTCs, respectively. These convective transfer coefficients
+(CTCs) relate the convective heat and moisture flux normal to the wall (qc,w and gv,w), i.e. the air-porous material
+interface, to the difference between the wall temperature (Tw) or vapour pressure at the wall (pv,w) and a
+reference temperature (Tref) or vapour pressure (pv,ref), for example the approach flow conditions:
+              q c,w
+CHTC                                                                                                                (1)
+            Tw  Tref
+
+                g c,w
+CMTC                                                                                                                (2)
+            p v,w  p v,ref
+
+The fluxes are assumed positive away from the porous material. CTCs however account for the convective
+exchange in a quite simplified way: (1) CTCs are often estimated by means of empirical correlations with the air
+speed, where these correlations were mostly derived for simplified configurations, such as flat plates; (2) The
+spatial variation of CTCs along the surface and especially their temporal variation are often not accounted for;
+(3) CMTCs are often estimated from CHTCs by using the heat and mass transfer analogy, hence assuming its
+validity throughout the entire drying process; (4) CTCs are strongly dependent on the reference conditions (Tref
+and pv,ref), but the location where these are evaluated is generally chosen rather arbitrary for complex flow
+problems.
+
+Due to these simplifications, the use of CTCs can compromise the accuracy of fluid-side convective heat and
+mass transfer predictions for certain applications (e.g. [7-9]), one of them being convective drying of
+(un)saturated porous materials. Here, evaporation occurs initially at the air-porous material interface, by which
+mainly the air flow conditions, and not the porous-material properties, characterise the drying rate [1]. After an
+initial transition period, the material experiences the constant drying rate period (CDRP), given that the air-
+porous material interface remains wet. The CDRP is characterised by a relative humidity (RH) of 100% at the
+surface, a constant drying rate and a constant material temperature, which is equal to the wet bulb temperature
+(Twb) if no radiative heat flows at the surface and (conductive) heat flows from the interior of the porous material
+are present. In this case, the convective heat supply to the interface is quasi entirely used for the evaporation of
+water (e.g. [10]):
+
+qc,w  Lref
+          v g v,w                                                                                                    (3)
+
+where Lvref is the heat of vaporisation, also called latent heat, which is the energy needed for the phase change
+from liquid to vapour. Although the air flow (CTCs, Tref and pv,ref) characterises the CDRP, the porous-material
+transport properties however affect the duration of the transition period, i.e. the time to attain a quasi uniform
+
+                                                                                                                       4
+
+[[PAGE 5]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+temperature distribution in the porous material, and also the duration of the CDRP, which is dependent on the
+liquid transport to the surface. When the material dries out locally at the interface, the decreasing drying rate
+period (DDRP) sets in, which is characterised by a lower drying rate since the “dry” outer porous-material layer
+forms an additional resistance to liquid water removal from the inside of the material, where it evaporates,
+towards the interface, in addition to the boundary-layer resistance. This decrease in drying rate results in a
+temperature increase since less heat is required for the evaporation of water. During the DDRP, the convective
+boundary conditions are less critical by which a lower accuracy of the CTCs does not necessarily disturb a
+reliable simulation [11].
+
+A more detailed evaluation of the convective boundary conditions than by means of simplified CTCs could
+enhance the numerical predictive accuracy for convective drying processes, especially during the CDRP and the
+transition to the DDRP. Therefore, several numerical models were developed recently which solve the conjugate
+problem, i.e. accounting simultaneously for heat and mass transport in both the porous material and the air flow
+(e.g. [12-16]). Such models avoid using CTCs since the air flow is explicitly solved to some extent. They were
+used to evaluate and optimise drying processes by analysing the influence of the flow parameters (temperature,
+relative humidity and velocity), buoyancy, bound water transport, etc. on the drying time and rate, but also the
+validity of the heat and mass transfer analogy and spatial inhomogeneities in drying fronts were considered.
+
+In this study such a conjugate model is developed and used to simulate and analyse convective drying of an
+unsaturated porous flat plate at low Reynolds numbers. The focus of this study is specifically on CTCs, where
+the spatial and also the temporal variation of these CTCs, obtained a-posteriori from the conjugate model results,
+are evaluated. Comparison is made to porous-material modelling using spatially and/or temporally constant
+CTCs. Furthermore, the validity of the heat and mass transfer analogy is investigated.
+
+2. Conjugate model
+2.1. Air-flow modelling
+Air flow is modelled by solving the Navier-Stokes equations, i.e. the conservation equations of mass, momentum
+and energy. Only a gaseous phase is assumed to exist where moist air (subscript g) is considered to be a perfect
+mixture of two ideal gases, namely dry air (subscript a) and water vapour (subscript v). Furthermore, it is
+assumed that: (1) the mixture is dilute, in terms of water vapour; (2) moist air is incompressible; (3) thermal
+equilibrium between the mixture components exists; (4) no volumetric mass, momentum or heat source terms are
+present; (5) Soret and Dufour effects can be neglected; (6) viscous heat dissipation can be neglected; (7) pressure
+variations are sufficiently small to not affect thermodynamic properties; (8) potential and kinetic energy changes
+are negligible compared to thermal energy changes; (9) pressure work can be neglected. Thereby, following
+well-known conservation equations can be derived (see [17] for details).
+
+Conservation of mass
+i
+        i vi   0                                                                                             (4)
+ t
+
+                                                                                                                      5
+
+[[PAGE 6]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+where ρ is the density, v is the velocity vector (bold characters are used to indicate vector quantities) and i is an
+index, indicating a mixture component. The assumption of incompressible flow leads to:
+  vg  0                                                                                                         (5)
+
+The moist air density (ρg) and velocity (vg) are defined as:
+g  a  v                                                                                                       (6)
+
+v g  x a va  x v v v                                                                                             (7)
+
+where xi is the mass fraction (= ρi/ρg). The resulting mass fluxes of the mixture components gi (= ρivi) are
+defined as the sum of the convective (= ρivg) and diffusive fluxes:
+                          i
+g i  i v g  g Dva                                                                                             (8)
+                          g
+
+where Dva is the binary diffusion coefficient between dry air and water vapour.
+
+Conservation of momentum
+     
+g
+     t
+        
+        vg  g vg vg  p  g  2 vg  g gacc                                                                (9)
+
+where μg is the dynamic viscosity, p is the static pressure and gacc is the gravitational acceleration.
+
+Conservation of energy
+
+t
+                                                          
+    a ha  v h v     a ha va  v h v v v     qg                                                    (10)
+
+where qg is the conductive heat flux, which is defined as:
+qg  g T                                                                                                       (11)
+
+where λg is the thermal conductivity of moist air. The enthalpies are defined as:
+
+h a  cp,a  T  Tref ,0                                                                                         (12)
+
+h v  cp,v  T  Tref ,0   Lref
+                               v                                                                                  (13)
+
+hg  xa ha  x v h v                                                                                              (14)
+
+where cp is the specific heat capacity and Tref,0 is a reference temperature, taken equal to 273.15K (0°C). The
+latent heat is defined with respect to T ref,0 and is assumed constant, namely equal to 2.50x106 J/kg at 0°C. These
+conservation equations for air flow are solved numerically with the commercial computational fluid dynamics
+(CFD) code Fluent 6.3 [18], which uses the control volume method.
+
+2.2. Porous-material modelling
+The porous material (subscript PM) is modelled on a macroscopic level, i.e. by solving the macroscopic
+conservation equations, which can be derived by volume-averaging the microscopic conservation equations of
+each phase [19] or by adopting a phenomenological approach on a macroscopic level [20,21]. The porous
+materials consists of three different incompressible phases: the solid phase (subscript s), namely the solid
+material matrix, the liquid phase (subscript l), namely liquid water, and the gaseous phase (subscript g), namely
+
+                                                                                                                        6
+
+[[PAGE 7]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+moist air, which again consists of dry air and water vapour. Thereby, four material components (subscript i) are
+found. Furthermore, it is assumed that: (1) liquid water is free water, so no chemically or physically bound water
+is taken into account; (2) the solid matrix is rigid, by which shrinking and swelling are not taken into account; (3)
+no volumetric heat and mass source terms, apart from evaporation or condensation of liquid water, are present;
+(4) thermal equilibrium between all phases exists; (5) pressure variations are sufficiently small to not affect
+thermodynamic properties; (6) potential and kinetic energy changes in the gaseous phase are negligible
+compared to thermal energy changes; (7) pressure work and viscous heat dissipation can be neglected; (8) liquid
+transport is driven by capillary forces, by which gravitational effects and air-pressure effects are neglected; (9)
+liquid transfer due to thermal gradients can be neglected; (10) the pressure of the gaseous phase is constant and
+equal to the atmospheric pressure; (11) temperatures are above 0°C and well below 100°C; (12) the gaseous
+phase does not contribute to heat or mass storage; (13) moisture storage is independent of temperature; (14)
+radiative transfer inside the porous material is accounted for in its thermal conductivity. Thereby, following
+conservation equations can be derived [6,17], by expanding to the temperature (T) and the capillary pressure (p c),
+where pc = pl-pg.
+
+Conservation of mass
+w s
+     0                                                                                                           (15)
+ t
+w a
+      0 ;   ga  0                                                                                             (16)
+ t
+w PM pc
+              gl  g v   0                                                                                  (17)
+ pc t
+
+where the liquid and water vapour fluxes are:
+gl  Klpc                                                                                                       (18)
+
+           v p v         p
+gv  
+          l R v T
+                                   v  pc  T  1 T
+                   pc  v v 2 l Lref
+                        l R v T
+                                                                                                                 (19)
+
+where ws, wa and wPM are the solid matrix content, dry air content and moisture content of the porous material,
+respectively. Note that these quantities, defined in kgi/m³PM, differ from the densities of the different components
+(kgi/m³i). Kl is the liquid permeability, δv is the water vapour diffusion coefficient, Rv is the specific gas constant
+of water vapour and γ is the normalised derivative of the surface tension to the temperature. These conservation
+equations imply that only heat and moisture transport are modelled, where dry air transport is not (Eq.(16)). In
+Eq.(19), the first term on the right hand side represents the vapour transport due to capillary pressure gradients
+and the second term represents the vapour transport due to thermal gradients, originating from evaporation and
+surface tension effects.
+
+Conservation of energy
+     w PM pc                        T
+hl
+      pc t
+                   
+                cp,s w s  cp,l w PM  
+                                      t
+                                             h l gl  h v g v     qPM                                    (20)
+
+where qPM is the conductive heat flux, which is defined as:
+
+                                                                                                                      7
+
+[[PAGE 8]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+qPM  PMT                                                                                                      (21)
+The enthalpy of liquid water is defined as:
+
+h l  cp,l  T  Tref ,0                                                                                         (22)
+
+The macroscopic approach considers the porous material as a continuum, where effective (macroscopic)
+transport coefficients (such as liquid permeability, vapour diffusion coefficient, …) are required in the
+macroscopic conservation equations to numerically model the transport processes. Apart from the
+aforementioned modelling assumptions, material characterisation will thereby also determine the accuracy of
+numerical simulations, where a large sensitivity to these transport coefficients can be found [17]. These transport
+coefficients are usually determined experimentally, often as a function of the moisture content. A significant
+spread and thus uncertainty on these coefficients has however been reported when comparing results of different
+laboratories on multiple material samples [22,23].
+
+The macroscopic conservation equations are solved numerically with a non-commercial finite-element heat-air-
+moisture (HAM) code HAMFEM [6].
+
+2.3. Conjugate modelling
+2.3.1. Boundary conditions at the air-porous material interface
+The air-porous material interface can be modelled as: (1) a semi-permeable surface, implying that only transport
+of one gaseous mixture component (i.e. water vapour) from/to the surface is possible, which is the case for a free
+water surface or a fully-saturated porous material; or (2) a permeable surface, where dry air transport from/into
+the material can occur in addition to water vapour transport, such as for a quasi dry open-porous material. The
+choice of interface modelling is thereby related to the air permeability of the material.
+
+A fully-saturated porous material is obviously impermeable for air [24]. Fully-saturated conditions are usually
+found during the production process of materials (e.g. concrete, brick, plaster). Apart from saturating the
+material in vacuum, obtaining a fully-saturated material a-posteriori requires submersion of the material for a
+sufficiently long time so all enclosed air is removed by diffusion through the liquid-filled pores. Thereby, wetted
+porous materials, such as building facades wetted by wind-driven rain, will often be unsaturated at the start of
+their drying process. For such unsaturated materials, Descamps [25] found that the critical moisture content for
+air transport, i.e. above which the air permeability is quasi zero, was slightly higher (roughly 10%) than the
+capillary moisture content of the material, where the capillary moisture content can be obtained from a free water
+uptake test (e.g. [22]). For moisture contents below or equal to the capillary moisture content (i.e. capillary
+saturated), the porous material can be considered quasi permeable for air. Every gas pressure build-up is thus
+quickly equalised, leading to a constant air pressure in the porous material (e.g. [12]), which was also assumed in
+the porous-material model (section 2.2). Thereby vg = 0, resulting only in diffusive dry air and water vapour
+transport, where a zero net mass flow is found over the interface of a permeable surface, (gg = ga + gv = 0). The
+proposed conjugate model was primarily developed for unsaturated porous materials, namely to analyse the
+
+                                                                                                                     8
+
+[[PAGE 9]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+drying of building materials in building envelopes, and therefore a permeable air-porous material interface will
+be assumed with material moisture contents equal to or below the capillary moisture content.
+
+Conjugate modelling requires continuity of the boundary conditions at the air-porous material interface (fluid-
+side: superscript fl; porous-material side: superscript pm). This implies continuity of the heat and mass fluxes for a
+specific boundary interface element as well as continuity of the temperature and mass fraction at the interface:
+
+Continuity of mass fluxes
+
+ a  n  ga  n
+gpm       fl
+                                                                                                                  (23)
+
+g   v  gl
+     pm   pm
+               n  g n
+                     fl
+                     v                                                                                            (24)
+
+where n is the unit vector normal to the interface, glpm and gvpm are given by Eqs.(18)-(19), gvfl is given by Eq.(8)
+and gafl·n = -gvfl·n (permeable surface). Note that in the derivation of the porous-material model, dry air
+transport was neglected (section 2.2, gapm = 0) by which the continuity of dry air fluxes at the interface is not
+satisfied. To retain consistency with the porous-material model, this dry air flux into the porous material (gapm·n)
+is thereby not accounted for in the conjugate model. The impact on the overall (heat and) moisture transport in
+the material and thus also on the convective (heat and) moisture exchange with the air flow can be considered
+very limited which is why it is actually neglected in the porous-material model, also referred to as the HAM
+model.
+
+Continuity of heat fluxes
+
+h g a a  h v g v  h l gl
+       pm       pm        pm
+                              qPM    n  h g  h g  q  n
+                                              fl
+                                            a a
+                                                     fl
+                                                   v v    g                                                       (25)
+
+The influence of dry air transport on heat transport is neglected in the derivation of the porous-material model
+(section 2.2, gapm = 0) by which the continuity of heat fluxes at the interface is not entirely satisfied.
+However, the influence of dry air transport on the heat (and mass) transport in the porous material and thus on
+the convective heat (and moisture) exchange with the air flow is very small. The assumption of a permeable or
+semi-permeable surface will thus actually have limited impact on the convective heat and moisture exchange at
+the interface. Note that the interface is thus modelled as a semi-permeable surface in this study to be in
+agreement with the actual physics of the air transport at the interface for moisture contents equal to or below the
+capillary moisture content. Nevertheless, semi-permeable conditions could not be entirely satisfied at the
+interface (i.e. on the porous-material side) since air transport in the porous material was not modelled in the
+porous-material model.
+
+Continuity of temperature and mass fraction at the interface
+Twpm  Twfl                                                                                                       (26)
+
+  w  xw
+x pm   fl
+                                                                                                                  (27)
+Note that the continuity of the pressure is not required since air transport in the porous material is not taken into
+account and only liquid water transport due to capillary forces is considered, neglecting the influence of
+gravitational and air-pressure effects.
+
+                                                                                                                        9
+
+[[PAGE 10]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+2.3.2. Coupling principle
+Since two different programs are used for air-flow and porous-material modelling (Fluent 6.3 and HAMFEM),
+an external coupling protocol between these programs is required. An explicit coupling procedure, where the
+exchange of boundary conditions between the two programs is only performed once every time step, is preferred
+over an implicit coupling procedure, where iterations are performed between the two programs until convergence
+is obtained within a specific time step, for reasons of numerical implementation. Thereby, the CFD program is
+executed for one time step, after which boundary condition information (heat and moisture fluxes) is transferred
+to the HAM program which is subsequently executed for the same time step. At the end of this time step,
+boundary condition information (temperatures and vapour pressures) is transferred to the CFD program, which is
+used for the calculation of the next time step. This explicit coupling is justified if sufficiently small time steps are
+used (e.g. 0.1s) so the actual fluxes do not change significantly over the time step. This explicit coupling
+procedure is implemented within the HAM code, due to restricted access to the CFD code. The implementation
+and coupling procedure of the conjugate model are explained more in detail in Defraeye [17].
+
+3. Case study: Porous flat plate in channel flow
+3.1 Configuration
+The configuration used to evaluate convective drying of an unsaturated porous material is taken from the
+experimental study of James et al. [26], where hygroscopic buffering of gypsum boards was analysed by means
+of a small closed-circuit wind-tunnel setup. Here, two-dimensional fully-developed laminar channel flow
+(channel height H = 20.5 mm) was produced over the porous material (length LPM = 500 mm and thickness DPM
+= 37.5 mm, i.e. 3 gypsum boards of 12.5 mm), which was mounted flush with one of the channel walls. The
+porous material was insulated (adiabatic conditions) and made impermeable for moisture on its remaining
+surfaces. This setup is described in detail by Talukdar et al. [27].
+
+The porous material considered in this study is a mineral plaster, which is a hygroscopic and capillary active
+material. Note that the same porous-material dimensions as in James et al. [26] are used. This mineral plaster,
+used in outdoor environments, can absorb liquid water coming from wind-driven rain, i.e. rain which is given a
+horizontal velocity component by wind (Blocken and Carmeliet [28]). For these conditions, its moisture content
+will be below or equal to the capillary moisture content (fully-saturated conditions are only obtained during
+processing of wet plaster). In this study, the mineral plaster is assumed to be initially at capillary moisture
+content. The relevant material properties, used for numerical modelling, are specified in Table 1. The liquid
+permeability is given in Figure 1.
+
+3.2 Numerical model
+The computational model used for the numerical analysis is presented in Figure 2, together with the imposed
+boundary conditions. A two-dimensional model can be used since the channel width to height ratio is 14.5 [29].
+The length of the upstream and downstream channel sections is taken sufficiently large to avoid an influence of
+
+                                                                                                                    10
+
+[[PAGE 11]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+the imposed boundary conditions at the channel inlet and outlet on the air flow in the vicinity of the porous
+material. At the channel inlet, a fully-developed laminar inlet profile is imposed with a bulk air speed (Ub) of 0.8
+m/s, which results in a Reynolds number of about 1100, based on Ub and H. According to Dean [29], flow in
+two-dimensional channels remains laminar up to Reynolds numbers of about 1300. The temperature and relative
+humidity of the approach flow air are 23.8°C and 71.9%, respectively. At the outlet of the computational
+domain, a zero static pressure is imposed. Both channel walls are modelled as no-slip boundaries with zero
+roughness. Apart from the interface with the porous material, the channel walls and the remaining porous-
+material boundaries are taken adiabatic and impermeable for moisture. The porous material is assumed to be
+initially unsaturated, but at capillary moisture content (126 kg/m³) at a temperature of 20.0°C. This temperature
+is chosen approximately equal to the wet bulb temperature (≈ 20°C for Tref = 23.8°C and RHref = 71.9%) in order
+to minimise the transition period for the material to reach the CDRP equilibrium temperature conditions.
+
+Appropriate grids are built for air-flow and porous-material modelling, based on grid sensitivity analysis. The
+grids consist of 3.7x103 quadrilateral control volumes for air flow and of 2.5x103 quadrilateral finite elements for
+the porous material (125 in x-direction, 20 in y-direction), both with a gradual refinement towards the air-porous
+material interface. At the interface, the control volumes and the finite elements have the same grid size (along x-
+direction), which was required for modelling purposes.
+
+3.3 Numerical simulation
+The air-flow simulations are performed assuming laminar flow, due to the low Reynolds numbers. Second-order
+discretisation schemes are used. The SIMPLE algorithm is used for pressure-velocity coupling. Pressure
+interpolation is second order. Since the Richardson number is well below one, buoyancy effects are negligible, as
+also mentioned by Talukdar et al. [30]. Thereby, only forced convection is accounted for in the air-flow
+simulations, considering heat as a passive scalar, by which the flow field and thus also the CTCs are not strongly
+dependent on the thermal boundary conditions. Radiation between the channel walls is not considered because
+the focus is on convective drying and the validity of the heat and mass transfer analogy, where the latter cannot
+be valid if radiation is taken into account (see section 4.3). Due to the low Reynolds numbers used in this test
+setup, radiation can however have an influence on the predicted drying rate. Note that, although laminar flow is
+considered in this study, also turbulent flow can be accounted for with the CFD code. The porous-material
+simulations are performed with a HAM model, where detailed numerical modelling details can be found in
+Janssen et al. [6]. The time step size used for the explicit coupling between CFD and HAM is determined by a
+temporal sensitivity analysis (see Defraeye [17]) and has an order of magnitude of about 10-1s.
+
+The implementation of the conceptual model, i.e. the proposed conjugate model (section 2), into a computational
+model, i.e. the coupled CFD-HAM program, has to be verified (e.g. Franke et al. [31]) to make sure that there are
+no programming errors. Since both codes (CFD and HAM) were already verified separately by their code
+developers and no additional physical models are included in these separate codes, only the implementation of
+the coupling protocol between both codes was verified (see Defraeye [17]).
+
+                                                                                                                   11
+
+[[PAGE 12]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+Since the proposed conjugate model does not introduce additional physical models, as it is actually a coupling
+procedure between two existing computational models, validation of this conjugate model would reduce to a
+validation of the air-flow and porous-material models separately: discrepancies with experimental results would
+be attributed to the (in)ability of one of these models (or both) to capture the physics of the problem which it
+solves for, i.e. heat and moisture transport in the air flow or in the porous material. Validation of these air-flow
+and porous-material models was already performed in the past (e.g. Janssen et al. [6] for HAM and Defraeye et
+al. [8] for CFD) and is therefore not repeated here. Furthermore, performing a completely conjugate validation
+experiment is not straightforward since both heat and mass transport should be quantified simultaneously in the
+air flow, in the porous material and at the interface. Even with the current experimental techniques, it is still
+quite challenging to measure these quantities simultaneously in a (quasi) non-destructive, (quasi) non-intrusive
+way at a spatial resolution which is sufficient for detailed comparison with numerical simulation data.
+Particularly mass transfer is more difficult to measure accurately at high spatial resolution, compared to heat
+transfer [5,11]. As a result, detailed conjugate experiments for forced convective drying of (un)saturated porous
+materials (e.g. [11]) are very scarce, as acknowledged by other researchers [13,32,33]. Such experiments are still
+an active topic of ongoing research (e.g. [17]). Finally, note that the need for detailed modelling of convective
+boundary conditions, e.g. by means of conjugate modelling, is strongly dependent on the drying behaviour of the
+porous material and is especially relevant during the CDRP and the transition to the DDRP, i.e. when the surface
+is (partially) wet, since then the air flow mainly determines the drying rate.
+
+4. Results and discussion
+4.1 Drying process
+For the analysis of convective drying of a capillary-saturated porous material (see section 3), three different
+approaches to model the convective boundary conditions are compared: (1) conjugate modelling of heat and
+mass transport in the air flow and the porous material, as described in section 2, which will be referred to as the
+“conjugate approach” and which does not require the use of CTCs; (2) spatially-varying CTCs along the surface,
+where the CHTC is obtained from a CFD simulation, by only accounting for heat transfer, and where the CMTC
+is obtained from the CHTC by means of the heat and mass transfer analogy (see section 4.3), which will be
+referred to as the “CFD-analogy approach”; (3) spatially and temporally constant CTCs, namely the surface-
+averaged CTC values from the CFD-analogy approach, which will be referred to as the “constant CTCs
+approach”. The CTCs for these approaches are presented in detail in section 4.2.
+
+The overall dimensionless drying rates (gv,w/gv,w,CDRP) of the three approaches are shown as a function of
+dimensionless time (t/ttot) in Figure 3, where the total simulation time (ttot) is 15 days. As a reference drying rate,
+the drying rate during the CDRP (gv,w,CDRP), as obtained from the constant CTCs approach, is chosen. For the
+conjugate and CFD-analogy approaches, also the drying rates at specific locations on the porous-material surface
+are shown, namely at x = 0, 0.25 and 0.5 m. The surface temperatures (Tw, in °C) are shown in Figure 4, together
+with the relative humidity at the surface (RHw). For the conjugate and CFD-analogy approaches, again the values
+at x = 0, 0.25 and 0.5 m are reported. Contour plots of these dimensionless drying rates and the relative humidity
+at the surface as a function of dimensionless time and location on the surface are shown in Figure 5 for the
+conjugate approach.
+
+                                                                                                                    12
+
+[[PAGE 13]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+First the overall drying behaviour is discussed. A CDRP can clearly be distinguished for the constant CTCs
+approach, where the surface temperature approximately equals the wet bulb temperature. For the two other
+approaches, the surface-averaged drying rates show a much shorter CDRP, which is found to be related to the
+two-dimensional drying effect: the surface near the leading edge dries out first and quickly, while the remaining
+part of the surface dries out later. As a result, both CDRP and DDRP are found simultaneously at the surface,
+depending on the location on the surface, leading to a lower surface-averaged drying rate. A CDRP can also be
+distinguished at specific locations on the surface (Figure 3 and Figure 5), as discussed in detail below, where its
+duration increases with the distance from the leading edge. As the surface-averaged CTCs from the CFD-
+analogy approach equal those of the constant CTCs approach, the significant difference in drying behaviour
+between both indicates that accounting for spatially-varying convective boundary conditions is relevant here.
+Furthermore, when comparing the results of the CFD-analogy approach and the conjugate approach, the
+temporal variation of these convective boundary conditions also seems to affect the drying behaviour, indicating
+that the CTCs are also temporally-varying (see section 4.2).
+
+The influence of spatial and temporal variation of the convective boundary conditions on the drying behaviour
+can be analysed more in detail when comparing the results of the conjugate and CFD-analogy approaches at
+different locations on the surface. The leading-edge effect can clearly be distinguished in Figures 3-5 and also in
+Figure 6, where the drying fronts (RH ≈ 100%) inside the porous material are shown as a function of time for
+both approaches. Such leading-edge effects were previously reported by Masmoudi and Prat [12], Oliveira and
+Haghighi [32], Suresh et al. [33] and Murugesan et al. [13]. The higher drying rates close to the leading edge
+result from the small thermal and moisture boundary-layer thicknesses here. Furthermore, the drying rate at each
+location shows a distinct peak at a specific time. These peaks approximately correspond with the moment where
+the surface dries out locally (RH < 100%, see Figure 4-5) and can be explained as follows. As the material
+surface dries out progressively from the leading edge on, the amount of moisture transferred from the porous
+material into the moisture boundary layer above the “dry” surface part of the porous material is very limited as it
+is in the DDRP. Thereby, relatively dry air approaches the drying front at the surface, i.e. the separation between
+the dried-out and still wet part of the surface, by which the drying front acts as if it is the apparent start of a
+leading edge of a wet surface, resulting in locally high drying rates here. As the drying front at the surface
+progresses downstream with time, this apparent leading edge also progresses downstream, creating peaks in the
+drying rate at each location at a certain time. These drying rate peaks are much less pronounced for the CFD-
+analogy approach, which indicates that these peaks are accompanied by a (temporal) change in CTCs, as will be
+shown in section 4.2. Nevertheless, the drying fronts inside the porous material of the conjugate and CFD-
+analogy approaches show a similar behaviour (Figure 6).
+
+Comparing the drying process at different locations, as in Figure 3, can be difficult if the drying rates differ
+significantly in magnitude, where the drying process reflects on the duration of the CDRP and DDRP and the
+transition between both. A better comparison can be made by using a scaled drying rate (gv,w,SC) and drying time
+(tSC), which are scaled with the CDRP drying rate at a specific location (gv,w,CDRP):
+
+                                                                                                                      13
+
+[[PAGE 14]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+               g v,w
+g v,w,SC                                                                                                        (28)
+             g v,w,CDRP
+
+tSC  g v,w,CDRP t                                                                                               (29)
+
+By applying this spatially-dependent scaling, gv,w,SC is equal to one during the CDRP for all locations on the
+surface and the surface area below the drying rate curve remains to represent the amount of water which
+evaporated from the porous material at a specific location. These scaled curves are presented in Figure 7 for the
+conjugate and CFD-analogy approach as a function of time at different locations, where also the average scaled
+drying rate of the porous material is shown. Further away from the leading edge, the peaks at the transition
+between CDRP and DDRP clearly become more pronounced for the conjugate approach, where for the CFD-
+analogy approach, the peaks show a maximum at x ≈ 0.1 m.
+
+Note that, due to the two-dimensional drying behaviour, the expression CDRP not strictly implies anymore that
+the entire material temperature is equal to the wet bulb temperature, but only that the RH at a specific location of
+interest is 100% and that the drying rate here is quasi constant. Since the surface temperatures during this CDRP
+are however approximately equal to the wet bulb temperature for the conjugate and CFD-analogy approaches at
+all locations (Figure 4), the influence of thermal inhomogeneities, as some parts of the surface dry out faster than
+others, on the predicted surface temperature is rather limited. Furthermore, the overall CDRP drying rates are
+approximately equal for all three approaches (Figure 3). Since the CDRP drying rate only depends on the
+convective boundary conditions (approach flow conditions and CTCs), the CTCs during the CDRP should
+therefore also be approximately the same for all three approaches, as will be shown in the next section.
+
+4.2 CTCs
+The conjugate approach does not require CTCs to represent the convective boundary conditions but it allows
+calculating the CTCs a-posteriori, by which their temporal and spatial variability can be identified. In Figure 8,
+the CTCs at different locations on the surface (x = 0, 0.25 and 0.5 m) are presented as a function of
+dimensionless time for all three approaches, where the CTCs of the constant CTCs approach (i.e. the surface-
+averaged values from CFD, combined with the analogy) are: CHTC = 5.34 W/m²K, CMTC = 3.77x10 -8 s/m. In
+Figure 9, the CTC distributions over the surface are shown for all three approaches, where for the conjugate
+approach the CTCs at different times are given.
+
+A distinct spatial CTCs variation can be noticed in these figures for the conjugate and CFD-analogy approaches,
+attaining higher values closer to the leading edge. From the conjugate approach results, a distinct temporal
+variability of the CTCs can also be noticed, especially when going from CDRP to DDRP so when the surface
+locally dries out, as indicated by the peaks in the CTCs in Figure 8. During the CDRP and the DDRP, the CTCs
+at a certain location remain approximately constant, but the magnitude of the CTCs increases from CDRP to
+DDRP (Figure 8). The CTCs of the conjugate approach agree well with the CTCs from the CFD-analogy
+approach during the CDRP, which indicates that the heat and mass transfer analogy appears to be valid during
+the CDRP but only to a lesser extent during the DDRP. The mismatch in the shape of the peaks of CHTCs and
+CMTCs (Figure 8) indicates that the heat and mass transfer analogy is also not valid during the transition from
+
+                                                                                                                  14
+
+[[PAGE 15]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+CDRP to DDRP. The validity of the analogy is discussed in detail in section 4.3. In Figure 9, the mismatch of
+CHTCs and CMTCs during this transition can also be noticed since the CMTCs show a distinct peak at a certain
+location on the surface, for a specific moment in time, whereas the CHTCs show a rather smooth decay at these
+locations. Figure 9 also indicates a strong temporal variability within the spatial CTCs variation over the surface.
+The temporal CTC variation indicates that CTCs are not only intrinsically related to the specific flow field,
+which is responsible for the spatial CTC variation, but that they are also dependent on the temperature and
+moisture distribution in the flow field (boundary layer) and at the air-porous material interface. Note however
+that their impact on the drying rate is much less important during the DDRP, as the internal vapour resistance of
+the porous material determines the liquid water removal rate from the material.
+
+4.3 Heat and mass transfer analogy
+The heat and mass transfer analogy allows estimating the CMTC directly out of the CHTC or vice versa, by
+relying on the similarity between the thermal and concentration boundary layers. An exact similarity however
+only applies under certain criteria, namely:
+    1.    Heat and mass are both considered to be passive scalars, hence not influencing the flow field
+          significantly, which is only valid for forced convective flows and for low mass transfer rates.
+    2.    Heat and mass transfer are considered to be uncoupled, indicating that heat transfer does not influence
+          mass transfer and vice versa. All fluid properties are however to some extent temperature- and
+          (moisture) concentration-dependent and the influence of mass diffusion is accounted for in the heat
+          conservation equation (see Eq.(8) and Eq.(10)).
+    3.    Only convective heat and mass exchange with the environment occurs and no other heat or mass source
+          terms are found at the surface, e.g. radiative absorption or droplet/water-film formation.
+    4.    The temperature and concentration boundary conditions have to be analogous, e.g. constant flux
+          conditions, in order to have a similar boundary-layer development.
+    5.    The Lewis number (Le = Sc/Pr) has to be unity. For air, the Prandtl (Pr) and Schmidt number (Sc) are
+          however not equal (Pr ≈ 0.74 and Sc ≈ 0.6, resulting in Le ≈ 0.81).
+To account for differences in Pr and Sc numbers, a modified version of the heat and mass transfer analogy,
+called the Chilton-Colburn analogy [34], was proposed:
+Nu    Pr
+    ( )1/3                                                                                                     (30)
+Sh    Sc
+where Nu is the Nusselt number and Sh is the Sherwood number. This analogy can also be rewritten as the ratio
+of the CTCs, referred to as the analogy factor (AFcc):
+         CMTC                  1
+AFcc          ( v )2/3                                                                                        (31)
+         CHTC    g      (R v Tg cp,g )1/3
+
+This analogy factor is only a function of the properties of air, which are to some extent dependent on the
+temperature and concentration at the surface. For moist air, this factor is about 7.0x10-9 at ambient conditions
+and can be assumed quasi constant (variations of a few percent with temperature and relative humidity) at
+temperatures well below 100°C. The heat and mass transfer analogy is often not observed experimentally (e.g.
+[35]), since one or more similarity criteria are usually not satisfied, which is however not always acknowledged.
+
+                                                                                                                   15
+
+[[PAGE 16]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+In this study, the most relevant similarity criteria to be considered, which could clearly disprove the validity of
+the analogy here, are criterion 2 and 4.
+
+For drying, another CTC ratio can be determined during the CDRP (AFCDRP) from Eq.(3) [10], where the vapour
+pressure at the surface equals the saturation vapour pressure (pv,w,sat, function of Tw) since RH = 100%:
+
+           CMTC          Tw  Tref 
+AFCDRP          ref                                                                                            (32)
+           CHTC Lv  p v,w,sat  Tw   pv,ref 
+
+If this CTC ratio (AFCDRP) is constant over the surface, the surface temperature during the CDRP becomes equal
+to the wet bulb temperature, if no radiative heat flows at the surface and (conductive) heat flows from the interior
+of the porous material are present. In contrast to AFcc, AFCDRP is dependent on both the approach flow conditions
+(Tref and pv,ref) and the temperature at the surface (Tw), by which it can only be determined by numerical
+simulation (e.g. with a conjugate model) or by experiments. Usually, a CTC ratio is however imposed in HAM
+simulations (e.g. in constant CTCs or CFD-analogy approaches) by which the surface temperature can be
+determined from Eq.(32), based on the approach flow conditions.
+
+The CMTCs at x = 0.25 m are presented in Figure 10 as a function of time, calculated according to three
+different methods: (1) from the conjugate approach; (2) out of the CHTC of the conjugate approach, using the
+heat and mass transfer analogy (Eq.(31)), assuming constant air properties which results in a constant analogy
+factor; (3) out of the CHTC of the conjugate approach, using the analogy for drying during the CDRP (Eq.(32)).
+These CMTCs, calculated according to these three different methods, are shown in Figure 11 as a function of
+dimensionless time and location on the interface by means of a contour plot. With these CMTCs (and the CHTC
+of the conjugate approach), the corresponding analogy factors (CMTC/CHTC) are determined. Contour plots of
+these analogy factors as a function of time and location on the interface are shown in Figure 12. No contour plot
+of the heat and mass transfer analogy factor is shown since it is quasi constant, where only a very small
+variability is found due to the temperature and mass fraction dependency of the air properties (Eq.(31)). All three
+analogy factors at x = 0.25 m are shown in Figure 12c.
+
+All three methods give similar results for the CMTC and the analogy factors during the CDRP (Figure 10 and
+Figure 12c), which indicates that the heat and mass transfer analogy seems to be valid during the CDRP, as also
+found by Murugesan et al. [13] and Boukadida and Ben Nasrallah [35], and that the analogy for drying during
+the CDRP (Eq.(32)) also holds, which is however obvious. The good agreement for the heat and mass transfer
+analogy is related to the fact that the heat and mass transfer similarity criteria are approximately satisfied, except
+criterion 2, since heat and mass transfer are inherently coupled during the CDRP (Eq.(3)). Although the analogy
+is thereby principally not valid, the good agreement with the conjugate approach results however indicates that
+the influence of this criterion is small for the case considered. As a result of the good agreement for the CMTCs,
+the aforementioned analogy factors also agree well during the CDRP (Figure 12c). During the DDRP, all
+methods also agree quite well (both for CMTCs and analogy factors), although the heat and mass transfer
+analogy shows more discrepancies with the other methods. During the transition from CDRP to DDRP,
+significant discrepancies with the conjugate approach results can be found for both types of analogy. The
+
+                                                                                                                   16
+
+[[PAGE 17]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+discrepancies with the heat and mass transfer analogy during this transition and during the DDRP are mainly
+related to the fact that criterion 4 is not satisfied, as thermal and concentration boundary conditions are not
+similar anymore. Finally, it has to be noted that the largest discrepancies of the CMTCs and analogy factors
+obtained from the conjugate model with those obtained from the analogy for drying can be noticed in the region
+close to the leading edge during the DDRP and the transition from CDRP to DDRP (see Figure 10 and Figure
+12).
+
+5. Conclusions
+In this study, convective drying of an unsaturated porous flat plate at low Reynolds numbers was analysed,
+where the focus was on the modelling of the convective boundary conditions. A conjugate model was developed,
+which accounts simultaneously for heat and mass transport in both the air flow and the porous material, by which
+it does not require knowledge of convective transfer coefficients (CTCs). Instead, the CTCs were determined a-
+posteriori, hence identifying their spatial and temporal variability. The drying behaviour predicted by the
+conjugate model was compared with porous-material modelling using spatially and/or temporally constant
+CTCs. Also the validity of the heat and mass transfer analogy was analysed. Following conclusions were drawn:
+1.     Since CTCs varied spatially over the surface, the overall constant drying rate period (CDRP) was shorter,
+       compared to the results when using constant CTCs, due to the quick onset of the decreasing drying rate
+       period (DDRP) at the leading edge of the plate, resulting in lower overall drying rates. This leading-edge
+       effect makes the drying behaviour in the porous material to be essentially two-dimensional.
+2.     By means of the conjugate model, a clear temporal CTC variation could be identified, where distinct peaks
+       (maxima) in the drying rate appeared at the surface right before the surface dried out locally. This temporal
+       CTC variation indicates that CTCs are not only intrinsically related to the specific flow field, but that they
+       are also strongly dependent on the (varying) temperature and moisture distribution in the boundary layer
+       and at the air-porous material interface.
+3.     A spatially-dependent scaling of the drying rate and drying time with the CDRP drying rate at each location
+       was proposed, which allowed a better comparison of drying processes at different locations, which have
+       drying rates that vary strongly in magnitude.
+4.     During the CDRP and the DDRP, the CTCs remained approximately constant but a distinct variation was
+       noticed during the transition of CDRP to DDRP.
+5.     The heat and mass transfer analogy was found to be valid during the CDRP and only to a lesser extent
+       during the DDRP, mainly because the similarity of thermal and concentration boundary conditions was not
+       satisfied. Large discrepancies with the conjugate model results were however found during the transition of
+       CDRP to DDRP. Note that in this study, most similarity criteria, required for the analogy to be valid, were
+       satisfied (a.o. no radiation and no buoyancy), where in many drying processes they are not.
+
+Conjugate modelling allows accounting for spatial and temporal variations in convective boundary conditions
+and thereby it circumvents the use of CTCs, which actually quantify the fluid-side heat and mass transfer in a
+rather simplified way. Conjugate modelling can thus be a valuable tool for the analysis of drying processes,
+leading to a more accurate identification of heterogeneous heat and moisture gradients inside the porous
+material. If conjugate modelling is not applied, it is strongly suggested to account for the spatial variation of the
+
+                                                                                                                    17
+
+[[PAGE 18]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+CTCs when performing porous-material modelling, for example by determining the CHTC by means of a CFD
+study and the corresponding CMTC with the analogy. The need for detailed modelling of convective boundary
+conditions is however strongly dependent on the moisture transport characteristics of the porous material: if the
+entire material quickly enters the DDRP, the internal porous-material vapour resistance determines the moisture
+removal rate from the material. Instead of accurate modelling of the convective boundary conditions, material
+characterisation related to liquid and vapour transport is critical here. In this case, a clear two-dimensional drying
+behaviour is not necessarily noticed and the need for conjugate modelling is alleviated. Moreover,
+simplifications which can be made to quantify the convective transfer rates, such as the use of the heat and mass
+transfer analogy, can be justified here since their impact on the obtained accuracy will be limited. The material
+type thus strongly determines the need for detailed CTC modelling.
+
+Acknowledgements
+This research is funded by the Government of Flanders. As a Flemish government institution, IWT-Flanders
+(Institute for the Promotion of Innovation by Science and Technology in Flanders) supports and stimulates
+industrial research and technology transfer in the Flemish industry. Their contribution is gratefully
+acknowledged. This sponsor had no involvement in: the study design, in the collection, analysis and
+interpretation of data; in the writing of the manuscript; and in the decision to submit the manuscript for
+publication.
+
+References
+[1] A.S. Mujumdar (Editor), Handbook of Industrial Drying, third ed., Taylor & Francis Group, Boca Raton,
+     USA, 2006.
+[2] M. Prat, Percolation model of drying under isothermal conditions in porous media, International Journal of
+     Multiphase Flow 19 (4) (1993) 691-704.
+[3] J. Carmeliet, F. Descamps, G. Houvenaghel, A multiscale network model for simulating moisture transfer
+     properties of porous media, Transport in Porous Media 35 (1999) 67-88.
+[4] A.G. Yiotis, A.K. Stubos, A.G. Boudouvis, Y.C. Yortsos, A 2-D pore-network model of the drying of single-
+     component liquids in porous media, Advances in Water Resources 24 (3-4) (2001) 439-460.
+[5] S. Ben Nasrallah, P. Perre, Detailed study of a model of heat and mass transfer during convective drying of
+     porous media, International Journal of Heat and Mass Transfer 31 (5) (1988) 957-967.
+[6] H. Janssen, B. Blocken, J. Carmeliet, Conservative modelling of the moisture and heat transfer in building
+     components under atmospheric excitation, International Journal of Heat and Mass Transfer 50 (5-6) (2007)
+     1128-1140.
+[7] B. Blocken, T. Defraeye, D. Derome, J. Carmeliet, High-resolution CFD simulations for forced convective
+     heat transfer coefficients at the facade of a low-rise building, Building and Environment 44 (12) (2009)
+     2396-2412.
+[8] T. Defraeye, B. Blocken, J. Carmeliet, CFD analysis of convective heat transfer at the surfaces of a cube
+     immersed in a turbulent boundary layer, International Journal of Heat and Mass Transfer 53 (1-3) (2010)
+     297-308.
+
+                                                                                                                   18
+
+[[PAGE 19]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+[9] T. Defraeye, B. Blocken, J. Carmeliet, Convective heat transfer coefficients for exterior building surfaces:
+     Existing correlations and CFD modelling, Energy Conversion & Management 52 (1) (2010) 512-522.
+[10] X.D. Chen, S.X.Q. Lin, G. Chen, On the ratio of heat and mass transfer coefficient for water evaporation
+     and its impact upon drying modeling, International Journal of Heat and Mass Transfer 45 (21) (2002)
+     4369-4372.
+[11] A. Belhamri, J.P. Fohr, Heat and mass transfer along a wetted porous plate in an airstream, AIChE Journal
+     42 (7) (1996) 1833-1843.
+[12] W. Masmoudi, M. Prat, Heat and mass transfer between a porous medium and a parallel external flow.
+     Application to drying of capillary porous materials, International Journal of Heat and Mass Transfer 34 (8)
+     (1991) 1975-1989.
+[13] K. Murugesan, H.N. Suresh, K.N. Seetharamu, P.A. Aswatha Narayana, T. Sundararajan, A theoretical
+     model of brick drying as a conjugate problem, International Journal of Heat and Mass Transfer 44 (21)
+     (2001) 4075-4086.
+[14] A. Erriguible, P. Bernada, F. Couture, M. Roques, Simulation of convective drying of a porous medium
+     with boundary conditions provided by CFD, Chemical Engineering Research and Design 84 (2) (2006)
+     113-123.
+[15] R. Younsi, D. Kocaefe, S. Poncsak, Y. Kocaefe, L. Gastonguay, CFD modeling and experimental
+     validation of heat and mass transfer in wood poles subjected to high temperatures: a conjugate approach,
+     Heat and Mass Transfer 44 (12) (2008) 1497-1509.
+[16] Chr. Lamnatou, E. Papanicolaou, V. Belessiotis, N. Kyriakis, Conjugate heat and mass transfer from a
+     drying rectangular cylinder in confined air flow, Numerical Heat Transfer, Part A: Applications 56 (5)
+     (2009) 379-405.
+[17] T. Defraeye, Convective heat and mass transfer at exterior building surfaces, PhD thesis, Catholic
+     University of Leuven, Leuven, Belgium, 2011.
+[18] Fluent Inc., Fluent 6.3 User’s Guide, Lebanon - New Hampshire, USA, 2006.
+[19] S. Whitaker, Simultaneous heat, mass, and momentum transfer in porous media: A theory of drying,
+     Advances in Heat Transfer 13 (1977) 119-203.
+[20] J.R. Philip, D.A. De Vries, Moisture movement in porous materials under temperature gradients,
+     Transactions American Geophysical Union 38 (2) (1957) 222-232.
+[21] A.V. Luikov, Heat and Mass Transfer in Capillary-Porous Bodies, first ed., Pergamon Press, New York,
+     USA, 1966.
+[22] S. Roels, J. Carmeliet, H. Hens, O. Adan, H. Brocken, R. Cerny, Z. Pavlik, C. Hall, K. Kumaran, L. Pel, R.
+     Plagge, Interlaboratory comparison of hygric properties of porous building materials, Journal of Thermal
+     Envelope and Building Science 27 (2004) 307-325.
+[23] F. Dominguez-Munoz, B. Anderson, J.M. Cejudo-Lopez, A. Carrillo-Andres, Uncertainty in the thermal
+     conductivity of insulation materials, Energy and Buildings 42 (11) (2010) 2159-2168.
+[24] J.P. Monlouis-Bonnaire, J. Verdier, B. Perrin, Prediction of the relative permeability to gas flows of
+     cement-based materials, Cement and Concrete Research 34 (2004) 737-744.
+[25] F. Descamps, Continuum and discrete modelling of isothermal water and air flow in porous media, PhD
+     thesis, Katholieke Universiteit Leuven, Belgium, 1997.
+
+                                                                                                                   19
+
+[[PAGE 20]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+[26] C. James, C.J. Simonson, P. Talukdar, S. Roels, Numerical and experimental data set for benchmarking
+     hygroscopic buffering models, International Journal of Heat and Mass Transfer 53 (19-20) (2010) 3638-
+     3654.
+[27] P. Talukdar, S.O. Olutmayin, O.F. Osanyintola, C.J. Simonson, An experimental data set for benchmarking
+     1-D, transient heat and moisture transfer models of hygroscopic building materials. Part I: Experimental
+     facility and material property data, International Journal of Heat and Mass Transfer 50 (23-24) (2007)
+     4527-4539.
+[28] B. Blocken, J. Carmeliet, A review of wind-driven rain research in building science, Journal of Wind
+     Engineering and Industrial Aerodynamics 92 (13) (2004) 1079-1130.
+[29] R.B. Dean, Reynolds number dependence of skin friction and other bulk flow variables in two-dimensional
+     rectangular duct flow, Transactions of the ASME: Journal of Fluids Engineering 100 (1978) 215-223.
+[30] P. Talukdar, C.R. Iskra, C.J. Simonson, Combined heat and mass transfer for laminar flow of moist air in a
+     3D rectangular duct: CFD simulation and validation with experimental data, International Journal of Heat
+     and Mass Transfer 51 (11-12) (2008) 3091-3102.
+[31] J. Franke, A. Hellsten, H. Schlünzen, B. Carissimo, Best practice guideline for the CFD simulation of
+     flows in the urban environment, COST Action 732: Quality assurance and improvement of microscale
+     meteorological models, Hamburg, Germany, 2007.
+[32] L.S. Oliveira, K. Haghighi, Conjugate heat and mass transfer in convective drying of porous media,
+     Numerical Heat Transfer, Part A: Applications 34 (1998) 105-117.
+[33] H.N. Suresh, P.A. Aswatha Narayana, K.N. Seetharamu, Conjugate mixed convection heat and mass
+     transfer in brick drying, Heat and Mass Transfer 37 (2-3) (2001) 205-213.
+[34] T.H. Chilton, A.P. Colburn, Mass transfer (absorption) coefficients, Industrial and Engineering Chemistry
+     26 (11) (1934) 1183-1187.
+[35] N. Boukadida, S. Ben Nasrallah, Mass and heat transfer during water evaporation in laminar flow inside a
+     rectangular channel - validity of heat and mass transfer analogy, International Journal of Thermal Sciences
+     40 (1) (2001) 67-81.
+
+                                                                                                                20
+
+[[PAGE 21]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+Figure captions
+Figure 1. Logarithm of liquid permeability of mineral plaster as a function the logarithm of the capillary
+pressure.
+
+Figure 2. Computational model for numerical analysis with boundary conditions (not to scale).
+
+Figure 3. Drying rate (scaled with gv,w,CDRP) as a function of time (scaled with ttot), for three convective
+boundary-modelling approaches: (a) the surface-averaged values of the three approaches (avg: surface-
+averaged); (b) the conjugate approach, including drying rates at specific locations; (c) the CFD-analogy
+approach, including drying rates at specific locations.
+
+Figure 4. Relative humidity (b-d) and temperature (a-c) at the surface, as a function of time (scaled with
+ttot), for three convective boundary-modelling approaches including results at specific locations for: (a-b)
+the conjugate approach (conj); (c-d) the CFD-analogy approach (CFD-an). The wet bulb temperature is
+indicated by WB temp.
+
+Figure 5. Drying rate (gv,w/gv,w,CDRP) (a) and relative humidity (%) at the surface (b) as a function of time
+(scaled with ttot) and location on the surface (scaled with LPM) for the conjugate approach. The CDRP and
+DDRP are indicated.
+
+Figure 6. Drying fronts (RH ≈ 100%) inside the porous material as a function of time (lines represent
+intervals of 5h) for: (a) the conjugate approach; (b) the CFD-analogy approach.
+
+Figure 7. Scaled drying rate as a function of scaled time (both scaled with g v,w,CDRP at that specific location,
+Eqs.(28)-(29)) for the conjugate (a) and CFD-analogy approaches (b) at specific locations on the surface as
+well as the average drying rate.
+
+Figure 8. CTCs ((a) CHTC, (b) CMTC) as a function of time (scaled with t tot) for three convective
+boundary modelling approaches including the CTCs at specific locations for the conjugate and CFD-
+analogy approaches.
+
+Figure 9. CTCs ((a) CHTC), (b) CMTC) as a function of location on the surface (scaled with L PM), for
+three convective boundary modelling approaches including the CTCs at specific times for the conjugate
+approach.
+
+Figure 10. CMTC, as a function of time (scaled with ttot) at x = 0.25 m, calculated according to three
+methods, namely by means of the conjugate approach, the heat and mass transfer analogy (Eq.(31)) and
+the CDRP analogy (Eq.(32)).
+
+                                                                                                               21
+
+[[PAGE 22]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+Figure 11. CMTC, as a function of time (scaled with ttot) and location on the surface (scaled with LPM),
+calculated according to three methods, namely by means of: (a) the conjugate approach; (b) the heat and
+mass transfer analogy (Eq.(31)); (c) the CDRP analogy (Eq.(32)). The CDRP and DDRP are indicated.
+
+Figure 12. (a-b) Analogy factors (CMTC/CHTC ratio), as a function of time (scaled with ttot) and location
+on the surface (scaled with LPM), obtained from the CTCs calculated by: (a) the conjugate approach
+(Eq.(31)); (b) the CDRP analogy (Eq.(32)). The CDRP and DDRP are indicated. (c) Analogy factors as a
+function of time (scaled with ttot) at x = 0.25 m, calculated according to three methods, namely by means of
+the conjugate approach, the heat and mass transfer analogy (Eq.(31)) and the CDRP analogy (Eq.(32)).
+
+                                                                                                           22
+
+[[PAGE 23]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+Figures
+
+                 -11
+                 -12
+                 -13
+  log(Kl ) (s)
+
+                 -14
+                 -15
+                 -16
+                 -17
+                 -18
+                       3   4   5          6     7         8
+                               log(p c) (Pa)
+
+Figure 1. Logarithm of liquid permeability of mineral plaster as a function the logarithm of the capillary
+pressure.
+
+                                                                                                         23
+
+[[PAGE 24]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+                      Inlet
+                      Ub = 0.8 m/s
+                                                                                           Outlet
+                      Tref = 23.8°C ; RHref = 71.9%         No-slip wall
+                                                                             Zero static pressure
+             y x               Flow – CFD modelling                          H = 20.5 mm
+                Porous material (capillary saturated) – HAM modelling          Interface    37.5 mm
+
+                                                            Adiabatic & Impermeable
+      5H                                        500 mm                                          20H
+
+Figure 2. Computational model for numerical analysis with boundary conditions (not to scale).
+
+                                                                                                       24
+
+[[PAGE 25]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+                           1.6
+                                                                     constant CTCs
+                           1.4
+                                                                     CFD-analogy - avg
+                           1.2                                       conjugate - avg
+   g v,w /g v,w,CDRP (-)
+
+                            1
+                           0.8
+                           0.6
+                           0.4
+                           0.2
+                                     (a)
+                            0
+                                 0         0.2         0.4            0.6     0.8        1
+                                                          t/t tot (-)
+                           1.6             x = 0.25m               conjugate - avg
+                           1.4
+                                                                   conjugate - x=0m
+                           1.2                                     conjugate - x=0.25m
+   g v,w /g v,w,CDRP (-)
+
+                            1                                      conjugate - x=0.5m
+                           0.8                               x = 0.5m
+                           0.6
+                           0.4
+                                     x = 0m
+                           0.2
+                                     (b)
+                            0
+                                 0         0.2         0.4            0.6     0.8        1
+                                                          t/t tot (-)
+                           1.6
+                                                                 CFD-analogy - avg
+                           1.4
+                                                                 CFD-analogy - x=0m
+                           1.2                                   CFD-analogy - x=0.25m
+   g v,w /g v,w,CDRP (-)
+
+                            1                                    CFD-analogy - x=0.5m
+                           0.8                             x = 0.25m
+                           0.6                                     x = 0.5m
+                           0.4
+                                     x = 0m
+                           0.2
+                                     (c)
+                            0
+                                 0         0.2         0.4            0.6     0.8        1
+                                                          t/t tot (-)
+
+Figure 3. Drying rate (scaled with gv,w,CDRP) as a function of time (scaled with ttot), for three convective
+boundary-modelling approaches: (a) the surface-averaged values of the three approaches (avg: surface-
+averaged); (b) the conjugate approach, including drying rates at specific locations; (c) the CFD-analogy
+approach, including drying rates at specific locations.
+
+                                                                                                               25
+
+[[PAGE 26]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+            24                                                                        24
+                      (a)                                                                       (c)
+            23                                                                        23
+
+            22                                                                        22
+  Tw (°C)
+
+                                                                            Tw (°C)
+                                                       WB temp                                                                   WB temp
+                                                       constant CTCs                                                             constant CTCs
+            21                                         conj - x=0m                    21                                         CFD-an - x=0m
+                                                       conj - x=0.25m                                                            CFD-an - x=0.25m
+                                                       conj - x=0.5m                                                             CFD-an - x=0.5m
+            20                                                                        20
+
+            19                                                                        19
+                  0         0.2   0.4            0.6       0.8          1                   0         0.2   0.4            0.6        0.8       1
+                                     t/t tot (-)                                                               t/t tot (-)
+            100                                                                       100
+                                                       constant CTCs                                                             constant CTCs
+                      (b)                              conj - x=0m                              (d)                              CFD-an - x=0m
+            95                                                                        95
+                                                       conj - x=0.25m                                                            CFD-an - x=0.25m
+                                                       conj - x=0.5m                                                             CFD-an - x=0.5m
+            90                                                                        90
+  RHw (%)
+
+                                                                            RHw (%)
+
+            85                                                                        85
+
+            80                                                                        80
+
+            75                                                                        75
+
+            70                                                                        70
+                  0         0.2   0.4            0.6       0.8          1                   0         0.2   0.4            0.6        0.8       1
+                                     t/t tot (-)                                                               t/t tot (-)
+
+Figure 4. Relative humidity (b-d) and temperature (a-c) at the surface, as a function of time (scaled with
+ttot), for three convective boundary-modelling approaches including results at specific locations for: (a-b)
+the conjugate approach (conj); (c-d) the CFD-analogy approach (CFD-an). The wet bulb temperature is
+indicated by WB temp.
+
+                                                                                                                                     26
+
+[[PAGE 27]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+             gv,w/gv,w,CDRP                                        RHw
+
+              (a)                                                  (b)
+
+              CDRP                         DDRP                     CDRP                 DDRP
+ x/LPM (-)
+
+                                                       x/LPM (-)
+                              t/ttot (-)                                    t/ttot (-)
+
+Figure 5. Drying rate (gv,w/gv,w,CDRP) (a) and relative humidity (%) at the surface (b) as a function of time
+(scaled with ttot) and location on the surface (scaled with LPM) for the conjugate approach. The CDRP and
+DDRP are indicated.
+
+                                                                                                            27
+
+[[PAGE 28]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+                0
+
+              -0.2       50h
+  y/DPM (-)
+
+              -0.4                     h
+                                  75
+              -0.6                                                                 5h
+
+                                                  0h
+                                                                              12
+
+                                                10
+              -0.8                                                     Time
+                                                                                              (a)
+                -1
+                     0            0.2             0.4 x/LP M (-) 0.6                    0.8         1
+                0
+
+              -0.2       50h
+  y/DPM (-)
+
+                                  h
+
+              -0.4
+                               75
+
+                                                                    5h
+                                            0h
+
+              -0.6                                                12
+                                           10
+
+              -0.8                                                     Time
+                                                                                              (b)
+               -1
+                     0            0.2             0.4 x/LP M (-) 0.6                    0.8         1
+
+Figure 6. Drying fronts (RH ≈ 100%) inside the porous material as a function of time (lines represent
+intervals of 5h) for: (a) the conjugate approach; (b) the CFD-analogy approach.
+
+                                                                                                        28
+
+[[PAGE 29]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+                  2
+                                              conjugate - average
+                           (a)
+                                              conjugate - x coordinates
+                 1.5
+  g v,w,SC (-)
+
+                                     x coordinate
+                  1
+
+                 0.5
+
+                  0
+                       0         2        4         6        8            10
+                                          tSC (kg/m²)
+                  2
+                           (b)              CFD-analogy - average
+                                            CFD-analogy - x coordinates
+                 1.5
+  g v,w,SC (-)
+
+                                          x coordinate
+                  1
+
+                 0.5
+
+                  0
+                       0         2        4         6        8            10
+                                          tSC (kg/m²)
+
+Figure 7. Scaled drying rate as a function of scaled time (both scaled with gv,w,CDRP at that specific location,
+Eqs.(28)-(29)) for the conjugate (a) and CFD-analogy approaches (b) at specific locations on the surface as
+well as the average drying rate.
+
+                                                                                                             29
+
+[[PAGE 30]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+                              20
+                                                           constant CTCs
+                                        x = 0m             CFD-analogy - x=0m
+               CHTC (W/m²K)
+
+                              15                           CFD-analogy - x=0.25m
+                                                           CFD-analogy - x=0.5m
+                                        (a)                conjugate - x=0m
+                                                           conjugate - x=0.25m
+                              10                           conjugate - x=0.5m
+                                   x = 0.25m
+
+                              5
+
+                                                      x = 0.5m
+                              0
+                                   0          0.2   0.4           0.6   0.8         1
+                                                       t/t tot (-)
+              2.0E-07
+
+                                           x = 0m
+              1.5E-07
+                                                            constant CTCs
+ CMTC (s/m)
+
+                                                            CFD-analogy - x=0m
+                                        (b)                 CFD-analogy - x=0.25m
+              1.0E-07                                       CFD-analogy - x=0.5m
+                                                            conjugate - x=0m
+                                       x = 0.25m            conjugate - x=0.25m
+                                                            conjugate - x=0.5m
+              5.0E-08
+
+        0.0E+00
+                                                    x = 0.5m
+                                   0          0.2   0.4           0.6   0.8         1
+                                                       t/t tot (-)
+
+Figure 8. CTCs ((a) CHTC, (b) CMTC) as a function of time (scaled with ttot) for three convective
+boundary modelling approaches including the CTCs at specific locations for the conjugate and CFD-
+analogy approaches.
+
+                                                                                                       30
+
+[[PAGE 31]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+                             10
+                                                                         constant CTCs
+                                                                         CFD-analogy
+                             8        1d
+                                        ay                               conjugate
+                                              2d
+              CHTC (W/m²K)
+
+                                                ay
+                             6                     s          10days            5days
+                                                                 3day
+                                                                      s         4days
+                             4
+
+                             2
+                                      (a)
+                             0
+                                  0           0.2           0.4        0.6      0.8      1
+                                                              x/LP M (-)
+              1.E-07
+                                                                         constant CTCs
+                                                                         CFD-analogy
+              8.E-08                     2days                           conjugate
+                                                    3days
+ CMTC (s/m)
+
+                                       1d
+
+              6.E-08                                              4days
+                                         ay
+
+                                                                                 5days
+                                                                10days
+              4.E-08
+
+              2.E-08
+                                      (b)
+         0.E+00
+                                  0           0.2           0.4        0.6      0.8      1
+                                                              x/LP M (-)
+
+Figure 9. CTCs ((a) CHTC), (b) CMTC) as a function of location on the surface (scaled with L PM), for
+three convective boundary modelling approaches including the CTCs at specific times for the conjugate
+approach.
+
+                                                                                                        31
+
+[[PAGE 32]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+               6.0E-08
+
+               5.0E-08
+
+               4.0E-08
+  CMTC (s/m)
+
+               3.0E-08
+
+               2.0E-08
+                                   constant CTCs
+                                   conjugate approach
+               1.0E-08
+                                   heat and mass transfer analogy
+                                   CDRP analogy
+               0.0E+00
+                         0   0.2    0.4           0.6   0.8         1
+                                       t/t tot (-)
+
+Figure 10. CMTC, as a function of time (scaled with ttot) at x = 0.25 m, calculated according to three
+methods, namely by means of the conjugate approach, the heat and mass transfer analogy (Eq.(31)) and
+the CDRP analogy (Eq.(32)).
+
+                                                                                                         32
+
+[[PAGE 33]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+                                               x10-8                                               x10-8
+
+             (a)                                                   (b)
+             CDRP           DDRP                                   CDRP         DDRP
+
+                                                       x/LPM (-)
+ x/LPM (-)
+
+                    t/ttot (-)                                            t/ttot (-)
+                                               x10-8
+
+             (c)
+             CDRP           DDRP
+ x/LPM (-)
+
+                      t/ttot (-)
+
+Figure 11. CMTC, as a function of time (scaled with ttot) and location on the surface (scaled with LPM),
+calculated according to three methods, namely by means of: (a) the conjugate approach; (b) the heat and
+mass transfer analogy (Eq.(31)); (c) the CDRP analogy (Eq.(32)). The CDRP and DDRP are indicated.
+
+                                                                                                           33
+
+[[PAGE 34]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+                                                                  x10-9                                   x10-9
+               (a)                                                                    (b)
+               CDRP                       DDRP                                        CDRP         DDRP
+
+                                                                          x/LPM (-)
+  x/LPM (-)
+
+                                    t/ttot (-)                                               t/ttot (-)
+
+          1.1E-08                      conjugate approach
+                                       heat and mass transfer analogy
+          1.0E-08                      CDRP analogy
+
+          9.0E-09
+ AF (-)
+
+                        (c)
+          8.0E-09
+
+          7.0E-09
+
+          6.0E-09
+                    0         0.2           0.4           0.6   0.8        1
+                                               t/t tot (-)
+
+Figure 12. (a-b) Analogy factors (CMTC/CHTC ratio), as a function of time (scaled with ttot) and location
+on the surface (scaled with LPM), obtained from the CTCs calculated by: (a) the conjugate approach
+(Eq.(31)); (b) the CDRP analogy (Eq.(32)). The CDRP and DDRP are indicated. (c) Analogy factors as a
+function of time (scaled with ttot) at x = 0.25 m, calculated according to three methods, namely by means of
+the conjugate approach, the heat and mass transfer analogy (Eq.(31)) and the CDRP analogy (Eq.(32)).
+
+                                                                                                                  34
+
+[[PAGE 35]]
+Defraeye T., Blocken B., Carmeliet J. (2012), Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling, International Journal of
+Heat and Mass Transfer 55 (1-3), 112-124. http://dx.doi.org/10.1016/j.ijheatmasstransfer.2011.08.047
+
+Tables
+
+Table 1. Material properties of mineral plaster, used for numerical modelling.
+ Property                                                                           Value
+ ws (kg/m³PM)                                                                       1615
+ cp,s (J/kgK)                                                                       1050
+ λPM (W/mK)                                                                          1.2
+ μdry (-)                                                                            20
+ wcap (kg/m³PM)                                                                      126
+ δv (s)                                                      2.61105           1   w PM / w cap 
+
+                                                                                
+                                                              dry R v T 0.503 1   w / w  2  0.497
+                                                                                        PM      cap   
+                          
+                                                        
+                                                      3 0.6667
+                                                                                                     
+                                                                                              1.85 0.4596
+                                                                                                                                               
+                                                                                                                                           2.44 0.5910 
+ wPM (kg/m³PM)
+                    w cap 0.599 1   4.08 106 pc            0.355 1  9.58 10 7 p c               0.046 1   2.04 10 8 p c               
+                                                                                                                                                       
+
+                                                                                                                                        35

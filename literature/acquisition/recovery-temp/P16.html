@@ -1,0 +1,3458 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+    <head >
+
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="HandheldFriendly" content="True" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        
+        
+
+        
+        
+  <link  rel="stylesheet" href="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/assets/base_style-BxRs1iOp.css" />
+<script type="module" crossorigin="" src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/assets/base_style-D-jH62-1.js"></script>
+
+  <link  rel="stylesheet" href="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/assets/article_style-B67IZFds.css" />
+<link  rel="stylesheet" href="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/assets/style-D77LS1kY.css" />
+<script type="module" crossorigin="" src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/assets/article_style-CTAd1LmM.js"></script>
+
+  
+  
+    <style>
+  
+  
+  @media screen and (min-width: 64em) {
+    div.pmc-wm {
+      background: repeat-y;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='350' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdefs%3E%3Cfilter x='-.02' y='0' width='1.05' height='1' id='c'%3E%3CfeFlood flood-color='%23FFF'/%3E%3CfeComposite in='SourceGraphic'/%3E%3C/filter%3E%3Ctext id='b' font-family='Helvetica' font-size='11pt' style='opacity:1;fill:%23005ea2;stroke:none;text-anchor:middle' x='175' y='14'%3E%3C/text%3E%3Cpath id='a' style='fill:%23005ea2' d='M0 8h350v3H0z'/%3E%3C/defs%3E%3Cuse xlink:href='%23a' transform='rotate(90 10 10)'/%3E%3Cuse xlink:href='%23b' transform='rotate(90 10 10)' filter='url(%23c)'/%3E%3C/svg%3E");
+      padding-left: 3rem;
+    }
+  }
+</style>
+
+  
+
+
+
+        
+            <link rel="apple-touch-icon"
+                  sizes="180x180"
+                  href="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/favicons/apple-touch-icon.png" />
+            <link rel="icon"
+                  type="image/png"
+                  sizes="48x48"
+                  href="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/favicons/favicon-48x48.png" />
+            <link rel="icon"
+                  type="image/png"
+                  sizes="32x32"
+                  href="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/favicons/favicon-32x32.png" />
+            <link rel="icon"
+                  type="image/png"
+                  sizes="16x16"
+                  href="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/favicons/favicon-16x16.png" />
+            <link rel="manifest" href="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/favicons/site.webmanifest" />
+            <link rel="mask-icon"
+                  href="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/favicons/safari-pinned-tab.svg"
+                  color="#0071bc" />
+            <meta name="msapplication-config"
+                  content="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/favicons/browserconfig.xml" />
+            <meta name="theme-color" content="#ffffff" />
+        
+
+        <title>
+            PINN Model of Diffusion Coefficient Identification Problem in Fick’s Laws - PMC
+        </title>
+
+        
+        
+  
+  <!-- Logging params: Pinger defaults -->
+<meta name="ncbi_app" content="cloudpmc-viewer" />
+<meta name="ncbi_db" content="pmc" />
+<meta name="ncbi_phid" content="E73C3CF9AA34C993043CF9002C526364.m_1" />
+<meta name="ncbi_pinger_stat_url" content="https://pmc.ncbi.nlm.nih.gov/stat" />
+<!-- Logging params: Pinger custom -->
+<meta name="ncbi_pdid" content="article" />
+  
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+
+    
+        <link rel="preconnect" href="https://cdn.ncbi.nlm.nih.gov" />
+    
+
+    <!-- Include USWDS Init Script -->
+    <script src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/assets/uswds-init.js"></script>
+
+
+    <meta name="ncbi_domain" content="acsomega">
+<meta name="ncbi_type" content="fulltext">
+<meta name="ncbi_pcid" content="journal">
+<meta name="ncbi_feature" content="associated_data">
+<link rel="canonical" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10809368/">
+<meta name="robots" content="INDEX,NOFOLLOW,NOARCHIVE">
+<meta name="citation_journal_title" content="ACS Omega">
+<meta name="citation_title" content="PINN Model of Diffusion Coefficient Identification Problem in Fick’s Laws">
+<meta name="citation_author" content="Dongchen Li">
+<meta name="citation_author_institution" content="School of Civil Engineering, Central South University, Changsha 410075, People’s Republic of China">
+<meta name="citation_author" content="Bin Yan">
+<meta name="citation_author_institution" content="School of Civil Engineering, Central South University, Changsha 410075, People’s Republic of China">
+<meta name="citation_author" content="Tianya Gao">
+<meta name="citation_author_institution" content="School of Civil Engineering, Central South University, Changsha 410075, People’s Republic of China">
+<meta name="citation_author" content="Guowei Li">
+<meta name="citation_author_institution" content="School of Civil Engineering, Central South University, Changsha 410075, People’s Republic of China">
+<meta name="citation_author" content="You Wang">
+<meta name="citation_author_institution" content="School of Civil Engineering, Central South University, Changsha 410075, People’s Republic of China">
+<meta name="citation_publication_date" content="2024 Jan 5">
+<meta name="citation_volume" content="9">
+<meta name="citation_issue" content="3">
+<meta name="citation_firstpage" content="3846">
+<meta name="citation_doi" content="10.1021/acsomega.3c07924">
+<meta name="citation_pmid" content="38284026">
+<meta name="citation_abstract_html_url" content="https://pmc.ncbi.nlm.nih.gov/articles/PMC10809368/">
+<meta name="citation_fulltext_html_url" content="https://pmc.ncbi.nlm.nih.gov/articles/PMC10809368/">
+<meta name="citation_pdf_url" content="https://pmc.ncbi.nlm.nih.gov/articles/PMC10809368/pdf/ao3c07924.pdf">
+<meta name="description" content="This study tackles the complex task of determining diffusion coefficients in inverse problems, addressing the challenges of instability and computational demands. The primary objective is to introduce an efficient model for estimating diffusion ...">
+<meta name="og:title" content="PINN Model of Diffusion Coefficient Identification Problem in Fick’s Laws">
+<meta name="og:type" content="article">
+<meta name="og:site_name" content="PubMed Central (PMC)">
+<meta name="og:description" content="This study tackles the complex task of determining diffusion coefficients in inverse problems, addressing the challenges of instability and computational demands. The primary objective is to introduce an efficient model for estimating diffusion ...">
+<meta name="og:url" content="https://pmc.ncbi.nlm.nih.gov/articles/PMC10809368/">
+<meta name="og:image" content="https://cdn.ncbi.nlm.nih.gov/pmc/cms/images/pmc-card-share.jpg?_=0">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@ncbi">
+    
+    
+
+    </head>
+    <body >
+        
+    <a class="usa-skipnav " href="#main-content">
+      Skip to main content
+    </a>
+
+
+        
+            
+
+<section class="usa-banner " aria-label="Official website of the United States government" >
+    <div class="usa-accordion">
+        <header class="usa-banner__header">
+            <div class="usa-banner__inner">
+                <div class="grid-col-auto">
+                    <img aria-hidden="true"
+                         class="usa-banner__header-flag"
+                         src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/us_flag.svg"
+                         alt="" />
+                </div>
+
+                <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+                    <p class="usa-banner__header-text">
+                        An official website of the United States government
+                    </p>
+                    <span class="usa-banner__header-action">Here's how you know</span>
+                </div>
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="button"
+        
+    
+    class="usa-accordion__button usa-banner__button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           
+           "
+    aria-expanded="false"
+    aria-controls="gov-banner-default"
+    
+    data-testid="storybook-django-banner"
+    
+    >
+    
+        
+
+        
+                    <span class="usa-banner__button-text">Here's how you know</span>
+                
+
+        
+    
+        
+            </button>
+        
+
+
+            </div>
+        </header>
+
+        <div class="usa-banner__content usa-accordion__content"
+             id="gov-banner-default"
+             hidden>
+            <div class="grid-row grid-gap-lg">
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img"
+                         src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/icon-dot-gov.svg"
+                         alt=""
+                         aria-hidden="true" />
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>Official websites use .gov</strong>
+                            <br />
+                            A
+                            <strong>.gov</strong> website belongs to an official
+                            government organization in the United States.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="usa-banner__guidance tablet:grid-col-6">
+                    <img class="usa-banner__icon usa-media-block__img"
+                         src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/icon-https.svg"
+                         alt=""
+                         aria-hidden="true" />
+
+                    <div class="usa-media-block__body">
+                        <p>
+                            <strong>Secure .gov websites use HTTPS</strong>
+                            <br />
+                            A <strong>lock</strong> (
+                            <span class="icon-lock">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="52"
+                                     height="64"
+                                     viewBox="0 0 52 64"
+                                     class="usa-banner__lock-image"
+                                     role="graphics-symbol"
+                                     aria-labelledby="banner-lock-description"
+                                     focusable="false">
+                                    <title id="banner-lock-title">Lock</title>
+                                    <desc id="banner-lock-description">
+                                    Locked padlock icon
+                                    </desc>
+                                    <path fill="#000000"
+                                          fill-rule="evenodd"
+                                          d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z" />
+                                </svg>
+</span>) or <strong>https://</strong> means you've safely
+                                connected to the .gov website. Share sensitive
+                                information only on official, secure websites.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        
+
+        
+    
+    
+    
+
+<div class="usa-overlay">
+</div>
+
+
+
+<header class="usa-header usa-header--extended usa-header--wide" data-header data-testid="header"    >
+    <div class="ncbi-header">
+        <div class="ncbi-header__container">
+            <a class="ncbi-header__logo-container"
+               href="https://www.ncbi.nlm.nih.gov/">
+                <img alt="NCBI home page"
+                     class="ncbi-header__logo-image"
+                     src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/ncbi-logos/nih-nlm-ncbi--white.svg"
+                     width="410"
+                     height="100" />
+            </a>
+
+            <!-- Mobile menu hamburger button -->
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="button"
+        
+    
+    class="usa-menu-btn ncbi-header__hamburger-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           
+           "
+    
+    
+    aria-label="Show menu"
+    data-testid="navMenuButton"
+    
+    >
+    
+        
+
+        
+                <svg aria-hidden="true"
+                     class="ncbi-hamburger-icon"
+                     fill="none"
+                     focusable="false"
+                     height="21"
+                     viewBox="0 0 31 21"
+                     width="31"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd"
+                          d="M0.125 20.75H30.875V17.3333H0.125V20.75ZM0.125 12.2083H30.875V8.79167H0.125V12.2083ZM0.125 0.25V3.66667H30.875V0.25H0.125Z"
+                          fill="#F1F1F1"
+                          fill-rule="evenodd" />
+                </svg>
+            
+
+        
+    
+        
+            </button>
+        
+
+
+
+            
+                <!-- Desktop buttons-->
+                <div class="ncbi-header__desktop-buttons">
+                    
+                        <!-- Desktop search button -->
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="button"
+        
+    
+    class="usa-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           usa-button--unstyled ncbi-header__desktop-button
+           "
+    aria-expanded="false"
+    aria-controls="search-field-desktop-navigation"
+    aria-label="Show search overlay"
+    data-testid="toggleSearchPanelButton"
+    data-toggle-search-panel-button
+    >
+    
+        
+
+        
+                            
+
+
+
+    <img
+        src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/search.svg"
+        class="usa-icon "
+        aria-hidden="true"
+        
+        
+    />
+
+
+                            Search
+                        
+
+        
+    
+        
+            </button>
+        
+
+
+                    
+
+                    <!-- Desktop login dropdown -->
+                    
+                        <div class="ncbi-header__login-dropdown">
+                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="button"
+        
+    
+    class="usa-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           usa-button--unstyled ncbi-header__desktop-button ncbi-header__login-dropdown-button
+           "
+    aria-expanded="false"
+    aria-controls="login-dropdown-menu"
+    aria-label="Show login menu"
+    data-testid="toggleLoginMenuDropdown"
+    data-desktop-login-button
+    >
+    
+        
+
+        
+                                
+
+
+
+    <img
+        src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/person.svg"
+        class="usa-icon "
+        aria-hidden="true"
+        
+        
+    />
+
+
+
+                                <span data-login-dropdown-text>Log in</span>
+
+                                <!-- Dropdown icon pointing up -->
+                                
+
+
+
+    <img
+        src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/expand_less.svg"
+        class="usa-icon ncbi-header__login-dropdown-icon ncbi-header__login-dropdown-icon--expand-less ncbi-header__login-dropdown-icon--hidden"
+        aria-hidden="true"
+        data-login-dropdown-up-arrow
+        
+    />
+
+
+
+                                <!-- Dropdown icon pointing down -->
+                                
+
+
+
+    <img
+        src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/expand_more.svg"
+        class="usa-icon ncbi-header__login-dropdown-icon ncbi-header__login-dropdown-icon--expand-more ncbi-header__login-dropdown-icon--hidden"
+        aria-hidden="true"
+        data-login-dropdown-down-arrow
+        
+    />
+
+
+                            
+
+        
+    
+        
+            </button>
+        
+
+
+
+                            <!-- Login dropdown menu -->
+                            <ul class="usa-nav__submenu ncbi-header__login-dropdown-menu"
+                                id="login-dropdown-menu"
+                                data-desktop-login-menu-dropdown
+                                hidden>
+                                
+                                    <li class="usa-nav__submenu-item">
+                                        <!-- Uses custom style overrides to render external and document links. -->
+                                        
+
+
+
+
+
+
+
+
+
+    <a href="https://www.ncbi.nlm.nih.gov/myncbi/" class="usa-link  "  >
+        
+
+        
+            Dashboard
+        
+
+        
+    </a>
+
+
+                                    </li>
+                                
+                                    <li class="usa-nav__submenu-item">
+                                        <!-- Uses custom style overrides to render external and document links. -->
+                                        
+
+
+
+
+
+
+
+
+
+    <a href="https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/" class="usa-link  "  >
+        
+
+        
+            Publications
+        
+
+        
+    </a>
+
+
+                                    </li>
+                                
+                                    <li class="usa-nav__submenu-item">
+                                        <!-- Uses custom style overrides to render external and document links. -->
+                                        
+
+
+
+
+
+
+
+
+
+    <a href="https://www.ncbi.nlm.nih.gov/account/settings/" class="usa-link  "  >
+        
+
+        
+            Account settings
+        
+
+        
+    </a>
+
+
+                                    </li>
+                                
+                                <li class="usa-nav__submenu-item">
+                                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="button"
+        
+    
+    class="usa-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           usa-button--outline ncbi-header__login-dropdown-logout-button
+           "
+    
+    
+    
+    data-testid="desktopLogoutButton"
+    data-desktop-logout-button
+    >
+    
+        
+
+        Log out
+
+        
+    
+        
+            </button>
+        
+
+
+                                </li>
+                            </ul>
+                        </div>
+                    
+                </div>
+            
+        </div>
+    </div>
+
+    <!-- Search panel -->
+    
+        <div class="ncbi-search-panel ncbi--show-only-at-desktop"
+             data-header-search-panel
+             hidden>
+            <div class="ncbi-search-panel__container">
+                <form action="https://www.ncbi.nlm.nih.gov/search/all/"
+                      
+                      autocomplete="off"
+                      class="usa-search usa-search--big ncbi-search-panel__form"
+                      data-testid="desktop-navigation-search-form"
+                      method="GET"
+                      role="search">
+                    <label class="usa-sr-only" for="search-field-desktop-navigation">
+                        Search…
+                    </label>
+                    <input class="usa-input"
+                           id="search-field-desktop-navigation"
+                           name="term"
+                           
+                               placeholder="Search NCBI"
+                           
+                           type="search"
+                           value="" />
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="submit"
+        
+    
+    class="usa-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           
+           "
+    
+    
+    
+    
+    
+    >
+    
+        
+
+        
+                        <span class="usa-search__submit-text">
+                            Search NCBI
+                        </span>
+                    
+
+        
+    
+        
+            </button>
+        
+
+
+                </form>
+
+                
+            </div>
+        </div>
+    
+
+    <nav aria-label="Primary navigation" class="usa-nav">
+        <p class="usa-sr-only" id="primary-navigation-sr-only-title">
+            Primary site navigation
+        </p>
+
+        <!-- Mobile menu close button -->
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="button"
+        
+    
+    class="usa-nav__close ncbi-nav__close-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           
+           "
+    
+    
+    aria-label="Close navigation menu"
+    data-testid="navCloseButton"
+    
+    >
+    
+        
+
+        
+            <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/close.svg" alt="Close" />
+        
+
+        
+    
+        
+            </button>
+        
+
+
+
+        
+            <!-- Mobile search component -->
+            <form class="usa-search usa-search--small ncbi--hide-at-desktop"
+                  action="https://www.ncbi.nlm.nih.gov/search/all/"
+                  
+                  autocomplete="off"
+                  data-testid="mobile-navigation-search-form"
+                  method="GET"
+                  role="search">
+                <label class="usa-sr-only" for="search-field-mobile-navigation">
+                    Search
+                </label>
+
+                <input class="usa-input"
+                       id="search-field-mobile-navigation"
+                       type="search"
+                       
+                           placeholder="Search NCBI"
+                       
+                       name="term" />
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="submit"
+        
+    
+    class="usa-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           
+           "
+    
+    
+    
+    
+    
+    >
+    
+        
+
+        
+                    <!-- This SVG should be kept inline and not replaced with a link to the icon as otherwise it will render in the wrong color -->
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE1LjUgMTRoLS43OWwtLjI4LS4yN0E2LjQ3MSA2LjQ3MSAwIDAgMCAxNiA5LjUgNi41IDYuNSAwIDEgMCA5LjUgMTZjMS42MSAwIDMuMDktLjU5IDQuMjMtMS41N2wuMjcuMjh2Ljc5bDUgNC45OUwyMC40OSAxOWwtNC45OS01em0tNiAwQzcuMDEgMTQgNSAxMS45OSA1IDkuNVM3LjAxIDUgOS41IDUgMTQgNy4wMSAxNCA5LjUgMTEuOTkgMTQgOS41IDE0eiIvPjwvc3ZnPg=="
+                         class="usa-search__submit-icon"
+                         alt="Search" />
+                
+
+        
+    
+        
+            </button>
+        
+
+
+            </form>
+
+            
+        
+
+        <!-- Primary navigation menu items -->
+        <!-- This usa-nav__inner wrapper is required to correctly style the navigation items on Desktop -->
+        
+
+        
+            <div class="ncbi-nav__mobile-login-menu ncbi--hide-at-desktop"
+                 data-mobile-login-menu
+                 hidden>
+                <p class="ncbi-nav__mobile-login-menu-status">
+                    Logged in as:
+                    <strong class="ncbi-nav__mobile-login-menu-email"
+                            data-mobile-login-email-text></strong>
+                </p>
+                <ul class="usa-nav__primary usa-accordion">
+                    
+                        <li class="usa-nav__primary-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.ncbi.nlm.nih.gov/myncbi/" class="usa-link  "  >
+        
+
+        
+            Dashboard
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="usa-nav__primary-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.ncbi.nlm.nih.gov/myncbi/collections/bibliography/" class="usa-link  "  >
+        
+
+        
+            Publications
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="usa-nav__primary-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.ncbi.nlm.nih.gov/account/settings/" class="usa-link  "  >
+        
+
+        
+            Account settings
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                </ul>
+            </div>
+        
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        <button
+            type="button"
+        
+    
+    class="usa-button
+           
+
+           
+               
+               
+               
+               
+            
+
+           
+           
+           ncbi-nav__mobile-login-button ncbi--hide-at-desktop
+           "
+    
+    
+    
+    data-testid="mobileLoginButton"
+    data-mobile-login-button
+    >
+    
+        
+
+        Log in
+
+        
+    
+        
+            </button>
+        
+
+
+    </nav>
+</header>
+
+    
+    
+        
+
+<section class="pmc-header pmc-header--basic" aria-label="PMC Header with search box">
+    <div class="pmc-nav-container">
+        <div class="pmc-header__bar">
+           <div class="pmc-header__logo">
+               <a href="/" title="Home" aria-label="PMC Home"></a>
+           </div>
+            <button
+                    type="button"
+                    class="usa-button usa-button--unstyled pmc-header__search__button"
+                    aria-label="Open search"
+                    data-ga-category="search"
+                    data-ga-action="PMC"
+                    data-ga-label="pmc_search_panel_mobile"
+            >
+                <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/search.svg" alt="PMC search open icon" aria-hidden="true" class="usa-icon usa-icon--size-4 pmc-icon__open" />
+                <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/close.svg" alt="PMC search close ison" aria-hidden="true" class="usa-icon usa-icon--size-4 pmc-icon__close" />
+            </button>
+        </div>
+        <div class="pmc-header__search">
+            
+
+
+<form class="usa-search usa-search--extra usa-search--article-right-column  pmc-header__search__form" id="pmc-search-form" autocomplete="off" role="search">
+<label class="usa-sr-only" for="pmc-search">Search PMC Full-Text Archive</label>
+<span class="autoComplete_wrapper flex-1">
+<input class="usa-input width-full maxw-none" required="required" placeholder="Search PMC Full-Text Archive" id="pmc-search"  type="search" name="term" data-autocomplete-url="https://pmc.ncbi.nlm.nih.gov/autocomp/search/autocomp/"/>
+</span>
+<button
+class="usa-button"
+type="submit"
+formaction="https://pmc.ncbi.nlm.nih.gov/search/"
+data-ga-category="search"
+data-ga-action="PMC"
+data-ga-label="PMC_search_button"
+>
+<span class="usa-search__submit-text">Search in PMC</span>
+<img
+src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons-bg/search--white.svg"
+class="usa-search__submit-icon"
+alt="Search"
+/>
+</button>
+</form>
+            <div class="display-flex flex-column tablet:flex-row tablet:flex-justify flex-justify-center flex-align-center width-full desktop:maxw-44">
+                <ul class="pmc-header__search__menu">
+                    <li>
+                        
+                            <a class="usa-link" href="/journals/" data-ga-action="featured_link" data-ga-label="journal list">
+                                Journal List
+                            </a>
+                        
+                    </li>
+                    <li>
+                        
+                            <a class="usa-link" href="/about/userguide/" data-ga-action="featured_link"
+                            data-ga-label="user guide">
+                                User Guide
+                            </a>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+
+        
+        
+
+       
+  <div class="usa-section padding-top-0 desktop:padding-top-6 pmc-article-section" data-article-db="pmc" data-article-id="10809368">
+
+    
+
+   
+
+
+
+<div class="grid-container pmc-actions-bar" aria-label="Actions bar" role="complementary">
+    <div class="grid-row">
+        <div class="grid-col-fill display-flex">
+             <div class="display-flex">
+                <ul class="usa-list usa-list--unstyled usa-list--horizontal">
+                    <li class="margin-right-2 mobile-lg:margin-right-4 display-flex mob">
+                        <button
+                                type="button"
+                                class="usa-button pmc-sidenav__container__open usa-button--unstyled width-auto display-flex"
+                                aria-label="Open resources"
+                                data-extra-class="is-visible-resources"
+                                data-ga-category="resources_accordion"
+                                data-ga-action="click"
+                                data-ga-label="mobile_icon"
+                        >
+                            <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/more_vert.svg" alt="Open resources icon" class="usa-icon usa-icon--size-4 usa-icon--link" />
+                        </button>
+                    </li>
+                    
+                    <li class="margin-right-2 mobile-lg:margin-right-4 display-flex mob">
+                        <a
+                                href="https://doi.org/10.1021/acsomega.3c07924"
+                                class="usa-link display-flex usa-tooltip"
+                                role="button"
+                                target="_blank"
+                                rel="noreferrer noopener"
+                                title="View on publisher site"
+                                data-position="bottom"
+                                aria-label="View on publisher site"
+                                data-ga-category="actions"
+                                data-ga-action="click"
+                                data-ga-label="publisher_link_mobile"
+                        >
+                                <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/launch.svg" alt="View on publisher site icon" class="usa-icon usa-icon--size-4 usa-icon--link" />
+                        </a>
+                    </li>
+                    
+                    
+                        <li class="margin-right-2 mobile-lg:margin-right-4 display-flex">
+                             <a
+                                     href="pdf/ao3c07924.pdf"
+                                     class="usa-link display-flex usa-tooltip"
+                                     role="button"
+                                     title="Download PDF"
+                                     data-position="bottom"
+                                     aria-label="Download PDF"
+                                     data-ga-category="actions"
+                                     data-ga-action="click"
+                                     data-ga-label="pdf_download_mobile"
+                             >
+
+                                 <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/file_download.svg" alt="Download PDF icon" aria-hidden="true" class="usa-icon usa-icon--size-4 usa-icon--link" />
+                            </a>
+                        </li>
+                    
+                    <li class="margin-right-2 mobile-lg:margin-right-4 display-flex">
+                        <button
+                            class="usa-button usa-button--unstyled  usa-tooltip collections-dialog-trigger collections-button display-flex collections-button-empty"
+                            title="Add to Collections"
+                            data-position="bottom"
+                            aria-label="Save article in MyNCBI collections."
+                            data-ga-category="actions"
+                            data-ga-action="click"
+                            data-ga-label="collections_button_mobile"
+                            data-collections-open-dialog-enabled="false"
+                            data-collections-open-dialog-url="https://account.ncbi.nlm.nih.gov/?back_url=https%3A%2F%2Fpmc.ncbi.nlm.nih.gov%2Farticles%2FPMC10809368%2F%23open-collections-dialog"
+                            data-in-collections="false"
+                        >
+                            <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/action-bookmark-full.svg" alt="Collections icon" aria-hidden="true" class="usa-icon usa-icon--size-4 usa-icon--link usa-icon--bookmark-full" />
+                            <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/action-bookmark-empty.svg" alt="Collections icon" aria-hidden="true" class="usa-icon usa-icon--size-4 usa-icon--link usa-icon--bookmark-empty" />
+                        </button>
+                    </li>
+                    
+                    <li class="margin-right-2 mobile-lg:margin-right-4 display-flex">
+                        <button role="button" class="usa-button usa-button--unstyled usa-tooltip citation-dialog-trigger display-flex"
+                            aria-label="Open dialog with citation text in different styles"
+                            title="Cite"
+                            data-position="bottom"
+                            data-ga-category="actions"
+                            data-ga-action="open"
+                            data-ga-label="cite_mobile"
+                            data-all-citations-url="/resources/citations/10809368/"
+                            data-citation-style="nlm"
+                            data-download-format-link="/resources/citations/10809368/export/"
+                        >
+                            <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/format_quote.svg" alt="Cite icon" aria-hidden="true" class="usa-icon usa-icon--size-4 usa-icon--link" />
+                        </button>
+                    </li>
+                    
+                    <li class="pmc-permalink display-flex" >
+                         <button
+                                 type="button"
+                                 title="Permalink"
+                                 data-position="bottom"
+                                 class="usa-button usa-button--unstyled display-flex usa-tooltip"
+                                 aria-label="Show article permalink"
+                                 aria-expanded="false"
+                                 aria-haspopup="true"
+                                 data-ga-category="actions"
+                                 data-ga-action="open"
+                                 data-ga-label="permalink_mobile"
+                         >
+                            <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/share.svg" alt="Show article permalink icon" aria-hidden="true" class="usa-icon usa-icon--size-4 usa-icon--link" />
+                        </button>
+                        
+
+<div class="pmc-permalink__dropdown" hidden>
+    <div class="pmc-permalink__dropdown__container">
+          <h2 class="usa-modal__heading margin-top-0 margin-bottom-2 text-uppercase font-sans-xs">PERMALINK</h2>
+          <div class="pmc-permalink__dropdown__content">
+              <input type="text" class="usa-input" value="https://pmc.ncbi.nlm.nih.gov/articles/PMC10809368/" aria-label="Article permalink">
+              <button class="usa-button display-inline-flex pmc-permalink__dropdown__copy__btn margin-right-0" title="Copy article permalink" data-ga-category="save_share" data-ga-action="link" data-ga-label="copy_link">
+                  <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/content_copy.svg" alt="Copy icon" aria-hidden="true" class="usa-icon usa-icon--white" />
+                  <span class="margin-left-1">Copy</span>
+              </button>
+          </div>
+    </div>
+</div>
+                    </li>
+                </ul>
+            </div>
+            <button
+                    type="button"
+                    class="usa-button pmc-sidenav__container__open usa-button--unstyled width-auto display-flex"
+                    aria-label="Open article navigation"
+                    data-extra-class="is-visible-in-page"
+                    data-ga-category="actions"
+                    data-ga-action="open"
+                    data-ga-label="article_nav_mobile"
+            >
+                <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/list.svg" alt="Open article navigation icon" aria-hidden="true" class="usa-icon usa-icon--size-4 usa-icon--link" />
+            </button>
+        </div>
+    </div>
+</div>
+    <div class="grid-container desktop:padding-left-6">
+      <div id="article-container" class="grid-row grid-gap">
+        <div class="grid-col-12 desktop:grid-col-8 order-2 pmc-layout__content">
+            <div class="grid-container padding-left-0 padding-right-0">
+                <div class="grid-row desktop:margin-left-neg-6">
+                    <div class="grid-col-12">
+                        <div class="pmc-layout__disclaimer" role="complementary" aria-label="Disclaimer note">
+    As a library, NLM provides access to scientific literature. Inclusion in an NLM database does not imply endorsement of, or agreement with,
+    the contents by NLM or the National Institutes of Health.<br/>
+    Learn more:
+    <a class="usa-link" data-ga-category="Link click" data-ga-action="Disclaimer" data-ga-label="New disclaimer box" href="/about/disclaimer/">PMC Disclaimer</a>
+    |
+    <a class="usa-link" data-ga-category="Link click" data-ga-action="PMC Copyright Notice" data-ga-label="New disclaimer box" href="/about/copyright/">
+        PMC Copyright Notice
+    </a>
+</div>
+                    </div>
+                </div>
+                <div class="grid-row pmc-wm desktop:margin-left-neg-6">
+                    <!-- Main content -->
+                    <main
+                      id="main-content"
+                      class="usa-layout-docs__main usa-layout-docs grid-col-12 pmc-layout pmc-prose padding-0"
+                    >
+
+                      
+                        <section class="pmc-journal-banner text-center line-height-none" aria-label="Journal banner"><img src="https://cdn.ncbi.nlm.nih.gov/pmc/banners/logo-acsomega.png" alt="ACS Omega logo" usemap="#pmc-banner-imagemap" width="500" height="75"><map name="pmc-banner-imagemap"><area alt="Link to ACS Omega" title="Link to ACS Omega" shape="default" href="https://pubs.acs.org/journal/acsodf" target="_blank" rel="noopener noreferrer"></map></section><article lang="en"><section aria-label="Article citation and metadata"><section class="pmc-layout__citation font-secondary font-xs"><div>
+<div class="display-inline-block"><button type="button" class="cursor-pointer text-no-underline bg-transparent border-0 padding-0 text-left margin-0 text-normal text-primary" aria-controls="journal_context_menu">ACS Omega</button></div>. 2024 Jan 5;9(3):3846–3857. doi: <a href="https://doi.org/10.1021/acsomega.3c07924" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">10.1021/acsomega.3c07924</a>
+</div>
+<nav id="journal_context_menu" hidden="hidden"><ul class="menu-list font-family-ui" role="menu">
+<li role="presentation"><a href='https://pmc.ncbi.nlm.nih.gov/search/?term="ACS%20Omega"[jour]' class="usa-link" role="menuitem">Search in PMC</a></li>
+<li role="presentation"><a href='https://pubmed.ncbi.nlm.nih.gov/?term="ACS%20Omega"[jour]' lang="en" class="usa-link" role="menuitem">Search in PubMed</a></li>
+<li role="presentation"><a href='https://www.ncbi.nlm.nih.gov/nlmcatalog?term="ACS%20Omega"[Title%20Abbreviation]' class="usa-link" role="menuitem">View in NLM Catalog</a></li>
+<li role="presentation"><a href='?term="ACS%20Omega"[jour]' class="usa-link" role="menuitem" data-add-to-search="true">Add to search</a></li>
+</ul></nav></section><section class="front-matter"><div class="ameta p font-secondary font-xs">
+<hgroup><h1>PINN Model of Diffusion Coefficient Identification
+Problem in Fick’s Laws</h1></hgroup><div class="cg p">
+<a href='https://pubmed.ncbi.nlm.nih.gov/?term="Li%20D"[Author]' class="usa-link" aria-describedby="id1"><span class="name western">Dongchen Li</span></a><div hidden="hidden" id="id1">
+<h3><span class="name western">Dongchen Li</span></h3>
+<div class="p">
+<sup>1</sup>School of Civil Engineering, Central South University, Changsha 410075, People’s Republic of China</div>
+<div class="p">Find articles by <a href='https://pubmed.ncbi.nlm.nih.gov/?term="Li%20D"[Author]' class="usa-link"><span class="name western">Dongchen Li</span></a>
+</div>
+</div>
+<sup>1</sup>, <a href='https://pubmed.ncbi.nlm.nih.gov/?term="Yan%20B"[Author]' class="usa-link" aria-describedby="id2"><span class="name western">Bin Yan</span></a><div hidden="hidden" id="id2">
+<h3><span class="name western">Bin Yan</span></h3>
+<div class="p">
+<sup>1</sup>School of Civil Engineering, Central South University, Changsha 410075, People’s Republic of China</div>
+<div class="p">Find articles by <a href='https://pubmed.ncbi.nlm.nih.gov/?term="Yan%20B"[Author]' class="usa-link"><span class="name western">Bin Yan</span></a>
+</div>
+</div>
+<sup>1</sup>, <a href='https://pubmed.ncbi.nlm.nih.gov/?term="Gao%20T"[Author]' class="usa-link" aria-describedby="id3"><span class="name western">Tianya Gao</span></a><div hidden="hidden" id="id3">
+<h3><span class="name western">Tianya Gao</span></h3>
+<div class="p">
+<sup>1</sup>School of Civil Engineering, Central South University, Changsha 410075, People’s Republic of China</div>
+<div class="p">Find articles by <a href='https://pubmed.ncbi.nlm.nih.gov/?term="Gao%20T"[Author]' class="usa-link"><span class="name western">Tianya Gao</span></a>
+</div>
+</div>
+<sup>1</sup>, <a href='https://pubmed.ncbi.nlm.nih.gov/?term="Li%20G"[Author]' class="usa-link" aria-describedby="id4"><span class="name western">Guowei Li</span></a><div hidden="hidden" id="id4">
+<h3><span class="name western">Guowei Li</span></h3>
+<div class="p">
+<sup>1</sup>School of Civil Engineering, Central South University, Changsha 410075, People’s Republic of China</div>
+<div class="p">Find articles by <a href='https://pubmed.ncbi.nlm.nih.gov/?term="Li%20G"[Author]' class="usa-link"><span class="name western">Guowei Li</span></a>
+</div>
+</div>
+<sup>1</sup>, <a href='https://pubmed.ncbi.nlm.nih.gov/?term="Wang%20Y"[Author]' class="usa-link" aria-describedby="id5"><span class="name western">You Wang</span></a><div hidden="hidden" id="id5">
+<h3><span class="name western">You Wang</span></h3>
+<div class="p">
+<sup>1</sup>School of Civil Engineering, Central South University, Changsha 410075, People’s Republic of China</div>
+<div class="p">Find articles by <a href='https://pubmed.ncbi.nlm.nih.gov/?term="Wang%20Y"[Author]' class="usa-link"><span class="name western">You Wang</span></a>
+</div>
+</div>
+<sup>1,</sup><sup>*</sup>
+</div>
+<ul class="d-buttons inline-list">
+<li><button class="d-button" aria-controls="aip_a" aria-expanded="false">Author information</button></li>
+<li><button class="d-button" aria-controls="anp_a" aria-expanded="false">Article notes</button></li>
+<li><button class="d-button" aria-controls="clp_a" aria-expanded="false">Copyright and License information</button></li>
+</ul>
+<div class="d-panels font-secondary-light">
+<div id="aip_a" class="d-panel p" style="display: none">
+<div class="p" id="aff1">
+<sup>1</sup>School of Civil Engineering, Central South University, Changsha 410075, People’s Republic of China</div>
+<div class="author-notes p"><div class="fn" id="cor1">
+<sup>*</sup><p class="display-inline">Email: <span>ywang1920@csu.edu.cn</span>.</p>
+</div></div>
+</div>
+<div id="anp_a" class="d-panel p" style="display: none"><div class="notes p"><section id="historyarticle-meta1" class="history"><p>Received 2023 Oct 10; Accepted 2023 Dec 26; Revised 2023 Dec 21; Collection date 2024 Jan 23.</p></section></div></div>
+<div id="clp_a" class="d-panel p" style="display: none">
+<div>© 2024 The Authors. Published by American Chemical Society</div>
+<p>Permits non-commercial access and re-use, provided that author attribution and integrity are maintained; but does not permit creation of adaptations or other derivative works (<a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">https://creativecommons.org/licenses/by-nc-nd/4.0/</a>).</p>
+<div class="p"><a href="/about/copyright/" class="usa-link">PMC Copyright notice</a></div>
+</div>
+</div>
+<div>PMCID: PMC10809368  PMID: <a href="https://pubmed.ncbi.nlm.nih.gov/38284026/" class="usa-link">38284026</a>
+</div>
+</div></section></section><section aria-label="Article content"><section class="body main-article-body"><section class="abstract" id="abstract1"><h2>Abstract</h2>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><a class="tileshop" target="_blank" href="https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&amp;p=PMC3&amp;id=10809368_ao3c07924_0017.jpg"><img class="graphic zoom-in" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/d5310a6ab697/ao3c07924_0017.jpg" loading="lazy" id="ab-tgr1" height="247" width="750" alt="graphic file with name ao3c07924_0017.jpg"></a></p>
+<p>This study tackles
+the complex task of determining diffusion coefficients
+in inverse problems, addressing the challenges of instability and
+computational demands. The primary objective is to introduce an efficient
+model for estimating diffusion coefficients under specific conditions.
+Through a unique fusion of Fick’s laws and a Neural Network
+framework, a physics-informed neural network (PINN) is developed for
+the diffusion coefficient identification problem. The model accommodates
+scenarios where both diffusion flux and concentration gradient are
+known, where diffusion flux is known while the concentration gradient
+is unknown, and where diffusion flux is unknown while the concentration
+gradient is known. Results demonstrate the model’s efficiency,
+obtaining diffusion coefficients in less than 1000, 2000, and 3000
+iterations for the respective scenarios. Sensitivity analysis underscores
+the model’s validity across conditions, highlighting the positive
+impact of a higher proportion of effective data on convergence and
+alignment with general diffusion coefficient patterns. In conclusion,
+the PINN model stands out as a powerful tool for accurately estimating
+diffusion coefficients under varying conditions.</p></section><section id="sec1"><h2 class="pmc_sec_title">1. Introduction</h2>
+<p>Adolf Fick introduced
+Fick’s laws in 1855 to describe diffusion’s
+macroscopic phenomena,<sup><a href="#ref1" class="usa-link" aria-describedby="ref1">1</a></sup> with the first
+law stating that a higher concentration gradient results in greater
+diffusion flux. Building on this, the second law shows that, in non-steady-state
+diffusion, the rate of change of component concentration at a point
+is proportional to the spatial second derivative of concentration.
+Despite Fick’s laws being over 170 years old, reliable determination
+of component-dependent diffusion coefficients remains a hot research
+topic.<sup><a href="#ref2" class="usa-link" aria-describedby="ref2">2</a>,<a href="#ref3" class="usa-link" aria-describedby="ref3">3</a></sup> The diffusion coefficient, a crucial thermal
+property, plays a pivotal role in various computational and simulation
+processes related to mass transfer, absorption, and catalytic reactions.
+Understanding its dependence on different components is a pressing
+research issue. Experimental measurements often involve indirect methods,<sup><a href="#ref4" class="usa-link" aria-describedby="ref4">4</a></sup> where the initial state is established, and physical
+quantities related to the diffusion coefficient, such as diffusion
+flux and concentration distributions, are measured. The diffusion
+coefficient’s calculation falls under parameter identification
+in inverse problems,<sup><a href="#ref5" class="usa-link" aria-describedby="ref5">5</a></sup> typically characterized
+by instability, nonlinearity, and computational demands.</p>
+<p>There
+are many approaches to deal with this problem, e.g., the
+finite element method,<sup><a href="#ref6" class="usa-link" aria-describedby="ref6">6</a>−<a href="#ref8" class="usa-link" aria-describedby="ref8">8</a></sup> analytical model,<sup><a href="#ref9" class="usa-link" aria-describedby="ref9">9</a>−<a href="#ref11" class="usa-link" aria-describedby="ref11">11</a></sup> and machine learning
+model.<sup><a href="#ref12" class="usa-link" aria-describedby="ref12">12</a>,<a href="#ref13" class="usa-link" aria-describedby="ref13">13</a></sup> Although these methods are proven to be
+feasible, they take a lot of computational time and source. Recently,
+with the great advancement of numerical technology and intelligent
+algorithms, some scholars are trying to integrate the physical mechanism
+into the neural network (NN) framework to construct the physics-informed
+neural network (PINN) model. Shaban et al.<sup><a href="#ref14" class="usa-link" aria-describedby="ref14">14</a></sup> proposed a physics-informed deep neural network model to investigate
+the chloride diffusion mechanism and predict the distribution of chloride
+concentrations in concrete. Batuwatta-Gamage et al.<sup><a href="#ref15" class="usa-link" aria-describedby="ref15">15</a></sup> proposed a PINN-based surrogate framework to simulate the
+time-based moisture concentration and moisture-content-based shrinkage
+of a plant cell during drying. Lu and Christov<sup><a href="#ref16" class="usa-link" aria-describedby="ref16">16</a></sup> employed PINN approach to extend the utility of phenomenological
+models, which can simulate the particle migration in shear flow.</p>
+<p>The biggest advantage of the PINN model, as we know, is that it
+incorporates physical laws, specifically Fick’s laws in the
+present work, into the Neural Network’s architecture. This
+integration ensures that the model adheres to fundamental principles,
+enhancing the reliability of the diffusion coefficient estimates.
+Moreover, it is evidenced that PINN proves effective in solving inverse
+problems, such as determining diffusion coefficients, which are inherently
+challenging due to nonlinearity and sensitivity to initial conditions.
+The combination of neural networks and physics-based constraints enables
+robust solutions in less computational time compared to traditional
+methods.</p>
+<p>Therefore, the main target of the presented research
+is to propose
+a feasible and efficient PINN approach to deal with the diffusion
+coefficient identification problem even if some parameter data is
+unavailable. First, a PINN model will be built integrating the Fick’s
+laws into the NN framework. Second, three different situations will
+be analyzed: (a) both diffusion flux and concentration gradient are
+known; (b) diffusion flux is known while concentration gradient is
+unknown; and (c) diffusion flux is unknown while concentration gradient
+is known. Third, the sensitivity of the proposed model will be analyzed
+by investigating the effects of the error level and amount of the
+testing data and the selection of the initial guess. Finally, conclusions
+through the research will be drawn.</p></section><section id="sec2"><h2 class="pmc_sec_title">2. Model Description</h2>
+<p>The diffusion coefficient identification itself is a highly nonlinear,
+uncertain, and computationally intensive problem. Neural network algorithms
+can be well applied to such problem.<sup><a href="#ref17" class="usa-link" aria-describedby="ref17">17</a>,<a href="#ref18" class="usa-link" aria-describedby="ref18">18</a></sup> However, traditional
+neural network algorithms when addressing these problems often rely
+solely on existing data for training to predict target parameters.
+This approach makes it difficult to reveal the inherent relationships
+among various parameters.<sup><a href="#ref19" class="usa-link" aria-describedby="ref19">19</a></sup> In contrast,
+diffusion coefficient calculations not only have abundant data sources
+but also are supported by corresponding physical laws. Therefore,
+coupling the physical mechanism into the deep neural framework to
+achieve data-physics dual-drive can lead to more accurate diffusion
+coefficient identification.<sup><a href="#ref20" class="usa-link" aria-describedby="ref20">20</a>,<a href="#ref21" class="usa-link" aria-describedby="ref21">21</a></sup> The deep neural network
+(DNN) algorithm is introduced and is coupled with Fick’s laws
+to constrain neural network training, establishing the PINN diffusion
+coefficient identification model.</p>
+<section id="sec2.1"><h3 class="pmc_sec_title">2.1. Equations of Fick’s
+Laws</h3>
+<section id="sec2.1.1"><h4 class="pmc_sec_title">2.1.1. Fick’s First Law</h4>
+<p>Fick’s
+first law established the relationship between flux <em>J</em>, diffusion coefficient <em>D</em>, and concentration gradient <em>C</em>. The specific expression is as follows</p>
+<table class="disp-formula p" id="eq1"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/60e98b7e99ae/ao3c07924_m001.jpg" loading="lazy" height="32" width="69" alt="2.1.1."></td>
+<td class="label">1</td>
+</tr></table>
+<p>This formula indicates that the diffusion
+flux through a unit cross-sectional area perpendicular to the diffusion
+direction per unit of time is directly proportional to the concentration
+gradient at that interface.</p>
+<p>In the case of a three-dimensional
+diffusion system, since the
+diffusion flux <em>J</em> is a vector, it can be decomposed
+into three components along the <em>x</em>, <em>y</em>, and <em>z</em> coordinate axes. In this case, the first
+law can be expressed as</p>
+<table class="disp-formula p" id="eq2"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/9933d84a58b1/ao3c07924_m002.jpg" loading="lazy" height="38" width="286" alt="2.1.1."></td>
+<td class="label">2</td>
+</tr></table></section><section id="sec2.1.2"><h4 class="pmc_sec_title">2.1.2. Fick’s Second Law</h4>
+<p>The first
+law can only be applied for data calculations under the conditions
+of steady-state diffusion, while in actual situations, most cases
+involve non-steady-state diffusion. Therefore, based on the material’s
+equilibrium, Fick established the second diffusion differential equation
+from the first law. The second law reflects the relationship between
+the rate of change of component concentration with time under non-steady-state
+diffusion conditions and the rate of change of diffusion flux with
+distance. The specific expression is as follows</p>
+<table class="disp-formula p" id="eq3"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/7344bd803da7/ao3c07924_m003.jpg" loading="lazy" height="40" width="78" alt="2.1.2."></td>
+<td class="label">3</td>
+</tr></table>
+<p>If the diffusion coefficient <em>D</em> varies only
+slightly with coordinates, then it can be
+considered as constant. In this case, <a href="#eq4" class="usa-link">eq <a href="#eq4" class="usa-link">4</a></a> can be rewritten as follows</p>
+<table class="disp-formula p" id="eq4"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/d7bb89818bba/ao3c07924_m004.jpg" loading="lazy" height="39" width="157" alt="2.1.2."></td>
+<td class="label">4</td>
+</tr></table>
+<p>After introducing one-dimensional
+and multidimensional equations
+for steady-state and non-steady-state processes, one can select an
+appropriate diffusion equation based on the measured diffusion flux <em>J</em> and diffusion coefficients <em>D</em> under different
+conditions.<sup><a href="#ref22" class="usa-link" aria-describedby="ref22">22</a></sup> This can be used to constrain
+training of the neural network.</p></section></section><section id="sec2.2"><h3 class="pmc_sec_title">2.2. PINN
+Framework of Diffusion Coefficient Identification</h3>
+<p>PINN is
+essentially a combination of DNN and physical information
+and for the diffusion space of a single component in any dimension.
+Its basic framework is shown in <a href="#fig1" class="usa-link">Figure <a href="#fig1" class="usa-link">1</a></a>.</p>
+<figure class="fig xbox font-sm" id="fig1"><h4 class="obj_head">Figure 1.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/e8a4d8f4d35a/ao3c07924_0001.jpg" loading="lazy" id="gr1" height="440" width="661" alt="Figure 1"></p>
+<div class="p text-right font-secondary"><a href="figure/fig1/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Basic framework of PINN.</p></figcaption></figure><section id="sec2.2.1"><h4 class="pmc_sec_title">2.2.1. Deep Neural Network Section</h4>
+<p>As
+shown in <a href="#fig1" class="usa-link">Figure <a href="#fig1" class="usa-link">1</a></a>,
+the structure of the PINN primarily consists of three parts: the input
+layer, hidden layers, and the output layer. Based on the available
+experimental data, the data used for training mainly include diffusion
+flux, concentration gradient, spatial coordinate, and time. Therefore,
+the training and testing sets for the neural network are selected
+from these data. In this paper, for addressing subsequent issues,
+80% of the data is taken as the training set, and the remaining 20%
+is used as the testing set.</p>
+<p>Regarding the selection of the input
+layer parameters, it is necessary to analyze the correlation between
+time and various spatial parameters <em>X</em><sub>1</sub>, <em>X</em><sub>2</sub>···<em>X</em><sub><em>n</em></sub> and the diffusion flux <em>J</em> as well as component concentration <em>C</em>. For instance,
+calculating correlation coefficients such as Pearson, Spearman, or
+Kendall coefficients or plotting distribution curves can help determine
+their correlations. This analysis guides the selection of the input
+parameters. Concerning the selection of the output layer parameters,
+the known experimental data in this study include only diffusion flux <em>J</em> and component concentration <em>C</em>. Therefore, <em>J</em>(<em>X</em><sub>1</sub>, <em>X</em><sub>2</sub>,···,<em>X</em><sub><em>n</em></sub>, <em>t</em>) and <em>C</em>(<em>X</em><sub>1</sub>, <em>X</em><sub>2</sub>,···,<em>X</em><sub><em>n</em></sub>, <em>t</em>) are
+used as the output values of the neural network. Regarding the selection
+of the number of nodes and layers in the hidden layers, this should
+be determined based on the desired prediction accuracy and computational
+efficiency. Regarding the signal propagation process between neural
+network layers, from the input layer to the hidden layer and then
+to the output layer, it is a unidirectional propagation process, which
+can be expressed as follows</p>
+<table class="disp-formula p" id="eq5"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/5504db24b08c/ao3c07924_m005.jpg" loading="lazy" height="18" width="147" alt="2.2.1."></td>
+<td class="label">5</td>
+</tr></table>
+<p>where <em>a</em><span class="stack"><sup><em>l</em></sup><sub><em>i</em></sub></span> represents the set of outputs
+of all <em>i</em><sup>th</sup> neural networks in the <em>l</em><sup>th</sup> layer; <em>z</em><span class="stack"><sup><em>l</em></sup><sub><em>i</em></sub></span> represents the set of inputs
+of all <em>i</em><sup>th</sup> neural networks in the <em>l</em><sup>th</sup> layer; <em>w</em><sup><em>l</em></sup> represents the set of all weights in the <em>l</em><sup>th</sup> layer; <em>b</em><sup><em>l</em></sup> represents the set of all biases in the <em>l</em><sup>th</sup> layer; and σ(<em>z</em><span class="stack"><sup><em>l</em></sup><sub><em>i</em></sub></span>) represents
+the activation function.</p>
+<p>Due to the gradient calculation issue
+with the primary design parameters,
+this paper selects the Tanh (hyperbolic tangent) function, which is
+widely applicable and has error propagation ease, as the activation
+function for the neural network. Its expression is as follows</p>
+<table class="disp-formula p" id="eq6"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/fc533d9315a7/ao3c07924_m006.jpg" loading="lazy" height="31" width="86" alt="2.2.1."></td>
+<td class="label">6</td>
+</tr></table></section><section id="sec2.2.2"><h4 class="pmc_sec_title">2.2.2. Physics Information Section</h4>
+<p>Traditional
+neural networks typically minimize the difference between the actual
+values and the network’s predictions as the training objective.
+They commonly use the mean squared error (MSE) as the loss function
+for neural network training. The specific expression is as follows</p>
+<table class="disp-formula p" id="eq7"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/ec9292166b48/ao3c07924_m007.jpg" loading="lazy" height="39" width="139" alt="2.2.2."></td>
+<td class="label">7</td>
+</tr></table>
+<p>where <em>N</em> represents the number
+of actual values; <em>y</em><sub><em>i</em></sub> represents
+the actual values used for neural network training; and <em>f</em>(<em>x</em><sub><em>i</em></sub>) represents the
+neural network’s predictions.</p>
+<p>However, this approach
+requires a large number of samples for training and cannot reflect
+the correlations among various parameters. To further enhance the
+training speed and prediction accuracy of the neural network, this
+paper integrates Fick’s laws into the loss function. It calculates
+the physical residual terms corresponding to the conditions of Fick’s
+laws and combines them with the mean squared error between actual
+and predicted values to jointly penalize solutions that do not satisfy
+both predictive and physical conditions. Building upon <a href="#eq8" class="usa-link">eq <a href="#eq8" class="usa-link">8</a></a>, an improved loss function is proposed
+as follows</p>
+<table class="disp-formula p" id="eq8"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/d3cc546f061c/ao3c07924_m008.jpg" loading="lazy" height="41" width="493" alt="2.2.2."></td>
+<td class="label">8</td>
+</tr></table>
+<p>where <em>N</em><sub>m</sub> represents
+the number of sets of experimentally determined data; <em>N</em><sub>c</sub> represents the number of neural network nodes; Θ
+represents the neural network’s parameters to be identified,
+Θ = [<em>w</em>, <em>b</em>]; <em>J</em><sub><em>i</em></sub> and <em>C</em><sub><em>i</em></sub>, respectively, represent the experimentally determined
+values of diffusion flux and component concentration; <em>J</em>(<em>X</em><sub>1</sub>,···,<em>X</em><sub><em>n</em></sub>, <em>t</em>) and <em>C</em>(<em>X</em><sub>1</sub>,···,<em>X</em><sub><em>n</em></sub>, <em>t</em>) represent, respectively,
+the network’s predicted values of diffusion flux and component
+concentration; and <em>f</em>(<em>X</em><sub>1</sub>,···,<em>X</em><sub>2</sub>, <em>t</em>) represents the modified loss function derived from Fick’s
+laws under different conditions, with an optimization goal of 0. The
+modified equation only contains the unknown diffusion coefficient <em>D</em>, and the specific equation needs to be determined based
+on different experimental conditions.</p>
+<p>Based on the improved
+loss function expression in <a href="#eq9" class="usa-link">eq <a href="#eq9" class="usa-link">9</a></a>, it is embedded into the DNN framework,
+ultimately forming the PINN diffusion coefficient identification model.
+Under the data-physical-driven conditions, the PINN network structure
+is continuously updated, and the parameter values of the iterative
+loss function are also continuously updated, ultimately yielding the
+global optimal values or distribution of the diffusion coefficient <em>D</em> and the parameters Θ to be identified. The global
+optimum solution can be expressed as follows</p>
+<table class="disp-formula p" id="eq9"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/c4547f5acca5/ao3c07924_m009.jpg" loading="lazy" height="17" width="147" alt="2.2.2."></td>
+<td class="label">9</td>
+</tr></table></section></section></section><section id="sec3"><h2 class="pmc_sec_title">3. Numerical Solution Procedure</h2>
+<p><a href="#fig2" class="usa-link">Figure <a href="#fig2" class="usa-link">2</a></a> presents
+the flowchart of the proposed PINN model. And a simplified pseudocode
+is presented in <a href="#app1" class="usa-link">Appendix</a>. Three situations
+are considered in this section.</p>
+<figure class="fig xbox font-sm" id="fig2"><h3 class="obj_head">Figure 2.</h3>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/4b41774d63ac/ao3c07924_0002.jpg" loading="lazy" id="gr2" height="1264" width="666" alt="Figure 2"></p>
+<div class="p text-right font-secondary"><a href="figure/fig2/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Flowchart of the proposed PINN model.</p></figcaption></figure><section id="sec3.1"><h3 class="pmc_sec_title">3.1. Both Diffusion Flux and Concentration Gradient
+are Known</h3>
+<p>It is assumed that both diffusion flux <em>J</em> and component concentration <em>C</em> have a
+strong correlation with distance and time. Therefore, the input layer
+parameters for the neural network are selected as distance and time
+(<em>x</em> and <em>t</em>), and the output parameters
+are diffusion flux <em>J</em> and component concentration <em>C</em>. Also, 80% of the data from the data set is used as the
+training data set, and the remaining 20% is used as the testing data
+set. The variations of MSE and iteration count with different numbers
+of layers are analyzed. As can be seen from <a href="#fig3" class="usa-link">Figure <a href="#fig3" class="usa-link">3</a></a>, it is found that the values of MSE decrease
+with higher number of layers but vary little when the number of layers
+exceeds 6. In this case, more importantly, the value of the MSE is
+already under 0.05. That means, the error of the model satisfies the
+requirement and convergences under 6 hidden layers and more layers
+are unnecessary and will do little help. Furthermore, as the hidden
+layers are getting more, the iteration times are also getting longer,
+which means more calculation time and source will be needed. When
+the number of hidden layers exceeds 6, the iteration count is more
+than 3000. Therefore, with a target control error within 0.05, it
+is found that using 15 hidden nodes and 6 hidden layers achieves a
+relatively high accuracy and efficiency.</p>
+<figure class="fig xbox font-sm" id="fig3"><h4 class="obj_head">Figure 3.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/d0ed65816f25/ao3c07924_0003.jpg" loading="lazy" id="gr3" height="540" width="750" alt="Figure 3"></p>
+<div class="p text-right font-secondary"><a href="figure/fig3/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Variations of MSE and
+iteration count under different numbers of
+layers.</p></figcaption></figure><p>According to <a href="#eq10" class="usa-link">eq <a href="#eq10" class="usa-link">10</a></a>, the identification of the diffusion
+coefficient can be assumed
+as a one-dimensional problem. And, the diffusion coefficient cannot
+be treated as a constant, so further corrections are needed for <a href="#eq10" class="usa-link">eq <a href="#eq10" class="usa-link">10</a></a>. For the prediction
+error part of the diffusion flux <em>J</em> and component
+concentration <em>C</em>, the following equation can be derived
+based on <a href="#eq10" class="usa-link">eq <a href="#eq10" class="usa-link">10</a></a></p>
+<table class="disp-formula p" id="eq10"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/d6be11fdc09e/ao3c07924_m010.jpg" loading="lazy" height="39" width="252" alt="3.1."></td>
+<td class="label">10</td>
+</tr></table>
+<p>It
+is known that the value of diffusion coefficient <em>D</em> is influenced by distance <em>x</em>. To represent the variation
+of the diffusion coefficient, this paper uses a third-order polynomial
+to express the influence of distance on the diffusion coefficient.
+The specific expression is as follows</p>
+<table class="disp-formula p" id="eq11"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/3bbdaa38be01/ao3c07924_m011.jpg" loading="lazy" height="16" width="144" alt="3.1."></td>
+<td class="label">11</td>
+</tr></table>
+<p>Combining <a href="#eq10" class="usa-link">eq <a href="#eq10" class="usa-link">10</a></a> with <a href="#eq11" class="usa-link">eq <a href="#eq11" class="usa-link">11</a></a>, the physical constraint
+equation for diffusion motion is as follows</p>
+<table class="disp-formula p" id="eq12"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/b72a835b703f/ao3c07924_m012.jpg" loading="lazy" height="32" width="216" alt="3.1."></td>
+<td class="label">12</td>
+</tr></table>
+<p>Then, by combining <a href="#eq10" class="usa-link">eqs <a href="#eq10" class="usa-link">10</a></a>, <a href="#eq11" class="usa-link">11</a>, and <a href="#eq12" class="usa-link">12</a>,
+the total loss function under the conditions is obtained as follows</p>
+<table class="disp-formula p" id="eq13"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/3aeb8b135f30/ao3c07924_m013.jpg" loading="lazy" height="41" width="393" alt="3.1."></td>
+<td class="label">13</td>
+</tr></table>
+<p>So far, the diffusion coefficient
+identification model based on
+PINN has been successfully established, and its specific structure
+is shown in <a href="#fig4" class="usa-link">Figure <a href="#fig4" class="usa-link">4</a></a>.</p>
+<figure class="fig xbox font-sm" id="fig4"><h4 class="obj_head">Figure 4.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><a class="tileshop" target="_blank" href="https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&amp;p=PMC3&amp;id=10809368_ao3c07924_0004.jpg"><img class="graphic zoom-in" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/b9efa77252bc/ao3c07924_0004.jpg" loading="lazy" id="gr4" height="245" width="700" alt="Figure 4"></a></p>
+<div class="p text-right font-secondary"><a href="figure/fig4/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Diffusion coefficient identification model based on PINN.</p></figcaption></figure><p>After the diffusion coefficient identification model is established,
+it is possible to solve for the diffusion coefficient. In this paper,
+the data set which includes a total of 505 sets of data for diffusion
+flux <em>J</em> and 505 sets for component concentration <em>C</em>. The neural network structure is given in <a href="#fig4" class="usa-link">Figure <a href="#fig4" class="usa-link">4</a></a>. After training and optimization,
+the convergence curve of the corresponding loss function is plotted
+as follows in <a href="#fig5" class="usa-link">Figure <a href="#fig5" class="usa-link">5</a></a>.</p>
+<figure class="fig xbox font-sm" id="fig5"><h4 class="obj_head">Figure 5.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/c051a2b0e6dc/ao3c07924_0005.jpg" loading="lazy" id="gr5" height="537" width="661" alt="Figure 5"></p>
+<div class="p text-right font-secondary"><a href="figure/fig5/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Convergence analysis of the PINN diffusion coefficient identification
+model.</p></figcaption></figure><p>From <a href="#fig6" class="usa-link">Figure <a href="#fig6" class="usa-link">6</a></a>, it
+can be observed that under the condition of both physical and data-driven
+factors, the PINN diffusion coefficient identification model requires
+nearly 3000 iterations to minimize the loss function, demonstrating
+a relatively fast computational speed. After training the network,
+the globally optimal values for the diffusion coefficient are determined
+to be <em>a</em> = 0.05608, <em>b</em> = −0.06263, <em>c</em> = 0.02506, and <em>d</em> = 0.04971. Substituting
+these values into <a href="#eq14" class="usa-link">eq <a href="#eq14" class="usa-link">14</a></a>, the expression for the diffusion coefficient as a function of distance <em>x</em> is obtained</p>
+<table class="disp-formula p" id="eq14"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/ec1ce4cdf6e4/ao3c07924_m014.jpg" loading="lazy" height="16" width="282" alt="3.1."></td>
+<td class="label">14</td>
+</tr></table>
+<figure class="fig xbox font-sm" id="fig6"><h4 class="obj_head">Figure 6.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/56c6dfd4caea/ao3c07924_0006.jpg" loading="lazy" id="gr6" height="534" width="661" alt="Figure 6"></p>
+<div class="p text-right font-secondary"><a href="figure/fig6/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Diffusion
+coefficient variation with the component concentration.</p></figcaption></figure><p>Based on <a href="#eq14" class="usa-link">eq <a href="#eq14" class="usa-link">14</a></a>, the
+diffusion coefficient values for different distances are calculated.
+Combining these values with the component concentration values, the
+variation curve of the diffusion coefficient <em>D</em> with
+component concentration <em>C</em> is plotted as shown in <a href="#fig7" class="usa-link">Figure <a href="#fig7" class="usa-link">7</a></a>.</p>
+<figure class="fig xbox font-sm" id="fig7"><h4 class="obj_head">Figure 7.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/c532d9f41eb8/ao3c07924_0007.jpg" loading="lazy" id="gr7" height="548" width="661" alt="Figure 7"></p>
+<div class="p text-right font-secondary"><a href="figure/fig7/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Diffusion coefficient
+behavior with the component concentration.</p></figcaption></figure><p>From <a href="#fig7" class="usa-link">Figure <a href="#fig7" class="usa-link">7</a></a>, it
+can be observed that the diffusion coefficient increases with an increase
+in the component concentration, forming a monotonically increasing
+curve. The curve’s trend follows an S-shaped pattern, with
+a gradually slowing increase until it stabilizes, followed by a further
+increase. This behavior is in line with the general trend of the diffusion
+coefficient changing with component concentration.</p></section><section id="sec3.2"><h3 class="pmc_sec_title">3.2. Diffusion Flux is Unknown While Concentration
+Gradient is Known</h3>
+<p>In most cases, only one parameter would
+be obtained, and the other is unknown. So now, it is assumed that
+the diffusion flux <em>J</em> is unknown while the spatial
+distribution of component concentration <em>C</em> is known.
+The expression of the diffusion coefficient varying with space can
+be assumed as</p>
+<table class="disp-formula p" id="eq15"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/3bbdaa38be01/ao3c07924_m015.jpg" loading="lazy" height="16" width="144" alt="3.2."></td>
+<td class="label">15</td>
+</tr></table>
+<p>According
+to <a href="#eq13" class="usa-link">eqs <a href="#eq13" class="usa-link">13</a></a> and <a href="#eq15" class="usa-link">15</a>, one can obtain</p>
+<table class="disp-formula p" id="eq16"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/5d06cd479643/ao3c07924_m016.jpg" loading="lazy" height="33" width="190" alt="3.2."></td>
+<td class="label">16</td>
+</tr></table>
+<p>Therefore, the physical constraint
+equation under this diffusion
+process is</p>
+<table class="disp-formula p" id="eq17"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/fecea616f9a2/ao3c07924_m017.jpg" loading="lazy" height="75" width="418" alt="3.2."></td>
+<td class="label">17</td>
+</tr></table>
+<p>And, the loss function can be expressed as</p>
+<table class="disp-formula p" id="eq18"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/a7cd5e190fbe/ao3c07924_m018.jpg" loading="lazy" height="41" width="303" alt="3.2."></td>
+<td class="label">18</td>
+</tr></table>
+<p>By incorporating the loss
+function into the PINN model and using
+the data set, calculation can be performed. After less than 2000 iterations,
+the spatial part function of the diffusion coefficient can be obtained</p>
+<table class="disp-formula p" id="eq19"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/e0dcb70475cc/ao3c07924_m019.jpg" loading="lazy" height="16" width="283" alt="3.2."></td>
+<td class="label">19</td>
+</tr></table>
+<p><a href="#fig8" class="usa-link">Figure <a href="#fig8" class="usa-link">8</a></a> shows the
+change in the loss function value during the iterative process. As
+can be seen from the figure, in the early iterations, the loss function
+has already decreased to a low level. In the subsequent iterations,
+there are slight fluctuations, but they remain within an acceptable
+error range until convergence tolerance. This indicates that the solution
+process of the model has good convergence, achieving convergence requirements
+in less than 2000 iterations. <a href="#fig9" class="usa-link">Figure <a href="#fig9" class="usa-link">9</a></a> illustrates the relationship between the component
+volume concentration and the diffusion coefficient in the solution.
+From the figure, it can be observed that the diffusion coefficient
+gradually increases with an increase in concentration, following an
+increasing cubic curve, consistent with the general trend of the diffusion
+coefficient changing with concentration.</p>
+<figure class="fig xbox font-sm" id="fig8"><h4 class="obj_head">Figure 8.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><a class="tileshop" target="_blank" href="https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&amp;p=PMC3&amp;id=10809368_ao3c07924_0008.jpg"><img class="graphic zoom-in" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/e4fe165626dd/ao3c07924_0008.jpg" loading="lazy" id="gr8" height="279" width="700" alt="Figure 8"></a></p>
+<div class="p text-right font-secondary"><a href="figure/fig8/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Convergence of the loss
+function during iterations.</p></figcaption></figure><figure class="fig xbox font-sm" id="fig9"><h4 class="obj_head">Figure 9.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/df7159786146/ao3c07924_0009.jpg" loading="lazy" id="gr9" height="549" width="661" alt="Figure 9"></p>
+<div class="p text-right font-secondary"><a href="figure/fig9/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Diffusion
+coefficient vs component concentration.</p></figcaption></figure></section><section id="sec3.3"><h3 class="pmc_sec_title">3.3. Diffusion Flux is Unknown While Concentration
+Gradient is Known</h3>
+<p>On the other hand, it is assumed that the
+diffusion flux <em>J</em> is known while the spatial distribution
+of component concentration <em>C</em> is unknown. The expression
+of the diffusion coefficient varying with space can be also assumed
+as</p>
+<table class="disp-formula p" id="eq20"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/3bbdaa38be01/ao3c07924_m020.jpg" loading="lazy" height="16" width="144" alt="3.3."></td>
+<td class="label">20</td>
+</tr></table>
+<p>Integrating
+both sides of <a href="#eq20" class="usa-link">eq <a href="#eq20" class="usa-link">20</a></a> with
+respect to <em>t</em></p>
+<table class="disp-formula p" id="eq21"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/01aa99bdfa7e/ao3c07924_m021.jpg" loading="lazy" height="30" width="99" alt="3.3."></td>
+<td class="label">21</td>
+</tr></table>
+<p>Then, one has</p>
+<table class="disp-formula p" id="eq22"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/9a5f0455332d/ao3c07924_m022.jpg" loading="lazy" height="30" width="105" alt="3.3."></td>
+<td class="label">22</td>
+</tr></table>
+<p>where <em>A</em>(<em>x</em>) is the integral expression with respect
+to <em>x</em>,
+determined by the initial condition of <em>C</em>. Substituting <a href="#eq21" class="usa-link">eq <a href="#eq21" class="usa-link">21</a></a> into <a href="#eq22" class="usa-link">eq <a href="#eq22" class="usa-link">22</a></a>, one can obtain</p>
+<table class="disp-formula p" id="eq23"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/7bb6dfa6ef98/ao3c07924_m023.jpg" loading="lazy" height="32" width="182" alt="3.3."></td>
+<td class="label">23</td>
+</tr></table>
+<p>Therefore, the physical constraint
+equation under this diffusion
+process can be expressed as</p>
+<table class="disp-formula p" id="eq24"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/acebabbbc70d/ao3c07924_m024.jpg" loading="lazy" height="32" width="436" alt="3.3."></td>
+<td class="label">24</td>
+</tr></table>
+<p>The loss function can be expressed
+as</p>
+<table class="disp-formula p" id="eq25"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/cc22f3ba6098/ao3c07924_m025.jpg" loading="lazy" height="41" width="295" alt="3.3."></td>
+<td class="label">25</td>
+</tr></table>
+<p>By incorporating the loss function into the
+PINN model and using
+the data set, calculation can be performed. After approximately 1000
+iterations, the spatial part function of the diffusion coefficient
+in this problem is</p>
+<table class="disp-formula p" id="eq26"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/74b4555b36f9/ao3c07924_m026.jpg" loading="lazy" height="16" width="264" alt="3.3."></td>
+<td class="label">26</td>
+</tr></table>
+<p><a href="#fig10" class="usa-link">Figure <a href="#fig10" class="usa-link">10</a></a> shows
+the change in the loss function value during the iterations. As seen
+in the graph, in the early iterations, the loss function exhibits
+significant oscillations, but the overall level still decreasing.
+In subsequent iterations, there are varying degrees of numerical oscillations,
+but they remain within an acceptable error range until convergence
+tolerance is reached. This is because the solution of the diffusion
+model involves complex numerical operations with differentiation and
+integration, leading to inevitable numerical oscillations and computational
+errors. <a href="#fig11" class="usa-link">Figure <a href="#fig11" class="usa-link">11</a></a> shows
+the relationship between the component volume concentration and diffusion
+coefficient in the solution. From the graph, it can be observed that
+the diffusion coefficient tends to increase with increasing concentration,
+but there is a plateau in the range of component concentrations from
+0.01 to 0.04, with a slow growth rate.</p>
+<figure class="fig xbox font-sm" id="fig10"><h4 class="obj_head">Figure 10.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><a class="tileshop" target="_blank" href="https://www.ncbi.nlm.nih.gov/core/lw/2.0/html/tileshop_pmc/tileshop_pmc_inline.html?title=Click%20on%20image%20to%20zoom&amp;p=PMC3&amp;id=10809368_ao3c07924_0010.jpg"><img class="graphic zoom-in" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/096e9ae4db70/ao3c07924_0010.jpg" loading="lazy" id="gr10" height="281" width="700" alt="Figure 10"></a></p>
+<div class="p text-right font-secondary"><a href="figure/fig10/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Loss function behavior
+during iterations.</p></figcaption></figure><figure class="fig xbox font-sm" id="fig11"><h4 class="obj_head">Figure 11.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/f0524ef0ea04/ao3c07924_0011.jpg" loading="lazy" id="gr11" height="551" width="661" alt="Figure 11"></p>
+<div class="p text-right font-secondary"><a href="figure/fig11/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Diffusion coefficient
+vs component concentration with plateau.</p></figcaption></figure></section></section><section id="sec4"><h2 class="pmc_sec_title">4. Analysis and Discussion</h2>
+<section id="sec4.1"><h3 class="pmc_sec_title">4.1. Effect
+of the Error Level of the Testing Data</h3>
+<p>Because the known
+experimental data consist of single-point measurements,
+it is impossible to objectively assess the impact of measurement data
+errors on the diffusion coefficient. Therefore, when considering the
+error level of experimental data, it is assumed that the known experimental
+data closely approximate the true values. One can then artificially
+alter the degree of deviation in the experimental data to obtain experimental
+data with different error levels.</p>
+<p>For both the spatial and temporal
+distribution matrices of the component concentration and diffusion
+flux, 10% of the data points have been randomly selected for deviation.
+Taking the spatial distribution matrix of component concentration
+as an example, the specific deviation operation is expressed as</p>
+<table class="disp-formula p" id="eq27"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/c48580df0b51/ao3c07924_m027.jpg" loading="lazy" height="21" width="137" alt="4.1."></td>
+<td class="label">27</td>
+</tr></table>
+<p>where <em>x</em><sub><em>i</em></sub>, <em>t</em><sub><em>j</em></sub> denotes the
+measurement value at the <em>i</em><sup>th</sup> spatial location
+at the <em>j</em><sup>th</sup> time point, <em>C</em><span class="stack"><sup>′</sup><sub><em>x<sub>i</sub></em>,<em>t<sub>j</sub></em></sub></span> denotes
+the new component concentration values after deviation, <em>C</em><sub><em>x</em><sub><em>i</em></sub>,<em>t</em><sub><em>j</em></sub></sub> denotes the initial component
+concentration, and ξ denotes the degree of deviation, i.e.,
+the artificially set error level.</p>
+<p>The same operation is performed
+for the deviation of random samples
+of the spatiotemporal distribution matrix of the diffusion flux.</p>
+<table class="disp-formula p" id="eq28"><tr>
+<td class="formula"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/d470b136a49c/ao3c07924_m028.jpg" loading="lazy" height="22" width="130" alt="4.1."></td>
+<td class="label">28</td>
+</tr></table>
+<p>From <a href="#fig12" class="usa-link">Figure <a href="#fig12" class="usa-link">12</a></a>,
+it is evident that with the same amount of bias data, when the input
+data are unbiased, the loss function exhibits good convergence. However,
+when there is bias in the input data, the loss function demonstrates
+significant oscillations. Comparing the convergence curves of the
+loss function for error levels of 5, 10, and 15%, it can be further
+concluded that as the error level increases, the amplitude of oscillations
+in the loss function becomes larger, and the number of iterations
+required to reach convergence increases. Additionally, it is observed
+that when data contains errors, there is a plateau period in the first
+1000 iterations, during which the loss function rapidly oscillates
+around a certain value (plateau value). Moreover, as the error level
+in the input data increases, the duration of this plateau period and
+the plateau value both increase.</p>
+<figure class="fig xbox font-sm" id="fig12"><h4 class="obj_head">Figure 12.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/255867c2f09e/ao3c07924_0012.jpg" loading="lazy" id="gr12" height="543" width="661" alt="Figure 12"></p>
+<div class="p text-right font-secondary"><a href="figure/fig12/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Understanding loss function oscillations
+in PINN training.</p></figcaption></figure><p>When training the PINN
+model, noticeable and severe oscillations
+in the loss function can occur. While in most cases training can continue,
+these oscillations are indicative of underlying issues. Through the
+comparative analysis in <a href="#fig13" class="usa-link">Figure <a href="#fig13" class="usa-link">13</a></a>, one can identify two primary factors that influence
+the oscillation of the convergence function. First, the limited size
+of the training sample data set is a significant factor. Each variable
+has at most a numerical matrix of dimensions, provided in the attached
+data. The scarcity of data samples prevents the mitigation of the
+impact of error data, which constitutes 10% of the data set, leading
+to the prominent oscillations in the loss function. Second, due to
+the random selection of data for perturbation, we observe that, at <em>t</em> = 0.2s, the magnitude of data values is relatively small,
+with the smallest order of magnitude being on the order of 10<sup>–6</sup>. In contrast, at <em>t</em> = 1s, the smallest
+order of magnitude for species concentration is on the order of 10<sup>–3</sup>, and for diffusion flux, it is on the order of 10<sup>–4</sup>. Changes in the higher-order magnitudes in the randomly
+perturbed data have a more significant impact than those in the lower-order
+magnitudes. This is also one of the objective factors contributing
+to the oscillations observed. In conclusion, these two factors, namely,
+the limited size of the training data set and the varying magnitudes
+of perturbed data, play a crucial role in causing the observed oscillations
+in the convergence function during the training of the PINN network.</p>
+<figure class="fig xbox font-sm" id="fig13"><h4 class="obj_head">Figure 13.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/3017ec643e5a/ao3c07924_0013.jpg" loading="lazy" id="gr13" height="542" width="661" alt="Figure 13"></p>
+<div class="p text-right font-secondary"><a href="figure/fig13/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Exploring
+the impact of error levels on the relationship between
+component volume concentration and diffusion coefficient.</p></figcaption></figure><p>Based on different error levels, further analysis of the
+relationship
+between component volume concentration and diffusion coefficient is
+presented in <a href="#fig13" class="usa-link">Figure <a href="#fig13" class="usa-link">13</a></a>. As the error level in the data set gradually increases, the relationship
+between the diffusion coefficient and the component volume concentration,
+which initially exhibited a roughly monotonically increasing trend
+with increasing component volume concentration, gradually changes
+to a pattern of initial increase followed by a decrease, reaching
+a local minimum before continuing to increase monotonically. When
+a 15% deviation occurs in the error data, which constitutes 10% of
+the data set, the local minimum of the diffusion coefficient with
+respect to the component volume concentration falls even below the
+initial condition’s corresponding diffusion coefficient value.
+This implies that under conditions where dynamic equilibrium convergence
+has not been reached, a reverse diffusion process (aggregation of
+grain boundary impurities) has a reaction rate exceeding the diffusion
+rate. This suggests a significant reduction in the accuracy of the
+mathematical model for identifying the diffusion coefficient at the
+15% error level. Furthermore, by comparing error levels of 5 and 10%,
+it can be observed that when the error level is relatively low, the
+trends in the relationship between the component volume concentration
+and diffusion coefficient remain largely consistent. This analysis
+indicates that the mathematical model constructed based on the known
+data set for identifying the diffusion coefficient is effective and
+can provide different feedback responses for different error levels
+in the data samples. Additionally, within a certain range of component
+volume concentrations, the diffusion coefficient consistently exhibits
+an approximate monotonically increasing trend as the component volume
+concentration increases.</p></section><section id="sec4.2"><h3 class="pmc_sec_title">4.2. Effect of the Amount of
+the Testing Data</h3>
+<p>In this model, the identification of diffusion
+coefficients in
+the context of substance diffusion described by Fick’s laws
+presents significant nonlinear and uncertain characteristics. Moreover,
+during the experimental measurement process, the measurement methods,
+observation techniques, measuring instruments, and data processing
+procedures may all introduce certain errors, ultimately leading to
+bias in the identification of diffusion coefficients. When using neural
+networks to solve this problem, a substantial amount of data samples
+is often required for training to enhance the network’s ability
+to fit and predict nonlinear functions. Insufficient data samples
+can lead to overfitting, where the model becomes overly influenced
+by the data errors during training, resulting in the amplification
+of sample data errors in the predictions and, consequently, inaccurate
+computational results. To further investigate the impact of the sample
+data size on the identification of diffusion coefficients in this
+model, calculations will be performed using randomly selected data
+at 100, 80, and 60% of the data. The results of these calculations
+are discussed to analyze how the sample data size affects the diffusion
+coefficient identification in the PINN model.</p>
+<p>As shown in <a href="#fig14" class="usa-link">Figure <a href="#fig14" class="usa-link">14</a></a>, all three sets
+of computational results exhibit relatively good convergence and meet
+the convergence tolerance requirements. When 100% of the data volume
+is used, the loss function value does not exhibit oscillations during
+the iterative process and continuously decreases until it reaches
+convergence tolerance. This indicates an excellent convergence performance.
+Although a local optimal solution causes a sharp drop in the loss
+function value at the 300th iteration, it does not significantly impact
+the subsequent iterations. In comparison to the 100% data volume case,
+both the 80 and 60% data volume cases exhibit oscillations in the
+loss function value in the early stages of iteration due to the reduced
+data volume. The computation process is less stable than that of the
+100% data volume case, with the 60% data volume case showing oscillations
+slightly larger than those of the 80% data volume case. Furthermore,
+upon comparison of the convergence curves of the three cases, the
+convergence curve for the 100% data volume case exhibits a slower
+initial descent in the loss function value. This is because the larger
+data volume increases the time and computational cost of network training,
+making it more challenging to find the optimal solution. In contrast,
+the lower data volumes (such as 80 and 60%) experience faster declines
+in the loss function value but also exhibit convergence oscillations
+and instability.</p>
+<figure class="fig xbox font-sm" id="fig14"><h4 class="obj_head">Figure 14.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/af4c174fd41e/ao3c07924_0014.jpg" loading="lazy" id="gr14" height="542" width="661" alt="Figure 14"></p>
+<div class="p text-right font-secondary"><a href="figure/fig14/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Diffusion coefficient variation with component volume
+concentration
+at different data volumes.</p></figcaption></figure><p>As depicted in <a href="#fig14" class="usa-link">Figure <a href="#fig14" class="usa-link">14</a></a>, the computational results for all three different data volumes
+show a general trend of monotonically increasing diffusion coefficients
+with increasing component volume concentration, which aligns with
+the typical behavior of diffusion coefficients varying with the component
+volume concentration. The diffusion coefficient calculated with 80%
+of the data volume exhibits the fastest rate of increase. However,
+it starts to deviate gradually from the curve of the 100% data volume
+case when the species concentration exceeds approximately 0.05. This
+deviation is a result of the accumulated computational errors due
+to the reduced training data input into the neural network, leading
+to a decrease in prediction accuracy. Nevertheless, the error remains
+within an acceptable range, indicating that training the neural network
+with 80% of the data volume is effective. On the other hand, the curve
+for the 60% data volume case shows a plateau and even a decreasing
+trend in the diffusion coefficient within the concentration range
+of 0.01–0.05. This behavior occurs because the input data volume
+for the neural network is only 60%, resulting in insufficient data
+for the PINN model, leading to inaccurate predictions and an anomalous
+relationship between component volume concentration and diffusion
+coefficients. In summary, using an appropriate data volume (above
+80%) for neural network training effectively ensures the accuracy
+of the model’s prediction results, while insufficient data
+volumes can lead to abnormal prediction values due to overfitting.</p></section><section id="sec4.3"><h3 class="pmc_sec_title">4.3. Effect of the Selection of the Initial Guess</h3>
+<p>In a DNN model, it is essential to input initial sample data for
+training to obtain a neural network that meets the required accuracy.
+The goal is to ensure that the predicted data approach the real data
+within an allowable error range. The selection of initial samples
+plays a significant role in determining the training effectiveness
+and time efficiency of the neural network. An effective method for
+choosing initial samples can greatly enhance the training efficiency
+with minimal time costs and improve prediction accuracy. Therefore,
+this study considers four initial sample data selection methods, each
+involving different proportions of valid data. The goal is to investigate
+how the proportion of valid data in the initial samples affects the
+performance of the PINN model and the identification of diffusion
+coefficients.</p>
+<p>It is evident that the numerical values at spatial
+boundaries (<em>x</em> = 0,1) and at the initial time (<em>t</em> = 0) are all zero, indicating the presence of zero boundary
+conditions and zero initial conditions. Additionally, the component
+concentration measurement data exhibit a spatial distribution change
+at the initial time, which can be considered as anomalous data due
+to the spatial discontinuity. These abrupt changes in boundary data
+can have an effect on the training efficiency of the neural network
+and are treated as invalid data. Therefore, the spatiotemporal boundary
+data will be considered as invalid data, while the remaining data
+will be considered as valid data, as depicted in <a href="#fig15" class="usa-link">Figure <a href="#fig15" class="usa-link">15</a></a>. Subsequently, initial data
+samples were selected using a combination of random sampling and setting
+the proportion of valid data, as outlined in <a href="#tbl1" class="usa-link">Table <a href="#tbl1" class="usa-link">1</a></a>.</p>
+<figure class="fig xbox font-sm" id="fig15"><h4 class="obj_head">Figure 15.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/f61941fecc4c/ao3c07924_0015.jpg" loading="lazy" id="gr15" height="547" width="661" alt="Figure 15"></p>
+<div class="p text-right font-secondary"><a href="figure/fig15/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Comparative analysis of the component volume
+concentration and
+diffusion relationship: random selection vs Method 1.</p></figcaption></figure><section class="tw xbox font-sm" id="tbl1"><h4 class="obj_head">Table 1. Initial Data Sample Selection Method.</h4>
+<div class="tbl-box p" tabindex="0"><table class="content" frame="hsides" rules="groups" border="0">
+<colgroup span="1">
+<col align="left" span="1">
+<col align="left" span="1">
+</colgroup>
+<thead><tr>
+<th style="border:none;" align="center" colspan="1" rowspan="1">selection
+method</th>
+<th style="border:none;" align="center" colspan="1" rowspan="1">description</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="border:none;" align="left" colspan="1" rowspan="1">random selection</td>
+<td style="border:none;" align="left" colspan="1" rowspan="1">randomly select data</td>
+</tr>
+<tr>
+<td style="border:none;" align="left" colspan="1" rowspan="1">method 1</td>
+<td style="border:none;" align="left" colspan="1" rowspan="1">90% valid data, 10% invalid
+data</td>
+</tr>
+<tr>
+<td style="border:none;" align="left" colspan="1" rowspan="1">method
+2</td>
+<td style="border:none;" align="left" colspan="1" rowspan="1">80% valid data,
+20% invalid
+data</td>
+</tr>
+<tr>
+<td style="border:none;" align="left" colspan="1" rowspan="1">method
+3</td>
+<td style="border:none;" align="left" colspan="1" rowspan="1">70% valid data,
+30% invalid
+data</td>
+</tr>
+</tbody>
+</table></div>
+<div class="p text-right font-secondary"><a href="table/tbl1/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div></section><p>As shown
+in <a href="#fig15" class="usa-link">Figure <a href="#fig15" class="usa-link">15</a></a>, all
+four initial data selection methods exhibit varying degrees
+of oscillation in the loss function value during the early stages
+of iteration. This oscillation is primarily due to the significant
+influence of the initial values on the results in the initial computations,
+resulting in numerical oscillations. However, as the number of iterations
+increases, this oscillation gradually diminishes and the loss function
+value stabilizes, approaching convergence. In the later stages of
+iteration (approximately around 1700 iterations), there is a sharp
+drop in the function value. This phenomenon occurs because, during
+the iterative computation process, the calculation encounters a local
+optimal solution, leading to the so-called <em>premature convergence</em> phenomenon, where the loss function value decreases. However, the
+model aims to find the global optimal solution; thus, this local optimal
+solution does not meet the requirements, and the loss function value
+does not satisfy the convergence tolerance. Therefore, the iterative
+process continues until the global optimal solution is reached.</p>
+<p>The convergence curve for the <em>Random Selection</em> method
+exhibits relatively small loss function values at the beginning
+of the iteration with less pronounced oscillations during the early
+stages, indicating good convergence performance. However, this method
+involves no deliberate intervention and carries a high degree of uncertainty
+and dependence on probability. It can be used with a certain level
+of confidence when it is challenging to distinguish between valid
+and invalid data. Method 1, which includes 90% valid data, exhibits
+higher loss function values during the early stages of iteration but
+experiences smaller amplitude and shorter duration of oscillations.
+It demonstrates good stability and can quickly find the global optimal
+solution after encountering a local optimal solution in the later
+stages of iteration, reaching the convergence requirements. Therefore,
+Method 1 has the best overall computational performance. In comparison
+to Method 1, Method 2 contains a higher proportion of invalid data
+(20%), leading to more pronounced oscillations during the early stages
+of iteration with larger amplitudes and longer durations. It faces
+greater challenges in convergence throughout the entire iterative
+process but ultimately meets the convergence tolerance requirements.
+Method 3, despite not exhibiting significant oscillations during the
+early stages of iteration, experiences small oscillations throughout
+the entire iterative process and fails to meet the convergence tolerance
+requirements. Therefore, Method 3 is not successful in solving the
+problem.</p>
+<p>As shown in <a href="#fig16" class="usa-link">Figure <a href="#fig16" class="usa-link">16</a></a>, both the <em>Random Selection</em> and Method
+1 methods
+for component volume concentration and diffusion relationship curves
+exhibit similar trends. They both show an increase in the diffusion
+coefficient with increasing concentration, and the results are relatively
+close, demonstrating good consistency. This further confirms that
+these two methods yield better computational results. The relationship
+curve for Method 2 also shows an overall increasing trend, but due
+to its lower proportion of valid data (80%), the increase in the diffusion
+coefficient is less pronounced in the concentration range of 0.01
+to 0.05. Additionally, it deviates significantly from the results
+of <em>Random Selection</em> and Method 1, indicating some
+bias in the computational results due to the increased amount of invalid
+data in Method 2. In the case of Method 3, the relationship curve
+shows a decrease in the diffusion coefficient within the concentration
+range of 0.01–0.05. This behavior is not observed in the rest
+of the solution process, and as previously analyzed, Method 3 does
+not converge during the iterative process. This further confirms that
+the results obtained through Method 3 are inaccurate.</p>
+<figure class="fig xbox font-sm" id="fig16"><h4 class="obj_head">Figure 16.</h4>
+<p class="img-box line-height-none margin-x-neg-2 tablet:margin-x-0 text-center"><img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/4850e09e7a1e/ao3c07924_0016.jpg" loading="lazy" id="gr16" height="549" width="661" alt="Figure 16"></p>
+<div class="p text-right font-secondary"><a href="figure/fig16/" class="usa-link" target="_blank" rel="noopener noreferrer">Open in a new tab</a></div>
+<figcaption><p>Effect of the valid
+data proportion on convergence and accuracy:
+random selection vs Method 1.</p></figcaption></figure><p>In conclusion, when there is a higher proportion of valid data
+in the initial sample data, the convergence during the solution process
+is better and the accuracy of the results is higher. For <em>Random
+Selection</em>, even though the proportion of valid data cannot
+be controlled, it can still meet the requirements for computational
+results. Therefore, in situations in which the proportion of valid
+data is unknown, random selection can be a viable method.</p></section></section><section id="sec5"><h2 class="pmc_sec_title">5. Conclusions</h2>
+<p>This study introduces a physics-informed
+neural network (PINN)
+model as an effective and efficient solution to the challenging task
+of diffusion coefficient identification in inverse problems. By seamlessly
+integrating Fick’s laws into the neural network framework,
+the PINN model demonstrates its capability to provide reliable estimates
+under various scenarios involving known and unknown flux and concentration
+gradients. The main conclusions can be drawn as follows:</p>
+<ul class="list" style="list-style-type:none">
+<li>
+<span class="label">(1)</span><p class="display-inline">Three specific situations
+are considered
+herein, including known diffusion flux and concentration gradient,
+known diffusion flux and unknown concentration gradient, and, unknown
+diffusion flux and known concentration gradient. Results demonstrate
+the model’s efficiency, obtaining diffusion coefficients in
+less than 1000, 2000, and 3000 iterations for the respective situation.</p>
+</li>
+<li>
+<span class="label">(2)</span><p class="display-inline">The effect of the error
+level of the
+testing data is investigated. As the error level increases, the amplitude
+of oscillations in the loss function becomes larger, and the number
+of iterations required to reach convergence increases, but all less
+than 3000. And changes in the higher-order magnitudes in the randomly
+perturbed data have a more significant impact compared to those in
+the lower-order magnitudes.</p>
+</li>
+<li>
+<span class="label">(3)</span><p class="display-inline">The effect of the amount of the testing
+data is investigated. The lower the data volume is, the faster the
+loss function value declines but the more oscillation and instability
+exhibit. Also, insufficient data volume can lead to abnormal prediction
+values due to overfitting.</p>
+</li>
+<li>
+<span class="label">(4)</span><p class="display-inline">The effect of the selection of the
+initial guess is investigated. When there is a higher proportion of
+valid data in the initial sample data, the convergence during the
+solution process is better, and the accuracy of the results is higher.
+30% of invalid data causes a failure in solving the problem.</p>
+</li>
+</ul>
+<p>In the future, the proposed model would
+be improved to accommodate
+more situations, such as missing data, data incorrection, etc. In
+that case, the model would be introduced to deal with practical physical
+problems, e.g., chloride diffusion in concrete. Also, extensive performance
+evaluators were employed to estimate the accuracy of the result.</p></section><section id="ack1" class="ack"><h2 class="pmc_sec_title">Acknowledgments</h2>
+<p>The authors acknowledge the financial
+support from the National
+Natural Science Foundation of China (51778633, 51308552), China Railway
+Construction Corporation’s 2022 Annual Scientific and Technological
+Research and Development Plan and Funding Subjects (2022-C1), the
+Science and Technology Research and Development Plan of China Railway
+Corporation in 2020 (41, 243), and the 2022 degrees Guangzhou Metro
+Design and Research Institute Co. (KY-2022-014).</p></section><section id="dl1" class="glossary"><h2 class="pmc_sec_title">Glossary</h2>
+<h3>Nomenclature</h3>
+<dl class="def-list">
+<dt>
+<em>a</em><span class="stack"><sup><em>l</em></sup><sub><em>i</em></sub></span>
+</dt>
+<dd><p>the set
+of outputs of all <em>i</em> neural networks in layer <em>l</em></p></dd>
+<dt>
+<em>b</em><sup><em>l</em></sup>
+</dt>
+<dd><p>the set of all biases
+in layer <em>l</em></p></dd>
+<dt><em>C</em></dt>
+<dd><p>the volume concentration
+of diffusing substances (components) (number of atoms/m<sup>3</sup> or kg/m<sup>3</sup>)</p></dd>
+<dt><em>D</em></dt>
+<dd><p>diffusion coefficient,
+the flow rate through unit area per unit time when the concentration
+gradient is one unit (m<sup>2</sup>/s)</p></dd>
+<dt><em>D̃</em></dt>
+<dd><p>the integrated
+diffusion coefficient (m<sup>2</sup>/s)</p></dd>
+<dt>
+<em>f</em>(<em>x</em><sub><em>i</em></sub>)</dt>
+<dd><p>the predicted value of the neural
+network</p></dd>
+<dt><em>J</em></dt>
+<dd><p>diffusion flux is
+the flow of diffusing material through unit cross-sectional area perpendicular
+to the direction of diffusion in unit time (kg/(m<sup>2</sup>·s))</p></dd>
+<dt><em>N</em></dt>
+<dd><p>the number of true
+values</p></dd>
+<dt>
+<em>N</em><sub><em>A</em></sub>, <em>N</em><sub><em>B</em></sub>
+</dt>
+<dd><p>the mole fractions
+of components <em>A</em> and <em>B</em>, respectively</p></dd>
+<dt>
+<em>N</em><sub>c</sub>
+</dt>
+<dd><p>the number
+of coordination points of the neural network</p></dd>
+<dt>
+<em>N</em><sub>m</sub>
+</dt>
+<dd><p>the number
+of groups of experimental measurement data</p></dd>
+<dt><em>t</em></dt>
+<dd><p>the measurement time
+of experimental data</p></dd>
+<dt>
+<em>w</em><sup><em>l</em></sup>
+</dt>
+<dd><p>the set of all weights
+in layer <em>l</em></p></dd>
+<dt><em>x</em></dt>
+<dd><p>measurement location
+of experimental data (one-dimensional space)</p></dd>
+<dt>
+<em>y</em><sub><em>i</em></sub>
+</dt>
+<dd><p>the true values used for neural network training</p></dd>
+<dt>
+<em>z</em><span class="stack"><sup><em>l</em></sup><sub><em>i</em></sub></span>
+</dt>
+<dd><p>the set of inputs of all <em>i</em> neural
+networks in layer <em>l</em></p></dd>
+</dl></section><section id="dl2" class="glossary"><h2 class="pmc_sec_title">Glossary</h2>
+<h3>Greek letters</h3>
+<dl class="def-list">
+<dt>∇</dt>
+<dd><p>gradient operator</p></dd>
+<dt>σ(<em>z</em><span class="stack"><sup><em>l</em></sup><sub><em>i</em></sub></span>)</dt>
+<dd><p>represents the activation function</p></dd>
+<dt>Θ</dt>
+<dd><p>the parameters
+to be identified
+of the neural network, Θ = [<em>w</em>, <em>b</em>]</p></dd>
+<dt>ξ</dt>
+<dd><p>indicates
+the degree of deviation,
+that is, the artificially set error level</p></dd>
+<dt>v</dt>
+<dd><p>the translation speed of the reference
+plane at <em>x</em> (m/s)</p></dd>
+</dl></section><section id="dl3" class="glossary"><h2 class="pmc_sec_title">Glossary</h2>
+<h3>Abbreviations</h3>
+<dl class="def-list">
+<dt>DNN</dt>
+<dd><p>deep neural networks</p></dd>
+<dt>MSE</dt>
+<dd><p>mean square error</p></dd>
+<dt>PINN</dt>
+<dd><p>physics-informed neural
+network</p></dd>
+<dt>Tanh</dt>
+<dd><p>hyperbolic
+tangent function</p></dd>
+</dl></section><section id="app1" class="app"><h2 class="pmc_sec_title">Appendix</h2>
+<p>Below is a simplified pseudocode for a physics-informed
+neural
+network (PINN) model addressing the diffusion coefficient identification
+problem in Fick’s law.<img class="graphic" src="https://cdn.ncbi.nlm.nih.gov/pmc/blobs/604d/10809368/2e976833297a/ao3c07924_0018.jpg" loading="lazy" id="fx1" height="1155" width="661" alt="graphic file with name ao3c07924_0018.jpg"></p></section><section id="notes-1"><h2 class="pmc_sec_title">Data Availability Statement</h2>
+<p>The data sets
+generated during and/or analyzed during the current study are not
+publicly available due to the confidentiality requirements of the
+project but are available from the corresponding author upon reasonable
+request.</p></section><section id="notes-2"><p>The authors
+declare no competing financial interest.</p></section><section id="ref-list1" class="ref-list"><h2 class="pmc_sec_title">References</h2>
+<section id="ref-list1_sec2"><ol class="ref-list font-sm">
+<li id="ref1">
+<cite>Wang L.
+A general
+theory of diffusion. Prog. Theor. Phys.
+1999, 101 (3), 541–557. 10.1143/PTP.101.541.</cite> [<a href="https://doi.org/10.1143/PTP.101.541" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Prog.%20Theor.%20Phys.&amp;title=A%20general%20theory%20of%20diffusion&amp;author=L.%20Wang&amp;volume=101&amp;issue=3&amp;publication_year=1999&amp;pages=541-557&amp;doi=10.1143/PTP.101.541&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref2">
+<cite>Ajithkumar M.; Lakshminarayana P.; Vajravelu K.
+Diffusion effects on mixed convective
+peristaltic flow of a bi-viscous Bingham nanofluid through a porous
+medium with convective boundary conditions. Phys. Fluids
+2023, 35 (3), 032008 10.1063/5.0142003.</cite> [<a href="https://doi.org/10.1063/5.0142003" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Phys.%20Fluids&amp;title=Diffusion%20effects%20on%20mixed%20convective%20peristaltic%20flow%20of%20a%20bi-viscous%20Bingham%20nanofluid%20through%20a%20porous%20medium%20with%20convective%20boundary%20conditions&amp;author=M.%20Ajithkumar&amp;author=P.%20Lakshminarayana&amp;author=K.%20Vajravelu&amp;volume=35&amp;issue=3&amp;publication_year=2023&amp;pages=032008&amp;doi=10.1063/5.0142003&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref3">
+<cite>Vareda J. P.On validity,
+physical meaning, mechanism insights and regression of adsorption
+kinetic models. J. Mol. Liq. 2023376. 10.1016/j.molliq.2023.121416.</cite> [<a href="https://doi.org/10.1016/j.molliq.2023.121416" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=J.%20Mol.%20Liq.&amp;title=On%20validity,%20physical%20meaning,%20mechanism%20insights%20and%20regression%20of%20adsorption%20kinetic%20models&amp;volume=376&amp;publication_year=2023&amp;doi=10.1016/j.molliq.2023.121416&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref4">
+<cite>Baroghel-Bouny V.; Kinomura K.; Thiery M.; Moscardelli S.
+Easy assessment
+of durability indicators for service life prediction or quality control
+of concretes with high volumes of supplementary cementitious materials. Cem. Concr. Compos.
+2011, 33 (8), 832–847. 10.1016/j.cemconcomp.2011.04.007.</cite> [<a href="https://doi.org/10.1016/j.cemconcomp.2011.04.007" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Cem.%20Concr.%20Compos.&amp;title=Easy%20assessment%20of%20durability%20indicators%20for%20service%20life%20prediction%20or%20quality%20control%20of%20concretes%20with%20high%20volumes%20of%20supplementary%20cementitious%20materials&amp;author=V.%20Baroghel-Bouny&amp;author=K.%20Kinomura&amp;author=M.%20Thiery&amp;author=S.%20Moscardelli&amp;volume=33&amp;issue=8&amp;publication_year=2011&amp;pages=832-847&amp;doi=10.1016/j.cemconcomp.2011.04.007&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref5">
+<cite>Baroghel-Bouny V.; Thiéry M.; Wang X.
+Performance-based assessment of durability
+and prediction of RC structure service life: transport properties
+as input data for physical models. Mater. Struct.
+2014, 47 (10), 1669–1691. 10.1617/s11527-013-0144-z.</cite> [<a href="https://doi.org/10.1617/s11527-013-0144-z" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Mater.%20Struct.&amp;title=Performance-based%20assessment%20of%20durability%20and%20prediction%20of%20RC%20structure%20service%20life:%20transport%20properties%20as%20input%20data%20for%20physical%20models&amp;author=V.%20Baroghel-Bouny&amp;author=M.%20Thi%C3%A9ry&amp;author=X.%20Wang&amp;volume=47&amp;issue=10&amp;publication_year=2014&amp;pages=1669-1691&amp;doi=10.1617/s11527-013-0144-z&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref6">
+<cite>Liberati E. A. P.; Nogueira C. G.; Leonel E. D.; Chateauneuf A.
+Nonlinear
+formulation based on FEM, Mazars damage criterion and Fick’s
+law applied to failure assessment of reinforced concrete structures
+subjected to chloride ingress and reinforcements corrosion. Eng. Failure Anal.
+2014, 46, 247–268. 10.1016/j.engfailanal.2014.09.006.</cite> [<a href="https://doi.org/10.1016/j.engfailanal.2014.09.006" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Eng.%20Failure%20Anal.&amp;title=Nonlinear%20formulation%20based%20on%20FEM,%20Mazars%20damage%20criterion%20and%20Fick%E2%80%99s%20law%20applied%20to%20failure%20assessment%20of%20reinforced%20concrete%20structures%20subjected%20to%20chloride%20ingress%20and%20reinforcements%20corrosion&amp;author=E.%20A.%20P.%20Liberati&amp;author=C.%20G.%20Nogueira&amp;author=E.%20D.%20Leonel&amp;author=A.%20Chateauneuf&amp;volume=46&amp;publication_year=2014&amp;pages=247-268&amp;doi=10.1016/j.engfailanal.2014.09.006&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref7">
+<cite>Kim D.-W.; Cho H.-H.; Lee W.-B.; Cho K. T.; Cho Y.-G.; Kim S.-J.; Han H. N.
+A finite
+element simulation for carburizing
+heat treatment of automotive gear ring incorporating transformation
+plasticity. Mater. Des.
+2016, 99, 243–253. 10.1016/j.matdes.2016.03.047.</cite> [<a href="https://doi.org/10.1016/j.matdes.2016.03.047" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Mater.%20Des.&amp;title=A%20finite%20element%20simulation%20for%20carburizing%20heat%20treatment%20of%20automotive%20gear%20ring%20incorporating%20transformation%20plasticity&amp;author=D.-W.%20Kim&amp;author=H.-H.%20Cho&amp;author=W.-B.%20Lee&amp;author=K.%20T.%20Cho&amp;author=Y.-G.%20Cho&amp;volume=99&amp;publication_year=2016&amp;pages=243-253&amp;doi=10.1016/j.matdes.2016.03.047&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref8">
+<cite>Cevoli C.; Panarese V.; Catalogne C.; Fabbri A.
+Estimation of the effective
+moisture diffusivity in cake baking by the inversion of a finite element
+model. J. Food Eng.
+2020, 270, 109769 10.1016/j.jfoodeng.2019.109769.</cite> [<a href="https://doi.org/10.1016/j.jfoodeng.2019.109769" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=J.%20Food%20Eng.&amp;title=Estimation%20of%20the%20effective%20moisture%20diffusivity%20in%20cake%20baking%20by%20the%20inversion%20of%20a%20finite%20element%20model&amp;author=C.%20Cevoli&amp;author=V.%20Panarese&amp;author=C.%20Catalogne&amp;author=A.%20Fabbri&amp;volume=270&amp;publication_year=2020&amp;pages=109769&amp;doi=10.1016/j.jfoodeng.2019.109769&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref9">
+<cite>Jiang X.; Xu M.; Qi H.
+The fractional
+diffusion model with an absorption term
+and modified Fick’s law for non-local transport processes. Nonlinear Anal.: Real World Appl.
+2010, 11 (1), 262–269. 10.1016/j.nonrwa.2008.10.057.</cite> [<a href="https://doi.org/10.1016/j.nonrwa.2008.10.057" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Nonlinear%20Anal.:%20Real%20World%20Appl.&amp;title=The%20fractional%20diffusion%20model%20with%20an%20absorption%20term%20and%20modified%20Fick%E2%80%99s%20law%20for%20non-local%20transport%20processes&amp;author=X.%20Jiang&amp;author=M.%20Xu&amp;author=H.%20Qi&amp;volume=11&amp;issue=1&amp;publication_year=2010&amp;pages=262-269&amp;doi=10.1016/j.nonrwa.2008.10.057&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref10">
+<cite>Lowney J. R.; Larrabee R. D.
+The use of Fick’s
+law in modeling diffusion
+processes. IEEE Trans. Electron Devices
+1980, 27 (9), 1795–1798. 10.1109/T-ED.1980.20105.</cite> [<a href="https://doi.org/10.1109/T-ED.1980.20105" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=IEEE%20Trans.%20Electron%20Devices&amp;title=The%20use%20of%20Fick%E2%80%99s%20law%20in%20modeling%20diffusion%20processes&amp;author=J.%20R.%20Lowney&amp;author=R.%20D.%20Larrabee&amp;volume=27&amp;issue=9&amp;publication_year=1980&amp;pages=1795-1798&amp;doi=10.1109/T-ED.1980.20105&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref11">
+<cite>Ghazanfari A.; Emami S.; Tabil L. G.; Panigrahi S.
+Thin-Layer
+Drying of Flax Fiber: I. Analysis of Modeling Using Fick’s
+Second Law of Diffusion. Drying Technol.
+2006, 24 (12), 1631–1635. 10.1080/07373930601031430.</cite> [<a href="https://doi.org/10.1080/07373930601031430" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Drying%20Technol.&amp;title=Thin-Layer%20Drying%20of%20Flax%20Fiber:%20I.%20Analysis%20of%20Modeling%20Using%20Fick%E2%80%99s%20Second%20Law%20of%20Diffusion&amp;author=A.%20Ghazanfari&amp;author=S.%20Emami&amp;author=L.%20G.%20Tabil&amp;author=S.%20Panigrahi&amp;volume=24&amp;issue=12&amp;publication_year=2006&amp;pages=1631-1635&amp;doi=10.1080/07373930601031430&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref12">
+<cite>Shaban W. M.; Elbaz K.; Yang J.; Shen S.-L.
+A multi-objective
+optimization algorithm for forecasting the compressive strength of
+RAC with pozzolanic materials. J. Cleaner Prod.
+2021, 327, 129355 10.1016/j.jclepro.2021.129355.</cite> [<a href="https://doi.org/10.1016/j.jclepro.2021.129355" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=J.%20Cleaner%20Prod.&amp;title=A%20multi-objective%20optimization%20algorithm%20for%20forecasting%20the%20compressive%20strength%20of%20RAC%20with%20pozzolanic%20materials&amp;author=W.%20M.%20Shaban&amp;author=K.%20Elbaz&amp;author=J.%20Yang&amp;author=S.-L.%20Shen&amp;volume=327&amp;publication_year=2021&amp;pages=129355&amp;doi=10.1016/j.jclepro.2021.129355&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref13">
+<cite>Shaban W. M.; Yang J.; Elbaz K.; Xie J.; Li L.
+Fuzzy-metaheuristic
+ensembles for predicting the compressive strength of brick aggregate
+concrete. Resour., Conserv. Recycl.
+2021, 169, 105443 10.1016/j.resconrec.2021.105443.</cite> [<a href="https://doi.org/10.1016/j.resconrec.2021.105443" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Resour.,%20Conserv.%20Recycl.&amp;title=Fuzzy-metaheuristic%20ensembles%20for%20predicting%20the%20compressive%20strength%20of%20brick%20aggregate%20concrete&amp;author=W.%20M.%20Shaban&amp;author=J.%20Yang&amp;author=K.%20Elbaz&amp;author=J.%20Xie&amp;author=L.%20Li&amp;volume=169&amp;publication_year=2021&amp;pages=105443&amp;doi=10.1016/j.resconrec.2021.105443&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref14">
+<cite>Shaban W. M.; Elbaz K.; Zhou A.; Shen S.-L.
+Physics-informed
+deep neural network for modeling the chloride diffusion in concrete. Eng. Appl. Artif. Intell.
+2023, 125, 106691 10.1016/j.engappai.2023.106691.</cite> [<a href="https://doi.org/10.1016/j.engappai.2023.106691" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Eng.%20Appl.%20Artif.%20Intell.&amp;title=Physics-informed%20deep%20neural%20network%20for%20modeling%20the%20chloride%20diffusion%20in%20concrete&amp;author=W.%20M.%20Shaban&amp;author=K.%20Elbaz&amp;author=A.%20Zhou&amp;author=S.-L.%20Shen&amp;volume=125&amp;publication_year=2023&amp;pages=106691&amp;doi=10.1016/j.engappai.2023.106691&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref15">
+<cite>Batuwatta-Gamage C. P.; Rathnayaka C. M.; Karunasena H. C. P.; Wijerathne W. D. C. C.; Jeong H.; Welsh Z. G.; Karim M. A.; Gu Y. T.
+A physics-informed
+neural network-based surrogate framework to predict moisture concentration
+and shrinkage of a plant cell during drying. J. Food Eng.
+2022, 332, 111137 10.1016/j.jfoodeng.2022.111137.</cite> [<a href="https://doi.org/10.1016/j.jfoodeng.2022.111137" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=J.%20Food%20Eng.&amp;title=A%20physics-informed%20neural%20network-based%20surrogate%20framework%20to%20predict%20moisture%20concentration%20and%20shrinkage%20of%20a%20plant%20cell%20during%20drying&amp;author=C.%20P.%20Batuwatta-Gamage&amp;author=C.%20M.%20Rathnayaka&amp;author=H.%20C.%20P.%20Karunasena&amp;author=W.%20D.%20C.%20C.%20Wijerathne&amp;author=H.%20Jeong&amp;volume=332&amp;publication_year=2022&amp;pages=111137&amp;doi=10.1016/j.jfoodeng.2022.111137&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref16">
+<cite>Lu D.; Christov I. C.
+Physics-informed
+neural networks for understanding
+shear migration of particles in viscous flow. Int. J. Multiphase Flow
+2023, 165, 104476 10.1016/j.ijmultiphaseflow.2023.104476.</cite> [<a href="https://doi.org/10.1016/j.ijmultiphaseflow.2023.104476" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Int.%20J.%20Multiphase%20Flow&amp;title=Physics-informed%20neural%20networks%20for%20understanding%20shear%20migration%20of%20particles%20in%20viscous%20flow&amp;author=D.%20Lu&amp;author=I.%20C.%20Christov&amp;volume=165&amp;publication_year=2023&amp;pages=104476&amp;doi=10.1016/j.ijmultiphaseflow.2023.104476&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref17">
+<cite>Fang Y.; Wu G.-Z.; Wang Y.-Y.; Dai C.-Q.
+Data-driven femtosecond
+optical soliton excitations and parameters discovery of the high-order
+NLSE using the PINN. Nonlinear Dyn.
+2021, 105 (1), 603–616. 10.1007/s11071-021-06550-9.</cite> [<a href="https://doi.org/10.1007/s11071-021-06550-9" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Nonlinear%20Dyn.&amp;title=Data-driven%20femtosecond%20optical%20soliton%20excitations%20and%20parameters%20discovery%20of%20the%20high-order%20NLSE%20using%20the%20PINN&amp;author=Y.%20Fang&amp;author=G.-Z.%20Wu&amp;author=Y.-Y.%20Wang&amp;author=C.-Q.%20Dai&amp;volume=105&amp;issue=1&amp;publication_year=2021&amp;pages=603-616&amp;doi=10.1007/s11071-021-06550-9&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref18">
+<cite>Haghighat E.; Raissi M.; Moure A.; Gomez H.; Juanes R.
+A physics-informed
+deep learning framework for inversion and surrogate modeling in solid
+mechanics. Comput. Methods Appl. Mechanics Eng.
+2021, 379, 113741 10.1016/j.cma.2021.113741.</cite> [<a href="https://doi.org/10.1016/j.cma.2021.113741" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Comput.%20Methods%20Appl.%20Mechanics%20Eng.&amp;title=A%20physics-informed%20deep%20learning%20framework%20for%20inversion%20and%20surrogate%20modeling%20in%20solid%20mechanics&amp;author=E.%20Haghighat&amp;author=M.%20Raissi&amp;author=A.%20Moure&amp;author=H.%20Gomez&amp;author=R.%20Juanes&amp;volume=379&amp;publication_year=2021&amp;pages=113741&amp;doi=10.1016/j.cma.2021.113741&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref19">
+<cite>De
+Florio M.; Schiassi E.; Calabrò F.; Furfaro R.
+Physics-Informed Neural Networks for 2nd order ODEs
+with sharp gradients. J. Comput. Appl. Math.
+2024, 436, 115396 10.1016/j.cam.2023.115396.</cite> [<a href="https://doi.org/10.1016/j.cam.2023.115396" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=J.%20Comput.%20Appl.%20Math.&amp;title=Physics-Informed%20Neural%20Networks%20for%202nd%20order%20ODEs%20with%20sharp%20gradients&amp;author=M.%20De%20Florio&amp;author=E.%20Schiassi&amp;author=F.%20Calabr%C3%B2&amp;author=R.%20Furfaro&amp;volume=436&amp;publication_year=2024&amp;pages=115396&amp;doi=10.1016/j.cam.2023.115396&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref20">
+<cite>Borland L.; Menchero J. G.; Tsallis C.
+Anomalous
+diffusion and nonextensive
+scaling in a one-dimensional quantum model with long-range interactions. Phys. Rev. B
+2000, 61 (3), 1650–1653. 10.1103/PhysRevB.61.1650.</cite> [<a href="https://doi.org/10.1103/PhysRevB.61.1650" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Phys.%20Rev.%20B&amp;title=Anomalous%20diffusion%20and%20nonextensive%20scaling%20in%20a%20one-dimensional%20quantum%20model%20with%20long-range%20interactions&amp;author=L.%20Borland&amp;author=J.%20G.%20Menchero&amp;author=C.%20Tsallis&amp;volume=61&amp;issue=3&amp;publication_year=2000&amp;pages=1650-1653&amp;doi=10.1103/PhysRevB.61.1650&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref21">
+<cite>Kluth G.; Ripoll J.-F.; Has S.; Fischer A.; Mougeot M.; Camporeale E.
+Machine Learning
+Methods Applied to the Global Modeling
+of Event-Driven Pitch Angle Diffusion Coefficients During High Speed
+Streams. Front. Phys.
+2022, 10, 183 10.3389/fphy.2022.786639.</cite> [<a href="https://doi.org/10.3389/fphy.2022.786639" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=Front.%20Phys.&amp;title=Machine%20Learning%20Methods%20Applied%20to%20the%20Global%20Modeling%20of%20Event-Driven%20Pitch%20Angle%20Diffusion%20Coefficients%20During%20High%20Speed%20Streams&amp;author=G.%20Kluth&amp;author=J.-F.%20Ripoll&amp;author=S.%20Has&amp;author=A.%20Fischer&amp;author=M.%20Mougeot&amp;volume=10&amp;publication_year=2022&amp;pages=183&amp;doi=10.3389/fphy.2022.786639&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+<li id="ref22">
+<cite>Bréhier C.-E.
+The averaging
+principle for stochastic differential equations driven by a Wiener
+process revisited. C. R. Math.
+2022, 260 (G3), 265–273. 10.5802/crmath.297.</cite> [<a href="https://doi.org/10.5802/crmath.297" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">DOI</a>] [<a href="https://scholar.google.com/scholar_lookup?journal=C.%20R.%20Math.&amp;title=The%20averaging%20principle%20for%20stochastic%20differential%20equations%20driven%20by%20a%20Wiener%20process%20revisited&amp;author=C.-E.%20Br%C3%A9hier&amp;volume=260&amp;issue=G3&amp;publication_year=2022&amp;pages=265-273&amp;doi=10.5802/crmath.297&amp;" class="usa-link usa-link--external" data-ga-action="click_feat_suppl" target="_blank" rel="noopener noreferrer">Google Scholar</a>]</li>
+</ol></section></section><section id="_ad93_" lang="en" class="associated-data"><h2 class="pmc_sec_title">Associated Data</h2>
+<p class="font-secondary"><em>This section collects any data citations, data availability statements, or supplementary materials included in this article.</em></p>
+<section id="_adda93_" lang="en" class="data-availability-statement"><h3 class="pmc_sec_title">Data Availability Statement</h3>
+<p>The data sets
+generated during and/or analyzed during the current study are not
+publicly available due to the confidentiality requirements of the
+project but are available from the corresponding author upon reasonable
+request.</p></section></section></section><footer class="p courtesy-note font-secondary font-sm text-center"><hr class="headless">
+<p>Articles from ACS Omega are provided here courtesy of <strong>American Chemical Society</strong></p></footer></section></article>
+
+                      
+
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+
+<!-- Secondary navigation placeholder -->
+<div class="pmc-sidenav desktop:grid-col-4 display-flex">
+    <section class="pmc-sidenav__container" aria-label="Article resources and navigation">
+        <button type="button" class="pmc-sidenav__container__close">
+            <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/close.svg" role="img" alt="Close" />
+        </button>
+    <div class="display-none desktop:display-block">
+       <section class="margin-top-4 desktop:margin-top-0">
+              <h2 class="margin-top-0">ACTIONS</h2>
+           <ul class="usa-list usa-list--unstyled usa-list--actions">
+               
+               <li>
+                     <a
+                             href="https://doi.org/10.1021/acsomega.3c07924"
+                             class="usa-button usa-button--outline width-24 font-xs display-inline-flex flex-align-center flex-justify-start padding-left-1"
+                             target="_blank"
+                             rel="noreferrer noopener"
+                             data-ga-category="actions"
+                             data-ga-action="click"
+                             data-ga-label="publisher_link_desktop"
+                     >
+                         <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/launch.svg" alt="View on publisher site icon" class="usa-icon usa-icon--size-3 usa-icon--link"/>
+                         <span class="display-inline-flex flex-justify-center flex-1 padding-right-2">View on publisher site</span>
+                     </a>
+               </li>
+               
+               
+               <li>
+                    <a
+                            href="pdf/ao3c07924.pdf"
+                            class="usa-button usa-button--outline width-24 display-inline-flex flex-align-center flex-justify-start padding-left-1"
+                            data-ga-category="actions"
+                            data-ga-action="click"
+                            data-ga-label="pdf_download_desktop"
+                    >
+                         <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/file_download.svg" alt="Download PDF icon" class="usa-icon usa-icon--size-3 usa-icon--link"/>
+                        <span class="display-inline-flex flex-justify-center flex-1">PDF (5.8 MB)</span>
+                    </a>
+               </li>
+               
+                
+               <li>
+                   <button role="button" class="usa-button width-24 citation-dialog-trigger display-inline-flex flex-align-center flex-justify-start padding-left-1"
+                        aria-label="Open dialog with citation text in different styles"
+                        data-ga-category="actions"
+                        data-ga-action="open"
+                        data-ga-label="cite_desktop"
+                        data-all-citations-url="/resources/citations/10809368/"
+                        data-citation-style="nlm"
+                        data-download-format-link="/resources/citations/10809368/export/"
+                    >
+                       <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/format_quote.svg" alt="Cite icon" class="usa-icon usa-icon--size-3 usa-icon--white"/>
+                       <span class="display-inline-flex flex-justify-center flex-1 button-label">Cite</span>
+                    </button>
+               </li>
+                
+               <li>
+
+                        <button class="usa-button width-24 collections-dialog-trigger collections-button display-inline-flex flex-align-center flex-justify-start padding-left-1 collections-button-empty"
+                              aria-label="Save article in MyNCBI collections."
+                              data-ga-category="actions"
+                              data-ga-action="click"
+                              data-ga-label="collections_button_desktop"
+                              data-collections-open-dialog-enabled="false"
+                              data-collections-open-dialog-url="https://account.ncbi.nlm.nih.gov/?back_url=https%3A%2F%2Fpmc.ncbi.nlm.nih.gov%2Farticles%2FPMC10809368%2F%23open-collections-dialog"
+                              data-in-collections="false">
+                            <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/action-bookmark-full.svg" alt="Collections icon" class="usa-icon usa-icon--size-3 usa-icon--white usa-icon--bookmark-full" hidden />
+                            <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/action-bookmark-empty.svg" alt="Collections icon" class="usa-icon usa-icon--size-3 usa-icon--white usa-icon--bookmark-empty" hidden />
+                            <span class="display-inline-flex flex-justify-center flex-1">Collections</span>
+                       </button>
+               </li>
+               <li class="pmc-permalink">
+                    <button
+                            type="button"
+                            class="usa-button width-24 display-inline-flex flex-align-center flex-justify padding-left-1 shadow-none"
+                            aria-label="Show article permalink"
+                            aria-expanded="false"
+                            aria-haspopup="true"
+                            data-ga-category="actions"
+                            data-ga-action="open"
+                            data-ga-label="permalink_desktop"
+                    >
+                        <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/share.svg" alt="Permalink icon" class="usa-icon usa-icon--size-3 usa-icon--white"/>
+                        <span class="display-inline-flex flex-justify-center flex-1 button-label">Permalink</span>
+                    </button>
+                   
+
+<div class="pmc-permalink__dropdown" hidden>
+    <div class="pmc-permalink__dropdown__container">
+          <h2 class="usa-modal__heading margin-top-0 margin-bottom-2 text-uppercase font-sans-xs">PERMALINK</h2>
+          <div class="pmc-permalink__dropdown__content">
+              <input type="text" class="usa-input" value="https://pmc.ncbi.nlm.nih.gov/articles/PMC10809368/" aria-label="Article permalink">
+              <button class="usa-button display-inline-flex pmc-permalink__dropdown__copy__btn margin-right-0" title="Copy article permalink" data-ga-category="save_share" data-ga-action="link" data-ga-label="copy_link">
+                  <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/content_copy.svg" alt="Copy icon" aria-hidden="true" class="usa-icon usa-icon--white" />
+                  <span class="margin-left-1">Copy</span>
+              </button>
+          </div>
+    </div>
+</div>
+               </li>
+           </ul>
+       </section>
+     </div>
+
+        <section class="pmc-resources margin-top-6 desktop:margin-top-4" data-page-path="/articles/PMC10809368/">
+            <h2 class="margin-top-0">RESOURCES</h2>
+            
+                <div class="usa-accordion usa-accordion--multiselectable" data-allow-multiple>
+                    <h3 class="usa-accordion__heading">
+                        <button
+                        type="button"
+                        class="usa-accordion__button"
+                        aria-expanded="false"
+                        aria-controls="resources-similar-articles"
+                        data-ga-category="resources_accordion"
+                        data-ga-action="open_similar_articles"
+                        data-ga-label="/articles/PMC10809368/"
+                        data-action-open="open_similar_articles"
+                        data-action-close="close_similar_articles"
+                        >
+                            Similar articles
+                        </button>
+                    </h3>
+                    <div
+                            id="resources-similar-articles"
+                            class="usa-accordion__content usa-prose"
+                            
+                                data-source-url="/resources/similar-article-links/38284026/"
+                            
+                    >
+                        
+                    </div>
+                    <h3 class="usa-accordion__heading">
+                        <button
+                        type="button"
+                        class="usa-accordion__button"
+                        aria-expanded="false"
+                        aria-controls="resources-cited-by-other-articles"
+                        data-ga-category="resources_accordion"
+                        data-ga-action="open_cited_by"
+                        data-ga-label="/articles/PMC10809368/"
+                        data-action-open="open_cited_by"
+                        data-action-close="close_cited_by"
+                        >
+                             Cited by other articles
+                        </button>
+                    </h3>
+                    <div
+                            id="resources-cited-by-other-articles"
+                            class="usa-accordion__content usa-prose"
+                            
+                                data-source-url="/resources/cited-by-links/38284026/"
+                            
+                    >
+                          
+                    </div>
+                    
+                        <h3 class="usa-accordion__heading">
+                            <button
+                            type="button"
+                            class="usa-accordion__button"
+                            aria-expanded="false"
+                            aria-controls="resources-links-to-ncbi-databases"
+                            data-ga-category="resources_accordion"
+                            data-ga-action="open_NCBI_links"
+                            data-ga-label="/articles/PMC10809368/"
+                            data-action-open="open_NCBI_links"
+                            data-action-close="close_NCBI_link"
+                            >
+                                 Links to NCBI Databases
+                            </button>
+                        </h3>
+                        <div
+                                id="resources-links-to-ncbi-databases"
+                                class="usa-accordion__content usa-prose"
+                                data-source-url="/resources/db-links/10809368/"
+                        >
+                        </div>
+                    
+                    
+                </div>
+            
+        </section>
+
+
+        <section
+        class="usa-in-page-nav usa-in-page-nav--wide margin-top-6 desktop:margin-top-4"
+        data-title-text="On this page"
+        data-title-heading-level="h2"
+        data-scroll-offset="0"
+        data-root-margin="-10% 0px -80% 0px"
+        data-main-content-selector="main"
+        data-threshold="1"
+        hidden
+        ></section>
+    </section>
+</div>
+
+        
+
+<div class="overlay" role="dialog" aria-label="Citation Dialog" hidden>
+    <div class="dialog citation-dialog" aria-hidden="true">
+        <div class="display-inline-flex flex-align-center flex-justify width-full margin-bottom-2">
+            <h2 class="usa-modal__heading margin-0">Cite</h2>
+             <button type="button" class="usa-button usa-button--unstyled close-overlay text-black width-auto"  tabindex="1">
+                 <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/close.svg" alt="Close icon" class="usa-icon usa-icon--size-3 usa-icon--button" />
+             </button>
+        </div>
+
+        
+
+<div class="citation-text-block">
+  <div class="citation-text margin-bottom-2"></div>
+  <ul class="usa-list usa-list--unstyled display-inline-flex flex-justify width-full flex-align-center">
+      <li>
+        <button
+          class="usa-button usa-button--unstyled text-no-underline display-flex flex-align-center copy-button dialog-focus"
+          data-ga-category="save_share"
+          data-ga-action="cite"
+          data-ga-label="copy"
+          tabindex="2">
+            <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/content_copy.svg" alt="Copy icon" class="usa-icon usa-icon--size-3 usa-icon--link" />
+            <span>Copy</span>
+        </button>
+      </li>
+      <li>
+          <a
+              href="#"
+              role="button"
+              class="usa-button usa-button--unstyled text-no-underline display-flex flex-align-center export-button"
+              data-ga-category="save_share"
+              data-ga-action="cite"
+              data-ga-label="download"
+              title="Download a file for external citation management software"
+              tabindex="3">
+                <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/file_download.svg" alt="Download icon" aria-hidden="true" class="usa-icon usa-icon--size-3 usa-icon--link" />
+                <span class="display-none mobile-lg:display-inline">Download .nbib</span>
+                <span class="display-inline mobile-lg:display-none">.nbib</span>
+            </a>
+      </li>
+      <li>
+          
+
+<div class="display-inline-flex flex-align-center">
+  <label class="usa-label margin-top-0">Format:</label>
+  <select aria-label="Format" class="usa-select citation-style-selector padding-1 margin-top-0 border-0 padding-right-4" tabindex="4" >
+    
+      <option data-style-url-name="ama"
+              value="AMA"
+              >
+        AMA
+      </option>
+    
+      <option data-style-url-name="apa"
+              value="APA"
+              >
+        APA
+      </option>
+    
+      <option data-style-url-name="mla"
+              value="MLA"
+              >
+        MLA
+      </option>
+    
+      <option data-style-url-name="nlm"
+              value="NLM"
+              selected="selected">
+        NLM
+      </option>
+    
+  </select>
+</div>
+      </li>
+  </ul>
+</div>
+    </div>
+</div>
+
+        <div class="overlay" role="dialog" hidden>
+  <div id="collections-action-dialog" class="dialog collections-dialog" aria-hidden="true">
+   <div class="display-inline-flex flex-align-center flex-justify width-full margin-bottom-2">
+        <h2 class="usa-modal__heading margin-0">Add to Collections</h2>
+    </div>
+    <div class="collections-action-panel action-panel">
+      
+
+
+<form id="collections-action-dialog-form"
+      class="usa-form maxw-full collections-action-panel-form action-panel-content action-form action-panel-smaller-selectors"
+      data-existing-collections-url="/list-existing-collections/"
+      data-add-to-existing-collection-url="/add-to-existing-collection/"
+      data-create-and-add-to-new-collection-url="/create-and-add-to-new-collection/"
+      data-myncbi-max-collection-name-length="100"
+      data-collections-root-url="https://www.ncbi.nlm.nih.gov/myncbi/collections/">
+
+    <input type="hidden" name="csrfmiddlewaretoken" value="5m9H6G4iCo5fkZl5uouJAsc7V4azWqAyoytjHL1D4hK82Y4fgb9qriGRitHH0LlL">
+
+    <fieldset class="usa-fieldset margin-bottom-2">
+        <div class="usa-radio">
+            <input type="radio"
+            id="collections-action-dialog-new"
+            class="usa-radio__input usa-radio__input--tile collections-new  margin-top-0"
+            name="collections"
+            value="new"
+            data-ga-category="collections_button"
+            data-ga-action="click"
+            data-ga-label="collections_radio_new" />
+            <label class="usa-radio__label" for="collections-action-dialog-new">Create a new collection</label>
+        </div>
+        <div class="usa-radio">
+            <input type="radio"
+            id="collections-action-dialog-existing"
+            class="usa-radio__input usa-radio__input--tile collections-existing"
+            name="collections"
+            value="existing"
+            checked="true"
+            data-ga-category="collections_button"
+            data-ga-action="click"
+            data-ga-label="collections_radio_existing" />
+            <label class="usa-radio__label" for="collections-action-dialog-existing">Add to an existing collection</label>
+        </div>
+    </fieldset>
+
+    <fieldset class="usa-fieldset margin-bottom-2">
+        <div class="action-panel-control-wrap new-collections-controls">
+           <label for="collections-action-dialog-add-to-new" class="usa-label margin-top-0">
+                Name your collection
+               <abbr title="required" class="usa-hint usa-hint--required text-no-underline">*</abbr>
+          </label>
+          <input
+            type="text"
+            name="add-to-new-collection"
+            id="collections-action-dialog-add-to-new"
+            class="usa-input collections-action-add-to-new"
+            pattern="[^&quot;&amp;=&lt;&gt;/]*" title="The following characters are not allowed in the Name field: &quot;&amp;=&lt;&gt;/"
+            maxlength=""
+            data-ga-category="collections_button"
+            data-ga-action="create_collection"
+            data-ga-label="non_favorties_collection"
+            required
+          />
+        </div>
+        <div class="action-panel-control-wrap existing-collections-controls">
+             <label for="collections-action-dialog-add-to-existing" class="usa-label margin-top-0">
+                Choose a collection
+              </label>
+              <select id="collections-action-dialog-add-to-existing"
+                      class="usa-select collections-action-add-to-existing"
+                      data-ga-category="collections_button"
+                      data-ga-action="select_collection"
+                      data-ga-label="($('.collections-action-add-to-existing').val() === 'Favorites') ? 'Favorites' : 'non_favorites_collection'">
+              </select>
+              <div class="collections-retry-load-on-error usa-input-error-message selection-validation-message">
+                Unable to load your collection due to an error<br>
+                <a href="#">Please try again</a>
+              </div>
+        </div>
+    </fieldset>
+
+    <div class="display-inline-flex">
+        <button class="usa-button margin-top-0 action-panel-submit"
+            type="submit"
+            data-loading-label="Adding..."
+            data-pinger-ignore
+            data-ga-category="collections_button"
+            data-ga-action="click"
+            data-ga-label="add">
+          Add
+        </button>
+        <button class="usa-button usa-button--outline margin-top-0 action-panel-cancel"
+                aria-label="Close 'Add to Collections' panel"
+                ref="linksrc=close_collections_panel"
+                data-ga-category="collections_button"
+                data-ga-action="click"
+                data-ga-label="cancel">
+          Cancel
+        </button>
+    </div>
+</form>
+    </div>
+  </div>
+</div>
+
+        
+
+      </div>
+    </div>
+  </div>
+
+
+
+        
+    
+    
+
+<footer class="ncbi-footer ncbi-dark-background " >
+    
+        <div class="ncbi-footer__icon-section">
+            <div class="ncbi-footer__social-header">
+                Follow NCBI
+            </div>
+
+            <div class="grid-container ncbi-footer__ncbi-social-icons-container">
+                
+                    <a href="https://twitter.com/ncbi"
+                       class="ncbi-footer__social-icon ncbi-footer__social-icon--gray"
+                       target="_blank"
+                       rel="noreferrer noopener">
+                        <svg width="40"
+                             height="40"
+                             viewBox="0 0 40 40"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg"
+                             focusable="false"
+                             aria-hidden="true">
+                            <path d="m6.067 8 10.81 13.9L6 33.2h4.2l8.4-9.1 7.068 9.1H34L22.8 18.5 31.9 8h-3.5l-7.7 8.4L14.401 8H6.067Zm3.6 1.734h3.266l16.8 21.732H26.57L9.668 9.734Z">
+                            </path>
+                        </svg>
+                        <span class="usa-sr-only">NCBI on X (formerly known as Twitter)</span>
+                    </a>
+                
+
+                
+                    <a href="https://www.facebook.com/ncbi.nlm"
+                       class="ncbi-footer__social-icon ncbi-footer__social-icon--gray"
+                       target="_blank"
+                       rel="noreferrer noopener">
+                        <svg width="16"
+                             height="29"
+                             focusable="false"
+                             aria-hidden="true"
+                             viewBox="0 0 16 29"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.8809 21.4002C3.8809 19.0932 3.8809 16.7876 3.8809 14.478C3.8809 14.2117 3.80103 14.1452 3.54278 14.1492C2.53372 14.1638 1.52334 14.1492 0.514288 14.1598C0.302626 14.1598 0.248047 14.0972 0.248047 13.8936C0.256034 12.4585 0.256034 11.0239 0.248047 9.58978C0.248047 9.37013 0.302626 9.30224 0.528931 9.3049C1.53798 9.31688 2.54837 9.3049 3.55742 9.31555C3.80103 9.31555 3.8809 9.26097 3.87957 9.00272C3.87158 8.00565 3.85428 7.00592 3.90753 6.00884C3.97142 4.83339 4.31487 3.73115 5.04437 2.78467C5.93095 1.63318 7.15699 1.09005 8.56141 0.967577C10.5582 0.79319 12.555 0.982221 14.5518 0.927641C14.7102 0.927641 14.7462 0.99287 14.7449 1.13664C14.7449 2.581 14.7449 4.02668 14.7449 5.47104C14.7449 5.67604 14.6517 5.68669 14.4946 5.68669C13.4523 5.68669 12.4113 5.68669 11.3703 5.68669C10.3506 5.68669 9.92057 6.10868 9.90593 7.13904C9.89661 7.7647 9.91525 8.39303 9.89794 9.01869C9.88995 9.26364 9.96583 9.31822 10.2015 9.31688C11.7204 9.30623 13.2393 9.31688 14.7595 9.3049C15.0257 9.3049 15.0723 9.3728 15.0444 9.62439C14.89 10.9849 14.7515 12.3467 14.6144 13.7085C14.5691 14.1571 14.5785 14.1585 14.1458 14.1585C12.8386 14.1585 11.5313 14.1665 10.2254 14.1518C9.95119 14.1518 9.89794 14.2317 9.89794 14.4899C9.90593 19.0799 9.89794 23.6752 9.91125 28.2612C9.91125 28.5674 9.8407 28.646 9.53186 28.6433C7.77866 28.6273 6.02414 28.6366 4.27094 28.634C3.82499 28.634 3.87158 28.6992 3.87158 28.22C3.87602 25.9472 3.87913 23.6739 3.8809 21.4002Z">
+                            </path>
+                        </svg>
+                        <span class="usa-sr-only">NCBI on Facebook</span>
+                    </a>
+                
+
+                
+                    <a href="https://www.linkedin.com/company/ncbinlm"
+                       class="ncbi-footer__social-icon ncbi-footer__social-icon--gray"
+                       target="_blank"
+                       rel="noreferrer noopener">
+                        <svg width="25"
+                             height="23"
+                             viewBox="0 0 26 24"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg"
+                             focusable="false"
+                             aria-hidden="true">
+                            <path d="M14.6983 9.98423C15.6302 9.24808 16.5926 8.74754 17.6762 8.51991C19.673 8.09126 21.554 8.30824 23.1262 9.7526C24.2351 10.7723 24.7529 12.1115 25.0165 13.5612C25.1486 14.3363 25.2105 15.1218 25.2015 15.9081C25.2015 18.3043 25.2015 20.6898 25.2082 23.0806C25.2082 23.3468 25.1549 23.444 24.8621 23.4414C23.1297 23.4272 21.3992 23.4272 19.6704 23.4414C19.4041 23.4414 19.3429 23.3588 19.3442 23.1019C19.3535 20.5194 19.3442 17.9368 19.3442 15.3543C19.3442 14.0005 18.3258 12.9448 17.0266 12.9488C15.7273 12.9528 14.6983 14.0071 14.6983 15.361C14.6983 17.9328 14.6917 20.5047 14.6983 23.0753C14.6983 23.3708 14.6198 23.444 14.3296 23.4427C12.6185 23.4294 10.9079 23.4294 9.19779 23.4427C8.93155 23.4427 8.86099 23.3735 8.86232 23.1086C8.8783 19.7619 8.88628 16.4144 8.88628 13.066C8.88628 11.5688 8.87874 10.0708 8.86365 8.57182C8.86365 8.3575 8.90758 8.27896 9.14054 8.28029C10.9048 8.29094 12.6687 8.29094 14.4321 8.28029C14.6464 8.28029 14.6983 8.34818 14.6983 8.54653C14.6903 9.00047 14.6983 9.45441 14.6983 9.98423Z">
+                            </path>
+                            <path d="M6.55316 15.8443C6.55316 18.2564 6.55316 20.6699 6.55316 23.082C6.55316 23.3629 6.48127 23.4388 6.19906 23.4374C4.47737 23.4241 2.75568 23.4241 1.03399 23.4374C0.767751 23.4374 0.69986 23.3629 0.701191 23.1006C0.709178 18.2648 0.709178 13.4281 0.701191 8.59053C0.701191 8.34026 0.765089 8.27237 1.01669 8.2737C2.74991 8.28435 4.48048 8.28435 6.20838 8.2737C6.47462 8.2737 6.5465 8.33627 6.54517 8.6065C6.54783 11.0186 6.55316 13.4308 6.55316 15.8443Z">
+                            </path>
+                            <path d="M3.65878 0.243898C5.36804 0.243898 6.58743 1.45529 6.58743 3.1406C6.58743 4.75801 5.32145 5.95742 3.60819 5.96807C3.22177 5.97614 2.83768 5.90639 2.47877 5.76299C2.11985 5.61959 1.79344 5.40546 1.51897 5.13334C1.24449 4.86123 1.02755 4.53668 0.881058 4.17902C0.734563 3.82136 0.661505 3.43788 0.666231 3.05141C0.67555 1.42601 1.9362 0.242566 3.65878 0.243898Z">
+                            </path>
+                        </svg>
+                        <span class="usa-sr-only">NCBI on LinkedIn</span>
+                    </a>
+                
+
+                
+                    <a href="https://github.com/ncbi"
+                       class="ncbi-footer__social-icon ncbi-footer__social-icon--gray"
+                       target="_blank"
+                       rel="noreferrer noopener">
+                        <svg width="28"
+                             height="27"
+                             viewBox="0 0 28 28"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg"
+                             focusable="false"
+                             aria-hidden="true">
+                            <path d="M16.7228 20.6334C17.5057 20.5527 18.2786 20.3944 19.0301 20.1608C21.3108 19.4193 22.5822 17.8259 22.963 15.4909C23.1228 14.5112 23.1814 13.5287 22.9883 12.5437C22.8106 11.6423 22.4013 10.8028 21.8007 10.1076C21.7526 10.0605 21.7197 10 21.7064 9.934C21.6931 9.86799 21.7 9.79952 21.7262 9.73748C22.0856 8.6206 21.9711 7.51969 21.601 6.42677C21.582 6.3497 21.5345 6.2827 21.468 6.23923C21.4016 6.19577 21.3211 6.17906 21.2429 6.19248C20.7329 6.21649 20.2313 6.33051 19.7611 6.52928C19.1103 6.7908 18.4899 7.12198 17.9104 7.51703C17.84 7.56996 17.7581 7.60551 17.6713 7.62078C17.5846 7.63605 17.4954 7.6306 17.4112 7.60489C15.2596 7.05882 13.0054 7.06203 10.8554 7.61421C10.7806 7.63586 10.7018 7.63967 10.6253 7.62534C10.5487 7.611 10.4766 7.57892 10.4148 7.53167C9.64788 7.03247 8.85171 6.58918 7.96368 6.33359C7.65781 6.24338 7.34123 6.19458 7.02239 6.18849C6.94879 6.17986 6.87462 6.19893 6.81432 6.242C6.75402 6.28507 6.71191 6.34904 6.69621 6.42145C6.32342 7.51437 6.2209 8.61527 6.56307 9.73348C6.59635 9.84264 6.64694 9.93316 6.54177 10.0516C5.47666 11.2604 5.09988 12.6834 5.19574 14.2676C5.2663 15.4244 5.46201 16.5466 6.01454 17.5769C6.84399 19.1171 8.21664 19.9119 9.85158 20.3352C10.3938 20.4706 10.9444 20.5698 11.4998 20.632C11.5384 20.7492 11.4506 20.7798 11.408 20.8291C11.1734 21.1179 10.9894 21.4441 10.8634 21.7942C10.7622 22.0458 10.8315 22.4039 10.6065 22.5516C10.263 22.7766 9.83827 22.8485 9.42421 22.8871C8.17936 23.0056 7.26471 22.4877 6.6283 21.4348C6.25552 20.8184 5.76956 20.3325 5.08523 20.0663C4.76981 19.9325 4.42139 19.8967 4.08537 19.9638C3.7898 20.029 3.73788 20.1901 3.93891 20.4111C4.03639 20.5234 4.14989 20.6207 4.27575 20.6999C4.9796 21.1318 5.51717 21.7884 5.80152 22.5636C6.37002 23.9973 7.48039 24.5697 8.93825 24.6323C9.43741 24.6575 9.93768 24.615 10.4254 24.5058C10.5892 24.4672 10.6531 24.4872 10.6517 24.6762C10.6451 25.4936 10.6637 26.3123 10.6517 27.131C10.6517 27.6635 10.1684 27.9297 9.58663 27.7393C8.17396 27.2671 6.84977 26.5631 5.66838 25.656C2.59555 23.2891 0.720966 20.1861 0.217704 16.3376C-0.357453 11.9127 0.911353 8.00824 3.98551 4.73881C6.11909 2.42656 8.99932 0.939975 12.1203 0.540191C16.5351 -0.0601815 20.4347 1.14323 23.7232 4.16373C26.2449 6.47869 27.724 9.37672 28.1048 12.7726C28.5828 17.0325 27.3686 20.7945 24.4768 23.9827C22.9762 25.6323 21.0956 26.8908 18.9982 27.6488C18.8783 27.6927 18.7585 27.738 18.636 27.7726C18.0356 27.9404 17.6189 27.6395 17.6189 27.0098C17.6189 25.7452 17.6308 24.4806 17.6295 23.2159C17.6329 22.9506 17.6128 22.6856 17.5696 22.4238C17.4325 21.6664 17.3419 21.484 16.7228 20.6334Z">
+                            </path>
+                        </svg>
+                        <span class="usa-sr-only">NCBI on GitHub</span>
+                    </a>
+                
+
+                
+                    <a href="https://ncbiinsights.ncbi.nlm.nih.gov/"
+                       class="ncbi-footer__social-icon ncbi-footer__social-icon--gray"
+                       target="_blank"
+                       rel="noreferrer noopener">
+                        <svg width="26"
+                             height="26"
+                             viewBox="0 0 27 27"
+                             fill="none"
+                             xmlns="http://www.w3.org/2000/svg"
+                             focusable="false"
+                             aria-hidden="true">
+                            <path d="M23.7778 26.4574C23.1354 26.3913 22.0856 26.8024 21.636 26.3087C21.212 25.8444 21.4359 24.8111 21.324 24.0347C19.9933 14.8323 14.8727 8.80132 6.09057 5.85008C4.37689 5.28406 2.58381 4.99533 0.779072 4.99481C0.202773 4.99481 -0.0229751 4.83146 0.00455514 4.21479C0.0660406 3.08627 0.0660406 1.95525 0.00455514 0.826734C-0.0413285 0.0815827 0.259669 -0.0193618 0.896534 0.00266238C6.96236 0.222904 12.3693 2.24179 16.9889 6.16209C22.9794 11.2478 26.1271 17.7688 26.4372 25.648C26.4629 26.294 26.3179 26.5271 25.6609 26.4684C25.0827 26.417 24.4991 26.4574 23.7778 26.4574Z">
+                            </path>
+                            <path d="M14.8265 26.441C14.0924 26.441 13.2371 26.6795 12.6626 26.3786C12.0092 26.0372 12.3781 25.0644 12.246 24.378C11.1154 18.5324 6.6849 14.5497 0.74755 14.1001C0.217135 14.0615 -0.0104482 13.9422 0.0134113 13.3659C0.0519536 12.1454 0.0482829 10.9213 0.0134113 9.69524C-0.00127145 9.14464 0.196946 9.03268 0.703502 9.04736C9.21217 9.27128 16.5994 16.2511 17.2804 24.7231C17.418 26.4446 17.418 26.4446 15.6579 26.4446H14.832L14.8265 26.441Z">
+                            </path>
+                            <path d="M3.58928 26.4555C2.64447 26.4618 1.73584 26.0925 1.06329 25.4289C0.39073 24.7653 0.00933763 23.8617 0.0030097 22.9169C-0.00331824 21.9721 0.365937 21.0635 1.02954 20.3909C1.69315 19.7184 2.59675 19.337 3.54156 19.3306C4.48637 19.3243 5.39499 19.6936 6.06755 20.3572C6.7401 21.0208 7.1215 21.9244 7.12782 22.8692C7.13415 23.814 6.7649 24.7226 6.10129 25.3952C5.43768 26.0677 4.53409 26.4491 3.58928 26.4555Z">
+                            </path>
+                        </svg>
+                        <span class="usa-sr-only">NCBI RSS feed</span>
+                    </a>
+                
+            </div>
+        </div>
+    
+
+    <div data-testid="gridContainer"
+         class="grid-container ncbi-footer__container">
+        <div class="grid-row ncbi-footer__main-content-container"
+             data-testid="grid">
+            
+                <div class="ncbi-footer__column">
+                    
+                        <p class="ncbi-footer__circled-icons-heading">
+                            Connect with NLM
+                        </p>
+                    
+
+                    <div class="ncbi-footer__circled-icons-list">
+                        
+                            <a href=https://twitter.com/nlm_nih class="ncbi-footer__social-icon ncbi-footer__social-icon--circled" target="_blank" rel="noreferrer noopener">
+                                <svg width="32"
+                                     height="32"
+                                     viewBox="0 0 40 40"
+                                     fill="none"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     focusable="false"
+                                     aria-hidden="true">
+                                    <path d="m6.067 8 10.81 13.9L6 33.2h4.2l8.4-9.1 7.068 9.1H34L22.8 18.5 31.9 8h-3.5l-7.7 8.4L14.401 8H6.067Zm3.6 1.734h3.266l16.8 21.732H26.57L9.668 9.734Z">
+                                    </path>
+                                </svg>
+                                <span class="usa-sr-only">NLM on X (formerly known as Twitter)</span>
+                            </a>
+                        
+
+                        
+                            <a href=https://www.facebook.com/nationallibraryofmedicine class="ncbi-footer__social-icon ncbi-footer__social-icon--circled" target="_blank" rel="noreferrer noopener">
+                                <svg width="13"
+                                     height="24"
+                                     viewBox="0 0 13 24"
+                                     fill="none"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     focusable="false"
+                                     aria-hidden="true">
+                                    <path d="M4.11371 23.1369C4.11371 23.082 4.11371 23.0294 4.11371 22.9745V12.9411H0.817305C0.6709 12.9411 0.670898 12.9411 0.670898 12.8016C0.670898 11.564 0.670898 10.3287 0.670898 9.09341C0.670898 8.97903 0.705213 8.95158 0.815017 8.95158C1.8673 8.95158 2.91959 8.95158 3.97417 8.95158H4.12057V8.83263C4.12057 7.8055 4.12057 6.7738 4.12057 5.74897C4.1264 4.92595 4.31387 4.11437 4.66959 3.37217C5.12916 2.38246 5.94651 1.60353 6.95717 1.1921C7.64827 0.905008 8.3913 0.764035 9.13953 0.778051C10.0019 0.791777 10.8644 0.830666 11.7268 0.860404C11.8869 0.860404 12.047 0.894717 12.2072 0.90158C12.2964 0.90158 12.3261 0.940469 12.3261 1.02968C12.3261 1.5421 12.3261 2.05452 12.3261 2.56465C12.3261 3.16857 12.3261 3.7725 12.3261 4.37642C12.3261 4.48165 12.2964 4.51367 12.1912 4.51138C11.5369 4.51138 10.8804 4.51138 10.2261 4.51138C9.92772 4.51814 9.63058 4.5526 9.33855 4.61433C9.08125 4.6617 8.84537 4.78881 8.66431 4.97766C8.48326 5.16652 8.3662 5.40755 8.32972 5.66661C8.28476 5.89271 8.26027 6.1224 8.25652 6.35289C8.25652 7.19014 8.25652 8.02969 8.25652 8.86923C8.25652 8.89439 8.25652 8.91955 8.25652 8.95615H12.0219C12.1797 8.95615 12.182 8.95616 12.1614 9.10714C12.0768 9.76596 11.9876 10.4248 11.9029 11.0813C11.8312 11.6319 11.7626 12.1824 11.697 12.733C11.6719 12.9434 11.6787 12.9434 11.4683 12.9434H8.26338V22.899C8.26338 22.979 8.26338 23.0591 8.26338 23.1392L4.11371 23.1369Z">
+                                    </path>
+                                </svg>
+                                <span class="usa-sr-only">NLM on Facebook</span>
+                            </a>
+                        
+
+                        
+                            <a href=https://www.youtube.com/user/NLMNIH class="ncbi-footer__social-icon ncbi-footer__social-icon--circled" target="_blank" rel="noreferrer noopener">
+                                <svg width="21"
+                                     height="15"
+                                     viewBox="0 0 21 15"
+                                     fill="none"
+                                     xmlns="http://www.w3.org/2000/svg"
+                                     focusable="false"
+                                     aria-hidden="true">
+                                    <path d="M19.2561 1.47914C18.9016 1.15888 18.5699 0.957569 17.2271 0.834039C15.5503 0.678484 13.2787 0.655608 11.563 0.65332H9.43556C7.71987 0.65332 5.4483 0.678484 3.77151 0.834039C2.43098 0.957569 2.097 1.15888 1.74242 1.47914C0.813665 2.32097 0.619221 4.62685 0.598633 6.89384C0.598633 7.31781 0.598633 7.74101 0.598633 8.16345C0.626084 10.4121 0.827391 12.686 1.74242 13.521C2.097 13.8412 2.4287 14.0425 3.77151 14.1661C5.4483 14.3216 7.71987 14.3445 9.43556 14.3468H11.563C13.2787 14.3468 15.5503 14.3216 17.2271 14.1661C18.5676 14.0425 18.9016 13.8412 19.2561 13.521C20.1712 12.6929 20.3725 10.451 20.3999 8.22064C20.3999 7.74025 20.3999 7.25986 20.3999 6.77946C20.3725 4.54907 20.1689 2.30724 19.2561 1.47914ZM8.55942 10.5311V4.65201L13.5601 7.50005L8.55942 10.5311Z"
+                                          fill="white" />
+                                </svg>
+                                <span class="usa-sr-only">NLM on YouTube</span>
+                            </a>
+                        
+                    </div>
+                </div>
+            
+
+            
+                <address class="ncbi-footer__address ncbi-footer__column">
+                    
+        <p>
+            <a class="usa-link usa-link--external"
+            href="https://www.google.com/maps/place/8600+Rockville+Pike,+Bethesda,+MD+20894/%4038.9959508,
+            -77.101021,17z/data%3D!3m1!4b1!4m5!3m4!1s0x89b7c95e25765ddb%3A0x19156f88b27635b8!8m2!3d38.9959508!
+            4d-77.0988323"
+            rel="noopener noreferrer" target="_blank">National Library of Medicine
+            <br/> 8600 Rockville Pike<br/> Bethesda, MD 20894</a>
+        </p>
+    
+                </address>
+            
+
+            
+                <ul class="usa-list usa-list--unstyled ncbi-footer__vertical-list ncbi-footer__column">
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.nlm.nih.gov/web_policies.html" class="usa-link  usa-link--alt ncbi-footer__link"  >
+        
+
+        
+            Web Policies
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/freedom-information-act-office" class="usa-link  usa-link--alt ncbi-footer__link"  >
+        
+
+        
+            FOIA
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html" class="usa-link usa-link--external usa-link--alt ncbi-footer__link" rel="noreferrer noopener" target='_blank' >
+        
+
+        
+            HHS Vulnerability Disclosure
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                </ul>
+            
+
+            
+                <ul class="usa-list usa-list--unstyled ncbi-footer__vertical-list ncbi-footer__column">
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://support.nlm.nih.gov/" class="usa-link  usa-link--alt ncbi-footer__link"  >
+        
+
+        
+            Help
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.nlm.nih.gov/accessibility.html" class="usa-link  usa-link--alt ncbi-footer__link"  >
+        
+
+        
+            Accessibility
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="ncbi-footer__vertical-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.nlm.nih.gov/careers/careers.html" class="usa-link  usa-link--alt ncbi-footer__link"  >
+        
+
+        
+            Careers
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                </ul>
+            
+        </div>
+
+        
+            <div class="grid-row grid-col-12" data-testid="grid">
+                <ul class="ncbi-footer__bottom-links-list">
+                    
+                        <li class="ncbi-footer__bottom-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.nlm.nih.gov/" class="usa-link  usa-link--alt ncbi-footer__link"  >
+        
+
+        
+            NLM
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="ncbi-footer__bottom-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.nih.gov/" class="usa-link  usa-link--alt ncbi-footer__link"  >
+        
+
+        
+            NIH
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="ncbi-footer__bottom-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.hhs.gov/" class="usa-link usa-link--external usa-link--alt ncbi-footer__link" rel="noreferrer noopener" target='_blank' >
+        
+
+        
+            HHS
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                        <li class="ncbi-footer__bottom-list-item">
+                            
+
+
+
+
+
+
+
+
+
+    <a href="https://www.usa.gov/" class="usa-link usa-link--external usa-link--alt ncbi-footer__link" rel="noreferrer noopener" target='_blank' >
+        
+
+        
+            USA.gov
+        
+
+        
+    </a>
+
+
+                        </li>
+                    
+                </ul>
+            </div>
+        
+    </div>
+</footer>
+
+    
+
+
+        
+        
+    
+  <script  type="text/javascript" src="https://cdn.ncbi.nlm.nih.gov/core/pinger/pinger.js"> </script>
+
+
+    
+        
+
+<button class="back-to-top" data-ga-category="pagination" data-ga-action="back_to_top">
+    <label>Back to Top</label>
+    <img src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/usa-icons/arrow_upward.svg" alt="back to top icon" class="usa-icon usa-icon--size-3 order-0 usa-icon--white" />
+</button>
+    
+
+
+        
+    
+    <div id="icon-container" style="display: none;"></div>
+    
+    
+        
+    <script type="application/javascript">
+    window.ncbi = window.ncbi || {};
+    window.ncbi.pmc = window.ncbi.pmc || {};
+    window.ncbi.pmc.options = {
+        logLevel: 'INFO',
+        
+        staticEndpoint: 'https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/',
+        
+        citeCookieName: 'pmc-cf',
+    };
+</script>
+    <script type="module" crossorigin="" src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/assets/base-Cp_Il6gk.js"></script>
+<link href="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/assets/vendor-Co8Vdmw2.js" type="text/javascript" crossorigin="anonymous" rel="modulepreload" as="script" />
+    
+    <script type="text/javascript" src="https://cdn.ncbi.nlm.nih.gov/core/jquery/jquery-3.6.0.min.js">&#xA0;</script>
+    <script type="text/javascript">
+        jQuery.getScript("https://cdn.ncbi.nlm.nih.gov/core/alerts/alerts.js", function () {
+            galert(['div.nav_and_browser', 'div.header', '#universal_header', '.usa-banner', 'body > *:nth-child(1)'])
+        });
+    </script>
+
+
+    <script type="text/javascript">var exports = {};</script>
+     <script src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/CACHE/js/output.4e25b6297b38.js"></script>
+
+    <script type="module" crossorigin="" src="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/assets/article-D47MIn9n.js"></script>
+<link href="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/assets/vendor-Co8Vdmw2.js" type="text/javascript" crossorigin="anonymous" rel="modulepreload" as="script" />
+<link href="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/assets/index-DXSA0fsx.js" type="text/javascript" crossorigin="anonymous" rel="modulepreload" as="script" />
+<link href="https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/assets/secure-cookie-Br6x5jtB.js" type="text/javascript" crossorigin="anonymous" rel="modulepreload" as="script" />
+    
+    
+
+    </body>
+</html>

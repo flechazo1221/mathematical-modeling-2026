@@ -1,0 +1,907 @@
+[[PAGE 1]]
+Journal of the Saudi Society of Agricultural Sciences 18 (2019) 72–82
+
+                                                                Contents lists available at ScienceDirect
+
+                                Journal of the Saudi Society of Agricultural Sciences
+                                                        journal homepage: www.sciencedirect.com
+
+Full length article
+
+Evolution of shrinkage, real density, porosity, heat and mass transfer
+coefficients during indirect solar drying of cocoa beans
+Blaise Kamenan Koua a,b,⇑, Paul Magloire Ekoun Koffi b, Prosper Gbaha b
+a
+    Laboratoire d’Energie Solaire, Université Félix HOUPHOUET – BOIGNY d’Abidjan, 22 BP 582 Abidjan 22, Cote d’Ivoire
+b
+    Laboratoire d’Energie Nouvelle et Renouvelable, Institut National Polytechnique, Félix HOUPHOUET – BOIGNY de Yamoussoukro, BP 581 Yamoussoukro, Cote d’Ivoire
+
+a r t i c l e          i n f o                          a b s t r a c t
+
+Article history:                                        Drying is a main process of conservation used for cocoa beans and it is so essential to control its drying
+Received 3 November 2016                                parameters. In this study, shrinkage, density, porosity, and heat and mass transfer coefficients of cocoa
+Revised 19 January 2017                                 beans during indirect solar drying were investigated. The results showed that shrinkage and porosity
+Accepted 22 January 2017
+                                                        increased with decrease in reduced moisture content. The real density varied during drying process. Its
+Available online 2 February 2017
+                                                        value decreased from 825.10 kg/m3 at the beginning of the drying to about 696.25 kg/m3 at the end of
+                                                        the drying process. The cocoa beans had a final porosity approaching 25% and most of its removed water
+Keywords:
+                                                        during drying was replaced by gas. Also, the values of heat and mass transfer coefficients increased from
+Shrinkage
+Porosity
+                                                        1.92  104 to 8.08  102 W/m2 K and from 1.88  107 to 7.88  105 m/s, respectively, for an indirect
+Density                                                 solar drying of cocoa beans. The effective moisture diffusivity was influenced by shrinkage. Effective
+Heat and mass transfer                                  moisture diffusivities were calculated by Fick’s diffusion law and their values varied from 5.49  1010
+Cocoa beans                                             to 4.26  1010 m2/s. The cocoa beans thermophysical properties were obtained and fitted to nonlinear
+                                                        correlations, describing their behaviour as a function of moisture content.
+                                                        Ó 2017 The Authors. Production and hosting by Elsevier B.V. on behalf of King Saud University. This is an
+                                                         open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+1. Introduction                                                                           mould cannot grow and spoil the food (Chou and Chua, 2001;
+                                                                                          Siqueira et al., 2012). However, drying of food produces great
+    The processing of cocoa beans begins with the harvesting of the                       changes in their volume and surface area simultaneously with loss
+fully matured cocoa fruits which are usually oval in shape and                            of moisture. Therefore, it is necessary to devote more attention to
+measure between 15 and 30 cm long. Inside the fruit, there are                            the shrinkage phenomenon and the prominent porosity changes
+about 30–40 cocoa beans that are covered with a whitish layer of                          (Nadhari et al., 2014). The shrinkage phenomenon affects in partic-
+sweet mucilaginous pulps (Hii, 2004). Upon harvesting of cocoa                            ular the diffusion coefficient of the product, which is one of the
+fruits, fresh cocoa beans are fermented for 5–7 days inside a woo-                        main parameters governing the drying process; it also has an influ-
+den box and dried immediately to the desirable moisture content                           ence on the drying rate (De Lima et al., 2002; Liu et al., 2012).
+at 7–8% dry basis for safe storage (Hii et al., 2009a,b).                                 Besides, various characteristics of the product depend on its den-
+    Drying is a key process in many food industries and in many                           sity so that the knowledge of the density changes with the mois-
+agricultural countries. Large quantities of food products are dried                       ture content will be useful to characterize the behaviour of this
+to improve shelf life, reduce packaging cost, lower shipping                              product (De Lima et al., 2002; Talla et al., 2004; Dissa et al., 2010).
+weights, enhance appearance, encapsulate original flavour and                                 As porosity, density and shrinkage are critical factors, influenc-
+maintain nutritional value. The primary objective of drying was                           ing mass and heat transfer mechanism as well as product quality
+to remove moisture from the food so that bacteria, yeast and                              parameters, it becomes important to include porosity, density
+                                                                                          and shrinkage while predicting drying process and for better opti-
+                                                                                          mization of process (Aprajeeta et al., 2015). Heat transfer occurs
+ ⇑ Corresponding author at: Laboratoire d’Energie Solaire, Université Félix
+                                                                                          inside the product by conduction and mass transfer takes place
+HOUPHOUET – BOIGNY d’Abidjan, 22 BP 582 Abidjan 22, Cote d’Ivoire.
+    E-mail address: kouakb@yahoo.fr (B.K. Koua).
+                                                                                          by diffusion in accordance with temperature and moisture concen-
+Peer review under responsibility of King Saud University.                                 tration gradient, respectively (Srikiatden and Roberts, 2008). Stud-
+                                                                                          ies on heat and mass transfer are crucial especially in dryer design
+                                                                                          to determine the effect of various drying parameters on efficiency,
+                                                                                          cost and degradation of important product quality attributes
+                     Production and hosting by Elsevier                                   (Bennamoun and Belhamri, 2008; Perussello et al., 2012). Thereby,
+
+http://dx.doi.org/10.1016/j.jssas.2017.01.002
+1658-077X/Ó 2017 The Authors. Production and hosting by Elsevier B.V. on behalf of King Saud University.
+This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+[[PAGE 2]]
+B.K. Koua et al. / Journal of the Saudi Society of Agricultural Sciences 18 (2019) 72–82                        73
+
+  Nomenclature
+
+  A         exchange surface (m2)                                                  X           moisture content (kg water/kg db)
+  a         shrinkage coefficient
+  Cp        specific heat (J/kg K)                                                 Greek symbols
+  D         moisture diffusivity (m2/s)                                            a        thermal diffusivity (m2/s)
+  d         geometric diameter (m)                                                 b        compactness (m1)
+  Fm        mass flux (kg/m2 s)                                                    q        density (kg/m3)
+  h         heat transfer coefficient (W/m2 K)                                     e        porosity (%)
+  hm        mass transfer coefficient (m/s)
+  k         thermal conductivity (W/m K)                                           Subscripts
+  Le        Lewis number                                                           a          air
+  Lv        latent heat of vaporization (J/kg)
+                                                                                   b          bulk
+  m         mass (kg)                                                              d          dry
+  Nu        Nusselt number                                                         eff        effective
+  R         radius (m)                                                             eq         equilibrium
+  r         radial coordinate
+                                                                                   O          initial
+  S         shrinkage                                                              P          product
+  Sh        Sherwood number                                                        r          reduced
+  T         temperature (°C)
+                                                                                   w          water
+  t         time (s)
+  V         volume (m3)
+
+                                                                                                 
+several studies on the mass and heat transfer of cocoa beans drying                dX    X1  X0
+                                                                                      ¼             at initial instant t 0                         ð3Þ
+had been carried out (Nganhou et al., 1992; Daud et al., 1998; Kyi                 dt     t1  t0
+et al., 2005; Garcia-Alamilla et al., 2007; Hii et al., 2009a,b;
+                                                                                                     
+Paramo et al., 2010; Hii et al., 2013). But these studies have been                dX    X n  X n1
+                                                                                      ¼                 at instant tn of the end of drying         ð4Þ
+performed without considering shrinkage except for study carried                   dt     t n  t n1
+out by Hii et al. (2013). Besides, there is not enough works which
+are carried out on the drying kinetics of cocoa beans taking into                                               
+                                                                                   dX 1 X i  X i1 X iþ1  X i
+account the shrinkage phenomenon, the porosity and the density                       ¼              þ
+                                                                                   dt 2 t i  t i1   tiþ1  t i
+changes.
+   Thus, the objective of this present work was to determine and                       at each instant t i for i between 1 and n  1               ð5Þ
+predict shrinkage, porosity and density changes occurring along
+with simultaneous mass and heat transfer during the indirect solar
+                                                                                   2.2. Real density
+drying of cocoa beans.
+
+                                                                                      Assume that the total mass of the product is constituted of dry
+2. Theoretical analysis                                                            mass of solid, water mass and air mass. If the mass of air is
+                                                                                   neglected, the total mass of the product is given as follows:
+2.1. Drying rates
+                                                                                   mp ¼ md þ mw                                                    ð6Þ
+   The drying rate at different instants of drying was estimated by
+                                                                                       The total volume of the product is as follows:
+derivation of the moisture content with respect to drying time.
+However, the convective exchanges, at all scales, ask to quantify                  Vp ¼ Vd þ Vw þ Va                                               ð7Þ
+the exchange surface (A) contained in the volume (V) in which
+transfers are characterized. The ratio between these two quantities                   The real density of product (qp) is the ratio between the current
+constitutes the compactness (b):                                                   total mass of the product and the volume occupied by the solid and
+                                                                                   the liquid matter only (Koç et al., 2008):
+     A
+b¼                                                                      ð1Þ                 mp
+     Vd                                                                            qp ¼                                                            ð8Þ
+                                                                                          Vd þ Vw
+where Vd is the volume of dry product.
+   This product compactness varies during the drying and that                          It can be noted that the product density assumes Va = 0.
+must be taken into account in the drying rates curves representa-                      Furthermore, it can be written as follows:
+tion. Assuming that the shrinkage is isotropic, the drying rate or                       m
+                                                                                   V¼                                                              ð9Þ
+mass flux (Fm) corrected for shrinkage deduced from the mass loss                        q
+can be stated as (Dissa et al., 2010):
+                                                                                       mw
+              m  dX                                                              X¼                                                             ð10Þ
+       q dX     d                                                                        md
+Fm ¼  d    ¼                                                          ð2Þ
+       b dt    A dt
+                                                                                      The development of Eqs. (6)–(10) gives the following expression
+where qd is the bulk density of dry product and md its dry mass.                   (Talla et al., 2004; Koç et al., 2008):
+   The drying rates (dX/dt) were calculated by approximation of                           1þX
+the derivatives to finite differences based on the following Eqs.                  qp ¼ 1                                                         ð11Þ
+                                                                                          qs þ qw
+                                                                                                X
+(3)–(5).
+
+[[PAGE 3]]
+74                                     B.K. Koua et al. / Journal of the Saudi Society of Agricultural Sciences 18 (2019) 72–82
+
+2.3. Shrinkage                                                                        where r represents the radial coordinate, Deff is the effective mois-
+                                                                                      ture diffusivity and Xr is the moisture ratio and defined as follows:
+   The particular structure of the food materials and the mechan-
+                                                                                              X  X eq
+ical characteristics of its elements at equilibrium, define sample                    Xr ¼                                                            ð16Þ
+                                                                                              X 0  X eq
+volume and determine its size and shape. When water is removed
+from the material, a pressure unbalance is produced between the                       where X0 and Xeq represent the initial and equilibrium moisture
+inner of the material and the external pressure. This generates con-                  content, respectively. X is the moisture content at given time.
+tracting stresses that lead to material shrinkage or collapse, chang-                     By using appropriate initial and boundary conditions, Crank
+ing in shape and occasionally cracking of the product. Shrinkage of                   (1975) gave the analytical solution for spherical geometry as
+food materials increases with the volume of water removed, since                      follows:
+the more the water removed the more contraction stresses are                                          "       2 #
+originated in the material (Adiletta et al., 2014). In some cases,                         6 X
+                                                                                             1
+                                                                                                1             np
+                                                                                      Xr ¼ 2       exp Deff     t                                    ð17Þ
+changes in the material volume are equal to the volume of                                 p n¼1 n2            Rp
+removed water (Krokida and Maroulis, 1997).
+   Macroscopic shrinkage is commonly referred to the ratio of the                         Initial and boundary conditions are as follows:
+volume of the product at a given drying time to the initial volume.
+Based on the mass conservation and the volume additivity of the                           Xr = X0, 0 6 r 6 R at t = 0
+various product phases (dry solid, water and air), the change of                          Xr = Xeq, r = R at t > 0
+                                                                                          @X r
+the product volume as a function of moisture content is given as                           @t
+                                                                                               ¼ 0, r = 0 at t > 0
+(De Lima et al., 2002):
+                                                                                      where Rp is the radius of cocoa bean.
+V
+   ¼ 1  aðX 0  XÞ                                                       ð12Þ           Only the first term of Eq. (17) can be used to estimate the effec-
+V0                                                                                    tive moisture diffusivity for long drying times:
+where a is the shrinkage coefficient.                                                                    2 !
+                                                                                              6          p
+                                                                                      X r ﬃ 2 exp Deff     t                                         ð18Þ
+2.4. Porosity                                                                              p             Rp
+
+                                                                                         By plotting ln(Xr) versus time, the slope of the line will be con-
+    Porosity is especially important in the reconstitution of the
+                                                                                      stant of the above linear equation. Thus, the effective moisture dif-
+dried products, effectively controlling the speed of rewetting as
+                                                                                      fusivity can be calculated using the following equation:
+well as taste and appearance. Information on pore formation and
+their characteristics in food during processing is also essential in                                  R2p
+                                                                                      Deff ¼ slope                                                    ð19Þ
+estimating transport properties (i.e. thermal conductivity and dif-                                   p2
+fusivity, mass diffusivity) and characterizing the quality of a dried
+product (Rahman, 2001). The porosity (e) is the ratio between the
+volume of air present in the product and the overall volume and                       2.6. Mass transfer
+is expressed as a function of bulk and real density of product dur-
+ing drying process by Liu et al. (2012):                                                 Moisture diffusion is the main mass transfer mechanism in the
+                                                                                      solid phase from the centere of a product to the surface followed by
+             qb                                                                       convective moisture transfer to the air. The geometry considered is
+e¼1                                                                      ð13Þ
+             qp                                                                       one-dimensional in the spherical coordinate system and the mass
+                                                                                      transfer is considered only in the radial direction. In the one-
+     The bulk density of the product is given as (Mercier et al., 2011):              dimensional spherical coordinate system (r 2 ½0; R), Fick’s diffu-
+                                                                                      sion model of moisture transfer which is applied to simulate the
+        1þX
+qb ¼ 1                                                                    ð14Þ        time evolution of the distribution of the local moisture content of
+       q þq
+           X
+        bo        w                                                                   product during drying is as (Perussello et al., 2012):
+                                                                                                     
+where qb0 is the bulk density of dry product.                                         @X Deff @     @X
+                                                                                         ¼ 2     r2                                                   ð20Þ
+                                                                                      @t   r @r     @r
+2.5. Effective moisture diffusivity
+                                                                                         The moisture content-depending boundary conditions at the
+    The moisture transfer in heterogeneous media can be conve-                        surface and in the centere-line take into account the mass convec-
+niently analysed by using Fick’s second law for homogenous mate-                      tion to the surrounding air is given as follows:
+                                                                                          
+rials, in which the heterogeneity of the material is taken into                       @X 
+                                                                                              ¼0                                                      ð21Þ
+account by the use of effective moisture diffusivity. Fick’s second                   @r r¼0
+law of diffusion has been frequently used to describe the internal
+                                                                                                  
+moisture transfer, particularly for biological products during the                            @X 
+                                                                                      Deff           ¼ hm ðX  X eq Þ                                ð22Þ
+falling drying rate period (Koua et al., 2009; Malafronte et al.,                             @r r¼R
+2015; Bezerra et al., 2015). This drying period is characterized by
+an internal mass transfer type drying with moisture diffusion as                         The initial condition is X(r, t) = X0 at t = 0.
+the controlling phenomenon.                                                              The mass transfer coefficient (hm) in the surface of the cocoa
+    The cocoa bean shape is assumed to be spherical and the Fick’s                    beans was obtained according to the procedure described by
+second law of diffusion for spherical geometry is defined as follows                  Kaya et al. (2007) and Lemus-Mondaca et al. (2013). The boundary
+(Hii et al., 2009a,b):                                                                condition at the interface air/product can be written:
+                             !                                                                                        qd dX
+@X r        @ 2 X r 2 @X r                                                            F m ¼ hm qd ðX  X eq Þ ¼                                      ð23Þ
+     ¼ Deff        þ                                                      ð15Þ                                         b dt
+ @t          @r 2    r @r
+                                                                                          After integration of Eq. (23), one may receive Eq. (24):
+
+[[PAGE 4]]
+B.K. Koua et al. / Journal of the Saudi Society of Agricultural Sciences 18 (2019) 72–82                             75
+
+                      
+     V      X 0  X eq                                                                      hm d p
+hm ¼    ln                                                               ð24Þ        Sh ¼                                                                ð32Þ
+     At      X  X eq                                                                        Da
+   Assuming that the cocoa bean shape is spherical, the mass                            By combining the Eqs. (30)–(32), the heat transfer coefficient (h)
+transfer coefficient as a function of the drying curve can be calcu-                 can be estimated by the following formula:
+lated by the following formula:                                                                                                 
+                                                                                        qa C pa dp     2          X 0  X eq
+     dp     X 0  X eq                                                               h¼                Le3 ln                                            ð33Þ
+hm ¼    ln                                                               ð25Þ                 6t                    X  X eq
+     6t      X  X eq
+                                                                                     where qa is the air density, Cpa is the air specific heat capacity, aa is
+                                                                                     the air thermal diffusivity and Da is the water mass diffusivity in the
+2.7. Heat transfer
+                                                                                     air. The Lewis number (Le = Sc/Pr) has to be unity. For air, the
+                                                                                     Prandtl (Pr) and Schmidt (Sc) numbers are however not equal.
+   Heat transfer mechanisms include the internal heat generation
+                                                                                     Pr  0.71 and Sc  0.6, resulting in Le  0.85 (Defraeye et al.,
+and convective heat transfer mechanisms from/to the surface of
+                                                                                     2012; Lecoq et al., 2016).
+the product to/from the drying air as well as evaporative cooling.
+In the one-dimensional spherical coordinate system (r 2 ½0; R),
+the heat transfer is given by the following equation based on the                    3. Materials and methods
+Fourier’s heat conduction model (Perussello et al., 2012):
+                                                                                 3.1. Sample preparation
+@T   a @ 2 @T
+   ¼ 2    r                                                              ð26Þ
+@t r @r     @r                                                                          The cocoa beans used in this study were purchased from the
+   The boundary conditions are symmetry and convective condi-                        local retail market. Fresh cocoa beans were retrieved from the
+tion on the product centre and surface, respectively as it follows                   fruits and were fermented inside a wooden box for five days. The
+(Lemus-Mondaca et al., 2013):                                                        beans were manually turned every 48 h to ensure uniformity dur-
+                                                                                    ing fermentation (Hii and Tukimon, 2002).
+@T 
+        ¼0                                                               ð27Þ
+@r r¼0
+                                                                                     3.2. Indirect solar dryer
+     
+  @T 
+k  ¼ hðT p  T a Þ þ Lv hm qp ðX  X eq Þ                             ð28Þ           The indirect solar dryer has been designed and constructed at
+  @r r¼R
+                                                                                     the Laboratory of New and Renewable Energy at the Polytechnic
+   The initial condition is T(r, t) = T0 at t = 0.                                   Institute of Yamoussoukro, Côte d’Ivoire. The indirect solar dryer
+   The evaporation at the product surface allows the coupling                        (Fig. 1) consists mainly of a solar air collector system and a drying
+between the heat and mass transfer unsteady diffusion equation.                      chamber containing tree rectangular trays of 95 cm  106 cm
+The latent heat of vaporization (Lv) is given as (Youcef-Ali et al.,                 dimensions and a flux diffuser of 97 cm  106 cm dimensions.
+2001):                                                                               Each tray is constructed of wooden frames on which is fixed nylon
+                                                                                     net to facilitate the air flow. The trays are separated of 15 cm to
+Lv ¼ 4186:8ð597  0:56ðT þ 273:15ÞÞ                                      ð29Þ
+                                                                                     each other. The cocoa beans are laid out inside the drying chamber
+   For simulating the heat transfer, the Nusselt number (Nu) is                      on the trays for drying. The solar air collector system, of
+derived from the Sherwood number (Sh) using the Lewis analogy                        89 cm  225 cm dimensions, was used to produce thermal energy
+equation (Incropera et al., 2013; Brenn et al., 2016):                               for drying. The solar air collector consists of glass cover and alu-
+      13                                                                           minium absorber plate painted in black matte. It is tilted to an
+Sh    aa       1
+                                                                                     angle of 7° with respect to horizontal surface.
+   ¼       ¼ Le3                                                         ð30Þ
+Nu    Da                                                                                The basic operation of the indirect solar dryer is the following
+   The Nusselt number and the Sherwood number were obtained                          one: exposed to solar radiations, the solar air collector converts
+by the following correlations:                                                       into heat a portion of radiant energy received on its surface. The
+                                                                                     air crossing this solar collector then receives a portion of this
+       hdp                                                                           energy by convective heat exchange. This air, with better drying
+Nu ¼                                                                     ð31Þ
+        ka                                                                           properties, circulates from the solar air collector to the drying
+
+                                                  Fig. 1. Picture and schematic view of indirect solar dryer.
+
+[[PAGE 5]]
+76                                     B.K. Koua et al. / Journal of the Saudi Society of Agricultural Sciences 18 (2019) 72–82
+
+chamber containing trays on which are laid the cocoa bean for dry-                    heat and thermal conductivity were obtained from Eqs. (36) and
+ing. Two fans regulate the airflow.                                                   (37) which are function of the moisture content.
+
+3.3. Drying procedure                                                                     Specific heat (Huang et al., 2013):
+                                                                                                          
+   Experiments on the indirect solar drying of cocoa beans were                                         X
+                                                                                      C p ¼ 837 þ 3348                                                            ð36Þ
+carried out in June–August 2016 on the site of our laboratory                                          1þX
+located at 6°480 3600 N latitude and 5°170 4400 W longitude. About
+                                                                                          Thermal conductivity (Ruiz-Lopez et al., 2004):
+15 kg of fermented cocoa beans were spread thinly in one bean
+                                                                                      k ¼ 0:49  0:44 expð0:206XÞ                                                ð37Þ
+layer on tree trays inside the drying chamber. Drying was termi-
+nated when the cocoa beans reached equilibrium moisture content                           The thermal diffusivity was calculated by the following:
+by prolonging the drying process until no further change in weight                           k
+                                                                                      a¼                                                                          ð38Þ
+was observed.                                                                              qC p
+3.4. Moisture content
+                                                                                      3.7. Shrinkage
+   To evaluate cocoa bean dry mass, sample was taken on each
+tray at the end of drying. These samples were weighted with an                            The shrinkage curves were established by measuring sample in
+electronic balance of 0.01gr precision and placed in an oven-                         all three orthogonal axes during drying. Measurements were car-
+dryer at 105 °C for 24 h. At the end of the 24 h of oven-drying,                      ried out using a caliper of 0.05 mm precision. Shrinkage represents
+the samples were reweighted and the average mass for these sam-                       the volume reduction or the change of selected dimensions occur-
+ples was the dry mass of the cocoa beans. The beans moisture con-                     ring due to the moisture taken away from the cocoa beans struc-
+tent at different stages of drying was determined with reference to                   ture in a drying process. The shrinkage (S) is calculated as follows:
+the dry mass of the cocoa beans using Eq. (34):                                                   V
+                                                                                      S¼1                                                                        ð39Þ
+   m  md                                                                                         V0
+X¼                                                                        ð34Þ
+     md                                                                               where V is the volume of cocoa bean at any time and V0 is its initial
+where m and md are the mass at instant t and the dry mass, respec-                    volume.
+tively, and X represents the cocoa beans moisture content in dry
+                                                                                             1 3        1
+basis.                                                                                V0 ¼    pd and V ¼ pd3p                                                     ð40Þ
+                                                                                             6 p0       6
+   The equilibrium moisture content (Xeq) was determined by pro-
+longing the drying process until no further change in weight was                          Using of geometric mean diameter is necessary for the calcula-
+observed for the cocoa beans. The initial moisture content of cocoa                   tion of the volume because cocoa bean has a spheroid shape as
+beans was found to be 1.22 kg water/kg db and the Xeq value deter-                    illustrated in Fig.2. The geometric diameter (dp) of fresh and dried
+mined was 0.0698 kg water/kg db.                                                      cocoa beans can be calculated as follows during the drying process
+                                                                                      (Delgado et al., 2014; Chayjan and Kaveh, 2014):
+3.5. Desorption isotherms
+                                                                                      dp ¼ ðx  y  zÞ1=3                                                         ð41Þ
+    Desorption isotherms of cocoa beans were determined using                         where x, y and z are major, intermediate and minor diameters of the
+the static method, which is based on using saturated salt solutions                   bean, respectively. Characteristic dimensions of category B
+to maintain constant water activity of samples once equilibrium                       cocoa beans were determined as a function of bean moisture
+between room conditions and food sample is reached. Salt solu-                        content in the moisture range between 1.22 kg water/kg db
+tions used to obtain constant relative humidity were LiCl, KCH3-                      and 0.074 kg water/kg db. Thereby, 2.5 cm 6 x 6 2.8 cm, 1.3 cm 6
+CO2, MgCl2, K2CO3, Mg(NO3)2, NaBr, SrCl2, NaCl, KCl and BaCl2.                        y 6 1.6 cm and 0.9 cm 6 z 6 1.2 cm.
+This group of salts allows obtaining a wide range of relative humid-
+ity from 11% to 90% as reported by Kiranoudis et al. (1993), Prette                   4. Results and discussion
+et al. (2013) and Koua et al. (2014). Experimental data were fitted
+using the Guggenheim, Anderson and de Boer (GAB) model, fre-                          4.1. Composition and thermophysical properties of cocoa beans
+quently used in food studies. This model has three parameters that
+have physical meanings and the model has been found to ade-                             Composition data for cocoa beans are readily available by
+quately represent the water activity experimental data over the                       Ohene Afoakwa et al. (2013). These data consist of the centesimal
+range of practical interest for most foods (Vigano et al., 2012;
+Koua et al., 2014).
+                  X m GKaw
+X eq ¼                                                                    ð35Þ                                               y
+         ð1  Kaw Þð1 þ ðG  1ÞKaw Þ                                                                                                       z
+where Xm is the moisture content corresponding to the formation of
+a monomolecular layer on the internal surface; G is a constant                                                      x
+related to the heat of sorption of the first layer on primary sites
+and K is a factor correcting properties of the multi-layer molecules
+with respect to the bulk liquid.
+
+3.6. Thermophysical properties
+
+   Thermophysical properties of cocoa beans were estimated by
+using formulas existing in the literature food products. Specific                       Fig. 2. Schematic drawing of a cocoa bean with its characteristic dimensions.
+
+[[PAGE 6]]
+B.K. Koua et al. / Journal of the Saudi Society of Agricultural Sciences 18 (2019) 72–82                                                                                              77
+
+               Table 1                                                                                                                                     Table 4
+               Centesimal composition of dried cocoa beans (Ohene                                                                                          Categories of cocoa beans.
+               Afoakwa et al., 2013).
+                                                                                                                                                             Classification                   Beans count/100 g
+                 Component                             % Wet basis
+                                                                                                                                                             Large (category B)               0–100
+                 Water                                 4 ± 0.02                                                                                              Medium (category D)              101–120
+                 Carbohydrates                         21 ± 0.08                                                                                             Small (category G)               121–130
+                 Fats                                  53.4 ± 0.63                                                                                           Very small (category F)          131–150
+                 Proteins                              18.8 ± 0.56                                                                                           Remnants (category SR)           151–250
+                 Ashes                                 2.8 ± 0.07
+
+                                                                                                                                                 0.2
+
+                                                                                                Equilibrium moisture content (kg water/kg db)
+Table 2
+Cocoa bean thermophysical properties in function of moisture content in dry basis.                                                              0.18
+                                                                                                                                                                              GAB model
+  Properties                             Equations                          r2                                                                  0.16                          30°C
+  Density (kg/m3)                        qp ¼ 147:95 XX0 þ 691:46           0.978                                                               0.14                          45°C
+  Specific heat (J/kg K)                                 0:33             0.995                                                                                             60°C
+                                         C p ¼ 2623:35 XX0                                                                                      0.12
+  Thermal conductivity (W/m K)           k ¼ 0:0987 XX0 þ 0:0513            0.999
+                                                                                                                                                 0.1
+  Thermal diffusivity (m2/s)                               0:11          0.935
+                                         a ¼ 7:37  108 XX0                                                                                    0.08
+
+                                                                                                                                                0.06
+
+                                                                                                                                                0.04
+composition of the major components found in food items. Such                                                                                   0.02
+components include water, proteins, fats, carbohydrates and ashes
+as presented in Table 1.                                                                                                                          0
+                                                                                                                                                       0            0.2           0.4              0.6            0.8         1
+   The thermophysical properties of cocoa beans are described by
+                                                                                                                                                                                        Water activity
+the equations presented in Table 2, which were fitted to the exper-
+imental data. Cocoa bean thermophysical properties were esti-                               Fig. 3. Experimental desorption isotherms of cocoa beans at 30, 45 and 60 °C and
+mated as function of moisture content as reported by Perussello                             estimated curves with GAB model.
+et al. (2014) and Tzempelikos et al. (2015).
+   The characterization of cocoa beans in spherical coordinates
+                                                                                            4.3. Drying kinetics
+was made with the sizes during drying. Cocoa bean characteristics
+dimensions were estimated from the major, intermediate
+                                                                                                The moisture content of the cocoa beans as a function of drying
+and minor diameters. The average values obtained are listed in
+                                                                                            time is presented in Fig. 4 for convective drying in an indirect solar
+Table 3. The cocoa beans used in this study are of category B
+                                                                                            dryer. The cocoa bean drying curve can be divided into two parts as
+according to the quality control division of the Ghana cocoa
+                                                                                            illustrated in this Fig. 4. Similar results have been reported for dry-
+board (Bart-Plange et al., 2012). Cocoa beans are sorted by size
+                                                                                            ing of cocoa beans (Hii et al., 2009a,b), mango slices and milky
+based on a number of beans weighing 100 g into various
+                                                                                            mushroom (Arumuganathan et al., 2009), and jackfruits (Kaushal
+categories. Table 4 shows five categories that are declared for the
+                                                                                            and Sharma, 2016). The moisture content rapidly reduces and then
+main harvesting season.
+                                                                                            slowly decreases as drying progresses. Initially, a rapid decrease in
+                                                                                            the drying rate occurs until a moisture content value is close to
+4.2. Desorption isotherms                                                                   0.23 kg water/kg db. After this value of moisture content, the dry-
+                                                                                            ing rate decreases slowly to reach equilibrium moisture content.
+    Fig. 3 shows the experimental desorption isotherms for cocoa                            During this second falling drying rate period, the cocoa beans are
+beans at 30, 45 and 60 °C with its respective fitting to the GAB                            in the hygroscopic domain. In this domain, water exits only in tied
+model. Desorption isotherm shows an increase in equilibrium                                 form by sorption in the product and in vapour form. Therefore, the
+moisture content with increasing water activity, at constant tem-                           characteristic dimensions of cocoa beans decrease very slowly. As
+perature. The equilibrium moisture content decreases with the                               it follows from the drying curve in Fig. 4, indirect solar drying is
+temperature at constant water activity. The GAB model was tested                            a very long process, as it takes about 20 h, on average.
+for adequacy and goodness of fit by determining the coefficient of                              The moisture ratio of cocoa beans as a function of drying time is
+correlation (r2), mean relative percentage deviation modulus (E),                           presented in Fig. 5. The moisture ratio of cocoa beans decreased
+root mean square error (RMSE) and residual plots. These values                              exponentially as the drying time increased during the drying pro-
+and the model parameters obtained by nonlinear regression anal-                             cess. Continuous decrease in moisture ratio indicates that diffusion
+ysis are presented in Table 5. This model presented a good fit for                          has governed the internal mass transfer.
+the experimental data of the cocoa beans. The GAB model is the                                  It can be seen from Fig. 6 that the mass flux decreased continu-
+most widely accepted and representative model for sorption iso-                             ously throughout the drying period, which indicated that cocoa
+therms of foods (ASAE, 2004), mainly due to its accuracy and valid-                         bean drying process took place in the falling rate period. It can
+ity over a wide range of water activities from 0.11 to 0.90.                                be considered as a diffusion controlled process that the rate of
+
+Table 3
+Cocoa bean characteristics dimensions.
+
+               Sample mass (g)       Moisture content (kg water/kg db)           Major x (cm)                                                    Intermediate y (cm)           Minor z (cm)              Geometric diameter (cm)
+  Initial      2.4                   1.22                                        2.76                                                            1.55                          1.13                      1.69
+  Final        1.16                  0.074                                       2.58                                                            1.38                          0.93                      1.49
+
+[[PAGE 7]]
+78                                                                                   B.K. Koua et al. / Journal of the Saudi Society of Agricultural Sciences 18 (2019) 72–82
+
+Table 5
+Parameter estimated values, mean relative percentage deviation modulus (E), root mean square error (RMSE), correlation coefficient (r2) and residual plots for GAB model to cocoa
+bean desorption process.
+
+     Temperature (°C)                                                   Parameters                                                                           r2               E (%)          RMSE               Residual plots
+                                                                        Xm                   G                        K
+     30                                                                 0.0606               3729.9748                0.7372                                 0.999            0.0392         0.00006            Random
+     45                                                                 0.0535               279.5272                 0.6970                                 0.990            2.4083         0.0025             Random
+     60                                                                 0.0508               115.6945                 0.5789                                 0.978            2.7397         0.0024             Random
+
+                                                    1.4
+                                                                                                                                                              0.00009
+              Moisture content (kg water/kg db)
+
+                                                    1.2                                                                                                       0.00008
+
+                                                        1                                                                                                     0.00007
+
+                                                                                                                                        Mass flux (kg/m2s)
+                                                                                                                                                              0.00006
+                                                    0.8
+                                                                                                                                                              0.00005
+                                                    0.6
+                                                                                                                                                              0.00004
+                                                    0.4                                                                                                       0.00003
+
+                                                    0.2                                                                                                       0.00002
+
+                                                                                                                                                              0.00001
+                                                        0
+                                                            0       5        10            15           20           25                                              0
+                                                                              Drying time (h)                                                                            0       5       10          15        20         25
+                                                                                                                                                                                         Drying time (h)
+Fig. 4. Variation in moisture content of cocoa beans during indirect solar drying.
+                                                                                                                                          Fig. 6. Variation in mass flux of cocoa beans during indirect solar drying.
+
+                                                   1
+                                                                                                                                    moisture diffusivity increased with drying temperature. Torrez
+                                                                                                                                    Irigoyen et al. (2014) reported that the effective diffusion coeffi-
+                                                  0.8                                                                               cient was assessed as function of the product temperature and
+                                                                                                                                    moisture content. This fact could be explained as increase in drying
+                                                                                                                                    temperature causes a higher driving force speeding up transfer of
+     Moisture ratio
+
+                                                  0.6                                                                               water vapour from the core to the surface of cocoa beans resulting
+                                                                                                                                    in high diffusivity (Falade and Oyedele, 2010).
+                                                                                                                                        The values of effective moisture diffusivities were found to in
+                                                  0.4
+                                                                                                                                    range from 5.49  1010 to 4.26  1010 m2/s. These values are
+                                                                                                                                    within the range of diffusivities reported for most agricultural crop
+                                                  0.2                                                                               materials (Panagiotou et al., 2004). The effective moisture diffusiv-
+                                                                                                                                    ity of cocoa beans may be represented by the following relation-
+                                                                                                                                    ship with the corresponding moisture content:
+                                                   0
+                                                        0       5            10           15             20            25                                                    X
+                                                                             Drying time (h)
+                                                                                                                                    Deff ¼ 1:30  1010                         þ 4:18  1010   r 2 ¼ 0:999               ð43Þ
+                                                                                                                                                                             X0
+  Fig. 5. Variation in moisture ratio of cocoa beans during indirect solar drying.
+
+                                                                                                                                    4.5. Shrinkage
+removed moisture is limited by diffusion of moisture from inside
+to surface (Duc et al., 2011). Comparable results have also been                                                                        The volume ratio and shrinkage coefficient versus reduced
+reported for various other agricultural products (Hii et al., 2009a,                                                                moisture content of cocoa beans are presented in Fig. 8. In each
+b; Liu et al., 2012). The experimental mass flux curve was tested                                                                   case, five beans were used and the average values are considered.
+by several models. Among these models, that of relation (42)                                                                        As shown in this figure, the volume ratio decreases with decrease
+may be assumed to fit the most suitably cocoa bean drying rate                                                                      in reduced moisture content of cocoa beans. Similarly, shrinkage
+profile.                                                                                                                            coefficient increases with decrease in reduced moisture content
+                                                                                                                                    of cocoa beans. Shrinkage curves were almost linear in the cocoa
+F m ¼ 0:317ðX 0  X eq Þ expð0:23tÞ ðr 2 ¼ 0:998Þ                                                                        ð42Þ
+                                                                                                                                    bean drying process as reported by Silva et al. (2016). Fig. 8 shows
+                                                                2
+where Fm is in kg/m h and t is in hour (h).                                                                                         that the moisture content has significant effect on the shrinkage
+                                                                                                                                    curves. This result is also predictable and can be due to the slow
+4.4. Effective moisture diffusivity                                                                                                 drying rate at low temperatures and moisture distribution which
+                                                                                                                                    is uniform in the cocoa beans. This case reduces internal stresses
+   By using Eq. (19), curve of effective moisture diffusivity versus                                                                and leads to continuous shrinkage until the end of drying process
+reduced moisture content is presented in Fig. 7. It can be found                                                                    (Horuz and Maskan, 2015).
+that the effective moisture diffusivity decreases with the decrease                                                                     Fig. 9 shows the result of comparison curve between the shrink-
+in reduced moisture content as reported by Silva et al. (2016).                                                                     age experimental and fitted data. The estimated value of shrinkage
+Additionally, as reported in many drying literatures, the effective                                                                 coefficient in Eq. (12) applied to cocoa beans was a = 0.276 with a
+
+[[PAGE 8]]
+B.K. Koua et al. / Journal of the Saudi Society of Agricultural Sciences 18 (2019) 72–82                                                     79
+
+                                                               6E-10                                                                                            0.35
+                                                                                                                                                                                    1 - V/V0 = 0,276(X0 -X)
+                      Effective moisture diffusivity (m2/s)
+
+                                                               5E-10                                                                                             0.3                       R² = 0,999
+
+                                                               4E-10                                                                                            0.25
+
+                                                                                                                                                                 0.2
+
+                                                                                                                                                    1 - V/V0
+                                                               3E-10
+
+                                                                                                                                                                0.15
+                                                               2E-10
+
+                                                                                                                                                                 0.1
+                                                               1E-10
+                                                                                                                                                                0.05
+                                                                     0
+                                                                         0     0.2      0.4      0.6        0.8          1         1.2                                0
+                                                                                     Reduced moisture content X/X0                                                        0   0.2        0.4       0.6         0.8         1       1.2   1.4
+                                                                                                                                                                                    Evaporated water (X0 - X) (kg water/kg db)
+Fig. 7. Effect of moisture content variations on effective moisture diffusivity of
+cocoa beans.
+                                                                                                                                                 Fig. 9. Shrinkage coefficient versus evaporated water during indirect solar drying of
+                                                                                                                                                 cocoa beans.
+                                                               1.2
+                                                                                                (A)
+                                                                                                                                                                1.2
+                                                                1                                                                                                                   Ideal shrinkage
+                                                                                                                                                                 1
+                                                               0.8
+              Shrinkage V/V0
+
+                                                                                                                                                                0.8
+                                                               0.6
+                                                                                                                                                     1 - V/V0
+
+                                                                                                                                                                0.6                                                  Porosity
+                                                                                                                                                                                                                     development
+                                                               0.4
+                                                                                                                                                                0.4
+
+                                                               0.2
+                                                                                                                                                                0.2
+
+                                                                0                                                                                                0
+                                                                     0       0.2       0.4        0.6        0.8          1          1.2                              0       0.2          0.4           0.6         0.8       1         1.2
+                                                                                     Reduced moisture content X/X0                                                                             Vw/V0 = ( mw/ w)/V0
+
+                                                                                                                                                 Fig. 10. Cocoa beans volume reduction versus the volume of water removed during
+                                                              0.35
+                                                                                                                                                 indirect solar drying.
+                                                                                                      (B)
+                                                               0.3                                                                               the variation of the cocoa bean diameter as a function of moisture
+                                                                                                                                                 content and thereby with time:
+  Shrinkage coefficient 1 - V/V0
+
+                                                              0.25
+                                                                                                                                                 dp                       1
+                                                                                                                                                    ¼ ð1  0:276ðX 0  XÞÞ3                                                               ð44Þ
+                                                                                                                                                 d0
+                                                               0.2
+                                                                                                                                                    Fig. 10 shows the cocoa bean volume reduction versus the vol-
+                                                                                                                                                 ume of water removed. On this figure, significant deviations were
+                                                              0.15
+                                                                                                                                                 observed between the curves of cocoa bean volume reduction
+                                                                                                                                                 and the bisector representing a situation of ideal shrinkage where
+                                                               0.1                                                                               the water removed is converted exactly to a loss of volume (Dissa
+                                                                                                                                                 et al., 2010). The volume of water removed was greater than the
+                                                              0.05                                                                               cocoa bean volume reduction during all drying. During drying,
+                                                                                                                                                 the cocoa bean undergoes change from rubbery to glassy state
+                                                                0                                                                                (Kurozawa et al., 2012). The rigidity of the material causes a
+                                                                     0       0.2       0.4        0.6        0.8          1          1.2         decrease in the rate volume change and parallel pore formation
+                                                                                     Reduced moisture content X/X0
+                                                                                                                                                 may happen (Kurozawa et al., 2012). As shown in Fig. 10, this devi-
+                                                                                                                                                 ation represented the porosity development of cocoa beans during
+Fig. 8. Effect of moisture content variations on volume ratio (A) and shrinkage                                                                  drying. Most of the water removed from the cocoa bean was thus
+coefficient and (B) of cocoa beans.                                                                                                              replaced by gas (Dissa et al., 2010). The dried cocoa bean is there-
+                                                                                                                                                 fore a porous product made up of gas and dry matter.
+correlation coefficient of r2 = 0.999. This shrinkage coefficient indi-
+cates that the cocoa bean volume is decreased about 0.276 mm3                                                                                    4.6. Real density
+per each mm3 of water removed.
+   By rearranging Eq. (12), shrinkage can be expressed in terms of                                                                                 Fig. 11 shows the variations of the real density with reduced
+the bean diameter (Eq. (44)). This expression can be used to predict                                                                             moisture content during the cocoa beans drying. The real density
+
+[[PAGE 9]]
+80                                                              B.K. Koua et al. / Journal of the Saudi Society of Agricultural Sciences 18 (2019) 72–82
+
+                              840                                                                              of shrinkage (Zabalaga et al., 2016). The relationship between
+                                                                                                               porosity and reduced moisture content is given by the following:
+                              820
+                                                                                                                                           X
+                              800                                                                              e ¼ 0:099                     þ 0:25 ðr 2 ¼ 0:985Þ                              ð46Þ
+                                                                                                                                           X0
+      Real density (kg/m3)
+
+                              780
+
+                              760                                                                              4.8. Heat and mass transfer coefficients
+
+                              740                                                                                 Heat and mass transfer occur simultaneously during the drying
+                                                                                                               process. Fig. 13 shows the variation of the heat and mass transfer
+                              720
+                                                                                                               coefficients with the drying time. As presented in Fig. 13, the heat
+                              700                                                                              and mass transfer coefficients increased with the increasing drying
+                                                                                                               time. During the indirect solar drying, the increase in drying time
+                              680
+                                                                                                               increases the drying air temperature. The increase in drying air
+                                    0        0.2      0.4       0.6       0.8          1         1.2
+                                                                                                               temperature increases the temperature of the food material. But,
+                                                   Reduced moisture content X/X0
+                                                                                                               the increase in temperature of the moist food material increases
+     Fig. 11. Effect of moisture content variations on real density of cocoa beans.                            the moisture diffusivity, which in turn increases the rate of diffu-
+                                                                                                               sion of moisture from inside to the surface of the food material.
+                                                                                                               It means that mass transfer coefficient increases with increasing
+decreases as reduced moisture content decreased, from an average                                               drying air temperature. Similarly, the heat transfer coefficient
+value of 825.10 kg/m3 at a moisture content of 1.22 kg water/kg db                                             increases with increasing drying air temperature because the heat
+to 695.25 kg/m3 at a moisture content of 0.074 kg water/kg db.                                                 transfer coefficient is calculated using the heat and mass transfer
+This behaviour was not affected by drying method (Koç et al.,                                                  analogy. This behaviour is in agreement with literature data on
+2008). The variation may be due to a higher decrease in mass of                                                heat and mass transfer (Ateeque et al., 2014; Fu et al., 2015). The
+the cocoa bean as compared to its volumetric decrease as cocoa                                                 values of h and hm were in the range from 1.92  104 to
+bean moisture content decreases. A similar behaviour was also                                                  8.08  102 W/m2 K and from 1.88  107 to 7.88  105 m/s,
+reported by other authors for fruits and vegetables with various                                               respectively, for a convective drying of cocoa beans. These results
+geometrics (Bart-Plange and Baryeh, 2003; Hatamipour and                                                       were found to be in the range of those available in the literature
+Mowla, 2003). The real density was fitted by the following                                                     for different fruits and vegetables and drying conditions (Lemus-
+formula:
+                                        X                                                                                               0.09
+qp ¼ 147:95                                þ 691:46 ðr 2 ¼ 0:978Þ                                  ð45Þ
+                                        X0                                                                                              0.08                         (A)
+                                                                                                                                        0.07
+4.7. Porosity
+                                                                                                                                        0.06
+                                                                                                                            h (W/m2K)
+
+   Fig. 12 shows the variation of porosity with reduced moisture                                                                        0.05
+content during the cocoa bean drying. The porosity increased as
+                                                                                                                                        0.04
+reduced moisture content decreased, from an average value of
+15.82% at a moisture content of 1.22 kg water/kg db to 24.67% at                                                                        0.03
+a moisture content of 0.074 kg water/kg db. Porosity in fruits and
+                                                                                                                                        0.02
+vegetables increases during drying process depending on the initial
+moisture content, composition and size, as well as on the type of                                                                       0.01
+drying (Koç et al., 2008). During drying, the pores previously occu-
+                                                                                                                                          0
+pied by water either are replaced by air or is compressed as result                                                                            0     5         10           15      20           25
+                                                                                                                                                               Drying time (h)
+
+                              0.3                                                                                               0.00009
+
+                                                                                                                                0.00008
+                             0.25
+                                                                                                                                                              (B)
+                                                                                                                                0.00007
+
+                              0.2                                                                                               0.00006
+                                                                                                                 hm (m/s)
+
+                                                                                                                                0.00005
+      Porosity
+
+                             0.15
+                                                                                                                                0.00004
+
+                                                                                                                                0.00003
+                              0.1
+                                                                                                                                0.00002
+                             0.05                                                                                               0.00001
+
+                                                                                                                                          0
+                               0                                                                                                               0     5        10          15      20          25
+                                    0        0.2     0.4       0.6        0.8         1          1.2                                                          Drying time (h)
+                                                   Reduced moisture content X/X0
+                                                                                                               Fig. 13. Variation in heat (A) and mass (B) transfer coefficients during indirect solar
+          Fig. 12. Effect of moisture content variations on porosity of cocoa beans.                           drying.
+
+[[PAGE 10]]
+B.K. Koua et al. / Journal of the Saudi Society of Agricultural Sciences 18 (2019) 72–82                                               81
+
+Mondaca et al., 2013). Heat and mass transfer coefficients of cocoa                           Brenn, G., Steiner, H., Kondor, I., Planchette, C., Mercuri, A., 2016. A model for the
+                                                                                                   non-isothermal drying of particle-laden pastes. Int. J. Heat Mass Transfer 92,
+beans are dependent on moisture content or temperature and are
+                                                                                                   558–571.
+also influenced by structural changes occurring to cocoa beans dur-                           Chayjan, R.A., Kaveh, M., 2014. Physical parameters and kinetic modeling of fix and
+ing drying. The heat and mass transfer coefficients were allowed to                                fluid bed drying of terebinth seeds. J. Food Proc. Pres. 38, 1307–1320.
+change with drying time in the polynomial form:                                               Chou, S.K., Chua, K.J., 2001. New hybrid drying technologies for heat sensitive
+                                                                                                   foodstuffs. Trends Food Sci. Technol. 12 (10), 359–369.
+h ¼ 2:21  104 t2  5:83  104 t þ 1:20  103                 ðr2                          Crank, J., 1975. The Mathematics of Diffusion. Oxford University Press, New York.
+                                                                                              Daud, W.R.W., Meor Talib, M.Z., Ibrahim, M.H., 1998. Simulation of two layer drying
+  ¼ 0:998Þ                                                                        ð47Þ             model for cocoa bean. In: Akriditis, C.C., Marinos-Kouris, D., Savarakos, G.D.,
+                                                                                                   (Eds.), Proceedings of the 11th International Drying Symposium, IDS’98, Greece,
+                                                                                                   pp. 375–382.
+hm ¼ 7:75  104 t 2  2:05  104 t þ 4:23  103                 ðr 2                       De Lima, A.G.B., Queiroz, M.R., Nebra, S.A., 2002. Simultaneous moisture transport
+                                                                                                   and shrinkage during drying solids with ellipsoidal configuration. Chem. Eng. J.
+    ¼ 0:998Þ                                                                      ð48Þ             86, 83–85.
+                                                                                              Defraeye, T., Blocken, B., Carmeliet, J., 2012. Analysis of convective heat and mass
+                                                                                                   transfer coefficients for convective drying of a porous flat plate by conjugate
+                                                                                                   modeling. Int. J. Heat Mass Transfer 55, 112–124.
+5. Conclusion                                                                                 Delgado, T., Pereira, J.A., Baptista, P., Casal, S., Ramalhosa, E., 2014. Shell’s influence
+                                                                                                   on drying kinetics, color and volumetric shrinkage of castanea Sativa Mill. fruits.
+   In this work, the evolution of shrinkage, density, porosity, heat                               Food Res. Int. 55, 426–435.
+                                                                                              Dissa, A.O., Desmorieux, H., Savadogo, P.W., Segda, B.G., Koulidiati, J., 2010.
+and mass transfer coefficients was studied. The following conclu-                                  Shrinkage, porosity and density during convective drying of spirulina. J. Food
+sions are drawn from this investigation:                                                           Eng. 97, 410–418.
+                                                                                              Duc, I.A., Han, J.W., Keum, D.H., 2011. Thin layer drying characteristics of rapeseed
+                                                                                                   (Brassica napus L.). J. Stored Prod. Res. 47, 32–38.
+  The cocoa bean thermophysical properties were obtained and
+                                                                                              Falade, K.O., Oyedele, O.O., 2010. Effect of osmotic pretreatment on air drying
+   fitted to nonlinear correlations, describing their behaviour as a                               characteristics and colour of pepper (Capsicum spp.) cultivars. J. Food Sci.
+   function of moisture content.                                                                   Technol. 47 (5), 488–495.
+                                                                                              Fu, B.A., Chen, M.Q., Huang, Y.W., 2015. Heat transfer characteristics on lignite thin-
+  The values of effective moisture content were calculated by
+                                                                                                   layer during hot air forced convective drying. Fuel 154, 132–139.
+   Fick’s diffusion model and their values varied from                                        Garcia-Alamilla, P., Salgado-Cervantes, M.A., Barel, M., Berthomieu, G., Rodriguez-
+   5.49  1010 to 4.26  1010 m2/s. Deff decreased with decrease                                 Jimines, G.C., Garcia-Alvarado, M.A., 2007. Moisture, acidity and temperature
+   in moisture content.                                                                            evolution during cacao drying. J. Food Eng. 79, 1159–1165.
+                                                                                              Hatamipour, M.S., Mowla, D., 2003. Correlations for shrinkage, density and
+  The shrinkage decreased linearly with decrease in moisture                                      diffusivity for drying of maize and green peas in a fluidized bed with energy
+   content.                                                                                        carrier. J. Food Eng. 59, 221–227.
+  The real density decreased from 825.10 to 695.25 kg/m3 with                                Hii, C.L., 2004. Cocoa drying. In: Mujumbar, A.-S. (Ed.), Dehydration of Products of
+                                                                                                   Biological Origin. Science Publisher, Enfield, pp. 203–222.
+   decrease in moisture content.                                                              Hii, C.L., Tukimon, M.B., 2002. Evaluation of fermentation techniques practiced by
+  The porosity increased from 15.82 to 24.67% with decrease in                                    the cocoa smallholders. Planter 78 (910), 13–22.
+   moisture content.                                                                          Hii, C.L., Law, C.L., Cloke, M., 2009a. Modeling using a new thin layer drying model
+                                                                                                   and product quality of cocoa. J. Food Eng. 90, 191–198.
+  The heat and mass transfer coefficients increased during the                               Hii, C.L., Law, C.L., Cloke, M., Suzannah, S., 2009b. Thin layer drying kinetics of cocoa
+   drying process. The values of h and hm were in the range from                                   and dried product quality. Biosyst. Eng. 102, 153–161.
+   1.92  104 to 8.08  102 W/m2 K and from 1.88  107 to                                  Hii, C.L., Law, C.L., Law, M.C., 2013. Simulation of heat and mass transfer of cocoa
+                                                                                                   beans under stepwise drying conditions in a heat pump dryer. Appl. Ther. Eng.
+   7.88  105 m/s, respectively.
+                                                                                                   54, 264–271.
+                                                                                              Horuz, E., Maskan, M., 2015. Hot air and microwave drying of pomegranate (Punica
+Author’s contributions                                                                             granatum L.) arils. J. Food Sci. Technol. 52 (1), 285–293.
+                                                                                              Huang, S.-R., Yang, J.-I., Lee, Y.-C., 2013. Interactions of heat and mass transfer in
+                                                                                                   steam reheating of starchy foods. J. Food Eng. 114, 174–182.
+   All authors of the paper contributed equally to the writing of                             Incropera, F.P., Dewitt, D.P., Bergman, T.L., Lavine, A.S., 2013. Principles of Heat and
+the paper and were involved in the overall planning and supervi-                                   Mass Transfer. John Wiley and Sons, Singapore.
+sion of the work.                                                                             Kaushal, P., Sharma, H.K., 2016. Osmo-convective dehydration kinetics of jackfruit
+                                                                                                   (Artocarpus heterophyllus). J. Saudi Soc. Agric. Sci. 15, 118–126.
+                                                                                              Kaya, A., Aydin, O., Demirtas, C., 2007. Concentration boundary conditions
+                                                                                                   in the theoretical analysis of convective drying process. J. Food Proc. Eng. 30,
+References                                                                                         546–577.
+                                                                                              Kiranoudis, C.T., Maroulis, Z.B., Tsami, E., Marinos-Kouris, D., 1993. Equilibrium
+                                                                                                   moisture content and heat of desorption of some vegetables. J. Food Eng. 20,
+Adiletta, G., Iannone, G., Russo, P., Patimo, G., De Pasquale, S., Di Matteo, M., 2014.
+                                                                                                   55–74.
+    Moisture migration by magnetic resonance imaging during eggplant drying: a
+                                                                                              Koç, B., Eren, I., Ertekin, F.K., 2008. Modelling bulk density, porosity and shrinkage of
+    preliminary study. Int. J. Food Sci. Technol. 49, 2602–2609.
+                                                                                                   quince during drying: effect of drying method. J. Food Eng. 85, 340–349.
+Aprajeeta, J., Gopirajah, R., Anandharamakrishnan, C., 2015. Shrinkage and porosity
+                                                                                              Koua, K.B., Fassinou, W.F., Gbaha, P., Toure, S., 2009. Mathematical modelling of the
+    effects on heat and mass transfer during potato drying. J. Food Eng. 144, 119–
+                                                                                                   thin layer solar drying of banana, mango and cassava. Energy 34, 1594–1602.
+    128.
+                                                                                              Koua, K.B., Koffi, E.P.M., Gbaha, P., Toure, S., 2014. Thermodynamic analysis of
+Arumuganathan, T., Manikantan, M.R., Rai, R.D., Ananda Kumar, S., Khare, V., 2009.
+                                                                                                   sorption isotherms of cassava (Manihot esculenta). J. Food Sci. Technol. 51 (9),
+    Mathematical modeling of drying kinetics of milky mushroom in a fluidized bed
+                                                                                                   711–1723.
+    drier. Int. Agrophys. 23, 1–7.
+                                                                                              Krokida, M.K., Maroulis, Z.B., 1997. Effect of drying method on shrinkage and
+ASAE Standards, 2004. Moisture relationship of plant-based agricultural products.
+                                                                                                   porosity. Drying Technol. 15 (10), 2441–2458.
+    American Society of Agricultural and Biological Engineers, st. Joseph, Michigan,
+                                                                                              Kurozawa, L.E., Hubinger, M.D., Park, K.J., 2012. Glass transition phenomenon on
+    2004.
+                                                                                                   shrinkage of papaya during convective drying. J. Food Eng. 108, 43–50.
+Ateeque, Md., Udayraj, R.K., Mishra, V.P. Chandramohan, Talukdar, P., 2014.
+                                                                                              Kyi, T.M., Wan Daud, W.R., Mohammad, A.B., Samsudin, M.W., Kadhum, A.A.H.,
+    Numerical modeling of convective drying of food with spatially dependent
+                                                                                                   Meor Talib, M.Z., 2005. The kinetics of polyphenol degradation during the
+    transfer coefficient in a turbulent flow field. Int. J. Therm. Sci. 78, 145–157.
+                                                                                                   drying of Malaysian cocoa beans. Int. J. Food Sci. Technol. 40, 323–331.
+Bart-Plange, A., Baryeh, E.A., 2003. The physical properties of category B cocoa
+                                                                                              Lecoq, L., Flick, D., Derens, E., Hoang, H.M., Laguerre, O., 2016. Simplified heat and
+    beans. J. Food Eng. 6, 219–227.
+                                                                                                   mass transfer modeling in a food processing plant. J. Food Eng. 171, 1–13.
+Bart-Plange, A., Dzisi, A.K., Addo, A., Teye, E., Kumi, F., 2012. A comparative study of
+                                                                                              Lemus-Mondaca, R.A., Zambra, C.E., Vega-Galvez, A., Moraga, N.O., 2013. Coupled
+    some physical properties of large and medium size cocoa beans from Ghana.
+                                                                                                   3D heat and mass transfer model for numerical analysis of drying process in
+    ARPN J. Sci. Technol. 2 (3), 135–141.
+                                                                                                   papaya slices. J. Food Eng. 116, 109–117.
+Bennamoun, L., Belhamri, A., 2008. Mathematical description of heat and mass
+                                                                                              Liu, G., Chen, J., Liu, M., Wan, X., 2012. Shrinkage, porosity and density behavior
+    transfer during deep bed drying: effect of product shrinkage on bed porosity.
+                                                                                                   during convective drying of bio-porous material. Proc. Eng. 31, 634–640.
+    Appl. Ther. Eng. 28, 2236–2244.
+                                                                                              Malafronte, L., Ahrné, L., Kaunisho, E., Innings, F., Rasmuson, A., 2015. Estimation of
+Bezerra, C.V., Da Silva, L.H., Corrêa, D.F., Rodrigues, A.M.C., 2015. A modeling study
+                                                                                                   the effective diffusion coefficient of water in skim milk during single-drop
+    for moisture diffusivities and moisture transfer coefficients in drying of passion
+                                                                                                   drying. J. Food Eng. 147, 111–119.
+    fruit peel. Int. J. Heat Mass Transfer 85, 750–755.
+
+[[PAGE 11]]
+82                                            B.K. Koua et al. / Journal of the Saudi Society of Agricultural Sciences 18 (2019) 72–82
+
+Mercier, S., Villeneuve, S., Mondor, M., Des Marchais, L.-P., 2011. Evolution of             Ruiz-Lopez, I.I., Cordova, A.V., Rodriguez, G.C., Garcia, M.A., 2004. Moisture and
+    porosity, shrinkage and density of Pasta fortified with pea protein concentrate              temperature evolution during foods drying: effect of variable properties. J. Food
+    during drying. LWT-Food Sci. Technol. 44, 883–890.                                           Eng. 63, 117–124.
+Nadhari, W.N.A.W., Hashim, R., Sulaiman, O., Jumhuri, N., 2014. Drying kinetics of           Silva, V., Costa, J.J., Figueiredo, A.R., Nunes, J., Nunes, C., Ribeiro, T.I.B., Pereira, B.,
+    oil palm trunk waste in control atmosphere and open air convection drying. Int.              2016. Study of three-stage intermittent drying of pears considering shrinkage
+    J. Heat Mass Transfer 68, 14–20.                                                             and variable diffusion coefficient. J. Food Eng. 180, 77–86.
+Nganhou, J., Lecomte, D., Dumargue, P., 1992. Heat and mass transfer through a               Siqueira, V.C., Resende, O., Chaves, T.H., 2012. Determination of the volumetric
+    thick bed of cocoa beans under stationary and transient inlet conditions. In:                shrinkage in jatropha seeds during drying. Acta Scientiarum. Agronomy.
+    Mujumbar, A.S., (Ed.), Proceedings of the 8th International Drying Symposium,                Maringa 34 (3), 231–238.
+    IDS’92, Quebec, pp. 1514–1523.                                                           Srikiatden, J., Roberts, J.S., 2008. Predicting moisture profiles in potato and carrot
+Ohene Afoakwa, E., Quao, J., Takrama, J., Budu, A.S., 2013. Chemical composition and             during convective hot air drying using isothermally measured effective
+    physical quality characteristics of Ghanaian cocoa beans as affected by pulp                 diffusivity. J. Food Eng. 84, 516–525.
+    preconditioning and fermentation. J. Food Sci. Technol. 50 (6), 1097–1105.               Talla, A., Puiggali, J.-R., Jomaa, W., Jannot, Y., 2004. Shrinkage and density evolution
+Panagiotou, N.M., Krokida, M.K., Maroulis, Z.B., Saravacos, G.D., 2004. Moisture                 during drying of tropical fruits: application to banana. J. Food Eng. 64, 103–109.
+    diffusivity: literature data compilation for foodstuffs. Int. J. Food Properties 7,      Torrez Irigoyen, R.M., Goni, S.M., Giner, S.A., 2014. Drying-toasting kinetics of
+    273–299.                                                                                     presoaked soybean. A mathematical model considering variable diffusivity,
+Paramo, D., Garcia-Alamilla, P., Salgado-Cervantes, M.A., Robles-Olvera, V.J.,                   shrinkage and coupled heat transfer. J. Food Eng. 142, 70–79.
+    Rodriguez-Jimines, G.C., Garcia-Alvarado, M.A., 2010. Mass transfer of water             Tzempelikos, D.A., Mitrakos, D., Vouros, A.P., Bardakas, A.V., Filios, A.E., Margais, D.
+    and volatile fatty acids in cocoa beans during drying. J. Food Eng. 99 (3), 276–             P., 2015. Numerical modeling of heat and mass transfer during convective
+    283.                                                                                         drying of cylindrical quince slices. J. Food Eng. 156, 10–21.
+Perussello, C.A., Mariani, V.C., Do Amarante, A.C.C., 2012. Numerical and                    Vigano, J., Azuara, E., Telis, V.R.N., Beristain, C.I., Jimenez, M., Telis-Romero, J., 2012.
+    experimental analysis of the heat and mass transfer during Okara drying.                     Role of enthalpy and entropy in moisture sorption behavior of pineapple pulp
+    Appl. Ther. Eng. 48, 325–331.                                                                powder produced by different drying methods. Thermochim. Acta 528, 63–71.
+Perussello, C.A., Kumar, C., De Castilhos, F., Karim, M.A., 2014. Heat and mass              Youcef-Ali, S., Moummi, N., Desmons, J., Abene, A., Messaoudi, H., Le Ray, M., 2001.
+    transfer modeling of the osmo-convective drying of yacon roots (Smallanthus                  Numerical and experimental study of dryer in forced convection. Int. J. En. Res.
+    sonchifolius). Appl. Ther. Eng. 63, 23–32.                                                   25, 537–553.
+Prette, A.P., Almeida, F.A.C., Villa-Vélez, A., 2013. Thermodynamic properties of            Zabalaga, R.F., La Fuente, C.I.A., Tadini, C.C., 2016. Experimental determination of
+    water sorption of jackfruit (Artocarpus heterophyllus Lam.) as a function of                 thermophysical properties of unripe banana slices (Musa Cavendishii) during
+    moisture content. Food Sci. Technol., Campinas 33 (1), 199–208.                              convective drying. J. Food Eng. 187, 62–69.
+Rahman, M.S., 2001. Towards prediction on porosity in foods during drying: a brief
+    review. Drying Technol. 19 (1), 3–15.

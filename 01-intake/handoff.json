@@ -5,7 +5,7 @@
   "inputs": [
     {
       "path": "decisions/H0-selection.json",
-      "sha256": "10795acb2adf0aa39250f1e089f59e27abc95ac39d2c53d26e0101f0152b2df9"
+      "sha256": "b2c424d1f89b94f848c481d0de18f088650bab646f0b1832faeadb874706eb25"
     },
     {
       "path": "00-selection/handoff.json",
@@ -17,7 +17,7 @@
     },
     {
       "path": ".workflow/config.json",
-      "sha256": "a70daeae1b0ccd646806d328ad9adb036f0f26faff21597b50cfa91831deed11"
+      "sha256": "216b5cb4ce6165e215ef4d5c85af0fe9620d41a71d9b32c4a5092ddf88b56580"
     },
     {
       "path": "input/format2026.doc",
@@ -75,13 +75,13 @@
     },
     {
       "path": "01-intake/H1-选择包.md",
-      "sha256": "40bfdce74a7337c0337be0103c7d971f07b481e379de9369cd669e62ec6077f4"
+      "sha256": "2e37c9dd924aa8c810cf8234e13c9cd7b7ef2d04cf87a92b4d504e6f86c2ac8a"
     }
   ],
   "frozen_decisions": [
     {
       "path": "decisions/H0-selection.json",
-      "sha256": "10795acb2adf0aa39250f1e089f59e27abc95ac39d2c53d26e0101f0152b2df9"
+      "sha256": "b2c424d1f89b94f848c481d0de18f088650bab646f0b1832faeadb874706eb25"
     }
   ],
   "assumptions": [],

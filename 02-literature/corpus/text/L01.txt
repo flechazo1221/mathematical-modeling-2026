@@ -1,0 +1,2300 @@
+[[PAGE 1]]
+This may be the author’s version of a work that was submitted/accepted
+for publication in the following source:
+
+Mahiuddin, Md, Khan, Md Imran Hossen, Kumar, Chandan, Rahman, Mo-
+hammad Mahbubur, & Karim, Azharul
+(2018)
+Shrinkage of food materials during drying: Current status and challenges.
+Comprehensive Reviews in Food Science and Food Safety, 17 (5), pp.
+1113-1126.
+
+This file was downloaded from: https://eprints.qut.edu.au/120094/
+
+© Consult author(s) regarding copyright matters
+
+This work is covered by copyright. Unless the document is being made available under a
+Creative Commons Licence, you must assume that re-use is limited to personal use and
+that permission from the copyright owner must be obtained for all other uses. If the docu-
+ment is available under a Creative Commons License (or other specified license) then refer
+to the Licence for details of permitted re-use. It is a condition of access that users recog-
+nise and abide by the legal requirements associated with these rights. If you believe that
+this work infringes copyright please provide details by email to qut.copyright@qut.edu.au
+
+Notice: Please note that this document may not be the Version of Record
+(i.e. published version) of the work. Author manuscript versions (as Sub-
+mitted for peer review or as Accepted for publication after peer review) can
+be identified by an absence of publisher branding and/or typeset appear-
+ance. If there is any doubt, please refer to the published source.
+
+https://doi.org/10.1111/1541-4337.12375
+
+[[PAGE 2]]
+1            Shrinkage of Food Materials During Drying: Current Status and Challenges
+
+2     Md Mahiuddin1, 2, Md. Imran H. Khan 1, 2, C. Kumar 1, M. M. Rahman1, and M. A. Karim1*
+
+            1
+3               Science and Engineering Faculty, Queensland University of Technology (QUT),
+
+4                                  2 George St, Brisbane, QLD 4000, Australia
+
+     2
+5        Department of Mechanical Engineering, Dhaka University of Engineering and Technology,
+6                                          Gazipur 1700, Bangladesh
+
+                         *
+7                            Corresponding author’s Email: azharul.karim@qut.edu.au
+8                                               Cell: +61 7 3138 6879
+9                                               Fax: +61 7 3138 1516
+10
+11   Short version of title: Shrinkage of Food Materials During Drying … …
+
+12        Abstract
+
+13   The structural heterogeneities of fruits and vegetables intensify the complexity to comprehend
+
+14   the interrelated physicochemical changes that occur during drying. Shrinkage of food materials
+
+15   during drying is a common physical phenomenon which affects the textural quality and taste
+
+16   of the dried product. The shrinkage of food material depends on many factors including
+
+17   material characteristics, microstructure, mechanical properties, and process conditions.
+
+18   Understanding the effect of these influencing factors on deformation of fruits and vegetables
+
+19   during drying is crucial to obtain better-quality product. The majority of the previous studies
+
+20   regarding shrinkage are either experimental or empirical; however, such studies cannot provide
+
+21   a realistic understanding of the physical phenomena behind the material shrinkage. In contrast,
+
+22   theoretical modelling can provide better insights into the shrinkage that accompanies
+
+23   simultaneous heat and mass transfer during drying. However, limited studies have been
+
+24   conducted on the theoretical modelling of shrinkage of fruits and vegetables. Therefore, the
+
+25   main aim of this paper is to critically review the existing theoretical shrinkage models and
+
+26   present a framework for a theoretical model for the shrinkage mechanism. This paper also
+
+                                                       1
+
+[[PAGE 3]]
+27   describes the effect of different drying conditions on material shrinkage. Discussions on how
+
+28   the diverse characteristics of fruits and vegetables affect shrinkage propagation is presented.
+
+29   Moreover, a comprehensive review of formulation techniques of shrinking models and their
+
+30   results are also presented. Finally, the challenges in developing a physics-based shrinkage
+
+31   model are discussed.
+
+32
+
+33   Contents
+
+34   Abstract ...................................................................................................................................... 1
+35   1.     Introduction ........................................................................................................................ 4
+36   2.     Characteristics of food materials ........................................................................................ 6
+37        2.1      Food material as an elastic and hyperelastic material ................................................. 7
+38        2.2      Food material as an elastoplastic material................................................................... 8
+39        2.3      Food material as a viscoelastic material ...................................................................... 8
+40   3.     Mechanism of shrinkage ..................................................................................................... 9
+41   4.     Influencing factors that affect material shrinkage during drying ..................................... 10
+42        4.1      Effect of cellular water transport on material shrinkage ........................................... 10
+43        4.2      Effect of drying conditions on material shrinkage .................................................... 11
+44          4.2.1         Drying air temperature ....................................................................................... 11
+45          4.2.2         Drying air velocity and relative humidity .......................................................... 13
+46        4.3      Effect of mechanical properties of food material on shrinkage ................................ 13
+47        4.4      Effect of glass transition temperature on shrinkage .................................................. 14
+48   5.     Theoretical shrinkage models ........................................................................................... 15
+49        5.1      Linear elastic model .................................................................................................. 16
+50        5.2      Elastoplastic model ................................................................................................... 19
+51        5.3      Hyperelastic model .................................................................................................... 21
+52        5.4      Viscoelastic model .................................................................................................... 24
+53   6.     General trends of output parameters of shrinkage ............................................................ 27
+54        6.1      Change of volume with drying air velocity ............................................................... 27
+55        6.2      Change of volume with temperature ......................................................................... 28
+56        6.3      Changes in stresses during drying ............................................................................. 29
+57   7.     Challenges for prediction of material shrinkage during drying........................................ 29
+58        7.1      Food material characterization .................................................................................. 30
+
+                                                                            2
+
+[[PAGE 4]]
+59        7.2     Modelling of shrinkage of food materials ................................................................. 30
+60        7.3     Mechanical properties of food materials ................................................................... 31
+61   8.     Shrinkage measuring techniques ...................................................................................... 32
+62   9.     Conclusion ........................................................................................................................ 34
+63   Acknowledgments.................................................................................................................... 35
+64   Author contributions ................................................................................................................ 35
+65   References ................................................................................................................................ 35
+66
+
+67
+
+68   Keywords: Shrinkage, Dehydration, Theoretical modelling, Fruits and vegetables,
+
+69   Characterization
+
+70
+
+71
+
+72
+
+73
+
+74
+
+75
+
+76
+
+77
+
+78
+
+79
+
+80
+
+                                                                           3
+
+[[PAGE 5]]
+81   1. Introduction
+
+ 82          Fruits and vegetables are heterogeneous in structure and are comprised of about 80-
+
+ 83   90% water which is contained in different cellular environments. This vast amount of water
+
+ 84   makes these materials highly perishable and therefore an appropriate food preservation
+
+ 85   technique is essential (Karim and Hawlader, 2005; Khan, Joardder, Kumar, & Karim, 2016b).
+
+ 86   Drying is one of the most effective food preserving methods that can be applied to these
+
+ 87   perishable food materials. The porous and hygroscopic nature of fruits and vegetables make it
+
+ 88   highly shrinkable while drying. Transport of water from cellular locations to the surrounding
+
+ 89   environment causes irregular volume changes of high-moisture foods during drying, and this
+
+ 90   volume reduction is usually defined as a material shrinkage (Khan & Karim, 2017a). The
+
+ 91   shrinkage of fruits and vegetables is sometimes referred as deformation of material, and it is
+
+ 92   an obvious physical phenomenon commonly observed during drying.
+
+ 93          Shrinkage of dried products has many negative consequences, ranging from quality to
+
+ 94   consumer satisfaction (Mulet, Garcia-Reverter, Bon, & Berna, 2000; Ochoa, Kesseler, Pirone,
+
+ 95   Márquez, & Michelis, 2002; Mayor & Sereno, 2004; Udomkun and Nagle et al. 2016), and
+
+ 96   including some other adverse effects, such as surface cracking and reduction of rehydration
+
+ 97   capability (Jayaraman, Gupta, & Rao, 1990; Senadeera, Bhandari, Young, & Wijesinghe,
+
+ 98   2005). Shrinkage has a great effect on mechanical and textural properties of fruits and
+
+ 99   vegetables. For example, Vincent (1989) found that the torsional stiffness (0.5–7 MPa) of the
+
+100   apple samples varied with the shrinkage. Moreover, shrinkage is an important factor that
+
+101   enormously affects the drying rate as well as drying kinetics. Food researchers have argued
+
+102   that shrinkage should not be neglected while predicting actual heat and mass transfer during
+
+103   drying (Aprajeeta, Gopirajah, & Anandharamakrishnan, 2015). A model with shrinkage fits
+
+104   better with experimental data during drying than a model without shrinkage (Aprajeeta et al.,
+
+105   2015; Pacheco-Aguirre et al., 2015). Thus numerous studies for investigating material
+
+                                                    4
+
+[[PAGE 6]]
+106   shrinkage have been conducted. Most of the research has been based on extensive experimental
+
+107   analysis (Madamba, Driscoll, & Buckle, 1994; Krokida, Zogzas, & Maroulis, 1997; Krokida,
+
+108   Oreopoulou, & Maroulis, 2000; Yan, Gallagher, & Oliveira, 2008; Dissa & Desmorieux et al.
+
+109   2010; Mercier & Villeneuve et al. 2011; Liu & Chen et al. 2012; Madiouli & Sghaier et al.
+
+110   2012; Koua, Koffi, & Gbaha, 2017).
+
+111          Experimental studies have very limited applicability because they are conducted under
+
+112   highly specific product and process conditions (Zogzas, Maroulis, & Marinos, 1994; Rahman
+
+113   & Perera, et al. 1996; Krokida & Maroulis, 1997; Krokida, Karathanos, & Maroulis, 1998;
+
+114   McLaughlin & Magee, 1998). Mathematical modeling can provide better insight into the
+
+115   causes of shrinkage with continuous heat and mass transfer during drying. As a consequence,
+
+116   many mathematical models have been developed for material shrinkage. They can be broadly
+
+117   categorized as empirical models, semi-empirical models, and theoretical models.
+
+118          To uncover the physical phenomena of shrinkage, many empirical models have been
+
+119   formulated based on experimental data that are suitable for a specified product and processing
+
+120   conditions (Tsukada, Sakai, & Hayakawa, 1991; Lang & Sokhansanj, 1993; Ratti, 1994; Izumi
+
+121   & Hayakawa, 1995; Rovedo, Suarez, & Viollaz, 1995; Akiyama, Liu, & Hayakawa, 1997;
+
+122   McMinn & Magee, 1997a; Rovedo, Suárez, & Viollaz, 1997; Gabas, Menegalli, & Telis-
+
+123   Romero, 1999; ; Vázquez, Chenlo, Moreira, & Costoyas, 1999). In response to the limitations
+
+124   of empirical models, a slightly improved model has been formulated that can generate a
+
+125   theoretical understanding (Kilpatrick, Lowe, & Arsdel, 1955; Suzuki & Kubota et al. 1976;
+
+126   Lozano, Rotstein, & Urbicain, 1980, 1983; Perez & Calvelo, 1984; Rahman et al. 1996).
+
+127   Nevertheless, the oversimplified assumptions of these types of models prevent them from
+
+128   providing a realistic understanding of the fundamental causes of shrinkage during drying. In
+
+129   contrast, theoretical models are developed considering fundamental physics and therefore they
+
+                                                    5
+
+[[PAGE 7]]
+130   can predict the physicochemical changes accurately during dehydration of fruits and
+
+131   vegetables.
+
+132           The complex structure of fruits and vegetables makes it very difficult to formulate a
+
+133   mechanistic shrinkage model. To develop a physics-based model, four different models can be
+
+134   applied for predicting shrinkage during drying of fruits and vegetables: linear elastic, hyper-
+
+135   elastic, elastoplastic, and viscoelastic material models. These models depend on the
+
+136   characteristics of food materials, and thus material characterization is crucial to develop a
+
+137   shrinkage model. Moreover, an appropriate selection of these models for a specific food
+
+138   material is vital for developing a realistic shrinkage model. In the existing literature, theoretical
+
+139   models have been developed based on some simplified assumptions; for example, treating food
+
+140   materials as rubbery (Gulati & Datta, 2015) or elastic (Jomaa & Puiggali, 1991; Mrani, Fras,
+
+141   & Benet, 1995; Kowalski, 1996; Mrani & Bénet et al. 1997; Ponsart & Vasseur et al. 2003;
+
+142   Chemkhi, Zagrouba, & Bellagi, 2004; Niamnuy & Devahastin et al. 2008). These assumptions
+
+143   simplify the problem formulation, but they are not conducive to a realistic understanding.
+
+144   Therefore, more rigorous study are essential to formulate a physics-based shrinkage model for
+
+145   food drying. The main aims of this paper are to present a comprehensive review of existing
+
+146   theoretical shrinkage models, considering the effects of the diverse nature of fruits and
+
+147   vegetables on material shrinkage, examine how process conditions affect material shrinkage,
+
+148   uncover current research gaps, and identify the challenges in developing a realistic physics-
+
+149   based shrinkage model.
+
+150   2. Characteristics of food materials
+
+151           Food materials, particularly fruits and vegetables are heterogeneous in structure and
+
+152   diverse in nature and therefore characterization of food materials is difficult. Fruits and
+
+153   vegetables are mainly categorized as elastic, hyperelastic, elastoplastic, and viscoelastic which
+
+154   are discussed below.
+
+                                                       6
+
+[[PAGE 8]]
+155      2.1 Food material as an elastic and hyperelastic material
+
+156          In many cases, fresh produce are considered to be elastic in nature, where the
+
+157   deformation of material is considered to be very small (Kowalski, 1996; Mrani et al., 1997;
+
+158   Ponsart et al., 2003; Chemkhi et al., 2004; Niamnuy et al., 2008). This elastic property strongly
+
+159   affects the thermal stresses that are induced by the continuous penetration of heat energy. The
+
+160   induced stresses will disappear due to the elastic deformations (Kowalski & Rybicki, 2007). In
+
+161   practice, however, some residual stresses remain inside the material after drying which may
+
+162   have a substantial influence on further behavior of the material during rehydration (Lewicki,
+
+163   Rajchert, & Mariak, 1997). Furthermore, elastic behavior mainly depends on the nature of the
+
+164   stress-strain properties of materials. Based on these properties, elastic materials can be
+
+165   categorized as linear elastic, where Hooke’s constitutive law can be used to model the material
+
+166   shrinkage, and nonlinear elastic (or hyperelastic), where Neo-Hookean constitutive law can be
+
+167   used to model the material shrinkage. Many models that consider fruits and vegetables as linear
+
+168   elastic have been developed for shrinkage during drying (Jomaa & Puiggali, 1991; Mrani et
+
+169   al., 1995; Kowalski, 1996; Mrani et al., 1997; Ponsart et al., 2003; Chemkhi et al., 2004;
+
+170   Niamnuy et al., 2008). According to Hooke’s constitutive law, the stress and strain remain
+
+171   proportional up to a certain limit (about 10%) that is not defined for diverse fruits and
+
+172   vegetables. Therefore, consideration of fruits and vegetables as a linear elastic material may
+
+173   only be applied to certain type of products and not be an effective approach due to the large
+
+174   deformation that occurs during drying and generating strains over the Hookean range (Gulati
+
+175   & Datta, 2015). Instead, a nonlinear elastic model may better predict large deformations of
+
+176   fruits and vegetables during drying. Considering the benefits of nonlinear elastic properties,
+
+177   some researchers have used Neo-Hookean constitutive law for developing a realistic shrinkage
+
+178   model (Dhall & Datta, 2011; Gulati & Datta, 2015). They developed their model based on a
+
+179   poromechanics concept for a less porous material (potato); however, it may be difficult to apply
+
+                                                     7
+
+[[PAGE 9]]
+180   their model to other highly porous material such as apple and eggplant tissues because the
+
+181   porosity of potato is much lower than that of apple and eggplant.
+
+182      2.2 Food material as an elastoplastic material
+
+183          Fruits and vegetables are sometimes defined as an elastoplastic material when it
+
+184   exhibits both elastic and plastic properties i.e. a rubberlike plastic. It depends on the state of
+
+185   stress between the elastic limit and the breaking strength. It is assumed that food material shows
+
+186   the elastoplastic properties in a small strain region (Tsukada et al., 1991; Izumi & Hayakawa,
+
+187   1995; Akiyama & Hayakawa, 2000; Yang, Sakai, & Watanabe, 2001; Curcio & Aversa, 2014),
+
+188   while others have argued that the deformation of fresh produce are significant (about 30-70%)
+
+189   (Gulati & Datta, 2015). Moreover, within a small strain region the potato behavior has been
+
+190   assumed as elastoplastic and non-isotropic (Yang et al., 2001), while others have postulated
+
+191   that this assumption is not always suitable for other types of vegetables (Llave et al., 2016).
+
+192   This is mainly because of the lack of material characterization. Predicting material shrinkage
+
+193   without a material characterization, it is obviously not a justified inception due to the diverge
+
+194   nature of fruits and vegetables. In this context, viscoelastic properties might be the better
+
+195   assumption for characterizing fresh produce, are discussed below.
+
+196      2.3 Food material as a viscoelastic material
+
+197          Viscoelasticity is the property of materials that exhibit both elastic and viscous
+
+198   characteristics when undergoing deformation. The stress-strain relationship of those types of
+
+199   materials depends on time. This type of material shows strain rate dependency during
+
+200   compression, creep, stress relaxation, and very often hysteresis. Most of the plant-based food
+
+201   materials exhibit those types of properties that lead to consideration of the high-moisture foods
+
+202   as viscoelastic (Mahiuddin, Khan, Pham, & Karim, 2018). During food drying, the mechanical
+
+203   behavior of viscoelastic food material significantly affects the process conditions as well as
+
+                                                      8
+
+[[PAGE 10]]
+204   sensory properties (Lu, Ma, Wang, & Yu, 2015). Many experimental and theoretical studies
+
+205   have been conducted to reflect the influence of various drying parameters on viscoelastic
+
+206   materials and to accurately describe the stress-strain relationship of food materials (Lu et al.,
+
+207   2015). These studies have used basic constitutive Maxwell and Kelvin models to predict stress-
+
+208   strain relationship for food materials. Maxwell and Kelvin models have been selected as the
+
+209   best approach to predict the shrinkage of food materials because fruits and vegetables are
+
+210   composed of a mixture of solid and liquid which exhibits the characteristics of a spring and
+
+211   dashpot.
+
+212   3. Mechanism of shrinkage
+
+213          Structural heterogeneity makes it complex to understand the physicochemical changes
+
+214   that occur in fruits and vegetables during thermal processing. During food drying,
+
+215   microstructural stress is induced by the moisture and temperature gradient within the product.
+
+216   This microstructural stress leads to material deformation. This deformation can be referred to
+
+217   as shrinkage of the material. In most food processing, there are two main causes of material
+
+218   shrinkage. Firstly, the food tissue is incapable of holding its structural arrangement when the
+
+219   space occupied by water is constantly emptied and air-filled (Khan et al., 2016b). Secondly,
+
+220   the exterior skin structure collapse leads to shrinkage (Panyawong & Devahastin, 2007).
+
+221   Besides these, the cell shape remains intact due to the turgor pressure within individual cells
+
+222   (Rahman, Joardder, Khan, Nghia, & Karim, 2016). Turgor pressure is a fluid force inside the
+
+223   cell of high-moisture foods that pushes against the cell wall to maintain the cell wall’s rigidity.
+
+224   If the turgor pressure fails during drying, the cellular structure will collapse due to internal
+
+225   thermal stresses (Lin & Pitt, 1986; Prothon, Ahrne, & Sjoholm, 2003). The changes of the
+
+226   turgor pressure in potato tissue cause changes in the tissue compressive strength, the critical
+
+227   strain, and also the critical stress that leads to cell collapse (Joardder, Karim, Brown, & Kumar,
+
+228   2015b). Therefore, shrinkage of material not only depends on moisture content but also
+
+                                                      9
+
+[[PAGE 11]]
+229   depends on cell wall rigidity and turgor pressure of intracellular water, as well as cell wall
+
+230   properties that are discussed below.
+
+231   4. Influencing factors that affect material shrinkage during drying
+
+232          Due to the diverse nature of fruits and vegetables, there are many factors that can affect
+
+233   the magnitude of material shrinkage during drying. Cellular structure, mechanical properties
+
+234   of food material, and drying conditions are the predominant factors that strongly affect the
+
+235   magnitude of shrinkage, and they are discussed below.
+
+236      4.1 Effect of cellular water transport on material shrinkage
+
+237          Fruits and vegetables are mostly composed of a solid matrix with a significant amount
+
+238   of liquid water in the cell at different level. The structural rigidity of cellular tissue prevents
+
+239   shrinkage when subjected to drying process (Prothon et al., 2003). The structural rigidity
+
+240   depends on cellular water distribution and its characteristics. Fruits and vegetables are
+
+241   hygroscopic in nature and contain 80-90% water (Khan, Kumar, Joardder, & Karim, 2017d).
+
+242   This vast amount of water is located in different cellular environments such as the intracellular
+
+243   environment, intercellular environment, and the cell wall environment. The proportion of water
+
+244   that present inside the cell (intracellular spaces) is referred to as intracellular water, and water
+
+245   that is present in intercellular spaces is referred to as intercellular water or capillary water
+
+246   (Khan, Wellard, Nagy, Joardder, & Karim, 2016b).
+
+247          The cell wall is mostly composed of solid material, but a very small amount of water is
+
+248   present in microcapillaries. This water is referred to as cell wall water. Migration of free water
+
+249   has little effect on material shrinkage; however, transport of intracellular and cell wall water
+
+250   strongly affects the material shrinkage during food processing (Joardder et al., 2015a). During
+
+251   drying, transport of intracellular water causes cellular shrinkage, pore formation, and collapse
+
+                                                      10
+
+[[PAGE 12]]
+252   of the cell. Finally, overall food tissue is deformed due to the migration of cell wall water
+
+253   (Joardder et al., 2015b).
+
+254          Very recently, Khan, et al. (2017b, 2018) argued that intracellular water migrates from
+
+255   the intracellular region to the intercellular environment through rupturing the cell membrane.
+
+256   They proposed that cell membranes collapse progressively at different stages of drying rather
+
+257   than collapsing at once, while others argued that cell membrane of food tissue collapsed at a
+
+258   time that ultimately deformed the whole tissue at a certain drying period (Halder, Datta, &
+
+259   Spanswick, 2011).
+
+260          Migration of cellular water affects the cellular shrinkage but the magnitude of shrinkage
+
+261   is still not clearly understood. Furthermore, cell walls are basic construction elements that are
+
+262   responsible for the strength of the whole tissue (Haman & Konstankiewicz, 2000). The cell
+
+263   wall thickness of various types of fruits and vegetables depends on the characteristics of its
+
+264   solid material content (Khan et al., 2016a). For example, cucumber tissue is more shrinkable
+
+265   than potato because potato cell walls are thicker and stronger (Joardder, Brown, Kumar, &
+
+266   Karim, 2015a).
+
+267      4.2 Effect of drying conditions on material shrinkage
+
+268      The most important drying parameters that influence the shrinkage of material are the
+
+269   drying temperature, drying air velocity, and the relative humidity of drying air. They are
+
+270   discussed below.
+
+271          4.2.1     Drying air temperature
+
+272          Drying temperature plays a significant role for increasing the drying rate that ultimately
+
+273   affects the material shrinkage. Drying below 50°C, the cells remain intact (Halder et al., 2011);
+
+274   therefore, conversion of the intracellular water to free water remains unchanged with the drying
+
+275   progress. The intracellular water moves to intercellular space only through microcapillaries and
+
+                                                     11
+
+[[PAGE 13]]
+276   therefore this migration is very slow, resulting in very low deformation. Halder et al. (2011)
+
+277   argued that the membrane of the cells collapse at once after reaching a specific temperature
+
+278   during processing; however, their argument may not be justified because cell collapse depends
+
+279   on internal thermal stress (Joardder et al. 2015a) that first develops near the surface and
+
+280   gradually penetrates to the center of the sample during convective drying (Khan & Karim,
+
+281   2017a; Khan et al., 2017b). As a result, the cells may collapse progressively from the surface
+
+282   to center; therefore, an anisotropic shrinkage may be observed (Prothon et al., 2003; Khan et
+
+283   al., 2016a).
+
+284           Furthermore, to investigate the effect of temperature on material shrinkage during
+
+285   drying, much observation has shown that temperature has a significant effect on material
+
+286   shrinkage during drying (Valle, Cuadros, & Aguilera, 1998). Most of the fruits and vegetables
+
+287   experience huge volume reduction when they are subjected to drying process at low
+
+288   temperature (20°C). In contrast, when subjected to drying at high temperature (50°C–70°C),
+
+289   food material undergoes limited shrinkage. Likewise, Wang and Brennan (1995) found that
+
+290   shrinkage of potato tissue at higher temperature (70°C) is lower than shrinkage at low
+
+291   temperature (40°C). This is may be due to the case-hardening effect that controls the transport
+
+292   of moisture, which ultimately controls material shrinkage. At low temperature, the moisture is
+
+293   transported in a flat pattern, therefore the stresses inside the food are minimal. Consequently,
+
+294   the material shrinkage is uniform and pronounced. On the other hand, at high temperature the
+
+295   surface of samples is dried very quickly, causing the surface to become stiff (case hardening),
+
+296   which does not allow the material to shrink significantly. Finally, the drying air temperature is
+
+297   the principal controlling factor for material shrinkage, and therefore a linear correlation
+
+298   between moisture content and air temperature is crucial (McMinn & Magee, 1997a, 1997b).
+
+                                                     12
+
+[[PAGE 14]]
+299          4.2.2 Drying air velocity and relative humidity
+
+300          Air velocity is another significant factor that affects material shrinkage during drying.
+
+301   Ratti (1994) found substantial changes of shrinkage with varying air velocity. Shrinkage of
+
+302   fruits and vegetables are decreased during drying with increasing air velocity (Ratti, 1994;
+
+303   Khraisheh, McMinn, & Magee, 2004). This is may be due to the changes of mass transfer from
+
+304   internal to external at different stages of drying. During drying with externally controlled
+
+305   energy transfer, mass transfer occurs by both the internal diffusion and the external convection.
+
+306   At low air velocities surface resistance prevails and therefore the moisture profiles in the
+
+307   sample are relatively flat resulting in low internal stresses. Consequently, food material shrinks
+
+308   uniformly at low air velocities. Besides this, changes in shrinkage with air velocity are not
+
+309   equally significant for all types of fruits and vegetables; for example, the effect of velocity on
+
+310   material shrinkage is most pronounced in potato tissues, less pronounced in apples, and
+
+311   practically negligible in carrots (Ratti, 1994).
+
+312          Sometimes the relative humidity of air may control the material shrinkage. At low
+
+313   relative humidity the Biot number (a dimensionless quantity used in heat transfer calculation)
+
+314   increases, ultimately limiting the material shrinkage (Ratti, 1994). Case hardening strongly
+
+315   affects the amount of material shrinkage evident at low relative air humidity.
+
+316      4.3 Effect of mechanical properties of food material on shrinkage
+
+317          Porosity is the main driving factor that can influence material shrinkage significantly.
+
+318   When the volume reduction of the food material is exactly equal to the volume of the removed
+
+319   water during drying, it is known as ideal shrinkage. If this occurs, no pore formation can be
+
+320   considered in the product. In reality, no food materials follow ideal shrinkage during drying:
+
+321   porosity increases in food materials. Thus the porosity can be calculated from the experimental
+
+322   shrinkage curve, an ideal shrinkage biased curve and an ideal shrinkage curve (Krokida &
+
+                                                         13
+
+[[PAGE 15]]
+323   Maroulis, 1997). From the literature, it is found that porosity is inversely proportional to
+
+324   material shrinkage. Katekawa and Silva (2004) have proposed a relationship between shrinkage
+
+325   and porosity, including variables such as initial density of the wet product, true density of the
+
+326   liquid phase, and true density of the solid phase.
+
+327      The existing constitutive models depend on the modulus of elasticity and Poisson’s ratio.
+
+328   The value of these two mechanical properties significantly changes throughout the drying
+
+329   process that leads to change in the material deformation. Increasing the modulus of elasticity
+
+330   with decreasing moisture content strongly depends on temperature. During drying, material
+
+331   become rubbery with various degree of softness at higher temperatures during drying. Gulati
+
+332   and Datta (2015) argued that with an increase in elastic modulus, the shear modulus of the
+
+333   material increases leading to an increase in the principal tensile stress inside the material. In
+
+334   addition, Poisson’s ratio is responsible for the rate of evaporation of liquid water in food
+
+335   material. A lower Poisson’s ratio means a higher evaporation rate, which ultimately increases
+
+336   the volumetric changes (Gulati & Datta, 2015).
+
+337      4.4 Effect of glass transition temperature on shrinkage
+
+338          The structure of fruits and vegetables are very complex where amorphous form of water
+
+339   present inside the solid food matrix (Sappati, Nayak, & Walsum, 2017). The temperature at (or
+
+340   above) which the amorphous water in the fruits and vegetables changes from a rubbery to
+
+341   glassy state is called glass transition temperature (Tg) (Champion, Le, & Simatos, 2000). Glass
+
+342   transition temperature is also known as solid mobility temperature. The glass transition theory
+
+343   can explain the process of shrinkage during drying (Karathanos, Kanellopoulos, & Belessiotis,
+
+344   1996; Krokida et al., 1998; Cnossen & Siebenmorgen, 2000; Rahman, 2001; Karathanos,
+
+345   2007). In the rubbery state, the food material has a high mobility within the solid matrix.
+
+346   Conversely, in the glassy state, the food material has a low mobility due to high viscosity (in
+
+                                                     14
+
+[[PAGE 16]]
+347   the range of 1012-1013 Pa-s) (Joardder et al., 2017). The food material stays in the rubbery state
+
+348   when its temperature is more than the glass transition temperature. The shrinkage rate is also
+
+349   higher in the rubbery state as the molecular movement is much higher than that in the glassy
+
+350   state. The shrinkage in the rubbery state is directly proportional to the moisture loss. The glass
+
+351   transition temperature (Tg) varies with respect to the components types and the water content
+
+352   in the food. When drying progresses, the glass transition temperature increases with the
+
+353   reduction of moisture content. This phenomenon leads to lower shrinkage rate in the glassy
+
+354   state due to high viscosity of the food material (Sappati et al., 2017). Glassy state during drying
+
+355   usually provides the crispy texture of dried foods.
+
+356   5. Theoretical shrinkage models
+
+357      Fruits and vegetables are highly heterogeneous materials with solid and semisolid
+
+358   structures that contain a three-dimensional solid network or matrix usually holding large
+
+359   quantities of aqueous solution. The solid matrix consists mainly of biopolymer elements. In
+
+360   more complex cases, fruits and vegetables are sometimes considered as composite material
+
+361   which is made of additional structural elements with biopolymers. (Aguilera, Bustos, &
+
+362   Molina, 1992). Moreover, there are many factors that affect the magnitude of shrinkage such
+
+363   as volume of removed water, mobility of the solid matrix, drying rate, and processing
+
+364   conditions. The diverse characteristics of high-moisture foods and process conditions make it
+
+365   complex to understand the physics behind the material shrinkage during drying. In this context,
+
+366   a theoretical shrinkage model could be the best option to predict the actual mechanism of
+
+367   deformation of fruits and vegetables during drying. There are some theoretical shrinkage
+
+368   models based on continuum mechanics which are discussed below, and also shown in Table 1.
+
+                                                      15
+
+[[PAGE 17]]
+369         5.1 Linear elastic model
+
+370             The linear elastic model is the basic mechanistic model of shrinkage prediction. It is
+
+371   the most simplified model in food drying. The mechanical behavior of materials is modeled as
+
+372   a continuous mass rather than as discrete particles. The fundamental linearizing assumptions
+
+373   of linear elasticity are: infinitesimal strains or small deformations (or strains) and linear
+
+374   relationships between the components of stress and strain (Kowalski, 1996; Gulati & Datta,
+
+375   2015). In addition, linear elasticity is valid only for stress states that cannot produce yielding.
+
+376   For linear elastic materials, Hooke’s law is used as the constitutive law.
+
+377             Kowalski (1996) presented a basic mathematical linear elastic model describing the
+
+378   shrinkage phenomenon of materials undergoing dehydration processes. The model was
+
+379   constructed based on the methods of continuum mechanics and the principles of
+
+380   thermodynamics of irreversible processes. In his model, Kowalski (1996) assumed that the
+
+381   material is deformed simultaneously due to the progressive change of heat and moisture as well
+
+382   as the induced stresses during drying. According to the model, the strain tensor  ij is expressed
+
+383   as:
+
+                                               ij   ij X   ij T   ij                       (1)
+
+                                 
+      where  ij ,  ij ,  ij
+                  X    T
+384                                  are the strains due to the change in moisture content, the temperature
+
+385   change and the drying induced stresses, respectively (Kowalski, 1996). The mechanical strain
+
+386    ij  can be elastic, plastic, elastoplastic, viscoplastic, or viscoelastic. For the sake of
+
+387   simplicity, Kowalski (1996) considered the fruits and vegetables as linear elastic and isotropic.
+
+388   Although the model is physically simplified, it gives satisfactory results for the deformations
+
+389   of geometrically arbitrary shaped dried bodies. The result of the linear elastic model mainly
+
+390   depends on the mechanical and thermal properties of fruits and vegetables (Jomaa et al. 1991,
+
+                                                                 16
+
+[[PAGE 18]]
+391   Mrani et al. 1995, Mrani et al. 1997, Ponsart et al. 2003, Chemkhi et al. 2004). These properties
+
+392   alter continuously with time and temperature due to the simultaneous heat and mass transfer
+
+393   during drying. Therefore, prediction of accurate results through this model is insignificant.
+
+394          Niamnuy et al. (2008) modeled highly shrinkable and irregular-shaped biomaterial
+
+395   where they considered the stress–strain relation obeyed Hooke’s constitutive equations of
+
+396   elastic behavior. They developed the model according to the following formulation.
+
+397          The total displacement dU  at any point in the sample during the finite time increment
+
+398   is expressed by
+
+                                                       dU x                                   (2)
+                                             dU   dU y 
+                                                       dU 
+                                                       z
+
+399   where dU x , dU y  and dU z  are displacement in x, y, and z directions.
+
+400                                                                                           and
+             The local total strain d  is a function of the changes in mechanical strain d
+                                                                                                 p
+
+401   the changes in shrinkage strain d   as expressed by
+                                             d
+
+                                          d   d p  d d                               (3)
+
+402          Total strain d  is a function of the total displacement dU  as expressed by
+
+                             1  u ij u ji                                                   (4)
+                         ij              ,   i, j  x, y, z or d   AdU 
+                             2  x j xi 
+
+403   where xi , x j are distance in x, y, and z directions; u is displacement; and [A] is deformation
+
+404   strain matrix.
+
+                                                         17
+
+[[PAGE 19]]
+405           Total displacement dU was estimated from the observed total change in nodal
+
+406   displacement dn using a nodal shape function matrix   , which could be calculated using a
+
+407   polynomial approach and the expression can be written as,
+
+                                                 dU   dn                                    (5)
+
+408   It can be written from equations (4) and (5) that
+
+                           d   Adn  Bdn Where, B  A                         (6)
+
+409           Change of stresses is the function of mechanical strain d           , as by,
+                                                                                       p
+
+                                                                                                   (7)
+                 d ij 
+                             E  p
+                                
+                           1  
+                                  d ij 
+                                          1  2
+                                                                             
+                                                 d xxp  d yyp  d zzp  ij  , i, j  x, y, z
+                                                                               
+
+410   where E is Young’s modulus, ν is Poisson’s ratio (ratio between longitudinal and lateral
+
+411   strains),  is stress,  is strain and  ij is the Kronecker delta. This is the constitutive equation
+
+412   for elastic materials.
+
+413                                                       
+              A free shrinkage strain increment d is related to the linear shrinkage coefficient
+                                                  d
+
+414   due to moisture loss, as expressed by
+
+                                                  d d                                            (8)
+                                                  d
+                                                  d 
+                                                  d d 
+                                       d d
+                                                
+                                                  0 
+                                                        ,    d d  SV1 / 3
+                                                       
+                                                  0 
+                                                  0 
+                                                       
+
+415   where SV is the volumetric shrinkage coefficient.
+
+416           The Young’s modulus E then can be correlated by equation (9) (Yang et al., 2001),
+
+                                                E  c1 exp c2 M                                  (9)
+
+                                                             18
+
+[[PAGE 20]]
+417   where c1 and c2 are the empirical constants and M is the moisture content, kg kg−1, dry basis.
+
+418          Many limitations of the linear elastic model make it infeasible to apply this model for
+
+419   accurate prediction of shrinkage during drying of various types of food products. Moreover,
+
+420   Hooke’s law is not valid for biological materials (Llave et al., 2016) because of its limitation
+
+421   when applied to large deformation (as discussed in section 2.1).
+
+422
+
+423                                    [Table 1 can be inserted here]
+
+424
+
+425      5.2 Elastoplastic model
+
+426          Elastoplasticity is the condition of showing both elastic and plastic properties, typically
+
+427   as a result of being stretched beyond the elastic limit. Due to the diverse nature of food
+
+428   materials, different food materials show various stress–strain patterns. The stress–strain
+
+429   relationship is expressed through the elastoplastic stress–strain matrix. Yang et al. (2001) have
+
+430   developed a two-dimensional shrinkage model and showed that the shrinkage coefficients in
+
+431   axial and radial directions are significantly different during dehydration processes. They
+
+432   assumed potato behavior as elastoplastic and nonisotropic within a small strain region (Yang
+
+433   et al., 2001); however, some researchers have postulated that this assumption is not valid for
+
+434   other types of fruits and vegetables (Llave et al., 2016). Yang et al. (2001) developed the
+
+435   elastoplastic model considering the strain displacement is proportional to the shrinkage
+
+436   coefficient. They developed their model according to the formulation discussed below.
+
+437      Total displacement dU  at any point during a specific time increment is written as
+
+                                                     19
+
+[[PAGE 21]]
+(10)
+                                                      dU   
+                                                                 du 
+                                                                     
+                                                                 dv 
+
+438   where du and dv are displacements in r and z direction, respectively.
+
+439          Local total strain d  is a sum of mechanical strain (deformation due to
+
+440   elastoplasticity) d s  and shrinkage strain (deformation due to loss of moisture), d o ,
+
+                                                d   d s   d o  .                                       (11)
+
+441          Then the elastoplastic stress–strain matrix is needed to solve the elastoplastic model.
+
+442   The elastoplastic stress–strain matrix can be formulated as follows:
+
+                                                                                                            (12)
+                                               1        1  1 
+                                                                                   0                         
+                                                                                           d          
+                                                                                   0   d  
+                                                                                                     sr
+                                                          1
+                            E 1    1                        1                     .  sz  
+                            1   1  2                                                         
+                d r 
+                                                                    1            0   d s  
+               d                             1  1                                                
+                z                                                          1   2        d srz  
+                        
+                                              0          0         0                                      
+               d                                                        21                         
+               d rz                                                                                     
+                                                  r 2
+                                                              r z  r   r rz   d sr 
+                                                                                                         
+                                     9Gm2                     2
+                                                                                     
+                                                                                          z rz     d      
+                            2                                 z          z 
+                                                                                                  .      sz
+
+                             3Gm  H                                2
+                                                                                       rz   d s 
+                                                                                               
+                                                  Sym. matrix                      rz2   d srz 
+
+443   where  is stress,  is equivalent stress,   is deviatoric stress,  is strain,  is time, G m is
+
+444   shear modulus, H  is strain-hardening rate,  is yield stress parameter, E is Young’s
+
+445   Modulus and ν is Poisson’s ratio.
+
+446          The yield stress parameter,  allowed for the transition from elastic to elastoplastic
+
+447   deformation. In particular,
+
+448     0 when    d for any  d 
+
+449     1 when    d and  d   0
+
+                                                                   20
+
+[[PAGE 22]]
+450   where  d is yield stress and  d is equivalent yield stress.
+
+451          Shrinkage strain increment d o  is related to the directional shrinkage coefficient due
+
+452   to moisture loss and can be expressed by,
+
+                                                  d ro  dSr                                  (13)
+                                                  d  dS 
+                                       d o    zo    z 
+                                                  do  dS 
+                                                   0   0 
+
+453   where Sr , S z and S are directional shrinkage coefficient in r, z, and  direction for a
+
+454   cylindrical sample.
+
+455          Yang et al. (2001), found that the deformation of material depends on the shape and
+
+456   size of the material. They argued that the axial shrinkage coefficients and the radial coefficients
+
+457   were significantly different during air-drying. In the same direction, the shrinkage coefficients
+
+458   at the center of the sample were different from those of the side region. Therefore, the
+
+459   assumptions of equal shrinkage in all dimensions and the models based on this concept may
+
+460   not be valid for the potato during drying.
+
+461      5.3 Hyperelastic model
+
+462          A hyperelastic material model is a type of constitutive model for ideally nonlinear
+
+463   elastic material. In this model, the stress–strain relationship derives from a strain energy density
+
+464   function, whose stress–strain relationship can be defined as nonlinearly elastic, isotropic,
+
+465   incompressible and generally independent of strain rate. Dhall and Datta (2011) developed a
+
+466   poromechanics based modeling framework to describe shrinkage in fruits and vegetables. They
+
+467   discussed two special cases of deformation such as small and large deformation of the solid
+
+468   matrix. In their analysis, they have considered the biological materials as rubber and polymer
+
+469   like materials which often exhibit nonlinear stress-strain behavior. This is due to the continuous
+
+                                                        21
+
+[[PAGE 23]]
+470   moisture loss and change of mechanical properties during drying, which causes the food tissue
+
+471   to transform from a soft rubbery state to a hard glassy state (Ratti, 2001; Katekawa & Silva,
+
+472   2006; Kurozawa, Hubinger, & Park, 2012).
+
+473          According to Gulati and Datta (2015), S is the total deformation gradient tensor, S el
+
+474   and S M are the elastic and moisture effects of the material deformation gradient tensors for
+
+475   large deformation during drying, respectively. Mathematically it can be written,
+
+                                             S  S M S el                                         (14)
+
+476   where all the parameters are in vector form.
+
+477          Linear momentum balance considering no body force for the solid in Lagrangian
+
+478   coordinates can be written as,
+
+                                                       
+                                            X .  S elT  0                                      (15)
+
+479   where  is the second Piola-Kirchhoff stress tensor. The relationship of Piola-Kirchhoff stress
+
+480   tensor and the Cauchy stress tensor can be written as,
+
+                                            J el Sel1 SelT                                   (16)
+
+481   where J el is the elastic Jacobian (the elastic volume ratio of the material that can be calculated
+
+482   by taking the determinant of the elastic deformation gradient tensor). The second Piola–
+
+483   Kirchhoff stress tensor is a material stress tensor. The second Piola–Kirchhoff stress tensor is
+
+484   defined as the work conjugate of the rate of Green tensor, Eel  1    2  C - I  , where I is the
+485   identity tensor and C is the right Cauchy–Green tensor. Thus, the second Piola–Kirchhoff stress
+
+486   tensor is given by,
+
+487
+                                                    U s                                          (17)
+                                              =
+                                                    E el
+
+                                                        22
+
+[[PAGE 24]]
+488           Material deformation can be characterized by the elastic strain energy density, U S . A
+
+489   Neo-Hookean constitutive model can be considered for large deformation occurred due to
+
+490   moisture loss, given by,
+
+                                                                                                            (18)
+                                  US 
+                                          2
+                                             I  3  2ln J    lnJ 
+                                              1
+                                                               2
+                                                                el          el
+                                                                                 2
+
+491   where  is the Lamé constant and µ is the shear modulus of the material, both are related to
+
+492   the elastic modulus E and Poisson’s ratio ν; Jel is the elastic Jacobian and ̅ is the first invariant
+
+493   of right Cauchy–Green tensor.
+
+494           The isochoric part of the elastic deformation gradient, S el , is a function of the dilatation
+
+              1
+495   part, J el 3 , and the elastic deformation gradient, S el .
+
+                                                           1                                                 (19)
+                                                  Sel  J el 3 Sel
+
+496           The    elastic    Jacobean, J el  det  Sel  ,       is   the    ratio   of   the   total   Jacobean,
+
+497   J   V   det  S  and the Jacobean due to moisture loss, J M . The volume change due to
+             V0 
+
+498   moisture loss, J M , can be determined from the change in the volume fraction of the liquid water.
+
+                                                         1   w0                                             (20)
+                                                  JM 
+                                                         1  w
+
+499
+
+500   where  w0 , is the initial volume fraction of liquid water and  w , is the volume fraction of liquid
+
+501   water at any instant.
+
+502           Formation of pores during drying is usual in the high-moisture foods, which
+
+503   significantly affects the physical quality of the food sample (Joardder et al., 2017). Glass
+
+504   transition temperature, sample temperature, drying air temperature, moisture content and
+
+505   variable material properties like, solid density, initial density, particle density are prior
+
+                                                                23
+
+[[PAGE 25]]
+506   responsible for pore formation (Joardder et al., 2017). In literature, many mathematical models
+
+507   show that shrinkage and porosity are related to each other (Gulati & Datta, 2015). Moreover,
+
+508   porosity can be measured from the experimental shrinkage curve and the ideal shrinkage biased
+
+509   curve (Madiouli et al. 2007). Migrated water during drying create void spaces which leads to
+
+510   develop pore space inside the sample and the deformation of the solid matrix compensates that
+
+511   void volume. As the material shrinks, its porosity changes continuously but the mass of the
+
+512   solid phases remain same. Therefore, the porosity at any instant can be found from the mass
+
+513   conservation of solid phase during drying.
+
+                                    solidV 1      solidV0 1  0  
+                                                                          
+                                           1  0      1  0                                    (21)
+                                     1         1
+                                            V             J                
+                                              V0                           
+
+514   where  is the porosity at any instant, 0 is the initial porosity and  solid is the density of the
+
+515   solid.
+
+516      5.4 Viscoelastic model
+
+517            Viscoelasticity is the property of materials that exhibit both elastic and viscous
+
+518   characteristics when undergoing deformation. The viscosity of a viscoelastic substance is strain
+
+519   rate dependent. Purely elastic materials do not dissipate energy (as heat) when a load is applied,
+
+520   then removed. However, a viscoelastic substance loses energy when a load is applied then
+
+521   removed. Hysteresis can be observed in the stress–strain curve, with the area of the loop being
+
+522   equal to the energy lost during the loading cycle. Viscoelasticity is studied using dynamic
+
+523   mechanical analysis by applying a small oscillatory stress and measuring the resulting strain.
+
+524   Itaya, Kobayashi, and Hayakawa (1995) developed a three-dimensional model of heat and mass
+
+525   transfer for a composite body undergoing a dehydration process where they first assumed the
+
+526   materials (hydrates of high amylose starch granules) as viscoelastic. Considering the same
+
+527   assumptions, Sakai, Yang, and Watanabe (2002) developed a viscoelastic model to describe
+
+                                                           24
+
+[[PAGE 26]]
+528   deformation for food materials accompanying changes in moisture content. They showed that
+
+529   the assumption of potato is viscoelastic which is theoretically more accurate for non-uniform
+
+530   volume reduction than the assumption of elastoplastic material during drying. To develop a
+
+531   theoretical model for roasting of eggplant, Llave et al. (2016) assumed vegetables as
+
+532   viscoelastic material where the constitutive relationship of stress–strain deviates from Hooke’s
+
+533   law. However, they used a Burgers model for the constitutive relationship between stress and
+
+534   strain, whereas Sakai et al. (2002) used a Maxwell model. A Maxwell viscoelastic model
+
+535   cannot predict creep accurately for diverse biological materials (Mahiuddin et al. 2018).
+
+536   According to the literature, viscoelastic model can be developed through the following
+
+537   formulations.
+
+538           The local total strain increment d  can be represented by the sum of the elastic strains
+
+539   increment d s , the initial shrinkage strains increment d o  and the viscositic strains
+
+540   increment d c  by the following equation (Sakai et al., 2002):
+
+                                       d   d s   d o   d c                                  (22)
+
+541   The stress is expressed by the equation,
+
+                                                                                                       (23)
+                                             1       1         1 
+                                                                             0    
+                   d r                                                        d Sr 
+                  d                                 1                   0   d 
+         d    z   E (1   ) 1             
+                                                                  1               Sz   D d s 
+                                                                                           
+                  d   1   1  2                        1        0   d S 
+                                            1      1                         
+                  d rz                                                           d 
+                                                                        1  2   Srz 
+                                             0         0          0              
+                                                                        21   
+
+542   where E and are the Young’s modulus (Pa) and Poisson’s ratio, respectively.
+
+543   The viscositic strain increment d c  is expressed as follows (Sakai et al., 2002):
+
+                                                             25
+
+[[PAGE 27]]
+ d rV       r         r                                (24)
+                                   d                      
+                                            3  z      3  z 
+                           d c   zV         d c        ct
+                                   d V  2        2   
+                                  d rzV     rz      rz 
+
+544   where d c and d c are the equivalent viscositic strain increment and the equivalent viscositic
+
+545   strain rate respectively, t is the increment of t (time), and  r ,  z , and   in the matrix of
+
+546   Equation (18) are deviatoric stresses. Instead, the initial shrinkage strain increment d o , a
+
+547   strain caused by heating, can be written as
+
+                                                    d ro   dS r                                (25)
+                                                    d   dS 
+                                         d o    zo    z 
+                                                    d o  dS 
+                                                     0   0 
+
+548   where S r , S z , S are the free shrinkage coefficients in r, z , and  directions for a cylindrical
+
+549   sample. The total strain d  is a function of the total displacements vector, dU , as expressed
+
+550   by
+
+                                                                                                 (26)
+                                             r   0
+                                                  
+                                            0        
+                                    d    1    z  du   AdU 
+                                                         
+                                                  0   dv 
+                                            r        
+                                                 
+                                                     
+                                             z   r 
+
+551   where A is the strain nodal displacement matrix, and du and dv are displacements in r and
+
+552   z directions, respectively.
+
+                                                          26
+
+[[PAGE 28]]
+553   6. General trends of output parameters of shrinkage
+
+554          Based on the extensive review of the literatures on shrinkage models and the authors’
+
+555   current research, the general trends of the different output parameters are identified and
+
+556   presented in the following sections.
+
+557      6.1 Change of volume with drying air velocity
+
+558          Figure 1 shows general trends of the effect of drying air velocity on material shrinkage
+
+559   of fruits and vegetables during drying. The rate of volume changes (V/V0, where V is the volume
+
+560   at any time of drying, and V0 is the initial volume of the sample) at the early stage of drying is
+
+561   not so significant. In the next stage (the middle stage) of drying, the rate of material shrinkage
+
+562   increases significantly, followed by the ideal shrinkage. However, the rate of volume reduction
+
+563   attenuates at the final stage of drying (Figure 1). This variation of volume reduction is governed
+
+564   by the rate of internal mass transfer as well as process conditions. At the early stages of drying,
+
+565   mostly free water is migrated from intercellular spaces to the environment through evaporation
+
+566   which has minor effect on material shrinkage (Joardder et al., 2015a; Khan, Kumar, & Karim,
+
+567   2017d; Khan et al., 2017b). After the early stage of drying, intracellular water starts to migrate
+
+568   through rupturing the cell membrane (Khan et al., 2017b), and therefore a significant volume
+
+569   reduction follows (Joardder et al., 2015b). After the middle stage of drying, most of the
+
+570   intracellular water has been transferred to the intercellular spaces followed by transfer to
+
+571   environment through evaporation. After the middle stage of drying, a small amount of water
+
+572   remains in the micropores inside the intracellular spaces and the cell wall environment. This
+
+573   type of water is termed as strongly bound water which is strongly bonded with the internal
+
+574   micromolecular species and therefore difficult to transport during drying (Khan et al., 2016b;
+
+575   Khan, Wellard, Mahiuddin, & Karim, 2017c; Khan et al., 2017e). At the final stage of drying,
+
+576   this type of water is transported with a longer drying time that leads to attenuation of the rate
+
+577   of volume reduction. In addition, it can be seen from Figure 1 that the volume reduction
+
+                                                      27
+
+[[PAGE 29]]
+578   decreases with increasing drying air velocity. This is mainly due to the case hardening that
+
+579   occurs while faster drying is imposed (as discussed in section 4.2.2).
+
+580
+
+581                                   [Figure 1 can be inserted here]
+
+582
+
+583      6.2 Change of volume with temperature
+
+584          During drying, volume reduction may coincide with the ideal shrinkage for much of the
+
+585   drying process (i.e., the middle stage) but not for the initial and final stages of drying, as shown
+
+586   in Figure 2, since shrinkage is referred to as ideal when volume change is equal to the amount
+
+587   of liquid water lost. The volume reduction at the early stage and final stage of drying is slower
+
+588   than the middle stage of drying. This is mainly due to the transport characteristics of different
+
+589   types of water (free water, loosely bound water, and strongly bound water) at different stages
+
+590   of drying (Khan et al., 2017b), as discussed in section 6.1. In addition, when drying at high
+
+591   temperature, the surface of the material dries out much faster than the core; therefore, crust
+
+592   formation occurs at the surface that leads to decrease the volume reduction. On the other hand,
+
+593   at low drying temperature, the moisture is transported in a flat pattern; therefore, the stresses
+
+594   inside the food are minimal. Consequently, there is a uniform, large material shrinkage (as
+
+595   discussed in section 4.2.1). Moreover, at high temperature when the drying rate is higher, the
+
+596   surface of the sample enters a glassy state while the core is still wet and in a rubbery state,
+
+597   leading to the coexistence of both rubbery and glassy states at higher than average moisture
+
+598   content. This rubbery–glassy phase transition is accompanied by large changes in the
+
+599   mechanical properties and transport properties (Gulati & Datta, 2015).
+
+600                                   [Figure 2 can be inserted here]
+
+                                                      28
+
+[[PAGE 30]]
+601      6.3 Changes in stresses during drying
+
+602           The principal stress (i.e., thermal stress) is induced while drying is in progress due to
+
+603   the moisture and temperature gradient. This stress increases at different stages of drying. It
+
+604   mainly depends on the penetration rate of heat energy during drying. Figure 3 shows the
+
+605   variation of maximum principal tensile stress with moisture ratio. It can be seen that the stress
+
+606   increases with the propagation of heat energy. The cell membrane of the material collapsed
+
+607   when this stress just crosses the fracture stress line (Figure 3). Gulati and Datta (2015), found
+
+608   that while drying at the highest rate, the principal tensile stress curve crosses the fracture stress
+
+609   line at a specific drying time (about 1.2 hours). Likewise, Wang and Brennan (1995), reported
+
+610   that potato samples cracked near the top surface about after one hour in the drying process. For
+
+611   intermediate drying rates, the maximum principal tensile stress value stays below the fracture
+
+612   stress curve, indicating that there is no material fracture. Moreover, it is also noted by Wang &
+
+613   Brennan (1995), that there was no visible crack on the material surface during drying, and the
+
+614   material shrank to a solid core. For the lowest drying rate, the maximum principal tensile stress
+
+615   stays well below the fracture strength of the material and there is no crack incipience (Gulati
+
+616   & Datta, 2015).
+
+617
+
+618                                   [Figure 3 can be inserted here]
+
+619
+
+620   7. Challenges for prediction of material shrinkage during drying
+
+621           Based on an extensive literature review, the following key factors contribute to the
+
+622   current challenges to developing an accurate physics-based shrinkage model for food drying.
+
+                                                       29
+
+[[PAGE 31]]
+623      7.1 Food material characterization
+
+624          Due to the diverse nature of fruits and vegetables, it is very important to characterize
+
+625   the material as to whether it is elastic, plastic, viscoelastic, elastoplastic or something else.
+
+626   Existing research has been conducted based on some simplistic assumptions regarding the
+
+627   behavior of fruits and vegetables, including that it behaves like elastic (i.e., a rubberlike
+
+628   material) (Dhall & Datta, 2011; Gulati & Datta, 2015; Gulati et al., 2016), elastoplastic
+
+629   (Tsukada et al., 1991; Izumi & Hayakawa, 1995; Akiyama & Hayakawa, 2000; Yang et al.,
+
+630   2001; Curcio & Aversa, 2014), and viscoelastic (Itaya et al., 1995; Perré & May, 2001; Sakai
+
+631   et al., 2002; Lu et al., 2015; Llave et al., 2016; ). However, the heterogeneous structure of
+
+632   different fruits and vegetables makes its actual behavior complex, and therefore, without
+
+633   material characterization, categorization of the material behavior may not be justified. By
+
+634   interpreting the necessity of material characterization, much research has been done on the
+
+635   characterization of different porous materials, such as for polymers (Paola, Pirrotta, & Valenza,
+
+636   2011). Nevertheless, there is no study that adequately addresses the categorization of the
+
+637   behavior of fruits and vegetables. To investigate some of the mechanical properties, a few
+
+638   researchers have conducted experimental analysis of stress relaxation behavior (Lu & Puri,
+
+639   1992; Blahovec, 1996; Lewicki & Jakubczyk, 2004; Roopa & Bhattacharya, 2014). Although
+
+640   results of those studies are significant for calculating material properties, material
+
+641   characterization is still lacking. This is because of the complexity of stress–strain relaxation
+
+642   analysis of diverse food materials.
+
+643      7.2 Modelling of shrinkage of food materials
+
+644          Existing models are based on some simplistic assumptions to minimize the complexity
+
+645   of the model formulation and calculation. In most cases, it is considered that fruits and
+
+646   vegetables are deformed on a small scale and therefore they have used Hooke’s law for up to
+
+                                                     30
+
+[[PAGE 32]]
+647   10% strain levels during drying. However, these assumptions may not true for different types
+
+648   of food materials because most of the fruits and vegetables undergo a large anisotropic
+
+649   deformation when they are subjected to simultaneous heat and mass transfer processes during
+
+650   drying (Dhall & Datta, 2011; Gulati & Datta, 2015). These types of simplistic assumptions
+
+651   have been used in the existing literature in order to reduce the complexity of the model
+
+652   formulation and solution. Therefore, for accurate prediction of material shrinkage a realistic
+
+653   generalized theoretical model is needed and that is the challenge for further research.
+
+654          In addition, the classical viscoelastic material models that have been used in the existing
+
+655   literature have some limitations. For instance, to reproduce the actual material’s viscoelastic
+
+656   behavior (with creep and relaxation phases) many parameters are needed which makes the
+
+657   model more complex. Moreover, the parameters are found by means of best fitting numerical
+
+658   procedures which can lead to meaningless parameters from a physical point of view (e.g.,
+
+659   negative coefficients of stiffness and viscosity in a spring and dashpot) (Paola et al., 2011).
+
+660   Besides this, most of the current literature has used the classical Maxwell model; however, this
+
+661   model cannot accurately predict the creep property of the viscoelastic fruits and vegetables.
+
+662      7.3 Mechanical properties of food materials
+
+663          Shrinkage of fruits and vegetables strongly depends on the mechanical properties. Most
+
+664   of the existing literature considered the modulus of elasticity of potato tissue as a function of
+
+665   moisture content; however, the modulus of elasticity also depends on the temperature and the
+
+666   material structure (Khan et al., 2016a). Moreover, the modulus of elasticity relationship that
+
+667   has been widely used in the current literature was based on data from experiments conducted
+
+668   at room temperature (Yang et al., 2001). Instead, for a realistic understanding, an accurate
+
+669   relationship of modulus of elasticity is needed based on data that has been generated while
+
+670   drying is in progress; and this is the ultimate challenge for future research. Furthermore, the
+
+                                                     31
+
+[[PAGE 33]]
+671   correlation developed for potato may not be applicable for other food materials due to their
+
+672   diverse nature and properties; therefore further investigation of the modulus of elasticity for
+
+673   specific food materials is crucial.
+
+674          In addition, the value of Poisson’s ratio was assumed for most of the cases without
+
+675   proper justification although these values are strongly dependent on moisture content and
+
+676   temperature, and changes throughout the drying process. The use of an inappropriate Poisson’s
+
+677   ratio may lead to erroneous prediction of deformation. Therefore, consideration of accurate
+
+678   Poisson’s ratio for different fruits and vegetables is important for better prediction of material
+
+679   shrinkage during drying.
+
+680   8. Shrinkage measuring techniques
+
+681           Shrinkage of food sample during drying can be measured by the liquid displacement
+
+682   method and imaging technique. The liquid displacement method gives the homogeneous
+
+683   volume shrinkage whereas heterogeneous shrinkage (both area and volume change) can be
+
+684   measured by imaging technique. Imaging technique for measuring shrinkage is also known as
+
+685   non-intrusive technique. In literature several techniques were used for the shrinkage
+
+686   measurement which are summarized below.
+
+687          Volume of the samples can be measured by the liquid displacement method (Zogzas et
+
+688   al., 1994; Krokida et al., 1997; Gulati et al., 2016). The experimental apparatus consists of a
+
+689   compartment, in which the sample is put, and of a measuring burette that is marked in volume
+
+690   scale in (ml) to measure the displaced volume of the liquid. The compartment of the apparatus
+
+691   can be closed hermetically by a lid. The apparatus is filled with a suitable portion of a liquid.
+
+692   Toluene, n-heptane, and mercury can be used as test liquid. The displaced volume of the test
+
+693   liquid is measured by turning the apparatus upside down without and with the sample
+
+                                                     32
+
+[[PAGE 34]]
+694   immersed. The measuring accuracy depends on the accuracy of the burette, usually an accuracy
+
+695   of 0.05 ml is used.
+
+696          Shrinkage measurement by using imaging technique involves image segmentation,
+
+697   noise reduction and then conversion to a binary image. In the segmentation process, the
+
+698   information of every pixel of the image is specified and noise is eliminated from the image,
+
+699   which is then followed by converting to a binary image for identifying the surface area. Raw
+
+700   images can be taken by X-ray micro-tomography (µCT), Laser Scanning, Scanning Electron
+
+701   Microscope (SEM), camcorder, digital video camera attached with stereo-microscope,
+
+702   computer vision, and colour line-scan digital camera. Raw images can be processed by different
+
+703   software to get the shrinkage data. ImageJ, MATLAB, CAD software, UTHSCSA Image Tool,
+
+704   Presitt algorithm, and Digital Image Correlation (DIC) algorithm are widely used for image
+
+705   processing techniques to measure shrinkage.
+
+706          Gulati et al. (2016) measured shrinkage during microwave drying by placing a digital
+
+707   camcorder near the hole on the side face of the microwave and analyzing the images using
+
+708   ImageJ software to get the area shrinkage. Hansson, Couceiro, and Fjellner (2016)
+
+709   experimentally measured radial and tangential shrinkage of wood by tomography (CT) images
+
+710   and compared the results with those obtained by computer-aided design (CAD) software on
+
+711   the same images. Computer vision systems which include sample distributing unit, image
+
+712   capture unit and image processing unit were successfully designed and implemented for
+
+713   characterizing the drying shrinkage of tobacco lamina (Zhu, Wang, Xu, & Du, 2014). A stereo-
+
+714   correlation technique was used to determine the volume (both the radial and axial shrinkage)
+
+715   of a banana during convective drying where two cameras were used to determine the shrinkage
+
+716   parameters of each camera (Madiouli et al., 2011). Recently an image processing algorithm has
+
+717   been effectively used for measuring the relative area reduction during convective drying of
+
+                                                    33
+
+[[PAGE 35]]
+718   sugar kelp (Sappati et al., 2017). They have developed a new image processing algorithm based
+
+719   on pixel thresholding in MATLAB.
+
+720   9. Conclusion
+
+721      Drying of fruits and vegetables are very complex process where heat and mass transfer
+
+722   occurs simultaneously along with volume reduction. Physical quality of dried food materials
+
+723   largely depends on the extent of deformation during drying. In contrast, rehydration capacity
+
+724   and rehydration rate of the dried fruits and vegetables are strongly related to the shrinkage.
+
+725   These attributes can be improved by controlling the extensive deformation of the dehydrated
+
+726   product during simultaneous heat and mass transfer.
+
+727      This article presented the different aspects of shrinkage and the factors that affect the large
+
+728   deformation during drying. It has been manifested from the previous literature that the fruits
+
+729   and vegetables can be considered as elastic, hyperelastic, elastoplastic or viscoelastic while
+
+730   developing a shrinkage model. Then the formulation of current shrinkage models and their
+
+731   typical results have been discussed. Finally, the current challenges to develop theoretical
+
+732   shrinkage model have been identified and discussed. The critical review in this paper identified
+
+733   many limitations of the existing models and therefore a generalized shrinkage model that is
+
+734   applicable for diverse fruits and vegetables is essential. This review also discussed that varying
+
+735   drying parameters and changing mechanical properties are primarily responsible for large and
+
+736   anisotropic shrinkage that occurs during drying. The variation of drying air velocity and
+
+737   temperature does affect the material shrinkage. Therefore, the future research should be
+
+738   devoted towards developing a generalized theoretical shrinkage model considering the material
+
+739   characterization and real-time thermo-physical properties of fruits and vegetables during
+
+740   drying. This paper will contribute to a better understanding of shrinkage phenomena and
+
+741   associated factors through the development of a physics-based shrinkage model.
+
+                                                     34
+
+[[PAGE 36]]
+742      Acknowledgments
+
+743      The authors are sincerely grateful to the Advanced Queensland Fellowship (AQF) and
+
+744   Queensland University of Technology, Australia for funding which has enabled the conduct of
+
+745   this research.
+
+746      Author contributions
+
+747      Md Mahiuddin researched the previous articles published in the field of food drying and
+
+748   shrinkage, organized and drafted the manuscript. Md. Imran H. Khan, C. Kumar, M. M.
+
+749   Rahman, and M. A. Karim led the work and critically revised the manuscript.
+
+750      References
+
+751   Aguilera, J., Bustos, M., & Molina, E. (1992). The degradability of legume seed meals in the
+752          rumen: effect of heat treatment. Animal Feed Science and Technology, 36(1), 101-112.
+753   Akiyama, T., & Hayakawa, K. I. (2000). Heat and moisture transfer and hygro-physical
+754          changes in elastoplastic hollow cylinder-food during drying. Journal of Food Science,
+755          65(2), 315-323.
+756   Akiyama, T., Liu, H., & Hayakawa, K. I. (1997). Hygro-stress multi-crack formation and
+757          propagation in cylindrical viscoelastic food undergoing heat and moisture transfer
+758          processes. International Journal of Heat and Mass Transfer, 40(7), 1601-1609.
+759   Aprajeeta, J., Gopirajah, R., & Anandharamakrishnan, C. (2015). Shrinkage and porosity
+760          effects on heat and mass transfer during potato drying. Journal of Food Engineering,
+761          144, 119-128. doi:10.1016/j.jfoodeng.2014.08.004
+762   Blahovec, J. (1996). Stress relaxation in cherry fruit. Biorheology, 93(6), 451-462.
+763   Champion, D., Le Meste, M., & Simatos, D. (2000). Towards an improved understanding of
+764          glass transition and relaxations in foods: molecular mobility in the glass transition
+765          range.    Trends      in    Food     Science     &     Technology,      11(2),   41-55.
+766          doi:https://doi.org/10.1016/S0924-2244(00)00047-9
+767   Chemkhi, S., Zagrouba, F., & Bellagi, A. (2004). Mathematical model for drying of highly
+768          shrinkable media. Drying Technology, 22(5), 1023-1039. doi:10.1081/drt-120038578
+
+                                                    35
+
+[[PAGE 37]]
+769   Cnossen, A. G., & Siebenmorgen, T. J. (2000). The glass transition temperature concept in rice
+770          drying and tempering: effect on milling quality. Transactions of the ASAE, 43(6), 1661-
+771          1667. doi:10.13031/2013.3066
+772   Curcio, S., & Aversa, M. (2014). Influence of shrinkage on convective drying of fresh
+773          vegetables: A theoretical model. Journal of Food Engineering, 123, 36-49.
+774          doi:http://dx.doi.org/10.1016/j.jfoodeng.2013.09.014
+775   Del Valle, J., Cuadros, T., & Aguilera, J. (1998). Glass transitions and shrinkage during drying
+776          and storage of osmosed apple pieces. Food Research International, 31(3), 191-204.
+777   Dhall, A., & Datta, A. K. (2011). Transport in deformable food materials: A poromechanics
+778          approach. Chemical Engineering Science, 66(24), 6482-6497. doi: 10.1016/j. ces. 2011.
+779          09.001
+780   Di Paola, M., Pirrotta, A., & Valenza, A. (2011). Viscoelastic behavior through fractional
+781          calculus: An easier method for best fitting experimental results. Mechanics of
+782          Materials, 43(12), 799-806. doi:10.1016/j.mechmat.2011.08.016
+783   Dissa, A. O., Desmorieux, H., Savadogo, P. W., Segda, B. G., & Koulidiati, J. (2010).
+784          Shrinkage, porosity and density behaviour during convective drying of spirulina.
+785          Journal of Food Engineering, 97(3), 410-418. doi: http: //dx.doi.org/10.1016/j.
+786          jfoodeng. 2009.10.036
+787   Gabas, A. L., Menegalli, F. C., & Telis-Romero, J. (1999). Effect of chemical pretreatment on
+788          the physical properties of dehydrated grapes. Drying Technology, 17(6), 1215-1226.
+789          doi:10.1080/07373939908917606
+790   Gulati, T., & Datta, A. K. (2015). Mechanistic understanding of case-hardening and texture
+791          development during drying of food materials. Journal of Food Engineering, 166, 119-
+792          138. doi:10.1016/j.jfoodeng.2015.05.031
+793   Gulati, T., Zhu, H., & Datta, A. K. (2016). Coupled electromagnetics, multiphase transport and
+794          large deformation model for microwave drying. Chemical Engineering Science, 156,
+795          206-228. doi:http://dx.doi.org/10.1016/j.ces.2016.09.004
+796   Halder, A., Datta, A. K., & Spanswick, R. M. (2011). Water transport in cellular tissues during
+797          thermal processing. AIChE Journal, 57(9), 2574-2588. doi:10.1002/aic.12465
+798   Haman, J., & Konstankiewicz, K. (2000). Destruction processes in the cellular medium of a
+799          plant: Theoretical approach. International Agrophysics, 14(1), 37-42.
+800   Hansson, L., Couceiro, J., & Fjellner, B. A. (2016). Estimation of shrinkage coefficients in
+801          radial and tangential directions from CT images. Wood Material Science &
+802          Engineering, 12(4), 251-256. doi:10.1080/17480272.2016.1249405
+                                                    36
+
+[[PAGE 38]]
+803   Hills, B. P., & Nott, K. P. (1999). NMR studies of water compartmentation in carrot
+804          parenchyma tissue during drying and freezing. Applied Magnetic Resonance, 17(4),
+805          521-535. doi:10.1007/bf03162084
+806   Irudayaraj, J., & Haghighi, K. (1993a). I. Theory and finite element formulation. Drying
+807          Technology, 11(5), 900-927. doi:10.1080/07373939308916876
+808   Irudayaraj, J., Haghighi, K., & Stroshine, R. (1993b). II. Application to grain kernels. Drying
+809          Technology, 11(5), 929-959. doi:10.1080/07373939308916877
+810   Itaya, Y., Kobayashi, T., & Hayakawa, K. I. (1995). Three-dimensional heat and moisture
+811          transfer with viscoelastic strain-stress formation in composite food during drying.
+812          International   Journal    of   Heat    and   Mass     Transfer,   38(7),   1173-1185.
+813          doi:http://dx.doi.org/10.1016/0017-9310(94)00245-Q
+814   Izumi, M., & Hayakawa, K. I. (1995). Heat and moisture transfer and hygro-stress crack
+815          formation and propagation in cylindrical, elastoplastic food. International Journal of
+816          Heat and Mass Transfer, 38(6), 1033-1041.
+817   Jayaraman, K. S., Gupta, D. K. D., & Rao, N. B. (1990). Effect of pretreatment with salt and
+818          sucrose on the quality and stability of dehydrated cauliflower. International Journal of
+819          Food Science & Technology, 25(1), 47-60. doi:10.1111/j.1365-2621.1990.tb01058.x
+820   Joardder, M. U. H., Kumar, C., & Karim, M. A. (2017). Prediction of porosity of food materials
+821          during drying: Current challenges and directions. Critical Reviews in Food Science and
+822          Nutrition, 1-12. doi:10.1080/10408398.2017.1345852
+823   Joardder, M. U. H., Brown, R. J., Kumar, C., & Karim, M. A. (2015a). Effect of cell wall
+824          properties on porosity and shrinkage of dried apple. International Journal of Food
+825          Properties, 18(10), 2327-2337. doi:10.1080/10942912.2014.980945
+826   Joardder, M. U. H., Karim, M. A., Brown, R. J., & Kumar, C. (2015b). Porosity: establishing
+827          the relationship between drying parameters and dried food quality. USA, Springer. doi:
+828          10.1007/978-3-319-23045-0_5
+829   Jomaa, W., & Puiggali, J. R. (1991). Drying of shrinking materials: modellings with shrinkage
+830          velocity. Drying Technology, 9(5), 1271-1293. doi: 10.1080/0737393 9108916750
+831   Kamenan Koua B., Magloire Ekoun Koffi P., & Gbaha P. (2017). Evolution of shrinkage, real
+832          density, porosity, heat and mass transfer coefficients during indirect solar drying of
+833          cocoa beans. Journal of the Saudi Society of Agricultural Sciences. 1-11.
+834          doi:http://dx.doi.org/10.1016/j.jssas.2017.01.002
+835   Karathanos, V. T. (1993). Collapse of structure during drying of celery. Drying Technology,
+836          11(5), 1005-1023. doi:10.1080/07373939308916880
+                                                    37
+
+[[PAGE 39]]
+837   Karathanos, V. T., Kanellopoulos, N. K., & Belessiotis, V. G. (1996). Development of porous
+838          structure during air drying of agricultural plant products. Journal of Food Engineering,
+839          29(2), 167-183. doi:https://doi.org/10.1016/0260-8774(95)00058-5
+840   Karim, M. A., & Hawlader, M. N. A. (2005). Mathematical modelling and experimental
+841          investigation of tropical fruits drying. International Journal of Heat and Mass Transfer,
+842          48(23), 4914-4925.
+843   Katekawa, M. E., & Silva, M. A. (2004, August). Study of porosity behavior in convective
+844          drying of bananas. In Proceedings of the 14th International Drying Symposium (IDS
+845          2004), vol. B (pp. 1427-1434), São Paulo, Brazil. Katekawa, M. E., & Silva, M. A.
+846          (2006). A review of drying models including shrinkage effects. Drying Technology,
+847          24(1), 5-20. doi:10.1080/07373930500538519
+848   Khan, M. I. H., Szilvia Anett Nagy, Karim, M. A. (2018). Transport of cellular water during
+849          drying: An understanding of cell rupturing mechanism in apple tissue. Food Research
+850          International, 105, 772-781.
+851   Khan, M. I. H., & Karim, M. A. (2017a). Cellular water distribution, transport, and its
+852          investigation methods for plant-based food material. Food Research International,
+853          99(1), 1-14. doi:10.1016/j.foodres.2017.06.037
+854   Khan, M. I. H., Wellard, R. M., Nagy, S. A., Joardder, M. U. H., & Karim, M. A. (2017b).
+855          Experimental investigation of bound and free water transport process during drying of
+856          hygroscopic food material. International Journal of Thermal Sciences, 117, 266-273.
+857          doi:https://doi.org/10.1016/j.ijthermalsci.2017.04.006
+858   Khan, M. I. H., Wellard, R. M., Mahiuddin, M., & Karim, M. A. (2017c). Cellular level water
+859          distribution and its investigation techniques. In M. A. Karim (Ed.), Intermittent and
+860          Nonstationary Drying Technologies: Principles and Applications. Boca Raton: CRC
+861          Press.
+862   Khan, M. I. H., Kumar, C., & Karim, M. A. (2017d, June). Mechanistic understanding of
+863          cellular level of water in plant-based food material. In AIP Conference Proceedings
+864          (Vol. 1851, No. 1, p. 020046). AIP Publishing, USA. Khan, M. I. H., Kumar, C.,
+865          Joardder, M. U. H., & Karim, M. A. (2017e). Determination of appropriate effective
+866          diffusivity for different food materials. Drying Technology, 35(3), 335-346.
+867          doi:10.1080/07373937.2016.1170700
+868   Khan, M. I. H., Joardder, M., Kumar, C., & Karim, M. A. (2016a). Multiphase porous media
+869          modelling: A novel approach of predicting food processing performance. Critical
+
+                                                    38
+
+[[PAGE 40]]
+870          Reviews       in    Food       Science        and    Nutrition,     58(4),    528-546.
+871          doi:org/10.1080/10408398.2016.1197881
+872   Khan, M. I. H., Wellard, R. M., Nagy, S. A., Joardder, M. U. H., & Karim, M. A. (2016b).
+873          Investigation of bound and free water in plant-based food material using NMR T2
+874          relaxometry. Innovative Food Science & Emerging Technologies, 38, 252-261.
+875          doi:10.1016/j.ifset.2016.10.015
+876   Khraisheh, M. A. M., McMinn, W. A. M., & Magee, T. R. A. (2004). Quality and structural
+877          changes in starchy foods during microwave and convective drying. Food Research
+878          International, 37(5), 497-503. doi:http://dx.doi.org/10.1016/j.foodres.2003.11.010
+879   Kilpatrick, P., Lowe, E., & Van Arsdel, W. (1955). Tunnel dehydrators for fruits and
+880          vegetables. Advances in Food Research, 6, 313-372.
+881   Kowalski, S. J. (1996). Mathematical modelling of shrinkage during drying. Drying
+882          Technology, 14(2), 307-331. doi:10.1080/07373939608917099
+883   Kowalski, S. J., & Rybicki, A. (2007). Residual stresses in dried bodies. Drying Technology,
+884          25(4), 629-637. doi:10.1080/07373930701250104
+885   Krokida, M. K., Karathanos, V. T., & Maroulis, Z. B. (1998). Effect of freeze-drying conditions
+886          on shrinkage and porosity of dehydrated agricultural products. Journal of Food
+887          Engineering, 35(4), 369-380. doi:http://dx.doi.org/10.1016/S0260-8774(98)00031-4
+888   Krokida, M. K., & Maroulis, Z. B. (1997). Effect of drying method on shrinkage and porosity.
+889          Drying Technology, 15(10), 2441-2458. doi:10.1080/07373939708917369
+890   Krokida, M. K., Oreopoulou, V., & Maroulis, Z. B. (2000). Effect of frying conditions on
+891          shrinkage and porosity of fried potatoes. Journal of Food Engineering, 43(3), 147-154.
+892          doi:http://dx.doi.org/10.1016/S0260-8774(99)00143-0
+893   Krokida, M. K., Zogzas, N. P., & Maroulis, Z. B. (1997). Modelling shrinkage and porosity
+894          during vacuum dehydration. International Journal of Food Science and Technology,
+895          32(6), 445-458.
+896   Kurozawa, L. E., Hubinger, M. D., & Park, K. J. (2012). Glass transition phenomenon on
+897          shrinkage of papaya during convective drying. Journal of Food Engineering, 108(1),
+898          43-50. doi:http://dx.doi.org/10.1016/j.jfoodeng.2011.07.033
+899   Lang, W., & Sokhansanj, S. (1993). Bulk volume shrinkage during drying of wheat and canola.
+900          Journal of Food Process Engineering, 16, 305-314.
+901   Lewicki, P. P., & Jakubczyk, E. (2004). Effect of hot air temperature on mechanical properties
+902          of    dried    apples.    Journal    of       Food   Engineering,    64(3),   307-314.
+903          doi:10.1016/j.jfoodeng.2003.10.014
+                                                      39
+
+[[PAGE 41]]
+904   Lewicki, P. P., Witrowa Rajchert, D., & Mariak, J. (1997). Changes of structure during
+905          rehydration of dried apples. Journal of Food Engineering, 32, 347-350.
+906   Lin, T. T., & Pitt, R. (1986). Rheology of apple and potato tissue as affected by cell turgor
+907          pressure. Journal of Texture Studies, 17(3), 291-313.
+908   Liu, G., Chen, J., Liu, M., & Wan, X. (2012). Shrinkage, porosity and density behaviour during
+909          convective drying of bio-porous material. Procedia Engineering, 31, 634-640.
+910          doi:http://dx.doi.org/10.1016/j.proeng.2012.01.1078
+911   Llave, Y., Takemori, K., Fukuoka, M., Takemori, T., Tomita, H., & Sakai, N. (2016).
+912          Mathematical modeling of shrinkage deformation in eggplant undergoing simultaneous
+913          heat and mass transfer during convection-oven roasting. Journal of Food Engineering,
+914          178, 124-136. doi:http://dx.doi.org/10.1016/j.jfoodeng.2016. 01.013
+915   Lozano, J. E., Rotstein, E., & Urbicain, M. J. (1980). Total porosity and open-pore porosity in
+916          the drying of fruits. Journal of Food Science, 45, 1403-1407.
+917   Lozano, J. E., Rotstein, E., & Urbicain, M. J. (1983). Shrinkage, porosity and bulk density of
+918          foodstuffs at changing moisture contents. Journal of Food Science, 48, 1497-1503.
+919   Lu, H., Ma, D., Wang, J., & Yu, J. (2015). Research on mechanical behavior of viscoelastic
+920          food material in the mode of compressed chewing. Mathematical Problems in
+921          Engineering, 2015, 1-6. doi:10.1155/2015/581424
+922   Lu, R., & Puri, V. M. (1992). Characterization of nonlinear behavior of apple flesh under stress
+923          relaxation. Journal of Rheology, 36(2), 303-318. doi:10.1122/1.550347
+924   Madamba, P. S., Driscoll, R. H., & Buckle, K. A. (1994). Shrinkage, density and porosity of
+925          garlic   during    drying.   Journal    of   Food     Engineering,    23(3),   309-319.
+926          doi:http://dx.doi.org/10.1016/0260-8774(94)90056-6
+927   Madiouli, J., Lecomte, D., Nganya, T., Chavez, S., Sghaier, J. and Sammouda, H. (2007). A
+928          method for determination of porosity change from shrinkage curves of deformable
+929          materials. Drying Technology. 25(4), 621–628.
+930   Madiouli, J., Sghaier, J., Orteu, J. J., Robert, L., Lecomte, D., & Sammouda, H. (2011). Non-
+931          contact measurement of the shrinkage and calculation of porosity during the drying of
+932          banana. Drying Technology, 29(12), 1358-1364.
+933   Madiouli, J., Sghaier, J., Lecomte, D., & Sammouda, H. (2012). Determination of porosity
+934          change from shrinkage curves during drying of food material. Food and Bioproducts
+935          Processing, 90(1), 43-51. doi:http://dx.doi.org/10.1016/j.fbp.2010.12.002
+
+                                                    40
+
+[[PAGE 42]]
+936   Mahiuddin, M., Khan, M. I. H., Duc Pham, N., & Karim, M. A. (2018). Development of
+937          fractional viscoelastic model for characterizing viscoelastic properties of food material
+938          during drying. Food Bioscience, 23, 45-53.
+939   Mayor, L., & Sereno, A. M. (2004). Modelling shrinkage during convective drying of food
+940          materials: a review. Journal of Food Engineering, 61(3), 373-386. doi:10.1016/s0260-
+941          8774(03)00144-4
+942   McLaughlin, C. P., & Magee, T. R. A. (1998). The effect of shrinkage during drying of potato
+943          spheres and the effect of drying temperature on vitamin C retention. Food and
+944          Bioproducts Processing, 76(3), 138-142. doi:10.1205/096030898531945
+945   McMinn, W., & Magee, T. (1997a). Physical characteristics of dehydrated potatoes—Part I.
+946          Journal of Food Engineering, 33(1-2), 37-48.
+947   McMinn, W., & Magee, T. (1997b). Physical characteristics of dehydrated potatoes—Part II.
+948          Journal of Food Engineering, 33(1-2), 49-55.
+949   Mercier, S., Villeneuve, S., Mondor, M., & Des Marchais, L.P. (2011). Evolution of porosity,
+950          shrinkage and density of pasta fortified with pea protein concentrate during drying.
+951          LWT - Food Science and Technology, 44(4), 883-890. doi:10.1016/j.lwt.2010.11.032
+952   Mrani, I., Bénet, J. C., Fras, G., & Zrikem, Z. (1997). Two dimensional simulation of
+953          dehydration of a highly deformable gel: moisture content, stress and stress fields.
+954          Drying Technology, 15(9), 2165-2193. doi:10.1080/07373939708917357
+955   Mrani, I., Fras, G., & Benet, J. C. (1995). Numerical study of drying stresses in agar gel. Drying
+956          Technology, 13(3), 551-570. doi:10.1080/07373939508916974
+957   Mulet, A., Garcia Reverter, J., Bon, J., & Berna, A. (2000). Effect of shape on potato and
+958          cauliflower shrinkage during drying. Drying Technology, 18(6), 1201-1219.
+959          doi:10.1080/07373930008917772
+960   Niamnuy, C., Devahastin, S., Soponronnarit, S., & Vijaya Raghavan, G. S. (2008). Modeling
+961          coupled transport phenomena and mechanical deformation of shrimp during drying in
+962          a jet spouted bed dryer. Chemical Engineering Science, 63(22), 5503-5512.
+963          doi:http://dx.doi.org/10.1016/j.ces.2008.07.031
+964   Ochoa, M. R., Kesseler, A. G., Pirone, B. N., Márquez, C. A., & De Michelis, A. (2002).
+965          Shrinkage during convective drying of whole rose hip (Rosa Rubiginosa L.) Fruits.
+966          LWT - Food Science and Technology, 35(5), 400-406. doi:10.1006/fstl.2001.0861
+967   Pacheco Aguirre, F. M., Garcia Alvarado, M. A., Corona Jimenez, E., Ruiz Espinosa, H.,
+968          Cortes Zavaleta, O., & Ruiz Lopez, I. I. (2015). Drying modeling in products
+969          undergoing simultaneous size reduction and shape change: Appraisal of deformation
+                                                     41
+
+[[PAGE 43]]
+970           effect    on   water   diffusivity.     Journal    of    Food   Engineering,   164,   30-39.
+971           doi:10.1016/j.jfoodeng.2015.04.031
+972    Panyawong, S., & Devahastin, S. (2007). Determination of deformation of a food product
+973           undergoing different drying methods and conditions via evolution of a shape factor.
+974           Journal of Food Engineering, 78(1), 151-161. doi:http://dx.doi.org/10.1016/j.
+975           jfoodeng.2005.09.012
+976    Perez, M. G. R., & Calvelo, A. (1984). Modeling the thermal conductivity of cooked meat.
+977           Journal of Food Science, 49, 152-156.
+978    Perré, P., & May, B. K. (2001). A numerical drying model that accounts for the coupling
+979           between transfers and solid mechanics. Case of highly deformable products. Drying
+980           Technology, 19(8), 1629-1643. doi:10.1081/drt-100107263
+981    Ponsart, G., Vasseur, J., Frias, J. M., Duquenoy, A., & Meot, J. M. (2003). Modelling of stress
+982           due to shrinkage during drying of spaghetti. Journal of Food Engineering, 57, 277–
+983           285.
+984    Prothon, F., Ahrne, L., & Sjoholm, I. (2003). Mechanisms and prevention of plant tissue
+985           collapse during dehydration: a critical review. Critical Reviews in Food Science and
+986           Nutrition, 43(4), 447-479. doi:10.1080/10408690390826581
+987    Rahman, M. M., Joardder, M. U. H., Khan, M. I. H., Nghia, D. P., & Karim, M. A. (2016).
+988           Multi-scale model of food drying: Current status and challenges. Critical Reviews in
+989           Food Science and Nutrition, 58(5), 858-876. doi:10.1080/10408398.2016.1227299
+990    Rahman, M. S., Perera, C. O., Chen, X. D., Driscoll, R. H., & Potluri, P. L. (1996). Density,
+991           shrinkage and porosity of calamari mantle meat during air drying in a cabinet dryer as
+992           a function of water content. Journal of Food Engineering, 30(1–2), 135-145.
+993           doi:http://dx.doi.org/10.1016/S0260-8774(96)00013-1
+994    Rahman, M. S. (2001). Toward prediction of porosity in foods during drying: A brief review.
+995           Drying Technology, 19(1), 1-13. doi:10.1081/DRT-100001349
+996    Ratti, C. (1994). Shrinkage during drying of foodstuffs. Journal of Food Engineering, 23(1),
+997           91-105.
+998    Ratti, C. (2001). Hot air and freeze-drying of high-value foods: a review. Journal of Food
+999           Engineering, 49(4), 311-319. doi:http://dx.doi.org/10.1016/S0260-8774(00)00228-4
+1000   Roopa, B. S., & Bhattacharya, S. (2014). Mango gels: characterization by small-deformation
+1001          stress    relaxation   method.        Journal     of    Food    Engineering,   131,   38-43.
+1002          doi:10.1016/j.jfoodeng.2014.01.010
+
+                                                         42
+
+[[PAGE 44]]
+1003   Rovedo, C. O., Suarez, C., & Viollaz, P. E. (1995). Drying of foods: evaluation of a drying
+1004          model. Journal of Food Engineering, 26(1), 1-12. doi:http://dx.doi.org/10.1016/0260-
+1005          8774(94)00037-A
+1006   Rovedo, C. O., Suárez, C., & Viollaz, P. E. (1997). Kinetics of forced convective air drying of
+1007          potato and squash slabs. Revista de Agroquimicay Tecnologia de Alimentos, 3(4), 251-
+1008          261. doi:10.1177/108201329700300403
+1009   Sakai, N., Yang, H., & Watanabe, M. (2002). Theoretical analysis of the shrinkage deformation
+1010          in viscoelastic food during drying. Japan Journal of Food Engineering, 3(4), 105-112.
+1011          doi:10.11301/jsfe2000.3.105
+1012   Sappati, P. K., Nayak, B., & Walsum, G. P. V. (2017). Effect of glass transition on the
+1013          shrinkage of sugar kelp (Saccharina latissima) during hot air convective drying.
+1014          Journal        of        Food        Engineering,         210,        50-61.        doi:
+1015          http://dx.doi.org/10.1016/j.jfoodeng.2017.04.018
+1016   Senadeera, W., Bhandari, B. R., Young, G., & Wijesinghe, B. (2005). Modeling dimensional
+1017          shrinkage of shaped foods in fluidized bed drying. Journal of Food Processing and
+1018          Preservation, 29(2), 109-119. doi:10.1111/j.1745-4549.2005.00017.x
+1019   Suzuki, K., Kubota, K., Hasegawa, T., & Hosaka, H. (1976). Shrinkage in dehydration of root
+1020          vegetables. Journal of Food Science, 41(5), 1189-1193.
+1021   Tsukada, T., Sakai, N., & Hayakawa, K. I. (1991). Computerized model for stress-strain
+1022          analysis of food undergoing simultaneous heat and mass transfer. Journal of Food
+1023          Science, 56(5), 1438-1445.
+1024   Udomkun, P., Nagle, M., Argyropoulos, D., Mahayothee, B., & Muller, J. (2016). Multi-sensor
+1025          approach to improve optical monitoring of papaya shrinkage during drying. Journal of
+1026          Food Engineering, 189, 82-89. doi:10.1016/j.jfoodeng.2016.05.014
+1027   Vázquez, G., Chenlo, F., Moreira, R., & Costoyas, A. (1999). The dehydration of garlic. 1.
+1028          Desorption isotherms and modelling of drying kinetics. Drying Technology, 17(6),
+1029          1095-1108. doi:10.1080/07373939908917596
+1030   Vincent, J. F. V. 1989. Relationship between density and stiffness of apple flesh. Journal of
+1031          the Science of Food and Agriculture, 47(4):443–462. doi: 10.1002/jsfa.2740470406
+1032   Wang, N., & Brennan, J. (1995). Changes in structure, density and porosity of potato during
+1033          dehydration. Journal of Food Engineering, 24(1), 61-76.
+1034   Yan, Z., Sousa Gallagher, M. J., & Oliveira, F. A. R. (2008). Shrinkage and porosity of banana,
+1035          pineapple and mango slices during air-drying. Journal of Food Engineering, 84(3),
+1036          430-440. doi:10.1016/j.jfoodeng.2007.06.004
+                                                     43
+
+[[PAGE 45]]
+1037   Yang, H., Sakai, N., & Watanabe, M. (2001). Drying model with non-isotropic shrinkage
+1038          deformation undergoing simultaneous heat and mass transfer. Drying Technology,
+1039          19(7), 1441-1460. doi:10.1081/drt-100105299
+1040   Zhu, W., Wang, Z., Xu, D., & Du, J. (2014). Measurement and study on drying shrinkage
+1041          characteristic of tobacco lamina based on computer vision. IFIP Advances in
+1042          Information and Communication Technology, 419(1), 306-314.
+1043   Zogzas, N. P., Maroulis, Z. B., & Marinos Kouris, D. (1994). Densities, shrinkage and porosity
+1044          of some vegetables during air drying. Drying Technology, 12(7), 1653-1666.
+1045          doi:10.1080/07373939408962191
+
+                                                    44
+
+[[PAGE 46]]
+Table 1-Continuum mechanics-based shrinkage models for food materials
+
+   Type of      Material      Geometry         Drying                    Remarks                        Reference
+   model                                      methods
+Elastic        Gel          Parallelepiped   Convective (i) Volume shrinkage was calculated            Jomaa and
+                                             drying                                                    Puiggali
+                                                        (ii) Shrinkage velocity was considered for
+                                                                                                       (1991)
+                                                         isotropic shrinkage
+                                                         (iii) Linear relation between stress and
+                                                         elastic strain was assumed
+                                                         (iv) The model is unable to provide the
+                                                         exact displacement fields at the end of
+                                                         drying
+               Agar gel     Sphere           Convective (i) Volume change & shrinkage stress           Mrani, Fras et
+                                             drying                                                    al. (1995)
+                                                        were investigated
+                                                         (ii) Material was considered as elastic and
+                                                         isotropic
+                                                         (iii) It was assumed that the medium
+                                                         remained biphasic during drying
+                                                         (iv) Poisson’s coefficient was 0.5,
+                                                         measured by ultrasonic method
+               Agar gel     Cylinder         Convective (i) Overall deformation was investigated       Mrani, Bénet
+                                             drying                                                    et al. (1997)
+                                                        (ii) The medium was biphasic without the
+                                                         appearance of a gas phase
+
+                                                             45
+
+[[PAGE 47]]
+(iii) Material was assumed as isotropic
+                                            and linear elastic
+                                            (iv) The process was considered as
+                                            isothermal
+                                            (v) Chemical reaction and phase change
+                                            were not considered
+Spaghetti   Infinite cylinder   Convective (i) Shrinkage and the induced strain and      Ponsart,
+                                drying                                                   Vasseur et al.
+                                           stress were investigated
+                                                                                         (2003)
+                                            (ii) It was considered that there was no
+                                            gas phase and no porosity present in the
+                                            sample
+                                             (iv) The viscous effects were assumed to
+                                            be negligible
+Potato      Parallelepiped      Convective (i) Shrinkage and rheological behaviors       Chemkhi,
+                                drying                                                   Zagrouba et
+                                           were studied
+                                                                                         al. (2004)
+                                            (ii) Moisture and temperature distribution
+                                            were considered uniform
+                                            (iii) Deformation was considered as
+                                            unidirectional
+Shrimp      Average             Convective (i) Mechanical deformation was predicted      Niamnuy,
+            equivalent          drying                                                   Devahastin et
+            diameter of                                                                  al. (2008)
+            1.63±0.07cm
+
+                                                46
+
+[[PAGE 48]]
+(ii) Thermal expansion of shrimp was
+                                                        neglected
+                                                        (iii) Poisson’s ratio of shrimp was
+                                                        assumed to be constant and equal to
+                                                        0.33
+Elastoplastic   Hydrated   Cylinder        Convective (i) Volume changes were observed                Tsukada,
+                amylose                    drying                                                     Sakai et al.
+                                                      (ii) Uniform moisture distribution was
+                starch                                                                                (1991)
+                granules                                considered throughout the drying process
+                                                        (iii) Hydro-deformation was considered.
+                Amylose    Cylinder        Convective (i) Hygro-stress crack formation &              Izumi and
+                starch                     drying                                                     Hayakawa
+                                                      propagation were investigated
+                                                                                                      (1995)
+                                                        (ii) Within a small strain region, food was
+                                                        assumed as elastoplastic
+                                                        (iii) Hygro-stress crack was assumed to
+                                                        be orthogonal to the orientation of the
+                                                        critical principal tensile stress
+                Semolina   Hollow cylinder Convective (i) Stress cracks formation & propagation       Akiyama and
+                hydrate                    drying                                                     Hayakawa
+                                                      were studied
+                                                                                                      (2000)
+                                                        (ii) The sample was assumed an infinitely
+                                                        long hollow cylinder
+
+                                                            47
+
+[[PAGE 49]]
+Potato     Cylinder        Air-drying   (i) Volume & shape changes were                  Yang, Sakai
+                                                                                                        et al. (2001)
+                                                       observed
+                                                       (ii) Two-dimensional shrinkage
+                                                       deformation was assumed
+                                                       (iii) Poisson ratio was assumed as
+                                                       constant and equal to 0.492
+               Potato     Cylinder        Convective (i) Volume changes were observed.                  Curcio and
+                                          drying                                                        Aversa (2014)
+                                                     (iii) Poisson ratio was assumed as
+                                                       constant and equal to 0.492
+Hyperelastic   Hamburger Cylinder/slab    Single-      (i) Volume reduction was calculated              Dhall and
+               patty,                     sided                                                         Datta (2011)
+                                                       (ii) Food materials was assumed as
+               Potato slab                cooking &
+                                          convective   rubberlike materials for large (30%–70%)
+                                          drying
+                                                       deformation
+                                                       (iii) Poisson ratio was assumed close to
+                                                       0.5
+               Potato     Slab/cylinder   Convective (i) A relationship among the change of             Gulati and
+                                          drying                                                        Datta (2015)
+                                                     volume, diameter and height were
+                                                       developed
+                                                       (ii) Poisson’s ratio, in rubbery state is 0.49
+                                                       and glassy state is 0.33 were taken
+
+                                                             48
+
+[[PAGE 50]]
+Potato       Cube             Microwave    (i) Volume & shape changes were              Gulati, Zhu et
+                                             drying                                                    al. (2016)
+                                                          observed
+                                                          (ii) Poisson’s ratio of potato was assumed
+                                                          as 0.49
+Viscoelastic   Grain        Cylinder         Convective (i) Volume changes were calculated             Irudayaraj
+               kernels                       drying                                                    and Haghighi
+                                                        (ii) Thermo-hydro viscoelastic stresses
+               (soybean                                                                                (1993a),
+               and corn)                                  are a consequence of temperature and         Irudayaraj,
+                                                                                                       Haghighi et
+                                                          moisture gradients
+                                                                                                       al. (1993b)
+               Amylose      Brick shape      Convective (i) Volume changes were investigated           Itaya,
+               starch                        drying                                                    Kobayashi et
+                                                        (ii) Uniform moisture distribution in the
+               granules &                                                                              al. (1995)
+               sucrose                                    sample was considered
+                                                          (iii) Negligible thermal strains were
+                                                          assumed
+               Potato       Square section   Convective (i) Effect of shape of the sample on           Perré and
+                                             drying                                                    May (2001)
+                                                        shrinkage was investigated
+                                                          (ii) The sample was assumed to be
+                                                          isotropic
+                                                          (iii) The mass diffusion coefficient was
+                                                          considered constant
+                                                          (iv) Poisson’s ratio was assumed 0.5
+
+                                                              49
+
+[[PAGE 51]]
+Potato        Cylinder         Convective (i) Shrinkage of the food material was        Sakai, Yang
+                               drying                                                   et al. (2002)
+                                          predicted
+                                           (ii) Deformation is due to the change in
+                                           moisture content
+French roll   Parallelepiped   Baking      (i) Studied mechanical behavior in the       Lu, Ma et al.
+bread                                                                                   (2015)
+                                           model of compressed chewing, and
+                                           established the stress–strain model in the
+                                           mode of compressed chewing
+                                           (ii) The experiments were carried out at
+                                           room temperature of 25°C
+Eggplant      Cylinder         Roasting    (i) Volumetric changes (volume               Llave,
+                                                                                        Takemori et
+                                           shrinkage) and directional shrinkage of
+                                                                                        al. (2016)
+                                           material due to moisture removal were
+                                           studied
+                                           (ii) Eggplant was considered as a
+                                           fictitious continuum rather than a
+                                           hygroscopic porous medium
+                                           (iii) Radiation heat transfer was
+                                           considered during roasting although the
+                                           effect of this heat transfer mode is
+                                           negligible
+
+                                               50
+
+[[PAGE 52]]
+Figure 1: Effect of velocity on shrinkage of food materials during drying
+
+                                   51
+
+[[PAGE 53]]
+Figure 2: Effect of temperature on shrinkage of food materials during drying
+
+                                    52
+
+[[PAGE 54]]
+Figure 3: Change in stresses in food materials during drying
+
+                            53

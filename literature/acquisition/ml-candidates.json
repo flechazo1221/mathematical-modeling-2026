@@ -1,0 +1,1111 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-09-11T08:25:05+08:00",
+  "engine_policy": "OpenAlex + AnySearch; degraded runs remain visible in search_runs",
+  "search_runs": [
+    {
+      "query": "food drying physics-informed neural network heat mass transfer moisture temperature",
+      "stats": {
+        "openalex_total": 24,
+        "anysearch_total": 10,
+        "cross_validated": 7,
+        "openalex_unique": 10,
+        "anysearch_unique": 0,
+        "filtered_irrelevant": 7,
+        "collapsed_duplicates": 0
+      }
+    },
+    {
+      "query": "drying process surrogate model neural network computational acceleration coupled heat mass transfer",
+      "stats": {
+        "openalex_total": 24,
+        "anysearch_total": 10,
+        "cross_validated": 5,
+        "openalex_unique": 8,
+        "anysearch_unique": 0,
+        "filtered_irrelevant": 11,
+        "collapsed_duplicates": 0
+      }
+    },
+    {
+      "query": "neural operator moving boundary diffusion surrogate model heat mass transfer",
+      "stats": {
+        "openalex_total": 24,
+        "anysearch_total": 10,
+        "cross_validated": 2,
+        "openalex_unique": 4,
+        "anysearch_unique": 0,
+        "filtered_irrelevant": 18,
+        "collapsed_duplicates": 0
+      }
+    },
+    {
+      "query": "physics-informed neural network inverse diffusivity heat moisture transport parameter identification",
+      "stats": {
+        "openalex_total": 24,
+        "anysearch_total": 10,
+        "cross_validated": 3,
+        "openalex_unique": 7,
+        "anysearch_unique": 0,
+        "filtered_irrelevant": 14,
+        "collapsed_duplicates": 0
+      }
+    },
+    {
+      "query": "食品干燥 物理信息神经网络 代理模型 传热传质 加速",
+      "stats": {
+        "openalex_total": 24,
+        "anysearch_total": 10,
+        "cross_validated": 0,
+        "openalex_unique": 0,
+        "anysearch_unique": 0,
+        "filtered_irrelevant": 24,
+        "collapsed_duplicates": 0
+      }
+    }
+  ],
+  "candidate_count": 38,
+  "candidates": [
+    {
+      "title": "Fundamental Understanding of Heat and Mass Transfer Processes for Physics-Informed Machine Learning-Based Drying Modelling",
+      "authors": [
+        "Md. Imran H. Khan",
+        "Chanaka Batuwatta-Gamage",
+        "Azharul Karim",
+        "Yuantong Gu"
+      ],
+      "year": 2022,
+      "citations": 68,
+      "doi": "10.3390/en15249347",
+      "abstract": "Drying is a complex process of simultaneous heat, mass, and momentum transport phenomena with continuous phase changes. Numerical modelling is one of the most effective tools to mechanistically express the different physics of drying processes for accurately predicting the drying kinetics and understanding the morphological changes during drying. However, the mathematical modelling of drying processes is complex and computationally very expensive due to multiphysics and the multiscale nature of heat and mass transfer during drying. Physics-informed machine learning (PIML)-based modelling has the potential to overcome these drawbacks and could be an exciting new addition to drying research for describing drying processes by embedding fundamental transport laws and constraints in machine learning models. To develop such a novel PIML-based model for drying applications, it is necessary to have a fundamental understanding of heat, mass, and momentum transfer processes and their mathematical formulation of drying processes, in addition to data-driven modelling knowledge. Based on a comprehensive literature review, this paper presents two types of information: fundamental physics-based information about drying processes and data-driven modelling strategies to develop PIML-based models for drying applications. The current status of physics-based models and PIML-based models and their limitations are discussed. A sample PIML-based modelling framework for drying application is presented. Finally, the challenges of addressing simultaneous heat, mass, and momentum transport phenomena in PIML modelling for optimizing the drying process are presented at the end of this paper. It is expected that the information in this manuscript will be beneficial for further advancing the field.",
+      "sources": [
+        "anysearch",
+        "openalex"
+      ],
+      "cross_validated": true,
+      "venue": "Energies",
+      "volume": "15",
+      "issue": "24",
+      "pages": "9347-9347",
+      "url": "https://doi.org/10.3390/en15249347",
+      "matched_queries": [
+        "drying process surrogate model neural network computational acceleration coupled heat mass transfer",
+        "food drying physics-informed neural network heat mass transfer moisture temperature"
+      ],
+      "result_group": "cross_validated"
+    },
+    {
+      "title": "Advances in Computational Fluid Dynamics of Mechanical Processes in Food Engineering: Mixing, Extrusion, Drying, and Process Optimization",
+      "authors": [
+        "Arkadiusz Szpicer",
+        "Weronika Bińkowska",
+        "Adrian Stelmasiak",
+        "Iwona Wojtasik‐Kalinowska",
+        "Anna Czajkowska",
+        "Sylwia Mierzejewska",
+        "Zdzisław Domiszewski",
+        "Tomasz Rydzkowski",
+        "Joanna Piepiórka-Stepuk",
+        "Andrzej Półtorak"
+      ],
+      "year": 2025,
+      "citations": 18,
+      "doi": "10.3390/app15158752",
+      "abstract": "Mechanical processes such as mixing, extrusion, and drying are key operations in food engineering, with a significant impact on product quality and process efficiency. The increasing complexity of food materials—due to non-Newtonian properties, multiphase structures, and thermal–mechanical interactions—requires advanced modeling approaches for process analysis and optimization. Computational Fluid Dynamics (CFD) has become a vital tool in this context. This review presents recent progress in the use of CFD for simulating key mechanical operations in food processing. Applications include the analysis of fluid flow, heat and mass transfer, and mechanical stresses, supporting improvements in mixing uniformity, energy efficiency during drying, and optimization of extrusion components (e.g., shaping dies). The potential for integrating CFD with complementary models for system-wide optimization is also discussed, including challenges related to scale-up and product consistency. Current limitations are outlined, and future research directions are proposed.",
+      "sources": [
+        "anysearch",
+        "openalex"
+      ],
+      "cross_validated": true,
+      "venue": "Applied Sciences",
+      "volume": "15",
+      "issue": "15",
+      "pages": "8752-8752",
+      "url": "https://doi.org/10.3390/app15158752",
+      "matched_queries": [
+        "drying process surrogate model neural network computational acceleration coupled heat mass transfer",
+        "food drying physics-informed neural network heat mass transfer moisture temperature"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "A review on recent progress, challenges and perspective of battery thermal management system",
+      "authors": [
+        "Jiayuan Lin",
+        "Xinhua Liu",
+        "Li Shen",
+        "Cheng Zhang",
+        "Shichun Yang"
+      ],
+      "year": 2020,
+      "citations": 585,
+      "doi": "10.1016/j.ijheatmasstransfer.2020.120834",
+      "abstract": null,
+      "sources": [
+        "anysearch",
+        "openalex"
+      ],
+      "cross_validated": true,
+      "venue": "International Journal of Heat and Mass Transfer",
+      "volume": "167",
+      "issue": null,
+      "pages": "120834-120834",
+      "url": "https://doi.org/10.1016/j.ijheatmasstransfer.2020.120834",
+      "matched_queries": [
+        "drying process surrogate model neural network computational acceleration coupled heat mass transfer"
+      ],
+      "result_group": "cross_validated"
+    },
+    {
+      "title": "Probabilistic neural networks for fluid flow surrogate modeling and data recovery",
+      "authors": [
+        "Romit Maulik",
+        "Kai Fukami",
+        "Nesar Ramachandra",
+        "Koji Fukagata",
+        "Kunihiko Taira"
+      ],
+      "year": 2020,
+      "citations": 151,
+      "doi": "10.1103/physrevfluids.5.104401",
+      "abstract": "Artificial neural networks (ANNs) have recently been applied to several fluid dynamics applications. However, there are a very limited number of studies that assess the fidelity of ANN deployments, a function of algorithm choice and training data quality, by quantifying uncertainties in predictions. This diminishes their utility for practical modeling requirements. In an effort to address this, a probabilistic NN that provides confidence intervals for its predictions in a computationally effective manner is used. This approach is demonstrated in surrogate modeling and flow reconstruction tasks with promising results.",
+      "sources": [
+        "anysearch",
+        "openalex"
+      ],
+      "cross_validated": true,
+      "venue": "Physical Review Fluids",
+      "volume": "5",
+      "issue": "10",
+      "pages": null,
+      "url": "https://doi.org/10.1103/physrevfluids.5.104401",
+      "matched_queries": [
+        "neural operator moving boundary diffusion surrogate model heat mass transfer"
+      ],
+      "result_group": "cross_validated"
+    },
+    {
+      "title": "Operator learning for predicting multiscale bubble growth dynamics",
+      "authors": [
+        "Chensen Lin",
+        "Zhen Li",
+        "Lu Lu",
+        "Shengze Cai",
+        "Martin Maxey",
+        "George Em Karniadakis"
+      ],
+      "year": 2021,
+      "citations": 140,
+      "doi": "10.1063/5.0041203",
+      "abstract": "Simulating and predicting multiscale problems that couple multiple physics and dynamics across many orders of spatiotemporal scales is a great challenge that has not been investigated systematically by deep neural networks (DNNs). Herein, we develop a framework based on operator regression, the so-called deep operator network (DeepONet), with the long-term objective to simplify multiscale modeling by avoiding the fragile and time-consuming \"hand-shaking\" interface algorithms for stitching together heterogeneous descriptions of multiscale phenomena. To this end, as a first step, we investigate if a DeepONet can learn the dynamics of different scale regimes, one at the deterministic macroscale and the other at the stochastic microscale regime with inherent thermal fluctuations. Specifically, we test the effectiveness and accuracy of the DeepONet in predicting multirate bubble growth dynamics, which is described by a Rayleigh-Plesset (R-P) equation at the macroscale and modeled as a stochastic nucleation and cavitation process at the microscale by dissipative particle dynamics (DPD). First, we generate data using the R-P equation for multirate bubble growth dynamics caused by randomly time-varying liquid pressures drawn from Gaussian random fields (GRFs). Our results show that properly trained DeepONets can accurately predict the macroscale bubble growth dynamics and can outperform long short-term memory networks. We also demonstrate that the DeepONet can extrapolate accurately outside the input distribution using only very few new measurements. Subsequently, we train the DeepONet with DPD data corresponding to stochastic bubble growth dynamics. Although the DPD data are noisy and we only collect sparse data points on the trajectories, the trained DeepONet model is able to predict accurately the mean bubble dynamics for time-varying GRF pressures. Taken together, our findings demonstrate that DeepONets can be employed to unify the macroscale and microscale models of the multirate bubble growth problem, hence providing new insight into the role of operator regression via DNNs in tackling realistic multiscale problems and in simplifying modeling with heterogeneous descriptions.",
+      "sources": [
+        "anysearch",
+        "openalex"
+      ],
+      "cross_validated": true,
+      "venue": "The Journal of Chemical Physics",
+      "volume": "154",
+      "issue": "10",
+      "pages": "104118-104118",
+      "url": "https://doi.org/10.1063/5.0041203",
+      "matched_queries": [
+        "neural operator moving boundary diffusion surrogate model heat mass transfer"
+      ],
+      "result_group": "cross_validated"
+    },
+    {
+      "title": "Soil Science-Informed Machine Learning",
+      "authors": [
+        "Budiman Minasny",
+        "Toshiyuki Bandai",
+        "Teamrat A. Ghezzehei",
+        "Yin‐Chung Huang",
+        "Yuxin Ma",
+        "Alex B. McBratney",
+        "Wartini Ng",
+        "Sarem Norouzi",
+        "José Padarian",
+        "no-firstname Rudiyanto",
+        "Amin Sharififar",
+        "Quentin Styc",
+        "Marliana Tri Widyastuti"
+      ],
+      "year": 2024,
+      "citations": 132,
+      "doi": "10.1016/j.geoderma.2024.117094",
+      "abstract": "Machine learning (ML) applications in soil science have significantly increased over the past two decades, reflecting a growing trend towards data-driven research addressing soil security. This extensive application has mainly focused on enhancing predictions of soil properties, particularly soil organic carbon, and improving the accuracy of digital soil mapping (DSM). Despite these advancements, the application of ML in soil science faces challenges related to data scarcity and the interpretability of ML models. There is a need for a shift towards Soil Science-Informed ML (SoilML) models that use the power of ML but also incorporate soil science knowledge in the training process to make predictions more reliable and generalisable. This paper proposes methodologies for embedding ML models with soil science knowledge to overcome current limitations. Incorporating soil science knowledge into ML models involves using observational priors to enhance training datasets, designing model structures which reflect soil science principles, and supervising model training with soil science-informed loss functions. The informed loss functions include observational constraints, coherency rules such as regularisation to avoid overfitting, and prior or soil-knowledge constraints that incorporate existing information about the parameters or outputs. By way of illustration, we present examples from four fields: digital soil mapping, soil spectroscopy, pedotransfer functions, and dynamic soil property models. We discuss the potential to integrate process-based models for improved prediction, the use of physics-informed neural networks, limitations, and the issue of overparametrisation. These approaches improve the relevance of ML predictions in soil science and enhance the models’ ability to generalise across different scenarios while maintaining soil science principles, transparency and reliability.",
+      "sources": [
+        "anysearch",
+        "openalex"
+      ],
+      "cross_validated": true,
+      "venue": "Geoderma",
+      "volume": "452",
+      "issue": null,
+      "pages": "117094-117094",
+      "url": "https://doi.org/10.1016/j.geoderma.2024.117094",
+      "matched_queries": [
+        "physics-informed neural network inverse diffusivity heat moisture transport parameter identification"
+      ],
+      "result_group": "cross_validated"
+    },
+    {
+      "title": "Global long term daily 1 km surface soil moisture dataset with physics informed machine learning",
+      "authors": [
+        "Qianqian Han",
+        "Yijian Zeng",
+        "Lijie Zhang",
+        "Chao Wang",
+        "Egor Prikaziuk",
+        "Zhenguo Niu",
+        "Zhongbo Su"
+      ],
+      "year": 2023,
+      "citations": 122,
+      "doi": "10.1038/s41597-023-02011-7",
+      "abstract": "Abstract Although soil moisture is a key factor of hydrologic and climate applications, global continuous high resolution soil moisture datasets are still limited. Here we use physics-informed machine learning to generate a global, long-term, spatially continuous high resolution dataset of surface soil moisture, using International Soil Moisture Network (ISMN), remote sensing and meteorological data, guided with the knowledge of physical processes impacting soil moisture dynamics. Global Surface Soil Moisture (GSSM1 km) provides surface soil moisture (0–5 cm) at 1 km spatial and daily temporal resolution over the period 2000–2020. The performance of the GSSM1 km dataset is evaluated with testing and validation datasets, and via inter-comparisons with existing soil moisture products. The root mean square error of GSSM1 km in testing set is 0.05 cm3/cm3, and correlation coefficient is 0.9. In terms of the feature importance, Antecedent Precipitation Evaporation Index (APEI) is the most important significant predictor among 18 predictors, followed by evaporation and longitude. GSSM1 km product can support the investigation of large-scale climate extremes and long-term trend analysis.",
+      "sources": [
+        "anysearch",
+        "openalex"
+      ],
+      "cross_validated": true,
+      "venue": "Scientific Data",
+      "volume": "10",
+      "issue": "1",
+      "pages": "101-101",
+      "url": "https://doi.org/10.1038/s41597-023-02011-7",
+      "matched_queries": [
+        "food drying physics-informed neural network heat mass transfer moisture temperature"
+      ],
+      "result_group": "cross_validated"
+    },
+    {
+      "title": "Physics‐Informed Neural Networks of the Saint‐Venant Equations for Downscaling a Large‐Scale River Model",
+      "authors": [
+        "Dongyu Feng",
+        "Zeli Tan",
+        "Qizhi He"
+      ],
+      "year": 2023,
+      "citations": 114,
+      "doi": "10.1029/2022wr033168",
+      "abstract": "Abstract Large‐scale river models are being refined over coastal regions to improve the scientific understanding of coastal processes, hazards and responses to climate change. However, coarse mesh resolutions and approximations in physical representations of tidal rivers limit the performance of such models at resolving the complex flow dynamics especially near the river‐ocean interface, resulting in inaccurate simulations of flood inundation. In this research, we propose a machine learning (ML) framework based on the state‐of‐the‐art physics‐informed neural network (PINN) to simulate the downscaled flow at the subgrid scale. First, we demonstrate that PINN is able to assimilate observations of various types and solve the one‐dimensional (1‐D) Saint‐Venant equations (SVE) directly. We perform the flow simulations over a floodplain and along an open channel in several synthetic case studies. The PINN performance is evaluated against analytical solutions and numerical models. Our results indicate that the PINN solutions of water depth have satisfactory accuracy with limited observations assimilated. In the case of flood wave propagation induced by storm surge and tide, a new neural network architecture is proposed based on Fourier feature embeddings that seamlessly encodes the periodic tidal boundary condition in the PINN's formulation. Furthermore, we show that the PINN‐based downscaling can produce more reasonable subgrid solutions of the along‐channel water depth by assimilating observational data. The PINN solution outperforms the simple linear interpolation in resolving the topography and dynamic flow regimes at the subgrid scale. This study provides a promising path toward improving emulation capabilities in large‐scale models to characterize fine‐scale coastal processes.",
+      "sources": [
+        "anysearch",
+        "openalex"
+      ],
+      "cross_validated": true,
+      "venue": "Water Resources Research",
+      "volume": "59",
+      "issue": "2",
+      "pages": null,
+      "url": "https://doi.org/10.1029/2022wr033168",
+      "matched_queries": [
+        "drying process surrogate model neural network computational acceleration coupled heat mass transfer"
+      ],
+      "result_group": "cross_validated"
+    },
+    {
+      "title": "Strategies to Measure Soil Moisture Using Traditional Methods, Automated Sensors, Remote Sensing, and Machine Learning Techniques: Review, Bibliometric Analysis, Applications, Research Findings, and Future Directions",
+      "authors": [
+        "Abhilash Singh",
+        "Kumar Gaurav",
+        "Gaurav Kailash Sonkar",
+        "Cheng‐Chi Lee"
+      ],
+      "year": 2023,
+      "citations": 110,
+      "doi": "10.1109/access.2023.3243635",
+      "abstract": "This review provides a detailed synthesis of various in-situ, remote sensing, and machine learning approaches to estimate soil moisture. Bibliometric analysis of the published literature on soil moisture shows that Time-Domain Reflectometry (TDR) is the most widely used in-situ instrument, while remote sensing is the most preferred application, and the random forest is the widely applied algorithm to simulate surface soil moisture. We have applied ten most widely used machine learning models on a publicly available dataset (in-situ soil moisture measurement and satellite images) to predict soil moisture and compared their results. We have briefly discussed the potential of using the upcoming NASA-ISRO Synthetic Aperture Radar (NISAR) mission images to estimate soil moisture. Finally, this review discusses the capabilities of physics-informed and automated machine learning (AutoML) models to predict surface soil moisture at higher spatial and temporal resolutions. This review will assist researchers in investigating the applications of soil moisture in the broad domain of earth sciences.",
+      "sources": [
+        "anysearch",
+        "openalex"
+      ],
+      "cross_validated": true,
+      "venue": "IEEE Access",
+      "volume": "11",
+      "issue": null,
+      "pages": "13605-13635",
+      "url": "https://doi.org/10.1109/access.2023.3243635",
+      "matched_queries": [
+        "food drying physics-informed neural network heat mass transfer moisture temperature"
+      ],
+      "result_group": "cross_validated"
+    },
+    {
+      "title": "A Review on Solar Drying Devices: Heat Transfer, Air Movement and Type of Chambers",
+      "authors": [
+        "Lisete Fernandes",
+        "Pedro B. Tavares"
+      ],
+      "year": 2024,
+      "citations": 77,
+      "doi": "10.3390/solar4010002",
+      "abstract": "Food waste is one of the biggest challenges we are facing nowadays. According to the Food and Agriculture Organization (FAO) of the United Nations, approximately one-third of all food produced in the world is lost at some stage between production and consumption, totaling 930 million tons of food per year. Meanwhile, 10.5% of humanity suffers from malnutrition, 26% are overweight and greenhouse gases derived from the food industry account for between 25 and 30% of total emissions (8 to 10% referring to food waste), exacerbating the current climate crisis. To address these concerns, there has been a growing inclination to seek alternatives to fossil fuels, including the adoption of solar energy across diverse sectors, including the food industry. Actions are needed in order to change these patterns. This review article aims to provide an overview of recent developments in the field of solar food dehydration and the types of dehydrators that have emerged. Extensive research and bibliographic analysis, including other review articles, have revealed a growing focus on investment in this area to develop solar dehydrators that are increasingly effective but as sustainable as possible.",
+      "sources": [
+        "anysearch",
+        "openalex"
+      ],
+      "cross_validated": true,
+      "venue": "Solar",
+      "volume": "4",
+      "issue": "1",
+      "pages": "15-42",
+      "url": "https://doi.org/10.3390/solar4010002",
+      "matched_queries": [
+        "food drying physics-informed neural network heat mass transfer moisture temperature"
+      ],
+      "result_group": "cross_validated"
+    },
+    {
+      "title": "Physics-informed machine learning in geotechnical engineering: a direction paper",
+      "authors": [
+        "Biao Yuan",
+        "Chung Siung Choo",
+        "Lit Yen Yeo",
+        "Yu Wang",
+        "Zhongxuan Yang",
+        "Qingzheng Guan",
+        "Stephen K. Suryasentana",
+        "Jinhyun Choo",
+        "Hao Shen",
+        "María Megía",
+        "Jiang-Wei Zhang",
+        "Zhongqiang Liu",
+        "Yanjie Song",
+        "Hui Wang",
+        "Xiaohui Chen"
+      ],
+      "year": 2025,
+      "citations": 72,
+      "doi": "10.1080/17486025.2025.2502029",
+      "abstract": "This direction paper explores the evolving landscape of physics-informed machine learning (PIML) methodologies in the field of geotechnical engineering, aiming to provide a comprehensive overview of current advancements and propose future research directions. Recognising the intrinsic connection between geophysical phenomena and geotechnical processes, we delve into the intersection of physics-based models and machine learning techniques. The paper begins by elucidating the significance of incorporating physics-informed approaches, emphasising their potential to enhance the interpretability, accuracy and reliability of predictive models in geotechnical applications. We review recent applications of PIML in soil mechanics, hydrology, geotechnical site investigation, slope stability analysis and foundation engineering, showcasing successes and challenges. Furthermore, we identify promising avenues for future research in geotechnical engineering, including the integration of domain knowledge, model explainability, multiphysics and multiscale problems, complex constitutive models, as well as digital twins and large AI models within PIML frameworks. As geotechnical engineering embraces the paradigm shift towards data-driven methodologies, this direction paper offers valuable insights for researchers and practitioners, guiding the trajectory of PIML for sustainable and resilient infrastructure development.",
+      "sources": [
+        "anysearch",
+        "openalex"
+      ],
+      "cross_validated": true,
+      "venue": "Geomechanics and Geoengineering",
+      "volume": "20",
+      "issue": "5",
+      "pages": "1128-1159",
+      "url": "https://doi.org/10.1080/17486025.2025.2502029",
+      "matched_queries": [
+        "physics-informed neural network inverse diffusivity heat moisture transport parameter identification"
+      ],
+      "result_group": "cross_validated"
+    },
+    {
+      "title": "Optimizing the heat transfer performance of the recovery boiler superheaters using simulated annealing, surrogate modeling, and computational fluid dynamics",
+      "authors": [
+        "Viljami Maakala",
+        "Mika Järvinen",
+        "Ville Vuorinen"
+      ],
+      "year": 2018,
+      "citations": 36,
+      "doi": "10.1016/j.energy.2018.07.002",
+      "abstract": null,
+      "sources": [
+        "anysearch",
+        "openalex"
+      ],
+      "cross_validated": true,
+      "venue": "Energy",
+      "volume": "160",
+      "issue": null,
+      "pages": "361-377",
+      "url": "https://doi.org/10.1016/j.energy.2018.07.002",
+      "matched_queries": [
+        "drying process surrogate model neural network computational acceleration coupled heat mass transfer"
+      ],
+      "result_group": "cross_validated"
+    },
+    {
+      "title": "Predictive modeling through physics‐informed neural networks for analyzing the thermal distribution in the partially wetted wavy fin",
+      "authors": [
+        "K. Karthik",
+        "Ganeshappa Sowmya",
+        "Naman Sharma",
+        "Chandan Kumar",
+        "R. S. Varun Kumar",
+        "Siddesh Alur Shivaprakash",
+        "Taseer Muhammad",
+        "Harjot Singh Gill"
+      ],
+      "year": 2024,
+      "citations": 22,
+      "doi": "10.1002/zamm.202400180",
+      "abstract": "Abstract The heat transport analysis and thermal distribution in partially wetted wavy profiled fin are investigated in the current study. Convective, radiative effects and temperature‐dependent thermal conductivity are all considered in this heat transfer analysis. The dimensional governing temperature equations of the partially wetted wavy extended surface are nondimensionalized utilizing the appropriate dimensionless terms. Further, the resulting nondimensional thermal equations of the wavy fin are solved by employing Physics‐Informed Neural Network (PINN). The values of the temperature equations obtained by the numerical procedure Runge Kutta Fehlberg's fourth‐fifth (RKF‐45) order scheme are compared with PINN outcomes. The results are portrayed with the aid of tables, and the significance of several dimensionless constraints on the partially wet wavy fin is exhibited using graphical illustrations. A rise in the thermal conductivity parameter values enhances the wavy fin's thermal profile. The temperature of the wavy fin diminishes as the convective‐conductive parameter, temperature ratio parameter, and radiation‐conduction parameter upsurges.",
+      "sources": [
+        "anysearch",
+        "openalex"
+      ],
+      "cross_validated": true,
+      "venue": "ZAMM ‐ Journal of Applied Mathematics and Mechanics / Zeitschrift für Angewandte Mathematik und Mechanik",
+      "volume": "104",
+      "issue": "8",
+      "pages": null,
+      "url": "https://doi.org/10.1002/zamm.202400180",
+      "matched_queries": [
+        "food drying physics-informed neural network heat mass transfer moisture temperature"
+      ],
+      "result_group": "cross_validated"
+    },
+    {
+      "title": "Interpretable Physics-Informed Neural Network for Reliable Humidity Forecasting in Contrasting Climates of Sindh.",
+      "authors": [
+        "Syed Azeem Inam",
+        "Hassan Hashim",
+        "Asif Mehmood Awan",
+        "Haider Rajput",
+        "Saddam Umer"
+      ],
+      "year": 2025,
+      "citations": 19,
+      "doi": "10.21015/vtcs.v13i2.2229",
+      "abstract": "Reliable forecasting of humidity is fundamental to effective climate monitoring, agricultural scheduling, and public health planning. Traditional machine learning frameworks, however, struggle to mirror the largely nonlinear climatological processes governing moisture distribution and rarely satisfy governing physical laws. This work introduces a physics-informed neural network (PINN) explicitly tailored to forecast daily mean humidity, embedding thermodynamic principles and smaller-scale climatological knowledge to bolster generalization and interpretability. The analysis is based on a comprehensive dataset of meteorological measurements from three climatically contrasting districts in Sindh, encompassing temperature, wind velocity, cumulative rainfall, and derived interaction terms. The PINN topology augments the mean squared error loss with a physically grounded rainfall–humidity relationship, thereby constraining the output to physically realizable humidity profiles. To decode the model’s inner operation, we employed SHAP and LIME, providing affected stakeholders with a transparent rationale for predictions. Comparative benchmarks reveal that the physics-informed architecture exceeds the forecast skill of conventional regression, ensemble methods, and standard feed-forward neural networks, securing R² metrics greater than 0.99 and uniformly low mean squared error across all three locales. Sensitivity assessments based on SHAP and LIME indicate that seasonal modulation and the interaction between wind and humidity are the predominant drivers of the forecasts, whereas the contribution of rainfall-derived predictors remains negligible. The combination of PINN with contemporary interpretability methodologies yields a forecasting paradigm for meteorology that is both transparent and governed by established physical laws.",
+      "sources": [
+        "anysearch",
+        "openalex"
+      ],
+      "cross_validated": true,
+      "venue": "VAWKUM Transactions on Computer Sciences",
+      "volume": "13",
+      "issue": "2",
+      "pages": "135-148",
+      "url": "https://doi.org/10.21015/vtcs.v13i2.2229",
+      "matched_queries": [
+        "food drying physics-informed neural network heat mass transfer moisture temperature"
+      ],
+      "result_group": "cross_validated"
+    },
+    {
+      "title": "Evaluating Physics-Informed Neural Networks for Food Kinetic Modeling",
+      "authors": [
+        "Yizhou Ma",
+        "Deniz Turan",
+        "Maarten A.I. Schutyser"
+      ],
+      "year": 2025,
+      "citations": 5,
+      "doi": "10.26434/chemrxiv-2025-t2r5k",
+      "abstract": "Kinetic modeling is essential for predicting changes in food quality during processing and storage. This study evaluates the application of physics-informed neural networks (PINN) for food kinetic modeling, integrating kinetic insights into neural network frameworks. Based on three case studies, namely seed drying, bread baking, and kiwi softening, PINN models outperform empirical models in terms of extrapolation and interpolation tasks and match predictive power of physics-based models in interpolation tasks. PINNs also enable transfer learning, allowing efficient model adaptation to new datasets with comparable prediction accuracy to empirical kinetic models. However, limitations of PINN models exist in handling discontinuities found in multistage food processing and storage. Despite this, the generalization and data efficiency of PINN models position them as powerful tools for modern food kinetic modeling.",
+      "sources": [
+        "anysearch",
+        "openalex"
+      ],
+      "cross_validated": true,
+      "venue": "ChemRxiv",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "url": "https://doi.org/10.26434/chemrxiv-2025-t2r5k",
+      "matched_queries": [
+        "food drying physics-informed neural network heat mass transfer moisture temperature"
+      ],
+      "result_group": "cross_validated"
+    },
+    {
+      "title": "Inverse modeling of nonisothermal multiphase poromechanics using physics-informed neural networks",
+      "authors": [
+        "Danial Amini",
+        "Ehsan Haghighat",
+        "Rubén Juanes"
+      ],
+      "year": 2022,
+      "citations": 2,
+      "doi": "10.48550/arxiv.2209.03276",
+      "abstract": "We propose a solution strategy for parameter identification in multiphase thermo-hydro-mechanical (THM) processes in porous media using physics-informed neural networks (PINNs). We employ a dimensionless form of the THM governing equations that is particularly well suited for the inverse problem, and we leverage the sequential multiphysics PINN solver we developed in previous work. We validate the proposed inverse-modeling approach on multiple benchmark problems, including Terzaghi's isothermal consolidation problem, Barry-Mercer's isothermal injection-production problem, and nonisothermal consolidation of an unsaturated soil layer. We report the excellent performance of the proposed sequential PINN-THM inverse solver, thus paving the way for the application of PINNs to inverse modeling of complex nonlinear multiphysics problems.",
+      "sources": [
+        "anysearch",
+        "openalex"
+      ],
+      "cross_validated": true,
+      "venue": "arXiv (Cornell University)",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "url": "http://arxiv.org/abs/2209.03276",
+      "matched_queries": [
+        "physics-informed neural network inverse diffusivity heat moisture transport parameter identification"
+      ],
+      "result_group": "cross_validated"
+    },
+    {
+      "title": "Machine Learning Methods for Small Data Challenges in Molecular Science",
+      "authors": [
+        "Bozheng Dou",
+        "Zailiang Zhu",
+        "Ekaterina Merkurjev",
+        "Ke Lü",
+        "Long Chen",
+        "Jiang Jian",
+        "Yueying Zhu",
+        "Jie Liu",
+        "Bengong Zhang",
+        "Guo‐Wei Wei"
+      ],
+      "year": 2023,
+      "citations": 497,
+      "doi": "10.1021/acs.chemrev.3c00189",
+      "abstract": "Small data are often used in scientific and engineering research due to the presence of various constraints, such as time, cost, ethics, privacy, security, and technical limitations in data acquisition. However, big data have been the focus for the past decade, small data and their challenges have received little attention, even though they are technically more severe in machine learning (ML) and deep learning (DL) studies. Overall, the small data challenge is often compounded by issues, such as data diversity, imputation, noise, imbalance, and high-dimensionality. Fortunately, the current big data era is characterized by technological breakthroughs in ML, DL, and artificial intelligence (AI), which enable data-driven scientific discovery, and many advanced ML and DL technologies developed for big data have inadvertently provided solutions for small data problems. As a result, significant progress has been made in ML and DL for small data challenges in the past decade. In this review, we summarize and analyze several emerging potential solutions to small data challenges in molecular science, including chemical and biological sciences. We review both basic machine learning algorithms, such as linear regression, logistic regression (LR), k -nearest neighbor (KNN), support vector machine (SVM), kernel learning (KL), random forest (RF), and gradient boosting trees (GBT), and more advanced techniques, including artificial neural network (ANN), convolutional neural network (CNN), U-Net, graph neural network (GNN), Generative Adversarial Network (GAN), long short-term memory (LSTM), autoencoder, transformer, transfer learning, active learning, graph-based semi-supervised learning, combining deep learning with traditional machine learning, and physical model-based data augmentation. We also briefly discuss the latest advances in these methods. Finally, we conclude the survey with a discussion of promising trends in small data challenges in molecular science.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Chemical Reviews",
+      "volume": "123",
+      "issue": "13",
+      "pages": "8736-8780",
+      "url": "https://doi.org/10.1021/acs.chemrev.3c00189",
+      "matched_queries": [
+        "neural operator moving boundary diffusion surrogate model heat mass transfer"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Performance-Based Screening of Porous Materials for Carbon Capture",
+      "authors": [
+        "Amir H. Farmahini",
+        "Shreenath Krishnamurthy",
+        "Daniel Friedrich",
+        "Stefano Brandani",
+        "Lev Sarkisov"
+      ],
+      "year": 2021,
+      "citations": 294,
+      "doi": "10.1021/acs.chemrev.0c01266",
+      "abstract": "Computational screening methods have changed the way new materials and processes are discovered and designed. For adsorption-based gas separations and carbon capture, recent efforts have been directed toward the development of multiscale and performance-based screening workflows where we can go from the atomistic structure of an adsorbent to its equilibrium and transport properties at different scales, and eventually to its separation performance at the process level. The objective of this work is to review the current status of this new approach, discuss its potential and impact on the field of materials screening, and highlight the challenges that limit its application. We compile and introduce all the elements required for the development, implementation, and operation of multiscale workflows, hence providing a useful practical guide and a comprehensive source of reference to the scientific communities who work in this area. Our review includes information about available materials databases, state-of-the-art molecular simulation and process modeling tools, and a complete catalogue of data and parameters that are required at each stage of the multiscale screening. We thoroughly discuss the challenges associated with data availability, consistency of the models, and reproducibility of the data and, finally, propose new directions for the future of the field.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Research Explorer (The University of Manchester)",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "url": "https://research.manchester.ac.uk/en/publications/2ce1b673-70cc-4805-8cea-9ce95e21060f",
+      "matched_queries": [
+        "drying process surrogate model neural network computational acceleration coupled heat mass transfer"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "A machine learning driven 3D+1D model for efficient characterization of proton exchange membrane fuel cells",
+      "authors": [
+        "Yuwei Pan",
+        "Haijun Ruan",
+        "Billy Wu",
+        "Yagya N. Regmi",
+        "Huizhi Wang",
+        "Nigel P. Brandon"
+      ],
+      "year": 2024,
+      "citations": 45,
+      "doi": "10.1016/j.egyai.2024.100397",
+      "abstract": "The computational demands of 3D continuum models for proton exchange membrane fuel cells remain substantial. One prevalent approach is the hierarchical model combining a 2D/3D flow field with a 1D sub-model for the catalyst layers and membrane. However, existing studies often simplify the 1D domain to a linearized 0D lumped model, potentially resulting in significant errors at high loads. In this study, we present a computationally efficient neural network driven 3D+1D model for proton exchange membrane fuel cells. The 3D sub-model captures transport in the gas channels and gas diffusion layers and is coupled with a 1D electrochemical sub-model for microporous layers, membrane, and catalyst layers. To reduce computational intensity of the full 1D description, a neural network surrogates the 1D electrochemical sub-model for coupling with the 3D domain. Trained by model-generated large synthetic datasets, the neural network achieves root mean square errors of less than 0.2%. The model is validated against experimental results under various relative humidities. It is then employed to investigate the nonlinear distribution of internal states under different operating conditions. With the neural network operating at 0.5% of the computing cost of the 1D sub-model, the hybrid model preserves a detailed and nonlinear representation of the internal fuel cell states while maintaining computational costs comparable to conventional 3D+0D models. The presented hybrid data-driven and physical modeling framework offers high accuracy and computing speed across a broad spectrum of operating conditions, potentially aiding the rapid optimization of both the membrane electrode assembly and the gas channel geometry.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Energy and AI",
+      "volume": "17",
+      "issue": null,
+      "pages": "100397-100397",
+      "url": "https://doi.org/10.1016/j.egyai.2024.100397",
+      "matched_queries": [
+        "drying process surrogate model neural network computational acceleration coupled heat mass transfer"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Physics-Informed Neural Network (PINN) for Solving Frictional Contact Temperature and Inversely Evaluating Relevant Input Parameters",
+      "authors": [
+        "Yichun Xia",
+        "Yonggang Meng"
+      ],
+      "year": 2024,
+      "citations": 33,
+      "doi": "10.3390/lubricants12020062",
+      "abstract": "Ensuring precise prediction, monitoring, and control of frictional contact temperature is imperative for the design and operation of advanced equipment. Currently, the measurement of frictional contact temperature remains a formidable challenge, while the accuracy of simulation results from conventional numerical methods remains uncertain. In this study, a PINN model that incorporates physical information, such as partial differential equation (PDE) and boundary conditions, into neural networks is proposed to solve forward and inverse problems of frictional contact temperature. Compared to the traditional numerical calculation method, the preprocessing of the PINN is more convenient. Another noteworthy characteristic of the PINN is that it can combine data to obtain a more accurate temperature field and solve inverse problems to identify some unknown parameters. The experimental results substantiate that the PINN effectively resolves the forward problems of frictional contact temperature when provided with known input conditions. Additionally, the PINN demonstrates its ability to accurately predict the friction temperature field with an unknown input parameter, which is achieved by incorporating a limited quantity of easily measurable actual temperature data. The PINN can also be employed for the inverse identification of unknown parameters. Finally, the PINN exhibits potential in solving inverse problems associated with frictional contact temperature, even when multiple input parameters are unknown.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Lubricants",
+      "volume": "12",
+      "issue": "2",
+      "pages": "62-62",
+      "url": "https://doi.org/10.3390/lubricants12020062",
+      "matched_queries": [
+        "drying process surrogate model neural network computational acceleration coupled heat mass transfer"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Physics-Informed Neural Networks in Materials Modeling and Design: A Review",
+      "authors": [
+        "Alkmini Michaloglou",
+        "Ioannis Papadimitriou",
+        "Ilias Gialampoukidis",
+        "Stefanos Vrochidis",
+        "Ioannis Kompatsiaris"
+      ],
+      "year": 2025,
+      "citations": 29,
+      "doi": "10.1007/s11831-025-10448-9",
+      "abstract": "Abstract Physics-Informed Neural Networks are neural networks which combine data-driven deep learning and physical models by incorporating physical laws into their loss function. They are promising and flexible solvers or surrogates for problems governed by partial differential equations, including forward and inverse cases, and during the last few years they have been applied to a variety of problems in physics and engineering. In this survey, we present a comprehensive analysis of PINNs while focusing on their applications in materials science. We examine their foundational form and components, expand on enhancing strategies, and explore various aspects of their practical implementations. For materials modeling, problem cases are systematically organized based on the main scope of publications found in the literature. For this survey, problems are categorized into heat transfer related problems, including multiphysics cases, materials properties and design, materials durability, stress analysis, as well as problems related to porous media and multi-phase materials. Finally, we discuss the current challenges and limitations of PINNs, their advantages, and potential future research directions.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Archives of Computational Methods in Engineering",
+      "volume": "33",
+      "issue": "4",
+      "pages": "5223-5260",
+      "url": "https://doi.org/10.1007/s11831-025-10448-9",
+      "matched_queries": [
+        "neural operator moving boundary diffusion surrogate model heat mass transfer"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Adaptive physics-informed neural operator for coarse-grained non-equilibrium flows",
+      "authors": [
+        "Ivan Zanardi",
+        "Simone Venturi",
+        "Marco Panesi"
+      ],
+      "year": 2023,
+      "citations": 27,
+      "doi": "10.1038/s41598-023-41039-y",
+      "abstract": "This work proposes a new machine learning (ML)-based paradigm aiming to enhance the computational efficiency of non-equilibrium reacting flow simulations while ensuring compliance with the underlying physics. The framework combines dimensionality reduction and neural operators through a hierarchical and adaptive deep learning strategy to learn the solution of multi-scale coarse-grained governing equations for chemical kinetics. The proposed surrogate's architecture is structured as a tree, with leaf nodes representing separate neural operator blocks where physics is embedded in the form of multiple soft and hard constraints. The hierarchical attribute has two advantages: (i) It allows the simplification of the training phase via transfer learning, starting from the slowest temporal scales; (ii) It accelerates the prediction step by enabling adaptivity as the surrogate's evaluation is limited to the necessary leaf nodes based on the local degree of non-equilibrium of the gas. The model is applied to the study of chemical kinetics relevant for application to hypersonic flight, and it is tested here on pure oxygen gas mixtures. In 0-[Formula: see text] scenarios, the proposed ML framework can adaptively predict the dynamics of almost thirty species with a maximum relative error of 4.5% for a wide range of initial conditions. Furthermore, when employed in 1-[Formula: see text] shock simulations, the approach shows accuracy ranging from 1% to 4.5% and a speedup of one order of magnitude compared to conventional implicit schemes employed in an operator-splitting integration framework. Given the results presented in the paper, this work lays the foundation for constructing an efficient ML-based surrogate coupled with reactive Navier-Stokes solvers for accurately characterizing non-equilibrium phenomena in multi-dimensional computational fluid dynamics simulations.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Scientific Reports",
+      "volume": "13",
+      "issue": "1",
+      "pages": "15497-15497",
+      "url": "https://doi.org/10.1038/s41598-023-41039-y",
+      "matched_queries": [
+        "neural operator moving boundary diffusion surrogate model heat mass transfer"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Data-Driven Modeling of Geometry-Adaptive Steady Heat Convection Based on Convolutional Neural Networks",
+      "authors": [
+        "Jiang-Zhou Peng",
+        "Xianglei Liu",
+        "Zhendong Xia",
+        "Nadine Aubry",
+        "Zhihua Chen",
+        "Wei‐Tao Wu"
+      ],
+      "year": 2021,
+      "citations": 25,
+      "doi": "10.3390/fluids6120436",
+      "abstract": "Heat convection is one of the main mechanisms of heat transfer, and it involves both heat conduction and heat transportation by fluid flow; as a result, it usually requires numerical simulation for solving heat convection problems. Although the derivation of governing equations is not difficult, the solution process can be complicated and usually requires numerical discretization and iteration of differential equations. In this paper, based on neural networks, we developed a data-driven model for an extremely fast prediction of steady-state heat convection of a hot object with an arbitrary complex geometry in a two-dimensional space. According to the governing equations, the steady-state heat convection is dominated by convection and thermal diffusion terms; thus the distribution of the physical fields would exhibit stronger correlations between adjacent points. Therefore, the proposed neural network model uses convolutional neural network (CNN) layers as the encoder and deconvolutional neural network (DCNN) layers as the decoder. Compared with a fully connected (FC) network model, the CNN-based model is good for capturing and reconstructing the spatial relationships of low-rank feature spaces, such as edge intersections, parallelism, and symmetry. Furthermore, we applied the signed distance function (SDF) as the network input for representing the problem geometry, which contains more information compared with a binary image. For displaying the strong learning and generalization ability of the proposed network model, the training dataset only contains hot objects with simple geometries: triangles, quadrilaterals, pentagons, hexagons, and dodecagons, while the testing cases use arbitrary and complex geometries. According to the study, the trained network model can accurately predict the velocity and temperature field of the problems with complex geometries, which has never been seen by the network model during the model training; and the prediction speed is two orders faster than the CFD. The ability of accurate and extremely fast prediction of the network model suggests the potential of applying reduced-order network models to the applications of real-time control and fast optimization in the future.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Fluids",
+      "volume": "6",
+      "issue": "12",
+      "pages": "436-436",
+      "url": "https://doi.org/10.3390/fluids6120436",
+      "matched_queries": [
+        "neural operator moving boundary diffusion surrogate model heat mass transfer"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Development and Application of a Numerical Framework for Improving Building Foundation Heat Transfer Calculations",
+      "authors": [
+        "N. Kruis"
+      ],
+      "year": 2015,
+      "citations": 23,
+      "doi": null,
+      "abstract": "Heat transfer from building foundations varies significantly in all three spatial dimensions and has important dynamic effects at all timescales, from one hour to several years. With the additional consideration of moisture transport, ground freezing, evapotranspiration, and other physical phenomena, the estimation of foundation heat transfer becomes increasingly sophisticated and computationally intensive to the point where accuracy must be compromised for reasonable computation time. The tools currently available to calculate foundation heat transfer are often either too limited in their capabilities to draw meaningful conclusions or too sophisticated to use in common practices.\\nThis work presents Kiva, a new foundation heat transfer computational framework. Kiva provides a flexible environment for testing different numerical schemes, initialization methods, spatial and temporal discretizations, and geometric approximations. Comparisons within this framework provide insight into the balance of computation speed and accuracy relative to highly detailed reference solutions.\\nThe accuracy and computational performance of six finite difference numerical schemes are verified against established IEA BESTEST test cases for slab-on-grade heat conduction. Of the schemes tested, the Alternating Direction Implicit (ADI) scheme demonstrates the best balance between accuracy, performance, and numerical stability.\\nKiva features four approaches of initializing soil temperatures for an annual simulation. A new accelerated initialization approach is shown to significantly reduce the required years of presimulation.\\nMethods of approximating three-dimensional heat transfer within a representative two-dimensional context further improve computational performance. A new approximation called the boundary layer adjustment method is shown to improve accuracy over other established methods with a negligible increase in computation time. This method accounts for the reduced heat transfer from concave foundation shapes, which has not been adequately addressed to date. Within the Kiva framework, three-dimensional heat transfer that can require several days to simulate is approximated in two-dimensions in a matter of seconds while maintaining a mean absolute deviation within 3%.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "CU Scholar (University of Colorado Boulder)",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "url": "https://scholar.colorado.edu/concern/graduate_thesis_or_dissertations/r781wg26q",
+      "matched_queries": [
+        "drying process surrogate model neural network computational acceleration coupled heat mass transfer"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "A Critical Review of the Modelling Tools for the Reactive Transport of Organic Contaminants",
+      "authors": [
+        "Katarzyna Samborska-Goik",
+        "Marta Pogrzeba"
+      ],
+      "year": 2024,
+      "citations": 23,
+      "doi": "10.3390/app14093675",
+      "abstract": "The pollution of groundwater and soil by hydrocarbons is a significant and growing global problem. Efforts to mitigate and minimise pollution risks are often based on modelling. Modelling-based solutions for prediction and control play a critical role in preserving dwindling water resources and facilitating remediation. The objectives of this article are to: (i) to provide a concise overview of the mechanisms that influence the migration of hydrocarbons in groundwater and to improve the understanding of the processes that affect contamination levels, (ii) to compile the most commonly used models to simulate the migration and fate of hydrocarbons in the subsurface; and (iii) to evaluate these solutions in terms of their functionality, limitations, and requirements. The aim of this article is to enable potential users to make an informed decision regarding the modelling approaches (deterministic, stochastic, and hybrid) and to match their expectations with the characteristics of the models. The review of 11 1D screening models, 18 deterministic models, 7 stochastic tools, and machine learning experiments aimed at modelling hydrocarbon migration in the subsurface should provide a solid basis for understanding the capabilities of each method and their potential applications.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Applied Sciences",
+      "volume": "14",
+      "issue": "9",
+      "pages": "3675-3675",
+      "url": "https://doi.org/10.3390/app14093675",
+      "matched_queries": [
+        "physics-informed neural network inverse diffusivity heat moisture transport parameter identification"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Evaluating Error Propagation in Coupled Land–Atmosphere Models",
+      "authors": [
+        "Bryan C. Pijanowski",
+        "Nathan Moore",
+        "Dasaraden Mauree",
+        "Dev Niyogi"
+      ],
+      "year": 2011,
+      "citations": 20,
+      "doi": "10.1175/2011ei380.1",
+      "abstract": "Abstract This study examines how land-use errors from the Land Transformation Model (LTM) propagate through to climate as simulated by the Regional Atmospheric Model System (RAMS). The authors conducted five simulations of regional climate over East Africa: one using observed land cover/land use (LULC) and four utilizing LTM-derived LULC. The study examined how quantifiable errors generated by the LTM impact typical land–climate variables: precipitation, land surface temperature, air temperature, soil moisture, and latent heat flux. Error propagation was not evident when domain averages for the land–climate variables of the yearlong simulation were examined. However, the authors found that spatial errors from the LTM propagate through in complex ways, temporally affecting the seasonal distributions of rainfall, surface temperature, soil moisture, and latent heat flux. In particular, rainy seasons exhibited greater precipitation in LTM-RAMS simulations than in the reference simulation and less precipitation occurred during the dry season. Complex interactions of precipitation and soil moisture were also evident. Overall, results indicate that small errors from a land change model could grow as a “coupling drift” if both are used to forecast into the future; these couplings could create larger combined errors of land–climate interactions because of time-scale differences into the future. Thus, although land-use change projection is necessary for a more accurate climate projection, existing errors from a land change model will likely amplify through the climate simulation. This finding affects interpretation of large-scale versus land-use/land-cover feedbacks on climate projections.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Earth Interactions",
+      "volume": "15",
+      "issue": "28",
+      "pages": "1-25",
+      "url": "https://doi.org/10.1175/2011ei380.1",
+      "matched_queries": [
+        "drying process surrogate model neural network computational acceleration coupled heat mass transfer"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Reconstructing the Unsaturated Flow Equation From Sparse and Noisy Data: Leveraging the Synergy of Group Sparsity and Physics‐Informed Deep Learning",
+      "authors": [
+        "Wenxiang Song",
+        "Liangsheng Shi",
+        "Xiaolong Hu",
+        "Yanling Wang",
+        "Lijun Wang"
+      ],
+      "year": 2023,
+      "citations": 14,
+      "doi": "10.1029/2022wr034122",
+      "abstract": "Abstract Data‐driven scientific discovery methods have been developed and applied to discover governing equations from data, involving the attempt to discover the unsaturated flow equation in soils from data. However, an important but unresolved problem is how to reconstruct the unsaturated flow equation from highly noisy and scarce discrete data. In this study, we present a new deep‐learning framework: DeepGS (deep‐learning‐based group sparsity framework), that leverages the synergy of group sparsity and physics‐informed deep learning (PIDL) to reconstruct the latent governing equation for unsaturated flow. In particular, we design a strategy that decomposes the identification of the unsaturated flow equation into two tasks: the determination of the partial differential equation structure and the reconstruction of the nonlinear coefficients. The tasks can be seamlessly handled by group sparse regression and the PIDL approach. Through the training, it realizes the simultaneous reconstruction of soil moisture dynamics and unsaturated flow governing equation. A series of comprehensive numerical experiments are conducted to determine the optimal architecture and test its performance. The results show the efficacy and robustness of DeepGS, which significantly outperform previous methods. We also conclude that accurately reconstructing soil moisture dynamics and spatiotemporal derivatives from noisy and scarce data play a critical role in governing equation discovery. This study further demonstrates the potential of discovering the governing equation for unsaturated flow from data in more complex scenarios, where rich and accurate soil moisture observations are generally intractable to access.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Water Resources Research",
+      "volume": "59",
+      "issue": "5",
+      "pages": null,
+      "url": "https://doi.org/10.1029/2022wr034122",
+      "matched_queries": [
+        "physics-informed neural network inverse diffusivity heat moisture transport parameter identification"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Physics-Informed Machine Learning: the Next Big Trend in Food Process Modelling?",
+      "authors": [
+        "Emmanuel Purlis"
+      ],
+      "year": 2023,
+      "citations": 12,
+      "doi": "10.1007/s43555-023-00012-6",
+      "abstract": null,
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Current Food Science and Technology Reports",
+      "volume": "2",
+      "issue": "1",
+      "pages": "1-6",
+      "url": "https://doi.org/10.1007/s43555-023-00012-6",
+      "matched_queries": [
+        "food drying physics-informed neural network heat mass transfer moisture temperature"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Use of Multiscale Data-Driven Surrogate Models for Flowsheet Simulation of an Industrial Zeolite Production Process",
+      "authors": [
+        "Vasyl Skorych",
+        "Moritz Buchholz",
+        "Maksym Dosta",
+        "Helene Katharina Baust",
+        "Marco Gleiß",
+        "Johannes Haus",
+        "Dominik Weis",
+        "Simon Hammerich",
+        "Gregor Kiedorf",
+        "Norbert Asprion",
+        "Hermann Nirschl",
+        "Frank Kleine Jäger",
+        "Stefan Heinrich"
+      ],
+      "year": 2022,
+      "citations": 11,
+      "doi": "10.3390/pr10102140",
+      "abstract": "The production of catalysts such as zeolites is a complex multiscale and multi-step process. Various material properties, such as particle size or moisture content, as well as operating parameters—e.g., temperature or amount and composition of input material flows—significantly affect the outcome of each process step, and hence determine the properties of the final product. Therefore, the design and optimization of such processes is a complex task, which can be greatly facilitated with the help of numerical simulations. This contribution presents a modeling framework for the dynamic flowsheet simulation of a zeolite production sequence consisting of four stages: precipitation in a batch reactor; concentration and washing in a block of centrifuges; formation of droplets and drying in a spray dryer; and burning organic residues in a chain of rotary kilns. Various techniques and methods were used to develop the applied models. For the synthesis in the reactor, a multistage strategy was used, comprising discrete element method simulations, data-driven surrogate modeling, and population balance modeling. The concentration and washing stage consisted of several multicompartment decanter centrifuges alternating with water mixers. The drying is described by a co–current spray dryer model developed by applying a two-dimensional population balance approach. For the rotary kilns, a multi-compartment model was used, which describes the gas–solid reaction in the counter–current solids and gas flows.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Processes",
+      "volume": "10",
+      "issue": "10",
+      "pages": "2140-2140",
+      "url": "https://doi.org/10.3390/pr10102140",
+      "matched_queries": [
+        "drying process surrogate model neural network computational acceleration coupled heat mass transfer"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Evaluating physics informed neural networks for water contamination risk prediction and environmental sustainability",
+      "authors": [
+        "Saima Rashid",
+        "Husnain Abbas",
+        "Ilyas Ali",
+        "Aasma Khalid",
+        "Fekadu Tesgera Agama",
+        "M. Saif Aldien"
+      ],
+      "year": 2025,
+      "citations": 10,
+      "doi": "10.1038/s41598-025-30196-x",
+      "abstract": "Growing pollution hazards in large watersheds, including Egypt's Nile River, necessitate precise and effective monitoring of water quality indices. Although considerable efforts have been made to model individual parameters such as pH, Total Dissolved Solids (TDS), Electrical Conductivity (EC) and sodium (Na[Formula: see text]), the emphasis on isolated forecasts has often overlooked their interdependencies, thereby limiting estimation accuracy and practical applicability. Conventional machine learning methodologies further compound this issue, as they frequently lack adaptability and physical interpretability, resulting in inefficiencies for sustainable water management. To address these limitations, this study develops a physics-informed neural network (PINN) framework integrated with optimization boosting techniques to jointly predict pH, TDS (mg/L), EC (μS/cm), and Na[Formula: see text] (mg/L) under three critical management strategies: industrial discharge regulation, salinity management and irrigation planning. The approach incorporates prior hydrodynamic and chemical knowledge to guide input categorization, employs adaptive weighting mechanisms to dynamically adjust feature relevance, and introduces a deep interaction module to capture intricate physicochemical couplings. A physics-constrained loss function ensures consistency with ecological processes. Field analysis revealed that while pH values (6.01-6.87) consistently met FAO standards, TDS, EC, and Na[Formula: see text] frequently exceeded permissible thresholds, particularly during the dry season. Model evaluation showed that PINN outperformed conventional optimizers, achieving [Formula: see text] values of 0.945-0.999 and RMSE between 0.012-0.088. Cross-validation further confirmed its robustness, yielding consistently low RMSE and near-unity [Formula: see text] across folds. Interpretability analysis highlighted irrigation intensity, salinity loads, and industrial effluents as the dominant drivers of water quality dynamics. Overall, the proposed PINN not only advances predictive accuracy and computational efficiency but also provides a practical framework for supporting regulatory decision-making, optimizing salinity control, and guiding sustainable irrigation planning. Ultimately, this approach offers a viable pathway for mitigating contamination risks and ensuring the long-term sustainability of the Nile River ecosystem.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Scientific Reports",
+      "volume": "16",
+      "issue": "1",
+      "pages": "603-603",
+      "url": "https://doi.org/10.1038/s41598-025-30196-x",
+      "matched_queries": [
+        "food drying physics-informed neural network heat mass transfer moisture temperature"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Toward mechanistic models “augmented” by machine learning. Example of a drying simulation data set exploited by a Physics Informed Neural Network",
+      "authors": [
+        "Patrick Perré"
+      ],
+      "year": 2024,
+      "citations": 7,
+      "doi": "10.1080/07373937.2024.2411582",
+      "abstract": "Mechanistic modeling of drying is well-established since several decades. Based on fundamental balance equations and driven by relevant material parameters, it can predict the entire process, including configurations that were not observed before. Besides, thanks to their ability to tackle non-linear and dynamics problems, approaches based on Machine Learning (ML) based are capable of coping with complex situations even better than mechanistic modeling. The main drawback of mechanistic models is their complexity as operational tools, namely in providing the whole set of product characteristics, while the main drawback of ML tools is its restriction to the domain paved by the data set. This paper summarizes the physics of the mechanistic formulation and then presents the different possibilities of coupling the mechanistic and ML approaches to obtain an “augmented” mechanistic model. The idea is to merge the advantages of both worlds. Different strategies can be imagined: A full coupled method (hybrid model)A fully decoupled methodA cascade coupling The second part of the paper gives examples of a fully decoupled approach the mechanistic model is used to populate a data set, which is further exploited by a neural network. The originality of the work is to compare a classical neural network with a Physics Informed Neural Network.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Drying Technology",
+      "volume": "43",
+      "issue": "1-2",
+      "pages": "147-161",
+      "url": "https://doi.org/10.1080/07373937.2024.2411582",
+      "matched_queries": [
+        "food drying physics-informed neural network heat mass transfer moisture temperature"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Virtual design on the heat pump refrigeration cycle: challenges and approaches",
+      "authors": [
+        "Yoon Jei Hwang",
+        "Noma Park"
+      ],
+      "year": 2024,
+      "citations": 7,
+      "doi": "10.1007/s44189-024-00052-0",
+      "abstract": "Abstract Virtual product design (VPD) of the refrigeration cycle has long been a major subject of many engineers and manufacturers. Issues should be the question of how simulation gets close to the real world in virtual ways. It is especially true when we consider variable refrigerant flow (VRF) heat pumps, having various types of indoor unit combinations, long and complicated piping configurations, and simultaneous cooling and heating functions under extreme weather conditions. In this regard, model-based systems engineering (MBSE) or model-based design (MBD) guides a methodology to make a virtual model easily. Now, there are plenty of engineering platforms and tools to make a strong simulation model, which provides interfacing technology among multiple physics, different dimensions, and codes in different languages. In the study, the authors share their experience in the virtual design for a VRF heat pump system including the architecture, multiple physics, and the connection with the control SW. Modelica, an acausal and object-oriented modeling language, constructs the backbone of the model to describe the dynamic behavior of refrigerants and to combine external components in the form of functional mock-up units (FMUs). The developed virtual model is validated against measured data, showing it can reproduce all the essential physics of interest both in qualitative and quantitative ways.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "International Journal of Air-Conditioning and Refrigeration",
+      "volume": "32",
+      "issue": "1",
+      "pages": null,
+      "url": "https://doi.org/10.1007/s44189-024-00052-0",
+      "matched_queries": [
+        "physics-informed neural network inverse diffusivity heat moisture transport parameter identification"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Surrogate models of heat transfer in fractured rock and their use in parameter estimation",
+      "authors": [
+        "Guofeng Song",
+        "Delphine Roubinet",
+        "Xiaoguang Wang",
+        "Gensheng Li",
+        "Xianzhi Song",
+        "Daniel M. Tartakovsky"
+      ],
+      "year": 2023,
+      "citations": 5,
+      "doi": "10.1016/j.cageo.2023.105509",
+      "abstract": null,
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Computers & Geosciences",
+      "volume": "183",
+      "issue": null,
+      "pages": "105509-105509",
+      "url": "https://doi.org/10.1016/j.cageo.2023.105509",
+      "matched_queries": [
+        "drying process surrogate model neural network computational acceleration coupled heat mass transfer"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "PINN Model of Diffusion Coefficient Identification Problem in Fick’s Laws",
+      "authors": [
+        "Dongchen Li",
+        "Bin Yan",
+        "Tianya Gao",
+        "Guowei Li",
+        "You Wang"
+      ],
+      "year": 2024,
+      "citations": 5,
+      "doi": "10.1021/acsomega.3c07924",
+      "abstract": "This study tackles the complex task of determining diffusion coefficients in inverse problems, addressing the challenges of instability and computational demands. The primary objective is to introduce an efficient model for estimating diffusion coefficients under specific conditions. Through a unique fusion of Fick's laws and a Neural Network framework, a physics-informed neural network (PINN) is developed for the diffusion coefficient identification problem. The model accommodates scenarios where both diffusion flux and concentration gradient are known, where diffusion flux is known while the concentration gradient is unknown, and where diffusion flux is unknown while the concentration gradient is known. Results demonstrate the model's efficiency, obtaining diffusion coefficients in less than 1000, 2000, and 3000 iterations for the respective scenarios. Sensitivity analysis underscores the model's validity across conditions, highlighting the positive impact of a higher proportion of effective data on convergence and alignment with general diffusion coefficient patterns. In conclusion, the PINN model stands out as a powerful tool for accurately estimating diffusion coefficients under varying conditions.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "ACS Omega",
+      "volume": "9",
+      "issue": "3",
+      "pages": "3846-3857",
+      "url": "https://doi.org/10.1021/acsomega.3c07924",
+      "matched_queries": [
+        "physics-informed neural network inverse diffusivity heat moisture transport parameter identification"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Artificial Neural Network and Their Applications in Food Materials: A Review",
+      "authors": [
+        "Uwem Ekwere Inyang"
+      ],
+      "year": 2022,
+      "citations": 4,
+      "doi": "10.47191/etj/v7i4.06",
+      "abstract": "This paper is a review of artificial neural network technique for the prediction of drying parameters of food materials. The meaning of ANN, the importance, areas that ANN could be applied, future prospects and summary of previous researchers work using ANN for the prediction of drying parameters were considered. These drying parameters are not limited to the following: thickness, temperature, velocity, moisture content, drying rate that are used in the prediction. Thus, ANNs hold a great deal of promise for modeling complex tasks in process control and simulation and in applications for food safety, preservation and quality control. This method eliminates the need for manual calculations and the ANN representing more tools for prediction drying parameters of food materials. This technique is preferred for large data set for robust, accuracy and less time consuming benefits. The method/leaning algorithm mostly used was Levenberg-Marquardt back propagation and the coefficient of determination (R2) was above 0.9 and the moisture content was one of the key output parameter that was determined.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Engineering and Technology Journal",
+      "volume": "07",
+      "issue": "04",
+      "pages": null,
+      "url": "https://doi.org/10.47191/etj/v7i4.06",
+      "matched_queries": [
+        "food drying physics-informed neural network heat mass transfer moisture temperature"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Prediction of Combustion Parameters and Pollutant Emissions of a Dual-Fuel Engine Based on Recurrent Neural Networks",
+      "authors": [
+        "Joel Freidy Ebolembang",
+        "Fabrice Parfait Nang Nkol",
+        "Lionel Merveil Anague Tabejieu",
+        "Fernand Toukap Nono",
+        "Claude Valéry Ngayihi Abbe"
+      ],
+      "year": 2025,
+      "citations": 2,
+      "doi": "10.3390/app15189868",
+      "abstract": "A critical challenge in engine research lies in minimizing harmful emissions while optimizing the efficiency of internal combustion engines. Dual-fuel engines, operating with methanol and diesel, offer a promising alternative, but their combustion modeling remains complex due to the intricate thermochemical interactions involved. This study proposes a predictive framework that combines validated CFD simulations with deep learning techniques to estimate key combustion and emission parameters in a methanol–diesel dual-fuel engine. A three-dimensional CFD model was developed to simulate turbulent combustion, methanol injection, and pollutant formation, using the RNG k-ε turbulence model. A temporal dataset consisting of 1370 samples was generated, covering the compression, combustion, and early expansion phases—critical regions influencing both emissions and in-cylinder pressure dynamics. The optimal configuration identified involved a 63° spray injection angle and a 25% methanol proportion. A Gated Recurrent Unit (GRU) neural network, consisting of 256 neurons, a Tanh activation function, and a dropout rate of 0.2, was trained on this dataset. The model accurately predicted in-cylinder pressure, temperature, NOx emissions, and impact-related parameters, achieving a Pearson correlation coefficient of ρ = 0.997. This approach highlights the potential of combining CFD and deep learning for rapid and reliable prediction of engine behavior. It contributes to the development of more efficient, cleaner, and robust design strategies for future dual-fuel combustion systems.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Applied Sciences",
+      "volume": "15",
+      "issue": "18",
+      "pages": "9868-9868",
+      "url": "https://doi.org/10.3390/app15189868",
+      "matched_queries": [
+        "physics-informed neural network inverse diffusivity heat moisture transport parameter identification"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Physics-Informed Neural Networks for Coupled Thermo-Hydro-Mechanical-Chemical Analysis of FEBEX Bentonite",
+      "authors": [
+        "Guang Hu"
+      ],
+      "year": 2025,
+      "citations": 1,
+      "doi": "10.21203/rs.3.rs-7697884/v1",
+      "abstract": null,
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Research Square",
+      "volume": null,
+      "issue": null,
+      "pages": null,
+      "url": "https://doi.org/10.21203/rs.3.rs-7697884/v1",
+      "matched_queries": [
+        "physics-informed neural network inverse diffusivity heat moisture transport parameter identification"
+      ],
+      "result_group": "openalex_only"
+    },
+    {
+      "title": "Physics-based neural networks for coupled thermo-hydro-mechanical-chemical analysis of FEBEX bentonite",
+      "authors": [
+        "Guang Hu"
+      ],
+      "year": 2026,
+      "citations": 1,
+      "doi": "10.1007/s12665-026-12879-4",
+      "abstract": "Abstract Long-term geotechnical studies are often constrained by coupled multiphysics modelling ability and sparse experimental datasets due to the extended time scales and harsh environmental conditions involved. To address those limitations, this study presents an application of Physics-Based Neural Networks (PBNNs) for modeling the complex coupled thermo-hydro-mechanical-chemical (THMC) processes in bentonite barrier systems used in nuclear waste repositories. The methodology integrates sparse experimental data points for calibration with physics-compliant synthetic dataset generated from well-established physical models, including Arrhenius kinetics for chemical reactions, diffusion equations for mass transport, thermal evolution models, consolidation theory for mechanical behavior, and chemical equilibrium principles. This approach ensures that the synthetic data maintain physical constraints and consistency while providing sufficient training samples for neural network optimization. Seven neural network models were trained using this synthetic dataset to predict the long-term evolution of temperature, water content, porosity, chemical concentrations, and mechanical properties. The trained models achieved excellent performance against sparse experimental data points with R² scores exceeding 0.96 for all variables, demonstrating minimal overfitting (generalization gap < 0.005) despite the original data scarcity. Key findings include: (1) accurate prediction of exponential temperature evolution consistent with thermal physics, (2) successful modeling of water content decay following Arrhenius kinetics, (3) realistic simulation of porosity evolution through coupled hydration, consolidation, and pore refinement processes, and (4) robust prediction of chemical species transport and mechanical stress development. This PBNN approach provides a practical solution to data scarcity in geotechnical engineering, offering significant computational advantages (180–720× speedup) over traditional numerical methods while maintaining physical consistency. The methodology enables automatic learning of complex coupling relationships without requiring explicit physics loss terms during training. This work demonstrates a viable computational framework for long-term safety assessment of nuclear waste repositories and highlights the potential of PBNN in sparse data modelling of engineering applications.",
+      "sources": [
+        "openalex"
+      ],
+      "cross_validated": false,
+      "venue": "Environmental Earth Sciences",
+      "volume": "85",
+      "issue": "7",
+      "pages": null,
+      "url": "https://doi.org/10.1007/s12665-026-12879-4",
+      "matched_queries": [
+        "physics-informed neural network inverse diffusivity heat moisture transport parameter identification"
+      ],
+      "result_group": "openalex_only"
+    }
+  ]
+}

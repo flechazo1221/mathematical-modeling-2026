@@ -1,0 +1,12 @@
+{
+  "schema_version":"1.0",
+  "purpose":"记录位于工作区外的用户附件原始绝对路径，并将逐字节镜像置于02-literature内供handoff schema按相对路径哈希",
+  "copy_verification":"每项原始文件与镜像文件SHA-256完全相同",
+  "attachments":[
+    {"paper_id":"P08","original_absolute_path":"C:/Users/Lenovo/Documents/xwechat_files/wxid_o7dw5esjt43532_e68b/msg/file/2026-09/1-s2.0-S2215098620342324-main.pdf","mirror_path":"02-literature/external-inputs/P08.pdf","sha256":"0ddac6b0d321130101e00e4c520fbabd4aa06c6b450457fb3b90de7d0c27787c"},
+    {"paper_id":"P12","original_absolute_path":"C:/Users/Lenovo/Documents/xwechat_files/wxid_o7dw5esjt43532_e68b/msg/file/2026-09/1-s2.0-S0960308524000191-main.pdf","mirror_path":"02-literature/external-inputs/P12.pdf","sha256":"a79eb238a1fe8cbc1c9abb9f06ad13d97a6a46ccbcc9c8064064a233fe5ab898"},
+    {"paper_id":"P13","original_absolute_path":"C:/Users/Lenovo/Documents/xwechat_files/wxid_o7dw5esjt43532_e68b/msg/file/2026-09/1-s2.0-S0735193324006596-main.pdf","mirror_path":"02-literature/external-inputs/P13.pdf","sha256":"c75a5cacfccce6a307c703dfb8715a05774e4073e160bf8eb826d1018bf13f8a"},
+    {"paper_id":"P16","original_absolute_path":"C:/Users/Lenovo/Documents/xwechat_files/wxid_o7dw5esjt43532_e68b/msg/file/2026-09/ao3c07924.pdf","mirror_path":"02-literature/external-inputs/P16-ACS.pdf","sha256":"72ad501e97815675e771a6e3024f364f174e2f9ff839d0f5466be0e23d0c6509"},
+    {"paper_id":"P17","original_absolute_path":"C:/Users/Lenovo/Documents/xwechat_files/wxid_o7dw5esjt43532_e68b/msg/file/2026-09/1-s2.0-S0260877426000798-main.pdf","mirror_path":"02-literature/external-inputs/P17.pdf","sha256":"2c5a53bc9c9e481d803bcb6690ad61177ab6d1636e0d25c04516a9762f6a9d47"}
+  ]
+}

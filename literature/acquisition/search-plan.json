@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0",
+  "gate_basis": "decisions/H1-problem.json",
+  "scope": "圆柱形中药材在时变温湿边界下的耦合传热传质、状态相关物性、收缩移动边界及数值验证",
+  "queries": [
+    {
+      "id": "Q1",
+      "language": "zh",
+      "query": "中药材 干燥 传热传质 耦合模型 温度场 含水率场",
+      "purpose": "查找真实领域机理、变量定义和边界条件处理",
+      "h1_basis": "H1-1、H1-2、H1-4：圆柱药材的一维径向热质传递基线及二维端面检验"
+    },
+    {
+      "id": "Q2",
+      "language": "en",
+      "query": "medicinal herb drying coupled heat and mass transfer cylindrical geometry moisture temperature model",
+      "purpose": "补充英文领域机理和可迁移的圆柱干燥模型",
+      "h1_basis": "H1-1、H1-4：温度场与干基含水率场的耦合传递"
+    },
+    {
+      "id": "Q3",
+      "language": "zh",
+      "query": "干燥 收缩 移动边界 固定参考域 有限体积 几何守恒",
+      "purpose": "查找问题4移动边界的两类候选离散方法及守恒条件",
+      "h1_basis": "H1-7、H1-8：R(t)收缩、M1固定参考域与M2前沿贴合移动有限体积"
+    },
+    {
+      "id": "Q4",
+      "language": "en",
+      "query": "drying shrinkage moving boundary arbitrary Lagrangian Eulerian finite volume geometric conservation law",
+      "purpose": "查找移动网格、参考域变换和几何守恒验证方法",
+      "h1_basis": "H1-8：移动边界离散的公平原型比较和质量守恒"
+    },
+    {
+      "id": "Q5",
+      "language": "en",
+      "query": "food drying variable thermal diffusivity moisture diffusivity coupled heat mass transfer finite volume",
+      "purpose": "查找状态相关物性和非线性扩散系数的数值处理",
+      "h1_basis": "问题2—4使用题设状态相关经验式并逐状态更新系数"
+    },
+    {
+      "id": "Q6",
+      "language": "zh",
+      "query": "干燥模型 敏感性分析 网格无关性 质量守恒 边界条件 不确定性",
+      "purpose": "查找模型验证、敏感性和不确定性评估范式",
+      "h1_basis": "H1必做验证：网格/时间步收敛、边界敏感性、参数扰动与质量平衡"
+    },
+    {
+      "id": "Q7",
+      "language": "en",
+      "query": "drying model validation grid convergence sensitivity analysis uncertainty mass balance boundary condition",
+      "purpose": "补充英文数值验证与不确定性证据",
+      "h1_basis": "H1 required_validations：收敛、守恒、阈值夹逼和边界窗口敏感性"
+    },
+    {
+      "id": "Q8",
+      "language": "en",
+      "query": "food drying physics-informed neural network heat mass transfer moisture temperature",
+      "purpose": "查找以守恒方程约束神经网络的干燥场求解与加速研究",
+      "h1_basis": "H1-1、H1-4及拒绝项边界：神经网络只能辅助或加速物理模型，不能无监督标签地替代守恒方程"
+    },
+    {
+      "id": "Q9",
+      "language": "en",
+      "query": "drying process surrogate model neural network computational acceleration coupled heat mass transfer",
+      "purpose": "查找神经网络代理模型对耦合热质传递数值仿真的加速应用",
+      "h1_basis": "问题2—4需要大量网格、参数敏感性和长时程重复求解，可由经物理求解器生成的数据训练代理模型"
+    },
+    {
+      "id": "Q10",
+      "language": "en",
+      "query": "neural operator moving boundary diffusion surrogate model heat mass transfer",
+      "purpose": "查找神经算子或降阶代理对参数化扩散方程及移动边界问题的加速",
+      "h1_basis": "H1-7、H1-8：R(t)收缩域、M1/M2原型比较及参数扰动中的重复PDE求解"
+    },
+    {
+      "id": "Q11",
+      "language": "en",
+      "query": "physics-informed neural network inverse diffusivity heat moisture transport parameter identification",
+      "purpose": "查找PINN用于扩散系数或边界参数反演的研究，评估其在本题参数校准中的边界",
+      "h1_basis": "H1-4、H1-10：h、hm及经验式参数只能在存在可识别观测目标时校准"
+    },
+    {
+      "id": "Q12",
+      "language": "zh",
+      "query": "食品干燥 物理信息神经网络 代理模型 传热传质 加速",
+      "purpose": "补充中文语境下干燥过程机器学习加速与物理约束建模研究",
+      "h1_basis": "问题2—4的重复数值求解和敏感性分析，但不得越过无内部场标签与守恒验证限制"
+    }
+  ],
+  "inclusion_criteria": [
+    "直接讨论药材、食品或多孔生物材料干燥中的温度—水分耦合传递",
+    "给出圆柱/轴对称几何、对流边界、状态相关物性或移动收缩域的明确数学形式",
+    "提供质量守恒、网格/时间步收敛、敏感性、不确定性或实验验证方法",
+    "全文或至少元数据可通过出版者、DOI、机构库或用户合法访问来源核验",
+    "研究设计、数据、方程、参数来源或验证过程至少有一项可独立检查"
+  ],
+  "exclusion_criteria": [
+    "仅讨论空气流场而不涉及材料内部温湿场",
+    "仅有机器学习预测且没有可用于本题的物理约束或内部场验证",
+    "研究对象、尺度或结果变量与本题无法合理迁移",
+    "撤稿、重复记录、元数据不可核验或仅凭标题推断结论",
+    "来源身份不明、正文与元数据冲突、关键结果无法定位，或存在未解决的学术诚信警示"
+  ],
+  "screening_policy": {
+    "principle": "相关性决定文献能否回答本题需要，可靠性决定其证据能承受多强的主张；两者分别评分，不以引用量、期刊名气或关键词命中替代任一维度。",
+    "hard_stops": [
+      "已撤稿、被正式更正且更正影响拟引用结论，或存在无法消除的论文身份冲突",
+      "题名、作者、年份、来源及DOI或稳定标识无法核验",
+      "只有摘要或二手转述，却计划用其支持具体方程、参数、数值结果或强结论",
+      "研究对象、尺度、边界条件或输出与H1需求不匹配且没有可论证的迁移路径",
+      "关键方法或结果在全文中无法定位，因而不可复核"
+    ],
+    "relevance": {
+      "scale": "0—5",
+      "dimensions": [
+        "H1需求匹配：能否明确对应H1条目、子问题或必做验证",
+        "对象与尺度迁移：药材/食品/多孔生物材料、圆柱或轴对称几何是否相近",
+        "变量与机制匹配：温度场、干基含水率、状态相关物性、收缩或移动边界是否一致",
+        "方法与输出可用性：方程、边界条件、参数、离散或验证方法能否直接借鉴",
+        "证据定位性：拟使用信息能否定位到页码、章节、公式、表格或图"
+      ],
+      "anchors": {
+        "0": "与H1无实质关系",
+        "1": "只有宽泛背景关系",
+        "2": "支持一个外围概念，但对象或方法迁移较弱",
+        "3": "支持至少一个明确H1需要，存在可管理的迁移限制",
+        "4": "直接支持一个核心子问题、候选方法或验证合同",
+        "5": "同时高度匹配研究对象、机制、数学形式和验证需求"
+      }
+    },
+    "reliability": {
+      "scale": "0—5",
+      "dimensions": [
+        "来源与版本：出版者、DOI、学位授予机构或可信机构库可核验，版本状态清楚",
+        "研究透明度：数据、样本、实验条件、方程、参数来源和计算步骤报告充分",
+        "验证强度：具有实验对照、独立数据、基线、误差指标、守恒或收敛检查",
+        "结论克制：区分观测、拟合、机制推断和外推，披露局限与失败条件",
+        "可复核性：关键结果、表图和方法可在全文定位，且不存在未解决的撤稿或诚信警示"
+      ],
+      "anchors": {
+        "0": "身份或完整性无法核验，不能作为证据",
+        "1": "仅有摘要/二手信息或方法细节严重不足",
+        "2": "来源可识别，但验证弱、参数来源不清或结论明显超出证据",
+        "3": "正规来源且方法基本透明，有至少一种适当验证，但仍有明显限制",
+        "4": "方法和数据报告充分，验证较强，局限清楚，关键结论可复核",
+        "5": "高透明、强验证、可复现或多源佐证，且与拟支持主张的证据等级相称"
+      }
+    },
+    "decision_rules": [
+      "任何hard stop命中即排除，不计算综合分。",
+      "相关性低于3的文献不进入核心来源集；可保留为背景候选，但不得支撑模型选择或参数。",
+      "可靠性低于3的文献不得支撑核心方程、参数范围、模型优越性或最终结论；若相关性高，可列入待核验清单。",
+      "核心纳入要求相关性≥3且可靠性≥3；优先下载与精读相关性≥4且可靠性≥3的文献。",
+      "综合排序分=0.55×相关性+0.45×可靠性；排序只用于控制筛查顺序，不覆盖双阈值和hard stop。",
+      "综合分相同时，依次优先可靠性更高、与H1直接对应、全文可得、验证更完整的来源。",
+      "同一主张优先寻找至少两个相互独立来源；不能因为多篇论文重复引用同一原始研究而误判为多源证据。",
+      "综述用于建立领域地图和追溯原始研究；具体方程、参数和实验结论尽量回到原始论文或学位论文核验。"
+    ],
+    "required_record_fields": [
+      "relevance_score",
+      "relevance_reason",
+      "reliability_score",
+      "reliability_reason",
+      "hard_stop",
+      "source_type",
+      "version_or_retraction_check",
+      "supports_h1",
+      "transfer_limits",
+      "evidence_locator",
+      "full_text_status",
+      "final_decision"
+    ]
+  },
+  "cnki": {
+    "professional_search_url": "https://kns.cnki.net/kns8s/AdvSearch?type=expert&classid=WD0FTY92&rlang=CHINESE&language=CHS",
+    "expressions": [
+      {
+        "id": "CNKI-1",
+        "expression": "TKA='中药材' * TKA=('干燥' + '烘干') * TKA=('传热传质' + '热质传递')",
+        "purpose": "领域机理与中药材内部温湿场模型",
+        "h1_basis": "H1-1、H1-2、H1-4",
+        "preferred_filters": "学术期刊或博士/硕士论文；中文；优先2010—2026",
+        "screening_target": 20
+      },
+      {
+        "id": "CNKI-2",
+        "expression": "TKA=('食品干燥' + '生物材料干燥') * TKA=('圆柱' + '轴对称') * TKA=('温度场' + '含水率场')",
+        "purpose": "补充可迁移的圆柱与轴对称干燥模型",
+        "h1_basis": "H1-1：一维径向基线与二维轴对称端面验证",
+        "preferred_filters": "学术期刊或学位论文；优先2005—2026",
+        "screening_target": 20
+      },
+      {
+        "id": "CNKI-3",
+        "expression": "TKA=('干燥收缩' + '收缩干燥') * TKA=('移动边界' + '动网格' + '参考域')",
+        "purpose": "收缩移动域建模与坐标变换",
+        "h1_basis": "H1-7、H1-8：R(t)、M1与M2",
+        "preferred_filters": "学术期刊或学位论文；优先2000—2026",
+        "screening_target": 20
+      },
+      {
+        "id": "CNKI-4",
+        "expression": "TKA=('移动有限体积' + '动网格有限体积') * TKA=('质量守恒' + '几何守恒')",
+        "purpose": "M2方法的守恒离散和验证条件",
+        "h1_basis": "H1-8及required_validations中的几何守恒与质量平衡",
+        "preferred_filters": "学术期刊或博士论文；不限年份",
+        "screening_target": 15
+      },
+      {
+        "id": "CNKI-5",
+        "expression": "TKA=('干燥模型' + '传热传质模型') * TKA=('敏感性分析' + '不确定性分析')",
+        "purpose": "边界、物性参数和经验式扰动分析",
+        "h1_basis": "H1-3、H1-4、H1-10及必做敏感性验证",
+        "preferred_filters": "学术期刊；优先2010—2026",
+        "screening_target": 20
+      },
+      {
+        "id": "CNKI-6",
+        "expression": "TKA=('数值模拟' * '干燥') * TKA=('网格无关性' + '时间步' + '质量平衡')",
+        "purpose": "网格、时间步、质量平衡和边界残差验证",
+        "h1_basis": "H1 required_validations与问题3/4阈值事件夹逼",
+        "preferred_filters": "学术期刊或学位论文；优先2005—2026",
+        "screening_target": 20
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-09-11T08:27:21+08:00",
+  "input": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\literature\\acquisition\\ml-selected-candidates.json",
+  "counts": {
+    "no_open_access_pdf": 4,
+    "downloaded": 2,
+    "download_failed": 1
+  },
+  "records": [
+    {
+      "title": "Accelerated modelling of moisture diffusion controlled drying using coupled physics informed neural network",
+      "doi": "10.1016/j.fbp.2024.02.004",
+      "status": "no_open_access_pdf",
+      "attempted_urls": [],
+      "openalex_id": "https://openalex.org/W4391940922"
+    },
+    {
+      "title": "A parameterized physics-informed machine learning approach for solving heat and mass transfer equations in the drying process",
+      "doi": "10.1016/j.icheatmasstransfer.2024.107897",
+      "status": "no_open_access_pdf",
+      "attempted_urls": [],
+      "openalex_id": "https://openalex.org/W4401383299"
+    },
+    {
+      "title": "Surrogate modeling of shrinkage due to drying using physics-informed machine learning method",
+      "doi": "10.1063/5.0274073",
+      "status": "no_open_access_pdf",
+      "attempted_urls": [],
+      "openalex_id": "https://openalex.org/W4412739465"
+    },
+    {
+      "title": "Toward mechanistic models ‘augmented’ by machine learning. Example of a drying simulation data set exploited by a Physics Informed Neural Network",
+      "doi": "10.1080/07373937.2024.2411582",
+      "status": "downloaded",
+      "attempted_urls": [
+        "https://hal.science/hal-04759083v1/document"
+      ],
+      "openalex_id": "https://openalex.org/W4403365139",
+      "source_url": "https://hal.science/hal-04759083v1/document",
+      "file": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\literature\\input\\004_2025_Toward mechanistic models ‘augmented’ by machine learning. Example of a drying simulation data set exploited by a Physic.pdf",
+      "sha256": "8b6e670dde237789b5b7bf7764ca9bbe38500d809cc2c48058944f3b9d7e6022"
+    },
+    {
+      "title": "Fundamental Understanding of Heat and Mass Transfer Processes for Physics-Informed Machine Learning-Based Drying Modelling",
+      "doi": "10.3390/en15249347",
+      "status": "downloaded",
+      "attempted_urls": [
+        "https://www.mdpi.com/1996-1073/15/24/9347/pdf?version=1670914253",
+        "https://eprints.qut.edu.au/237046/8/energies_15_09347_v2.pdf"
+      ],
+      "openalex_id": "https://openalex.org/W4312127568",
+      "source_url": "https://www.mdpi.com/1996-1073/15/24/9347/pdf?version=1670914253",
+      "file": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\literature\\input\\005_2022_Fundamental Understanding of Heat and Mass Transfer Processes for Physics-Informed Machine Learning-Based Drying Modelli.pdf",
+      "sha256": "b894f34ea788e250552b4d7818c9d1ef2d7734361871ce2c9d288dbbadafe755"
+    },
+    {
+      "title": "PINN Model of Diffusion Coefficient Identification Problem in Fick’s Laws",
+      "doi": "10.1021/acsomega.3c07924",
+      "status": "download_failed",
+      "attempted_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10809368/pdf/ao3c07924.pdf"
+      ],
+      "openalex_id": "https://openalex.org/W4390649639",
+      "errors": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10809368/pdf/ao3c07924.pdf: response is not a PDF"
+      ]
+    },
+    {
+      "title": "Region-aware graph neural networks for real-time drying simulations of unsaturated porous media - Food drying digital twin framework",
+      "doi": "10.1016/j.jfoodeng.2026.113041",
+      "status": "no_open_access_pdf",
+      "attempted_urls": [],
+      "openalex_id": "https://openalex.org/W7131292223"
+    }
+  ]
+}

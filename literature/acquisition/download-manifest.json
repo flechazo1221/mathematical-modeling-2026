@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-09-11T07:41:31+08:00",
+  "input": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\literature\\acquisition\\selected-candidates.json",
+  "counts": {
+    "existing": 7,
+    "download_failed": 1
+  },
+  "records": [
+    {
+      "title": "Shrinkage of Food Materials During Drying: Current Status and Challenges",
+      "doi": "10.1111/1541-4337.12375",
+      "status": "existing",
+      "attempted_urls": [
+        "https://eprints.qut.edu.au/120094/2/120094.pdf"
+      ],
+      "openalex_id": "https://openalex.org/W2884682322",
+      "file": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\literature\\input\\001_2018_Shrinkage of Food Materials During Drying Current Status and Challenges.pdf",
+      "sha256": "44fe1aa1ed80253b69f5bab97ccd759f707b0fd4cb69e3429b45e9dd83452d3c"
+    },
+    {
+      "title": "Evolution of shrinkage, real density, porosity, heat and mass transfer coefficients during indirect solar drying of cocoa beans",
+      "doi": "10.1016/j.jssas.2017.01.002",
+      "status": "existing",
+      "attempted_urls": [
+        "https://www.sciencedirect.com/science/article/pii/S1658077X16301965/pdf"
+      ],
+      "openalex_id": "https://openalex.org/W2585283214",
+      "file": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\literature\\input\\002_2017_Evolution of shrinkage, real density, porosity, heat and mass transfer coefficients during indirect solar drying of coco.pdf",
+      "sha256": "71eeb9e00006946b847f8e145ca15ad41306ee0fd8d49b38d073a5fa3a8da08a"
+    },
+    {
+      "title": "Analysis of convective heat and mass transfer coefficients for convective drying of a porous flat plate by conjugate modelling",
+      "doi": "10.1016/j.ijheatmasstransfer.2011.08.047",
+      "status": "existing",
+      "attempted_urls": [
+        "https://lirias.kuleuven.be/retrieve/dd0ad7d1-9ff0-42d4-b635-6ff875ddc681",
+        "https://www.dora.lib4ri.ch/empa/dload/empa:5132/PDF2/view"
+      ],
+      "openalex_id": "https://openalex.org/W2138832084",
+      "file": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\literature\\input\\003_2011_Analysis of convective heat and mass transfer coefficients for convective drying of a porous flat plate by conjugate mod.pdf",
+      "sha256": "f4215c7c62fb47af230c19741ffeab728b637201f57a5ce33b9a58c6fdb478d5"
+    },
+    {
+      "title": "Validation of a coupled heat, vapour and liquid moisture transport model for porous materials implemented in CFD",
+      "doi": "10.1016/j.buildenv.2014.06.024",
+      "status": "existing",
+      "attempted_urls": [
+        "https://biblio.ugent.be/publication/5670988/file/5671903.pdf"
+      ],
+      "openalex_id": "https://openalex.org/W1975102748",
+      "file": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\literature\\input\\004_2014_Validation of a coupled heat, vapour and liquid moisture transport model for porous materials implemented in CFD.pdf",
+      "sha256": "8dcb699870a01cc64b66dbe1e29349c861a69c25e977557d173caf3ed4dc2d3f"
+    },
+    {
+      "title": "Numerical and experimental analysis of heat and mass transfer in the drying process of the solar drying system",
+      "doi": "10.1016/j.jestch.2020.10.003",
+      "status": "download_failed",
+      "attempted_urls": [
+        "https://www.sciencedirect.com/science/article/pii/S2215098620342324/pdf"
+      ],
+      "openalex_id": "https://openalex.org/W3094130110",
+      "errors": [
+        "https://www.sciencedirect.com/science/article/pii/S2215098620342324/pdf: HTTP Error 403: Forbidden"
+      ]
+    },
+    {
+      "title": "Mathematical Modelling of Drying of Hydrogels via Finite Element Method and Texture Analysis",
+      "doi": "10.3390/pr12081564",
+      "status": "existing",
+      "attempted_urls": [
+        "https://www.mdpi.com/2227-9717/12/8/1564/pdf?version=1721976634"
+      ],
+      "openalex_id": "https://openalex.org/W4401027545",
+      "file": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\literature\\input\\006_2024_Mathematical Modelling of Drying of Hydrogels via Finite Element Method and Texture Analysis.pdf",
+      "sha256": "7f1bafab5ee2d0a0e38b1fa52e63db613cbef894c924c9c779701d60ea86398d"
+    },
+    {
+      "title": "Multi-scale model of food drying: Current status and challenges",
+      "doi": "10.1080/10408398.2016.1227299",
+      "status": "existing",
+      "attempted_urls": [
+        "https://eprints.qut.edu.au/101620/1/Multi%20scale%20model%20of%20food%20drying%20Current%20status%20and%20challenges.pdf"
+      ],
+      "openalex_id": "https://openalex.org/W2521918735",
+      "file": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\literature\\input\\007_2016_Multi-scale model of food drying Current status and challenges.pdf",
+      "sha256": "072d856e5046f037a2e0340e7ef28331bff023d89eac43eee343e0cbad011c03"
+    },
+    {
+      "title": "Fundamental Understanding of Heat and Mass Transfer Processes for Physics-Informed Machine Learning-Based Drying Modelling",
+      "doi": "10.3390/en15249347",
+      "status": "existing",
+      "attempted_urls": [
+        "https://www.mdpi.com/1996-1073/15/24/9347/pdf?version=1670914253",
+        "https://eprints.qut.edu.au/237046/8/energies_15_09347_v2.pdf"
+      ],
+      "openalex_id": "https://openalex.org/W4312127568",
+      "file": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\literature\\input\\008_2022_Fundamental Understanding of Heat and Mass Transfer Processes for Physics-Informed Machine Learning-Based Drying Modelli.pdf",
+      "sha256": "fce0558f29ef78d789903c9955d2768f7d8bd06709cbccf5be4fc5a0d039514f"
+    }
+  ]
+}

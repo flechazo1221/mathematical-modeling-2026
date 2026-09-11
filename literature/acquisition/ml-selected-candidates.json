@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "selected_candidates": [
+    {
+      "title": "Accelerated modelling of moisture diffusion controlled drying using coupled physics informed neural network",
+      "authors": ["Jonathan Barnard", "Y. M. John Chew", "Semali Perera", "Özgür Şimşek", "Kamel Balquis", "John Barker"],
+      "year": 2024, "venue": "Food and Bioproducts Processing", "volume": "145", "pages": "67-77",
+      "doi": "10.1016/j.fbp.2024.02.004", "url": "https://doi.org/10.1016/j.fbp.2024.02.004",
+      "source": "OpenAlex+publisher+University of Bath", "matched_queries": ["Q8", "Q9"],
+      "selection_reason": "直接以耦合PINN求解一维干燥热传导—水分扩散，并报告迁移学习后的3—37倍加速，是本题‘机器学习作加速器’最直接证据。",
+      "supports": ["Q2-Q4重复PDE求解", "状态相关物性更新", "代理加速"], "metadata_verified": true,
+      "verification_url": "https://doi.org/10.1016/j.fbp.2024.02.004",
+      "transfer_limits": "首次训练比数值法慢；加速依赖相近工况的迁移学习和已训练模型库，不能直接替代本题基准求解器。"
+    },
+    {
+      "title": "A parameterized physics-informed machine learning approach for solving heat and mass transfer equations in the drying process",
+      "authors": ["Seyedalborz Manavi", "Ehsan Fattahi", "Thomas Becker"],
+      "year": 2024, "venue": "International Communications in Heat and Mass Transfer", "volume": "158", "article_number": "107897",
+      "doi": "10.1016/j.icheatmasstransfer.2024.107897", "url": "https://doi.org/10.1016/j.icheatmasstransfer.2024.107897",
+      "source": "OpenAlex+publisher", "matched_queries": ["Q8", "Q9", "Q11"],
+      "selection_reason": "把热、质Biot数作为网络输入，构造参数化PINN代理并用于敏感性分析，与本题h、hm扰动高度对应。",
+      "supports": ["H1-4", "H1-10", "参数敏感性批量计算"], "metadata_verified": true,
+      "verification_url": "https://doi.org/10.1016/j.icheatmasstransfer.2024.107897",
+      "transfer_limits": "采用Luikov模型且参数范围不同；本题必须先用冻结的有限体积/有限元结果校验。"
+    },
+    {
+      "title": "Surrogate modeling of shrinkage due to drying using physics-informed machine learning method",
+      "authors": ["Seyedalborz Manavi", "Ehsan Fattahi", "Thomas Becker"],
+      "year": 2025, "venue": "Physics of Fluids", "volume": "37", "issue": "7", "article_number": "073134",
+      "doi": "10.1063/5.0274073", "url": "https://doi.org/10.1063/5.0274073",
+      "source": "TUM institutional record+publisher", "matched_queries": ["Q9", "Q10"],
+      "selection_reason": "直接处理干燥收缩、温度、水分和长度的物理信息代理，并扩展到参数化PDE敏感性分析，是问题4最贴近的论文。",
+      "supports": ["H1-7", "H1-8", "问题4收缩移动边界代理"], "metadata_verified": true,
+      "verification_url": "https://doi.org/10.1063/5.0274073",
+      "transfer_limits": "含非Fick黏弹收缩机制；本题R(t)由附件给定，不能照搬其收缩本构。"
+    },
+    {
+      "title": "Toward mechanistic models ‘augmented’ by machine learning. Example of a drying simulation data set exploited by a Physics Informed Neural Network",
+      "authors": ["Patrick Perré"],
+      "year": 2025, "venue": "Drying Technology", "volume": "43", "issue": "1-2", "pages": "147-161",
+      "doi": "10.1080/07373937.2024.2411582", "url": "https://doi.org/10.1080/07373937.2024.2411582",
+      "source": "publisher", "matched_queries": ["Q8", "Q9"],
+      "selection_reason": "明确比较机理模型与ML的全耦合、解耦和级联方案，并展示用机理仿真数据训练PINN，适合论证本题的辅助定位。",
+      "supports": ["物理求解器生成训练集", "混合/级联架构", "软测量"], "metadata_verified": true,
+      "verification_url": "https://doi.org/10.1080/07373937.2024.2411582",
+      "transfer_limits": "机器学习仍受训练数据覆盖域限制；不可据此宣称域外可靠。"
+    },
+    {
+      "title": "Fundamental Understanding of Heat and Mass Transfer Processes for Physics-Informed Machine Learning-Based Drying Modelling",
+      "authors": ["Md. Imran H. Khan", "C. P. Batuwatta-Gamage", "M. A. Karim", "Yuantong Gu"],
+      "year": 2022, "venue": "Energies", "volume": "15", "issue": "24", "article_number": "9347",
+      "doi": "10.3390/en15249347", "url": "https://doi.org/10.3390/en15249347",
+      "source": "OpenAlex+publisher", "matched_queries": ["Q8"],
+      "selection_reason": "干燥PIML领域综述与框架文献，可用于整理损失函数中的质量、能量、初边值约束。",
+      "supports": ["H1-1", "H1-4", "PIML框架"], "metadata_verified": true,
+      "verification_url": "https://doi.org/10.3390/en15249347",
+      "transfer_limits": "主要是综述和建议框架，不是本题同构算例的性能证明。"
+    },
+    {
+      "title": "PINN Model of Diffusion Coefficient Identification Problem in Fick’s Laws",
+      "authors": ["Dongchen Li", "Bin Yan", "Tianya Gao", "Guowei Li", "You Wang"],
+      "year": 2024, "venue": "ACS Omega", "volume": "9", "issue": "3", "pages": "3846-3857",
+      "doi": "10.1021/acsomega.3c07924", "url": "https://doi.org/10.1021/acsomega.3c07924",
+      "source": "OpenAlex+publisher", "matched_queries": ["Q11"],
+      "selection_reason": "展示以Fick定律约束PINN反演扩散系数，可作为题设D(C,T)参数扰动或假想校准方案的方法依据。",
+      "supports": ["H1-10", "扩散系数反演"], "metadata_verified": true,
+      "verification_url": "https://doi.org/10.1021/acsomega.3c07924",
+      "transfer_limits": "本题缺少内部场观测，当前不能据此实际反演D，只能作为有额外实验数据时的扩展。"
+    },
+    {
+      "title": "Region-aware graph neural networks for real-time drying simulations of unsaturated porous media - Food drying digital twin framework",
+      "authors": ["Saeed Nazari", "Amir Malvandi"],
+      "year": 2026, "venue": "Journal of Food Engineering", "volume": "414", "article_number": "113041",
+      "doi": "10.1016/j.jfoodeng.2026.113041", "url": "https://doi.org/10.1016/j.jfoodeng.2026.113041",
+      "source": "University of Illinois institutional record+publisher", "matched_queries": ["Q9", "Q10"],
+      "selection_reason": "用区域感知GNN从有限组CFD数据学习耦合热质传递，实现实时干燥仿真，代表PINN之外的神经网络代理路线。",
+      "supports": ["二维轴对称/网格代理", "实时预测", "数字孪生"], "metadata_verified": true,
+      "verification_url": "https://doi.org/10.1016/j.jfoodeng.2026.113041",
+      "transfer_limits": "训练对象为马铃薯片且依赖28组CFD；本题数据量不足，需自行生成覆盖参数域的高保真样本。"
+    }
+  ]
+}

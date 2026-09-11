@@ -1,0 +1,3363 @@
+[[PAGE 1]]
+This may be the author’s version of a work that was submitted/accepted
+for publication in the following source:
+
+Rahman, Mohammad Mahbubur, Joardder, Mohammad, Khan, Md Imran
+Hossen, Pham, Duc Nghia, & Karim, Azharul
+(2016)
+Multi-scale model of food drying: Current status and challenges.
+Critical Reviews in Food Science and Nutrition, 58(5), pp. 858-876.
+
+This file was downloaded from: https://eprints.qut.edu.au/222194/
+
+© Consult author(s) regarding copyright matters
+
+This work is covered by copyright. Unless the document is being made available under a
+Creative Commons Licence, you must assume that re-use is limited to personal use and
+that permission from the copyright owner must be obtained for all other uses. If the docu-
+ment is available under a Creative Commons License (or other specified license) then refer
+to the Licence for details of permitted re-use. It is a condition of access that users recog-
+nise and abide by the legal requirements associated with these rights. If you believe that
+this work infringes copyright please provide details by email to qut.copyright@qut.edu.au
+
+Notice: Please note that this document may not be the Version of Record
+(i.e. published version) of the work. Author manuscript versions (as Sub-
+mitted for peer review or as Accepted for publication after peer review) can
+be identified by an absence of publisher branding and/or typeset appear-
+ance. If there is any doubt, please refer to the published source.
+
+https://doi.org/10.1080/10408398.2016.1227299
+
+[[PAGE 2]]
+ACCEPTED MANUSCRIPT
+
+                       Multi-scale model of food drying: Current status and challenges
+
+   M.M. Rahman1, Mohammad U.H. Joardder1, M.I.H. Khan1,2, Nghia Duc Pham1,3 and M.A.
+
+                                                   Karim1*a
+
+         1
+             School of Chemistry, Physics and Mechanical Engineering, Faculty of Science and
+
+        Engineering, Queensland University of Technology, Brisbane, Queensland, Australia
+
+   2
+       Department of Mechanical Engineering, Dhaka University of Engineering & Technology,
+
+                                          Gazipur-1700, Bangladesh
+
+                3
+                    Engineering Faculty, Vietnam National University of Agriculture, Vietnam
+
+   *Author to whom correspondence should be addressed; E-Mail: azharul.karim@qut.edu.au
+
+Abstract
+
+For a long time, food engineers have been trying to describe the physical phenomena that occur
+
+during food processing especially drying. Physics-based theoretical modeling is an important
+
+tool for the food engineers to reduce the hurdles of experimentation. Drying of food is a multi-
+
+physics phenomenon such as coupled heat and mass transfer. Moreover, food structure is multi-
+
+scale in nature, and the microstructural features play a great role in the food processing specially
+
+in drying. Previously simple macroscopic model was used to describe the drying phenomena
+
+which can give a little description about the smaller scale. The multiscale modeling technique
+
+can handle all the phenomena that occur during drying. In this special kind of modeling
+
+approach, the single scale models from bigger to smaller scales are interconnected. With the help
+
+                                                       1
+                                                           ACCEPTED MANUSCRIPT
+
+[[PAGE 3]]
+ACCEPTED MANUSCRIPT
+
+of multiscale modeling framework, the transport process associated with drying can be studied
+
+on a smaller scale and the resulting information can be transferred to the bigger scale. This
+
+article is devoted to discussing the state of the art multi-scale modeling, its prospect and
+
+challenges in the field of drying technology. This article has also given some directions to how to
+
+overcome the challenges for successful implementation of multi-scale modeling.
+
+                                                2
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 4]]
+ACCEPTED MANUSCRIPT
+
+   1. Introduction
+
+The Important sources of essential dietary nutrients such as vitamins, minerals, and fiber are
+
+fruits and vegetables. They are considered, as perishable commodities as the moisture content of
+
+them are more than 80% (Paull, 1999). The best way to keep a product fresh is by maintaining its
+
+nutritional value. A common technique for a storage system for perishable items is to maintain
+
+low temperature so as to preserve the nutritional value, but it is difficult to maintain a low
+
+temperature throughout the distribution chain. This contribute to the loss of nutritional value.
+
+This is particularly problematic for post harvesting management of fruits and vegetables in
+
+developing countries where the distribution chain cannot maintain the required low level of
+
+temperatures and thus ruining essential nutritional values of the perishables. An effective answer
+
+to this problem is drying. To promote the food security of over 20% of the world’s perishable
+
+crops, drying is a traditional choice (Sagar & Kumar, 2010). Drying of fruits and vegetables
+
+enhance storage stability, minimize packaging requirements and reduce transport weight and
+
+cost. (M. Rahman, Mustayen, Mekhilef, & Saidur, 2015). The main purpose of drying is to
+
+remove moisture from a material while ensuring the quality of the product. Minimizing
+
+operational cost is also considered in the drying process.
+
+Food is a multi-component system which is a complex integration of different chemical and
+
+physical process. Foods are mainly composed of proteins and carbohydrate polymers that work
+
+as structure builders and the viscosity enricher (Mitchell, 1998). Moreover, there are complex
+
+relations between the macroscopic and the microscopic properties of food materials. The
+
+explanation of this macro-micro property relation cannot be explained using bulk experimental
+
+                                                 3
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 5]]
+ACCEPTED MANUSCRIPT
+
+methods (Limbach & Kremer, 2006). Mathematical modeling can prove its applicability in the
+
+complicated empirical situation (Attig, Binder, Grubmuller, & Kremer, 2004; Baschnagel et al.,
+
+2000). A good mathematical model can help to understand the transport process inside the food
+
+materials during drying. Drying of Porous materials like food is one of the most complex
+
+problems in the engineering field that also has multiscale nature (Mujumdar, 2007). Multiscale
+
+simulation method can serve as an effective approach and can extend the vision of macro-micro
+
+relationship in food drying process. A multiscale modeling technique can establish the relations
+
+between the macroscopic properties with the microstructure of food materials during drying.
+
+The objective of this review is to discuss the application of innovative computational methods
+
+especially multiscale modeling approach in the food drying process. This review will also focus
+
+on the potentiality and the challenges of multiscale modeling technique. The content of this
+
+article proceeds as follows: Firstly, the microstructure of the plant based food materials has been
+
+discussed. After that, the water distribution and the transport process in food materials at
+
+different scales have been discussed. Next, the article will illustrate the modeling approaches that
+
+have been formulated and the limitation of these conventional models. Following that, the
+
+multiscale model with, its basics, current state and the solution technique will be explained. After
+
+that, the interconnection among the sub-models and the challenges will be expounded.
+
+Additionally, several advanced experimental techniques for validating the multiscale model have
+
+been discussed. In the final section, some recommendations have been provided for the further
+
+development of the modeling technique.
+
+                                                 4
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 6]]
+ACCEPTED MANUSCRIPT
+
+   2. Microstructure of plant-based food materials
+
+Plant-based foods are composed of polymers and waters generally. It also contains air and
+
+minerals that are responsible for the complex structure (Gross & Kalra, 2002). The complex
+
+food structure is built as consequences of multiple interactions of polysaccharides and proteins.
+
+Glucose is built by the tissue organization (Street, 1973). Cell structures usually vary widely
+
+range in different samples. Cell walls are formed by the integration of cells. The stabilization of
+
+the cell wall takes place with the help of fibres. Cellulose, pectin and hemicellulose in the plant
+
+cell usually build the cell wall. The water inside the plant cell migrates through the pectin as it is
+
+soluble in water (M. U. Joardder, Kumar, & Karim, 2015).
+
+In the case of drying process, the food material is considered as porous and hygroscopic media
+
+with multiphase transportation of heat and mass transfer inside it (Ni, Datta, & Torrance, 1999).
+
+Fruit tissue, particularly cellular tissue, can be viewed as a summation of parenchyma cells and
+
+intercellular spaces (H. Mebatsion et al., 2006). A thin cell wall composed of cellulose and other
+
+polysaccharides envelops the cell. The porosity of such cell walls is high, and correspondingly
+
+has high permeability to water, so that water retention occurs mainly by surface tension effects.
+
+Inside the cell wall and enclosing the cytoplasm there is also a semi-permeable membrane, called
+
+the plasma lemma (Jose Miguel Aguilera & Stanley, 1999).
+
+Within each cell, the cytoplasm contains a variety of organelles related to the metabolic activity
+
+of the cell, such as the nucleus, mitochondria and others; it is internally bounded by a membrane
+
+known as a tonoplast. Inside the tonoplast there is the vacuole, which has the highest water
+
+content of the cell phases described, reaching levels of about 98%, together with sugars, organic
+
+                                                  5
+                                                      ACCEPTED MANUSCRIPT
+
+[[PAGE 7]]
+ACCEPTED MANUSCRIPT
+
+acids, salts and colloidal materials. The membranes are semi-permeable and when coming in
+
+contact with the vacuolar solution solute concentration, the results in an osmotic effect. The
+
+water chemical potential external to the vacuole generates hydrostatic pressure, which maintains
+
+the protoplast firmly pressed against the cell wall and hence keeps the tissue firm. This means
+
+that loss of water is accompanied by a loss of internal pressure, with the tissue becoming flaccid.
+
+This pressure is known as turgor pressure and plays an important role in the rheology and texture
+
+of the tissue.
+
+Most of the materials including the food materials contain structures of different scales. These
+
+scales are specified by macro-scale, meso scale and micro-scale. For example, when the structure
+
+of an apple is analysed different tissues such as vortex, outer, and inner cortex tissues are found.
+
+These tissues are considered as elements of the structure. This tissue is formed by the integration
+
+of cells that can be observed with the help of a light microscope. Cells have several features i.e.,
+
+membrane, cell wall that is microscopic in magnitude. On the other hand, if the apple is placed in
+
+a dehydration system some physical phenomena can be observed in the centimeter scale which
+
+includes moisture loss. This physical phenomenon is closely linked to the cellular features of
+
+apples. The discussion above shows that, fruits and vegetables are multi-scale materials.
+
+Therefore the drying of food should be explained with the multi scale model for better
+
+understanding (Quang T Ho et al., 2013). A demonstration of different structural arrangements is
+
+presented in Figure 1.
+
+                                                 6
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 8]]
+ACCEPTED MANUSCRIPT
+
+   2.1 Relationship between microstructure and physical property
+
+The drying environment has a great influence on the microstructure. Food structure is
+
+constructed of several materials and their mutual interactions (José Miguel Aguilera & Lillford,
+
+2008). The structure is closely related to the quality of the food materials (Ko & Gunasekaran,
+
+2007; Witek et al., 2010). Drying of food includes modification of microstructures, and this can
+
+be controlled by controlling drying conditions. Novel approaches for drying process mostly rely
+
+on the proper understanding of the architecture and organization of the microstructures.
+
+To design an accurate food processing system, it is imperative to know the structure and the
+
+behaviour of the product. Clear knowledge of the relationships between structure and property of
+
+the food materials are required for developing a better food drying process (Jose M Aguilera,
+
+Stanley, & Baker, 2000). However, the fundamental structure-property relationships are not very
+
+clearly understood till now. As a result, food processing engineers rely on the empirical data for
+
+designing the drying process. Spectacular advances in materials science during the last decade
+
+have emanated from the understanding of the structure of material, its relation to properties (so-
+
+called structure–property relationships), and how to engineer and control those properties.
+
+Material scientists are quite successful in doing this because the microstructures of metals,
+
+ceramics and polymers are more or less homogeneous (Limbach & Kremer, 2006). A large
+
+collection of data on physical properties of foods including thermal, rheological, mechanical and
+
+colour, exist in literature but understanding their relations to microstructure is minimal (M. U.
+
+Joardder et al., 2016a).
+
+                                                7
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 9]]
+ACCEPTED MANUSCRIPT
+
+It is suggested that the microstructural changes during drying of food materials should be
+
+considered as the texture is derived from the microstructure (Bourne, 2002; Mohammad Shafiur
+
+Rahman, 2008). In the case of industrial food processing system, the microstructure of the plant-
+
+based materials is broken. This happens because of the loss of turgor pressure and rapture of the
+
+cellular membranes (Ludikhuyze & Hendrickx, 2001). The microstructure of food martial has an
+
+auditory perception during biting. The sounds that come out during biting of fresh fruits or
+
+vegetable are the instant release of turgor pressure inside the cell (Vickers & Bourne, 1976). In
+
+the case of dried product, this sound comes from the breaking of the cell wall (Duizer, 2001).
+
+Different types of drying have a various effect on the microstructure and the product properties.
+
+The changes in the microstructure that occurs during drying have an effect on the quality of the
+
+food materials (M. U. Joardder, C. Kumar, et al., 2015). The effect of combined hot air drying
+
+with the osmotic pre-treatment was evaluated by (Prothon et al., 2001). The microstructural
+
+studies showed that the quality of the final product was improved for osmotic pre-treatment.
+
+Therefore, a proper understanding of structure-properties relationship will enhance the accuracy
+
+of the perfection models related to food processing.
+
+3. Water transport in different scale drying
+
+In fresh fruits and vegetables, water remains inside the cells and some portion of water stays in
+
+intercellular space. Researchers have found that 85% to 95% water remains inside the cell which
+
+is known as intracellular water (A. Halder, Datta, & Spanswick, 2011). The rest of the water
+
+remains in the intercellular spaces. Mainly three transport mechanisms dominate the internal
+
+moisture transfer. These mechanisms are as follow: (1) transport of bound water, (2) transport of
+
+                                                8
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 10]]
+ACCEPTED MANUSCRIPT
+
+free water and (3) transport of vapour. The flow of the liquid water occurs due to the capillary
+
+forces. The transport of water vapour occurs by the diffusion and the transport of bound water
+
+takes place by desorption and diffusion process (M. U. Joardder, Karim, Kumar, & Brown,
+
+2015).
+
+Water flux inside plant tissue can follow three pathways of transport during drying such as
+
+intercellular, wall to wall and cell to cell. The intercellular transport refers to the water vapour
+
+movement through the intercellular spaces. The wall to wall transport refers to the capillary
+
+water flow through the cell wall tubes. The cell to cell transport refers to water flux through the
+
+vacuoles, the cytoplasm and the cell membranes. In high moisture contents, liquid flows due to
+
+dominating capillary forces. The amount of liquid in the pores decreases with decreasing
+
+moisture content. A gas phase is built up while decreasing the moisture content which causes a
+
+decrease in liquid permeability. Gradually the mass transfer is taken over by vapour diffusion in
+
+a porous structure with increasing vapour diffusion. However, there are different types of mass
+
+transfer mechanisms that dominate at different scales of food materials. Different transport
+
+mechanisms of water in different scale are presented in Table 1.
+
+Water transport during hot air drying leads to porosity evolution. Moreover, shrinkage of the
+
+food material towards the center of the sample compensates for the void volume. Therefore, the
+
+structural deformation phenomenon during heat and mass transfer phenomena is important to
+
+understand for designing the drying process. On the other hand, the process parameter and the
+
+transfer mechanism influence the structural changes and the transfer mechanism (Rastogi,
+
+Raghavarao, Niranjan, & Knorr, 2002; Ziaiifar, Achir, Courtois, Trezzani, & Trystram, 2008).
+
+                                                 9
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 11]]
+ACCEPTED MANUSCRIPT
+
+The pore formation is prevented by the shrinkage. The degree of the structural changes depends
+
+on the distribution of water within the food tissue (Alamar, Vanstreels, Oey, Moltó, & Nicolaï,
+
+2008). Water can be classified on its spatial basis, as intercellular water and intracellular water.
+
+Intracellular water remains inside the cells while the intercellular water remains in the capillaries.
+
+Water in the intercellular space water varies between 78-97% (wet basis) in different fruits and
+
+vegetables. Considering the structure-properties relationship and water migration mechanisms,
+
+there are several ways of prediction of drying kinetics and deformation in the literature. The
+
+following sections describe the existing challenges associated with those models.
+
+   4. Modeling of Drying
+
+For discovering the possible solution to a given problem in food drying, mathematical modeling
+
+is an efficient tool. The classification of mathematical modeling of food drying can be done by
+
+two basic scales. One is macro-scale model, and another is a micro-scale model. The
+
+combination of these two models is named as a multiscale model. Macro-scale models can be
+
+categorized in two approaches such as theoretical model and empirical model. The empirical
+
+models are formulated based on the experimental data, and there is no physics associated with it
+
+(A. Halder et al., 2011). These models are simple and easy to apply for developing drying
+
+kinetics. Theoretical models, on the other hand, are based on physics associated with heat and
+
+mass transfer during drying. Developing physics-based models are challenging tasks. The
+
+complex nature of the agricultural product and the changes in the thermo-physical properties
+
+during drying are the main hurdles to formulate the physics-based models. Moreover, the heat
+
+and mass transfer phenomena are highly coupled in the drying process. The micro-scale model is
+
+                                                 10
+                                                      ACCEPTED MANUSCRIPT
+
+[[PAGE 12]]
+ACCEPTED MANUSCRIPT
+
+a comparatively new approach. It is a very important approach towards multi-scale modeling.
+
+The classifications for the mathematical modeling of food drying have been presented in Figure
+
+2.
+
+4.1 Empirical models for food drying
+
+Empirical models are easier to formulate as the mathematical computation is simple. The output
+
+parameters are measured by the data logging system attached with the experimental setup. A
+
+block diagram for the empirical modeling approach is presented in Figure 3.
+
+Numerous empirical models have been formulated for different food stuffs. The most popular
+
+models are Page, modified Page models, Newtown’s and Lewis models (Erbay & Icier, 2010).
+
+The drying curve of each experiment has been plotted by measuring the moisture content at
+
+different drying time. The basic exponential model is presented as follows
+
+                                  M  Me
+                           MR                                                                 (1)
+                                  M0  Me
+
+The basic empirical model got wider acceptance among the researchers as these models can
+
+describe the drying behavior but these models failed to describe the complex phenomena of the
+
+drying process. Moreover, these drying models consider moisture content as a function of drying
+
+time and fail to describe the temperature and the moisture distribution in the sample during
+
+drying. It is very crucial to study the moisture content through the food materials for analyzing
+
+micro-organism activity inside it. The micro-organism activity is very important for the food
+
+quality and preservation process. For this reason, a robust mathematical modeling is required that
+
+                                               11
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 13]]
+ACCEPTED MANUSCRIPT
+
+can explain the simultaneous heat and mass transfer phenomena in a variation of moisture
+
+content and temperature.
+
+4.2 Theoretical modeling
+
+Drying is a multi-physics problem where coupled heat and mass transport processes occur inside
+
+the material simultaneously. Therefore, theoretical modeling can provide a realistic
+
+understanding of drying kinetics that can help for optimizing energy efficiency and quality
+
+attributes. Theoretical modeling can be categorised into two types: single phase modeling and
+
+multiphase modeling. There are many single phase models of food drying (Batista, da Rosa, &
+
+Pinto, 2007; Kaya, Aydın, & Dincer, 2008; Kumar, Millar, & Karim, 2015; Paull, 1999; M.
+
+Rahman et al., 2015; Sagar & Kumar, 2010) that have been developed based on the concept of
+
+bulk moisture transport. Diffusion is taken into consideration as the mechanism of the moisture
+
+migration in single phase model. The basic mathematical equations that have been considered for
+
+developing single phase model are shown in Table 2.
+
+Single phase model only considers conduction of energy transport and diffusion for mass
+
+transfer. These models have many significant limitations, for instance, the models have totally
+
+lumped for heat and mass transport and do not include many important physics such as pressure-
+
+driven flow or transport due to physicochemical changes in the porous medium.
+
+In addition, due to the hygroscopic, porous and amorphous nature, plant-based food materials
+
+contain three phases such as solid, liquid water, and gases including water vapour and air
+
+(Curcio, 2010). Therefore, multiphase porous media model for simultaneous heat and mass
+
+transfer can provide a realistic understanding of transport processes. Multiphase model for food
+
+                                              12
+                                                   ACCEPTED MANUSCRIPT
+
+[[PAGE 14]]
+ACCEPTED MANUSCRIPT
+
+drying is the model where three phases that (liquid water, gasses and solid) have been considered
+
+for coupled heat and mass transfer. Therefore the development of the physics-based multiphase
+
+model is a challenging task because plant-based food material is non-homogeneous and
+
+hygroscopic in nature. There have been some attempts by the researchers to develop a
+
+multiphase model for different food processing such as frying (B. Farkas, R. Singh, & T.
+
+Rumsey, 1996; A. Halder, A. Dhall, & A. Datta, 2007a; H. Ni & A. Datta, 1999b; A. Warning,
+
+Dhall, Mitrea, & Datta, 2012; R. Yamsaengsung & R. Moreira, 2002), heating (A. Halder &
+
+Datta, 2012; J. Zhang & Datta, 2004), baking (Feyissa, Gernaey, Ashokkumar, & Adler-Nissen,
+
+2011; H. Ni & A. Datta, 1999a; Abdellah Ousegui, C Moresoli, M Dostie, & B Marcos, 2010;
+
+Papasidero, Manenti, & Pierucci, 2015), cooking (Dhall, Halder, & Datta, 2012; Van der Sman,
+
+2013) and drying (Datta, 2007a; Gulati & Datta, 2015; Kumar, Joardder, Karim, Millar, & Amin,
+
+2014; S Mercier, B Marcos, C Moresoli, M Mondor, & S Villeneuve, 2014). The researchers
+
+developed their multiphase model using the basic mathematical equations that are given in Table
+
+3.
+
+Furthermore, different researchers developed multiphase model considering two different
+
+approaches namely, sharp boundary model and distributed evaporation model. These types of
+
+formulation are sometimes called moving boundary, interface tracking or front-tracking problem.
+
+On the other hand, the evaporation that is considered to be distributed throughout the sample
+
+domain is treated as distributed evaporation (A. Halder, Dhall, & Datta, 2010; Kumar C, 2015).
+
+Most of the multiphase model has been developed considering sharp boundary evaporation in
+
+different food processing system, for drying (Curcio, 2010; Khan, Kumar, Joardder, & Karim,
+
+2016; S. Mercier, B. Marcos, C. Moresoli, M. Mondor, & S. Villeneuve, 2014), for frying
+
+                                               13
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 15]]
+ACCEPTED MANUSCRIPT
+
+(Bouchon & Pyle, 2005; Farid & Chen, 1998; B. E. Farkas, R. P. Singh, & T. R. Rumsey, 1996)
+
+and for baking (A. Ousegui, C. Moresoli, M. Dostie, & B. Marcos, 2010). However, the problem
+
+of the sharp-boundary formulation is that it can predict the phase change occurs at the dried
+
+(crust) and moisture material (core) interface only. That is why distributed evaporation model is
+
+necessary which can predict a narrow evaporation zone where rapid evaporation is taking place.
+
+The sharp-boundary model has other limitations such as over prediction of the core temperature
+
+as it ignores any phase change in the core that would act as a heat sink. Since transport of water
+
+vapor toward the core is ignored in a sharp boundary formulation, migration of water vapor from
+
+the interface to the core does not occur during these types of formulations. Sharp boundary
+
+problem formulation also over-predict the vapor flux in the crust region as the pressure
+
+difference between the surface and the interface is never as high as 1 atmosphere (A. Halder, A.
+
+Dhall, & A. K. Datta, 2007).
+
+Moreover, based on the thermal properties, the multiphase model can be categorized as
+
+equilibrium and non-equilibrium formulations. Most of the authors have developed their models
+
+considering equilibrium conditions (Curcio, 2010; S. Mercier et al., 2014; H. Ni & A. K. Datta,
+
+1999; R. Yamsaengsung & R. G. Moreira, 2002). Equilibrium conditions, though have some
+
+problems. Transport will affect the establishment of equilibrium condition and it may be valid
+
+for high moisture content materials. For food processing; one needs to be mindful that
+
+equilibrium condition may never be achieved at the surface since transport is strong there.
+
+Therefore, the non-equilibrium formulation is needed for predicting accurate heat and mass
+
+transfer. Some researcher developed their model by considering non-equilibrium formulation (A.
+
+D. Halder, A. Datta, A. K., 2007; 2012). However, they considered food as a non-hygroscopic
+
+                                               14
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 16]]
+ACCEPTED MANUSCRIPT
+
+porous material and ignored the physics of bound water transport in their model. In practice,
+
+plant-based food materials are hygroscopic in nature, and it contains three types of water that are
+
+discussed below.
+
+The above-mentioned water transport mechanism should be included during developing heat and
+
+mass transfer model for food drying. However, in multiphase models mentioned above have not
+
+considered the bound water transport through these mechanisms during their modeling. As the
+
+multiphase models are considered as a macroscopic model, therefore, it is very difficult to apply
+
+the boundary conditions of cellular level water transport in macroscopic level. This is a major
+
+limitation of existing multiphase model. Though, some researchers have attempted to develop
+
+multiphase model considering bound water transport (A. Halder, A. Dhall, & A. Datta, 2007b; H.
+
+Ni & A. Datta, 1999a), they eventually developed the model for wood drying. (Feng, Tang,
+
+Cavalieri, & Plumb, 2001) Developed a multiphase model considering bound water transport for
+
+porous material. They claimed that the model was developed for food drying. However, they
+
+used the mass conservation equation and the property for wood drying. Major limitations of the
+
+above-discussed models were that they did not consider material shrinkage for migration of
+
+bound water.
+
+Migration of bound water has a significant effect on the material structure. Migration of
+
+intracellular water causes cell shrinkage, pore shrinkage as well as the collapse of cell structure
+
+whereas the movement of cell wall water causes overall tissue shrinkage (Rakesh & Datta,
+
+2011). Therefore, for obtaining micro-level observation of different physics and prediction of
+
+transfer mechanism and deformation macroscale multiphase model is not a proper option.
+
+                                                15
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 17]]
+ACCEPTED MANUSCRIPT
+
+Considering the above discussions, multiscale modeling of coupled heat and mass transfer during
+
+drying would be the best approach regarding energy efficiency as well as food quality.
+
+4.3 Challenges in existing modeling technique
+
+The effect of drying conditions on the microstructure of food materials has been neglected for a
+
+long time. For estimating the molecular diffusion and explaining the mass transfer mechanism
+
+Fick’s first and second law are applied without knowing the actual mechanism of the mass
+
+transfer (José Miguel Aguilera, 2005; H. Mebatsion et al., 2006). Nevertheless, developing the
+
+mathematical models and calculating mass transfer rate remains incomplete unless the
+
+microstructure is resolved. The microstructural elements that are below 100  m range critically
+
+participate in transport properties and the physical behaviour of food material (Jose M Aguilera
+
+et al., 2000). Moisture transport through the pores, cell and cell walls of food materials occurs at
+
+this micro-scale. In this respect, microscopic feature is required for modelling to explain the heat
+
+and mass transfer process at this microstructural level. Most of the plant based food materials
+
+encompass parenchyma tissue. The parenchyma tissues are randomly distributed arrays of pores
+
+and cells (Fanta et al., 2012). It has been claimed that the microstructure can be generated with
+
+the help of microscopic image taken by the Atomic Force Microscopy (AFM) with proper image
+
+processing algorithm (H. Mebatsion et al., 2006).
+
+Plant-based food materials are assumed to be linearly elastic on the macroscopic scale. Based on
+
+this assumption, the predictive models for food drying have been formulated (J. Zhang, Datta, &
+
+Mukherjee, 2005). The microscopic feature also has a good effect on the macroscopic properties
+
+of the food materials. The geometric properties of the cell, cellular water potential, mechanical
+
+                                                16
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 18]]
+ACCEPTED MANUSCRIPT
+
+properties of the cell wall, the presence of fluid in the cell as well as inter cellular spaces are
+
+good features of microstructural properties (Van Liedekerke et al., 2010). As these features are
+
+useful, microstructural properties should be included for the modeling of the drying of food
+
+materials. The effect of cell geometry on the physical properties of the materials is not
+
+understood comprehensively to date (Juge, 2006; Lee et al., 2004; McCann et al., 2001). Within
+
+this context, the food drying models which have been developed so far face difficulties in
+
+validation process (H. K. Mebatsion, Verboven, Ho, Verlinden, & Nicolaï, 2008). In plant-based
+
+food materials, the variability of components can be found in all scales. As there is a complexity
+
+in the spatial arrangement of the food architecture microstructural geometry of food is required.
+
+In this respect, multiscale modeling of drying of food materials is very important for food drying
+
+technology.
+
+   5. Multiscale modeling technique
+
+For a better understanding of water transport and the mechanical behaviour during drying of food
+
+materials modeling are an effective tool. There are two basic approaches to model the drying
+
+phenomena of food materials. One is macroscopic continuum approach, and another is the
+
+microscopic (cellular) approach. In the first approach, the tissue is considered as homogeneous,
+
+and the modeling is carried out based on the lumped properties of the cell wall and pores
+
+Nguyen, Dresselaers, et al., 200 ;     eraver eke,   er oven,    an Oostveldt, & Nicolaı, 2003 .
+
+The other is micro-scale modelling approach where, the tissue is considered as heterogeneous
+
+and the complex cellular structure is represented by the geometric model. Most of the works
+
+regarding the food materials drying are based on classical continuum approach where the
+
+                                                17
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 19]]
+ACCEPTED MANUSCRIPT
+
+transport properties are considered as a lumped single value throughout the tissue. The tissue of
+
+food materials undergoes large deformations during drying (Karunasena, Gu, Brown, &
+
+Senadeera, 2015). The cell wall deformation occurs as a consequence of turgor pressure
+
+reduction acting on the cell wall. The macroscopic properties and the tissue strength of food
+
+materials are greatly influenced by the cell size and shape, turgor pressure as well as the presence
+
+of intercellular space (Konstankiewicz & Zdunek, 2001). For better understanding of the
+
+influence of drying condition on the tissue the micro-scale model is an effective approach. The
+
+main drawback of the macro-scale model is that, it does not provide the platform to investigate
+
+the microstructural behaviours of the tissue during drying which can be overcome by the micro-
+
+scale modelling. The micro-scale model can describe the deformation of cell wall and the local
+
+distribution of water in cellular level. For predicting, the drying process of entire fruit, the
+
+microscale model can be extended. The extended micro scale can be expressed as multiscale
+
+model. The multiscale model can provide the detail model of microstructural features combining
+
+the continuum type models. The concept of multi-scale modelling addresses some of these
+
+limitations, such as the absence of equilibrium at the microscopic scale or the consideration of
+
+product variability at the industrial scale. The concept of multiscale modelling in drying
+
+technology is presented in Figure 4.
+
+5.1 Present status of multiscale modeling
+
+To establish the relationship between the pore scale mechanism and the macro-scale phenomena
+
+multiscale model can play a key role in drying technology. The multiscale modeling approach is
+
+relatively new in the food engineering sector, and only a few representative publications are
+
+                                                18
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 20]]
+ACCEPTED MANUSCRIPT
+
+available. Some of the significant works related to the multiscale modeling are presented in
+
+Table 4. The table gives an overview of advance modeling approach for mostly related to drying
+
+technology.
+
+Nicoli et al. applied the multi-scale modeling to the post-harvest storage of vegetable and fruits
+
+(Nicolai, Verboven, Scheerlinck, & De Baerdemaeker, 1998). To compute water diffusion co-
+
+efficient in apple skin micro-scale models by (Veraverbeke et al., 2003). For describing the
+
+metabolic gas exchange in pear fruit during post-harvest storage, a multi-scale model was
+
+developed by the researchers (Q Tri Ho, Verboven, Verlinden, & Nicolaï, 2010). The micro-
+
+scale in the intercellular spaces through the cell wall was obtained from the radiation tomography
+
+image. The cellular respiration model was also developed (Quang Tri Ho et al., 2009).
+
+A multi-scale approach to heat and mass transfer in porous media with wood drying was
+
+formulated by Patrick Perre (Perré, 2010). Some simulation of multi-scale transfer configuration
+
+was proposed considering the heterogeneous porous medium. A stack of timber was dried in the
+
+convective dryer. For considering several scales at the same time, homogenization process was
+
+applied. A concept of multi-scale presented is presented in Figure 5.
+
+The principal concern of (Perré, 2010) was the pore morphology, and a couple of computer
+
+codes were formulated to present the modeling works. The computer codes are named as Mesh
+
+pore and Morpho pore. These computer codes were formulated based on the image-based
+
+meshing and the homogenization process. Later a new dual scale model was presented where the
+
+researchers were trying to initiate a new approach to multi-scale modeling without the classical
+
+homogenization complexity (Carr, Turner, & Perre, 2013). However, only 2D analyses were
+
+                                                19
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 21]]
+ACCEPTED MANUSCRIPT
+
+done in these models. Therefore, it is still not clear about the 3D phenomena that occur during
+
+drying. Moreover, the coupled heat and mass transfer phenomena were considered for wood
+
+drying. In the case of food drying, quality is also a very important parameter (Nijhuis et al.,
+
+1998). If this model is applied to the food drying process, the consequences of the fluid transport
+
+and the effect of cell wall properties on the shrinkage phenomena will not be explained well.
+
+A particle-based approach for simulating the micro-level was designed by the researcher
+
+(Karunasena, Senadeera, Brown, & Gu, 2014). The influence of the change of moisture content
+
+on the cell wall and the cell area was investigated in this work. The cell wall was considered as
+
+the non-linear elastic material. Though it is a great approach in this field which gives a lot of
+
+information related to the micro-level drying, it has some limitations. The cell and the tissue
+
+structure of the food materials do not follow a regular shape (Abera et al., 2013). It is really hard
+
+to explain the real phenomena of large deformation of the cell and tissue with approximated
+
+structure. Therefore, a new approach is required to illustrate the real microstructure of food
+
+materials and explain the large deformation in cellular level drying.
+
+When the microscopic scale is much smaller than the macroscopic one, the coupling between
+
+scales is sequential, and the multi-scale approach reduces to a change of scale, also known as
+
+scaling (Defraeye, 2014). On the contrary, when a local thermodynamic equilibrium is not
+
+attained, the scales usually overlap, and two-way coupling is required. This is a real multi-scale
+
+configuration, more demanding both in computational resources and applied mathematics.
+
+Drying has a distinct multi-scale nature on exchange and the transport process at different scale.
+
+One of the strategies for the interconnection is homogenization.
+
+                                                 20
+                                                      ACCEPTED MANUSCRIPT
+
+[[PAGE 22]]
+ACCEPTED MANUSCRIPT
+
+The biophysical activity in a cellular level depends on the gas transportation in the intercellular
+
+territory. For explaining the vapor and the fluid transportation during drying of food materials
+
+modeling is the best way. Some researchers have initiated serially coupled multi-scale model for
+
+avoiding the homogenization process (Esveld, Van Der Sman, Van Dalen, Van Duynhoven, &
+
+Meinders, 2012; Esveld, van der Sman, Witek, et al., 2012). The paradigm can predict the
+
+dynamic moisture diffusion into cellular solid food. The air pores and the air connectivity of the
+
+cell were extracted by X-ray tomographic image and made a discrete microstructure model. A
+
+multi-scale model of the mechanical properties for the food baking process was formulated
+
+(Guessasma, Chaunier, Della Valle, & Lourdin, 2011).
+
+Numerous efforts have been made to model the spatial distribution of gas and the moisture
+
+exchange, but the mathematical models remain incomplete as they did not consider the
+
+microstructure (Putranto & Chen, 2015; A. D. Warning, Arquiza, & Datta, 2015). As a result, a
+
+new model is required for describing the actual phenomena at the cellular level in the case of
+
+food drying.
+
+5.2 Microscale geometrical model
+
+In the microscale model, a different component of cells is distinguished regarding the position,
+
+shape, and orientation. The microscale features of the component such as cell, cell wall and cell
+
+membrane are also studied. The effect of microstructure on transport phenomena in food drying
+
+process has been neglected for a long time while developing the transport models. But the
+
+transport phenomena inside the food materials, physical and biochemical stability greatly depend
+
+on the microstructure. In the case of drying technology, Fick’s first and second laws are used to
+
+                                                21
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 23]]
+ACCEPTED MANUSCRIPT
+
+estimate the rate of mass transfer. The mass transfer investigation remains incomplete unless the
+
+structure is resolved. It is evident that the cell wall can be a controlling factor in the mass transfer
+
+process. Extensive approximation has been made by the food engineers for the solution of the
+
+diffusion equation in a regular geometry. Moreover, the microstructure of food materials is not
+
+regular, and there is no model to investigate the effect of drying process in food microstructure.
+
+A representative volume element is defined as the minimum volume over which the properties of
+
+the material can be calculated. The RVE has been chosen as a non-hygroscopic material where
+
+the solid matrix is considered as the cell surrounded by free water inside it. A schematic diagram
+
+of the RVE is presented in Figure 6.
+
+In practice, plant-based tissue is hygroscopic in nature in which the cells are filled with fluid
+
+commonly known as bound water. Therefore, it is necessary to choose a perfect Representative
+
+Elementary Volume (REV) to develop a model for better prediction. The schematic diagram of
+
+the microstructure of cellular tissue is presented in Figure 7.
+
+The actual microstructural geometry for developing a better model is presented in Figure 8. This
+
+geometry will work as a computational domain which is a compulsory requirement for
+
+developing a model.
+
+5.3 Modelling microstructures of food materials
+
+The microstructural information generated can be used to understand transport mechanisms
+
+during drying and to assess the functionality of finished products. Efforts should be made to
+
+                                                  22
+                                                       ACCEPTED MANUSCRIPT
+
+[[PAGE 24]]
+ACCEPTED MANUSCRIPT
+
+derive appropriate scaling laws for results obtained at the microstructural and nano-structural
+
+levels. A variety of microscopic techniques is available for studying different structures and
+
+components of food systems. Building the micro structure of the biological system is the most
+
+complex system in the process of formulating the multi-scale modeling. Despite a great deal of
+
+momentum in cell biology and fruit science, microstructural characterization and computational
+
+modeling of biological systems is still in its infancy. It is not possible to analyze the heat and
+
+mass transfer by means of finite element method due to lack of proper microstructure. Scanning
+
+Electron Microscope (SEM) imaging provides detailed microstructure information at micro scale
+
+resolution without chemical treatment. A suitable image processing technique such as Voronoi
+
+tessellation algorithm can extract the geometrical data and provide a clear idea about the
+
+microstructure. A schematic block diagram of the development microstructure from the
+
+microscopic image is presented in Figure 9.
+
+The transport of water in intercellular spaces and, the cell walls network is predicted by using the
+
+chemical potential as the driving force for water exchange between different microstructural
+
+compartments. The transport property of the water in the cell wall network can be obtained from
+
+the literature.
+
+    6. Numerical Solution for the models
+
+Several advanced numerical methods for the solution of microscale as well as multiscale
+
+modeling have been used. This section will discuss the numerical solution techniques that have
+
+been used for solving the Multi-physics related problem at various scale.
+
+                                                23
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 25]]
+ACCEPTED MANUSCRIPT
+
+   6.1 SPH and DEM method
+
+The key idea in so-called mesh less particle methods is that the material is mass-discretised into
+
+material points. Some researchers have been working on particle-based numerical model to
+
+simulate micromechanics of plant cell (Karunasena, Senadeera, Brown, et al., 2014). Some of
+
+them are concerned with addressing how bulk tissue level mechanics are related to the
+
+micromechanics of cells. They have developed mesh free particle methods to simulate the
+
+mechanics of both individual plant cells and its response to the external stress. At the same time,
+
+there has been a significant concern on modeling the mechanical behavior of tissue. The model
+
+considered the cell fluid and the cell wall as the two main features of a plant cell. For developing
+
+the cell fluid model, Smoothed Particle Hydrodynamics (SPH) has been used. On the other hand,
+
+Discrete Element Method (DEM) has been used to model the cell wall. In this model, the
+
+researcher has tried to address how biological cell responds to mechanical load. A two-
+
+dimensional single cell model that is capable of predicting cellular level shrinkage as a function
+
+of moisture content has been developed. The researchers claimed that the mesh free nature of the
+
+model gives it the capability to handle large deformations and multiphase interactions and
+
+subcellular details which are the key concern in multiscale modeling approach (Karunasena,
+
+Senadeera, Brown, et al., 2014).
+
+6.2 Finite element method
+
+For solving the partial differential equation, finite element method (FEM) is a flexible and
+
+widely used method (Zienkiewicz & Taylor, 2005). In FEM method the computational domain is
+
+subdivided into a number of elements having different shape and size. Every element in the
+
+                                                24
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 26]]
+ACCEPTED MANUSCRIPT
+
+computational domain are interconnected in a certain number of nodal points. An unknown
+
+solution is assigned to every element. This unknown solution is known as shape function. In the
+
+following step, the governing equations are discretised using suitable meshing technique. The
+
+governing equation is normalized with this meshing technique. Depending on the time variable
+
+the system equations are defined whether it will be ordinary differential equation function or
+
+algebraic equations. After that, these equations are solved by the finite difference approximation
+
+approach. The details of finite element method can be found in many literatures (Bathe, 2008;
+
+Efendiev & Hou, 2009).
+
+6.3 Lattice Boltzmann method
+
+To simulate of the microscale and the meso-scale model the lattice Boltzmann method and the
+
+molecular dynamics methods are also useful. Lattice Boltzmann method is different from the
+
+traditional approaches (Van der Sman, 2007). Materials and the fluids are represented as quasi-
+
+particle in the lattice Boltzmann method. These particles maintain the basic conservation law of
+
+energy, momentum, and mass while interacting via collision. The rules of the collisions maintain
+
+the discretised Boltzmann equation. The discretization of momentum, space and time make
+
+Lattice Boltzmann different from the other methods.
+
+6.4 Molecular dynamics
+
+In the molecular dynamics method, the momentum of the molecules is computed with the
+
+solution of the Newton’s equation of motions (Van der Sman, 2007). The van der Waals, the
+
+covalent bond and the electrostatic interaction creates a potential field. The created potential field
+
+is used to compute the forces between the molecules. The evaluation of these potentials is
+
+                                                 25
+                                                      ACCEPTED MANUSCRIPT
+
+[[PAGE 27]]
+ACCEPTED MANUSCRIPT
+
+computationally the most intensive step of a molecular dynamics simulation. Molecular
+
+dynamics can be considered as a discrete element method. This method is not used frequently in
+
+food processing engineering (Limbach & Kremer, 2006). Especially in drying technology this
+
+methodology has not been used yet.
+
+6.5 Bridging between the scales
+
+A multiscale model is a hierarchy of some sub-models that describes the process phenomena at
+
+different spatial scale (Aregawi, Abera, Fanta, Verboven, & Nicolai, 2014). The main challenge
+
+of formulating the multiscale model is to establish a logical relation between the scales (Perré &
+
+Rémond, 2006; Perré, Rémond, Colin, Mougel, & Almeida, 2012). Drying of food materials is a
+
+multiscale phenomenon and at a better approach to formulating the drying model is the
+
+multiscale model (Quang T Ho et al., 2013). For bridging the macro-scale and the microscale
+
+models, an effective approach was proposed which is known as ―homogenization‖. It is a
+
+powerful mathematical tool, and the macroscopic properties can be predicted from the
+
+microscopic description by using this tool. The homogenization process includes a couple of
+
+second order diffusion equations. These equations are known as the governing equation. The
+
+apparent diffusion can be calculated by solving the cellular diffusion equation.       A sample
+
+homogenization approach is presented in Figure 10. (Q Tri Ho et al., 2010).
+
+Recently, Van Der Sman et al. (2012) have developed a multiscale model with serial coupling
+
+technique (Esveld, Van Der Sman, Van Dalen, et al., 2012; Esveld, van der Sman, Witek, et al.,
+
+2012). The model can predict the dynamics of the moisture diffusion of food materials in cellular
+
+level. To develop the model the researcher used the X-ray micro tomography image to get the
+
+                                               26
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 28]]
+ACCEPTED MANUSCRIPT
+
+information about the cellular network and the pores. The model considers the local diffusivity
+
+through the moisture sorption and the pores. These parameters were incorporated into the macro-
+
+scale model for predicting the dynamic moisture profile of crackers.
+
+Although researchers have always shown more interest in the macroscopic scale, the microscopic
+
+transport phenomenon is also an important factor in drying technology (José Miguel Aguilera,
+
+2005; Fanta et al., 2014). For simulation of the drying process, numerous mathematical equations
+
+have been proposed by (Whitaker, 1977, 1998). Later some researchers have made some changes
+
+in these equations and assumption and proposed some new models (H. Ni & A. Datta, 1999a).
+
+Some of the researchers have considered internal over pressure and the bound water diffusion
+
+(Hills & Remigereau, 1997). Some researchers have considered the evolution of the porosity in
+
+their model (Datta, 2007a; Ni et al., 1999). Usually, the microscale model is formulated to
+
+calculate the apparent properties of the sample more accurately. The Heterogeneous Multiscale
+
+Method (HMM) can be a suitable option for coupling both the scales as the as the constitutive
+
+relation relies on many variables (E et al., 2007). The HMM can be initialised by discretization
+
+of macro-scale equations. A finite element method is an efficient option in this regard. The
+
+framework for the heterogeneous multiscale modeling is presented in Figure 10.
+
+The general framework is as follows. If a microscopic system is given, the state variable of
+
+which is denoted by u, and can be written as Equation 2,
+
+                                          f u, b  0                                       (2)
+
+                                               27
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 29]]
+ACCEPTED MANUSCRIPT
+
+Where b is the set of auxiliary conditions, such as initial and boundary conditions for the
+
+problem. Here, the microscopic details of u are not interest rather macroscopic state of the
+
+system which is represented by U that satisfies the following macroscopic equation:
+
+                                                      FU , D  0
+
+                                                                                                  (3)
+
+Where D represents the macroscopic data that are necessary for the model to be completed.
+
+Considering the compression operator Q that maps u and U, and R any operator that reconstructs
+
+u from U we can find that,
+
+                             Qu  U                        RU  u                                 (4)
+
+Where, compression and reconstruction operators are similar to the projection and prolongation
+
+operators used in Multi-grid methods. The goal of HMM is to compute U using the abstract form
+
+of F and the microscopic model. It consists of two main components; one is selection of a
+
+macroscopic solver another is estimating the missing macro-scale data D using the microscale
+
+model.
+
+The microscale model can be used to compute the deformation and the dehydration of tissue of
+
+plant-based food materials during drying. The apparent properties of the food materials can be
+
+calculated from the cellular properties. For example, the apparent diffusion coefficient can be
+
+determined from the apparent water conductivity by following equation (Aregawi et al.,2014)
+
+                                                    Kapp
+                                           Dapp                                                  (5)
+                                                    mcw
+
+                                                28
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 30]]
+ACCEPTED MANUSCRIPT
+
+Where, cw is the water capacity of the cell, m is the density of the cell
+
+Similarly. The apparent water conductivity is calculated from the following relationship
+
+(Aregawi et al.,2014)
+
+                                                                          h
+                                                             Kapp  J                              (6)
+                                                                         
+
+Where, J is the total flux of the fruit tissue (kg m-2s-1),  is the water potential difference in the
+
+two side of the cell wall (Pa).
+
+The apparent deformation, which is known as shrinkage of the food materials can be calculated
+
+by assuming the change in displacement in the tissue due to a change in turgor pressure. The
+
+turgor pressure generates stress that leads to expansion of the cell wall of the plant based food
+
+materials. Therefore, the turgor loss can be responsible for the shrinkage phenomena
+
+   7. Required properties for the multiscale model
+
+Material properties are the most important part of theoretical modeling. It is required for all the
+
+relevant physics for realistic prediction of drying mechanism. The food drying related properties
+
+are rheological, mechanical, thermal, mass transport and electrical properties. Food materials
+
+undergo changes in moisture, temperature, and structure. Major changes in structure can easily
+
+be seen by naked eye. The changes in structure mostly depend on the variation in temperature
+
+and moisture. It also varies in different products. So properties of the food materials are required
+
+to be known for a better modeling approach. Nevertheless, some properties of food materials are
+
+not available in the literature; especially, the cell-level properties of food materials are very rare.
+
+                                                  29
+                                                       ACCEPTED MANUSCRIPT
+
+[[PAGE 31]]
+ACCEPTED MANUSCRIPT
+
+Modeling can contribute to the process design in a significant way, and it can start with the
+
+limited available data. If there is no available data in the literature, modeling can start with
+
+approximate data with simplified correlation as a starting point. After that, the sensitivity
+
+analysis on the unavailable data needs to be completed. Some of the properties are discussed in
+
+the following sections.
+
+7.1 Cell shrinkage
+
+Modeling of shrinkage during drying of plant-based food material is an important task. From the
+
+mechanical point of view, cells can be considered as closed thin cell wall structure. To model the
+
+shrinkage mechanism, Newton’s second law was considered y researchers. The following set of
+
+equations were solved for the position of the vertices and the velocity of cell wall during drying
+
+                                                dvi
+                                           mi        FT ,i                                     (7)
+                                                dt
+
+                                            dxi
+                                                 vi                                            (8)
+                                            dt
+
+Where m is the mass of the vertex (Kg) of the cellular tissue. To simplify the model, the rate of
+
+change of the vertices is considered as equal to the net force acting on the vertex.
+
+The cell wall tension is maintained by the turgor pressure and the cell shrinkage is the result of
+
+the loss of turgor pressure on the cell wall. The walls of a cell and the adjacent cell walls have
+
+been modelled as parallel elements. The cell walls are also considered as non-linear elastic
+
+materials. Neo-Hookean elastic model can be used for modeling the cell wall. The total force
+
+acting on a cell can be expressed using the following formula
+
+                                                  30
+                                                       ACCEPTED MANUSCRIPT
+
+[[PAGE 32]]
+ACCEPTED MANUSCRIPT
+
+                                      FT  Fw  Fd                                             (9)
+
+The force Fw is the resultant of the net turgor pressure. Fd Is the damping force and it is a
+
+product of damping factor and vertex velocity.The details of cell shrinkage can be found in
+
+(Fanta et al, 2012).
+
+7.2 Cell mechanics
+
+Linear elasticity can describe the small deformation. The mechanical equilibrium without
+
+external force can be expressed by the following equation
+
+                                                   
+                                        D  e  0                                       (10)
+
+Where D is the stiffness matrix of linear elastic model (Pa) and  e is the elastic strain
+
+The shrinkage strain and the mechanical strain formulate the total strain
+
+                                             e  d                                        (11)
+
+Where,  d is the shrinkage strain
+
+As food materials undergo large deformation during drying, it is not possible to quantify the
+
+mechanical behavior with the linear elastic model. The nonlinear characteristics of food
+
+materials can be explained by the nonlinear elastic model. The stress inside the tissue can be
+
+calculated from the following mechanical equilibrium, ignoring any surface and body forces.
+
+                                              
+                                             S  F T  0                                   (12)
+
+                                                     31
+                                                          ACCEPTED MANUSCRIPT
+
+[[PAGE 33]]
+ACCEPTED MANUSCRIPT
+
+Where,     FT is the transpose of the deformation gradient tensor and S is the second Piola-
+
+kirchhoff stress tensor. Equation (12) can be used for building the relationship between shrinkage
+
+strain and elastic strain.
+
+The nominal stress can be expressed as follows
+
+                                                W
+                                           p                                                (13)
+                                                λ
+
+Where W is the strain energy density function, and λ is the Stretch ration.
+
+The Neo-Hookean model for the strain energy density function is as follows:
+
+                                 W  I   A10  I1  λ1                                    (14)
+
+Where, I1 is the invariant of the coordinate system, A10 is the co-efficient of the energy density
+
+function, and λ1 is the Lames constant also known as stretch ratio.
+
+Lame’s constant (λ1 , λ 2 )
+
+                                          λ1 = λ, λ2  λ                                     (15)
+
+                                          I1  λ12  λ22                                     (16)
+
+Therefore,
+
+The nominal stress according to Neo-Hookean model,
+
+                                                  32
+                                                       ACCEPTED MANUSCRIPT
+
+[[PAGE 34]]
+ACCEPTED MANUSCRIPT
+
+                                                  1
+                                   p  2 A10  λ  2                                         (17)
+                                              λ 
+
+The value of A10 can be found from the nominal stress-strain by curve fitting method.
+
+7.3 Cell diffusivity
+
+Cell level diffusivity is an important parameter while considering the cellular level drying. Water
+
+diffusion through cell wall can be expressed y Fick’s first law considering water moves as a
+
+result of pressure gradient (Nguyen, Verboven, Scheerlinck, Vandewalle, & Nicolaï, 2006;
+
+Nobel, 1999). It can be expressed as follows
+
+                                  j  k                                                    (18)
+
+Where j is the water flux (kg m-2 s-1),  is the pressure (Pa),  is the gradient operator and K
+
+is water conductivity. The relationship between bulk diffusivity and the water conductivity of
+
+the cell wall can e derived y Fick’s second law of diffusion, as shown below:
+
+                                  d
+                          dmC       K                                                  (19)
+                                  dt
+
+Where, dm is the density of the dry matter in cell (kg m-3), C water capacity of the cell (kg
+
+kg-1 pa-1) and t is the time (s). The values of water capacity can be found from the sorption
+
+isotherm curve. By using constant isotherm properties, diffusivity of the cell can be derived by
+
+the following relationship:
+
+                                     K
+                              D                                                              (20)
+                                   dmC
+
+                                                 33
+                                                      ACCEPTED MANUSCRIPT
+
+[[PAGE 35]]
+ACCEPTED MANUSCRIPT
+
+Where, D is the cell diffusivity.
+
+The researchers have considered the mass balance equations for modeling the natural
+
+dehydration of plant-based food materials as these processes are mainly dominated by the mass
+
+transfer process. Therefore, heat transfer process is generally ignored in these models. However,
+
+drying process involves heat transfer along with the mass transfer process. Therefore, the heat
+
+and mass balance must be coupled during modeling the food drying process (Perré, 2015).
+
+Multiscale modeling is a comparatively new approach in the drying technology. In the modeling
+
+of microscale drying process, no researchers have considered the coupled heat and mass transfer
+
+process. The future researchers can focus in this area.
+
+7.4 Capillary diffusivity
+
+Capillary diffusivity is caused due to moisture gradient and temperature gradient. When the
+
+material is wet, the effective diffusivity is close to the capillary diffusivity (Datta, 2007b). The
+
+relationship between moisture content and the capillary diffusivity in potato is given as follows
+
+                            Dw  1.0 108 exp  2.8  2.0M                                  (21)
+
+Where, Dw is the capillary diffusivity and M is the moisture content of the materials.
+
+7.5 Porosity
+
+Porosity in food material is known as the volume fraction of air space or void space inside the
+
+tissue. It depends on the moisture content and the drying condition (Madiouli, Sghaier, Lecomte,
+
+& Sammouda, 2012). The void space is termed as pores, and it can be divided into three groups
+
+                                                 34
+                                                      ACCEPTED MANUSCRIPT
+
+[[PAGE 36]]
+ACCEPTED MANUSCRIPT
+
+such as open pores, closed pores, and blind pores. In the open pores, the flow of fluid typically
+
+takes place. The blind pores have one close end, and the closed pores are closed from all sides
+
+(Datta, 2007b). Porosity in non-hygroscopic materials is not variable with the moisture content.
+
+On the other hand, porosity in hygroscopic materials increases with the reduction of moisture
+
+content (Marousis & Saravacos, 1990). The gas phase is present in open and closed pores. The
+
+open pores are interconnected with the external surface of the materials. The measurement of the
+
+porosity can be calculated from the values of theoretical and practical data by measuring the bulk
+
+density and the particle density.
+
+For plant-based tissue, porosity exists at their initial condition, and that type of porosity is
+
+identified as initial porosity. For example, the initial porosity of apple tissue is around 0.25-0.3
+
+depending on varieties (M. Joardder, Brown, Kumar, & Karim). Porosity can be measured
+
+experimentally in many ways, and interested readers can be referred to the works of Joardder et
+
+al (2015) for more details. On the other hand, there are many empirical and theoretical model of
+
+porosity prediction (Krokida, Zogzas, & Maroulis, 1997; M. S. Rahman, 2001; Ross,
+
+Campanella, & Okos, 2002) available in the literature. One of the suitable models of porosity can
+
+be used in the heat and mass transfer equation of the multiscale modeling to represent porosity.
+
+8. Model validation
+
+For validating the multiscale modeling approach detailed experimental data is required. The
+
+drying of food material is a complex multi-physics and multiscale problem. The complexity
+
+occurs because of the non-uniformity, anisotropicity and the heterogeneity of the food materials.
+
+It needs modern experimental techniques and the development of new drying equipment for
+
+                                                35
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 37]]
+ACCEPTED MANUSCRIPT
+
+monitoring active drying phenomena. A schematic diagram of the modern laboratory drying
+
+equipment is presented in Figure 12.
+
+Experimental techniques based on non-destructive imaging show promising perspectives for
+
+detailed validation of numerical models. Most popular ones are presented in Table 5 together
+
+with a few applications.
+
+A more in-depth discussion can be found in the literature (Perré, 2011). There is a strong relation
+
+between the attainable spatial resolution in the image and the image acquisition time, which both
+
+depend on the used techniques and the types of devices used e.g. laboratory, synchrotron or
+
+clinical X-ray. The high spatial resolution of some techniques allows studying transport
+
+processes down to the micro scale level.
+
+8.1 Microscopic imaging
+
+For obtaining the spatial fields, several microscopic imaging devices are usually used such as
+
+scanning electron microscope, transmission electron microscope, optical microscope, confocal
+
+microscope, CCD cameras. A small change in the imaging environment can be made during or
+
+before imaging to increase the focus on specific information Paredes, Martınez-Alonso, &
+
+Tascón, 2003). Various cellular level properties of the food materials such cell density, moisture
+
+content, rheological behaviour, chemical composition can be obtained depending on the method.
+
+By combining several images of different angle multi-dimensional, information can be obtained
+
+(Garini, Vermolen, & Young, 2005). All of these data are important to understanding the
+
+mechanism of food drying in cellular level.
+
+                                                36
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 38]]
+ACCEPTED MANUSCRIPT
+
+Scanning electron microscope, atomic force microscope and scanning tunnel microscope are the
+
+popular device that produces two dimensional images by scanning sample. The scanning process
+
+is very slow therefore these techniques are only used when high resolution information as an
+
+example up to 1 micrometre is needed (Centonze & Pawley, 2006). Optical microscope, Coupled
+
+Charge device (CCD) cameras, Infrared (IR) cameras provide high resolution images in a non-
+
+invasive way. IR cameras are suitable for obtaining the temperature profile of the sample
+
+(Maldague, 2002). Another modern microscope is a confocal microscope. The spatial resolution
+
+is higher than the other types of microscope. The confocal microscope also provides three-
+
+dimensional profile of the sample (Cha, Lin, Zhu, Sun, & Fainman, 2000). This technique is
+
+highly suitable for getting fresh cell images. The details mechanism and the measuring technique
+
+of these devices cannot be provided here because of space limitation. The readers are referred to
+
+the literature for details (José Miguel Aguilera, 2005; Perré, 2011).
+
+8.2 X-Ray Tomography
+
+Classical X-ray tomography is based on the attenuation of an X-ray beam by matter which is a
+
+coupled effect of photon energy, atomic number, and linear density. An X-ray attenuation system
+
+basically consists of a source and a detector. In conventional X-ray tubes, an electron beam,
+
+accelerated by a high voltage, collides with a metal target which is known as an anode and
+
+produce X-ray photons. In synchrotron facilities, the X-ray beam is produced by the deviation of
+
+a high-energy electron beam by intense magnetic fields perpendicular to the beam direction
+
+(Falcone et al., 2004). Synchrotron X-ray beams have high brilliance, a high level of
+
+polarization, and small angular divergence. Punctual, 1-D, and 2-D sensors have proportional
+
+                                                37
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 39]]
+ACCEPTED MANUSCRIPT
+
+counters, solid-state detectors, or scintillator coupled to a CCD camera. All these detectors can
+
+form 2-D attenuation images of an object, directly or by scanning over one or two spatial
+
+dimensions. Three-dimensional description of the object is obtained by computed tomography
+
+(CT). A suitable algorithm is used to compute in 3-D (voxels) the radio density values, also
+
+called the CT-numbers, from several 2-D projections, grabbed at different rotation angles of the
+
+sample (materials science) or of the tube detector set (medical application and materials science).
+
+CT scanning was invented independently in the 1970s by Hounsfield and Cormack, who shared
+
+the Nobel Prize for medicine in 1979 (Perré, 2011).
+
+Although the first application of computed tomography was primarily in medicine, it rapidly
+
+became a very useful tool in physics, materials science and engineering (Wood, Zerhouni,
+
+Hoford, Hoffman, & Mitzner, 1995). The initial device has undergone substantial improvement
+
+both from technical and computational points of view. Nowadays, the typical resolution of a
+
+medical scanner is below one millimeter. This relative accuracy is excellent for imaging objects
+
+with a diameter of up to half a meter (Perré & Huber, 2007). However, this resolution is
+
+unsuitable for studying porous media. During the last two decades, micro-tomography, based on
+
+micro-focus X-ray sources, has become a relatively common tool in materials science (Limodin
+
+et al., 2011).
+
+Today, the commercially available desktop equipment allows non-destructive 3-D reconstruction
+
+at a spatial resolution of a few mm. A laboratory Nano-CT scanner, which uses an open-type X-
+
+ray tube with sub-micrometric spatial resolution, has even been heralded recently. However, in
+
+the domain of micro-tomography, the specifications proposed by synchrotron radiation facilities,
+
+                                                38
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 40]]
+ACCEPTED MANUSCRIPT
+
+which produce monochromatic X-ray beams of high intensity, remain incomparable. At the
+
+European Synchrotron Radiation Facility (ESRF), at least two beam lines propose tomography
+
+(Baruchel et al., 2006). These two beam lines are ID 19 and ID 15. As the main disadvantage of
+
+micro-tomography is its acquisition time, it is worth noting that beam line ID 15 provides a full
+
+3-D data set in less than one second with a spatial resolution. It is also important to mention
+
+phase imaging, which allows a much better contrast for light materials such as polymers or
+
+cellular plant tissues.
+
+8.3 Nuclear magnetic resonance (NMR)
+
+For determining the portion of water in living cells nuclear magnetic resonance (NMR) is an
+
+efficient tool. The physical and chemical environment inside the material affects the relaxation
+
+time and the NMR spectra. The details of water in the heterogeneous system can be obtained by
+
+NMR (Chatakanonda, Dickinson, & Chinachoti, 2003; Li, Dickinson, & Chinachoti, 1998). The
+
+relaxation time of NMR gives useful information regarding the changes in water during food
+
+processing.
+
+It has been reported that for the same moisture water is less mobile in gluten than in starch (Li,
+
+Dickinson, & Chinachoti, 1996). The NMR technique has used in determining the water activity
+
+in meat. The relaxation time for meat shows multiple exponential decays which means there are
+
+different types of water inside the cell (Bertram, Dønstrup, Karlsson, & Andersen, 2002). The
+
+researchers have termed the types of water as bound water and strongly bound water in cells
+
+(Bodurka, Buntkowsky, Olechnowicz, Gutsze, & Limbach, 1996; Konishi, Kobayashi, & Miura,
+
+2010; Miedziejko, Plenzler, NAPIERAŁA, & NAROŻNA, 199 ; Yoshikawa & Ohsaka, 1979 .
+
+                                               39
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 41]]
+ACCEPTED MANUSCRIPT
+
+These two types of water contain different dynamic behavior. For the cheese drying the moisture,
+
+profile was determined by the NMR with mass transfer modeling. The proposed model showed
+
+good results for both moisture profile and the drying curve (Chen, Wei, & Zhang, 2010).
+
+8.4 NIR Spectroscopy
+
+Near Infrared Reflectance (NIR) spectroscopy operates based on absorption of electromagnetic
+
+radiation. NIR spectra of foods comprise combinations of vibrational modes involving numerous
+
+chemical bonds (Huang, Yu, Xu, & Ying, 2008). Due to the sensitivity of absorbance in this
+
+technology the particle size, chemical state, and moisture content can be tracked effectively. This
+
+makes measurements in organic and biological systems feasible using NIR spectroscopy. The
+
+schematic diagram of NIR spectroscopy is shown in Figure 13. The radiation may be absorbed,
+
+transmitted, or reflected when interacting with samples. Therefore, there are different NIR
+
+spectroscopy measurement modes for different applications. NIR spectroscopy is a fast, non-
+
+destructive analytical technique and is becoming one of the most promising for online product
+
+evaluation (Gou et al., 2013; Stawczyk, Munoz, Collell, & Comaposada, 2009).
+
+NIR spectroscopy is one of the most efficient tools for control and monitoring of food processing
+
+system (Huang et al., 2008). The quality of the food products can also be measured by NIR
+
+spectroscopy. Continuous development of NIR spectroscopy has made it one of the most robust
+
+technologies (Demers, Gosselin, Simard, & Abatzoglou, 2012). During the drying process, this
+
+technology can be used to measure the moisture content of the product with the sensitive probes.
+
+This approach will be an effective approach for analyzing the active drying phenomena. NIR
+
+spectroscopy was used for determining the water activity of sausage during drying (Stawczyk et
+
+                                                40
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 42]]
+ACCEPTED MANUSCRIPT
+
+al., 2009). The output of the research was impressive, and it proved that NIR spectroscopy is a
+
+fast method to control and monitor the drying process. For analyzing the control and monitoring
+
+of the microwave drying of Apple thermography assisted NIR spectroscopy was also used
+
+(Cuccurullo, Giordano, Albanese, Cinquanta, & Di Matteo, 2012). This system allows an
+
+efficient temperature control by detecting the maximum temperature inside the sample.
+
+       9. Challenges in Multiscale modeling
+
+Though multiscale modeling has a great potential in explaining the phenomena during drying, it
+
+has not been used much in drying technology field Strumiłło, 200 . There are some challenges
+
+in implementing the multiscale model. Coupling of the sub-models that describes the related
+
+physics in each scale is one of the most important challenges. Specially, building bidirectional
+
+relationship between microscale and microscale is a challenge (Perré, 2007). In most of the
+
+cases, the coupling has been performed using numerical experiments. For reflecting the actual
+
+phenomena boundary condition plays a great role (Nassehi & Parvazinia, 2011). So far dirichlet
+
+boundary conditions have been used for this purpose. Researchers have shown that periodic
+
+boundary condition exhibit a better result (Yue & Weinan, 2007). On the other hand,
+
+Conventional multiscale simulation methods mostly rely on the homogenization process
+
+(Pavliotis & Stuart, 2008). The homogenization process separates the scale in term of time and
+
+lengths. The size of the representative elementary volume can be a great challenge for
+
+establishing the serial coupling (Ingram, Cameron, & Hangos, 2004). Therefore, the
+
+representative elementary volume needs to be defined carefully.
+
+                                              41
+                                                   ACCEPTED MANUSCRIPT
+
+[[PAGE 43]]
+ACCEPTED MANUSCRIPT
+
+The computational domain is an important part of the modeling purpose. An accurate
+
+representative elementary volume can represent a better platform for the computation (Quang Tri
+
+Ho et al., 2011). There is structural heterogeneity in the microstructure of the food materials. As
+
+an example Apple parenchyma cells have a great variation in their size and shape. Therefore, the
+
+statistical technique can be used to build the microstructure of the food materials. Moreover,
+
+structural heterogeneity consideration is a great challenge in simulating the multiscale model.
+
+Researchers have recommended for the finite-element method for the propagation of these
+
+random variations (Quang T Ho et al., 2013).
+
+Prediction of the food properties is also a big issue in multiscale modeling. During the drying
+
+process the phase transition like boiling or freezing manipulates the material properties. A
+
+description of this process is required to simulate the evolution of the phase in microscale (Van
+
+der Sman & Van Der Goot, 2009). Recently, researchers have given some description regarding
+
+the phase transition during the drying process (Curcio, 2010; Dhall, Squier, et al., 2012; Kumar,
+
+Joardder, Farrell, Millar, & Karim, 2014; Kumar et al., 2015; J. Zhang & Datta, 2004). These
+
+models are known as multiphase models. The evolution of the microstructure can be presented in
+
+multiscale with the help of the multiphase models. Another important factor that can hamper in
+
+the path of multiscale modeling is the cell level material properties (M. U. Joardder, Karim,
+
+Kumar, & Brown, 2016b). Though, we have a lot of material properties at room temperature, the
+
+properties during active drying is still unavailable (Gharsallaoui, Roudaut, Chambin, Voilley, &
+
+Saurel, 2007; Mayor & Sereno, 2004; Scheerlinck et al., 2000; Wang & Brennan, 1995). It needs
+
+a good number of experiments and a good experimental set up to find out the materials properties
+
+                                                42
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 44]]
+ACCEPTED MANUSCRIPT
+
+during the active drying process. Lack of proper experimental set up can be a great difficulty to
+
+validate the models in active drying condition.
+
+Modeling and numerical simulation of drying of a lot of food materials are much more
+
+complicated than modeling and simulation of single food material drying. It needs higher
+
+computational cost (Fletcher et al., 2006). Knowledge about multi-phase flow in porous media
+
+with phase change phenomena is needed for modeling of drying of food materials (Datta, 2007a).
+
+Also, the interaction between particles as well as liquid and gas flows in porous media must be
+
+taken into account in the modeling of drying of food materials (Karunasena, Senadeera, Gu, &
+
+Brown, 2014). Moreover, the information about the structure and properties of food particles as
+
+well as the phenomena occurring at pore scale is needed to provide for better interpretations of
+
+food behaviours during drying (José Miguel Aguilera, Chiralt, & Fito, 2003). Because of these
+
+complexities, the modeling of the drying process of food materials in a dryer is still challenging.
+
+One of the major difficulties related to explaining the water transport phenomena in the
+
+intercellular territory. This causes inaccuracy in designing and the validation of the mathematical
+
+model and low efficiency of the whole process. A multi-scale model is required to capture all of
+
+these intra-particle gradients to describe the processes more accurately.
+
+   10. Suggestions for future research
+
+The future of the multiscale modeling approach in food drying sector is promising. It is not
+
+expected that the multiscale modeling approach will replace the laboratory or the full-scale
+
+testing. The multiscale modeling approach can be very helpful in optimizing the food drying
+
+process.
+
+                                                  43
+                                                       ACCEPTED MANUSCRIPT
+
+[[PAGE 45]]
+ACCEPTED MANUSCRIPT
+
+Some studies are found in the field of horticulture and osmotic dehydration that considered only
+
+the mass transfer phenomena in a different scale (Aregawi et al 2013, Fanta et al 2014).
+
+However, no work has been done in drying area. There is a big research gap in formulating the
+
+multiscale model in the field of food drying process where coupled heat and mass transfer should
+
+be considered. Moreover, shrinkage is also an important factor during drying. For considering
+
+the shrinkage phenomena, it is recommended that the cell mechanics model should the integrated
+
+with the heat and mass transfer process. Multiphysics modeling approach and the CFD analysis
+
+can be very helpful to develop the multiscale drying model.
+
+The successful implementation of multiscale model will facilitate the energy smart drying
+
+process. The required energy to dry the food materials can be easily identified with multiscale
+
+modeling technique. Determination of energy required in microscale and macroscale during
+
+drying has also a great research prospect in multiscale modelling technique.
+
+   11. Conclusions
+
+Multiscale modelling is a new approach in the field of drying technology. In this article, an
+
+overview of multiscale modelling in drying technology has been presented. Food materials are
+
+considered as porous hygroscopic materials. Therefore, drying of food materials are considered
+
+as multiphase and multiscale phenomena. Advanced modelling and simulation techniques are
+
+needed to build a multiscale food drying model. One of the most important challenges in
+
+formulating multiscale modelling is the cellular level dynamic material property. Another big
+
+challenge associated with the multiscale model is its validation. A better experimental set up is
+
+required to validate at developed multiscale model. In the other fields, especially in materials
+
+                                               44
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 46]]
+ACCEPTED MANUSCRIPT
+
+science field, multiscale model has become the mainstream methodology for customizing the
+
+process design. The prospect of multiscale model in food drying technology is also highly
+
+promising. The multiscale model will be very useful in optimizing the use of current dryer as
+
+well as the drying process. It can be a path-way to an environment friendly and energy efficient
+
+drying technology. Though multiscale modelling is an emerging modelling technique in the field
+
+of food drying technology, its progress can be delayed for the lack of understanding of the
+
+physics of food at microscale. Therefore, it is recommended that a detailed research should be
+
+continuing in the microscale level and food microstructure.
+
+Acknowledgement
+
+The first author acknowledges the support from the Queensland University of Technology post
+
+graduate Research Award (QUTPRA) to carry out this research.
+
+                                               45
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 47]]
+ACCEPTED MANUSCRIPT
+
+References
+
+Abera, M. K., Fanta, S. W., Verboven, P., Ho, Q. T., Carmeliet, J., & Nicolai, B. M. (2013).
+
+       Virtual fruit tissue generation based on cell growth modelling. Food and Bioprocess
+
+       Technology, 6(4), 859-869.
+
+Aguilera, J. M. (2005). Why food microstructure? Journal of Food Engineering, 67(1), 3-11.
+
+Aguilera, J. M., Chiralt, A., & Fito, P. (2003). Food dehydration and product structure. Trends in
+
+       Food Science & Technology, 14(10), 432-437. doi:10.1016/s0924-2244(03)00122-5
+
+Aguilera, J. M., & Lillford, P. J. (2008). Structure–property relationships in foods Food
+
+       Materials Science (pp. 229-253): Springer.
+
+Aguilera, J. M., & Stanley, D. W. (1999). Microstructural principles of food processing and
+
+       engineering: Springer Science & Business Media.
+
+Aguilera, J. M., Stanley, D. W., & Baker, K. W. (2000). New dimensions in microstructure of
+
+       food products. Trends in Food Science & Technology, 11(1), 3-9.
+
+Alamar, M., Vanstreels, E., Oey, M., Moltó, E., & Nicolaï, B. (2008). Micromechanical
+
+       behaviour of apple tissue in tensile and compression tests: Storage conditions and cultivar
+
+       effect. Journal of Food Engineering, 86(3), 324-333.
+
+Aregawi, W. A., Abera, M. K., Fanta, S. W., Verboven, P., & Nicolai, B. (2014). Prediction of
+
+       water loss and viscoelastic deformation of apple tissue using a multiscale model. Journal
+
+       of Physics: Condensed Matter, 26(46), 464111.
+
+                                                46
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 48]]
+ACCEPTED MANUSCRIPT
+
+Attig, N., Binder, K., Grubmuller, H., & Kremer, K. (2004). Computational soft matter: from
+
+       synthetic polymers to proteins. John von Neumann Institute for Computing (NIC),
+
+       Juelich.
+
+Baruchel, J., Buffiere, J.-Y., Cloetens, P., Di Michiel, M., Ferrie, E., Ludwig, W., . . . Salvo, L.
+
+       (2006). Advances in synchrotron radiation microtomography. Scripta Materialia, 55(1),
+
+       41-46.
+
+Baschnagel, J., Binder, K., Doruker, P., Gusev, A. A., Hahn, O., Kremer, K., . . . Paul, W.
+
+       (2000). Bridging the gap between atomistic and coarse-grained models of polymers:
+
+       status and perspectives Viscoelasticity, atomistic models, statistical chemistry (pp. 41-
+
+       156): Springer.
+
+Bathe, K. J. (2008). Finite element method: Wiley Online Library.
+
+Batista, L. M., da Rosa, C. A., & Pinto, L. A. (2007). Diffusive model with variable effective
+
+       diffusivity considering shrinkage in thin layer drying of chitosan. Journal of Food
+
+       Engineering, 81(1), 127-132.
+
+Bertram, H. C., Dønstrup, S., Karlsson, A. H., & Andersen, H. J. (2002). Continuous distribution
+
+       analysis of T 2 relaxation in meat—an approach in the determination of water-holding
+
+       capacity. Meat science, 60(3), 279-285.
+
+Bodurka, J., Buntkowsky, G., Olechnowicz, R., Gutsze, A., & Limbach, H.-H. (1996).
+
+       Investigation of water in normal and dehydrated rabbit lenses by 1 H NMR and
+
+                                                  47
+                                                       ACCEPTED MANUSCRIPT
+
+[[PAGE 49]]
+ACCEPTED MANUSCRIPT
+
+       calorimetric measurements. Colloids and Surfaces A: Physicochemical and Engineering
+
+       Aspects, 115, 55-62.
+
+Bouchon, P., & Pyle, D. L. (2005). Modelling Oil Absorption During Post-Frying Cooling: I:
+
+       Model Development. Food and Bioproducts Processing, 83(4), 253-260.
+
+       doi:http://dx.doi.org/10.1205/fbp.05115
+
+Bourne, M. (2002). Food texture and viscosity: concept and measurement: Academic press.
+
+Carr, E. J., Turner, I., & Perre, P. (2013). A dual-scale modeling approach for drying
+
+       hygroscopic porous media. Multiscale Modeling & Simulation, 11(1), 362-384.
+
+Centonze, V., & Pawley, J. B. (2006). Tutorial on practical confocal microscopy and use of the
+
+       confocal test specimen Handbook of biological confocal microscopy (pp. 627-649):
+
+       Springer.
+
+Cha, S., Lin, P. C., Zhu, L., Sun, P.-C., & Fainman, Y. (2000). Nontranslational three-
+
+       dimensional profilometry by chromatic confocal microscopy with dynamically
+
+       configurable micromirror scanning. Applied Optics, 39(16), 2605-2613.
+
+Chatakanonda, P., Dickinson, L. C., & Chinachoti, P. (2003). Mobility and distribution of water
+
+       in cassava and potato starches by 1H and 2H NMR. Journal of agricultural and food
+
+       chemistry, 51(25), 7445-7449.
+
+Chen, F. L., Wei, Y. M., & Zhang, B. (2010). Characterization of water state and distribution in
+
+       textured soybean protein using DSC and NMR. Journal of Food Engineering, 100(3),
+
+       522-526.
+
+                                                 48
+                                                      ACCEPTED MANUSCRIPT
+
+[[PAGE 50]]
+ACCEPTED MANUSCRIPT
+
+Cuccurullo, G., Giordano, L., Albanese, D., Cinquanta, L., & Di Matteo, M. (2012). Infrared
+
+       thermography assisted control for apples microwave drying. Journal of Food
+
+       Engineering, 112(4), 319-325.
+
+Curcio, S. (2010). A multiphase model to analyze transport phenomena in food drying processes.
+
+       Drying Technology, 28(6), 773-785.
+
+Datta, A. (2007a). Porous media approaches to studying simultaneous heat and mass transfer in
+
+       food processes. I: Problem formulations. Journal of Food Engineering, 80(1), 80-95.
+
+Datta, A. (2007b). Porous media approaches to studying simultaneous heat and mass transfer in
+
+       food processes. II: Property data and representative results. Journal of Food Engineering,
+
+       80(1), 96-110.
+
+Defraeye, T. (2014). Advanced computational modelling for drying processes–A review. Applied
+
+       Energy, 131, 323-344.
+
+Demers, A. M., Gosselin, R., Simard, J. S., & Abatzoglou, N. (2012). In‐line near infrared
+
+       spectroscopy monitoring of pharmaceutical powder moisture in a fluidised bed dryer: An
+
+       efficient methodology for chemometric model development. The Canadian Journal of
+
+       Chemical Engineering, 90(2), 299-303.
+
+Dhall, A., Halder, A., & Datta, A. K. (2012). Multiphase and multicomponent transport with
+
+       phase change during meat cooking. Journal of Food Engineering, 113(2), 299-309.
+
+       doi:http://dx.doi.org/10.1016/j.jfoodeng.2012.05.030
+
+                                               49
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 51]]
+ACCEPTED MANUSCRIPT
+
+Dhall, A., Squier, G., Geremew, M., Wood, W. A., George, J., & Datta, A. K. (2012). Modeling
+
+       of multiphase transport during drying of honeycomb ceramic substrates. Drying
+
+       Technology, 30(6), 607-618.
+
+Duizer, L. (2001). A review of acoustic research for studying the sensory perception of crisp,
+
+       crunchy and crackly textures. Trends in Food Science & Technology, 12(1), 17-24.
+
+Efendiev, Y., & Hou, T. Y. (2009). Multiscale finite element methods: theory and applications
+
+       (Vol. 4): Springer Science & Business Media.
+
+Erbay, Z., & Icier, F. (2010). A review of thin layer drying of foods: theory, modeling, and
+
+       experimental results. Critical reviews in food science and nutrition, 50(5), 441-464.
+
+Esveld, D., Van Der Sman, R., Van Dalen, G., Van Duynhoven, J., & Meinders, M. (2012).
+
+       Effect of morphology on water sorption in cellular solid foods. Part I: Pore scale network
+
+       model. Journal of food engineering, 109(2), 301-310.
+
+Esveld, D., van der Sman, R., Witek, M., Windt, C., van As, H., van Duynhoven, J., & Meinders,
+
+       M. (2012). Effect of morphology on water sorption in cellular solid foods. Part II:
+
+       Sorption in cereal crackers. Journal of food engineering, 109(2), 311-320.
+
+Falcone, P., Baiano, A., Zanini, F., Mancini, L., Tromba, G., Montanari, F., & Nobile, M.
+
+       (2004). A Novel Approach to the Study of Bread Porous Structure: Phase‐contrast X‐Ray
+
+       Microtomography. Journal of Food Science, 69(1), FEP38-FEP43.
+
+                                                50
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 52]]
+ACCEPTED MANUSCRIPT
+
+Fanta, S. W., Abera, M. K., Aregawi, W. A., Ho, Q. T., Verboven, P., Carmeliet, J., & Nicolai,
+
+       B. M. (2014). Microscale modeling of coupled water transport and mechanical
+
+       deformation of fruit tissue during dehydration. Journal of Food Engineering, 124, 86-96.
+
+Fanta, S. W., Vanderlinden, W., Abera, M. K., Verboven, P., Karki, R., Ho, Q. T., . . . Nicolaï,
+
+       B. M. (2012). Water transport properties of artificial cell walls. Journal of Food
+
+       Engineering, 108(3), 393-402.
+
+Farid, M. M., & Chen, X. D. (1998). The analysis of heat and mass transfer during frying of food
+
+       using a moving boundary solution procedure. Heat and Mass Transfer, 34(1), 69-77.
+
+       doi:10.1007/s002310050233
+
+Farkas, B., Singh, R., & Rumsey, T. (1996). Modeling heat and mass transfer in immersion
+
+       frying. I, model development. Journal of Food Engineering, 29(2), 211-226.
+
+Farkas, B. E., Singh, R. P., & Rumsey, T. R. (1996). Modeling heat and mass transfer in
+
+       immersion frying. I, model development. Journal of Food Engineering, 29(2), 211-226.
+
+       doi:http://dx.doi.org/10.1016/0260-8774(95)00072-0
+
+Feng, H., Tang, J., Cavalieri, R., & Plumb, O. (2001). Heat and mass transport in microwave
+
+       drying of porous materials in a spouted bed. AIChE Journal, 47(7), 1499-1512.
+
+Feyissa, A. H., Gernaey, K., Ashokkumar, S., & Adler-Nissen, J. (2011). Modelling of coupled
+
+       heat and mass transfer during a contact baking process. Journal of Food Engineering,
+
+       106(3), 228-235.
+
+                                                51
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 53]]
+ACCEPTED MANUSCRIPT
+
+Fletcher, D., Guo, B., Harvie, D., Langrish, T., Nijdam, J., & Williams, J. (2006). What is
+
+       important in the simulation of spray dryer performance and how do current CFD models
+
+       perform? Applied Mathematical Modelling, 30(11), 1281-1292.
+
+Garini, Y., Vermolen, B. J., & Young, I. T. (2005). From micro to nano: recent advances in high-
+
+       resolution microscopy. Current opinion in biotechnology, 16(1), 3-12.
+
+Gharsallaoui, A., Roudaut, G., Chambin, O., Voilley, A., & Saurel, R. (2007). Applications of
+
+       spray-drying in microencapsulation of food ingredients: An overview. Food Research
+
+       International, 40(9), 1107-1121.
+
+Gou, P., Santos-Garces, E., Høy, M., Wold, J., Liland, K., & Fulladosa, E. (2013). Feasibility of
+
+       NIR interactance hyperspectral imaging for on-line measurement of crude composition in
+
+       vacuum packed dry-cured ham slices. Meat science, 95(2), 250-255.
+
+Gross, R. A., & Kalra, B. (2002). Biodegradable polymers for the environment. Science,
+
+       297(5582), 803-807.
+
+Guessasma, S., Chaunier, L., Della Valle, G., & Lourdin, D. (2011). Mechanical modelling of
+
+       cereal solid foods. Trends in Food Science & Technology, 22(4), 142-153.
+
+Gulati, T., & Datta, A. K. (2015). Mechanistic understanding of case-hardening and texture
+
+       development during drying of food materials. Journal of Food Engineering, 166, 119-
+
+       138.
+
+                                                52
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 54]]
+ACCEPTED MANUSCRIPT
+
+Halder, A., & Datta, A. K. (2012). Surface heat and mass transfer coefficients for multiphase
+
+       porous media transport models with rapid evaporation. Food and Bioproducts
+
+       Processing, 90(3), 475-490.
+
+Halder, A., Datta, A. K., & Spanswick, R. M. (2011). Water transport in cellular tissues during
+
+       thermal processing. AIChE Journal, 57(9), 2574-2588.
+
+Halder, A., Dhall, A., & Datta, A. (2007a). An improved, easily implementable, porous media
+
+       based model for deep-fat frying: Part I: Model development and input parameters. Food
+
+       and Bioproducts Processing, 85(3), 209-219.
+
+Halder, A., Dhall, A., & Datta, A. (2007b). An improved, easily implementable, porous media
+
+       based model for deep-fat frying: Part II: Results, validation and sensitivity analysis. Food
+
+       and Bioproducts Processing, 85(3), 220-230.
+
+Halder, A., Dhall, A., & Datta, A. K. (2007). An Improved, Easily Implementable, Porous Media
+
+       Based Model for Deep-Fat Frying: Part II: Results, Validation and Sensitivity Analysis.
+
+       Food and Bioproducts Processing, 85(3), 220-230.
+
+       doi:http://dx.doi.org/10.1205/fbp07034
+
+Halder, A., Dhall, A., & Datta, A. K. (2010). Modeling Transport in Porous Media With Phase
+
+       Change: Applications to Food Processing. Journal of Heat Transfer, 133(3), 031010-
+
+       031010. doi:10.1115/1.4002463
+
+                                                53
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 55]]
+ACCEPTED MANUSCRIPT
+
+Halder, A. D., A. Datta, A. K. (2007). An Improved, Easily Implementable, Porous Media Based
+
+       Model for Deep-Fat Frying: Part I: Model Development and Input Parameters. Food and
+
+       Bioproducts Processing, 85(3), 209-219. doi:http://dx.doi.org/10.1205/fbp07033
+
+Hills, B. P., & Remigereau, B. (1997). NMR studies of changes in subcellular water
+
+       compartmentation in parenchyma apple tissue during drying and freezing. International
+
+       Journal of Food Science and Technology, 32(1), 51-61.
+
+Ho, Q. T., Carmeliet, J., Datta, A. K., Defraeye, T., Delele, M. A., Herremans, E., . . . van der
+
+       Sman, R. (2013). Multiscale modeling in food engineering. Journal of Food Engineering,
+
+       114(3), 279-291.
+
+Ho, Q. T., Verboven, P., Mebatsion, H. K., Verlinden, B., Vandewalle, S., & Nicolaï, B. (2009).
+
+       Microscale mechanisms of gas exchange in fruit tissue. New Phytologist, 182(1), 163-
+
+       174.
+
+Ho, Q. T., Verboven, P., Verlinden, B. E., Herremans, E., Wevers, M., Carmeliet, J., & Nicolaï,
+
+       B. M. (2011). A three-dimensional multiscale model for gas exchange in fruit. Plant
+
+       Physiology, 155(3), 1158-1168.
+
+Ho, Q. T., Verboven, P., Verlinden, B. E., & Nicolaï, B. M. (2010). A model for gas transport in
+
+       pear fruit at multiple scales. Journal of experimental botany, erq026.
+
+Huang, H., Yu, H., Xu, H., & Ying, Y. (2008). Near infrared spectroscopy for on/in-line
+
+       monitoring of quality in foods and beverages: A review. Journal of Food Engineering,
+
+       87(3), 303-313.
+
+                                                 54
+                                                      ACCEPTED MANUSCRIPT
+
+[[PAGE 56]]
+ACCEPTED MANUSCRIPT
+
+Ingram, G., Cameron, I., & Hangos, K. (2004). Classification and analysis of integrating
+
+       frameworks in multiscale modelling. Chemical engineering science, 59(11), 2171-2187.
+
+Joardder, M., Brown, R., Kumar, C., & Karim, M. Effect of Cell Wall Properties on Porosity and
+
+       Shrinkage of Dried Apple. International Journal of Food Properties, In press.
+
+       doi:10.1080/10942912.2014.980945
+
+Joardder, M. U., Karim, A., Kumar, C., & Brown, R. J. (2015). Porosity: Establishing the
+
+       Relationship between Drying Parameters and Dried Food Quality: Springer.
+
+Joardder, M. U., Karim, A., Kumar, C., & Brown, R. J. (2016a). Factors Affecting Porosity
+
+       Porosity (pp. 25-46): Springer.
+
+Joardder, M. U., Karim, A., Kumar, C., & Brown, R. J. (2016b). Pore Formation and Evolution
+
+       During Drying Porosity (pp. 15-23): Springer.
+
+Joardder, M. U., Kumar, C., & Karim, M. (2015). Food structure: its formation and relationships
+
+       with other properties. Critical reviews in food science and nutrition.
+
+Joardder, M. U. H., Kumar, C., Brown, R. J., & Karim, M. A. (2015). A micro-level
+
+       investigation of the solid displacement method for porosity determination of dried food.
+
+       Journal of Food Engineering, 166, 156-164.
+
+       doi:http://dx.doi.org/10.1016/j.jfoodeng.2015.05.034
+
+Juge, N. (2006). Plant protein inhibitors of cell wall degrading enzymes. Trends in plant science,
+
+       11(7), 359-367.
+
+                                                55
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 57]]
+ACCEPTED MANUSCRIPT
+
+Karunasena, H., Gu, Y., Brown, R., & Senadeera, W. (2015). Numerical investigation of plant
+
+       tissue porosity and its influence on cellular level shrinkage during drying. Biosystems
+
+       Engineering, 132, 71-87.
+
+Karunasena, H., Senadeera, W., Brown, R. J., & Gu, Y. (2014). A particle based model to
+
+       simulate microscale morphological changes of plant tissues during drying. Soft matter,
+
+       10(29), 5249-5268.
+
+Karunasena, H., Senadeera, W., Gu, Y., & Brown, R. J. (2014). A coupled SPH-DEM model for
+
+       micro-scale structural deformations of plant cells during drying. Applied Mathematical
+
+       Modelling, 38(15), 3781-3801.
+
+Kaya, A., Aydın, O., & Dincer, I. 2008 . Experimental and numerical investigation of heat and
+
+       mass transfer during drying of Hayward kiwi fruits (Actinidia Deliciosa Planch). Journal
+
+       of Food Engineering, 88(3), 323-330.
+
+Khan, M., Kumar, C., Joardder, M., & Karim, M. (2016). Multiphase porous media modelling: A
+
+       novel approach of predicting food processing performance. Critical reviews in food
+
+       science and nutrition.
+
+Ko, S., & Gunasekaran, S. (2007). Error correction of confocal microscopy images for in situ
+
+       food microstructure evaluation. Journal of Food Engineering, 79(3), 935-944.
+
+Konishi, Y., Kobayashi, M., & Miura, K. i. (2010). Characterisation of water species revealed in
+
+       the drying operation of Todarodes pacificus Steenstrup using water proton NMR analysis.
+
+       International journal of food science & technology, 45(9), 1889-1894.
+
+                                               56
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 58]]
+ACCEPTED MANUSCRIPT
+
+Konstankiewicz, K., & Zdunek, A. (2001). Influence of turgor and cell size on the cracking of
+
+       potato tissue. International agrophysics, 15(1), 27-30.
+
+Krokida, M. K., Zogzas, N. P., & Maroulis, Z. B. (1997). Modelling shrinkage and porosity
+
+       during vacuum dehydration. International Journal of Food Science & Technology, 32(6),
+
+       445-458. doi:10.1111/j.1365-2621.1997.tb02119.x
+
+Kumar C, J., M.U.H., Farrell, T.W. and Karim, M. A. (2015). Multiphase porous media model
+
+       for Intermittent microwave convective drying (IMCD) of food. . International Journal of
+
+       Thermal Sciences, (accepted on 10 Dec 2015)
+
+Kumar, C., Joardder, M. U. H., Farrell, T. W., Millar, G. J., & Karim, A. (2014). Multiphase
+
+       porous media model for heat and mass transfer during drying of agricultural products.
+
+Kumar, C., Joardder, M. U. H., Karim, A., Millar, G. J., & Amin, Z. (2014). Temperature
+
+       redistribution modelling during intermittent microwave convective heating. Procedia
+
+       Engineering, 90, 544-549.
+
+Kumar, C., Millar, G. J., & Karim, M. (2015). Effective diffusivity and evaporative cooling in
+
+       convective drying of food material. Drying Technology, 33(2), 227-237.
+
+Lee, S.-J., Saravanan, R. S., Damasceno, C. M., Yamane, H., Kim, B.-D., & Rose, J. K. (2004).
+
+       Digging deeper into the plant cell wall proteome. Plant physiology and Biochemistry,
+
+       42(12), 979-988.
+
+Li, S., Dickinson, L., & Chinachoti, P. (1996). Proton relaxation of starch and gluten by solid-
+
+       state nuclear magnetic resonance spectroscopy. Cereal chemistry, 73(6), 736-743.
+
+                                                57
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 59]]
+ACCEPTED MANUSCRIPT
+
+Li, S., Dickinson, L., & Chinachoti, P. 1998 . Mo ility of ―unfreeza le‖ and ―freeza le‖ water
+
+       in waxy corn starch by 2H and 1H NMR. Journal of agricultural and food chemistry,
+
+       46(1), 62-71.
+
+Limbach, H. J., & Kremer, K. (2006). Multi-scale modelling of polymers: perspectives for food
+
+       materials. Trends in Food Science & Technology, 17(5), 215-219.
+
+Limodin, N., Réthoré, J., Adrien, J., Buffière, J.-Y., Hild, F., & Roux, S. (2011). Analysis and
+
+       artifact correction for volume correlation measurements using tomographic images from
+
+       a laboratory X-ray source. Experimental mechanics, 51(6), 959-970.
+
+Ludikhuyze, L., & Hendrickx, M. E. (2001). Effects of high pressure on chemical reactions
+
+       related to food quality Ultra high pressure treatments of foods (pp. 167-188): Springer.
+
+Madiouli, J., Sghaier, J., Lecomte, D., & Sammouda, H. (2012). Determination of porosity
+
+       change from shrinkage curves during drying of food material. Food and Bioproducts
+
+       Processing, 90(1), 43-51. doi:http://dx.doi.org/10.1016/j.fbp.2010.12.002
+
+Maldague, X. P. (2002). Introduction to NDT by active infrared thermography. Materials
+
+       Evaluation, 60(9), 1060-1073.
+
+Marousis, S., & Saravacos, G. (1990). Density and porosity in drying starch materials. Journal of
+
+       Food Science, 55(5), 1367-1372.
+
+Mayor, L., & Sereno, A. (2004). Modelling shrinkage during convective drying of food
+
+       materials: a review. Journal of Food Engineering, 61(3), 373-386.
+
+                                                58
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 60]]
+ACCEPTED MANUSCRIPT
+
+McCann, M. C., Bush, M., Milioni, D., Sado, P., Stacey, N. J., Catchpole, G., . . . Ulvskov, P.
+
+       (2001). Approaches to understanding the functional architecture of the plant cell wall.
+
+       Phytochemistry, 57(6), 811-821.
+
+Mebatsion, H., Verboven, P., Verlinden, B., Ho, Q. T., Nguyen, T. A., & Nicolaï, B. (2006).
+
+       Microscale modelling of fruit tissue using Voronoi tessellations. Computers and
+
+       electronics in agriculture, 52(1), 36-48.
+
+Mebatsion, H. K., Verboven, P., Ho, Q. T., Verlinden, B., & Nicolaï, B. (2008). Modelling fruit
+
+       (micro) structures, why and how? Trends in Food Science & Technology, 19(2), 59-66.
+
+Mercier, S., Marcos, B., Moresoli, C., Mondor, M., & Villeneuve, S. (2014). Modeling of
+
+       internal moisture transport during durum wheat pasta drying. Journal of Food
+
+       Engineering, 124(0), 19-27. doi:http://dx.doi.org/10.1016/j.jfoodeng.2013.09.028
+
+Mercier, S., Marcos, B., Moresoli, C., Mondor, M., & Villeneuve, S. (2014). Modeling of
+
+       internal moisture transport during durum wheat pasta drying. Journal of Food
+
+       Engineering, 124, 19-27.
+
+Miedziejko, E., Plenzler, G., NAPIERAŁA, D., & NAROŻNA, A. 199 . 1H‐NMR spin‐spin
+
+       relaxation time assessment of the reflection coefficient of the Triticale seed cell wall–
+
+       plasmalemma barrier to mannitol. Plant, Cell & Environment, 19(12), 1443-1448.
+
+Mitchell, J. (1998). Water and food macromolecules. Functional properties of food
+
+       macromolecules, 50-76.
+
+                                                   59
+                                                        ACCEPTED MANUSCRIPT
+
+[[PAGE 61]]
+ACCEPTED MANUSCRIPT
+
+Mujumdar, A. S. (2007). An overview of innovation in industrial drying: current status and R&D
+
+       needs Drying of Porous Materials (pp. 3-18): Springer.
+
+Nassehi, V., & Parvazinia, M. (2011). Finite element modeling of multiscale transport
+
+       phenomena: World Scientific.
+
+Nguyen, T. A., Dresselaers, T., Verboven, P., D'hallewin, G., Culeddu, N., Van Hecke, P., &
+
+       Nicolaï, B. (2006). Finite element modelling and MRI validation of 3D transient water
+
+       profiles in pears during postharvest storage. Journal of the Science of Food and
+
+       Agriculture, 86(5), 745-756.
+
+Nguyen, T. A., Verboven, P., Scheerlinck, N., Vandewalle, S., & Nicolaï, B. M. (2006).
+
+       Estimation of effective diffusivity of pear tissue and cuticle by means of a numerical
+
+       water diffusion model. Journal of Food Engineering, 72(1), 63-72.
+
+Ni, H., & Datta, A. (1999a). Heat and moisture transfer in baking of potato slabs. Drying
+
+       Technology, 17(10), 2069-2092.
+
+Ni, H., & Datta, A. (1999b). Moisture, oil and energy transport during deep-fat frying of food
+
+       materials. Food and Bioproducts Processing, 77(3), 194-204.
+
+Ni, H., Datta, A., & Torrance, K. (1999). Moisture transport in intensive microwave heating of
+
+       biomaterials: a multiphase porous media model. International Journal of Heat and Mass
+
+       Transfer, 42(8), 1501-1512.
+
+Ni, H., & Datta, A. K. (1999). Heat and moisture transfer in baking of potato slabs. Drying
+
+       Technology, 17(10), 2069-2092. doi:10.1080/07373939908917673
+
+                                               60
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 62]]
+ACCEPTED MANUSCRIPT
+
+Nicolai, B., Verboven, P., Scheerlinck, N., & De Baerdemaeker, J. (1998). Numerical analysis of
+
+       the propagation of random parameter fluctuations in time and space during thermal food
+
+       processes. Journal of Food Engineering, 38(3), 259-278.
+
+Nijhuis, H., Torringa, H., Muresan, S., Yuksel, D., Leguijt, C., & Kloek, W. (1998). Approaches
+
+       to improving the quality of dried fruit and vegetables. Trends in Food Science &
+
+       Technology, 9(1), 13-20.
+
+Nobel, P. S. (1999). Physicochemical and environmental plant physiology: Academic press.
+
+Ousegui, A., Moresoli, C., Dostie, M., & Marcos, B. (2010). Porous multiphase approach for
+
+       baking process–Explicit formulation of evaporation rate. Journal of Food Engineering,
+
+       100(3), 535-544.
+
+Ousegui, A., Moresoli, C., Dostie, M., & Marcos, B. (2010). Porous multiphase approach for
+
+       baking process – Explicit formulation of evaporation rate. Journal of Food Engineering,
+
+       100(3), 535-544. doi:http://dx.doi.org/10.1016/j.jfoodeng.2010.05.003
+
+Papasidero, D., Manenti, F., & Pierucci, S. (2015). Bread baking modeling: Coupling heat
+
+       transfer and weight loss by the introduction of an explicit vaporization term. Journal of
+
+       Food Engineering, 147, 79-88.
+
+Paredes, J., Martınez-Alonso, A., & Tascón, J. (2003). Application of scanning tunneling and
+
+       atomic force microscopies to the characterization of microporous and mesoporous
+
+       materials. Microporous and mesoporous materials, 65(2), 93-126.
+
+                                               61
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 63]]
+ACCEPTED MANUSCRIPT
+
+Paull, R. (1999). Effect of temperature and relative humidity on fresh commodity quality.
+
+       Postharvest Biology and Technology, 15(3), 263-277.
+
+Pavliotis, G. A., & Stuart, A. (2008). Multiscale methods: averaging and homogenization:
+
+       Springer Science & Business Media.
+
+Perré, P. (2007). Multiscale aspects of heat and mass transfer during drying. Transport in Porous
+
+       Media, 66(1-2), 59-76.
+
+Perré, P. (2010). Multiscale modeling of drying as a powerful extension of the macroscopic
+
+       approach: application to solid wood and biomass processing. Drying Technology, 28(8),
+
+       944-959.
+
+Perré, P. (2011). A review of modern computational and experimental tools relevant to the field
+
+       of drying. Drying Technology, 29(13), 1529-1541.
+
+Perré, P. (2015). The Proper Use of Mass Diffusion Equations in Drying Modeling: Introducing
+
+       the Drying Intensity Number. Drying Technology, 33(15-16), 1949-1962.
+
+Perré, P., & Huber, F. (2007). Measurement of free shrinkage at the tissue level using an optical
+
+       microscope with an immersion objective: results obtained for Douglas fir (Pseudotsuga
+
+       menziesii) and spruce (Picea abies). Annals of forest science, 64(3), 255-265.
+
+Perré, P., & Rémond, R. (2006). A dual-scale computational model of kiln wood drying
+
+       including single board and stack level simulation. Drying Technology, 24(9), 1069-1074.
+
+                                                62
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 64]]
+ACCEPTED MANUSCRIPT
+
+Perré, P., Rémond, R., Colin, J., Mougel, E., & Almeida, G. (2012). Energy consumption in the
+
+       convective drying of timber analyzed by a multiscale computational model. Drying
+
+       Technology, 30(11-12), 1136-1146.
+
+Prothon, F., Ahrné, L. l. M., Funebo, T., Kidman, S., Langton, M., & Sjöholm, I. (2001). Effects
+
+       of combined osmotic and microwave dehydration of apple on texture, microstructure and
+
+       rehydration characteristics. LWT-Food Science and Technology, 34(2), 95-101.
+
+Putranto, A., & Chen, X. D. (2015). An assessment on modeling drying processes: Equilibrium
+
+       multiphase model and the spatial reaction engineering approach (S-REA). Chemical
+
+       Engineering Research and Design, 94, 660-672.
+
+Rahman, M., Mustayen, A., Mekhilef, S., & Saidur, R. (2015). The Optimization of Solar Drying
+
+       of Grain by Using a Genetic Algorithm. International Journal of Green Energy, 12(12),
+
+       1222-1231.
+
+Rahman, M. S. (2001). Towards prediction of porosity in food foods during drying: A brief
+
+       review. Drying Technology, 19(1), 3-15.
+
+Rahman, M. S. (2008). 4 Dehydration and Microstructure. Advances in Food Dehydration, 97.
+
+Rakesh, V., & Datta, A. K. (2011). Microwave puffing: Determination of optimal conditions
+
+       using a coupled multiphase porous media–Large deformation model. Journal of Food
+
+       Engineering, 107(2), 152-163.
+
+                                               63
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 65]]
+ACCEPTED MANUSCRIPT
+
+Rastogi, N., Raghavarao, K., Niranjan, K., & Knorr, D. (2002). Recent developments in osmotic
+
+       dehydration: methods to enhance mass transfer. Trends in Food Science & Technology,
+
+       13(2), 48-59.
+
+Ross, K. A., Campanella, O. H., & Okos, M. R. (2002). The effect of porosity on glass transition
+
+       measurement. International Journal of Food Properties, 5(3), 611-628. doi:10.1081/JFP-
+
+       120015496
+
+Sagar, V., & Kumar, P. S. (2010). Recent advances in drying and dehydration of fruits and
+
+       vegetables: a review. Journal of Food Science and Technology, 47(1), 15-26.
+
+Scheerlinck, N., Verboven, P., Stigter, J. D., De Baerdemaeker, J., Van Impe, J. F., & Nicolai, B.
+
+       M. (2000). Stochastic finite-element analysis of coupled heat and mass transfer problems
+
+       with random field parameters. Numerical Heat Transfer: Part B: Fundamentals, 37(3),
+
+       309-330.
+
+Stawczyk, J., Munoz, I., Collell, C., & Comaposada, J. (2009). Control system for sausage
+
+       drying based on on-line NIR aw determination. Drying Technology, 27(12), 1338-1343.
+
+Street, H. E. (1973). Plant tissue and cell culture (Vol. 11): Univ of California Press.
+
+Strumiłło, C. 200 . Perspectives on developments in drying. Drying Technology, 24(9), 1059-
+
+       1068.
+
+Van der Sman, R. (2007). Soft condensed matter perspective on moisture transport in cooking
+
+       meat. AIChE Journal, 53(11), 2986-2995.
+
+                                                 64
+                                                      ACCEPTED MANUSCRIPT
+
+[[PAGE 66]]
+ACCEPTED MANUSCRIPT
+
+Van der Sman, R. (2013). Modeling cooking of chicken meat in industrial tunnel ovens with the
+
+       Flory–Rehner theory. Meat science, 95(4), 940-957.
+
+Van der Sman, R., & Van Der Goot, A. (2009). The science of food structuring. Soft matter,
+
+       5(3), 501-510.
+
+Van Liedekerke, P., Ghysels, P., Tijskens, E., Samaey, G., Smeedts, B., Roose, D., & Ramon, H.
+
+       (2010). A particle-based model to simulate the micromechanics of single-plant
+
+       parenchyma cells and aggregates. Physical biology, 7(2), 026006.
+
+ eraver eke, E. A., er oven, P., an Oostveldt, P., & Nicolaı, . M. 2003 . Prediction of
+
+       moisture loss across the cuticle of apple (Malus sylvestris subsp. Mitis (Wallr.)) during
+
+       storage: part 1. Model development and determination of diffusion coefficients.
+
+       Postharvest Biology and Technology, 30(1), 75-88.
+
+Vickers, Z., & Bourne, M. C. (1976). A psychoacoustical theory of crispness. Journal of Food
+
+       Science, 41(5), 1158-1164. doi:10.1111/j.1365-2621.1976.tb14407.x
+
+Wang, N., & Brennan, J. (1995). Changes in structure, density and porosity of potato during
+
+       dehydration. Journal of Food Engineering, 24(1), 61-76.
+
+Warning, A., Dhall, A., Mitrea, D., & Datta, A. K. (2012). Porous media based model for deep-
+
+       fat vacuum frying potato chips. Journal of Food Engineering, 110(3), 428-440.
+
+       doi:http://dx.doi.org/10.1016/j.jfoodeng.2011.12.024
+
+                                               65
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 67]]
+ACCEPTED MANUSCRIPT
+
+Warning, A. D., Arquiza, J., & Datta, A. K. (2015). A Multiphase Porous Medium Transport
+
+       Model with Distributed Sublimation Front to Simulate Vacuum Freeze Drying. Food and
+
+       Bioproducts Processing, 94, 637-648.
+
+Whitaker, S. (1977). Simultaneous heat, mass, and momentum transfer in porous media: a theory
+
+       of drying.
+
+Whitaker, S. (1998). Coupled transport in multiphase systems: a theory of drying. Advances in
+
+       heat transfer, 31, 1-104.
+
+Witek, M., Węglarz, W., De Jong, L., an Dalen, G., lonk, J., Heussen, P., . . . an
+
+       Duynhoven, J. (2010). The structural and hydration properties of heat-treated rice studied
+
+       at multiple length scales. Food chemistry, 120(4), 1031-1040.
+
+Wood, S. A., Zerhouni, E. A., Hoford, J. D., Hoffman, E. A., & Mitzner, W. (1995).
+
+       Measurement of three-dimensional lung tree structures by using computed tomography.
+
+       Journal of Applied Physiology, 79(5), 1687-1697.
+
+Yamsaengsung, R., & Moreira, R. (2002). Modeling the transport phenomena and structural
+
+       changes during deep fat frying: Part II: model solution & validation. Journal of Food
+
+       Engineering, 53(1), 11-25.
+
+Yamsaengsung, R., & Moreira, R. G. (2002). Modeling the transport phenomena and structural
+
+       changes during deep fat frying: Part II: model solution &amp; validation. Journal of
+
+       Food Engineering, 53(1), 11-25. doi:http://dx.doi.org/10.1016/S0260-8774(01)00135-2
+
+                                               66
+                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 68]]
+ACCEPTED MANUSCRIPT
+
+Yoshikawa, K., & Ohsaka, A. (1979). 1H and 13C NMR spectroscopic study of rat organs.
+
+       Physiological chemistry and physics, 12(6), 515-520.
+
+Yue, X., & Weinan, E. (2007). The local microscale problem in the multiscale modeling of
+
+       strongly heterogeneous media: Effects of boundary conditions and cell size. Journal of
+
+       Computational Physics, 222(2), 556-572.
+
+Zhang, J., & Datta, A. (2004). Some considerations in modeling of moisture transport in heating
+
+       of hygroscopic materials. Drying Technology, 22(8), 1983-2008.
+
+Zhang, J., Datta, A., & Mukherjee, S. (2005). Transport processes and large deformation during
+
+       baking of bread. AIChE Journal, 51(9), 2569-2580.
+
+Zhang, Z., & Kong, N. (2012). Nonequilibrium Thermal Dynamic Modeling of Porous Medium
+
+       Vacuum Drying Process. Mathematical Problems in Engineering, 2012, 1-22.
+
+Ziaiifar, A. M., Achir, N., Courtois, F., Trezzani, I., & Trystram, G. (2008). Review of
+
+       mechanisms, conditions, and factors involved in the oil uptake phenomenon during the
+
+       deep‐fat frying process. International journal of food science & technology, 43(8), 1410-
+
+       1423.
+
+Zienkiewicz, O. C., & Taylor, R. L. (2005). The finite element method for solid and structural
+
+       mechanics: Butterworth-heinemann.
+
+                                                67
+                                                     ACCEPTED MANUSCRIPT
+
+[[PAGE 69]]
+ACCEPTED MANUSCRIPT
+
+      Table 1. Water transport mechanism inside food materials during dehydration
+
+ Moisture Transfer During                Scale                    Reference
+          Drying
+Diffusion Vapor             Macroscale                   (Engels, Hendrickx, De
+                                                         Samblanx, De Gryze, &
+                                                         Tobback, 1986; Lewis, 1921)
+                            Microscale                   (Nieto, Castro, & Alzamora,
+                                                         2001)
+            Surface         Macroscale                   (Jayasundera, Adhikari,
+                                                         Aldred, & Ghandi, 2009;
+                                                         Zogzas, Maroulis, &
+                                                         Marinos-Kouris, 1994)
+            Liquid          Macroscale                   (Raisul Islam, Ho, &
+                                                         Mujumdar, 2003)
+                            Microscale                   (Nieto et al., 2001; Shi & Le
+                                                         Maguer, 2002)
+Capillary                   Macroscale                   (Clement K Sankat &
+                                                         Francois Castaigne, 2004)
+Evaporation condensation    Macroscale                   (Bhandari & Howes, 1999)
+Hydraulic flow              Macroscale                   (Clement K. Sankat &
+                                                         Francois Castaigne, 2004)
+Molecular diffusion         Microscale                   (José Miguel Aguilera,
+                                                         Chiralt, & Fito, 2003; Karel
+                                                         & Saguy, 1991)
+Knudesn flow                Microscale                   (Sagara, 2001)
+                            Macroscale                   (Rossello, Canellas, Simal, &
+                                                         Berna, 1992)
+Mutual diffusion            Macroscale                   (Sano & Yamamoto, 1993)
+Slip flow                   Macroscale                   (Waananen, Litchfield, &
+                                                         Okos, 1993)
+
+                                           68
+                                                 ACCEPTED MANUSCRIPT
+
+[[PAGE 70]]
+ACCEPTED MANUSCRIPT
+
+                           Table 2: Basic physics for single phase model
+
+Physics                                               Equation
+Energy                  T
+               c p (       u.T )  .(kT )  H
+conservation            t
+               Where,  = density, c p = specific heat of the material, T = temperature,
+
+               u = convective flow, K = thermal conductivity of the material, H = heat source, t
+               = time
+               c
+                  . Deff c   u.c  R
+Mass
+conservation   t
+               Where, c = moisture concentration, Deff = effective moisture diffusivity, R =
+
+               production or consumption of moisture.
+
+                                                 69
+                                                      ACCEPTED MANUSCRIPT
+
+[[PAGE 71]]
+ACCEPTED MANUSCRIPT
+
+                                          Table 3: The basic governing equation for multiphase modelling
+
+Physics                                            Governing Equation                                                     Nomenclature
+
+                                          Liquid                                                                         S = Saturation,
+                                                       Sww  . nw   R
+                                          water     t                                                                    P = Pressure,
+                                                            kk             k k p        k k p                            = Dynamic
+                                                    nw  w w r ,w P  w w r ,w c  w w r ,w c
+                                                             w             w cw        w T
+                                                                                                                          Viscosity,
+                                                   (a) Convective flux                                                     = Porosity,
+                                                   (b) Capillary flux due to concentration gradient
+                                                                                                                           = Density,
+                                                   (c) Capillary flux due to temperature gradient
+                                                                                                                          k = Permeability
+                                                                                                                          D = Diffusivity,
+                                                                                                                          R = Evaporation
+                                          Water                                                                 
+                                                        Sg gv   . gv g r , g P   Sg g Deff , g v   R
+                                                                               kk
+Mass conservation
+
+                                          vapor     t                          v                               
+                                                                                                                          Q = Heat source
+                                                                                                                           =Mass
+                                                                                                                          fraction
+                                                                                                                          K = Thermal
+                                          Air       a  1  v
+                                                                                                                          conductivity,
+                                                     T
+                                          eff cpeff    . ng hg  nwhw   .(keff T )  hfg Revap  Q
+                        conservat
+
+                                                                                                                          Cp = Specific
+Energy
+
+                                                     t
+                                    ion
+
+                                                                                                                          heat
+                                                                                                                          t = time
+                                          
+                                              S  .ng   Revap ,
+                                                                                             kg kr , g
+                                                                                  ng  g               P ,             Subsript:
+                                          t g g                                               i
+Momentum Conservation
+
+                                                                                                                          V= vapor
+                                               PM g
+                                          g                                                                             g = gas
+                                                RT
+                                                                                                                          a = air
+                                                                                                                          w = water
+                                                                                                                          s = solid
+                                                                                                                          eff = effective
+                                                                                                                          r = relative
+
+                                                                               70
+                                                                                    ACCEPTED MANUSCRIPT
+
+[[PAGE 72]]
+ACCEPTED MANUSCRIPT
+
+                        Table 4: Advance modelling approach
+
+      Authors                      Materials                  Application area
+    Nicolai et al.                  Apple                      Microstructure
+                                                              characterization
+
+    Defraeye et al                   Apple                Water transport model
+
+  Halder and Datta                 Potato slab          Multiphase porous media
+                                                                   flow
+  Chaminda Prasad                    Apple              Microscale model (2D) for
+  Karunasena et al.                                               drying
+  Varabereke et al                   Apple              Microscale water transport
+     Ho et al.                       Pear               Microscale gas exchange
+   Van lekerdeke                     Apple               Calculating mechanical
+                                                            properties of cell
+  Patrick Perre et al                wood               Multi-scale model in wood
+                                                                  drying
+      Carr et al.                    wood               Duel scale model in wood
+                                                                  drying
+
+                                         71
+                                              ACCEPTED MANUSCRIPT
+
+[[PAGE 73]]
+ACCEPTED MANUSCRIPT
+
+      Table 5. Advance non-invasive technique for observing the drying process
+
+ Experimental        Spatial resolution              Information Type
+
+  Technique
+
+     MRI                  20  m          Water density, velocity, properties
+
+     NIR                  10  m               Moisture content, particle size
+
+    NMR                    1 m            Moisture content and the drying
+
+                                                            rate
+
+  X ray micro            0.2  m               Deformation, crack formation,
+
+ tomography                                moisture content, structure of the
+
+                                                          material
+
+     SEM                   3nm                    Deformation, shrinkage
+
+                                                        observation
+
+     TEM                    1A                    Deformation, shrinkage
+
+                                                        observation
+
+                                          72
+                                               ACCEPTED MANUSCRIPT
+
+[[PAGE 74]]
+ACCEPTED MANUSCRIPT
+
+Figure 1. Demonstration of hierarchical structure of cellular based food materials (M. U.
+
+                      Joardder, Karim, Kumar, & Brown, 2016a)
+
+                                           73
+                                                ACCEPTED MANUSCRIPT
+
+[[PAGE 75]]
+ACCEPTED MANUSCRIPT
+
+      Figure 2. Classification of mathematical models in food drying
+
+                                   74
+                                        ACCEPTED MANUSCRIPT
+
+[[PAGE 76]]
+ACCEPTED MANUSCRIPT
+
+           Figure 3. Empirical modeling approach
+
+                            75
+                                 ACCEPTED MANUSCRIPT
+
+[[PAGE 77]]
+ACCEPTED MANUSCRIPT
+
+      Figure 4. Concept of Multiscale modeling in drying technology
+
+                                   76
+                                        ACCEPTED MANUSCRIPT
+
+[[PAGE 78]]
+ACCEPTED MANUSCRIPT
+
+    Figure 5. Multi scale approach presented by Patrick Perre (Perré, 2010).
+
+                                      77
+                                           ACCEPTED MANUSCRIPT
+
+[[PAGE 79]]
+ACCEPTED MANUSCRIPT
+
+      Figure 6: Conventional RVE used by researchers (Datta, 2007a)
+
+                                   78
+                                        ACCEPTED MANUSCRIPT
+
+[[PAGE 80]]
+ACCEPTED MANUSCRIPT
+
+          Figure 7. Cellular structure of Plant tissue
+
+                              79
+                                   ACCEPTED MANUSCRIPT
+
+[[PAGE 81]]
+ACCEPTED MANUSCRIPT
+
+Figure 8. Schematic diagram of actual geometry of the microstructure of plan based tissue
+
+                                           80
+                                                ACCEPTED MANUSCRIPT
+
+[[PAGE 82]]
+ACCEPTED MANUSCRIPT
+
+   Figure 9. A step by step representation for modeling of cell geometryFigure
+
+                                       81
+                                            ACCEPTED MANUSCRIPT
+
+[[PAGE 83]]
+ACCEPTED MANUSCRIPT
+
+         10: Heterogeneous multiscale method framework
+
+                              82
+                                   ACCEPTED MANUSCRIPT
+
+[[PAGE 84]]
+ACCEPTED MANUSCRIPT
+
+                     Define N spatial scales, i←1; Measure
+                         material properties of scale 1
+
+                          Measure topology of Scale i
+
+                         Perform Numerical experiment
+         i←i+1
+
+          i<N
+
+                       Compute material properties scale
+                                    i+1
+
+                              Apparent Material
+                             properties of macro-
+                                 scale model
+
+         Figure 11. A sample of homogenization process
+
+                              83
+                                   ACCEPTED MANUSCRIPT
+
+[[PAGE 85]]
+ACCEPTED MANUSCRIPT
+
+      Figure 12: Schematic representation of modern drying system
+
+                                  84
+                                       ACCEPTED MANUSCRIPT
+
+[[PAGE 86]]
+ACCEPTED MANUSCRIPT
+
+       Figure 13. The schematic diagram of NIR spectroscopy
+
+                               85
+                                    ACCEPTED MANUSCRIPT

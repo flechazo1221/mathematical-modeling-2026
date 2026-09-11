@@ -59,6 +59,66 @@
         "01-intake/H1-选择包.md",
         "01-intake/handoff.json"
       ]
+    },
+    {
+      "event": "STAGE_COMPLETED",
+      "at": "2026-09-11T00:32:40+08:00",
+      "stage": "INTAKE",
+      "next_stage": "H1"
+    },
+    {
+      "event": "GATE_APPROVED",
+      "at": "2026-09-11T00:32:40+08:00",
+      "gate": "H1",
+      "next_stage": "LITERATURE"
+    },
+    {
+      "event": "STAGE_STARTED",
+      "at": "2026-09-11T08:24:35+08:00",
+      "stage": "LITERATURE",
+      "thread_id": "01a08c0b-ba8c-72c2-9b5d-432c30af06f4"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-11T08:24:36+08:00",
+      "stage": "LITERATURE",
+      "affected_files": [
+        "02-literature/文献清单.json",
+        "02-literature/文献阅读结果.md",
+        "02-literature/L1-文献审核包.md",
+        "02-literature/handoff.json"
+      ]
+    },
+    {
+      "event": "STAGE_COMPLETED",
+      "at": "2026-09-11T08:24:37+08:00",
+      "stage": "LITERATURE",
+      "next_stage": "DESIGN"
+    },
+    {
+      "event": "WORKFLOW_COMPATIBILITY_REPAIRED",
+      "at": "2026-09-11T08:25:19+08:00",
+      "reason": "legacy project config omitted the mandatory L1 literature_review_gate",
+      "corrected_from": "DESIGN",
+      "corrected_to": "L1",
+      "status": "WAITING_FOR_TEAM"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-11T09:28:09+08:00",
+      "stage": "LITERATURE",
+      "affected_files": [
+        "02-literature/文献阅读结果.md",
+        "02-literature/文献清单.json",
+        "02-literature/L1-文献审核包.md",
+        "02-literature/handoff.json"
+      ]
+    },
+    {
+      "event": "GATE_APPROVED",
+      "at": "2026-09-11T09:31:41+08:00",
+      "gate": "L1",
+      "next_stage": "DESIGN"
     }
   ]
 }

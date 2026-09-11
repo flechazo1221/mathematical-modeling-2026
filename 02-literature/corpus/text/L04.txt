@@ -1,0 +1,1128 @@
+[[PAGE 1]]
+biblio.ugent.be
+
+The UGent Institutional Repository is the electronic archiving and dissemination platform for all
+UGent research publications. Ghent University has implemented a mandate stipulating that all
+academic publications of UGent researchers should be deposited and archived in this repository.
+Except for items where current copyright restrictions apply, these papers are available in Open
+Access.
+
+This item is the archived peer-reviewed author-version of:
+
+Validation of a coupled heat, vapour and liquid moisture transport model for porous
+materials implemented in CFD
+
+Marnix Van Belleghem, Marijke Steeman, Hans Janssen, Arnold Janssens and Michel De
+Paepe
+
+In: Building and Environment, 81, pp. 340-353, 2014.
+
+To refer to or to cite this work, please use the citation to the published version:
+
+Van Belleghem M., Steeman M., Janssen H., Janssens A., De Paepe M. (2014) Validation of a
+coupled heat, vapour and liquid moisture transport model for porous materials
+implemented in CFD. Building and Environment 81, 340-353. doi:
+10.1016/j.buildenv.2014.06.024
+
+[[PAGE 2]]
+Validation of a coupled heat, vapour and liquid moisture transport model for porous materials
+implemented in CFD
+                      1                2              3                 4                     1
+M. Van Belleghem , M. Steeman , H. Janssen , A. Janssens and M. De Paepe
+1
+  Ghent University, Department of Flow, Heat and Combustion Mechanics, Sint-Pietersnieuwstraat 40, B-9000 Gent, Belgium
+2
+  Ghent University, Department of Industrial Technology and Construction, Valentin Vaerwijckweg 1, B-9000 Gent, Belgium
+3
+  Building Physics Section, Department of Civil Engineering, KU Leuven, Kasteelpark Arenberg 40, B-3000 Leuven, Belgium
+4
+  Ghent University, Department of Architecture and Urban Planning, Jozef Plateaustraat 22, B-9000 Gent, Belgium
+
+Corresponding author: Marnix Van Belleghem
+Tel +3292643289 / Fax +3292643575
+Email: marnix.vanbelleghem@UGent.be
+
+Keywords
+
+Heat and moisture transfer, HAM, CFD, Porous material, Drying
+
+Abstract
+
+Moisture-related damage is an important issue when looking at the performance of building envelopes.
+In order to accurately predict the moisture behaviour of building components, building designers can
+resort to Heat, Air and Moisture (HAM) models. In this paper a newly developed heat and mass
+transfer model that is implemented in a 3D finite volume solver, Fluent®, is presented. This allows a
+simultaneous modelling approach of both the convective conditions surrounding a porous material and
+the heat and moisture transport in the porous material governed by diffusion. Unlike most HAM models
+that often confine to constant convective transport coefficients it is now possible to better predict these
+convective boundary conditions. An important application of the model is the convective drying of
+porous building materials. Especially during the first drying stage, the drying rate is determined by the
+convective boundary conditions. The model was validated against a convective drying experiment
+from literature, in which a saturated ceramic brick sample is dried by flowing dry air over one side of
+the sample surface. Temperature and relative humidity measurements at different depths in the
+sample, moisture distribution profiles and mass loss measurements were compared with simulation
+results. An overall good agreement between the coupled model and the experiments was found,
+however, the model predicted the constant drying rate period better than the falling rate period. This
+was improved by adjusting the material properties. The adjustment of the material properties was
+supported by neutron radiography measurements.
+
+Nomenclature
+
+Symbol                Description                                                              Unit
+
+cp                    Specific heat                                                            J/kgK
+
+C                     Specific heat capacity                                                   J/kgK
+                                                                   -8        4
+Cb                    Stefan Boltzmann constant (5.67 x 10 W/m²K )                             -
+
+Dva                   Diffusivity of water vapour in air                                       m²/s
+
+E                     Total energy                                                             J
+
+g                     Moisture flux                                                            kg/m²s
+
+[[PAGE 3]]
+h               Specific enthalpy                                      J/kg
+
+h               Heat transfer coefficient (convection and radiation)   W/m²K
+    T
+h               Convective heat transfer coefficient                   W/m²K
+    Y
+h m             Convective mass transfer coefficient                   s/m
+
+Kl              Liquid permeability                                    s
+
+L               Latent heat                                            J/kg
+
+P               Pressure                                               Pa
+
+pv              Partial vapour pressure                                Pa
+
+pc              Capillary pressure                                     Pa
+
+q               Heat Flux                                              W/m²
+
+RH              Relative humidity                                      -
+
+Rv              Specific gas constant of water vapour                  J/kgK
+
+T               Temperature                                            K
+
+v               Velocity                                               m/s
+
+w               Moisture content                                       kg/m³
+
+Y               Mass fraction                                          kg/kg
+
+Greek symbols
+
+δ               Diffusion coefficient                                  s
+
+ε               Emissivity                                             -
+
+λ               Heat conductivity                                      W/mK
+
+µ               Water vapour diffusion resistance factor               -
+
+ρ               Density                                                kg/m³
+
+ψ0              Open porosity                                          -
+
+Subscripts
+
+cap             Capillary
+
+s               Surface
+
+l               Liquid
+
+mat             Material
+
+op              Operating
+
+[[PAGE 4]]
+rad               Radiation
+
+ref               Reference
+
+sat               Saturation
+
+v                 Vapour
+
+Acronyms
+
+BES               Building Energy Simulations
+
+CFD               Computational Fluid Dynamics
+
+HAM               Heat, Air and Moisture
+
+      1. Introduction
+
+During the last decades the requirements for quality of buildings and its envelopes have drastically
+increased. Where before the main function of a building was to protect people from outside weather
+conditions, nowadays building users demand high-performance buildings with comfortable
+temperature and humidity levels without excessive energy use. However, damage to the building
+envelope can reduce the building performance to a great extent. This damage is often moisture-
+related and may affect the indoor comfort and indoor air quality [1,2], energy efficiency [3,4], human
+health and durability [5]. In order to prevent moisture-related damage, building designers need reliable
+predictive tools which can help them to design high performance building envelopes.
+Modelling tools describing the moisture behaviour of buildings and its envelopes are very useful to
+predict and evaluate moisture related problems. HAM (Heat, Air and Moisture) models are frequently
+being used to solve the combined transport of heat and moisture in building components. Nowadays,
+a wide variety of modelling tools are available [6].
+These HAM models can be combined with other models to improve their performance. Examples are
+combined BES-HAM models [7,8] and CFD-HAM models [9e11]. In BES-HAM models, HAM is
+combined with building energy simulations to improve the prediction of building energy performance by
+including the hygroscopic behaviour of building materials. In combined CFD-HAM models, HAM is
+coupled with computational fluid dynamics to better incorporate the coupled effect of convective
+transport of heat and moisture in the air and in the porous material. Steeman et al. [9] developed a
+coupled CFD-HAM model for the assessment of moisture-related damage in hygroscopic materials. By
+implementing a detailed HAM model into an existing CFD solver (Fluent®) he was able to model the
+heat and moisture transport in the air and porous material simultaneously. The coupled model was
+validated using climate chamber experiments [12]. However, Steeman only modelled vapour diffusion
+as a transport mechanism in the porous material. With the model, it was possible to predict the
+microclimate around valuable objects such as paintings. Other attempts of combining CFD and HAM
+can be found in Mortensen et al. [13] and Defraeye et al. [14]. Defraeye applied an external coupling
+procedure and used a separate CFD and HAM model which were then combined by transferring and
+setting the boundary conditions from one model to the other.
+These recent attempts to combine existing HAM models with CFD showed to be promising. They allow
+a more detailed and accurate modelling of the influence of convection on the heat and moisture
+transport in porous materials. However the development of these hygrothermal models is still on-
+going.
+
+[[PAGE 5]]
+In this paper, a newly developed CFD-HAM model is described in which the heat and moisture
+transport equations for porous materials are implemented into a commercial available CFD solver,
+Fluent®. The model includes vapour as well as liquid water transport. Since it is implemented into an
+existing CFD solver it is easier to combine it with convective transport in the air surrounding the porous
+material. The model is therefore specifically suited to study cases where convective boundary
+conditions are dominant or where the interaction of transport in the air and transport in the porous
+material is important. A few examples of such cases are the effect of microclimates on historical
+artefacts [9], drying of building materials during production [15], drying of building envelopes after rain,
+evaporative cooling of buildings and street canyons [16], etc.
+
+Before this model can be applied to actual case studies, it is first extensively validated. This paper will
+focus on this model validation. It will highlight some important aspects when modelling combined heat
+and moisture transport in porous materials, such as numerical implementation of boundary conditions,
+the importance of correct material properties and the choice of the driving potentials to be used. In a
+follow-up paper a case study will be elaborated [17].
+
+     2. State of the art in convective drying modelling
+In buildings, drying almost always occurs by convection. If the partial vapour pressure of the air is
+lower than the vapour pressure at the surface of a porous material, moisture will be transferred to the
+air and is transported away from the surface by the moving air.
+
+Fig. 1 qualitatively depicts a typical drying rate curve of a capillary active hygroscopic material. At first,
+free moisture at the material surface evaporates from the surface and the drying rate is determined by
+the diffusion rate of water vapour into the surrounding air. During this constant drying rate period
+(CRP), moisture is transported from the inside of the porous material to the surface by capillary forces.
+As long as this transport can sustain the evaporation rate from the surface, the drying rate will remain
+constant.
+If the moisture content reaches a critical level at which the moisture can no longer reach the surface at
+a sufficient rate, further drying will cause the surface relative humidity to drop below 100%. This is the
+start of the second drying stage or the falling rate period (FRP). The drying rate is determined by the
+internal moisture diffusion transport as a result of moisture concentration gradients in the material. As
+the material dries out, moisture movement decreases further and consequently the drying rate drops.
+The drying rate continues to fall until the moisture content inside the material is in equilibrium with the
+surrounding air. At that point the drying rate becomes zero and drying stops.
+During the CRP the temperature at the surface drops close to the wet bulb temperature. If the starting
+temperature in the material is higher than the wet bulb temperature, the temperature will start to drop
+and accordingly the drying rate will also drop. On the other hand, when initially the temperature is
+lower than the wet bulb temperature, the material temperature starts to rise and so will the drying rate
+(dashed lines in Fig. 1).
+
+In literature, a wide range of drying models is available. A distinction can be made between analytical
+and numerical models. In the following sections, a short overview is given of the state-of-the-art
+modelling approaches for combined heat and mass transport during convective drying in air.
+
+         2.1. Analytical modelling
+Analytical models such as 1D models assuming constant diffusivity, only apply to simplified drying
+cases. The applied boundary conditions are fixed temperature and humidity (Dirichlet boundary
+conditions), fixed fluxes (Neumann boundary conditions) or fixed transfer coefficients (Robin boundary
+conditions).
+Milly [18] and more recently Abahri et.al. [19] developed an analytical solution for a coupled 1D heat
+and moisture transfer problem. Their models are however limited to Dirichlet and Neumann boundary
+conditions and are not sufficient when convective drying is studied. To model convective drying, at
+
+[[PAGE 6]]
+least a Robin boundary condition is needed. If more complex boundary conditions are present such as
+spatially are even temporally varying boundary conditions, 1D analytical models are no longer
+sufficient.
+Moreover, most convective drying processes do not allow simplifications like constant diffusivity. For
+most materials and in particular building materials, the diffusivity shows a strong non-linear behaviour
+as function of moisture content. In literature, some solutions to non-linear diffusivity can be found, e.g.
+Landman et.al. [20] looked at the drying process of a brick.
+Analytical solutions can thus only be used when simple geometrical configurations, material properties
+and boundary conditions apply. As soon as more complex and realistic boundary conditions are to be
+solved, as is often the case in the building context, analytical models no longer work. Building
+components are generally composed of multiple layers, inserting strong heterogeneity into the pro-
+blem. At the same time the boundary conditions are not fixed in time and space, resulting in temporal
+and spatial distributions of temperature and moisture. Consequently, it is not feasible to solve all
+coupled heat and mass transport problems, especially drying problems, by simple 1D analytical
+approaches.
+
+         2.2. Numerical modelling: predetermined transfer coefficients
+Numerical models can be used to solve complex 2D or 3D configurations and to overcome some of
+the issues related to analytical models. To incorporate the influence of airflow properties on convective
+drying without modelling the convection in the air simultaneously with the transport in the porous
+material, researchers often resort to transfer coefficients.
+The simplest approach is using constant (averaged) transfer coefficients. Most HAM models use this
+method [7,21,22]. Berger et al. [23] were able to study drying phenomena using a 1D finite difference
+model with constant heat and mass transfer coefficients as boundary conditions. Furthermore, their
+study showed that the convective transfer coefficient determined the drying rate during the CRP.
+During the FRP the drying rate is mostly determined by the internal transport properties and the impact
+of the convective transfer coefficients is negligible. Although these conclusions were derived with a
+simplified 1D model, they can be generally applied.
+
+The use of constant transfer coefficients is however only valid if the flow is fully developed which is
+often not the case even for simple geometrical conditions. The presence of developing boundary
+layers or complex geometries with leading edge effects, vortex shedding, reattachment and stagnation
+zones may lead to large distributions of transfer coefficient values along the surface. Furthermore,
+several researchers found that the leading edge effect has a significant impact especially during the
+CRP [24 - 26]. E.g. Masmoudi et al. [24] found that simplifying drying problems to 1D problems is not
+generally applicable because the leading edge effect will be significant if the sample size is not clearly
+larger than the mass or temperature boundary leading edge zones. Also Shokouhmand et al. [26]
+found that the leading edge effect was crucial in the determination of the drying time.
+
+A more accurate and detailed study of the convective drying process is possible when spatially varying
+transfer coefficients are used. These coefficients can be derived from analytical solutions for simple
+cases or from CFD solutions when more complex geometries and flow conditions are present.
+The most common approach to determine the transfer coefficients from CFD is by solving the flow with
+the assumption of constant boundary temperature and mass fraction [25, 27]. For convective drying
+this approach is only strictly applicable during the CRP when the surface temperature is almost
+constant and near to the wet bulb temperature and the surface mass fraction corresponds with the
+saturation mass fraction for that temperature. Nevertheless this approach is often used with
+reasonably good results.
+
+         2.3. Numerical modelling: coupling HAM with CFD
+In the drying models discussed up till now the flow field is assumed to be steady and solved separately
+from the material model [28]. This can be justified if the heat and mass transfers are moderate and if
+the fluxes through the solid-fluid interface do not disturb the velocity field. The variations in air density
+
+[[PAGE 7]]
+are ignored and air is considered incompressible. The heat and mass transfer coefficients are then
+determined by solving transport in the air only once and assuming constant boundary conditions at the
+material surface (temperature and moisture concentration).
+When the surface of a porous material starts to dry out, large temperature and moisture distributions
+along the surface can occur. Strictly speaking, the assumption of constant boundary conditions is then
+no longer valid. For instance Masmoudi et al. [24] showed the effect of heterogeneities in the moisture
+content distribution at the surface (such as dry zones) on the transfer at the interface. The transfer
+coefficients clearly showed dependency on the surface moisture distribution. Similar results were
+found by Defraeye et al. [14].
+To implement these effects of varying transfer coefficients, it is possible to use CFD as a tool to predict
+the transfer coefficients. When CFD and HAM are combined, the heat and mass transfer in the air and
+the porous material can be solved simultaneously, without the need of estimated transfer coefficients.
+Such models are referred to in literature as conjugate models. Defraeye et al. [29] gives a good
+overview of recent developments in this field of modelling.
+An early attempt to develop a coupled model was done by Amir et al. [30]. Amir et al. developed an
+implicit finite difference model that simultaneously solved the set of equations for a laminar boundary
+layer and a porous thick slab immersed in the boundary layer. The laminar velocity boundary layer
+was considered to be steady and independent of heat and moisture. This allowed them to solve the
+velocity boundary layer separately from the heat and moisture transport equation. The heat and
+moisture transport equation in the boundary layer and in the porous material were then solved
+simultaneously and coupled.
+Zeghmati et al. [31] continued the work of Amir et al. by extending the model to include transient
+laminar natural convection. The Boussinesq approximation was assumed for the boundary layer
+momentum equation. Dolinskiy et al. [32] employed a similar model to simulate the drying of a thick
+slab for the initial period of drying (moisture content exceeded the maximum sorption moisture
+content). The authors found that the analogy between heat and mass transfer, often employed to
+predict transfer coefficients, was not applicable. This was due to the fact that, for maintaining the
+analogy, not only the differential equations describing the heat and mass transfer have to be
+analogous, but also the boundary conditions. They found that these boundary conditions could
+substantially differ in time and space.
+Because moisture transport in the air and in the material is described by different potentials, conjugate
+drying models often use two solvers: one to solve the transport equations in the air and one to solve
+the transport in the porous material. When two solvers are used, a specific solution methodology is
+needed. Oliveira et al. [28] described such a solution procedure for laminar flow to study convective
+drying of a wood board and repeated the same procedure later to study soybean drying [33]. A finite
+element code was developed. In the first step the continuity and momentum equations in the air were
+solved separately. This is allowed if the flow is assumed steady and if the impact of density on the flow
+is neglected. The velocity field obtained from this calculation was assumed invariable during the rest of
+the simulation. Next the boundary layer was solved using boundary conditions of the first kind
+(constant temperature and concentration). The results of this numerical analysis were used to
+determine the heat and moisture fluxes at the surface. These fluxes were used as boundary conditions
+of the second kind for the porous material. Transport in the porous material was then solved. The
+temperature and moisture distribution in the porous material provided new boundary conditions for the
+air side for the next time step. This procedure was repeated until the final drying time is reached.
+This explicit time marching procedure was also used by Murugesan et al. [34]. They developed a 2D
+finite element model to study the drying behaviour of ceramic brick. It was stated that buoyancy can
+have a significant effect on the transport mechanism in the air and must be taken into account by
+allowing changes of the flow field over time.
+When explicit coupling procedures are used, two separate solvers can be used. This brings along the
+advantage that two separately developed models can be coupled and the developer of the drying
+model should only be concerned with the implementation of the coupling procedure. For example
+Gnoth et al. [35] developed a coupling procedure between a CFD model developed for cavities and a
+commercially available HAM model, Delphin® [22].
+
+[[PAGE 8]]
+Defraeye et al. [11] coupled the commercial CFD package Fluent® with an in house developed HAM
+model HAMFEM [36]. When using an explicit coupling procedure, too large time steps will cause
+instability. Time steps should be small so that heat and mass fluxes at the material boundary do not
+change during a time step. Defraeye improved convergence by using an adaptive time stepping
+algorithm. This ensured that the optimal time step was used during the simulations. Nevertheless a
+long computational time was still needed even for relatively simple cases.
+In literature, examples can be found where an implicit coupling is used for the heat and moisture
+transport equations. The unsteadiness that the explicit models are facing, is overcome and a
+significant reduction of computational time is noticed. De Bonis et al. [37] developed a finite element
+model using a commercial finite element package to study the performance of the drying process of
+fresh-cut vegetables. Lamnatou et al. [38, 39] developed a finite volume model to study the drying of
+apple slices.
+Finally a hybrid approach is reported in literature. Saneinejad et al. [16] coupled a model for heat and
+mass transport with a commercial CFD model (Fluent®) and a radiation model to study the heat and
+moisture transport in a street canyon. Instead of calculating the fluxes at the air side and passing them
+to the material side explicitly, the transfer coefficients were calculated first at the air side. These
+transfer coefficients were then passed to the material side where they were implemented as an implicit
+boundary condition. This significantly improved convergence and solution stability.
+
+    3. Coupled heat and moisture model including vapour and liquid water transport
+
+          3.1. Moisture transport in porous materials
+Moisture in a building context can exist in three phases: vapour, liquid and solid (ice). In the present
+model ice and ice formation are neglected. The two remaining phases can both be stored and
+transported in a porous material. The moisture content in the porous material w is the sum of the
+vapour content wv and the liquid content wl. The vapour content is much smaller than the liquid content
+and is often neglected. The moisture flux in the material g is the result of a vapour flux g v and liquid
+flux gl. This is of course only an approximation since both transport mechanisms can strictly speaking
+not be separated. Convection of air in the porous material is neglected. The vapour diffusion flux in a
+porous material can be described by an adjusted Fick's diffusion law.
+
+                                                                                                      (1)
+
+.
+In this equation the total pressure is assumed constant, allowing the use of partial vapour pressure pv
+instead of mass fraction Y as driving potential. For very small pores vapour diffusion can no longer be
+described by Fick's law. At these small scales collisions of vapour molecules and pore walls become
+more frequent than collisions between molecules. The vapour transport is than referred to as Knudsen
+diffusion or effusion. This Knudsen diffusion is also driven by vapour pressure gradients. To simplify
+the current model, the Knudsen diffusion is not modelled separately but its effect is assumed to be
+incorporated in the vapour diffusion resistance factor.
+In these equations for diffusion the thermal diffusion or Soret effect is neglected. It was stated in Ref.
+[40] and shown by Whitaker [41] and Janssen [42] that this effect is small compared to the
+concentration diffusion.
+
+The liquid flux is described by Darcy's law:
+
+                                                                                                      (2)
+
+The driving force for the liquid transport is the gradient in capillary pressure.. The moisture transport
+equation then results in:
+
+[[PAGE 9]]
+(3)
+
+It is now possible to transform this equation so that only two independent state variables remain. In
+this work temperature and capillary pressure are used in analogy to the work of Grunewald [43]. The
+partial vapour pressure is related to the relative humidity (RH = p v/pvsat) and this relative humidity is in
+turn related to the capillary pressure by Kelvin’s law (Eq. (4)).
+
+                                                                                                         (4)
+
+This results in the following equation for the moisture balance in a porous material:
+
+                                                                                                         (5)
+
+To solve Eq. (5) three material properties are needed: the vapour diffusion resistance factor µ, the
+liquid permeability Kl and the moisture capacity ∂w/∂pc.
+
+        3.2. Heat transport in porous materials
+Next the heat transport equations can be derived. Only transport by diffusion is assumed in the porous
+materials that are studied here. Heat is thus only transported in the porous materials due to conduction
+on the one hand and diffusion of moisture on the other hand. Water vapour diffusing through the
+porous material transports sensible as well as latent heat.
+Conductive heat transport in a (porous) material can be described by Fourier's law for heat
+conduction:
+
+                                                                                                         (6)
+
+The conductivity of the porous material λmat is strongly dependent on the moisture content of the
+material since the conductivity of water differs from that of the material matrix.
+Water is transported through a porous material as liquid and vapour resulting in a liquid and vapour
+flux. Along with the liquid water, sensible heat is transported while sensible and latent heat is
+transported along with the vapour diffusion.
+The potential energy and kinetic energy changes in the porous material can be neglected and no
+chemical reactions occur in the material. The total energy of the porous material E is thus the sum of
+the energy stored in the material matrix and the energy stored in the liquid water and water vapour
+present in the material. The energy balance equation thus states that a change in stored energy is due
+to heat conduction and transport of latent and sensible heat along with the moisture transport:
+
+                                                                                                          (7)
+
+ρmat and Cmat are the dry porous material’s density and heat capacity respectively. The liquid moisture
+content and vapour moisture content can be linked to the total moisture by the open porosity, taking
+into account that:
+
+                                                                                                         (8)
+
+and
+
+[[PAGE 10]]
+(9)
+
+        3.3. Mass fraction or capillary pressure?
+When only vapour diffusion is considered, the mass fraction of water vapour can be used as transport
+potential as for example proposed by Steeman et al. [9]. However using mass fraction as transport
+potential in a porous material when liquid transport is present, causes some difficulties as will be
+discussed in this section.
+
+Transforming Darcy’s law (Eq. (2)) for liquid transport from capillary pressure p c to mass fraction Y
+results in:
+
+                                                                                                    (10)
+
+with
+
+                                                                                                    (11)
+
+                                                                                                    (12)
+
+It is thus mathematically possible to write Eq. (5) with mass fraction and temperature as the
+transported variables instead of capillary pressure and temperature. Difficulties in solving this model
+arise however when relative humidities near to 100% are encountered. This high relative humidity is
+typical when liquid moisture transport is present. Fig. 2 illustrates what happens when the mass
+fraction is near to the saturation mass fraction. This figure shows a psychometric chart with the mass
+fraction on the vertical axis and the temperature on the horizontal axis. The figure starts from a state
+below the saturation line (situation ①). When the temperature is lowered, the mass fraction in the
+porous material is constant at first. The state of the porous material moves along a horizontal line from
+situation ① to situation ②. In situation ② the saturation mass fraction is reached. At temperature T 2
+the air in the porous material cannot hold more water vapour than Y2. If the temperature would drop
+further to T3, the mass fraction of water vapour in air is obliged to follow the saturation line. This
+implies that at saturation the mass fraction becomes temperature dependent. However for a good
+numerically solvable model, the transported variables should be independent.
+As long as the relative humidity stays well below saturation, the state of the porous material can be
+described by the mass fraction Y. This is the case when only vapour transport is considered and when
+temperature changes are small. Steeman [9] confined his work to these conditions and was thus able
+to use mass fraction and temperature as transported variables for moisture and energy respectively.
+Using mass fraction as transported variable is also allowed for isothermal liquid transport in porous
+materials. However, the assumption of isothermal conditions rarely holds. As an example the drying of
+a nearly saturated porous material is discussed.
+A wet material that is nearly saturated will have a mass fraction of water vapour close to saturation
+and the relative humidity in the material will be almost 100%. During a convective drying process,
+water evaporates from the surface into the air flowing over the porous material. The amount of energy
+needed for this phase change (from liquid to vapour state) is the latent heat of evaporation. This
+energy is taken from the surrounding air and the porous material, thus resulting in a temperature drop
+of the material. When no other heat sources are present, the temperature of the porous material
+surface can drop to the wet bulb temperature. This temperature drop can be significant (e.g. air at
+30°C and 40% RH has a wet bulb temperature of ± 20°C). Since the mass fraction was already near
+saturation, a sudden drop in the temperature would mean that the mass fraction would also have to
+decrease. In other words the mass fraction becomes temperature dependent. The mass fraction
+
+[[PAGE 11]]
+modelling approach proposed by Steeman [9] is thus no longer applicable for liquid transport
+phenomena such as convective drying.
+From this discussion it is clear that the mass fraction cannot be used as the transported variable if
+liquid transport is included. Therefore the capillary pressure is proposed as the transported variable.
+The capillary pressure is not restricted by saturation conditions and is a better way to describe the
+state of a wet (nearly saturated) porous material.
+
+        3.4. Numerical implementation of the boundary conditions
+
+As boundary conditions at the porous surfaces facing the air, heat and mass fluxed are imposed.
+These fluxes are calculated using Eqs. (13) and (14):
+
+                                                                                                      (13)
+                                                                                                      (14)
+
+Tref and Yref are reference values for temperature and mass fraction taken outside the boundary layer
+and Ts and Ys are the temperature and mass fraction at the surface of the porous material.
+The differential equations describing heat and moisture transport in the porous material are solved
+numerically together with the boundary conditions using a finite volume solver. Therefore the problem
+is discretized in time and space. To obtain a converged solution several iterations are needed within
+each time step. When the current iteration is indicated with superscript m and the next iteration is
+indicated with superscript m+1, the flux boundary conditions can be written as:
+
+                                                                                                      (15)
+                                                                                                      (16)
+
+This is the so-called implicit formulation. For the heat transport equation temperature is the transported
+variable which allows the direct implementation of Eq. (15). However the mass transport equations use
+capillary pressure as transported variable, thus Eq. (16) has to be reformulated to capillary pressure.
+The mass fraction at the boundary Ys is a non-linear function of the capillary pressure. However Eq.
+                                   m
+(16) can be linearized around Ys .
+
+                                                                                                      (17)
+
+    4. Experimental validation
+
+The coupled heat and moisture model is validated by means of a convective drying experiment from
+literature [11]. In what follows, it will be shown that heat and mass transport cannot be solved
+separately when studying convective drying. At the same time drying rates are strongly determined by
+convective transport in the air.
+In the first section, the experimental setup will be shortly described. Next, the simulation results of the
+coupled model are compared with the experimental data. Finally, neutron radiography measurements
+showing the moisture distribution in the brick sample were compared with the results of the coupled
+model.
+
+[[PAGE 12]]
+4.1. Experimental setup
+Defraeye [11] constructed a small wind tunnel from transparent polymethyl methacrylate (PMMA) to
+perform convective drying experiments on building materials such as ceramic brick. A schematic
+representation of the wind tunnel with the test section is found in Fig. 3a. Air is drawn in by a fan,
+passes over a flow straightener (honeycomb) and flows through a convergent section before entering
+the test section. A detail of the test section is found in Fig. 3b.
+
+The sample of ceramic brick measuring 10mm by 30mm by 90mm, was placed in a container of
+plexiglass (PMMA). The plexiglass had a thickness of 4mm. The sample of ceramic brick was wetted
+and placed in the wind tunnel in such a way that the top surface of the sample faces the air flowing
+through the tunnel. The sample was wetted to a moisture content of 126kg/m³ which corresponds
+approximately to the capillary moisture content (130kg/m³). At the bottom of the container a layer of
+20mm XPS insulation was installed. The front and back side of the container were covered with 15mm
+of XPS insulation, the side walls of the brick sample were insulated with 30mm of XPS. The sides of
+the sample were made impermeable for moisture. The open circuit wind tunnel was placed in a climate
+chamber where the mean temperature was set to 23.8°C (with a standard deviation of 0.2°C) and the
+mean relative humidity was set to 44% (with a standard deviation of 0.8%).
+
+In the experiments, dry air flows over the top surface of the brick and the brick is dried out from one
+side, while the other sides are impermeable for moisture. During the drying experiment temperatures
+at the side of the ceramic brick were measured with thermocouples. Fig. 3a shows the location of
+these thermocouples. In total 6 thermocouples were installed at a side wall. The temperature was
+measured at a depth of 10mm, 20mm and 30mm from the material-air interface and 10mm in the
+lower insulation (at 40mm from the interface). To measure the inflow effect and the effect of a
+developing moisture and temperature boundary layer, a thermocouple was installed upstream and
+downstream of the centre thermocouples, both at a depth of 10mm. The accuracy of the
+thermocouples, as reported by Defraeye [11] was 0.1°C. The weight change of the test sample was
+continuously monitored by a balance. The balance was calibrated to an accuracy of 0.01g but in
+practice this accuracy was found to be 0.1g due to the impact of airflow on the balance. The velocity at
+the inlet of the test section and the turbulence intensity were measured with a PIV (particle image
+velocimetry) system. Defraeye [11] performed an extensive study on the accuracy of these PIV
+measurements. He concluded that a quantitative estimate of the uncertainty of the PIV measurements
+is difficult because of the presence of different sources of error in these measurement. Therefore best
+practice guidelines were followed. To obtain a reliable time-averaged mean air velocity, sufficient
+statistically independent double PIV images have to be taken. In his study 120 images at 2Hz were
+found to be sufficient. This led to an uncertainty of about 2% on the mean air velocity.
+The test section can be assumed symmetric along the x-axis since the flow in the channel was found
+to be two-dimensional due to the high width to height ratio [44].
+
+        4.2. Simulation model and settings
+
+The experiments of Defraeye were used as a validation study for the newly developed coupled heat
+and moisture model. Preliminary simulations showed that 1D and 2D simulations were not sufficient to
+capture the heat and mass transport in the setup accurately and to incorporate phenomena such as
+the leading edge effect [10]. Therefore, a complex 3D simulation model of the brick was developed
+including the insulation and plexiglass out of which the sample container is built up.
+Fig. 4 shows a 3D view of the test sample of ceramic brick embedded in the insulation and the
+plexiglass. The sample of ceramic brick measured 10mm thick by 30mm deep by 90mm long. Only
+half of the setup has been modelled due to symmetry, which considerably reduced the computational
+effort.
+
+[[PAGE 13]]
+The inlet conditions of the air were measured by Defraeye [11]: the air inlet temperature was 23.8°C
+(with a standard deviation of 0.2°C) and the air inlet relative humidity was 44% (with a standard
+deviation of 0.8%). The temperature of the surroundings was constant and corresponded to the
+temperature of the climatic chamber (23.8°C).
+The side faces facing the climate chamber (bottom, front, back and left face) of the setup were
+assumed impermeable for moisture. Moisture exchange is only possible at the top face. Heat can flow
+through all faces. At the side walls the heat flux is determined by Eq.(13), with Ts the temperature at
+the outer surface of the plexiglass and T ref the temperature of the surroundings (i.e. 23.8°C). The heat
+transfer coefficient h is estimated at 8 W/m²K and incorporates both the effect of convection and
+radiation.
+
+Due to the 2D airflow in the wind tunnel, the heat and mass transfer at the top face of the brick was
+assumed two-dimensional and varied along the length of the duct. The corresponding heat and mass
+transfer coefficients used for the simulations were determined by means of CFD simulations of the
+wind tunnel assuming a constant temperature at the bottom. Defraeye measured the velocity profile
+and turbulent intensity at the inlet of the test setup [11]. Fig. 5 shows these measured values for
+velocity and turbulent intensity. These measurements were used as input for the CFD simulation,
+together with the measured temperature and humidity.
+The computational domain for the CFD simulation of the air flow was taken similar to that used by
+Defraeye [11] for his simulations. A 2D channel was simulated, corresponding to flow between two
+parallel plates. The channel had a height of 10mm as depicted in Fig. 3a. An inflow section of 15mm
+was taken and an outflow section of 30mm. These sections were adiabatic and impermeable for
+moisture. An appropriate grid was built consisting out of 4x10³ quadrilateral control volumes. The grid
+was dense near the surfaces of the parallel plates and coarser to the centre. Steady Reynolds-
+averaged Navier-Stokes (RANS) was used in combination with a turbulence model. Here the
+realizable k-ε model was used with LRNM to take care of the viscosity affected region. Second order
+discretisation schemes were used. The SIMPLE algorithm was used for pressure-velocity coupling.
+Pressure interpolation was second order.
+The mass transfer coefficient was determined through the heat and mass analogy. This analogy was
+shown to be valid by Defraeye [11] and by preliminary studies [10]. Especially during the constant
+drying rate period, when the temperature and moisture mass fraction at the surface are almost
+constant, this analogy applies. A power-law approximation of these coefficients as a function of the
+position in the duct is given by Eq. (18) a and b.
+
+                                                                                                   (18a)
+
+                                                                                                   (18b)
+
+Radiation at the brick-air interface was taken into account in a simplified way by assuming that the
+brick top surface only sees the upper wall of the wind tunnel, which results in a view factor of 1. The
+temperature of the top wall of the wind tunnel was measured. An average value of 23.3°C was found.
+The radiant heat flux at the brick-air interface can be calculated as:
+
+                                                                                                     (19)
+
+With qrad (W/m²) the radiant heat flux between the roof of the wind tunnel and the brick surface, T roof
+the temperature at the top wall of the wind tunnel, T s the surface temperature of the brick and 1 and 2
+the emissivity of the roof and the brick surface, which are assumed to be 0.97 and 0.93 respectively.
+
+For these simulations a grid sizing 114x93x35 was used (371070 cells). The grid was denser near the
+top. A grid independency test was carried out by performing a simulation with a denser grid. This
+simulation showed no significant difference with the original grid. Therefore, the original grid of
+
+[[PAGE 14]]
+114x93x35 was retained for the current simulations. For these transient simulations a time step of 60
+seconds was taken. In total a drying period of 12 hours was simulated, resulting in a total of 720 time
+steps.
+
+The material properties of ceramic brick that have been used in the simulations are shown in Table 1.
+They have been determined experimentally by Ref. [45]. The vapour diffusion coefficient v was
+approximated by Eq. (20) and the moisture retention curve w(pc) was formulated by Eq. (21) [45]:
+
+                                                                                                      (20)
+
+                                                                                                      (21)
+
+The liquid permeability Kl is given by Eq. (22) [45]. The corresponding coefficients are listed in Table 2.
+
+                                                                                                      (22)
+
+        4.3. Comparison between simulations and experiments
+
+Temperature change and scaled mass loss
+
+Temperatures measured at depths of 10mm, 20mm, 30mm (at the interface brick/insulation) and
+40mm (10mm in the insulation) are compared with the simulations. Fig. 6 compares the measured
+temperatures with the simulations. The dashed line shows the simulation outcome using the original
+material properties as reported in Table 1 and Eqs. (20)-(22). The red and green lines in Fig. 6 are
+explained in Section 4.4. A measurement uncertainty of 0.1°C was reported [11] and is indicated in
+Fig. 6.
+Overall a good agreement between the model and the experiments is found. The largest deviations
+are found near the surface. The temperature at a depth of 10mm is slightly underestimated by the
+model (0.3-0.4°C). Also the onset of the FRP (when the temperature starts to rise again) is delayed in
+the simulations (see Fig. 6(a)-(c)). This leads to a temperature mismatch of up to 1°C between
+measured and predicted temperatures. Nevertheless, the equilibrium temperature (the lowest
+temperatures in Fig. 6) is closely approximated by the model (within the error bars). Deeper in the
+material, the approximation becomes even better. At a depth of 40mm (10mm in the insulation), the
+agreement is almost perfect (within the error bars). This indicates that the applied boundary conditions
+closely approach reality.
+
+Fig. 7 compares the measurements and simulation results of the temperatures along the length of the
+sample at a depth of 10mm in the sample. Although there is no perfect match between simulations
+and experiments the trends are well predicted: the upstream temperature reaches the same
+equilibrium temperature as the centre temperature both in the simulations and the measurements.
+However dry-out occurs sooner upstream which results in a faster occurring temperature rise
+upstream. Downstream the temperature is higher both in the measurements and in the simulations.
+The onset of dry-out happens later here and this delays the temperature rise.
+
+During the experiments, the weight change of the sample was also monitored (Fig. 8). The mass loss
+was scaled using the initial moisture content of the brick sample: i.e. 3.4g. Due to this small initial
+
+[[PAGE 15]]
+moisture content and relative high weight of the sample and test section itself (i.e. ± 827 g), the weight
+change was difficult to measure. An uncertainty of 0.1g on the weight measurement was reported [11],
+the uncertainty on the weight change was 0.14g. This resulted in an uncertainty of 4% on the scaled
+mass loss.
+The experiments clearly show a constant slope in the mass loss curve for the first three hours (Figure
+8). During this initial drying rate period (CRP) the moisture content in the brick decreases linearly. A
+similar duration was found in the simulations. Next, the FRP starts: this is shown by a decreasing
+slope of the mass loss curve in Fig. 8. Comparison of the measurements and the simulations shows
+that the mass loss during the CRP is well-predicted but that there is an overestimation of the mass
+loss during the FRP.
+
+Moisture distribution profiles
+
+It is clear from the previous analysis that the model is able to predict the correct trends but that there is
+still a significant deviation between the measured and predicted mass loss. To explain the cause for
+this deviation, measurement data are needed of the moisture distribution inside the brick. Data
+provided by the Swiss Federal Laboratories for Materials Science and Technology (EMPA) was
+therefore used to further study the moisture transport in the ceramic brick. With neutron radiography
+this research group was able to measure the moisture content evolution in the ceramic brick over the
+depth of the sample. More details on the used measurement setup can be found in Refs. [46-48].
+Fig. 9a shows the comparison of the moisture content distribution in the ceramic brick over time for the
+simulation and the measurements. This comparison shows that during the first hours the agreement is
+fairly good, but at later times (after 3 hours) the simulation shows a faster decrease of the moisture
+content compared to the measurements. This is in agreement with the mass measurements and
+simulation shown in Fig. 8, which showed a good agreement during the CRP (first 3 hours) and
+afterwards an overestimation of the simulated mass loss.
+It should be noted that for a correct comparison between the measured and the modelled moisture
+content only the central region in the brick, between 0.5cm and 2.5cm, should be compared. This is
+due to some scattering that was present in the neutron radiography measurements. This resulted in a
+falsely decreasing moisture content at the bottom of the sample and a too fast decreasing moisture
+content at the top.
+
+        4.4. Influence of material properties
+
+Material properties have a large impact on these simulations. Correct material properties play a major
+role in the validation process, since uncertainty on material properties can be large and the
+consequences correspondingly. Previous studies have already shown that the hygric material
+properties, namely retention curve, permeability and water vapour resistance diffusion factor are the
+most important [11,49,50]. Fig. 8 shows a systematic overestimation of the mass loss in the brick,
+which raises the suspicion that the deviation is caused by uncertainties in the material properties.
+Defraeye did not list uncertainties on the measured material properties that he provided in his study
+[11], but he performed a similar study [50] on ceramic brick. In this paper standard deviations on the
+measured material properties were listed. Table 3 lists these standard deviations as reported by
+Defraeye [50].
+The comparison of measurements and simulations in Figs.6 and 8 showed that the first drying period
+is well captured. This suggests that the permeability and the retention curve at high moisture contents
+agree well with reality. The large deviations occur during the second drying rate period.
+To investigate the effect of the material properties on the modelling outcome, the main parameters
+(permeability, retention curve and water vapour resistance diffusion factor) were examined closer. First
+of all it was found that increasing the water vapour resistance diffusion factor from 24.79 to 32 had no
+significant impact on the mass loss in the brick and on the moisture distribution.
+
+[[PAGE 16]]
+Next the vapour retention curve was adjusted in such a way that the curve only changed at high
+capillary pressures, so it would not affect the drying behaviour during the first drying period. Fig. 10
+shows the original retention curve as found by Ref. [45] and the adjusted curve. The adjusted moisture
+retention curve can be formulated by Eq. (23).
+
+                                                                                                     (23)
+
+Fig. 9b shows the simulation results of the moisture distribution for the adjusted moisture retention
+curve. When comparing Fig. 9b with Fig. 9a, a better agreement is shown when the retention curve is
+adjusted. However, the agreement only improves for the overall moisture content in the brick. The
+distribution of the moisture content deviates from the one measured by neutron radiography. For the
+altered retention curve the drying front moves too fast into the brick compared to the measurements.
+Adjusting the retention curve thus improves the overall moisture content prediction, as also shown in
+Fig. 8, but does not improve the moisture content distribution. This suggests that deviations between
+measurements and simulations with the original material data cannot solely be caused by
+uncertainties in the estimated retention curve.
+To further study this, the liquid permeability was also altered. The original retention curve [45] and the
+adjusted curve are shown in Fig. 11. The adjusted liquid permeability can be approximated with Eq.
+(22) and by using “wi adjusted” instead of “wi” as listed in Table 2.
+By lowering the permeability, a better agreement can be found between measurements and
+simulations as shown in Fig. 9c. The agreement is also better for the overall moisture content (Fig. 8).
+Although uncertainty exists on all material parameters, in this case it is most likely that the largest
+deviations are caused by the uncertainty on the liquid permeability.
+
+Of course some deviations between the measurements and the simulations can still be observed after
+the material properties are adjusted. This can be mainly attributed to uncertainties in the implemented
+boundary and initial conditions.
+During the simulations, the heat transfer coefficient at the side walls was estimated and the inlet
+temperature was assumed to be constant, though in reality the temperature varied slightly. Also an
+uncertainty of 2% on the inlet velocity profile that was measured using PIV, was found [11].
+Finally it can be stated that some of the deviations are caused by uncertainty in the numerical
+modelling, but this is rather difficult to quantify. Only an improvement of the modelling techniques can
+overcome or reduce this uncertainty. Possible uncertainties arising from the numerical model are:
+    - Errors caused by discretisation
+    - Errors caused by simplifications in the model (simplified radiation modelling, assuming perfect
+         straight and aligned surfaces, assuming constant transfer coefficients at some surfaces…)
+Of course, a model is always a simplification of reality. The art of modelling is to apply the correct
+choices for simplifications so that the simulation result is acceptably close to reality.
+
+        4.5. Discussion
+
+Fig. 8 compares the mass loss computed with the original material data and the mass loss computed
+with the adjusted retention curve and liquid permeability. Both changes agree well with the mass loss
+measurements. But, as shown in Fig. 9, a good prediction of the mass loss does not imply a good
+prediction of the moisture content distribution. It can thus be stated that both mass loss and moisture
+distribution predictions should be validated before a conclusion can be drawn on the correctness of
+the model and the used material properties.
+Nevertheless, a good agreement for moisture does not guarantee a good agreement for temperature
+as is seen in Fig. 6. Since heat and moisture transport in porous materials are strongly coupled,
+changes in retention curve or liquid permeability have consequences for both temperature and
+moisture distribution. Where before the model underestimated the temperature, the model now seems
+to overestimate the temperature both for the adjusted retention curve and the adjusted liquid
+permeability. Since the model with the adjusted retention curve and the model with the adjusted
+
+[[PAGE 17]]
+permeability result in similar mass loss curves (Fig. 8), the drying rates for both cases will be similar.
+And since the temperature in the brick is to a great extent determined by the drying rate due to the
+latent heat loss, the predicted temperature curves are similar for both cases.
+The original model thus underpredicts the temperature whereas the adjusted models overpredict the
+temperature. However, the magnitude of difference between measurements and simulations for the
+original case and the altered cases is similar. The model with an adjusted retention curve and the
+model with an adjusted permeability do not result in a worse agreement of temperature, but at the
+same time there is also no improvement. It is thus difficult to make a sound conclusion on the impact
+that the adjustments have on the temperature course in the material.
+
+     5. Conclusion
+In this paper a newly developed coupled heat and moisture model including vapour and liquid
+moisture transport was presented. The model enables to describe the coupled heat and mass transfer
+in porous building materials. Contrary to some heat and moisture models that only include vapour
+transport, the newly developed model has a broader application range, as it can be used to study
+vapour diffusion through porous materials and capillary moisture transport. The model lends itself to
+study the drying phenomena of porous materials.
+In this paper the new model was described and validated against a drying experiment from literature,
+in which ceramic brick is used as a porous material. The validation study showed that the experimental
+results agreed well with the simulations results of a 3D model. Nevertheless, some deviations could be
+noted which were attributed to uncertainty of the material properties, especially of the liquid
+permeability and retention curve. By altering the liquid permeability or retention curve, the agreement
+between simulations and measurements improved.
+Comparison with neutron radiography measurements revealed that a good agreement of the overall
+moisture content does not guarantee a good agreement of the moisture distribution in the porous
+material. The moisture distribution measurements showed that the best agreement was found for an
+adjusted liquid permeability. Adjusting the sorption isotherm resulted in a drying front moving too fast
+into the porous material.
+
+Acknowledgements
+
+The results presented in this paper were obtained within the frame the research project IWT-
+SB/81322/Van Belleghem funded by the Flemish Institute for the Promotion and Innovation by Science
+and Technology in Flanders and IWT SBO-050451 project Heat, Air and Moisture Performance
+Engineering: A Whole Building Approach. Their financial support is gratefully acknowledged.
+Special thanks go to Prof. Dominique Derome and Dr. Peter Moonen from EMPA Zurich and to Dr.
+Thijs Defraeye form KULeuven for their willingness to provide some of the necessary measurement
+data.
+
+References
+
+[1] L. Fang, G. Clausen, P.O. Fanger. Impact of temperature and humidity on the perception of indoor
+air quality. Indoor Air, 8:80-90, 1998.
+[2] C. J. Simonson, M. Salonvaara, T. Ojanen. The effects of structures on indoor humidity e possibility
+to improve comfort and perceived air quality. Indoor Air, 12:243-51, 2002.
+[3] N. Mendes, F.C. Winkelmann, R. Lamberts and P.C. Philippi. Moisture effects on conduction loads.
+Energy and Buildings, 35(7):631–644, 2003.
+[4] O.F.Osanyintola and C.J. Simonson. Moisture buffering capacity of hygroscopic building materials:
+experimental facilities and energy impact. Energy and Buildings, 38(10):1270-82, 2006.
+[5] E. Vereecken and S. Roels. Review of mould prediction models and their influence on mould risk
+evaluation. Building and Environment, 51(0):296-310, 2012.
+[6] M. Woloszyn and C. Rode. IEA ANNEX41 Whole Building Heat, Air and Moisture Response -
+Subtask1: Modelling Principles and Common Exercises. Technical report, 2008.
+
+[[PAGE 18]]
+[7] M. Steeman, A. Janssens, H.-J. Steeman, M. Van Belleghem, M. De Paepe. On coupling 1D non-
+isothermal heat and mass transfer in porous materials with a multizone building energy simulation
+model. Building and Environment, 45:865-77, 2010
+[8] M. Steeman, M. Van Belleghem, M. De Paepe and A. Janssens. Experimental validation and
+sensitivity analysis of a coupled BES-HAM model. Building and Environment, 45(10):2202-2217, 2010.
+[9] H.-J. Steeman, M. Van Belleghem, A. Janssens, M. De Paepe. Coupled simulation of heat and
+moisture transport in air and porous materials for the assessment of moisture related damage.
+Building and Environment, 44(10):2176-84, 2009.
+[10] M. Van Belleghem. Modelling coupled heat and moisture transfer between air and porous
+materials for building applications. PhD thesis. Ghent University, Belgium, 2013.
+[11] T. Defraeye. Convective Heat and Mass Transfer at Exterior Building Surfaces. PhD thesis,
+KULeuven, Belgium, 2011.
+[12] M. Van Belleghem, M. Steeman, A. Willockx, A. Janssens and M. De Paepe. Benchmark
+experiments for moisture transfer modelling in air and porous materials. Building and Environment,
+46(4):884-898, 2011.
+[13] L. H.Mortensen, M. Woloszyn, C. Rode and R. Peuhkuri. Investigation of microclimate by CFD
+modeling of moisture interactions between air and constructions. Journal of Building Physics,
+30(4):279–315, 2007.
+[14] T. Defraeye, B. Blocken, and J. Carmeliet. Analysis of convective heat and mass transfer
+coefficients for convective drying of a porous flat plate by conjugate modelling. International Journal of
+Heat and Mass Transfer, 55(1-3):112–124, 2012.
+[15] T. Defraeye, G. Houvenaghel, J. Carmeliet and D. Derome. Numerical analysis of convective
+drying of gypsum boards. International Journal Heat and Mass Transfer 55(9-10): 2590-2600, 2012.
+[16] S. Saneinejad, P. Moonen, T. Defraeye, D. Derome and J. Carmeliet. Coupled CFD, radiation and
+porous media transport model for evaluating evaporative cooling in an urban environment. Journal of
+Wind Engineering and Industrial Aerodynamics, 104(0): 455-463, 2012.
+[17] M. Van Belleghem, M. Steeman, A. Janssens and M. De Paepe. Heat, air and moisture transport
+modelling in ventilated cavity walls. Submitted to Journal of Building Physics. 2013.
+[18] P. C. D. Milly. Moisture and heat transport in hysteretic, in homogeneous porous media: a matrix
+head-based formulation and a numerical model. Water Resources Research—Water Resources
+Research, 18(3):489–98, 1982.
+[19] K. Abahri, R. Belarbi and A. Trabelsi. Contribution to analytical and numerical study of combined
+heat and moisture transfers in porous building materials. Building and Environment, 46(7):1354–1360,
+2011.
+[20] K. A. Landman, L. Pel and E.F. Kaasschieter. Analytic modelling of drying of porous materials.
+Mathematical Engineering in Industry, 8(2):89–122, 2001.
+[21] D. Zirkelbach, T. Schmidt, H. M. Künzel, M. Kehrer and C. Bludau. WUFI 2D, 2007.
+[22] Bauklimatik Dresden. Delphin. http://bauklimatik-dresden.de/delphin/index.php.
+Simulation program for the calculation of coupled heat, moisture, air, pollutant, and salt transport.
+[23] D. Berger and D. C. T. Pei. Drying of hygroscopic capillary porous solids - a theoretical approach.
+International Journal of Heat and Mass Transfer, 16:293–302, 1973.
+[24] W. Masmoudi and M. Prat. Heat and Mass-Transfer between a Porous- Medium and a Parallel
+External Flow - Application to Drying of Capillary Porous Materials. International Journal of Heat and
+Mass Transfer, 34(8):1975–1989, 1991.
+[25] V.P.C. Mohan and P. Talukdar. Three dimensional numerical modeling of simultaneous heat and
+moisture transfer in a moist object subjected to convective drying. International Journal of Heat and
+Mass Transfer, 53(21-22):4638–4650, 2010.
+[26] H. Shokouhmand, V. Abdollahi, S. Hosseini and K. Vahidkhah. Performance Optimization of a
+Brick Dryer Using Porous Simulation Approach. Drying Technology, 29(3):360–370, 2011.
+[27] A. Kaya, O. AydIn and I. Dincer. Numerical modeling of heat and mass transfer during forced
+convection drying of rectangular moist objects. International Journal of Heat and Mass Transfer,
+49(17-18):3094–3103, 2006.
+[28] L. S. Oliveira and K. Haghighi. Conjugate heat and mass transfer in convective drying of porous
+media. Numerical Heat Transfer, Part A: Applications, 34(2):105–117, 1998.
+[29] T. Defraeye, B. Blocken, D. Derome, B. Nicolai and J. Carmeliet. Convective heat and mass
+transfer modelling at air–porous material interfaces: Overview of existing methods and relevance.
+Chemical Engineering Science 74:49-58, 2012
+[30] H. Amir, G.Le Palec and M. Daguenet. S´echage superficiel d’un matériau poreux humide par
+convection forcée d’air chaud: couplage entre les équations de transfert dans le matériau et celles de
+la couche limite. International Journal of Heat and Mass Transfer, 30(6):1149–1158, 1987.
+
+[[PAGE 19]]
+[31] B. Zeghmati, M. Daguenet, and G. Le Palec. Study of transient laminar free convection over an
+inclined wet flat plate. International Journal of Heat and Mass Transfer, 34(4/5):899–909, 1991.
+[32] A. A. Dolinskiy, A. S. H. Dorfman, and B. V. Davydenko. Conjugate heat and mass transfer in
+continuous processes of convective drying. International Journal of Heat and Mass Transfer,
+34(11):2883–2889, 1991.
+[33] L. S. Oliveira and K. Haghighi. Conjugate Heat and Mass Transport in Convective Drying of
+Multiparticle Systems Part II: Soybean Drying. Drying Technology, 16(3-5):463–483, 1998.
+[34] K. Murugesan, H. N. Suresh, K. N. Seetharamu, P. A. A. Narayana, and T. Sundararajan. A
+theoretical model of brick drying as a conjugate problem. International Journal of Heat and Mass
+Transfer, 44(21):4075–4086, 2001.
+[35] S. Gnoth, F. Hansel, P. Hupl, and H. Fechner. Aero-hygrothermisches Verhalten von
+Umfassungskonstruktionen mit Hohlrumen. Bauphysik, 30(6):380–388, 2008.
+[36] H. Janssen, B. Blocken, and J. Carmeliet. Conservative modelling of the moisture and heat
+transfer in building components under atmospheric excitation. International Journal of Heat and Mass
+Transfer, 50(5-6):1128–1140, 2007.
+[37] M. V. De Bonis and G. Ruocco. A generalized conjugate model for forced convection drying
+based on an evaporative kinetics. Journal of Food Engineering, 89(2):232–240, 2008.
+[38] C. Lamnatou, E. Papanicolaou, V. Belessiotis, and N. Kyriakis. Finitevolume modelling of heat
+and mass transfer during convective drying of porous bodies - Non-conjugate and conjugate
+formulations involving the aerodynamic effects. Renewable Energy, 35(7):1391–1402, 2010.
+[39] C. Lamnatou, E. Papanicolaou, V. Belessiotis, and N. Kyriakis. Numerical study of the interaction
+among a pair of blunt plates subject to convective drying - A conjugate approach. International Journal
+of Thermal Sciences, 49(12):2467–2482, 2010.
+[40] K.M. Waananen, J.B. Litchfield and M.R. Okos. 1993, Classification of drying models for porous
+solids. Drying Technology, 11(1):1-40, 1993.
+[41] S. Whitaker. The role of irreversible thermodynamics and the Onsager relations in the analysis of
+drying phenomena. Proc. sixth International Drying Symposium IDS'88, 1988.
+[42] H. Janssen 2011. Thermal diffusion of water vapour in porous materials: Fact or fiction?
+International Journal of Heat and Mass Transfer, 54(7-8):1548-1562, 2011.
+[43] J. Grunewald. Diffusiver und konvektiver Stoff - und Energietransport in kapillarporösen
+Baustoffen. PhD. Technischen Universität dresden, 1997.
+[44] R. B. Dean. Reynolds Number Dependence of Skin Friction and Other Bulk Flow Variables in
+Two-Dimensional Rectangular Duct Flow. Journal of Fluids Engineering, 100(2):215–223, 1978.
+[45] H. Derluyn, H. Janssen, P. Moonen and J. Carmeliet. moisture transfer across the interface
+                                                        th
+between brick and mortar joint. Proceedings of the 8 Symposium on Building Physics in Nordic
+Countries (NSB2008), Copenhagen, June 16-18, 2008.
+[46] H. Derluyn, M. Griffa, D. Mannes, I. Jerjen, J. Dewanckele, P. Vontobel, A. Sheppard, M. N.
+Boone, D. Derome, E. H. Lehmann and J. Carmeliet. Probing salt crystallization damage mechanisms
+in porous limestone with neutron radiography and X-ray tomography. In 5th International Building
+Physics Conference (IBPC2012), Kyoto, Japan, 2012.
+[47] M. Sedighi-Gilani, M. Griffa, D. Mannes, E. Lehmann, J. Carmeliet and D. Derome. Visualization
+and quantification of liquid water transport in softwood by means of neutron radiography. International
+Journal of Heat and Mass Transfer, 55(21-22):6211–6221, 2012.
+[48] E.H. Lehmann, G. Frei, G. Khne and P. Boillat. The micro-setup for neutron imaging: A major
+step forward to improve the spatial resolution. Nuclear Instruments and Methods in Physics Research
+Section A: Accelerators, Spectrometers, Detectors and Associated Equipment, 576(23):389–396,
+2007.
+[49] M. Van Belleghem, H.-J. Steeman, M. Steeman, A. Janssens and M. De Paepe. Sensitivity
+analysis of CFD coupled non-isothermal heat and moisture modelling. Building and Environment,
+45(11):2485-2496, 2010.
+[50] T. Defraeye, B. Blocken and J. Carmeliet. Influence of uncertainty in heat-moisture transport
+properties on convective drying of porous materials by numerical modelling. Chemical Engineering
+Research and Design, 91:36-42, 2013
+[51] Mujumdar AS. Handbook of industrial drying. 3th ed. CRC Press; 2007.
+
+[[PAGE 20]]
+List of Figures
+
+Fig. 1. Typical surface averaged drying rate (the dashed line indicates the drying rate in case the initial
+temperature is higher or lower than the wet bulb temperature), based on [51].
+
+Fig. 2. Psychrometric chart, saturation mass fraction indicated in blue.
+
+Fig. 3. Schematic representation of wind tunnel and test section used to perform drying experiments.
+Based on [11].
+     (a) Wind tunnel side view and top view
+     (b) Model of test section of experimental setup
+
+Fig. 4. 3D simulation model of the test sample.
+
+Fig. 5. Velocity profile (m/s) and turbulent intensity (-) as measured by Defraeye [11].
+
+Fig. 6. Comparison between heat and moisture transport model with original material data (- -), model
+with adjusted retention curve (---) and model with adjusted liquid permeability (---). Temperature
+measurement indicated by (▪).
+     (a) Temperature at 10mm in the brick
+     (b) Temperature at 20mm in the brick
+     (c) Temperature at 30mm, at bottom of brick
+     (d) Temperature at 40mm, 10mm in insulation
+
+Fig. 7. Simulated temperature in the ceramic brick, upstream of the centre (blue), in the centre (black)
+and downstream (red). Comparison with measurements upstream (o), centre (□) and downstream
+(▲).
+
+Fig. 8.Scaled mass loss. Comparison of experiment (▀), CFD-HAM simulation with original material
+properties (--) , with adjusted retention curve (--) and adjusted liquid permeability (--).
+
+Fig. 9. Comparison of the measured (--) and simulated (--) moisture content distribution in the ceramic
+brick sample over time. Time difference between two lines is 1 h.
+         (a) Moisture distribution when using the original material properties as reported by [46]
+         (b) Moisture distribution when using an adjusted retention curve
+         (c) Moisture distribution when using an adjusted liquid permeability
+
+Fig. 10. Retention curve of brick: original curve [45] (--) and adjusted curve (- -).
+
+Fig. 11. Liquid permeability of ceramic brick: original curve [45] (--) and adjusted curve (- -).
+
+List of Tables
+
+Table 1. Material properties of ceramic brick [45].
+
+Table 2. Parameters in Eq. (22) [45].
+
+Table 3 Standard deviations of material properties as listed by Ref. [50].
+
+[[PAGE 21]]
+Fig. 1. Typical surface averaged drying rate (the dashed line indicates the drying rate in case the initial
+temperature is higher or lower than the wet bulb temperature), based on [51].
+
+Fig. 2. Psychrometric chart, saturation mass fraction indicated in blue.
+
+[[PAGE 22]]
+(a) Wind tunnel side view and top view
+
+                          (b) model of test section of experimental setup
+
+Fig. 3. Schematic representation of wind tunnel and test section used to perform drying experiments.
+                                           Based on [11].
+
+[[PAGE 23]]
+Fig. 4. Schematic representation of the 3D simulation model of the test sample.
+
+Fig. 5. Velocity profile (m/s) and turbulent intensity (-) as measured by Defraeye [11].
+
+[[PAGE 24]]
+(a) Temperature at 10mm, in brick
+
+(b) Temperature at 20mm, in brick
+
+[[PAGE 25]]
+(c) Temperature at 30mm, at bottom of brick
+
+(d) Temperature at 40mm, 10mm in insulation
+
+Fig. 6. Comparison between heat and moisture transport model with original material data (- -), model
+   with adjusted retention curve (---) and model with adjusted liquid permeability (---). Temperature
+                                     measurement indicated by (▪).
+
+[[PAGE 26]]
+Fig. 7. Simulated temperature in the ceramic brick, upstream of the centre (blue), in the centre (black)
+  and downstream (red). Comparison with measurements upstream (o), centre (□) and downstream
+                                                 (▲).
+
+[[PAGE 27]]
+Fig. 8.Scaled mass loss. Comparison of experiment (▀), CFD-HAM simulation with original material
+        properties (--) , with adjusted retention curve (--) and adjusted liquid permeability (--).
+
+[[PAGE 28]]
+(a) Moisture distribution when using the original material properties as reported by [46]
+
+(b) Moisture distribution when using an adjusted retention curve
+
+(c) Moisture distribution when using an adjusted liquid permeability
+
+Fig. 9. Comparison of the measured (--) and simulated (--) moisture content distribution in the ceramic
+                  brick sample over time. Time difference between two lines is 1 h.
+
+[[PAGE 29]]
+Fig. 10. Retention curve of brick: original curve [45] (--) and adjusted curve (- -).
+
+Fig. 11. Liquid permeability of ceramic brick: original curve [45] (--) and adjusted curve (- -).
+
+[[PAGE 30]]
+Table 1. Material properties of ceramic brick [45].
+Property                                              Value
+Density  [kg/m³]                                     2087
+Thermal conductivity [W/mK]                         1 + 0.0047 w
+Specific heat cp [J/kgK]                              840
+Water vapour resistance diffusion factor dry [-]     24.79
+Capillary moisture content wcap [kg/m³]               130
+Open porosity 0 [-]                                  0.13
+
+Table 2. Parameters in Eq. (22) [45].
+i                        1                            2                       3
+ai                       1.35e-5                      4e-6                    5e-7
+ni                       6                            2                       0.7
+mi                       0.8333                       2                       0.4
+wi                       0.36                         0.25                    0.39
+wi adjusted              0.5                          0.25                    0.25
+Ks                       1.15e-9
+                       4.003
+
+Table 3. Standard deviations of material properties as listed by Ref. [50].
+Property                                             Standard deviation
+                                                    1%
+cp                                                   5%
+                                                    5%
+dry                                                 18%
+wcap                                                 5%
+Kl                                                   1% on Kl, and 1% on log-log scale
