@@ -3,26 +3,79 @@
   "stage": "DESIGN",
   "status": "PASS",
   "inputs": [
-    {"path":"decisions/H1-problem.json","sha256":"6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"},
-    {"path":"01-intake/赛题结构化说明.json","sha256":"f3288330ff1e774f563249bd2014b75c591669294098245578b5d2593e83df6d"},
-    {"path":"01-intake/handoff.json","sha256":"b9d7a933e97c9810276bbdcbdb0d20cd09360dfa6cab747b4f1989d6ff586782"},
-    {"path":"02-literature/文献清单.json","sha256":"23a86badf3ac8f35607b30ec45b48b5da7bcbed5761b2b5cdd1ddfaba19b2bbd"},
-    {"path":"02-literature/文献阅读结果.md","sha256":"31cb88d8a1cb8de37c193dfa5824f234e0097f96c0284037d82201f15ad915a8"},
-    {"path":"02-literature/handoff.json","sha256":"9dde84b5c7418d032e20f4f239a639ffe51662555b159c46a462790c0dc6ace2"}
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "01-intake/赛题结构化说明.json",
+      "sha256": "abe67290839ebc4cc0d99ef1ea9f6b89c9c4136487c75b33012af53063d3156d"
+    },
+    {
+      "path": "01-intake/handoff.json",
+      "sha256": "5c7b415da35a173da249f3426ef0f4052f1ade7b763606f5bdbb1b682afac053"
+    },
+    {
+      "path": "02-literature/文献清单.json",
+      "sha256": "23a86badf3ac8f35607b30ec45b48b5da7bcbed5761b2b5cdd1ddfaba19b2bbd"
+    },
+    {
+      "path": "02-literature/文献阅读结果.md",
+      "sha256": "31cb88d8a1cb8de37c193dfa5824f234e0097f96c0284037d82201f15ad915a8"
+    },
+    {
+      "path": "02-literature/handoff.json",
+      "sha256": "5681198a6ffaf434b0c8e4f0121d540b0609947906da04ed665b27f1a760e61e"
+    }
   ],
   "outputs": [
-    {"path":"02-design/题目分析报告.md","sha256":"d1104a85f464c6e7e4a0df361ff9a2be877c3dd27ddeed2d5207dfe8e49faa36"},
-    {"path":"02-design/术语表格.md","sha256":"45195999430da0ff206031d8b7e091b66c946a6cf96ae9958b1675b8f2ff717e"},
-    {"path":"02-design/候选模型方案.md","sha256":"ced11bfb105fad81a7e1690cbaa9b4edfcc077ab17dbda25924def4cfbc63c17"},
-    {"path":"02-design/H2-优化审计与方向.md","sha256":"96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33"},
-    {"path":"02-design/文献到模型映射.md","sha256":"ffa74c1b1cc37aeed4793b26fc3b95b412513f17a67e1a5d597dfbf06efecf42"},
-    {"path":"02-design/contracts/model-q1-fixed.json","sha256":"8581a6ff4abe76ed7e4457a529a8fc5dd8062ec604133bb4d4d5b3630c502998"},
-    {"path":"02-design/contracts/model-q23-fixed.json","sha256":"b3f8327a02dba8de5e97906822641639b4c953aa48cfc6aaefda14986ace9fd1"},
-    {"path":"02-design/contracts/model-q4-m1-reference.json","sha256":"88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5"},
-    {"path":"02-design/contracts/model-q4-m2-moving-fv.json","sha256":"c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f"},
-    {"path":"02-design/验证计划.json","sha256":"37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb"}
+    {
+      "path": "02-design/题目分析报告.md",
+      "sha256": "d1104a85f464c6e7e4a0df361ff9a2be877c3dd27ddeed2d5207dfe8e49faa36"
+    },
+    {
+      "path": "02-design/术语表格.md",
+      "sha256": "45195999430da0ff206031d8b7e091b66c946a6cf96ae9958b1675b8f2ff717e"
+    },
+    {
+      "path": "02-design/候选模型方案.md",
+      "sha256": "ced11bfb105fad81a7e1690cbaa9b4edfcc077ab17dbda25924def4cfbc63c17"
+    },
+    {
+      "path": "02-design/H2-优化审计与方向.md",
+      "sha256": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33"
+    },
+    {
+      "path": "02-design/文献到模型映射.md",
+      "sha256": "ffa74c1b1cc37aeed4793b26fc3b95b412513f17a67e1a5d597dfbf06efecf42"
+    },
+    {
+      "path": "02-design/contracts/model-q1-fixed.json",
+      "sha256": "8581a6ff4abe76ed7e4457a529a8fc5dd8062ec604133bb4d4d5b3630c502998"
+    },
+    {
+      "path": "02-design/contracts/model-q23-fixed.json",
+      "sha256": "b3f8327a02dba8de5e97906822641639b4c953aa48cfc6aaefda14986ace9fd1"
+    },
+    {
+      "path": "02-design/contracts/model-q4-m1-reference.json",
+      "sha256": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5"
+    },
+    {
+      "path": "02-design/contracts/model-q4-m2-moving-fv.json",
+      "sha256": "c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f"
+    },
+    {
+      "path": "02-design/验证计划.json",
+      "sha256": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb"
+    }
   ],
-  "frozen_decisions": [{"path":"decisions/H1-problem.json","sha256":"6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"}],
+  "frozen_decisions": [
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    }
+  ],
   "assumptions": [
     "DESIGN按用户明确指令基于当前已提交的H1、INTAKE与LITERATURE产物开展。",
     "候选合同只定义原型目标，不代表H2团队选择或数值结果。"

@@ -3,39 +3,126 @@
   "stage": "PROTOTYPE",
   "status": "PASS",
   "inputs": [
-    {"path":"02-design/handoff.json","sha256":"bfca1a03c7caa2c45ec5df573bf922f83a688118b6417d262f352c9107c02b5e"},
-    {"path":"02-design/候选模型方案.md","sha256":"ced11bfb105fad81a7e1690cbaa9b4edfcc077ab17dbda25924def4cfbc63c17"},
-    {"path":"02-design/验证计划.json","sha256":"37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb"},
-    {"path":"02-design/H2-优化审计与方向.md","sha256":"96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33"},
-    {"path":"02-design/contracts/model-q1-fixed.json","sha256":"8581a6ff4abe76ed7e4457a529a8fc5dd8062ec604133bb4d4d5b3630c502998"},
-    {"path":"02-design/contracts/model-q23-fixed.json","sha256":"b3f8327a02dba8de5e97906822641639b4c953aa48cfc6aaefda14986ace9fd1"},
-    {"path":"02-design/contracts/model-q4-m1-reference.json","sha256":"88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5"},
-    {"path":"02-design/contracts/model-q4-m2-moving-fv.json","sha256":"c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f"},
-    {"path":"decisions/H1-problem.json","sha256":"6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"},
-    {"path":"input/A题/附件/附件1.xlsx","sha256":"7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"},
-    {"path":"input/A题/附件/附件2.xlsx","sha256":"5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"}
+    {
+      "path": "02-design/handoff.json",
+      "sha256": "5f2579e4fdad88eb19f68cfad1de065046e186b27e55d0d86422576be3f7ccc0"
+    },
+    {
+      "path": "02-design/候选模型方案.md",
+      "sha256": "ced11bfb105fad81a7e1690cbaa9b4edfcc077ab17dbda25924def4cfbc63c17"
+    },
+    {
+      "path": "02-design/验证计划.json",
+      "sha256": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb"
+    },
+    {
+      "path": "02-design/H2-优化审计与方向.md",
+      "sha256": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33"
+    },
+    {
+      "path": "02-design/contracts/model-q1-fixed.json",
+      "sha256": "8581a6ff4abe76ed7e4457a529a8fc5dd8062ec604133bb4d4d5b3630c502998"
+    },
+    {
+      "path": "02-design/contracts/model-q23-fixed.json",
+      "sha256": "b3f8327a02dba8de5e97906822641639b4c953aa48cfc6aaefda14986ace9fd1"
+    },
+    {
+      "path": "02-design/contracts/model-q4-m1-reference.json",
+      "sha256": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5"
+    },
+    {
+      "path": "02-design/contracts/model-q4-m2-moving-fv.json",
+      "sha256": "c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f"
+    },
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "input/A题/附件/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "input/A题/附件/附件2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    }
   ],
   "outputs": [
-    {"path":"03-prototype/候选方案对比.md","sha256":"ea1e75eb7fe46bc7b940332de4ce414e4c92a062f233b9c7b90a344512dc28fe"},
-    {"path":"03-prototype/原型结果.csv","sha256":"9dd27f2cf23e0675c008f54ad11dd762774da0009a2eeb82168e2f6f2b8f5a25"},
-    {"path":"03-prototype/H2-选择包.md","sha256":"4dd1991e34914b93c1ee107450fbc1e2d221d0451991c3a72e63c4047160972e"},
-    {"path":"03-prototype/model-m1-1d/result.json","sha256":"0c856a28f8d0f2392d6b2c9fcecd7d9390fd4ae9f1dd64ec0d9ebe5cd467fcdc"},
-    {"path":"03-prototype/model-m1-1d/run.py","sha256":"35cd53d8b25b3db783e1210f8ad4c0aa52ec96457145bc02f85396d0bd3737d4"},
-    {"path":"03-prototype/model-m1-1d/trajectory.csv","sha256":"23d20ec9f78ee8d335abd86649fa7fa8a94dc06b6a816acc92d4c2aaf1bbbcda"},
-    {"path":"03-prototype/model-m2-2d/result.json","sha256":"8ba83d9d2b1afd666bb19213fa7bb3d2d0b80b6f80f24e0424841896c08584ce"},
-    {"path":"03-prototype/model-m2-2d/run.py","sha256":"141993572ba9e2cf78e790f52036a3cdcdbaf6cabc028c7f53385a19fa19ec56"},
-    {"path":"03-prototype/model-m2-2d/trajectory.csv","sha256":"235ab481291b05ea56e542c58a6c5991fd97e2932d8839847f1f677465a41e80"},
-    {"path":"03-prototype/model-m3-nonlinear/result.json","sha256":"1264178ab3f8210b660c1c36be24b2ed1bf2bc55e036830df12431aee8510a4d"},
-    {"path":"03-prototype/model-m3-nonlinear/run.py","sha256":"b56bbc8c5d52390f53d49c70eee5232a459873d737a644fefc575b97fe548c58"},
-    {"path":"03-prototype/model-m3-nonlinear/trajectory.csv","sha256":"aa1efd9b6d6e8da589e1a188161752a0e27fcc83f76799895ac5bb08f213e84d"},
-    {"path":"03-prototype/model-m4-coupled/result.json","sha256":"4f3f934fdedff1b65e20dd81ea980c3f7b609de9f559c1379f7565182d9deafe"},
-    {"path":"03-prototype/model-m4-coupled/run.py","sha256":"acd9d62184aaa567c856f65353a716f8b54cd8f7fa147920cdbf6265122efede"},
-    {"path":"03-prototype/model-m4-coupled/trajectory.csv","sha256":"6f3d4e9afe550ee99e9d9028b05b375a146c86f1ab3ff7dc504629ebaa2e5e04"},
-    {"path":"03-prototype/prototype_solver.py","sha256":"7eb4d723df1e3970f3fb02535eea4abbfd3fd8ac8af0b1a8a98b9022c1dc2395"},
-    {"path":"03-prototype/run_all.py","sha256":"de93428f67624d71a2461d59c3d00b60c9ebdbafbc3f60f821ee0a0afc2960d8"}
+    {
+      "path": "03-prototype/候选方案对比.md",
+      "sha256": "ea1e75eb7fe46bc7b940332de4ce414e4c92a062f233b9c7b90a344512dc28fe"
+    },
+    {
+      "path": "03-prototype/原型结果.csv",
+      "sha256": "56df4b91514eb0be9fbacb4d94cdaa67747bb64f49fbe7e18b06bcee7a334e94"
+    },
+    {
+      "path": "03-prototype/H2-选择包.md",
+      "sha256": "4dd1991e34914b93c1ee107450fbc1e2d221d0451991c3a72e63c4047160972e"
+    },
+    {
+      "path": "03-prototype/model-m1-1d/result.json",
+      "sha256": "0ac41cccbeaf65115ad49f8230630fcc6d9a303f1caee8aaefae117e489eaa8c"
+    },
+    {
+      "path": "03-prototype/model-m1-1d/run.py",
+      "sha256": "35cd53d8b25b3db783e1210f8ad4c0aa52ec96457145bc02f85396d0bd3737d4"
+    },
+    {
+      "path": "03-prototype/model-m1-1d/trajectory.csv",
+      "sha256": "a2d519b8f84ecd0f5cfa557b8051d8a27a5bc8b6c1b9312f2418933b8ae9e089"
+    },
+    {
+      "path": "03-prototype/model-m2-2d/result.json",
+      "sha256": "6fc6850639135e1809cef565a4b9c876b7e7ee9c468526402f2f595c47778df4"
+    },
+    {
+      "path": "03-prototype/model-m2-2d/run.py",
+      "sha256": "141993572ba9e2cf78e790f52036a3cdcdbaf6cabc028c7f53385a19fa19ec56"
+    },
+    {
+      "path": "03-prototype/model-m2-2d/trajectory.csv",
+      "sha256": "68f76234fadf5198c4b33c012b56c3443b24192bdcfec1aae8ab556477737a22"
+    },
+    {
+      "path": "03-prototype/model-m3-nonlinear/result.json",
+      "sha256": "878edc6d001b17de6f73898f44960bd9e75ea5b614a3342e539cf894c8a372c7"
+    },
+    {
+      "path": "03-prototype/model-m3-nonlinear/run.py",
+      "sha256": "b56bbc8c5d52390f53d49c70eee5232a459873d737a644fefc575b97fe548c58"
+    },
+    {
+      "path": "03-prototype/model-m3-nonlinear/trajectory.csv",
+      "sha256": "53ccd76ab75418a9842b782b5aa7d6fcfacc0f2cb80913f7e5a95c2e584c320b"
+    },
+    {
+      "path": "03-prototype/model-m4-coupled/result.json",
+      "sha256": "9676bb3fb825bf1e6e79bd2dfe165eaef38e946d4352a8a892c113ebd4db54ff"
+    },
+    {
+      "path": "03-prototype/model-m4-coupled/run.py",
+      "sha256": "acd9d62184aaa567c856f65353a716f8b54cd8f7fa147920cdbf6265122efede"
+    },
+    {
+      "path": "03-prototype/model-m4-coupled/trajectory.csv",
+      "sha256": "0109bc65cd3419789ed42a09fbd1ec5d1d7481a18d77f6930dce87584d586df6"
+    },
+    {
+      "path": "03-prototype/prototype_solver.py",
+      "sha256": "7eb4d723df1e3970f3fb02535eea4abbfd3fd8ac8af0b1a8a98b9022c1dc2395"
+    },
+    {
+      "path": "03-prototype/run_all.py",
+      "sha256": "de93428f67624d71a2461d59c3d00b60c9ebdbafbc3f60f821ee0a0afc2960d8"
+    }
   ],
   "frozen_decisions": [
-    {"path":"decisions/H1-problem.json","sha256":"6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"}
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    }
   ],
   "assumptions": [
     "当前H1的M1至M4物理层级优先于旧合同中的同名Q4数值实现；映射仅记录在03-prototype。",

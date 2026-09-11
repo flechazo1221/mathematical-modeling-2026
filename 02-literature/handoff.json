@@ -1,49 +1,126 @@
 {
-  "schema_version":"1.0",
-  "stage":"LITERATURE",
-  "status":"PASS",
-  "inputs":[
-    {"path":"decisions/H1-problem.json","sha256":"6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"},
-    {"path":"02-literature/corpus/corpus-manifest.json","sha256":"ab7563a572db93cdb734bde36e6e06480ef9c9ebfd59cd9d24ab4db6bac17175"},
-    {"path":"literature/input/001_2018_Shrinkage of Food Materials During Drying Current Status and Challenges.pdf","sha256":"44fe1aa1ed80253b69f5bab97ccd759f707b0fd4cb69e3429b45e9dd83452d3c"},
-    {"path":"literature/input/002_2017_Evolution of shrinkage, real density, porosity, heat and mass transfer coefficients during indirect solar drying of coco.pdf","sha256":"71eeb9e00006946b847f8e145ca15ad41306ee0fd8d49b38d073a5fa3a8da08a"},
-    {"path":"literature/input/003_2011_Analysis of convective heat and mass transfer coefficients for convective drying of a porous flat plate by conjugate mod.pdf","sha256":"f4215c7c62fb47af230c19741ffeab728b637201f57a5ce33b9a58c6fdb478d5"},
-    {"path":"literature/input/004_2014_Validation of a coupled heat, vapour and liquid moisture transport model for porous materials implemented in CFD.pdf","sha256":"8dcb699870a01cc64b66dbe1e29349c861a69c25e977557d173caf3ed4dc2d3f"},
-    {"path":"literature/input/004_2025_Toward mechanistic models ‘augmented’ by machine learning. Example of a drying simulation data set exploited by a Physic.pdf","sha256":"8b6e670dde237789b5b7bf7764ca9bbe38500d809cc2c48058944f3b9d7e6022"},
-    {"path":"literature/input/005_2022_Fundamental Understanding of Heat and Mass Transfer Processes for Physics-Informed Machine Learning-Based Drying Modelli.pdf","sha256":"b894f34ea788e250552b4d7818c9d1ef2d7734361871ce2c9d288dbbadafe755"},
-    {"path":"literature/input/006_2024_Mathematical Modelling of Drying of Hydrogels via Finite Element Method and Texture Analysis.pdf","sha256":"7f1bafab5ee2d0a0e38b1fa52e63db613cbef894c924c9c779701d60ea86398d"},
-    {"path":"literature/input/007_2016_Multi-scale model of food drying Current status and challenges.pdf","sha256":"072d856e5046f037a2e0340e7ef28331bff023d89eac43eee343e0cbad011c03"},
-    {"path":"literature/input/008_2022_Fundamental Understanding of Heat and Mass Transfer Processes for Physics-Informed Machine Learning-Based Drying Modelli.pdf","sha256":"fce0558f29ef78d789903c9955d2768f7d8bd06709cbccf5be4fc5a0d039514f"},
-    {"path":"literature/input/009_2024_PINN Model of Diffusion Coefficient Identification Problem in Ficks Laws.html","sha256":"ce2f3244ee4e8193661286955e4866002e20e1a0a5396e9a06f79581b65299c8"},
-    {"path":"literature/input/胡萝卜薄层干燥动力学模型研究_种翠娟.pdf","sha256":"67c24845cf993b6bcb22b25f1b48c5cde8afa78e70e6f9f5528a2725fa3ee6a3"},
-    {"path":"literature/input/山楂微波热风耦合干燥数学模型研究及干燥设备设计_于海明.pdf","sha256":"714ca28c434a787dab1372fa4a96112c67f124b6003f54b3eb9c570ef6f24237"},
-    {"path":"literature/input/香菇热风干燥特性及动力学模型_杨伊琳(1).pdf","sha256":"3c2ee36a2d42897c7c5a47f14ca874dab67acd713fe2dd9ef28aec3b9eaef527"},
-    {"path":"02-literature/external-inputs/P08.pdf","sha256":"0ddac6b0d321130101e00e4c520fbabd4aa06c6b450457fb3b90de7d0c27787c"},
-    {"path":"02-literature/external-inputs/P12.pdf","sha256":"a79eb238a1fe8cbc1c9abb9f06ad13d97a6a46ccbcc9c8064064a233fe5ab898"},
-    {"path":"02-literature/external-inputs/P13.pdf","sha256":"c75a5cacfccce6a307c703dfb8715a05774e4073e160bf8eb826d1018bf13f8a"},
-    {"path":"02-literature/external-inputs/P16-ACS.pdf","sha256":"72ad501e97815675e771a6e3024f364f174e2f9ff839d0f5466be0e23d0c6509"},
-    {"path":"02-literature/external-inputs/P17.pdf","sha256":"2c5a53bc9c9e481d803bcb6690ad61177ab6d1636e0d25c04516a9762f6a9d47"}
+  "schema_version": "1.0",
+  "stage": "LITERATURE",
+  "status": "PASS",
+  "inputs": [
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "02-literature/corpus/corpus-manifest.json",
+      "sha256": "a6c7c594fa184b67d828426ae0dea4954da93225dfe5cf967c3572cc943a9c6b"
+    },
+    {
+      "path": "literature/input/001_2018_Shrinkage of Food Materials During Drying Current Status and Challenges.pdf",
+      "sha256": "44fe1aa1ed80253b69f5bab97ccd759f707b0fd4cb69e3429b45e9dd83452d3c"
+    },
+    {
+      "path": "literature/input/002_2017_Evolution of shrinkage, real density, porosity, heat and mass transfer coefficients during indirect solar drying of coco.pdf",
+      "sha256": "71eeb9e00006946b847f8e145ca15ad41306ee0fd8d49b38d073a5fa3a8da08a"
+    },
+    {
+      "path": "literature/input/003_2011_Analysis of convective heat and mass transfer coefficients for convective drying of a porous flat plate by conjugate mod.pdf",
+      "sha256": "f4215c7c62fb47af230c19741ffeab728b637201f57a5ce33b9a58c6fdb478d5"
+    },
+    {
+      "path": "literature/input/004_2014_Validation of a coupled heat, vapour and liquid moisture transport model for porous materials implemented in CFD.pdf",
+      "sha256": "8dcb699870a01cc64b66dbe1e29349c861a69c25e977557d173caf3ed4dc2d3f"
+    },
+    {
+      "path": "literature/input/004_2025_Toward mechanistic models ‘augmented’ by machine learning. Example of a drying simulation data set exploited by a Physic.pdf",
+      "sha256": "8b6e670dde237789b5b7bf7764ca9bbe38500d809cc2c48058944f3b9d7e6022"
+    },
+    {
+      "path": "literature/input/005_2022_Fundamental Understanding of Heat and Mass Transfer Processes for Physics-Informed Machine Learning-Based Drying Modelli.pdf",
+      "sha256": "b894f34ea788e250552b4d7818c9d1ef2d7734361871ce2c9d288dbbadafe755"
+    },
+    {
+      "path": "literature/input/006_2024_Mathematical Modelling of Drying of Hydrogels via Finite Element Method and Texture Analysis.pdf",
+      "sha256": "7f1bafab5ee2d0a0e38b1fa52e63db613cbef894c924c9c779701d60ea86398d"
+    },
+    {
+      "path": "literature/input/007_2016_Multi-scale model of food drying Current status and challenges.pdf",
+      "sha256": "072d856e5046f037a2e0340e7ef28331bff023d89eac43eee343e0cbad011c03"
+    },
+    {
+      "path": "literature/input/008_2022_Fundamental Understanding of Heat and Mass Transfer Processes for Physics-Informed Machine Learning-Based Drying Modelli.pdf",
+      "sha256": "fce0558f29ef78d789903c9955d2768f7d8bd06709cbccf5be4fc5a0d039514f"
+    },
+    {
+      "path": "literature/input/009_2024_PINN Model of Diffusion Coefficient Identification Problem in Ficks Laws.html",
+      "sha256": "5c20110d30d3f045e84ea3b94f4f15ed9b8b507017f0783ce160a0c168d1f589"
+    },
+    {
+      "path": "literature/input/胡萝卜薄层干燥动力学模型研究_种翠娟.pdf",
+      "sha256": "67c24845cf993b6bcb22b25f1b48c5cde8afa78e70e6f9f5528a2725fa3ee6a3"
+    },
+    {
+      "path": "literature/input/山楂微波热风耦合干燥数学模型研究及干燥设备设计_于海明.pdf",
+      "sha256": "714ca28c434a787dab1372fa4a96112c67f124b6003f54b3eb9c570ef6f24237"
+    },
+    {
+      "path": "literature/input/香菇热风干燥特性及动力学模型_杨伊琳(1).pdf",
+      "sha256": "3c2ee36a2d42897c7c5a47f14ca874dab67acd713fe2dd9ef28aec3b9eaef527"
+    },
+    {
+      "path": "02-literature/external-inputs/P08.pdf",
+      "sha256": "0ddac6b0d321130101e00e4c520fbabd4aa06c6b450457fb3b90de7d0c27787c"
+    },
+    {
+      "path": "02-literature/external-inputs/P12.pdf",
+      "sha256": "a79eb238a1fe8cbc1c9abb9f06ad13d97a6a46ccbcc9c8064064a233fe5ab898"
+    },
+    {
+      "path": "02-literature/external-inputs/P13.pdf",
+      "sha256": "c75a5cacfccce6a307c703dfb8715a05774e4073e160bf8eb826d1018bf13f8a"
+    },
+    {
+      "path": "02-literature/external-inputs/P16-ACS.pdf",
+      "sha256": "72ad501e97815675e771a6e3024f364f174e2f9ff839d0f5466be0e23d0c6509"
+    },
+    {
+      "path": "02-literature/external-inputs/P17.pdf",
+      "sha256": "2c5a53bc9c9e481d803bcb6690ad61177ab6d1636e0d25c04516a9762f6a9d47"
+    }
   ],
-  "outputs":[
-    {"path":"02-literature/文献清单.json","sha256":"23a86badf3ac8f35607b30ec45b48b5da7bcbed5761b2b5cdd1ddfaba19b2bbd"},
-    {"path":"02-literature/文献阅读结果.md","sha256":"31cb88d8a1cb8de37c193dfa5824f234e0097f96c0284037d82201f15ad915a8"},
-    {"path":"02-literature/L1-文献审核包.md","sha256":"af4d9f479cb5cf9e1f65a6c984d3ea80a3ebe29085420a64394fc11ad46c3d93"},
-    {"path":"02-literature/附件输入清单.json","sha256":"6420bfb728f1e0644ce9b10e621faf17abcd68b240b21f49d53c8d4e238ce4d5"}
+  "outputs": [
+    {
+      "path": "02-literature/文献清单.json",
+      "sha256": "23a86badf3ac8f35607b30ec45b48b5da7bcbed5761b2b5cdd1ddfaba19b2bbd"
+    },
+    {
+      "path": "02-literature/文献阅读结果.md",
+      "sha256": "31cb88d8a1cb8de37c193dfa5824f234e0097f96c0284037d82201f15ad915a8"
+    },
+    {
+      "path": "02-literature/L1-文献审核包.md",
+      "sha256": "af4d9f479cb5cf9e1f65a6c984d3ea80a3ebe29085420a64394fc11ad46c3d93"
+    },
+    {
+      "path": "02-literature/附件输入清单.json",
+      "sha256": "6420bfb728f1e0644ce9b10e621faf17abcd68b240b21f49d53c8d4e238ce4d5"
+    }
   ],
-  "frozen_decisions":[{"path":"decisions/H1-problem.json","sha256":"6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"}],
-  "assumptions":[
+  "frozen_decisions": [
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    }
+  ],
+  "assumptions": [
     "Khan 2022两个PDF为同一DOI/论文身份；分别核验、证据只计一次。",
     "团队本轮将必读范围由17篇缩减为16篇可得全文；P14排除且不得作为DESIGN证据。",
     "P08、P12、P13、P17及P16出版PDF为用户提供的完整附件，已直接全文阅读。",
     "P16 HTML与ACS PDF为同一DOI/论文身份；分别核验、证据只计一次。"
   ],
-  "unknowns":[],
-  "claims":[
+  "unknowns": [],
+  "claims": [
     "团队批准范围为16篇可得全文，已实际阅读16/16，共18个全文文件；Khan与P16均有双版本且只按一个身份计权。",
     "P14仅为题录已核验的排除项，摘要不得支撑方程、参数、方法或性能结论。",
     "现有证据支持后续比较1D/2D、M1/M2、时变边界、h/hm敏感性及PINN反演/加速候选，但未选择设计路线。"
   ],
-  "evidence":[
+  "evidence": [
     "团队范围内16篇证据卡均含页码或章节定位，见02-literature/文献阅读结果.md。",
     "P08附件SHA256=0ddac6b0d321130101e00e4c520fbabd4aa06c6b450457fb3b90de7d0c27787c。",
     "P12附件SHA256=a79eb238a1fe8cbc1c9abb9f06ad13d97a6a46ccbcc9c8064064a233fe5ab898。",
@@ -53,15 +130,15 @@
     "2026-09-11最小可追溯性复核：P16 HTML为PMC10809368完整正文，题名、DOI 10.1021/acsomega.3c07924、PMID 38284026、章节与现有P16/L13证据卡一致，未发现未审计语义变化。",
     "2026-09-11附件清单复核：P08、P12、P13、P16、P17的原件、镜像与清单声明SHA-256逐项一致。"
   ],
-  "warnings":[
+  "warnings": [
     "不得把P14摘要或元数据用作DESIGN证据。",
     "不得把P08/P12/P13/P17或P16 PDF冒充已在literature/input或现有corpus索引中。",
     "P03中文字体映射损坏；只使用逐页渲染可核实信息。",
     "不得进入DESIGN，不得生成L1团队决策文件。"
   ],
-  "required_next_actions":[
+  "required_next_actions": [
     "由独立团队决策任务审阅L1-文献审核包并明确批准或退回；本任务不代写decisions/L1-literature.json。",
     "在L1团队批准前不得启动DESIGN。"
   ],
-  "completed_at":"2026-09-11T09:25:26+08:00"
+  "completed_at": "2026-09-11T09:25:26+08:00"
 }

@@ -1,0 +1,12 @@
+# Keep text artifacts byte-stable for SHA-256 handoffs on every platform.
+* text=auto eol=lf
+
+# Never transform binary inputs or generated binary result artifacts.
+*.xlsx binary
+*.xls binary
+*.doc binary
+*.docx binary
+*.pdf binary
+*.png binary
+*.npz binary
+*.pyc binary

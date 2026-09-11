@@ -6,25 +6,25 @@
   "inputs": [
     {
       "path": "decisions/H2-model.json",
-      "sha256": "eb37402e637467318d1060f4e39f7fe9a890ea6e61905440d1a5a46d2b85c34f"
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"
     },
     {
       "path": "04-compute/handoff.json",
-      "sha256": "4b6529ad50b040e3b8b0c800ebd779ff58d991017b3718fe361c7e28e44a30d0"
+      "sha256": "048f811890677d2040f526bd9d3101cb4f68790cbc5cbc392559be2893eb27fc"
     },
     {
       "path": "03-prototype/supplemental-extensions/handoff.json",
-      "sha256": "a9461c12aa6aab167d579a488cbd8904a67bcabfa937f64f2a967c23ef0621e1"
+      "sha256": "2514b40336876807ffb3a6e20e0ce44de498ab189b11b5e63b3a3d951239cd3d"
     },
     {
       "path": "02-design/supplemental-extensions/handoff.json",
-      "sha256": "0f181717664e028e924ba053d2c71a5dbbff9feeee5a71257ef8b1415be8fa70"
+      "sha256": "30f948f37c96839d5961c26d9d737a85b62b23fb451a97f3335ba1dbd37384dc"
     }
   ],
   "outputs": [
     {
       "path": "04-compute/supplemental-extensions/cfd-convergence.csv",
-      "sha256": "7c8c85a56c681c921f60d0451deb69a491c2cead075b199f46cd8a91f21d70d3"
+      "sha256": "1f43e57bf789e2134897d6221b0855bbcea10f1282294c47e4c3053bdb9efcc6"
     },
     {
       "path": "04-compute/supplemental-extensions/finalize.py",
@@ -36,15 +36,15 @@
     },
     {
       "path": "04-compute/supplemental-extensions/pde-scenarios-120.csv",
-      "sha256": "1c385e72dda6f10e28756eb384b03a3cba6b376f7258550c9353caf1dd10353c"
+      "sha256": "35617baf067293372483dce4e10f5cef13a264dab41e357a0a27e8364d57b85a"
     },
     {
       "path": "04-compute/supplemental-extensions/pinn-metrics.csv",
-      "sha256": "a8a98793cf9daba4068a46fbb6199f70cc4c6fdd96e7e7dd3ea34930aaddcc02"
+      "sha256": "2c1a48d597ef7e5877f0c7489f8aa3df2ceff707cba8b83fa7086b487bed98c8"
     },
     {
       "path": "04-compute/supplemental-extensions/pure-ml-metrics.csv",
-      "sha256": "e8ad9a728e253eecb5f0a68a6aa9b02062acc52aee6e403b666fbff6974abe66"
+      "sha256": "08c5d9eccf4586e32dbf6c6ee5cc5a925edf5507224d920376efa69e8d93dda9"
     },
     {
       "path": "04-compute/supplemental-extensions/run_validation.py",
@@ -52,29 +52,29 @@
     },
     {
       "path": "04-compute/supplemental-extensions/split-manifest.json",
-      "sha256": "6e8cbf3e0f821b28900a81db719bb7c1531e964658ae52f6f88e7d0daa60be76"
+      "sha256": "f008585c3d1bf683af7bd4468ddb37ae9964618c2040586f635ba599e0d6fe69"
     },
     {
       "path": "04-compute/supplemental-extensions/summary.json",
-      "sha256": "238bcdb62dd52dfdad0d3626bc6768ff9718867d602d1f2101b4772f67b35cf7"
+      "sha256": "8b26e207070d4e16cfd339f924ae7fba6c494913dcf5518535ab14d0578c41ef"
     },
     {
       "path": "04-compute/supplemental-extensions/surrogate-metrics.csv",
-      "sha256": "3f7e0b26525bda56a69e2aed8ca8893079b38b4d30d3b57c93ea4a2ab5a19d97"
+      "sha256": "caaa95e99308ac58ad2820d17346d0acbe50ab9e3554b824ebc75bed78c34245"
     },
     {
       "path": "04-compute/supplemental-extensions/复现清单.json",
-      "sha256": "94468597887c541c05957821ab66a5c695ae93bc98e3f523d7f096cb340e4d8d"
+      "sha256": "39eb16882e79ffcd5dbd0880dc94d250a2a03187e845ba598a4e8fedd6492ca9"
     },
     {
       "path": "04-compute/supplemental-extensions/比较报告.md",
-      "sha256": "ec13a5a68c04ffa941724fef7f65ca4799437918a42e8027adfe27afb5edc220"
+      "sha256": "044ebada9e5882b250cc0625c587e393031a4d6cafb405ff494193d144486087"
     }
   ],
   "frozen_decisions": [
     {
       "path": "decisions/H2-model.json",
-      "sha256": "eb37402e637467318d1060f4e39f7fe9a890ea6e61905440d1a5a46d2b85c34f"
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"
     }
   ],
   "assumptions": [

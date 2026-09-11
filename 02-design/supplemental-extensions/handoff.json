@@ -3,37 +3,118 @@
   "stage": "DESIGN",
   "status": "PASS",
   "inputs": [
-    {"path":"decisions/H1-problem.json","sha256":"6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"},
-    {"path":"decisions/H2-model.json","sha256":"eb37402e637467318d1060f4e39f7fe9a890ea6e61905440d1a5a46d2b85c34f"},
-    {"path":"decisions/L1-literature.json","sha256":"64a8ebf0237eddf01c2c96c7d925972e59a09ad9b377f49d85f7b16f1a2f034c"},
-    {"path":"02-literature/handoff.json","sha256":"7b231ee38a7ff8ca7972bb9c4c5c14b3cd1faa2336084d1d5de3d6100b6352c8"},
-    {"path":"02-literature/文献清单.json","sha256":"23a86badf3ac8f35607b30ec45b48b5da7bcbed5761b2b5cdd1ddfaba19b2bbd"},
-    {"path":"02-literature/文献阅读结果.md","sha256":"31cb88d8a1cb8de37c193dfa5824f234e0097f96c0284037d82201f15ad915a8"},
-    {"path":"02-design/候选模型方案.md","sha256":"ced11bfb105fad81a7e1690cbaa9b4edfcc077ab17dbda25924def4cfbc63c17"},
-    {"path":"02-design/H2-优化审计与方向.md","sha256":"96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33"},
-    {"path":"02-design/验证计划.json","sha256":"37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb"},
-    {"path":"03-prototype/handoff.json","sha256":"ea25d84af0452f1b1b20d22c57085b6e4be1e6c40b7de2b4f63918590a67b142"},
-    {"path":"03-prototype/H2-选择包.md","sha256":"4dd1991e34914b93c1ee107450fbc1e2d221d0451991c3a72e63c4047160972e"},
-    {"path":"04-compute/handoff.json","sha256":"4b6529ad50b040e3b8b0c800ebd779ff58d991017b3718fe361c7e28e44a30d0"},
-    {"path":"04-compute/results/key-metrics.json","sha256":"337f435b7aefb6ce5931c7373700c6723f64e97f55a402d87092e7008d3e06e2"},
-    {"path":"04-compute/results/validation-register.csv","sha256":"4bff2426f87fa1197d8f184dad9b372e702db81c01ae71027fd35ee51b18ecae"},
-    {"path":"04-compute/results/run-summary.csv","sha256":"741515867db5eae9188916c0aeb629395ad5af1c4037e1d84de7d015fade3c6c"},
-    {"path":"input/A题/附件/附件1.xlsx","sha256":"7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"},
-    {"path":"input/A题/附件/附件2.xlsx","sha256":"5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"},
-    {"path":"input/A��/A��.pdf","sha256":"052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736"}
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"
+    },
+    {
+      "path": "decisions/L1-literature.json",
+      "sha256": "64a8ebf0237eddf01c2c96c7d925972e59a09ad9b377f49d85f7b16f1a2f034c"
+    },
+    {
+      "path": "02-literature/handoff.json",
+      "sha256": "5681198a6ffaf434b0c8e4f0121d540b0609947906da04ed665b27f1a760e61e"
+    },
+    {
+      "path": "02-literature/文献清单.json",
+      "sha256": "23a86badf3ac8f35607b30ec45b48b5da7bcbed5761b2b5cdd1ddfaba19b2bbd"
+    },
+    {
+      "path": "02-literature/文献阅读结果.md",
+      "sha256": "31cb88d8a1cb8de37c193dfa5824f234e0097f96c0284037d82201f15ad915a8"
+    },
+    {
+      "path": "02-design/候选模型方案.md",
+      "sha256": "ced11bfb105fad81a7e1690cbaa9b4edfcc077ab17dbda25924def4cfbc63c17"
+    },
+    {
+      "path": "02-design/H2-优化审计与方向.md",
+      "sha256": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33"
+    },
+    {
+      "path": "02-design/验证计划.json",
+      "sha256": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb"
+    },
+    {
+      "path": "03-prototype/handoff.json",
+      "sha256": "8d4f161cc4b4b3b84f679273f23db5bf674f610754727efaf7a53f7635ff07e6"
+    },
+    {
+      "path": "03-prototype/H2-选择包.md",
+      "sha256": "4dd1991e34914b93c1ee107450fbc1e2d221d0451991c3a72e63c4047160972e"
+    },
+    {
+      "path": "04-compute/handoff.json",
+      "sha256": "048f811890677d2040f526bd9d3101cb4f68790cbc5cbc392559be2893eb27fc"
+    },
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"
+    },
+    {
+      "path": "04-compute/results/validation-register.csv",
+      "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb"
+    },
+    {
+      "path": "04-compute/results/run-summary.csv",
+      "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"
+    },
+    {
+      "path": "input/A题/附件/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "input/A题/附件/附件2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    },
+    {
+      "path": "input/A��/A��.pdf",
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736"
+    }
   ],
   "outputs": [
-    {"path":"02-design/supplemental-extensions/扩展模型设计.md","sha256":"af0a359d8604b00e8b1ba6d1d623c5e3402fd68392076c6673adab2c2791827a"},
-    {"path":"02-design/supplemental-extensions/统一比较合同.json","sha256":"51da4966459cc0515513e75bef86adbe3f361e11a5cfcb0c774154b40ce3b1ba"},
-    {"path":"02-design/supplemental-extensions/model-cfd.json","sha256":"72d3004efe77b57cd9674fd1e59934501a6973d726b5be537600030fc3a74bd7"},
-    {"path":"02-design/supplemental-extensions/model-pinn.json","sha256":"3a3b39cec0a6ac75030042ddda575371a9ee35543ec1fd85b11329e6e1a5f60c"},
-    {"path":"02-design/supplemental-extensions/model-surrogate.json","sha256":"210e59ac8bf2bdae0ff58d55640c8034da4eb98991f90fb0bfc34fe9967d2ecd"},
-    {"path":"02-design/supplemental-extensions/model-pure-ml.json","sha256":"ca3b0975a287d8e462ee0c446b1cd7dd50809ed7866d97e3b494b5aa9818c61d"},
-    {"path":"02-design/supplemental-extensions/原型实验矩阵.json","sha256":"fef50c02b257f941744dbf0ead5395ce8d6f43c368c619e85cd2ce23679cad79"}
+    {
+      "path": "02-design/supplemental-extensions/扩展模型设计.md",
+      "sha256": "af0a359d8604b00e8b1ba6d1d623c5e3402fd68392076c6673adab2c2791827a"
+    },
+    {
+      "path": "02-design/supplemental-extensions/统一比较合同.json",
+      "sha256": "51da4966459cc0515513e75bef86adbe3f361e11a5cfcb0c774154b40ce3b1ba"
+    },
+    {
+      "path": "02-design/supplemental-extensions/model-cfd.json",
+      "sha256": "72d3004efe77b57cd9674fd1e59934501a6973d726b5be537600030fc3a74bd7"
+    },
+    {
+      "path": "02-design/supplemental-extensions/model-pinn.json",
+      "sha256": "3a3b39cec0a6ac75030042ddda575371a9ee35543ec1fd85b11329e6e1a5f60c"
+    },
+    {
+      "path": "02-design/supplemental-extensions/model-surrogate.json",
+      "sha256": "210e59ac8bf2bdae0ff58d55640c8034da4eb98991f90fb0bfc34fe9967d2ecd"
+    },
+    {
+      "path": "02-design/supplemental-extensions/model-pure-ml.json",
+      "sha256": "ca3b0975a287d8e462ee0c446b1cd7dd50809ed7866d97e3b494b5aa9818c61d"
+    },
+    {
+      "path": "02-design/supplemental-extensions/原型实验矩阵.json",
+      "sha256": "fef50c02b257f941744dbf0ead5395ce8d6f43c368c619e85cd2ce23679cad79"
+    }
   ],
   "frozen_decisions": [
-    {"path":"decisions/H1-problem.json","sha256":"6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"},
-    {"path":"decisions/H2-model.json","sha256":"eb37402e637467318d1060f4e39f7fe9a890ea6e61905440d1a5a46d2b85c34f"}
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"
+    }
   ],
   "assumptions": [
     "M1-M4与COMPUTE PASS完全冻结，补充模型不生成题目强制结果文件。",

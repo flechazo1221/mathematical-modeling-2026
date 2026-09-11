@@ -1,0 +1,3 @@
+# Interpreter caches are environment-specific and must not be handoff evidence.
+__pycache__/
+*.py[cod]
