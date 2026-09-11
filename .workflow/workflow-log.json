@@ -119,6 +119,64 @@
       "at": "2026-09-11T09:31:41+08:00",
       "gate": "L1",
       "next_stage": "DESIGN"
+    },
+    {
+      "event": "STAGE_STARTED",
+      "at": "2026-09-11T15:13:20+08:00",
+      "stage": "DESIGN",
+      "thread_id": "01a08f23-19b4-7a11-8e6b-fade63f40765"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-11T15:13:20+08:00",
+      "stage": "DESIGN",
+      "affected_files": [
+        "02-design/题目分析报告.md",
+        "02-design/术语表格.md",
+        "02-design/候选模型方案.md",
+        "02-design/H2-优化审计与方向.md",
+        "02-design/文献到模型映射.md",
+        "02-design/验证计划.json",
+        "02-design/handoff.json"
+      ]
+    },
+    {
+      "event": "STAGE_COMPLETED",
+      "at": "2026-09-11T15:13:21+08:00",
+      "stage": "DESIGN",
+      "next_stage": "PROTOTYPE"
+    },
+    {
+      "event": "STAGE_STARTED",
+      "at": "2026-09-11T15:14:30+08:00",
+      "stage": "PROTOTYPE",
+      "thread_id": "01a08f51-2366-7740-804a-27d5684427b2"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-11T15:27:20+08:00",
+      "stage": "PROTOTYPE",
+      "affected_files": [
+        "03-prototype"
+      ]
+    },
+    {
+      "event": "STAGE_COMPLETED",
+      "at": "2026-09-11T15:27:20+08:00",
+      "stage": "PROTOTYPE",
+      "next_stage": "H2"
+    },
+    {
+      "event": "GATE_APPROVED",
+      "at": "2026-09-11T15:27:44+08:00",
+      "gate": "H2",
+      "next_stage": "COMPUTE"
+    },
+    {
+      "event": "STAGE_STARTED",
+      "at": "2026-09-11T15:28:36+08:00",
+      "stage": "COMPUTE",
+      "thread_id": "01a08f5e-25cf-7193-9ab9-00fd52e5911e"
     }
   ]
 }

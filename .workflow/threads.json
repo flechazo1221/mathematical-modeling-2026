@@ -27,6 +27,32 @@
         "host_id": "local",
         "finished_at": "2026-09-11T08:24:37+08:00"
       }
+    ],
+    "DESIGN": [
+      {
+        "thread_id": "01a08f23-19b4-7a11-8e6b-fade63f40765",
+        "started_at": "2026-09-11T15:13:20+08:00",
+        "status": "PASS",
+        "host_id": "local",
+        "finished_at": "2026-09-11T15:13:21+08:00"
+      }
+    ],
+    "PROTOTYPE": [
+      {
+        "thread_id": "01a08f51-2366-7740-804a-27d5684427b2",
+        "started_at": "2026-09-11T15:14:30+08:00",
+        "status": "PASS",
+        "host_id": "local",
+        "finished_at": "2026-09-11T15:27:20+08:00"
+      }
+    ],
+    "COMPUTE": [
+      {
+        "thread_id": "01a08f5e-25cf-7193-9ab9-00fd52e5911e",
+        "started_at": "2026-09-11T15:28:36+08:00",
+        "status": "RUNNING",
+        "host_id": "local"
+      }
     ]
   }
 }

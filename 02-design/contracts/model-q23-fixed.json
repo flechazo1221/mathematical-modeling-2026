@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "model_id": "B23-state-dependent-radial-FV",
+  "scope": ["Q2", "Q3"],
+  "status": "CANDIDATE_NOT_SELECTED",
+  "states": [{"name":"T","unit":"K"},{"name":"C","unit":"kg/kg"}],
+  "domain": {"geometry":"1D cylinder radial fixed R=0.02 m","t_s":"0 through threshold"},
+  "constitutive_laws": {
+    "rho":"650+128*C",
+    "cp":"1450+2736*C/(C+1)",
+    "k":"0.21+0.38*C/(C+1)",
+    "D":"2.4e-3*exp(-0.45/C)*exp(-3850/T_K)"
+  },
+  "boundary": {"h":25,"hm":8e-7,"mass_driving_force":"Cs-Cinf","environment_0_4h":"piecewise linear","after_4h":"terminal-window robust center or mean"},
+  "stopping_rule": {"condition":"max_over_domain(C)<0.15","epsilon":1e-6,"report_resolution_s":60,"local_bracketing":true},
+  "outputs": {"result2_times_s":"1..10800","result3_interval_s":60,"r_cm":"0:0.1:2"},
+  "required_checks": ["constitutive range log", "nonlinear residual", "mass/energy balance", "mesh/time convergence", "threshold bracketing", "h/hm/window/empirical-parameter sensitivity"],
+  "rejection_rules": ["average moisture used for stopping", "temperature not converted to K", "unbounded boundary extrapolation", "threshold not bracketed"]
+}

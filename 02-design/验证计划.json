@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "status": "PREREGISTERED_NOT_EXECUTED",
+  "fair_comparison": {
+    "same": ["input data", "H1 boundary interpolation and extension", "constitutive laws", "initial conditions", "h and hm", "stopping rule", "output grid", "hardware budget"],
+    "exceptions": [{"comparison":"1D vs 2D","reason":"different dimension is the tested end-effect mechanism"},{"comparison":"M1 vs M2","reason":"coordinate and mesh motion necessarily differ; physical faces and tolerance budget are matched"}]
+  },
+  "tests": [
+    {"id":"V01","type":"identity","scope":"all","procedure":"check units, Kelvin conversion, initial values and boundary signs","pass":"all exact conventions satisfied"},
+    {"id":"V02","type":"convergence","scope":"all","procedure":"halve radial mesh and time step separately then jointly","pass":"reported four-decimal samples stable or change is explicitly bounded below reporting tolerance"},
+    {"id":"V03","type":"balance","scope":"all","procedure":"compare domain inventory change with integrated boundary flux","pass":"normalized imbalance decreases under refinement and is below preregistered prototype tolerance"},
+    {"id":"V04","type":"boundary","scope":"all","procedure":"evaluate center symmetry and Robin residuals","pass":"residuals converge with discretization"},
+    {"id":"V05","type":"sample-out equivalent","scope":"Q1","procedure":"compare 1D and 2D using same physics; vary end-face h","pass":"difference characterized at required points and total inventory"},
+    {"id":"V06","type":"event","scope":"Q3,Q4","procedure":"bracket first crossing with local time refinement","pass":"60 s reported time unchanged by further refinement and epsilon does not change substantive conclusion"},
+    {"id":"V07","type":"sensitivity","scope":"Q2-Q4","factors":["h","hm","4h terminal window","empirical prefactor","empirical exponent"],"levels":"bounded low/base/high set before run","outputs":["t_star","center/surface C","max C","temperature range"],"priority":"P1"},
+    {"id":"V08","type":"moving-domain regression","scope":"Q4","procedure":"set R constant and compare with fixed-domain solver","pass":"fields agree within joint discretization error"},
+    {"id":"V09","type":"geometry","scope":"Q4","procedure":"reproduce PCHIP R(t), track cell volumes/Jacobian and NA mask","pass":"radius matches interpolation; positive volumes; exact output mask"},
+    {"id":"V10","type":"ablation","scope":"Q4","procedure":"remove mesh-advection/Jacobian correction only as a diagnostic","pass":"quantifies its contribution; ablated version cannot be selected if it violates conservation"},
+    {"id":"V11","type":"robustness","scope":"Q3,Q4","procedure":"combine plausible boundary and empirical-parameter low/base/high scenarios","pass":"report worst-case t_star and any route/ranking reversal without claiming stability in advance"},
+    {"id":"V12","type":"solid-continuity","scope":"Q4","procedure":"prescribe affine material velocity from observed R(t), advance dry-solid density only through its continuity equation, and audit local residual, total dry-solid inventory and volume-radius consistency; compare rho(C)/(1+C) only if density semantics support it","pass":"local residual decreases under refinement, total dry-solid inventory is constant within preregistered tolerance, and no incompatible algebraic density closure is imposed; otherwise reject the moving-domain implementation"}
+  ],
+  "decision_metrics": ["required-point field difference", "t_star difference in seconds", "normalized mass/energy imbalance", "max boundary residual", "runtime", "nonlinear failures"],
+  "global_rejection": ["nonphysical values", "non-convergent refinement", "unexplained conservation error", "use of mean moisture for stopping", "untraceable parameter change"]
+}

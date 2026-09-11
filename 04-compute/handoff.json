@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0",
+  "stage": "COMPUTE",
+  "status": "FAIL",
+  "inputs": [
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "eb37402e637467318d1060f4e39f7fe9a890ea6e61905440d1a5a46d2b85c34f"
+    },
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "03-prototype/handoff.json",
+      "sha256": "ea25d84af0452f1b1b20d22c57085b6e4be1e6c40b7de2b4f63918590a67b142"
+    },
+    {
+      "path": "02-design/候选模型方案.md",
+      "sha256": "ced11bfb105fad81a7e1690cbaa9b4edfcc077ab17dbda25924def4cfbc63c17"
+    },
+    {
+      "path": "02-design/H2-优化审计与方向.md",
+      "sha256": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33"
+    },
+    {
+      "path": "02-design/验证计划.json",
+      "sha256": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb"
+    },
+    {
+      "path": "input/A题/附件/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "input/A题/附件/附件2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "04-compute/diagnostic-figures/diagnostic-convergence.png",
+      "sha256": "90eeb8e75d5b20155b2d8f4e30ddf1dd15fe46d03a7129ab4e648e098518c328"
+    },
+    {
+      "path": "04-compute/diagnostic-figures/diagnostic-sensitivity.png",
+      "sha256": "c02fe6019ad685d0476b8054b6f74de8b548620ee832ffe154d4d46ec9a10f92"
+    },
+    {
+      "path": "04-compute/diagnostic-figures/diagnostic-threshold.png",
+      "sha256": "c16bce51b7d3cbdd3cc412f4a707b1c2ddd1f8437a71e96f8f9787cf1d3d757a"
+    },
+    {
+      "path": "04-compute/logs/full.log",
+      "sha256": "6d2b341b4d13b7e1c92d38ba21fde716fc687a0965ca4800227df2b180a657a2"
+    },
+    {
+      "path": "04-compute/logs/p1.log",
+      "sha256": "ffbad893745915f55a405156df82477e0397e45b390a95f452d843bcc4a5a58f"
+    },
+    {
+      "path": "04-compute/results/convergence.csv",
+      "sha256": "eaf5eaddac73212094db7aa3b7c0e5d26dd540935b8f4b7af9edc1bb99f6ef56"
+    },
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "sha256": "c612ba65f051a3a6de6250ead52138dc8649258d7885273ee68bb729666c67be"
+    },
+    {
+      "path": "04-compute/results/p1-check.csv",
+      "sha256": "af2a63105f8f2a202969654e84cbe0c9cda4ef2377f930dea5d96ee0fa6742f3"
+    },
+    {
+      "path": "04-compute/results/q1-samples.csv",
+      "sha256": "8efa03b08e02f978a4d4d90bfacce9f8ac286d2731d189deadd166308d0aefef"
+    },
+    {
+      "path": "04-compute/results/q2-samples.csv",
+      "sha256": "13f6c2101a03d5f59795a78dfd00e5fe36822acc6bb56e0f863c3464b86fcd02"
+    },
+    {
+      "path": "04-compute/results/q3-threshold-trajectory.csv",
+      "sha256": "2b067d33450d1c6edc8b9aceef3bf3fca41f9362500d00db5d2c73982eae1f27"
+    },
+    {
+      "path": "04-compute/results/q4-threshold-trajectory.csv",
+      "sha256": "33b858f36cd67f2d7a594d393e180b8aeb4fbbad53285f7f3b9864e51d6a3552"
+    },
+    {
+      "path": "04-compute/results/result1.xlsx",
+      "sha256": "693c60af57f815d36be54c81494547731151cffd06470eaf7f923e7866de994c"
+    },
+    {
+      "path": "04-compute/results/result2.xlsx",
+      "sha256": "32e26d6c42d1896ba165c82abfe046b2c5a64d2bfc9faf47d31504358a3c426f"
+    },
+    {
+      "path": "04-compute/results/result3.xlsx",
+      "sha256": "137edb762edea8645fd4ecbe2f493595fe9b25e8f6050db826b147775cd0b0ac"
+    },
+    {
+      "path": "04-compute/results/result4.xlsx",
+      "sha256": "a9741840f6576627d2ce401aaa2f56e72d841339ceaa37082e0cdb594baf6135"
+    },
+    {
+      "path": "04-compute/results/run-summary.csv",
+      "sha256": "22054e0b05988c5b7a8a26ea349872ba28116d7c0ce9a2443118fc90898d1c1f"
+    },
+    {
+      "path": "04-compute/results/sensitivity.csv",
+      "sha256": "eee7a1b207d4f03735e718ea69eb3df4a89a1a014293fb14ee6f99c2d8237573"
+    },
+    {
+      "path": "04-compute/results/validation-register.csv",
+      "sha256": "7cf7c1d4e21ffa5c1f181ffd768c39ae2067dfd4086e23ab830b36b62b9269fd"
+    },
+    {
+      "path": "04-compute/src/__pycache__/finalize_compute.cpython-312.pyc",
+      "sha256": "69e3f45d74c718a783cced8e45cfa7b36426151533072b95cbc55c231b10a757"
+    },
+    {
+      "path": "04-compute/src/__pycache__/formal_compute.cpython-312.pyc",
+      "sha256": "0f52e16ae0dded413fbd4f8f94629112241ad2581c54e8fabb3d8bca0114afe4"
+    },
+    {
+      "path": "04-compute/src/finalize_compute.py",
+      "sha256": "78a27e4ad811daf57b45577802601ac6c4f83a4a190d06b499f87d325d38d971"
+    },
+    {
+      "path": "04-compute/src/formal_compute.py",
+      "sha256": "6c98a0e999cf2d652ff7bf92a9adedaad153ef47061501a8a4ac52a5523b66e4"
+    },
+    {
+      "path": "04-compute/复现清单.json",
+      "sha256": "54669b544ca90b4b15e3fe32176a0b57ff28b28be0ee1218f1a95be58e9e09c8"
+    },
+    {
+      "path": "04-compute/证据索引.json",
+      "sha256": "d97299fa10554a077c4f9ae736a7ce1a30c30a49d97260bef8855c89d2df0363"
+    }
+  ],
+  "frozen_decisions": [
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "eb37402e637467318d1060f4e39f7fe9a890ea6e61905440d1a5a46d2b85c34f"
+    }
+  ],
+  "assumptions": [
+    "M4 is limited to the problem-identifiable temperature-dependent coefficient coupling and is used only as an ablation.",
+    "The 4 h terminal environment uses the frozen one-hour mean base case and bounded 0.5/2 h window tests.",
+    "Moving material cells use affine radial motion and dry-solid density continuity; no unsupported latent-heat source is introduced."
+  ],
+  "unknowns": [
+    "No internal experimental observations are available, so numerical differences among M2/M3/M4 are not fit improvements.",
+    "Problem-supplied empirical laws are treated as conditional simulation laws, not universal material properties."
+  ],
+  "claims": [
+    "All numerical values in the COMPUTE evidence were generated by recorded commands.",
+    "The approved M1-M4 compatibility route, baseline, threshold and moving-domain validation commands were executed without changing upstream files.",
+    "Diagnostic figures are model-checking aids only and are not publication figures."
+  ],
+  "evidence": [
+    "04-compute/证据索引.json maps claims to source tables.",
+    "04-compute/results/validation-register.csv records V01-V12 outcomes.",
+    "04-compute/复现清单.json records hashes, environment, parameters and commands."
+  ],
+  "warnings": [
+    "Model contrasts must not be described as empirical accuracy gains.",
+    "Sensitivity ranges are conditional on preregistered bounded scenarios and do not exhaust structural uncertainty.",
+    "A FAIL status forbids downstream EVIDENCE until the failed numerical validations are resolved or the team explicitly reopens the validation decision."
+  ],
+  "required_next_actions": [
+    "For V02, increase radial resolution or adopt a demonstrably higher-order conservative radial discretization until the four-decimal field tolerance passes.",
+    "For V06, refine the time step and locally bracket the Q3/Q4 threshold until the reported 60 s event time is unchanged; otherwise ask the team whether to reopen H2 validation tolerances.",
+    "Do not start EVIDENCE, publication figures or paper writing while COMPUTE is FAIL."
+  ],
+  "completed_at": "2026-09-11T16:33:09.744700+08:00"
+}

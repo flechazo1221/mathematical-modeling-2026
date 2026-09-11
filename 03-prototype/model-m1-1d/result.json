@@ -1,0 +1,161 @@
+{
+  "candidate": "M1",
+  "status": "PROTOTYPE_RUN_COMPLETE",
+  "scope_note": "controlled small-slice prototype; not full COMPUTE",
+  "results": [
+    {
+      "model": "M1",
+      "duration_s": 1800.0,
+      "nr": 6,
+      "nz": 1,
+      "dt_s": 4.0,
+      "seed": 20260911,
+      "runtime_s": 0.09064999999827705,
+      "converged": true,
+      "constraint_violations": [],
+      "normalized_moisture_balance_error": 5.483056983790799e-15,
+      "final_center_C": 2.5495109787451926,
+      "final_surface_C": 1.4990057581617717,
+      "final_mean_C": 2.3061013772637766,
+      "final_center_T_C": 33.58656966456192,
+      "final_surface_T_C": 36.79306116601208,
+      "min_C": 1.9407002059186564,
+      "max_C": 2.5495109787451926,
+      "h_mult": 1.0,
+      "hm_mult": 1.0,
+      "d_prefactor_mult": 1.0,
+      "d_exponent_mult": 1.0,
+      "command_contract": "python run.py",
+      "candidate": "M1",
+      "case": "coarse"
+    },
+    {
+      "model": "M1",
+      "duration_s": 1800.0,
+      "nr": 10,
+      "nz": 1,
+      "dt_s": 2.0,
+      "seed": 20260911,
+      "runtime_s": 0.28037010000116425,
+      "converged": true,
+      "constraint_violations": [],
+      "normalized_moisture_balance_error": 4.795875343868226e-15,
+      "final_center_C": 2.5499051674330455,
+      "final_surface_C": 1.5087649509369903,
+      "final_mean_C": 2.2981392115458896,
+      "final_center_T_C": 33.57869678718981,
+      "final_surface_T_C": 36.78784163650187,
+      "min_C": 1.78633090290712,
+      "max_C": 2.5499051674330455,
+      "h_mult": 1.0,
+      "hm_mult": 1.0,
+      "d_prefactor_mult": 1.0,
+      "d_exponent_mult": 1.0,
+      "command_contract": "python run.py",
+      "candidate": "M1",
+      "case": "base"
+    },
+    {
+      "model": "M1",
+      "duration_s": 1800.0,
+      "nr": 14,
+      "nz": 1,
+      "dt_s": 1.0,
+      "seed": 20260911,
+      "runtime_s": 0.7442215999981272,
+      "converged": true,
+      "constraint_violations": [],
+      "normalized_moisture_balance_error": 4.41384066257056e-15,
+      "final_center_C": 2.5499599644282305,
+      "final_surface_C": 1.5098279610157135,
+      "final_mean_C": 2.295886867322926,
+      "final_center_T_C": 33.577077888911276,
+      "final_surface_T_C": 36.78673624915666,
+      "min_C": 1.7125376904079508,
+      "max_C": 2.5499599644282305,
+      "h_mult": 1.0,
+      "hm_mult": 1.0,
+      "d_prefactor_mult": 1.0,
+      "d_exponent_mult": 1.0,
+      "command_contract": "python run.py",
+      "candidate": "M1",
+      "case": "fine"
+    }
+  ],
+  "base_final_fields": {
+    "C": [
+      [
+        2.5499051674330455
+      ],
+      [
+        2.549757260797359
+      ],
+      [
+        2.5491839084701944
+      ],
+      [
+        2.5472082698625167
+      ],
+      [
+        2.5409357087360784
+      ],
+      [
+        2.522869472926454
+      ],
+      [
+        2.476394979203409
+      ],
+      [
+        2.370840030376489
+      ],
+      [
+        2.1601387560019174
+      ],
+      [
+        1.78633090290712
+      ]
+    ],
+    "T_C": [
+      [
+        33.57869678718981
+      ],
+      [
+        33.64156993524364
+      ],
+      [
+        33.767400371483006
+      ],
+      [
+        33.95639271261757
+      ],
+      [
+        34.20894365052601
+      ],
+      [
+        34.52573557468878
+      ],
+      [
+        34.90780950779725
+      ],
+      [
+        35.35653875054362
+      ],
+      [
+        35.873422885334605
+      ],
+      [
+        36.45970563903677
+      ]
+    ]
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.3.5",
+    "openpyxl": "3.1.5"
+  },
+  "inputs": [
+    "input\\A题\\附件\\附件1.xlsx",
+    "input\\A题\\附件\\附件2.xlsx"
+  ]
+}

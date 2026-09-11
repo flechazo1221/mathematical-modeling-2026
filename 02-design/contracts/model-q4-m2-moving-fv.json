@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "model_id": "M2-Q4-front-fitted-moving-FV",
+  "scope": ["Q4"],
+  "status": "CANDIDATE_NOT_SELECTED",
+  "mesh": "radial control-volume faces scaled to observed R(t)",
+  "radius": {"source":"attachment2","interpolation":"PCHIP shape-preserving","axial_length":"constant 0.25 m"},
+  "constitutive_laws": {"rho":"760+90*C","cp":"1850+2150*C/(C+1)","k":"0.12+0.20*C/(C+1)","D":"4.2e-4*exp(-0.30/C)*exp(-3850/T_K)"},
+  "mandatory_terms": ["moving-face relative flux", "discrete geometric conservation law", "current-surface Robin flux"],
+  "stopping_rule": {"condition":"max_over_active_domain(C)<0.15","epsilon":1e-6,"report_resolution_s":60},
+  "output": {"fixed_physical_columns_cm":"0:0.1:2", "outside_domain":"NA", "surface_column":true},
+  "required_checks": ["R constant regression", "radius reproduction", "mesh quality", "geometric conservation", "moisture balance", "fair comparison with M1"],
+  "rejection_rules": ["negative cell volume", "mesh tangling", "mass imbalance beyond refinement error", "unexplained disagreement with M1"]
+}

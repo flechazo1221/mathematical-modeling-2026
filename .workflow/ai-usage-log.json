@@ -60,6 +60,32 @@
       ],
       "human_review": "等待L1团队文献审核",
       "recorded_at": "2026-09-11T09:28:09+08:00"
+    },
+    {
+      "stage": "DESIGN",
+      "tool_or_model": "Codex tasks (configured model)",
+      "purpose": "统一候选模型方案设计、题目分析与交接签名恢复",
+      "affected_files": [
+        "02-design/题目分析报告.md",
+        "02-design/术语表格.md",
+        "02-design/候选模型方案.md",
+        "02-design/H2-优化审计与方向.md",
+        "02-design/文献到模型映射.md",
+        "02-design/验证计划.json",
+        "02-design/handoff.json"
+      ],
+      "human_review": "林子垚要求先执行PROTOTYPE后再确认H2",
+      "recorded_at": "2026-09-11T15:13:20+08:00"
+    },
+    {
+      "stage": "PROTOTYPE",
+      "tool_or_model": "Codex",
+      "purpose": "按冻结H2设计指引完成四候选最小真实原型、对比与SHA-256交接",
+      "affected_files": [
+        "03-prototype"
+      ],
+      "human_review": "林子垚已明确要求完成PROTOTYPE后直接审批H2并进入下一阶段",
+      "recorded_at": "2026-09-11T15:27:20+08:00"
     }
   ]
 }
