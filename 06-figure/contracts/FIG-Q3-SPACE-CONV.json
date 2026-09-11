@@ -1,0 +1,36 @@
+{
+  "figure_id": "FIG-Q3-SPACE-CONV",
+  "claim_ids": [
+    "Q3-OBS-01"
+  ],
+  "question": "事件时刻对空间网格是否稳定？",
+  "source_files": [
+    {
+      "path": "04-compute/results/threshold-grid-convergence.csv",
+      "sha256": "8ba2aa18d42e13169db3f569cb7a6c1d5e8fd836c7f6818a8d0eb42fefd811f6"
+    }
+  ],
+  "x": null,
+  "y": null,
+  "groups": [],
+  "uncertainty": null,
+  "required_comparisons": [
+    "网格—事件收敛图"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "recompute model",
+    "change metric",
+    "omit failures",
+    "present conditional simulation as observation"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "placement": "附录",
+  "mandatory_limit": "不替代时间步验证",
+  "snapshot": "06-figure/data-snapshots/FIG-Q3-SPACE-CONV.csv",
+  "snapshot_sha256": "d5a9efef37f2b88d3d1dec0ecdd2136a8928f66b5e9b5e0b269c08a1ee59b7d8"
+}

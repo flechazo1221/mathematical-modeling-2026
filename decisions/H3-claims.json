@@ -1,16 +1,60 @@
 {
   "schema_version": "1.0",
   "gate": "H3",
-  "status": "DRAFT",
-  "question": "确认核心结论、正式图表、局限和论文叙事",
-  "selected_options": [],
-  "reasons": [],
-  "accepted_assumptions": [],
-  "rejected_options": [],
-  "required_validations": [],
-  "prohibited_changes": [],
-  "delegations": [],
-  "confirmed_by": [],
-  "confirmed_at": null,
+  "status": "TEAM_APPROVED",
+  "question": "确认A题最终核心结论、正式图表、局限和论文叙事",
+  "selected_options": [
+    "采用A+叙事：以选项A的逐问求解、逐问验证为主体，吸收选项B的统一守恒框架与数值验证主线",
+    "统一模型总览按Q1一维基线与二维端面效应、Q2物性升级与模型消融、Q3全域阈值时间及稳健性、Q4移动边界守恒与时间变化、统一验证适用边界和结论展开",
+    "批准核心主张Q1-OBS-01/02、Q2-OBS-01/02、Q3-OBS-01/02、Q3-ROB-01、Q4-OBS-01、Q4-DED-01、Q4-ROB-01/02、VAL-OBS-01，全部保持原证据类别和限定语",
+    "采用受控最小图表集，并增强统一验证：主文图为FIG-Q1-C-FIELD、FIG-Q1-END-EFFECT、FIG-Q2-C-PROFILES、FIG-Q2-MODEL-ABLATION、FIG-Q2-GRID-CONV、FIG-Q3-THRESHOLD-TRAJECTORY、FIG-Q3-BRACKET-ZOOM、FIG-Q3-TIME-CONV、FIG-Q3-SENS-ONEFACTOR、FIG-Q3-COMBINED-BOUNDARY、FIG-Q4-RADIUS-TIME、FIG-Q4-THRESHOLD-TRAJECTORY、FIG-Q4-IMPLEMENTATION-AGREEMENT、FIG-Q4-JACOBIAN-ABLATION、FIG-Q4-COMBINED-BOUNDARY、FIG-VAL-BALANCE-RESIDUAL",
+    "主文表为TAB-Q2-MODEL-CONTRACT、TAB-APPLICABILITY-FAILURE，并新增TAB-STRATEGY-ASSUMPTION，用于列示一维降阶、状态相关物性、内部温度耦合、移动边界和经验参数的考虑原因、检验方式与当前结论",
+    "附录图为FIG-Q1-GRID-CONV、FIG-Q2-V02-MARGIN、FIG-Q3-SPACE-CONV、FIG-Q4-BRACKET-ZOOM、FIG-Q4-SPACE-CONV、FIG-Q4-DRY-SOLID-CONTINUITY；附录表为TAB-VAL-V01-V12、TAB-CLAIM-LIMIT",
+    "补充实验采用S0：不进入结果图，仅在局限中说明CFD、PINN、代理和纯机器学习扩展路线未升级为正式主路线"
+  ],
+  "reasons": [
+    "A的逐问结构最符合竞赛阅卷的题号导航习惯，能够避免Q1和Q2被统一框架弱化为铺垫",
+    "吸收B的统一守恒与验证主线，可把M1至M4解释为相容层级，并突出Q3/Q4的阈值、稳健性、失效边界和移动域守恒",
+    "策略与假设检验表把模型简化、增强、验证证据和条件性结论放在同一位置，便于团队与评审追踪每项选择的依据",
+    "最小图表集控制篇幅，同时保留V02、V06、72小时未达标情景、Jacobian消融失败和守恒残差，避免选择性报告",
+    "林子垚已明确表示附件内容是团队确定的H3决策，并授权修复交接链后写定和批准"
+  ],
+  "accepted_assumptions": [
+    "M1是一维低成本基线，不能完全替代二维模型；M2至M4构成逐步增强且可消融的统一二维相容框架",
+    "网格收敛、时间收敛、守恒检查、双实现一致性和参数敏感性证明数值实现可靠，但不证明模型对真实药材具有经验准确性",
+    "题面经验律和边界延拓只支持条件仿真；缺少内部温度和含水率观测时，不宣称拟合优度、真实准确率或因果效应",
+    "机制解释必须与场分布、消融或守恒证据绑定：Q1端面换湿解释一二维偏差，Q2状态相关扩散解释干燥尾段与最大含水率控制位置，Q3最慢干燥区域决定全域达标时间，Q4收缩改变扩散距离且必须同时满足干固体连续性和移动域守恒",
+    "诊断图不直接作为正式论文图，FIGURE阶段须依据冻结数据和H3图表清单重新制作"
+  ],
+  "rejected_options": [
+    "纯选项B：统一框架主导但题号导航较弱",
+    "纯选项C：决策时间和稳健性主导但可能弱化Q1/Q2",
+    "扩展图表全集：篇幅压力过高且可能稀释核心证据链",
+    "S1至S3补充实验展示：当前不让非主路线实验进入正式结果图或讨论主线",
+    "把模型校准、数值验证或实现一致性表述为真实药材实验验证"
+  ],
+  "required_validations": [
+    "FIGURE阶段逐项核验所有主文图表和附录图表均来自已验证的04-compute或05-evidence数据，并冻结绘图数据快照与来源哈希",
+    "TAB-STRATEGY-ASSUMPTION必须逐项记录简化或增强、考虑原因、检验方法、当前结论和适用边界，不得新增未经计算支持的优越性判断",
+    "V02必须保留4.00114e-5相对5e-5的窄裕量，V06必须保留47.5654秒且登记48秒相对60秒目标的有限裕量",
+    "Q3三个和Q4一个72小时未达标情景、Jacobian消融失败及守恒残差必须在正文或指定图表中显式披露",
+    "摘要、结论和图注统一区分数值验证、模型校准与现实验证，并使用条件仿真限定语",
+    "进入FIGURE前复核COMPUTE交接63/63哈希一致、V01至V12全部PASS，以及EVIDENCE交接41/41哈希一致"
+  ],
+  "prohibited_changes": [
+    "不得修改H1/H2冻结的问题定义、M1至M4层级、阈值、评价标准或正式数值",
+    "不得隐藏窄验证裕量、未达标情景、失败消融或无内部观测这一证据边界",
+    "不得把补充CFD、PINN、代理或纯机器学习结果升级为主模型证据",
+    "不得把相关性、消融差异或条件仿真写成真实拟合改进、普适规律或因果结论",
+    "不得在H3批准记录之外擅自增删核心主张、主文图表或附录图表"
+  ],
+  "delegations": [
+    "FIGURE仅按本H3冻结清单制作正式图表和表格，不得重算模型、修改数值或改变主张类别",
+    "PAPER仅在FIGURE交接通过后按A+叙事组织论文，并保持全部限制、失败案例和机制证据绑定"
+  ],
+  "confirmed_by": [
+    "林子垚"
+  ],
+  "confirmed_at": "2026-09-11T23:41:35.3264118+08:00",
   "supersedes": null
 }

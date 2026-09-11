@@ -1,0 +1,269 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "n_figures": 22,
+  "n_tables": 5,
+  "main_figures": [
+    "FIG-Q1-C-FIELD",
+    "FIG-Q1-END-EFFECT",
+    "FIG-Q2-C-PROFILES",
+    "FIG-Q2-MODEL-ABLATION",
+    "FIG-Q2-GRID-CONV",
+    "FIG-Q3-THRESHOLD-TRAJECTORY",
+    "FIG-Q3-BRACKET-ZOOM",
+    "FIG-Q3-TIME-CONV",
+    "FIG-Q3-SENS-ONEFACTOR",
+    "FIG-Q3-COMBINED-BOUNDARY",
+    "FIG-Q4-RADIUS-TIME",
+    "FIG-Q4-THRESHOLD-TRAJECTORY",
+    "FIG-Q4-IMPLEMENTATION-AGREEMENT",
+    "FIG-Q4-JACOBIAN-ABLATION",
+    "FIG-Q4-COMBINED-BOUNDARY",
+    "FIG-VAL-BALANCE-RESIDUAL"
+  ],
+  "appendix_figures": [
+    "FIG-Q1-GRID-CONV",
+    "FIG-Q2-V02-MARGIN",
+    "FIG-Q3-SPACE-CONV",
+    "FIG-Q4-BRACKET-ZOOM",
+    "FIG-Q4-SPACE-CONV",
+    "FIG-Q4-DRY-SOLID-CONTINUITY"
+  ],
+  "tables": [
+    "TAB-Q2-MODEL-CONTRACT",
+    "TAB-APPLICABILITY-FAILURE",
+    "TAB-STRATEGY-ASSUMPTION",
+    "TAB-VAL-V01-V12",
+    "TAB-CLAIM-LIMIT"
+  ],
+  "items": [
+    {
+      "id": "FIG-Q1-C-FIELD",
+      "contract": "06-figure/contracts/FIG-Q1-C-FIELD.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q1-C-FIELD.csv",
+      "svg": "06-figure/figures/FIG-Q1-C-FIELD.svg",
+      "png": "06-figure/figures/FIG-Q1-C-FIELD.png",
+      "png_sha256": "c357b211c6fd5b535f3afb37dc1ebd48273fed26f3f16d07c7b17a9e7ff61d84",
+      "svg_sha256": "fa5c973c36f4815aba3ffa78728594abed47c52bbffeb74418dfdaff5736cec6"
+    },
+    {
+      "id": "FIG-Q1-END-EFFECT",
+      "contract": "06-figure/contracts/FIG-Q1-END-EFFECT.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q1-END-EFFECT.csv",
+      "svg": "06-figure/figures/FIG-Q1-END-EFFECT.svg",
+      "png": "06-figure/figures/FIG-Q1-END-EFFECT.png",
+      "png_sha256": "74fcad8992bbde7b6e4de90358776561ee65655d5c70ec0395229f18c4a18e00",
+      "svg_sha256": "9e659e2e15c454a2c0b54ed412929f64f1ea25c026b04f4a0f8cfa6986cec744"
+    },
+    {
+      "id": "FIG-Q2-C-PROFILES",
+      "contract": "06-figure/contracts/FIG-Q2-C-PROFILES.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q2-C-PROFILES.csv",
+      "svg": "06-figure/figures/FIG-Q2-C-PROFILES.svg",
+      "png": "06-figure/figures/FIG-Q2-C-PROFILES.png",
+      "png_sha256": "90d4e6d4e52d4a1186af7115131a6baa6ed291cccd722b6451c31b8cad129a0f",
+      "svg_sha256": "8cd120096cf2d9affc6dd7fb62b34f1bdd73bb26f88c61bda051fdd8e3504ef6"
+    },
+    {
+      "id": "FIG-Q2-MODEL-ABLATION",
+      "contract": "06-figure/contracts/FIG-Q2-MODEL-ABLATION.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q2-MODEL-ABLATION.csv",
+      "svg": "06-figure/figures/FIG-Q2-MODEL-ABLATION.svg",
+      "png": "06-figure/figures/FIG-Q2-MODEL-ABLATION.png",
+      "png_sha256": "cfd1eccfab7f2bb25a3ae690f265720e32809825bf64016ba49710cc42bc10bb",
+      "svg_sha256": "2b94508971a4ac2731bad476e8d6fbec4cfebc0bdae7ca1b8c7b54fb5e9f45e5"
+    },
+    {
+      "id": "FIG-Q2-GRID-CONV",
+      "contract": "06-figure/contracts/FIG-Q2-GRID-CONV.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q2-GRID-CONV.csv",
+      "svg": "06-figure/figures/FIG-Q2-GRID-CONV.svg",
+      "png": "06-figure/figures/FIG-Q2-GRID-CONV.png",
+      "png_sha256": "2d74873a5174d97842f49d6d7830d9bd2d0fde7a0d350788b9eb4bb1900e5dd7",
+      "svg_sha256": "f64e92ab2900c345bbddedaa25698f141af4cef7ac0ca6247e305057937e6f10"
+    },
+    {
+      "id": "FIG-Q3-THRESHOLD-TRAJECTORY",
+      "contract": "06-figure/contracts/FIG-Q3-THRESHOLD-TRAJECTORY.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q3-THRESHOLD-TRAJECTORY.csv",
+      "svg": "06-figure/figures/FIG-Q3-THRESHOLD-TRAJECTORY.svg",
+      "png": "06-figure/figures/FIG-Q3-THRESHOLD-TRAJECTORY.png",
+      "png_sha256": "5596b64e4b053f6dc1c94b53a96493e2917cabe9217b757a3e8e32527ac35a6a",
+      "svg_sha256": "4d1367d5a02a1b63d030d07b1f91c3d63c4c5873a4283db2011007e852ff636a"
+    },
+    {
+      "id": "FIG-Q3-BRACKET-ZOOM",
+      "contract": "06-figure/contracts/FIG-Q3-BRACKET-ZOOM.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q3-BRACKET-ZOOM.csv",
+      "svg": "06-figure/figures/FIG-Q3-BRACKET-ZOOM.svg",
+      "png": "06-figure/figures/FIG-Q3-BRACKET-ZOOM.png",
+      "png_sha256": "85d8ba2805e509cf71a983582ad6289a0ba4914e4e8296df3c8fe7459140427e",
+      "svg_sha256": "6dd472b0c19d6159911957a679ca40e749a6801e2bc6a0c8651bb4eae4b2efc3"
+    },
+    {
+      "id": "FIG-Q3-TIME-CONV",
+      "contract": "06-figure/contracts/FIG-Q3-TIME-CONV.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q3-TIME-CONV.csv",
+      "svg": "06-figure/figures/FIG-Q3-TIME-CONV.svg",
+      "png": "06-figure/figures/FIG-Q3-TIME-CONV.png",
+      "png_sha256": "f9e2057d41053afb8d868d760e1173f01ab7b085136eac8c96ae1d87cb141bba",
+      "svg_sha256": "c2c122ff350eb25725620c4f21b29946d063abe3118d0ac9b5151ccc44f8b8c2"
+    },
+    {
+      "id": "FIG-Q3-SENS-ONEFACTOR",
+      "contract": "06-figure/contracts/FIG-Q3-SENS-ONEFACTOR.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q3-SENS-ONEFACTOR.csv",
+      "svg": "06-figure/figures/FIG-Q3-SENS-ONEFACTOR.svg",
+      "png": "06-figure/figures/FIG-Q3-SENS-ONEFACTOR.png",
+      "png_sha256": "3c8d7e0f9eb08f3bcee7e6c0d70c251a58050c031e75ffdcfec1637afdff8a65",
+      "svg_sha256": "de2ff21063b4188641560e302bb992e1e76122e87e5499dec06cd57dc3c3037f"
+    },
+    {
+      "id": "FIG-Q3-COMBINED-BOUNDARY",
+      "contract": "06-figure/contracts/FIG-Q3-COMBINED-BOUNDARY.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q3-COMBINED-BOUNDARY.csv",
+      "svg": "06-figure/figures/FIG-Q3-COMBINED-BOUNDARY.svg",
+      "png": "06-figure/figures/FIG-Q3-COMBINED-BOUNDARY.png",
+      "png_sha256": "4c62fa8662f5be64b0970613939e129e72f710dfb376d49881e917a478ff921e",
+      "svg_sha256": "49cbb2091b6e2b4de59e7a51d081209cbbd1b0dcd6e36278b0892494a85415ec"
+    },
+    {
+      "id": "FIG-Q4-RADIUS-TIME",
+      "contract": "06-figure/contracts/FIG-Q4-RADIUS-TIME.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q4-RADIUS-TIME.csv",
+      "svg": "06-figure/figures/FIG-Q4-RADIUS-TIME.svg",
+      "png": "06-figure/figures/FIG-Q4-RADIUS-TIME.png",
+      "png_sha256": "fd1e7864ca3cc05eb22079bc8f95a51ff534dd7d707593147dbc0a121093196d",
+      "svg_sha256": "3371652773d31b6f55b6fde995b6b2b70ea3d6539c082bee851402c11342c190"
+    },
+    {
+      "id": "FIG-Q4-THRESHOLD-TRAJECTORY",
+      "contract": "06-figure/contracts/FIG-Q4-THRESHOLD-TRAJECTORY.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q4-THRESHOLD-TRAJECTORY.csv",
+      "svg": "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.svg",
+      "png": "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.png",
+      "png_sha256": "a37ad7803cf06a95fa8c40a59b2fcfa42b4a71270c526ec6ff07dd40ad50d962",
+      "svg_sha256": "2a0474dd8001e7522865db92bfc7569cca386f4e04cd342eb3a921ec5e898692"
+    },
+    {
+      "id": "FIG-Q4-IMPLEMENTATION-AGREEMENT",
+      "contract": "06-figure/contracts/FIG-Q4-IMPLEMENTATION-AGREEMENT.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q4-IMPLEMENTATION-AGREEMENT.csv",
+      "svg": "06-figure/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.svg",
+      "png": "06-figure/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.png",
+      "png_sha256": "b9830d52124119012b31352838cde0aacae1010bd448ae2346d94fa9bcd9100e",
+      "svg_sha256": "b73025c613b52a3a7eea14edc9ffa3a3fe064fb19743a7cf6036cba8590b7ffd"
+    },
+    {
+      "id": "FIG-Q4-JACOBIAN-ABLATION",
+      "contract": "06-figure/contracts/FIG-Q4-JACOBIAN-ABLATION.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q4-JACOBIAN-ABLATION.csv",
+      "svg": "06-figure/figures/FIG-Q4-JACOBIAN-ABLATION.svg",
+      "png": "06-figure/figures/FIG-Q4-JACOBIAN-ABLATION.png",
+      "png_sha256": "a640d83d39c1af9c6c66b33f1f2014d084481e43f68c25c93776ce2521874b83",
+      "svg_sha256": "a82f19c1a1138f3f141510c8114daa1688cb450a3e80a5ade51e30247055f15c"
+    },
+    {
+      "id": "FIG-Q4-COMBINED-BOUNDARY",
+      "contract": "06-figure/contracts/FIG-Q4-COMBINED-BOUNDARY.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q4-COMBINED-BOUNDARY.csv",
+      "svg": "06-figure/figures/FIG-Q4-COMBINED-BOUNDARY.svg",
+      "png": "06-figure/figures/FIG-Q4-COMBINED-BOUNDARY.png",
+      "png_sha256": "72fdd9ec5f6790954d48d93043f1e7c9f514347cb246f7f80648c850a0819b1b",
+      "svg_sha256": "4949107eba82acedbb891b1ebc255382613b3bedf8df7a951a024e5e3cc75700"
+    },
+    {
+      "id": "FIG-VAL-BALANCE-RESIDUAL",
+      "contract": "06-figure/contracts/FIG-VAL-BALANCE-RESIDUAL.json",
+      "snapshot": "06-figure/data-snapshots/FIG-VAL-BALANCE-RESIDUAL.csv",
+      "svg": "06-figure/figures/FIG-VAL-BALANCE-RESIDUAL.svg",
+      "png": "06-figure/figures/FIG-VAL-BALANCE-RESIDUAL.png",
+      "png_sha256": "eabbc21ee6ed5547e30470f396e45d67f30def31d8583925eaec580372afbfad",
+      "svg_sha256": "c4fa615456424e25cae129270e05660d598b80ab97a12f257effcd5763ea0420"
+    },
+    {
+      "id": "FIG-Q1-GRID-CONV",
+      "contract": "06-figure/contracts/FIG-Q1-GRID-CONV.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q1-GRID-CONV.csv",
+      "svg": "06-figure/figures/FIG-Q1-GRID-CONV.svg",
+      "png": "06-figure/figures/FIG-Q1-GRID-CONV.png",
+      "png_sha256": "6aaa3d8810b75a612a2ea319a3d8a2f878feddb16b44d223aaf9d82bb9b91d7f",
+      "svg_sha256": "b211ac08225ca0b1d0b3208f72a7e5edcee70a7a3a7e0439df65ac34fd617ad5"
+    },
+    {
+      "id": "FIG-Q2-V02-MARGIN",
+      "contract": "06-figure/contracts/FIG-Q2-V02-MARGIN.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q2-V02-MARGIN.csv",
+      "svg": "06-figure/figures/FIG-Q2-V02-MARGIN.svg",
+      "png": "06-figure/figures/FIG-Q2-V02-MARGIN.png",
+      "png_sha256": "0d76185c17a59ecd4e22c823b4dd9df8b639394af47e6f56864f4c865ada3897",
+      "svg_sha256": "ddbbafd80e4d8179800b6866729635fdd0740e1f1fbb3ab149a8061b08df2570"
+    },
+    {
+      "id": "FIG-Q3-SPACE-CONV",
+      "contract": "06-figure/contracts/FIG-Q3-SPACE-CONV.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q3-SPACE-CONV.csv",
+      "svg": "06-figure/figures/FIG-Q3-SPACE-CONV.svg",
+      "png": "06-figure/figures/FIG-Q3-SPACE-CONV.png",
+      "png_sha256": "9c7bd245473b6579c80469335cac874aa6d6331de850984232bc7d75c0ba9440",
+      "svg_sha256": "247bee57d15055eba9a36a3bb3d92f53ee7f098baec061000711d2a1ff6f6f5a"
+    },
+    {
+      "id": "FIG-Q4-BRACKET-ZOOM",
+      "contract": "06-figure/contracts/FIG-Q4-BRACKET-ZOOM.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q4-BRACKET-ZOOM.csv",
+      "svg": "06-figure/figures/FIG-Q4-BRACKET-ZOOM.svg",
+      "png": "06-figure/figures/FIG-Q4-BRACKET-ZOOM.png",
+      "png_sha256": "bd324173184667a1c8f6de15510ba9c1f6c3c856efca4c9a188f2d4e5ab56964",
+      "svg_sha256": "1d427da8354108e4d203117e8e9ffbd2f003bf72feded8f928a5ba50d1a3bf00"
+    },
+    {
+      "id": "FIG-Q4-SPACE-CONV",
+      "contract": "06-figure/contracts/FIG-Q4-SPACE-CONV.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q4-SPACE-CONV.csv",
+      "svg": "06-figure/figures/FIG-Q4-SPACE-CONV.svg",
+      "png": "06-figure/figures/FIG-Q4-SPACE-CONV.png",
+      "png_sha256": "50d9b52b8c6f09e16ebb42baab665e81487bf621f1dd59cfb262f2f0c5028e33",
+      "svg_sha256": "a3c7f6ca355c7ae53cc1b1e0cd24f3bc05887c5b8c59bc1c42bd0d24ed01e0e7"
+    },
+    {
+      "id": "FIG-Q4-DRY-SOLID-CONTINUITY",
+      "contract": "06-figure/contracts/FIG-Q4-DRY-SOLID-CONTINUITY.json",
+      "snapshot": "06-figure/data-snapshots/FIG-Q4-DRY-SOLID-CONTINUITY.csv",
+      "svg": "06-figure/figures/FIG-Q4-DRY-SOLID-CONTINUITY.svg",
+      "png": "06-figure/figures/FIG-Q4-DRY-SOLID-CONTINUITY.png",
+      "png_sha256": "6e63a9d4acd72d04fbb1dd1059b6422c9e9b7e03f68febc44ebe0d4022a14848",
+      "svg_sha256": "8821479a6cbded90a2c0899d170aef146731ff1c3742679a7ed80c81874ce62d"
+    },
+    {
+      "id": "TAB-Q2-MODEL-CONTRACT",
+      "contract": "06-figure/contracts/TAB-Q2-MODEL-CONTRACT.json",
+      "csv": "06-figure/figures/TAB-Q2-MODEL-CONTRACT.csv",
+      "markdown": "06-figure/figures/TAB-Q2-MODEL-CONTRACT.md"
+    },
+    {
+      "id": "TAB-APPLICABILITY-FAILURE",
+      "contract": "06-figure/contracts/TAB-APPLICABILITY-FAILURE.json",
+      "csv": "06-figure/figures/TAB-APPLICABILITY-FAILURE.csv",
+      "markdown": "06-figure/figures/TAB-APPLICABILITY-FAILURE.md"
+    },
+    {
+      "id": "TAB-STRATEGY-ASSUMPTION",
+      "contract": "06-figure/contracts/TAB-STRATEGY-ASSUMPTION.json",
+      "csv": "06-figure/figures/TAB-STRATEGY-ASSUMPTION.csv",
+      "markdown": "06-figure/figures/TAB-STRATEGY-ASSUMPTION.md"
+    },
+    {
+      "id": "TAB-VAL-V01-V12",
+      "contract": "06-figure/contracts/TAB-VAL-V01-V12.json",
+      "csv": "06-figure/figures/TAB-VAL-V01-V12.csv",
+      "markdown": "06-figure/figures/TAB-VAL-V01-V12.md"
+    },
+    {
+      "id": "TAB-CLAIM-LIMIT",
+      "contract": "06-figure/contracts/TAB-CLAIM-LIMIT.json",
+      "csv": "06-figure/figures/TAB-CLAIM-LIMIT.csv",
+      "markdown": "06-figure/figures/TAB-CLAIM-LIMIT.md"
+    }
+  ]
+}

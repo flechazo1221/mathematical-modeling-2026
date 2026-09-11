@@ -76,10 +76,10 @@
     }
   ],
   "commands": [
-    "\"C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" 04-compute/src/formal_compute.py --mode p1",
-    "\"C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" 04-compute/src/formal_compute.py --mode full",
-    "\"C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" 04-compute/src/formal_compute.py --mode extended",
-    "\"C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" 04-compute/src/finalize_compute.py"
+    "\"C:\\Users\\Linza\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" 04-compute/src/formal_compute.py --mode p1",
+    "\"C:\\Users\\Linza\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" 04-compute/src/formal_compute.py --mode full",
+    "\"C:\\Users\\Linza\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" 04-compute/src/formal_compute.py --mode extended",
+    "\"C:\\Users\\Linza\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" 04-compute/src/finalize_compute.py"
   ],
   "numerical_contract": {
     "method": "cell-centered conservative axisymmetric FV on two-sided locally refined radial grids; backward-Euler coefficient Picard; preconditioned CG",
@@ -105,7 +105,7 @@
     },
     {
       "path": "04-compute/logs/extended.log",
-      "sha256": "5e6773145284b9c8078a2b9d8cd00c0771e7e957bbfb52c897dc4b0b69844a41"
+      "sha256": "08c1e27dd2bf830fc1bfd9279f6e8f5b6de674356f591b8a052c5521022e03d5"
     },
     {
       "path": "04-compute/logs/full.log",
@@ -185,7 +185,7 @@
     },
     {
       "path": "04-compute/results/sensitivity-extended.csv",
-      "sha256": "f778eb33975d0df7eb3c25a54eb05cb46f3d5e2f797948cdbd7168eaf3038903"
+      "sha256": "b2a18452cccd050d38635ddc18bb85a95c7e1c63a1f068b64999a86a8f0cd66a"
     },
     {
       "path": "04-compute/results/sensitivity.csv",
@@ -200,16 +200,8 @@
       "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb"
     },
     {
-      "path": "04-compute/src/__pycache__/finalize_compute.cpython-312.pyc",
-      "sha256": "6bb2f7057f6525055949e2b12002984442f28727bd204a1bbdedf40e9d8cd856"
-    },
-    {
-      "path": "04-compute/src/__pycache__/formal_compute.cpython-312.pyc",
-      "sha256": "51a033aecd4f9dbeca874659d6ceeadc8d88af1005d26d0b1eaaf5c3848533de"
-    },
-    {
       "path": "04-compute/src/finalize_compute.py",
-      "sha256": "ce07efb95caba39f36f462f76acdf5ab30567efc72bd6ada771e7dea90e6743e"
+      "sha256": "db42bf1398722d58bf6be526d464896f232b4b827118793ad45b68631ee254d1"
     },
     {
       "path": "04-compute/src/formal_compute.py",

@@ -1,0 +1,23 @@
+{
+  "figure_id": "FIG-Q2-GRID-CONV",
+  "snapshot": "06-figure/data-snapshots/FIG-Q2-GRID-CONV.csv",
+  "snapshot_sha256": "d8a9ca7c399aaa16357bf8e2b059484f92c733d950fd76b69ea6acc9ea1a7f0a",
+  "sources": [
+    {
+      "path": "04-compute/results/field-grid-convergence.csv",
+      "sha256": "36e8cd85789d68c6c07efb304441425bd7948430473fbd14593c6c3fef3d57f5"
+    }
+  ],
+  "rows": 3,
+  "columns": [
+    "scope",
+    "family",
+    "nr",
+    "nz",
+    "grid_strategy",
+    "fixed_dt_s",
+    "metric",
+    "value",
+    "adjacent_change"
+  ]
+}

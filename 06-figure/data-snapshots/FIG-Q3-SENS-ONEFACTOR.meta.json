@@ -1,0 +1,25 @@
+{
+  "figure_id": "FIG-Q3-SENS-ONEFACTOR",
+  "snapshot": "06-figure/data-snapshots/FIG-Q3-SENS-ONEFACTOR.csv",
+  "snapshot_sha256": "016ad45dc867253cbf13c7896eb4f0d2d570808ee2830405744179bda476690e",
+  "sources": [
+    {
+      "path": "04-compute/results/sensitivity.csv",
+      "sha256": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf"
+    }
+  ],
+  "rows": 11,
+  "columns": [
+    "scope",
+    "factor",
+    "level",
+    "value",
+    "t_star_s",
+    "final_max_C",
+    "final_mean_C",
+    "scenario",
+    "time_h",
+    "display_h",
+    "crossed"
+  ]
+}

@@ -8,12 +8,14 @@ import numpy,openpyxl,PIL
 ROOT=Path(__file__).resolve().parents[2]; OUT=ROOT/"04-compute"
 def digest(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 def item(rel): return {"path":rel.as_posix(),"sha256":digest(ROOT/rel)}
+def stable_output(p):
+ return p.is_file() and "__pycache__" not in p.parts and p.suffix != ".pyc"
 
 inputs=[Path("decisions/H2-model.json"),Path("decisions/H1-problem.json"),Path("03-prototype/handoff.json"),
         Path("02-design/候选模型方案.md"),Path("02-design/H2-优化审计与方向.md"),Path("02-design/验证计划.json")]
 inputs += sorted(Path("02-design/contracts").glob("*.json"))
 inputs += sorted(p for p in Path("input/A题/附件").rglob("*") if p.is_file())
-files=sorted([p for p in OUT.rglob("*") if p.is_file() and p.name not in {"复现清单.json","证据索引.json","handoff.json"}])
+files=sorted([p for p in OUT.rglob("*") if stable_output(p) and p.name not in {"复现清单.json","证据索引.json","handoff.json"}])
 manifest={"schema_version":"1.0","stage":"COMPUTE","seed":20260911,
  "environment":{"python":sys.version,"platform":platform.platform(),"numpy":numpy.__version__,"openpyxl":openpyxl.__version__,"Pillow":PIL.__version__},
  "inputs":[item(p) for p in inputs],
@@ -41,7 +43,7 @@ evidence={"schema_version":"1.0","stage":"COMPUTE","status":stage_status,
  "key_values":metrics,"validation_status":stage_status,"failed_validations":[r for r in validation_rows if r["status"]!="PASS"],"diagnostic_figures":["04-compute/diagnostic-figures/diagnostic-threshold.png","04-compute/diagnostic-figures/diagnostic-convergence.png","04-compute/diagnostic-figures/diagnostic-sensitivity.png"]}
 (OUT/"证据索引.json").write_text(json.dumps(evidence,ensure_ascii=False,indent=2),encoding="utf-8")
 
-all_outputs=sorted([p for p in OUT.rglob("*") if p.is_file() and p.name!="handoff.json"])
+all_outputs=sorted([p for p in OUT.rglob("*") if stable_output(p) and p.name!="handoff.json"])
 handoff={"schema_version":"1.0","stage":"COMPUTE","status":stage_status,"inputs":[item(p) for p in inputs],
  "outputs":[{"path":p.relative_to(ROOT).as_posix(),"sha256":digest(p)} for p in all_outputs],
  "frozen_decisions":[item(Path("decisions/H1-problem.json")),item(Path("decisions/H2-model.json"))],

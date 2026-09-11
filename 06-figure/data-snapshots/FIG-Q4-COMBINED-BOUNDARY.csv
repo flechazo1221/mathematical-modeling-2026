@@ -1,0 +1,3 @@
+﻿scope,factor,level,value,t_star_s,final_max_C,final_mean_C,scenario,time_h,display_h,crossed
+Q4,combined_boundary_empirical,low,"(0.8, 0.8, 0.8, 1.2)",259200.0,0.1669767340423535,0.1322743082406342,combined_boundary_empirical-low,72.0,72.0,True
+Q4,combined_boundary_empirical,high,"(1.2, 1.2, 1.2, 0.8)",118680.0,0.1499429605180954,0.1136812158657812,combined_boundary_empirical-high,32.96666666666667,32.96666666666667,True

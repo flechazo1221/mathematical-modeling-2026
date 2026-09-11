@@ -1,0 +1,36 @@
+{
+  "figure_id": "FIG-Q2-GRID-CONV",
+  "claim_ids": [
+    "Q2-OBS-02"
+  ],
+  "question": "M3终值随网格如何收敛？",
+  "source_files": [
+    {
+      "path": "04-compute/results/field-grid-convergence.csv",
+      "sha256": "36e8cd85789d68c6c07efb304441425bd7948430473fbd14593c6c3fef3d57f5"
+    }
+  ],
+  "x": null,
+  "y": null,
+  "groups": [],
+  "uncertainty": null,
+  "required_comparisons": [
+    "网格收敛图"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "recompute model",
+    "change metric",
+    "omit failures",
+    "present conditional simulation as observation"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "placement": "主文",
+  "mandatory_limit": "必须标窄裕量PASS",
+  "snapshot": "06-figure/data-snapshots/FIG-Q2-GRID-CONV.csv",
+  "snapshot_sha256": "d8a9ca7c399aaa16357bf8e2b059484f92c733d950fd76b69ea6acc9ea1a7f0a"
+}

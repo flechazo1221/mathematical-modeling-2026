@@ -243,6 +243,33 @@
       "affected_files": [
         "05-evidence/正式图表需求.json"
       ]
+    },
+    {
+      "event": "GATE_APPROVED",
+      "at": "2026-09-11T23:44:28+08:00",
+      "gate": "H3",
+      "next_stage": "FIGURE"
+    },
+    {
+      "event": "STAGE_STARTED",
+      "at": "2026-09-11T23:45:24+08:00",
+      "stage": "FIGURE",
+      "thread_id": "/root/figure_stage"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-11T23:59:17+08:00",
+      "stage": "FIGURE",
+      "affected_files": [
+        "06-figure/figure-manifest.json",
+        "06-figure/handoff.json"
+      ]
+    },
+    {
+      "event": "STAGE_COMPLETED",
+      "at": "2026-09-11T23:59:18+08:00",
+      "stage": "FIGURE",
+      "next_stage": "APPENDIX"
     }
   ]
 }

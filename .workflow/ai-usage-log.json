@@ -128,6 +128,17 @@
       ],
       "human_review": "等待H3团队选择叙事方案与最小集/扩展集",
       "recorded_at": "2026-09-11T22:40:59+08:00"
+    },
+    {
+      "stage": "FIGURE",
+      "tool_or_model": "Codex figure stage task",
+      "purpose": "按H3冻结清单制作正式图表与视觉审计",
+      "affected_files": [
+        "06-figure/figure-manifest.json",
+        "06-figure/handoff.json"
+      ],
+      "human_review": "等待论文阶段整合与最终团队复核",
+      "recorded_at": "2026-09-11T23:59:17+08:00"
     }
   ]
 }

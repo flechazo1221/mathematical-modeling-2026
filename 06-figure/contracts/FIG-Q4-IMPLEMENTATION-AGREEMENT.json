@@ -1,0 +1,40 @@
+{
+  "figure_id": "FIG-Q4-IMPLEMENTATION-AGREEMENT",
+  "claim_ids": [
+    "Q4-OBS-01"
+  ],
+  "question": "reference与moving-FV能否复现同一事件？",
+  "source_files": [
+    {
+      "path": "04-compute/results/run-summary.csv",
+      "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"
+    },
+    {
+      "path": "04-compute/results/convergence.csv",
+      "sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f"
+    }
+  ],
+  "x": null,
+  "y": null,
+  "groups": [],
+  "uncertainty": null,
+  "required_comparisons": [
+    "配对点与差值放大"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "recompute model",
+    "change metric",
+    "omit failures",
+    "present conditional simulation as observation"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "placement": "主文",
+  "mandatory_limit": "一致性不等于现实准确性",
+  "snapshot": "06-figure/data-snapshots/FIG-Q4-IMPLEMENTATION-AGREEMENT.csv",
+  "snapshot_sha256": "5bc2e085945b05cbb8f4749ffe9e845e5426f888ec623577ca1e4b0d9f682b0c"
+}

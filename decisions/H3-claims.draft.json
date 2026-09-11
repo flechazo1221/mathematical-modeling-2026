@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "gate": "H3",
+  "status": "DRAFT",
+  "question": "确认核心结论、正式图表、局限和论文叙事",
+  "selected_options": [],
+  "reasons": [],
+  "accepted_assumptions": [],
+  "rejected_options": [],
+  "required_validations": [],
+  "prohibited_changes": [],
+  "delegations": [],
+  "confirmed_by": [],
+  "confirmed_at": null,
+  "supersedes": null
+}

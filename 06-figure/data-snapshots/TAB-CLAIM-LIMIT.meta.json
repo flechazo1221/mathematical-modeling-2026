@@ -1,0 +1,19 @@
+{
+  "figure_id": "TAB-CLAIM-LIMIT",
+  "snapshot": "06-figure/data-snapshots/TAB-CLAIM-LIMIT.csv",
+  "snapshot_sha256": "797dc5c44ce125fa67d4ba06c9012f66924079fe3567bc0762f687c66b3f95dc",
+  "sources": [
+    {
+      "path": "05-evidence/主张证据映射.json",
+      "sha256": "f2f3eab255f3e0a13fdc1f76d0e2c4e0d75e20023bd4c1203f11f07b54b83fc1"
+    }
+  ],
+  "rows": 14,
+  "columns": [
+    "id",
+    "class",
+    "claim",
+    "support",
+    "limits"
+  ]
+}

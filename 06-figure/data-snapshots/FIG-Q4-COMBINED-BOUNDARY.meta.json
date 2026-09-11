@@ -1,0 +1,25 @@
+{
+  "figure_id": "FIG-Q4-COMBINED-BOUNDARY",
+  "snapshot": "06-figure/data-snapshots/FIG-Q4-COMBINED-BOUNDARY.csv",
+  "snapshot_sha256": "4503d311ddafeb5cc3c4b06494b52c09c7aa3205eec3f126e6a6f7513dfd30b7",
+  "sources": [
+    {
+      "path": "04-compute/results/sensitivity.csv",
+      "sha256": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf"
+    }
+  ],
+  "rows": 2,
+  "columns": [
+    "scope",
+    "factor",
+    "level",
+    "value",
+    "t_star_s",
+    "final_max_C",
+    "final_mean_C",
+    "scenario",
+    "time_h",
+    "display_h",
+    "crossed"
+  ]
+}

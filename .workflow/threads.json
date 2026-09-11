@@ -71,6 +71,15 @@
         "host_id": "local",
         "finished_at": "2026-09-11T22:03:44+08:00"
       }
+    ],
+    "FIGURE": [
+      {
+        "thread_id": "/root/figure_stage",
+        "started_at": "2026-09-11T23:45:24+08:00",
+        "status": "PASS",
+        "host_id": "local",
+        "finished_at": "2026-09-11T23:59:18+08:00"
+      }
     ]
   }
 }

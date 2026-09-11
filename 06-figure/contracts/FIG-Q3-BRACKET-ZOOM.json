@@ -1,0 +1,40 @@
+{
+  "figure_id": "FIG-Q3-BRACKET-ZOOM",
+  "claim_ids": [
+    "Q3-OBS-01"
+  ],
+  "question": "插值时刻如何由前后点夹逼？",
+  "source_files": [
+    {
+      "path": "04-compute/results/q3-threshold-trajectory.csv",
+      "sha256": "68d78e1922d192eac3d74b6056713b595371c29447c52ea37cc4874c1898f244"
+    },
+    {
+      "path": "04-compute/results/run-summary.csv",
+      "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"
+    }
+  ],
+  "x": null,
+  "y": null,
+  "groups": [],
+  "uncertainty": null,
+  "required_comparisons": [
+    "阈值邻域放大"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "recompute model",
+    "change metric",
+    "omit failures",
+    "present conditional simulation as observation"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "placement": "主文",
+  "mandatory_limit": "不得暗示秒级物理精度",
+  "snapshot": "06-figure/data-snapshots/FIG-Q3-BRACKET-ZOOM.csv",
+  "snapshot_sha256": "b51a0aacc15f76d188ebceff72682c775a6f6ef4c6cb450388679996a2852c7a"
+}

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="468.212848pt" height="273.980531pt" viewBox="0 0 468.212848 273.980531" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-11T23:57:30.516339</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 273.980531 
+L 468.212848 273.980531 
+L 468.212848 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 85.737031 240.061 
+L 459.597031 240.061 
+L 459.597031 7.213 
+L 85.737031 7.213 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="PathCollection_1">
+    <defs>
+     <path id="C0_0_94bc8063db" d="M 0 3.872983 
+C 1.027127 3.872983 2.012324 3.464901 2.738613 2.738613 
+C 3.464901 2.012324 3.872983 1.027127 3.872983 -0 
+C 3.872983 -1.027127 3.464901 -2.012324 2.738613 -2.738613 
+C 2.012324 -3.464901 1.027127 -3.872983 0 -3.872983 
+C -1.027127 -3.872983 -2.012324 -3.464901 -2.738613 -2.738613 
+C -3.464901 -2.012324 -3.872983 -1.027127 -3.872983 0 
+C -3.872983 1.027127 -3.464901 2.012324 -2.738613 2.738613 
+C -2.012324 3.464901 -1.027127 3.872983 0 3.872983 
+z
+"/>
+    </defs>
+    <g clip-path="url(#p055b068f1b)">
+     <use xlink:href="#C0_0_94bc8063db" x="102.730668" y="123.824281" style="fill: #0072b2; stroke: #0072b2"/>
+    </g>
+    <g clip-path="url(#p055b068f1b)">
+     <use xlink:href="#C0_0_94bc8063db" x="442.603395" y="123.449281" style="fill: #e69f00; stroke: #e69f00"/>
+    </g>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m5111e4184e" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m5111e4184e" x="102.730668" y="240.061" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 7px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="102.730668" y="252.656625" transform="rotate(-0 102.730668 252.656625)">reference</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m5111e4184e" x="442.603395" y="240.061" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 7px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="442.603395" y="252.616156" transform="rotate(-0 442.603395 252.616156)">moving-FV</text>
+     </g>
+    </g>
+    <g id="text_3">
+     <text style="font-size: 8px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="272.667031" y="264.791781" transform="rotate(-0 272.667031 264.791781)">数值实现</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_3">
+      <path d="M 85.737031 220.375 
+L 459.597031 220.375 
+" clip-path="url(#p055b068f1b)" style="fill: none; stroke: #dddddd; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <defs>
+       <path id="m5140d71722" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m5140d71722" x="85.737031" y="220.375" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 7px; font-family: 'Microsoft YaHei'; text-anchor: end" x="78.737031" y="223.168969" transform="rotate(-0 78.737031 223.168969)">183789.33174900</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_5">
+      <path d="M 85.737031 188.75 
+L 459.597031 188.75 
+" clip-path="url(#p055b068f1b)" style="fill: none; stroke: #dddddd; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m5140d71722" x="85.737031" y="188.75" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 7px; font-family: 'Microsoft YaHei'; text-anchor: end" x="78.737031" y="191.543969" transform="rotate(-0 78.737031 191.543969)">183789.33174905</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_7">
+      <path d="M 85.737031 157.140625 
+L 459.597031 157.140625 
+" clip-path="url(#p055b068f1b)" style="fill: none; stroke: #dddddd; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m5140d71722" x="85.737031" y="157.140625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 7px; font-family: 'Microsoft YaHei'; text-anchor: end" x="78.737031" y="159.934594" transform="rotate(-0 78.737031 159.934594)">183789.33174910</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_9">
+      <path d="M 85.737031 125.515625 
+L 459.597031 125.515625 
+" clip-path="url(#p055b068f1b)" style="fill: none; stroke: #dddddd; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m5140d71722" x="85.737031" y="125.515625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 7px; font-family: 'Microsoft YaHei'; text-anchor: end" x="78.737031" y="128.309594" transform="rotate(-0 78.737031 128.309594)">183789.33174915</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_11">
+      <path d="M 85.737031 93.90625 
+L 459.597031 93.90625 
+" clip-path="url(#p055b068f1b)" style="fill: none; stroke: #dddddd; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m5140d71722" x="85.737031" y="93.90625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 7px; font-family: 'Microsoft YaHei'; text-anchor: end" x="78.737031" y="96.700219" transform="rotate(-0 78.737031 96.700219)">183789.33174920</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_13">
+      <path d="M 85.737031 62.28125 
+L 459.597031 62.28125 
+" clip-path="url(#p055b068f1b)" style="fill: none; stroke: #dddddd; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m5140d71722" x="85.737031" y="62.28125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 7px; font-family: 'Microsoft YaHei'; text-anchor: end" x="78.737031" y="65.075219" transform="rotate(-0 78.737031 65.075219)">183789.33174925</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_15">
+      <path d="M 85.737031 30.671875 
+L 459.597031 30.671875 
+" clip-path="url(#p055b068f1b)" style="fill: none; stroke: #dddddd; stroke-width: 0.5; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m5140d71722" x="85.737031" y="30.671875" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 7px; font-family: 'Microsoft YaHei'; text-anchor: end" x="78.737031" y="33.465844" transform="rotate(-0 78.737031 33.465844)">183789.33174930</text>
+     </g>
+    </g>
+    <g id="text_11">
+     <text style="font-size: 8px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="13.595" y="123.637" transform="rotate(-90 13.595 123.637)">插值事件时刻 (s)</text>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 85.737031 240.0625 
+L 85.737031 7.21875 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 85.737031 240.061 
+L 459.597031 240.061 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 8px; font-family: 'Microsoft YaHei'; text-anchor: start" x="89.475631" y="221.43316" transform="rotate(-0 89.475631 221.43316)">差 5.82e-10 s；两者均报告 183840 s</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 8px; font-family: 'Microsoft YaHei'; text-anchor: start" x="89.475631" y="235.40404" transform="rotate(-0 89.475631 235.40404)">实现一致性不等于现实准确性</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p055b068f1b">
+   <rect x="85.737031" y="7.213" width="373.86" height="232.848"/>
+  </clipPath>
+ </defs>
+</svg>

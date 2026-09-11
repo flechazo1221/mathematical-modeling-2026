@@ -1,0 +1,36 @@
+{
+  "figure_id": "FIG-Q4-THRESHOLD-TRAJECTORY",
+  "claim_ids": [
+    "Q4-OBS-01"
+  ],
+  "question": "收缩域何时达到全域判据？",
+  "source_files": [
+    {
+      "path": "04-compute/results/q4-threshold-trajectory.csv",
+      "sha256": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8"
+    }
+  ],
+  "x": null,
+  "y": null,
+  "groups": [],
+  "uncertainty": null,
+  "required_comparisons": [
+    "移动域阈值轨迹"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "recompute model",
+    "change metric",
+    "omit failures",
+    "present conditional simulation as observation"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "placement": "主文",
+  "mandatory_limit": "不可外推为真实时刻",
+  "snapshot": "06-figure/data-snapshots/FIG-Q4-THRESHOLD-TRAJECTORY.csv",
+  "snapshot_sha256": "16e83f9d135e255cb154561a9fa4fa1496177a0c752224ef9832f9d621c5d15a"
+}
