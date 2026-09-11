@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "workflow-state.schema.json",
+  "title": "Math Modeling Workflow State",
+  "type": "object",
+  "required": ["schema_version", "project_id", "status", "current_stage", "completed_stages", "updated_at"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "project_id": {"type": "string", "minLength": 1},
+    "status": {"enum": ["NEW", "RUNNING", "WAITING_FOR_TEAM", "WAITING_FOR_LITERATURE", "FAIL", "BLOCKED", "COMPLETE"]},
+    "current_stage": {"type": "string", "minLength": 1},
+    "completed_stages": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "active_thread_id": {"type": ["string", "null"]},
+    "next_stage": {"type": ["string", "null"]},
+    "blocking_items": {"type": "array", "items": {"type": "string"}},
+    "updated_at": {"type": "string", "format": "date-time"}
+  },
+  "additionalProperties": true
+}

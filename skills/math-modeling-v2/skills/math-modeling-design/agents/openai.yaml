@@ -1,0 +1,4 @@
+interface:
+  display_name: "数学建模方案设计"
+  short_description: "从已批准题意提出基线、候选模型和验证方案"
+  default_prompt: "使用 $math-modeling-design 形成可比较的候选模型方案，但不替团队作最终选择。"

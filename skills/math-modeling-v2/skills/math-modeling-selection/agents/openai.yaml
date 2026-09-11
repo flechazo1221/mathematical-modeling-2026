@@ -1,0 +1,4 @@
+interface:
+  display_name: "数学建模选题评估"
+  short_description: "按可理解、可处理、可检验、可实现与AI可靠性比较候选题"
+  default_prompt: "使用 $math-modeling-selection 对候选赛题进行同口径评估，并准备 H0 人工选题包。"

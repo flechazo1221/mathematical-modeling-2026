@@ -1,0 +1,4 @@
+interface:
+  display_name: "数学建模正式绘图"
+  short_description: "工作流正式出图，或先生成一张独立初稿再细化需求"
+  default_prompt: "使用 $math-modeling-figure 从证据生成一张可审阅图；独立任务先出初稿，再根据我的反馈细化。"
