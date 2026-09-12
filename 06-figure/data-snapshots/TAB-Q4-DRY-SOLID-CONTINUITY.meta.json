@@ -1,0 +1,11 @@
+{
+  "figure_id": "TAB-Q4-DRY-SOLID-CONTINUITY",
+  "snapshot": "06-figure/data-snapshots/TAB-Q4-DRY-SOLID-CONTINUITY.csv",
+  "snapshot_sha256": "c68d7bfe7db8d351375ad71c296f6e187056968dcb93112bb19532ee68e4dfc9",
+  "sources": [
+    {"path": "04-compute/results/validation-register.csv", "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb"},
+    {"path": "04-compute/results/run-summary.csv", "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"}
+  ],
+  "rows": 3,
+  "columns": ["metric", "value", "interpretation", "conclusion"]
+}

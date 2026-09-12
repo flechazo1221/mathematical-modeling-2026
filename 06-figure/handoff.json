@@ -13,19 +13,19 @@
     },
     {
       "path": "decisions/H3-claims.json",
-      "sha256": "f21ac63c8c778b2e6cb7c476bc82354aa99bf6a5f2a882f15bed6046d232c8a8"
+      "sha256": "75fa934828f09a4f9d1c59d02e4d7570370fbde4f91d5b695e8e4a52132d7ccb"
     },
     {
       "path": "04-compute/handoff.json",
-      "sha256": "cb093e7497eb4ea4ad53c87c9345ab803473509dde686535f083b91f37bce19e"
+      "sha256": "21b736c942d5aa79ea08c4da9a93129854271f101c89c426dcbb79d9da73eb95"
     },
     {
       "path": "05-evidence/handoff.json",
-      "sha256": "1284675ab18eb26af31f0d4a3ae3c1be1df19b5e2ce5fc424f46b7b28a5ea3f5"
+      "sha256": "063086dfe74aaf789ba711dfa441b0bc53e68dc99630ca0f898f9ecbae84c6f0"
     },
     {
       "path": "05-evidence/正式图表需求.json",
-      "sha256": "8c0464e43869ea3c775e05463561861b82a39330e2666775962ebd9da3c67078"
+      "sha256": "ed35894abd84540c10005f52347e0897257d86639b6f875633a854f3661e3bf3"
     },
     {
       "path": "05-evidence/主张证据映射.json",
@@ -34,12 +34,304 @@
   ],
   "outputs": [
     {
+      "path": "06-figure/beautified-20260912/approval-register.json",
+      "sha256": "211cc746ec69182e4eeb6cf11b0e15a5c68bb8e47a308ff71585c22e27257448"
+    },
+    {
+      "path": "06-figure/beautified-20260912/contracts/FIG-Q1-C-FIELD.json",
+      "sha256": "79c624217e3fa379fa19885ad9edd4453797a7f53008c82dc47e535a49852ea2"
+    },
+    {
+      "path": "06-figure/beautified-20260912/contracts/FIG-Q1-END-EFFECT.json",
+      "sha256": "33eb649705d5db0527c37a3c17463064809e3c8b2b0505d0274fe101c14d166b"
+    },
+    {
+      "path": "06-figure/beautified-20260912/contracts/FIG-Q2-C-PROFILES.json",
+      "sha256": "3faa80fcebadeec65f10ef9016bf9d051627f4a0240e52df4d0ff9c5cd6ec7fc"
+    },
+    {
+      "path": "06-figure/beautified-20260912/contracts/FIG-Q2-GRID-CONV.json",
+      "sha256": "4701fbb202e2360878524bc2f2c0a50e8a7a469cf7c866b337eede06780124b6"
+    },
+    {
+      "path": "06-figure/beautified-20260912/contracts/FIG-Q3-TIME-CONV.json",
+      "sha256": "e3cc649353fe292951fb3d0c2b527d31d04f481943da8090b85f3000026e7d1d"
+    },
+    {
+      "path": "06-figure/beautified-20260912/data-snapshots/FIG-Q1-C-FIELD.csv",
+      "sha256": "370c0da992b7ada9cdcc517d33771a8908b0c7d357eae414e7af2f9541928436"
+    },
+    {
+      "path": "06-figure/beautified-20260912/data-snapshots/FIG-Q1-C-FIELD.meta.json",
+      "sha256": "7ad8067e491ea7dd6edf290571260ea2b26eda6138e8404b8137f675f6a48dbf"
+    },
+    {
+      "path": "06-figure/beautified-20260912/data-snapshots/FIG-Q1-END-EFFECT.csv",
+      "sha256": "9db497f8ae95fcbdebe11afedf65c427ee567353f303c1f872390b768705626d"
+    },
+    {
+      "path": "06-figure/beautified-20260912/data-snapshots/FIG-Q1-END-EFFECT.meta.json",
+      "sha256": "1099cf11420c25a74c447790e342e59398164e45ebbe661b6f24cd8f37ca429c"
+    },
+    {
+      "path": "06-figure/beautified-20260912/data-snapshots/FIG-Q2-C-PROFILES.csv",
+      "sha256": "a84c14955ec38a4de587203d6a9d3847678cdaf7b6850f6471eb1345410195ec"
+    },
+    {
+      "path": "06-figure/beautified-20260912/data-snapshots/FIG-Q2-C-PROFILES.meta.json",
+      "sha256": "51fb8a769fbeb907bef4b0edc6c77989ebfaccfe8648884a6ee9355c04a7434f"
+    },
+    {
+      "path": "06-figure/beautified-20260912/data-snapshots/FIG-Q2-GRID-CONV.csv",
+      "sha256": "d8a9ca7c399aaa16357bf8e2b059484f92c733d950fd76b69ea6acc9ea1a7f0a"
+    },
+    {
+      "path": "06-figure/beautified-20260912/data-snapshots/FIG-Q2-GRID-CONV.meta.json",
+      "sha256": "4452d1085554930a595434b9019d8e9d000a2175a5174bdb0fc35cf94825db7b"
+    },
+    {
+      "path": "06-figure/beautified-20260912/data-snapshots/FIG-Q3-TIME-CONV.csv",
+      "sha256": "dc736c4ccd654563f9ad39a0beca287c4340356ea71766770e3efa44a31ad4b1"
+    },
+    {
+      "path": "06-figure/beautified-20260912/data-snapshots/FIG-Q3-TIME-CONV.meta.json",
+      "sha256": "03b7441fa0bb970f3eb6cdd9adfd67d978f40d589c402a682b60ff39f5c167df"
+    },
+    {
+      "path": "06-figure/beautified-20260912/FIG-Q2-GRID-CONV-visual-audit.md",
+      "sha256": "3953b7e593a30bd51ddaf30682aadb78e13197515f205f259296f9301fd74915"
+    },
+    {
+      "path": "06-figure/beautified-20260912/fig8-redraw-record.json",
+      "sha256": "d955e143d1f8d0922cf79e170b6c355e36964aebf56641e62fa31ab1a3a94b4e"
+    },
+    {
+      "path": "06-figure/beautified-20260912/figures/FIG-Q1-C-FIELD.pdf",
+      "sha256": "4733dc65d8bbc4cd76a8936b289c6354e7b5d55570f0e2dfaeb38314830206be"
+    },
+    {
+      "path": "06-figure/beautified-20260912/figures/FIG-Q1-C-FIELD.png",
+      "sha256": "bfda2cca846758b03c54d3f10a57b211881c0a1fa41b2066df5450ff383958be"
+    },
+    {
+      "path": "06-figure/beautified-20260912/figures/FIG-Q1-C-FIELD.svg",
+      "sha256": "51e4e721a1a70b613d394958c25b161c085b269fcf3d79d2fd8bf010fc6d139a"
+    },
+    {
+      "path": "06-figure/beautified-20260912/figures/FIG-Q1-END-EFFECT.pdf",
+      "sha256": "ab52bc4c4c312b8930c6446179945d2e56a4dc991a453855cf5b37a1718c82fc"
+    },
+    {
+      "path": "06-figure/beautified-20260912/figures/FIG-Q1-END-EFFECT.png",
+      "sha256": "81809052e11f4f0d5454119dfe7b9ffa5827593f2a080665f922ee8c621935ff"
+    },
+    {
+      "path": "06-figure/beautified-20260912/figures/FIG-Q1-END-EFFECT.svg",
+      "sha256": "a3b5143eaa37339e4cc9610d3e0215079e36e099af5f6a787063b4eb1a42362d"
+    },
+    {
+      "path": "06-figure/beautified-20260912/figures/FIG-Q2-C-PROFILES.pdf",
+      "sha256": "9c317627a6395e3021b7a6b66f2a93dcccbe0d63aaa9aa1695756459b6e6d482"
+    },
+    {
+      "path": "06-figure/beautified-20260912/figures/FIG-Q2-C-PROFILES.png",
+      "sha256": "c064a8231cb178a39ce6fa2aa55eb767c2079ead432af4e0ffc206018352c2f9"
+    },
+    {
+      "path": "06-figure/beautified-20260912/figures/FIG-Q2-C-PROFILES.svg",
+      "sha256": "9cd83e4f920bf50338bbad7e47e248e7696fb7389fc0dbd699bc3be7c4a7db6b"
+    },
+    {
+      "path": "06-figure/beautified-20260912/figures/FIG-Q2-GRID-CONV.pdf",
+      "sha256": "856c9fb5b90b561d7f7542ac3f76bd9248a9934b11ee504b955a8fcfdd0c0a11"
+    },
+    {
+      "path": "06-figure/beautified-20260912/figures/FIG-Q2-GRID-CONV.png",
+      "sha256": "be908212358e8a5c62c44cb3128b7725ef7d7cd2e4cebfbbb0aefc969cd588fa"
+    },
+    {
+      "path": "06-figure/beautified-20260912/figures/FIG-Q2-GRID-CONV.svg",
+      "sha256": "4b5c19a9eb8c320eebf76332a3f8c812f4748af66f6001b4a2962d497e4bf11c"
+    },
+    {
+      "path": "06-figure/beautified-20260912/figures/FIG-Q3-TIME-CONV.pdf",
+      "sha256": "3c0a3daca6844fde9cd7c93a8483d04a6cc0ac428f02dbcc967defc6e01650c2"
+    },
+    {
+      "path": "06-figure/beautified-20260912/figures/FIG-Q3-TIME-CONV.png",
+      "sha256": "611e1a2ab9e9b0ba2954935993fc10d1abcbd735ed486db2be66c88b372212f3"
+    },
+    {
+      "path": "06-figure/beautified-20260912/figures/FIG-Q3-TIME-CONV.svg",
+      "sha256": "4cd81429ce5c692a183966bf0e9ec4fd56ad9d55f1fbd223dad478fb7e49e992"
+    },
+    {
+      "path": "06-figure/beautified-20260912/previews/FIG-Q1-C-FIELD-color.png",
+      "sha256": "ae3e5226ab2102a3f027ec4c92806547974e538821b270c2a640bfee42bebee0"
+    },
+    {
+      "path": "06-figure/beautified-20260912/previews/FIG-Q1-C-FIELD-grayscale.png",
+      "sha256": "7abf5bac7db68948b32702c3ca3a9e5a12ba96cf835670d233e47212645d737c"
+    },
+    {
+      "path": "06-figure/beautified-20260912/previews/FIG-Q1-END-EFFECT-color.png",
+      "sha256": "966af4da67c07626d45929f4979c4423aa5a6fb659a4c55745af3b07d2234abb"
+    },
+    {
+      "path": "06-figure/beautified-20260912/previews/FIG-Q1-END-EFFECT-grayscale.png",
+      "sha256": "8886e243ff3ec3bb5b4f3fe3de1c01406499b4dc144af10d5daf8ace9c9dd713"
+    },
+    {
+      "path": "06-figure/beautified-20260912/previews/FIG-Q2-C-PROFILES-color.png",
+      "sha256": "f239ed1b1a6f9b47f3b8aff517d4a2f3a0f77e6441b0f2c5ae9fe56e8b470d38"
+    },
+    {
+      "path": "06-figure/beautified-20260912/previews/FIG-Q2-C-PROFILES-grayscale.png",
+      "sha256": "1299177d153d91943eceb40e92e2af242cb99326e4368b502b3bf68ee832cfff"
+    },
+    {
+      "path": "06-figure/beautified-20260912/previews/FIG-Q2-GRID-CONV-color.png",
+      "sha256": "fec9ed6d9fdf4197125599a87e87951e2096eb8db8990f35b834a39cfea4c7a4"
+    },
+    {
+      "path": "06-figure/beautified-20260912/previews/FIG-Q2-GRID-CONV-grayscale.png",
+      "sha256": "102c91ece5118c6e5056bba37afdc6fcd806cd32e1e1ae22b76c83970938a2b9"
+    },
+    {
+      "path": "06-figure/beautified-20260912/previews/FIG-Q3-TIME-CONV-color.png",
+      "sha256": "488d247b7825969f724f343d36f55916db5c08ca61e3a94785179bd29dd61001"
+    },
+    {
+      "path": "06-figure/beautified-20260912/previews/FIG-Q3-TIME-CONV-grayscale.png",
+      "sha256": "2e8b4ef3d3d68facd83405814e87785e7b7025beec5077c28ac829908059d87d"
+    },
+    {
+      "path": "06-figure/beautified-20260912/scripts/build_beautified.py",
+      "sha256": "df20a597a049ae9317ea6160ccc56621c1e4fbcf40aec7980eb6477447ee62b0"
+    },
+    {
+      "path": "06-figure/beautified-20260912/scripts/record_approved_figure.py",
+      "sha256": "6be8cd036d3d6b37ccfcc407fc891f6d4969ddef673d01f72c84bba7ff63e39b"
+    },
+    {
+      "path": "06-figure/beautified-20260912/scripts/redraw_fig5.py",
+      "sha256": "906d3f4b601d4c108cb3c1ff8cd1543f1905df478beedfeca422e20b2c24ab53"
+    },
+    {
+      "path": "06-figure/beautified-20260912/scripts/redraw_fig8.py",
+      "sha256": "85c91d05a8f0a914d6a3882807931132b2f2000ea26d61396e8bb9b262b3a6e8"
+    },
+    {
+      "path": "06-figure/beautified-20260912/superseded/FIG-Q1-C-FIELD.png",
+      "sha256": "c357b211c6fd5b535f3afb37dc1ebd48273fed26f3f16d07c7b17a9e7ff61d84"
+    },
+    {
+      "path": "06-figure/beautified-20260912/superseded/FIG-Q1-C-FIELD.svg",
+      "sha256": "fa5c973c36f4815aba3ffa78728594abed47c52bbffeb74418dfdaff5736cec6"
+    },
+    {
+      "path": "06-figure/beautified-20260912/superseded/FIG-Q3-TIME-CONV.pre-redraw.pdf",
+      "sha256": "39d46be25bacbd28e22af983e42abc391baef2537d862090c30cc1d63dbf7597"
+    },
+    {
+      "path": "06-figure/beautified-20260912/superseded/FIG-Q3-TIME-CONV.pre-redraw.png",
+      "sha256": "f9e2057d41053afb8d868d760e1173f01ab7b085136eac8c96ae1d87cb141bba"
+    },
+    {
+      "path": "06-figure/beautified-20260912/superseded/FIG-Q3-TIME-CONV.pre-redraw.svg",
+      "sha256": "c2c122ff350eb25725620c4f21b29946d063abe3118d0ac9b5151ccc44f8b8c2"
+    },
+    {
+      "path": "06-figure/beautified-20260912/正式图表需求_美化版.json",
+      "sha256": "a3821345e6fe5f0265cd9a034e43c47e9a0806ef8a709125790967e0e2950b55"
+    },
+    {
+      "path": "06-figure/captioned-20260912/captioned-manifest.json",
+      "sha256": "d6baefea7d39e6afa8201af4a55a2d8502a72e9937484f08c071235cbf33b3f1"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q1-C-FIELD.png",
+      "sha256": "af68c4c3f5ecbd8d174ea34906810399f4442a73e677e7e25ed1b36cb27f32c3"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q1-END-EFFECT.png",
+      "sha256": "c16e050e1ada377eca6dee2b17833bcf87fdc71423ad4590914e8baa9a1bf37d"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q1-GRID-CONV.png",
+      "sha256": "97af63346cfad4fc84f235d9c9db56781923e4adf560fed4d7b3285a3a2409a7"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q2-C-PROFILES.png",
+      "sha256": "2429d2c925bd8a1bee9735434ae6f084578f76a77c6e3c3561705c59fd4b1415"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q2-GRID-CONV.png",
+      "sha256": "0f452a668e42419073ed9033b284f88e0e07ef7837a9638906c704d7f18048ff"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q2-MODEL-ABLATION.png",
+      "sha256": "7297c6141f85f290285d3bc1152f93df5003374adfa88cdf9aa7251f9e67b47a"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q3-BRACKET-ZOOM.png",
+      "sha256": "b63d913939cfdf96e904d832020a0d072426b672551b6161c0fe565c123f7bbd"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q3-COMBINED-BOUNDARY.png",
+      "sha256": "9320e5fa442bd219e1acb8587c55e6f37dab9a7501c6db421dfad3eff7eb1bdb"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q3-SENS-ONEFACTOR.png",
+      "sha256": "731697ada34d5051c85531ab3f646dadfdb6e07e6a0bdbb39b9da4739aee91c3"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q3-SPACE-CONV.png",
+      "sha256": "bebe9feda26c614f8fde33543b7371d452e21957ddc564db08c8f3ce11a8990a"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q3-THRESHOLD-TRAJECTORY.png",
+      "sha256": "61c4035436d1f48a95dba44eb0c05f51d1622cd5b590eeb480ac13ddac610e18"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q3-TIME-CONV.png",
+      "sha256": "2ee26acdf6dadf4f0f8604caa49eebbd6db90825299f6d4d2d3672f987ffb29f"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q4-BRACKET-ZOOM.png",
+      "sha256": "9de4e438b95ada415b6a77caa6b62732449dd34cf6b8856b15ceb880c0eb8832"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q4-COMBINED-BOUNDARY.png",
+      "sha256": "07efd0c9885449d76e96ca3be5aa5757162018f0aa82cb7589d23ce1ecf1292f"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q4-JACOBIAN-ABLATION.png",
+      "sha256": "b39a283abec24dd4053a5e59351790cfaff8925a04ae4fe516f0ecc702b4e066"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q4-RADIUS-TIME.png",
+      "sha256": "38848fd2bb2ec027c48b5ee1be9160988731d10c8e7cdb14e0788271f7944c24"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q4-SPACE-CONV.png",
+      "sha256": "465094f6689d6732531b5c6f53a5227e0cdeab26afcb1b6e57d57e8be08068e0"
+    },
+    {
+      "path": "06-figure/captioned-20260912/figures/FIG-Q4-THRESHOLD-TRAJECTORY.png",
+      "sha256": "1b623654665d4e12495470c8725233a87d984c49227b9dae7cbe9633862e3f98"
+    },
+    {
+      "path": "06-figure/captioned-20260912/图注.md",
+      "sha256": "520e71203f2fb1d8f96db6637d8df2f5c7b87e23fb3699afdc40356bc165a13e"
+    },
+    {
       "path": "06-figure/contracts/FIG-Q1-C-FIELD.json",
       "sha256": "9fd92747c5ae74d190e911fbd8b0cf488c8c01d1ae1149165df484793543c6a8"
     },
     {
       "path": "06-figure/contracts/FIG-Q1-END-EFFECT.json",
-      "sha256": "6528552e6530b07910e2cc7b732b1d9daa133801a3a9419c868985040e87cb34"
+      "sha256": "4094f8f418521d90e713d458743d2515e18ea48fdf7e6f41e821e10e79e07ecf"
     },
     {
       "path": "06-figure/contracts/FIG-Q1-GRID-CONV.json",
@@ -47,7 +339,7 @@
     },
     {
       "path": "06-figure/contracts/FIG-Q2-C-PROFILES.json",
-      "sha256": "cb4c4f767a6e4151451786cf25af5d3b1b1dfc78c3c7de9082bd654742436173"
+      "sha256": "c2f24b8c159b88fd2e66f2cde5d6d78bf2de21d2ab2ea35a8396a32f4b018bd2"
     },
     {
       "path": "06-figure/contracts/FIG-Q2-GRID-CONV.json",
@@ -58,12 +350,8 @@
       "sha256": "a45e3f4076aa2b786f9caf9f3ef4a95a1b93220ce686ba9ab99e65207a1255cd"
     },
     {
-      "path": "06-figure/contracts/FIG-Q2-V02-MARGIN.json",
-      "sha256": "0064f369b6577e338f0abb14d5b8222009fb16042218c44cb12df16de002f251"
-    },
-    {
       "path": "06-figure/contracts/FIG-Q3-BRACKET-ZOOM.json",
-      "sha256": "db44dff37654c4fd12a7beaa1831aa9db2928a6a69a01a6b5d69cf05d3b8dc05"
+      "sha256": "bffd115f3dfe588c2b50ee685e5e5e225e78b4a521063df2cf3a1b7dc75b5258"
     },
     {
       "path": "06-figure/contracts/FIG-Q3-COMBINED-BOUNDARY.json",
@@ -71,7 +359,7 @@
     },
     {
       "path": "06-figure/contracts/FIG-Q3-SENS-ONEFACTOR.json",
-      "sha256": "474eb591b21d4458d178f5696de7b03bf4bd77431bfdf2c58040579777c7db92"
+      "sha256": "b7051e3ab911703add0fe4c63ecf1722a7dedd8a727c8801210a8f098ab69a22"
     },
     {
       "path": "06-figure/contracts/FIG-Q3-SPACE-CONV.json",
@@ -86,6 +374,10 @@
       "sha256": "6020135b4716f9ace2843231702194e6a93f93af685c2a8736f00f13bfd067b2"
     },
     {
+      "path": "06-figure/contracts/FIG-Q3Q4-SPACE-CONV.json",
+      "sha256": "2678dfa8ab2e259fe82d211502c3b0fe8a63dbbd8f1ba8dfc71bee48b8cfbcb3"
+    },
+    {
       "path": "06-figure/contracts/FIG-Q4-BRACKET-ZOOM.json",
       "sha256": "ddcc9f74bf3bf0f5325f0ddf443a0382f482eec0b93559510ae79b042eeb7f2b"
     },
@@ -94,12 +386,8 @@
       "sha256": "e4bb3534ea6d0567305a0764f85607fa6fbc2fa45420b79b8de2f90ffef30e72"
     },
     {
-      "path": "06-figure/contracts/FIG-Q4-DRY-SOLID-CONTINUITY.json",
-      "sha256": "0e77fe7004bab00aa5394c426a3c6066fc8036646e6806b7e76b28cc9a05d8eb"
-    },
-    {
       "path": "06-figure/contracts/FIG-Q4-IMPLEMENTATION-AGREEMENT.json",
-      "sha256": "c1654e3557c077b95040287074a250f13642b2e97cf7335334dcca6cd8eec9cc"
+      "sha256": "00146b2649520d2292292e9d9896ca2eb522f8bfa37cfb04d1e645295f163153"
     },
     {
       "path": "06-figure/contracts/FIG-Q4-JACOBIAN-ABLATION.json",
@@ -134,12 +422,168 @@
       "sha256": "d94bd142e000207310704a20f0c4edad538bd90186a74d828352c7eab1adc52d"
     },
     {
+      "path": "06-figure/contracts/TAB-Q4-DRY-SOLID-CONTINUITY.json",
+      "sha256": "6cd3071daf0a697f1775d5d9b44ad17b52fd8422ab2f7f727c60093c000e0919"
+    },
+    {
       "path": "06-figure/contracts/TAB-STRATEGY-ASSUMPTION.json",
       "sha256": "5220945318b2fefb6e4c2266c8eed0df1192a15fc2e53c53c569e33467dac75b"
     },
     {
       "path": "06-figure/contracts/TAB-VAL-V01-V12.json",
       "sha256": "3c37b73b42e6c8fe421504f6842f877f27660bd79dbff0ad1b45f1d57abde148"
+    },
+    {
+      "path": "06-figure/corrected-20260912/caption.md",
+      "sha256": "9c5c50544840b168ed848b81c8f11c099bafd0618d9bac4465881da9607305ae"
+    },
+    {
+      "path": "06-figure/corrected-20260912/contracts/FIG-DATA-EXTENSION-WIDE.json",
+      "sha256": "58777703c5ebb90a4102922622858fb410ac8136ece7af0f8bcdfce70db1a9dd"
+    },
+    {
+      "path": "06-figure/corrected-20260912/data-snapshots/FIG-DATA-EXTENSION-WIDE.csv",
+      "sha256": "46ef8701170c7493daaf1a8b6d94984a46570520617e7c51939da9c40f9e898f"
+    },
+    {
+      "path": "06-figure/corrected-20260912/data-snapshots/FIG-DATA-EXTENSION-WIDE.meta.json",
+      "sha256": "8264502291ffd1143b38c12ac64cb1f8a15348bacd9d0152e6e06fbcd9450f78"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figure-manifest.json",
+      "sha256": "2e9605caca59e7458fa20b6505b0e7c17adfdbad74432ae66ffd8312643d3a7d"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figures/FIG-DATA-EXTENSION-WIDE.pdf",
+      "sha256": "e1801811f7fdff7b1a893f56cd3f768cb1cfc0df3e78065799c63f8005b6f1f5"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figures/FIG-DATA-EXTENSION-WIDE.png",
+      "sha256": "450667c4d09eb803d6cce0a138d911518e8b620b4d14bf5aec193bb7a61b3b09"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figures/FIG-DATA-EXTENSION-WIDE.svg",
+      "sha256": "a4220953c0621ab9151f59424559d1cd96ed33b6cc5bbe02616b559b860001c2"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figures/FIG-DATA-MODEL-WORKFLOW.png",
+      "sha256": "e9bc1be89553fda3df82508420017537423d65f6b90445ac46f26d099f38981e"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figures/FIG-DATA-MODEL-WORKFLOW.svg",
+      "sha256": "fdedf6e898252538f6bf82b1c84d57da68fe15f7e34647cbc4e4540c7192fc4f"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figures/FIG-DATA-PROCESSING.png",
+      "sha256": "35daf051a3b991d7fa6c6f321d7258c74f3df4b630ca47f685c1fd831d5e49cc"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figures/FIG-DATA-PROCESSING.svg",
+      "sha256": "4a9122f9f228cd01d057e4623e7ca62418a723c2ccb851ebac0bc1c072eb49a9"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figures/FIG-DATA-ZOOM-THREE-POINTS.png",
+      "sha256": "8547174fee93423085e9800059ff49f08ffa231aa8c4724ec118a6b449cacbbc"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figures/FIG-DATA-ZOOM-THREE-POINTS.svg",
+      "sha256": "c4731c8121e820ce84166e7906454e143d5c06a90cfc4ec879d49bf700ad3f9c"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figures/FIG-MODEL-DOMAIN.png",
+      "sha256": "b3b2d6a0470c29cb355ca8e0a4263821809a011613762b637bf8b099cd2a75d5"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figures/FIG-MODEL-DOMAIN.svg",
+      "sha256": "aa911e17e05f3d43c0cb4cc1723cfab597abbb735d9b0ae2acfa94f267b1dc18"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figures/FIG-MODEL-HIERARCHY.png",
+      "sha256": "8623f735c4d70eba91c8a9d2ec8d8300874568c225adedbeded28fc68a25f8a2"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figures/FIG-MODEL-HIERARCHY.svg",
+      "sha256": "83d18016d0d71f1349fc5cfd8b35afc681890d45184c37be91127920bbf16f4b"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figures/FIG-MODEL-SCHEMATIC-TEXTBOOK.png",
+      "sha256": "11d409b21c1124194aea915d7888929b1de36191b863816729f0b757b2ddbe81"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figures/FIG-MODEL-SCHEMATIC-TEXTBOOK.svg",
+      "sha256": "5a1c81c1225224d89b3216291f77fb09bbf63a90ce5831f22c1ed570daf3d86c"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figures/FIG-MOVING-DOMAIN.png",
+      "sha256": "6764a942d3540416bd390a03a9f79c9ed0553d43b278d741bce627e6edd57232"
+    },
+    {
+      "path": "06-figure/corrected-20260912/figures/FIG-MOVING-DOMAIN.svg",
+      "sha256": "b52e36ad70f10de0a32bd0234f08525ea3c401de7b7f3911452a74e08cc009d9"
+    },
+    {
+      "path": "06-figure/corrected-20260912/previews/FIG-DATA-EXTENSION-WIDE-color.png",
+      "sha256": "6681e64ea6e9833b96b2e7beca99140d1091c3260999cbadab4af587cf8cd49b"
+    },
+    {
+      "path": "06-figure/corrected-20260912/previews/FIG-DATA-EXTENSION-WIDE-grayscale.png",
+      "sha256": "1b18abcd46cdea4ef40097f339c0ffadc0071bb1254636ce27c560b3c6f69eb6"
+    },
+    {
+      "path": "06-figure/corrected-20260912/previews/FIG-DATA-EXTENSION-WIDE-preview.png",
+      "sha256": "6681e64ea6e9833b96b2e7beca99140d1091c3260999cbadab4af587cf8cd49b"
+    },
+    {
+      "path": "06-figure/corrected-20260912/previews/FIG-DATA-MODEL-WORKFLOW-preview.png",
+      "sha256": "fa6abdc3d1713094037bd7611b4a574e5ab8044f004ebd2aa1793ec3b3fd10a4"
+    },
+    {
+      "path": "06-figure/corrected-20260912/previews/FIG-DATA-PROCESSING-preview.png",
+      "sha256": "7bce63131399025056bbd936e1742e52b57590ecf987e20f502e67b47c84ce48"
+    },
+    {
+      "path": "06-figure/corrected-20260912/previews/FIG-DATA-ZOOM-THREE-POINTS-preview.png",
+      "sha256": "c6854dcdb916d110caa8dc261e44a9116adff33a12cbba0b4411a3d1255fd305"
+    },
+    {
+      "path": "06-figure/corrected-20260912/previews/FIG-MODEL-DOMAIN-preview.png",
+      "sha256": "934aa3408f6df39cedf9109ca6137d33d3d60d8c8d48f302ee53c5950d60d1b8"
+    },
+    {
+      "path": "06-figure/corrected-20260912/previews/FIG-MODEL-HIERARCHY-preview.png",
+      "sha256": "ef3b25f70d1ecc86d743a3779ce6ff8a293421a887d92dc0b6138ab61f836e57"
+    },
+    {
+      "path": "06-figure/corrected-20260912/previews/FIG-MODEL-SCHEMATIC-TEXTBOOK-preview.png",
+      "sha256": "65d69f8b641512a63c5457bc9c119d25c7254b8095df4408b04fdd0f2c082216"
+    },
+    {
+      "path": "06-figure/corrected-20260912/previews/FIG-MOVING-DOMAIN-preview.png",
+      "sha256": "51fce5e7319333f6d415a14fad61a21dce5e6f9f52429f9a59f047fc3d86d7e1"
+    },
+    {
+      "path": "06-figure/corrected-20260912/qa/FIG-DATA-EXTENSION-WIDE-qa.json",
+      "sha256": "2ddf3b2491e7a0130c811ea04dace5378eb16cea5e785e867825769fcad04db5"
+    },
+    {
+      "path": "06-figure/corrected-20260912/scripts/make_textbook_schematic.py",
+      "sha256": "1debf7aace51bc112ee5cc08237b14b099b3d14e31c75c6973eae89a1ed547be"
+    },
+    {
+      "path": "06-figure/corrected-20260912/scripts/render_argument_figures.m",
+      "sha256": "5550a347690310999562d0a3fa954f8f1507969025aa8c654d59f2c9f0ba236c"
+    },
+    {
+      "path": "06-figure/corrected-20260912/scripts/render_extension_wide.py",
+      "sha256": "71ea501e9834de1a2ba35e8ff3f0d3f304f49c0c15c8ca6a7a2e2d4ab44a7a42"
+    },
+    {
+      "path": "06-figure/corrected-20260912/strict-qa.log",
+      "sha256": "d90a3d8f0250a8c596abd610bd7c2e0a42c0bda406250ef9daa57be1d2c99c0a"
+    },
+    {
+      "path": "06-figure/corrected-20260912/visual-audit.md",
+      "sha256": "035ba1e9de8340026f0f54af6a71b79f4fb33b442020edde7157fc5def21dfef"
     },
     {
       "path": "06-figure/data-snapshots/FIG-Q1-C-FIELD.csv",
@@ -151,11 +595,11 @@
     },
     {
       "path": "06-figure/data-snapshots/FIG-Q1-END-EFFECT.csv",
-      "sha256": "9db497f8ae95fcbdebe11afedf65c427ee567353f303c1f872390b768705626d"
+      "sha256": "178c90b4878bc181df06ec83eb47bb039c3e9fffa848cef0fcd345c5f8244bd4"
     },
     {
       "path": "06-figure/data-snapshots/FIG-Q1-END-EFFECT.meta.json",
-      "sha256": "a12260fe2c2dcd766ec2b9bb9314d65ef8ce279000d6286e35d4a62933d4e0ca"
+      "sha256": "edfe350765517453ff2238d85f0405525e27c2ff99520ab4d995816b5ad19b93"
     },
     {
       "path": "06-figure/data-snapshots/FIG-Q1-GRID-CONV.csv",
@@ -190,14 +634,6 @@
       "sha256": "94edb1c64f7664f4c0d7769b4056b9e4029d4b901d0bdf5f3aeb6d0e81a9e8bb"
     },
     {
-      "path": "06-figure/data-snapshots/FIG-Q2-V02-MARGIN.csv",
-      "sha256": "f9e00b1d03fc54f915419a12772a1860f7e238eeeeba4c76b9ea7f42b8e4400a"
-    },
-    {
-      "path": "06-figure/data-snapshots/FIG-Q2-V02-MARGIN.meta.json",
-      "sha256": "a39b84e9bf585842d45871d972c7d3bf29a04dd3803b2d57f9c636c0240d48f8"
-    },
-    {
       "path": "06-figure/data-snapshots/FIG-Q3-BRACKET-ZOOM.csv",
       "sha256": "b51a0aacc15f76d188ebceff72682c775a6f6ef4c6cb450388679996a2852c7a"
     },
@@ -215,11 +651,11 @@
     },
     {
       "path": "06-figure/data-snapshots/FIG-Q3-SENS-ONEFACTOR.csv",
-      "sha256": "016ad45dc867253cbf13c7896eb4f0d2d570808ee2830405744179bda476690e"
+      "sha256": "b93a7a8bba71904a31614d925fd07a96e6700dce59cc405c6caaecab739d4cc1"
     },
     {
       "path": "06-figure/data-snapshots/FIG-Q3-SENS-ONEFACTOR.meta.json",
-      "sha256": "71d1c29d3622be600ae75a1f7273e2688acb1a632fda6fe58f536b0c963eebeb"
+      "sha256": "1741f153fd7c291e8e87e1858dc831296f2f13d1b04c3a9ce8f4e82d7d7883e7"
     },
     {
       "path": "06-figure/data-snapshots/FIG-Q3-SPACE-CONV.csv",
@@ -260,14 +696,6 @@
     {
       "path": "06-figure/data-snapshots/FIG-Q4-COMBINED-BOUNDARY.meta.json",
       "sha256": "f4da1458acebe24f7305a0ef2441c9022b4cfd026f626c53b0ba29a14c757b70"
-    },
-    {
-      "path": "06-figure/data-snapshots/FIG-Q4-DRY-SOLID-CONTINUITY.csv",
-      "sha256": "b3ab35c24fca8d1dee6c8e855fe3bffa9da022deed80b75b31ced378c554bd50"
-    },
-    {
-      "path": "06-figure/data-snapshots/FIG-Q4-DRY-SOLID-CONTINUITY.meta.json",
-      "sha256": "86898c62c4eec933c5bd99eca253f61987ba7f96575cbc35c3e5aa8e1b2cd251"
     },
     {
       "path": "06-figure/data-snapshots/FIG-Q4-IMPLEMENTATION-AGREEMENT.csv",
@@ -342,6 +770,14 @@
       "sha256": "9865d57f81563caa02e0dbca1df19ecfe65d9cb404f2ac0c2fa7b0ab452a9f11"
     },
     {
+      "path": "06-figure/data-snapshots/TAB-Q4-DRY-SOLID-CONTINUITY.csv",
+      "sha256": "c68d7bfe7db8d351375ad71c296f6e187056968dcb93112bb19532ee68e4dfc9"
+    },
+    {
+      "path": "06-figure/data-snapshots/TAB-Q4-DRY-SOLID-CONTINUITY.meta.json",
+      "sha256": "dc3768093c4aceff2d47e7800e57655e30c9ea77c855a2993a5256888acaaf47"
+    },
+    {
       "path": "06-figure/data-snapshots/TAB-STRATEGY-ASSUMPTION.csv",
       "sha256": "1ea97dbbf4b2c2db60557d4bff0e4d845e78b2fd0578c84542a34a8d9053b217"
     },
@@ -359,39 +795,51 @@
     },
     {
       "path": "06-figure/figure-manifest.json",
-      "sha256": "e347a30751381c7db01794ca493dbaa299d4b01398eee42509531f26e4491420"
+      "sha256": "9a4e5bb3514a243d8d5b97dbcc7bc3c5338ba1d4de465d91275e3a0076b546e8"
+    },
+    {
+      "path": "06-figure/figures/FIG-Q1-C-FIELD.pdf",
+      "sha256": "73dab8c125cef9ea4367292ee2d83e5724c8bc41faeb348d17bec2fb75713591"
     },
     {
       "path": "06-figure/figures/FIG-Q1-C-FIELD.png",
-      "sha256": "c357b211c6fd5b535f3afb37dc1ebd48273fed26f3f16d07c7b17a9e7ff61d84"
+      "sha256": "bfda2cca846758b03c54d3f10a57b211881c0a1fa41b2066df5450ff383958be"
     },
     {
       "path": "06-figure/figures/FIG-Q1-C-FIELD.svg",
-      "sha256": "fa5c973c36f4815aba3ffa78728594abed47c52bbffeb74418dfdaff5736cec6"
+      "sha256": "51459653b837757ca78e87e33acfa65cb49ed0d67dd642b598ecf174938927a3"
     },
     {
       "path": "06-figure/figures/FIG-Q1-END-EFFECT.png",
-      "sha256": "74fcad8992bbde7b6e4de90358776561ee65655d5c70ec0395229f18c4a18e00"
+      "sha256": "12f896bba4fe24b0d6ab4f4a63d4918e63f497cd8701d073b65f5782108ca74d"
     },
     {
       "path": "06-figure/figures/FIG-Q1-END-EFFECT.svg",
-      "sha256": "9e659e2e15c454a2c0b54ed412929f64f1ea25c026b04f4a0f8cfa6986cec744"
+      "sha256": "cd20557fabffb17a309a897f97eb4fbda074b6e2318fa9d08f7df980c5f4eca5"
+    },
+    {
+      "path": "06-figure/figures/FIG-Q1-GRID-CONV.pdf",
+      "sha256": "669b4acd04399bcd60490e3f9e8b8dc2054379bcb3056079d980caa0061e48f3"
     },
     {
       "path": "06-figure/figures/FIG-Q1-GRID-CONV.png",
-      "sha256": "6aaa3d8810b75a612a2ea319a3d8a2f878feddb16b44d223aaf9d82bb9b91d7f"
+      "sha256": "70f3bb6c5dd64015786505cc99b71339ab50e15fdc0ba87f624252f9a4d4cc54"
     },
     {
       "path": "06-figure/figures/FIG-Q1-GRID-CONV.svg",
-      "sha256": "b211ac08225ca0b1d0b3208f72a7e5edcee70a7a3a7e0439df65ac34fd617ad5"
+      "sha256": "31fd8e2b8f2892cff1e5055f7479d2b1b702af69d45a5242c216c8d7b6045e37"
+    },
+    {
+      "path": "06-figure/figures/FIG-Q2-C-PROFILES.pdf",
+      "sha256": "499e35711889cc904f345006606c4e287236339bb62e02107badab8f73ebdc52"
     },
     {
       "path": "06-figure/figures/FIG-Q2-C-PROFILES.png",
-      "sha256": "90d4e6d4e52d4a1186af7115131a6baa6ed291cccd722b6451c31b8cad129a0f"
+      "sha256": "8400fd124d99a2b5bb31df479fd66486638b2d2853806eb8abe27a01ab91c2c4"
     },
     {
       "path": "06-figure/figures/FIG-Q2-C-PROFILES.svg",
-      "sha256": "8cd120096cf2d9affc6dd7fb62b34f1bdd73bb26f88c61bda051fdd8e3504ef6"
+      "sha256": "920b17897133ea396560c31379d14a8a42ccbf9bdd06badbcf24e224fcfd07cf"
     },
     {
       "path": "06-figure/figures/FIG-Q2-GRID-CONV.png",
@@ -410,132 +858,136 @@
       "sha256": "2b94508971a4ac2731bad476e8d6fbec4cfebc0bdae7ca1b8c7b54fb5e9f45e5"
     },
     {
-      "path": "06-figure/figures/FIG-Q2-V02-MARGIN.png",
-      "sha256": "0d76185c17a59ecd4e22c823b4dd9df8b639394af47e6f56864f4c865ada3897"
-    },
-    {
-      "path": "06-figure/figures/FIG-Q2-V02-MARGIN.svg",
-      "sha256": "ddbbafd80e4d8179800b6866729635fdd0740e1f1fbb3ab149a8061b08df2570"
+      "path": "06-figure/figures/FIG-Q3-BRACKET-ZOOM.pdf",
+      "sha256": "691237c701c794d2889f21121c237a8aafb8821a558573c111c36b68dcd0654f"
     },
     {
       "path": "06-figure/figures/FIG-Q3-BRACKET-ZOOM.png",
-      "sha256": "85d8ba2805e509cf71a983582ad6289a0ba4914e4e8296df3c8fe7459140427e"
+      "sha256": "e10e6851f4f189831af1b11c8ad28c381c7240eb4f12123cfd7cb3ad09ce36e6"
     },
     {
       "path": "06-figure/figures/FIG-Q3-BRACKET-ZOOM.svg",
-      "sha256": "6dd472b0c19d6159911957a679ca40e749a6801e2bc6a0c8651bb4eae4b2efc3"
+      "sha256": "5355ff42ecb2ea038bafcaa4942decb491e556d95fb1e6cfd30a57d4601a5c31"
+    },
+    {
+      "path": "06-figure/figures/FIG-Q3-COMBINED-BOUNDARY.pdf",
+      "sha256": "011a44a2d36f8c1271b718079760cd9e020781af91bea008e01b96397d3d0c3b"
     },
     {
       "path": "06-figure/figures/FIG-Q3-COMBINED-BOUNDARY.png",
-      "sha256": "4c62fa8662f5be64b0970613939e129e72f710dfb376d49881e917a478ff921e"
+      "sha256": "67a8bd85bc7675d84b84ce9ff08e43f62aa122569839c8d22315af259e4454bc"
     },
     {
       "path": "06-figure/figures/FIG-Q3-COMBINED-BOUNDARY.svg",
-      "sha256": "49cbb2091b6e2b4de59e7a51d081209cbbd1b0dcd6e36278b0892494a85415ec"
+      "sha256": "a144b3292619e197947877ad90718d0a6fe57c050404b1bce7f4a441b9c6c447"
+    },
+    {
+      "path": "06-figure/figures/FIG-Q3-SENS-ONEFACTOR.pdf",
+      "sha256": "556b919955410554738bacf6aae4848b9aa82f1fa608ab7dfd1ef3473f513266"
     },
     {
       "path": "06-figure/figures/FIG-Q3-SENS-ONEFACTOR.png",
-      "sha256": "3c8d7e0f9eb08f3bcee7e6c0d70c251a58050c031e75ffdcfec1637afdff8a65"
+      "sha256": "7945294d2c1301e656090bb806524a9de9363e96397b19149beb05d68f5fd6f1"
     },
     {
       "path": "06-figure/figures/FIG-Q3-SENS-ONEFACTOR.svg",
-      "sha256": "de2ff21063b4188641560e302bb992e1e76122e87e5499dec06cd57dc3c3037f"
+      "sha256": "14809ffecdc20f6c63d429f22b7bc88970446457118e32336705a55e60f2179f"
+    },
+    {
+      "path": "06-figure/figures/FIG-Q3-SPACE-CONV.pdf",
+      "sha256": "91f015e677bcb2de042cf8dcac4a148c53069685dc2fc7f8c9c8dd725a0b52af"
     },
     {
       "path": "06-figure/figures/FIG-Q3-SPACE-CONV.png",
-      "sha256": "9c7bd245473b6579c80469335cac874aa6d6331de850984232bc7d75c0ba9440"
+      "sha256": "6e6fb4644847c8b795d024b9a5a8b428673d26c324aaf61b24ae5d0080e5ecf9"
     },
     {
       "path": "06-figure/figures/FIG-Q3-SPACE-CONV.svg",
-      "sha256": "247bee57d15055eba9a36a3bb3d92f53ee7f098baec061000711d2a1ff6f6f5a"
+      "sha256": "164be38a4f7e0f907bacf98da2b70327438dde2d25ba596c4908d61b1bd87e5e"
+    },
+    {
+      "path": "06-figure/figures/FIG-Q3-THRESHOLD-TRAJECTORY.pdf",
+      "sha256": "5b74de850d578732a5f5f05d0e315a30db7f748e2a09b82602b175eb09ae3fd4"
     },
     {
       "path": "06-figure/figures/FIG-Q3-THRESHOLD-TRAJECTORY.png",
-      "sha256": "5596b64e4b053f6dc1c94b53a96493e2917cabe9217b757a3e8e32527ac35a6a"
+      "sha256": "e9cda2b02cf5d6a28267cd30f9f5f3ad899af0225f22be40a343195b143c0ef9"
     },
     {
       "path": "06-figure/figures/FIG-Q3-THRESHOLD-TRAJECTORY.svg",
-      "sha256": "4d1367d5a02a1b63d030d07b1f91c3d63c4c5873a4283db2011007e852ff636a"
+      "sha256": "834678f71ded3a04e9738a7c2e78a0ca140924cdddcd6e99966b1a091bda7351"
+    },
+    {
+      "path": "06-figure/figures/FIG-Q3-TIME-CONV.pdf",
+      "sha256": "3c0a3daca6844fde9cd7c93a8483d04a6cc0ac428f02dbcc967defc6e01650c2"
     },
     {
       "path": "06-figure/figures/FIG-Q3-TIME-CONV.png",
-      "sha256": "f9e2057d41053afb8d868d760e1173f01ab7b085136eac8c96ae1d87cb141bba"
+      "sha256": "611e1a2ab9e9b0ba2954935993fc10d1abcbd735ed486db2be66c88b372212f3"
     },
     {
       "path": "06-figure/figures/FIG-Q3-TIME-CONV.svg",
-      "sha256": "c2c122ff350eb25725620c4f21b29946d063abe3118d0ac9b5151ccc44f8b8c2"
+      "sha256": "4cd81429ce5c692a183966bf0e9ec4fd56ad9d55f1fbd223dad478fb7e49e992"
+    },
+    {
+      "path": "06-figure/figures/FIG-Q4-BRACKET-ZOOM.pdf",
+      "sha256": "8b0331d07d816b5c7b35c21adb3153aa7d1222c9a51a04ec2379b953269833db"
     },
     {
       "path": "06-figure/figures/FIG-Q4-BRACKET-ZOOM.png",
-      "sha256": "bd324173184667a1c8f6de15510ba9c1f6c3c856efca4c9a188f2d4e5ab56964"
+      "sha256": "c31a761a786146db3457adf5df9aa74153e711c5fce78beae497dd99b2a33b94"
     },
     {
       "path": "06-figure/figures/FIG-Q4-BRACKET-ZOOM.svg",
-      "sha256": "1d427da8354108e4d203117e8e9ffbd2f003bf72feded8f928a5ba50d1a3bf00"
+      "sha256": "f7c2b5590cae86af9352284c2385ad4b7d5fde62aeaea2fae05e0ebfcedc5402"
+    },
+    {
+      "path": "06-figure/figures/FIG-Q4-COMBINED-BOUNDARY.pdf",
+      "sha256": "42251e3ef739cc4e55cf0aac28bae57aae3da44c83d2efb093a52acf124686c4"
     },
     {
       "path": "06-figure/figures/FIG-Q4-COMBINED-BOUNDARY.png",
-      "sha256": "72fdd9ec5f6790954d48d93043f1e7c9f514347cb246f7f80648c850a0819b1b"
+      "sha256": "fd06347eba1ef5c4dddfa6fbea3e73b6094dfa1235cf949f7dfbddf838b81d5d"
     },
     {
       "path": "06-figure/figures/FIG-Q4-COMBINED-BOUNDARY.svg",
-      "sha256": "4949107eba82acedbb891b1ebc255382613b3bedf8df7a951a024e5e3cc75700"
+      "sha256": "f051021ab8e783da28bee47ad37097764cfdc72b011c602d602800878d61956a"
     },
     {
-      "path": "06-figure/figures/FIG-Q4-DRY-SOLID-CONTINUITY.png",
-      "sha256": "6e63a9d4acd72d04fbb1dd1059b6422c9e9b7e03f68febc44ebe0d4022a14848"
-    },
-    {
-      "path": "06-figure/figures/FIG-Q4-DRY-SOLID-CONTINUITY.svg",
-      "sha256": "8821479a6cbded90a2c0899d170aef146731ff1c3742679a7ed80c81874ce62d"
-    },
-    {
-      "path": "06-figure/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.png",
-      "sha256": "b9830d52124119012b31352838cde0aacae1010bd448ae2346d94fa9bcd9100e"
-    },
-    {
-      "path": "06-figure/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.svg",
-      "sha256": "b73025c613b52a3a7eea14edc9ffa3a3fe064fb19743a7cf6036cba8590b7ffd"
-    },
-    {
-      "path": "06-figure/figures/FIG-Q4-JACOBIAN-ABLATION.png",
-      "sha256": "a640d83d39c1af9c6c66b33f1f2014d084481e43f68c25c93776ce2521874b83"
-    },
-    {
-      "path": "06-figure/figures/FIG-Q4-JACOBIAN-ABLATION.svg",
-      "sha256": "a82f19c1a1138f3f141510c8114daa1688cb450a3e80a5ade51e30247055f15c"
+      "path": "06-figure/figures/FIG-Q4-RADIUS-TIME.pdf",
+      "sha256": "a75afea7dd2b375fd0144e3337469e4b19bb3d657501e194f3f184fe647dc8c8"
     },
     {
       "path": "06-figure/figures/FIG-Q4-RADIUS-TIME.png",
-      "sha256": "fd1e7864ca3cc05eb22079bc8f95a51ff534dd7d707593147dbc0a121093196d"
+      "sha256": "0beafbf043ddf09587f67976c795e2a5d3f18681fed1c621108cdc635aa026f5"
     },
     {
       "path": "06-figure/figures/FIG-Q4-RADIUS-TIME.svg",
-      "sha256": "3371652773d31b6f55b6fde995b6b2b70ea3d6539c082bee851402c11342c190"
+      "sha256": "65efc9e2e0001d0b0fb0395299302beb1db061233e758520a09acacce8046b2a"
+    },
+    {
+      "path": "06-figure/figures/FIG-Q4-SPACE-CONV.pdf",
+      "sha256": "863e42df898d8c749651a1dc1529a514552a775c17f5f819d094bd04706516e3"
     },
     {
       "path": "06-figure/figures/FIG-Q4-SPACE-CONV.png",
-      "sha256": "50d9b52b8c6f09e16ebb42baab665e81487bf621f1dd59cfb262f2f0c5028e33"
+      "sha256": "8f5d9255dc0ee1dd555a377d86629cb32a5126bcdb805edb678c78cae92ad9d5"
     },
     {
       "path": "06-figure/figures/FIG-Q4-SPACE-CONV.svg",
-      "sha256": "a3c7f6ca355c7ae53cc1b1e0cd24f3bc05887c5b8c59bc1c42bd0d24ed01e0e7"
+      "sha256": "f485934118e514c7643f60515ef65963d669ec4a7d68fb9b40857fba5748ce23"
+    },
+    {
+      "path": "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.pdf",
+      "sha256": "60b8484f6fb9ee19acd5afbc3f2390c1f544aba8232899324e76adbac7ec920c"
     },
     {
       "path": "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.png",
-      "sha256": "a37ad7803cf06a95fa8c40a59b2fcfa42b4a71270c526ec6ff07dd40ad50d962"
+      "sha256": "3637253cc8584ef913e88000cbeb37c5b355a34540c62bd3492a18f4c50c3599"
     },
     {
       "path": "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.svg",
-      "sha256": "2a0474dd8001e7522865db92bfc7569cca386f4e04cd342eb3a921ec5e898692"
-    },
-    {
-      "path": "06-figure/figures/FIG-VAL-BALANCE-RESIDUAL.png",
-      "sha256": "eabbc21ee6ed5547e30470f396e45d67f30def31d8583925eaec580372afbfad"
-    },
-    {
-      "path": "06-figure/figures/FIG-VAL-BALANCE-RESIDUAL.svg",
-      "sha256": "c4fa615456424e25cae129270e05660d598b80ab97a12f257effcd5763ea0420"
+      "sha256": "2af075d2e816729fbfad93953703d91de199fbfec811e8ce98303b760c428a43"
     },
     {
       "path": "06-figure/figures/TAB-APPLICABILITY-FAILURE.csv",
@@ -562,6 +1014,14 @@
       "sha256": "d4b0491e4055891b781055725c2b55694827c7d90b21e97db589a95530a05aa7"
     },
     {
+      "path": "06-figure/figures/TAB-Q4-DRY-SOLID-CONTINUITY.csv",
+      "sha256": "c68d7bfe7db8d351375ad71c296f6e187056968dcb93112bb19532ee68e4dfc9"
+    },
+    {
+      "path": "06-figure/figures/TAB-Q4-DRY-SOLID-CONTINUITY.md",
+      "sha256": "2119b5fa5509d281ea2aa145d429d3cb381228e57806435a181d2374a032a3e3"
+    },
+    {
       "path": "06-figure/figures/TAB-STRATEGY-ASSUMPTION.csv",
       "sha256": "1ea97dbbf4b2c2db60557d4bff0e4d845e78b2fd0578c84542a34a8d9053b217"
     },
@@ -578,6 +1038,146 @@
       "sha256": "ef5a19efc64cacb1561f6a8ee7d200727db2454ea92e3116d41c50452f19b1ca"
     },
     {
+      "path": "06-figure/merge-q3-q4-space-conv-20260912/figures/FIG-Q3Q4-SPACE-CONV.pdf",
+      "sha256": "820b4590294036543c1816af298b41b266a615c6cd97c11c0317e6110b0cb510"
+    },
+    {
+      "path": "06-figure/merge-q3-q4-space-conv-20260912/figures/FIG-Q3Q4-SPACE-CONV.png",
+      "sha256": "3f7bd34d84be32e53962d038261e44ba12cbf895a1dca7887a0016b01d9b3f1d"
+    },
+    {
+      "path": "06-figure/merge-q3-q4-space-conv-20260912/figures/FIG-Q3Q4-SPACE-CONV.svg",
+      "sha256": "60de91f1c506ae639ab7984ac7b0a98571cb0ce4cc875137e9ed75fa2e2891b9"
+    },
+    {
+      "path": "06-figure/merge-q3-q4-space-conv-20260912/merge-record.json",
+      "sha256": "3acbbf013b4228ea5f86ad2c14ec02c11038220b55dd112bc19cefe5766286ba"
+    },
+    {
+      "path": "06-figure/merge-q3-q4-space-conv-20260912/previews/FIG-Q3Q4-SPACE-CONV-color.png",
+      "sha256": "7af41a224af30c11e578cdbb4e045449880a8582eac8c2ece5889d96d6923922"
+    },
+    {
+      "path": "06-figure/merge-q3-q4-space-conv-20260912/previews/FIG-Q3Q4-SPACE-CONV-grayscale.png",
+      "sha256": "4aa17ec69c650c31ab9339de14556a24d0f4b79131004f65d82329ec83d4efa8"
+    },
+    {
+      "path": "06-figure/merge-q3-q4-space-conv-20260912/qa/strict-figure-qa.log",
+      "sha256": "70d227a4c498db3f6b456488d8c6e7ca48d9555efc381980cdbcf978e8f6f759"
+    },
+    {
+      "path": "06-figure/merge-q3-q4-space-conv-20260912/图注.md",
+      "sha256": "33750cad1784ba9fb6737c77a9508d5876f8dc3998858a3d2da0ddd52a6efcd4"
+    },
+    {
+      "path": "06-figure/omitted-20260912/captioned/figures/FIG-Q2-V02-MARGIN.png",
+      "sha256": "104c3bf0046b22d41ce5490b596c994b9949ddfd5592582c4d39172c4af5e506"
+    },
+    {
+      "path": "06-figure/omitted-20260912/captioned/figures/FIG-VAL-BALANCE-RESIDUAL.png",
+      "sha256": "1949cac7222f12c9ed123ce2fd038bec63d880640ca318d3a12ac3ae9ae1459d"
+    },
+    {
+      "path": "06-figure/omitted-20260912/contracts/FIG-Q2-V02-MARGIN.json",
+      "sha256": "0064f369b6577e338f0abb14d5b8222009fb16042218c44cb12df16de002f251"
+    },
+    {
+      "path": "06-figure/omitted-20260912/data-snapshots/FIG-Q2-V02-MARGIN.csv",
+      "sha256": "f9e00b1d03fc54f915419a12772a1860f7e238eeeeba4c76b9ea7f42b8e4400a"
+    },
+    {
+      "path": "06-figure/omitted-20260912/data-snapshots/FIG-Q2-V02-MARGIN.meta.json",
+      "sha256": "a39b84e9bf585842d45871d972c7d3bf29a04dd3803b2d57f9c636c0240d48f8"
+    },
+    {
+      "path": "06-figure/omitted-20260912/figures/FIG-Q2-V02-MARGIN.pdf",
+      "sha256": "4db0d7945c9788d99ec633a914d5c09c8b5ca94d63e79b14cd73f4fa37e84e7c"
+    },
+    {
+      "path": "06-figure/omitted-20260912/figures/FIG-Q2-V02-MARGIN.png",
+      "sha256": "e38983523aa3f6e9df5a99031793e769f8984c66732e7a306a0cfc6718384cd1"
+    },
+    {
+      "path": "06-figure/omitted-20260912/figures/FIG-Q2-V02-MARGIN.svg",
+      "sha256": "1f9b61b60f5df3f1d32c96c36ce87fe5ff82aa02eecf89cb4c24bb95866bc72e"
+    },
+    {
+      "path": "06-figure/omitted-20260912/figures/FIG-Q4-JACOBIAN-ABLATION.pdf",
+      "sha256": "e206f139a4345dd8eb414a7426ff304387de2e3c080c16267fb20cd10a36ba65"
+    },
+    {
+      "path": "06-figure/omitted-20260912/figures/FIG-Q4-JACOBIAN-ABLATION.png",
+      "sha256": "614d7dfe819af656af12c325cd7e262020f0eddfcbe43d41bf4286f82073a44e"
+    },
+    {
+      "path": "06-figure/omitted-20260912/figures/FIG-Q4-JACOBIAN-ABLATION.svg",
+      "sha256": "2b109f6a60c1f89554b51bed021605f853b189f29dd3a595cab47582f5b4ddaf"
+    },
+    {
+      "path": "06-figure/omitted-20260912/figures/FIG-VAL-BALANCE-RESIDUAL.pdf",
+      "sha256": "9330c345a9f8b0d5940a14a3ea0a9a17f5e21843a8b610a4ec295a1b9856f784"
+    },
+    {
+      "path": "06-figure/omitted-20260912/figures/FIG-VAL-BALANCE-RESIDUAL.png",
+      "sha256": "34b61590b024dfc5b0ac9e7fca2fcd1bf359f8d7e74c11e85543c4cc27b5ce8a"
+    },
+    {
+      "path": "06-figure/omitted-20260912/figures/FIG-VAL-BALANCE-RESIDUAL.svg",
+      "sha256": "192f67e87a1a8af06ff0b1d7028356b447737bba4dfa4bab7d85e21a065d33d4"
+    },
+    {
+      "path": "06-figure/omitted-20260912/implementation-agreement/captioned/FIG-Q4-IMPLEMENTATION-AGREEMENT.png",
+      "sha256": "5dd290baaa0f0b0dad6a96dc18679e7d3fb8522f7122ed777f2117f10f5653ce"
+    },
+    {
+      "path": "06-figure/omitted-20260912/implementation-agreement/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.pdf",
+      "sha256": "2806e4fad7155ca9aed4cb39ea67c5bbd33d5a2fef2c7cb51ecc75d9e78c6488"
+    },
+    {
+      "path": "06-figure/omitted-20260912/implementation-agreement/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.png",
+      "sha256": "13a2a1c536734d5c34569da08250e6129d7cb01a203e86200781f51b31040dad"
+    },
+    {
+      "path": "06-figure/omitted-20260912/implementation-agreement/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.svg",
+      "sha256": "d52e2811a7c9a4c152e6a750f690eeb8a048cde9649394f4758328624c538ed2"
+    },
+    {
+      "path": "06-figure/omitted-20260912/implementation-agreement/previews/FIG-Q4-IMPLEMENTATION-AGREEMENT-color.png",
+      "sha256": "f63ae8cd9287a298c21c154f54ef9f95a550986feadfaaee4c35acbc2095759a"
+    },
+    {
+      "path": "06-figure/omitted-20260912/implementation-agreement/previews/FIG-Q4-IMPLEMENTATION-AGREEMENT-grayscale.png",
+      "sha256": "e4c8c27a582f67fdd6341aa3cd3d744d1032c1ebe45e2328eeb26d0d99270a7d"
+    },
+    {
+      "path": "06-figure/omitted-20260912/previews/FIG-Q2-V02-MARGIN-color.png",
+      "sha256": "e294b69e585c8e61734027352f39ab1444d8c38fe7fb5b7e60e31c5e90b49f1e"
+    },
+    {
+      "path": "06-figure/omitted-20260912/previews/FIG-Q2-V02-MARGIN-grayscale.png",
+      "sha256": "5234afb50539a474bb062b56f4dcaa112c09d7744d78bfc6feeeaf67daf928bd"
+    },
+    {
+      "path": "06-figure/omitted-20260912/previews/FIG-Q4-JACOBIAN-ABLATION-color.png",
+      "sha256": "fd03617d61d24f5568065fa4d89988564c559be864c864e933755742c81f5993"
+    },
+    {
+      "path": "06-figure/omitted-20260912/previews/FIG-Q4-JACOBIAN-ABLATION-grayscale.png",
+      "sha256": "5cb7f207530fa67ffa979b475ffc716039bd1afddc983871f1931a16b48c4d01"
+    },
+    {
+      "path": "06-figure/omitted-20260912/previews/FIG-VAL-BALANCE-RESIDUAL-color.png",
+      "sha256": "1858989975f9dea4d3e0fd2defbc4eedf0594aa6b1e15d0f6fa48d69ed4442a1"
+    },
+    {
+      "path": "06-figure/omitted-20260912/previews/FIG-VAL-BALANCE-RESIDUAL-grayscale.png",
+      "sha256": "536b3e4c5ca4b12e4917c0a9e6f694e8d2fd418758fd0e99dc474f00f4951f39"
+    },
+    {
+      "path": "06-figure/omitted-20260912/README.md",
+      "sha256": "c541601567e6b858af463dc060bc72fb2c9f281a481eb0d006cae52d8e4a4120"
+    },
+    {
       "path": "06-figure/previews/contact-sheet-color.png",
       "sha256": "7280d782c5fd5b4a7789a1780686a8b0afcf5e0150c35a4519ea77e844724be6"
     },
@@ -591,27 +1191,27 @@
     },
     {
       "path": "06-figure/previews/FIG-Q1-END-EFFECT-color.png",
-      "sha256": "225dd9b3c33137c9600e3df75208ca4161ab13da32b810fbbc89f04c5fddc273"
+      "sha256": "226813253e5bf4ea1f61c641fb84613eaedd6d53627e205b38fe7c3ee311d096"
     },
     {
       "path": "06-figure/previews/FIG-Q1-END-EFFECT-grayscale.png",
-      "sha256": "e98f63651261700b20b7deaa4104f7e143f06f959e0dc97aca7e2d2cc0d505b4"
+      "sha256": "58186e0a13e3faca80df6f641daab105dcf7b0c060ccb1adc39289acd292f5be"
     },
     {
       "path": "06-figure/previews/FIG-Q1-GRID-CONV-color.png",
-      "sha256": "55ea1120dbc6032b922d394dc1fe8f7386c3c186da88b2f14cf4561e96df7e65"
+      "sha256": "3428181484cf9abb2d62ce1c3a0d074d38ec8122e4d7765ec952488e6727b637"
     },
     {
       "path": "06-figure/previews/FIG-Q1-GRID-CONV-grayscale.png",
-      "sha256": "fba9bc48a6dde74c8d36ffb8c1ff0ec43043c17c25ada8f3dad319686d16d66c"
+      "sha256": "aab40a9de12809ebcb13e354cb8fd0a395a63ee1220eb27f1612703dcaf9120c"
     },
     {
       "path": "06-figure/previews/FIG-Q2-C-PROFILES-color.png",
-      "sha256": "9a92c0e3f404dc50e548ceec5787e2ab9356bf68f9ef075388c45a33e40b40fd"
+      "sha256": "8400fd124d99a2b5bb31df479fd66486638b2d2853806eb8abe27a01ab91c2c4"
     },
     {
       "path": "06-figure/previews/FIG-Q2-C-PROFILES-grayscale.png",
-      "sha256": "fdd7b9995e081204c29490f96ee479447e506f4dd1b7cb40d6bca5b9f88eb546"
+      "sha256": "8436047661fa9082021f5cab3a367d73070bede6f77b325e752cad084606d7a1"
     },
     {
       "path": "06-figure/previews/FIG-Q2-GRID-CONV-color.png",
@@ -630,148 +1230,2304 @@
       "sha256": "5d871512073bb8b7fa5bc74d7a6fe612d7632cd775954eb34d5b020c38eaaee9"
     },
     {
-      "path": "06-figure/previews/FIG-Q2-V02-MARGIN-color.png",
-      "sha256": "da1ba6c768ec84ad097211ec625f27280576196f7f36a3863d1caa16b574ae36"
-    },
-    {
-      "path": "06-figure/previews/FIG-Q2-V02-MARGIN-grayscale.png",
-      "sha256": "0cb1b11bb00b75817dfb65fb3f101b210f533a74b64f756ee4ffed390974a5cf"
-    },
-    {
       "path": "06-figure/previews/FIG-Q3-BRACKET-ZOOM-color.png",
-      "sha256": "df497fc65348373c8b4069c052e40ab4d07d2ff4e91cbf2afa65cd71a1ee3942"
+      "sha256": "e10e6851f4f189831af1b11c8ad28c381c7240eb4f12123cfd7cb3ad09ce36e6"
     },
     {
       "path": "06-figure/previews/FIG-Q3-BRACKET-ZOOM-grayscale.png",
-      "sha256": "b501a918d05e3e3b728d705263efd837c0ba67428c1f894da155ccb8d66048b9"
+      "sha256": "0ada7dc80ce4724f9897be98473bc37fcd8b77487931da1b04bd058d377bb568"
     },
     {
       "path": "06-figure/previews/FIG-Q3-COMBINED-BOUNDARY-color.png",
-      "sha256": "7746a1b2b8dfaa5cdc8f2512129ad3966b4a5f916f446c20d310f6105737999d"
+      "sha256": "d784800ff317f50c1dd785d0b29058ef86662c02ae78befcbe61f77deafc84ec"
     },
     {
       "path": "06-figure/previews/FIG-Q3-COMBINED-BOUNDARY-grayscale.png",
-      "sha256": "de8c8bcfd599b8a780da8abbf639d63449688c5bcb473bf327b634d8a6eb9286"
+      "sha256": "80a13468b4da1a783b22f376edb9b82de37579f2b9fdd89dab7e4239c9ebbb50"
     },
     {
       "path": "06-figure/previews/FIG-Q3-SENS-ONEFACTOR-color.png",
-      "sha256": "3833c886a8160ddca255c069ef6edd49a022561c4ba370e7e2f2e402d213dd4e"
+      "sha256": "91c4c6e94c74d924defbde996c8a6f389015e8686d66189c14620efa7b516351"
     },
     {
       "path": "06-figure/previews/FIG-Q3-SENS-ONEFACTOR-grayscale.png",
-      "sha256": "32595b8e2266bd759905c516624faa870aaebc0297a4e52e3c8763f2fb1aaec0"
+      "sha256": "91337b0ece33dc3cd7104cdf94acca9414bcb4e0145a53205cea645fc7447118"
     },
     {
       "path": "06-figure/previews/FIG-Q3-SPACE-CONV-color.png",
-      "sha256": "30df1606295566b482abb673d75303affba30ba1411f079c0d5eb2d80b678ae6"
+      "sha256": "10f597b34aa2b9acee87141f7db7a3c97acf1bbaae1fa8855556497bb169a912"
     },
     {
       "path": "06-figure/previews/FIG-Q3-SPACE-CONV-grayscale.png",
-      "sha256": "1d41e6e60ee9bc95e1608d0ee72debaae08da1e604b840ecb4504d4ee57979de"
+      "sha256": "15256c956b23335f36f578431c91e4c6da1eef2df354a459db91b6f94c859a82"
     },
     {
       "path": "06-figure/previews/FIG-Q3-THRESHOLD-TRAJECTORY-color.png",
-      "sha256": "e9824646bb023251a80b1bb16f43b7563b596987952c7e12d1d41e19a948d7c2"
+      "sha256": "181c0c2d6ac131ca9564c3822b4b49c8c97f6789e89f60bf5fde6b8ca827f640"
     },
     {
       "path": "06-figure/previews/FIG-Q3-THRESHOLD-TRAJECTORY-grayscale.png",
-      "sha256": "92caaa17e72f0d8b4a46a7f189b45654ea807c9f43036fd7a55354defa80675b"
+      "sha256": "69a0bae0d96205ecd170c4ae60e1809e230d12476409bb4edd8a4eeddca7c185"
     },
     {
       "path": "06-figure/previews/FIG-Q3-TIME-CONV-color.png",
-      "sha256": "cbde286cc3ca45903cb537abe40d9ff8095906469cd6d16d7e22684ad91cac3b"
+      "sha256": "488d247b7825969f724f343d36f55916db5c08ca61e3a94785179bd29dd61001"
     },
     {
       "path": "06-figure/previews/FIG-Q3-TIME-CONV-grayscale.png",
-      "sha256": "ef2b4af33f2f7109414543a0939ffe9ddf46191fb6f468633951390c2822cf0b"
+      "sha256": "2e8b4ef3d3d68facd83405814e87785e7b7025beec5077c28ac829908059d87d"
     },
     {
       "path": "06-figure/previews/FIG-Q4-BRACKET-ZOOM-color.png",
-      "sha256": "cee34ced630c9309ed6896deb1d233956ae98fd55bbeafca0e1a202730e4ecaf"
+      "sha256": "bb316588fff5d1d512d9dd10252c0299d3d79b90217d49da3b89424d48b21249"
     },
     {
       "path": "06-figure/previews/FIG-Q4-BRACKET-ZOOM-grayscale.png",
-      "sha256": "d9825732e4babb00eba59e507914f0b7aa4b402d8cdfe009466fdd49856973bf"
+      "sha256": "56a0c9855a0cdf05350cf1e86bc31793fafef04f24f9131ac7fbd9c27c6d480d"
     },
     {
       "path": "06-figure/previews/FIG-Q4-COMBINED-BOUNDARY-color.png",
-      "sha256": "29817ef73b6aecc0b64d42d15383120d8abc0a06e69ef292e11f5a6440e27e02"
+      "sha256": "c2dcf26e4b107f39c519eea2b0b81a96db115bdda24febc170050953d6fb135a"
     },
     {
       "path": "06-figure/previews/FIG-Q4-COMBINED-BOUNDARY-grayscale.png",
-      "sha256": "636412bba7b584972e1ab683147f260ea031ce6e146941e259e215b4f0b65b69"
-    },
-    {
-      "path": "06-figure/previews/FIG-Q4-DRY-SOLID-CONTINUITY-color.png",
-      "sha256": "612982fbbbeba0e3a121ba517a1934e3b910279f7e000077bac4549f2b77a5f7"
-    },
-    {
-      "path": "06-figure/previews/FIG-Q4-DRY-SOLID-CONTINUITY-grayscale.png",
-      "sha256": "8b451e4b108aafcfbfaa7efb2f24b346e9c0f01c4a0adb10d7486c1077074788"
-    },
-    {
-      "path": "06-figure/previews/FIG-Q4-IMPLEMENTATION-AGREEMENT-color.png",
-      "sha256": "19434802bd948ac4aac3584c79c6dc5322a71072274a159e103041e5091b1623"
-    },
-    {
-      "path": "06-figure/previews/FIG-Q4-IMPLEMENTATION-AGREEMENT-grayscale.png",
-      "sha256": "bf00bb80a159817b153c3a4bd522bdc317972a892d45a69207d177246368b382"
-    },
-    {
-      "path": "06-figure/previews/FIG-Q4-JACOBIAN-ABLATION-color.png",
-      "sha256": "556306beb110d73f190d6348c0a4a8cabd3391ec48deb47dd4e825a3049191b7"
-    },
-    {
-      "path": "06-figure/previews/FIG-Q4-JACOBIAN-ABLATION-grayscale.png",
-      "sha256": "99532bb226ac39a5eb6e8bf5db836d1c55ce2e0d8f5d2ed26fa1286ff6100fcc"
+      "sha256": "bd70b775d1dd634b94f17fbfaa9093fb1811cb336d981ae0e5876dc9ef13966b"
     },
     {
       "path": "06-figure/previews/FIG-Q4-RADIUS-TIME-color.png",
-      "sha256": "90e10cd6d1b8998cc7219108d1e58f2d6cfcf492a68f13bba2519af2ea4109af"
+      "sha256": "4e7dad56f719ae2f04590a4c6dacc005709379836da9d394a317b4fb31c0d329"
     },
     {
       "path": "06-figure/previews/FIG-Q4-RADIUS-TIME-grayscale.png",
-      "sha256": "817f380f3751ee89fb71003093dfc08add0ccc3246473dcc7e8d5311a3577369"
+      "sha256": "236a64861715f5e5c220b67f017001bf421fc3e78beb9f0a82258a2f96701993"
     },
     {
       "path": "06-figure/previews/FIG-Q4-SPACE-CONV-color.png",
-      "sha256": "a52f99310c4bc385dea26233a8b54152b0a515723af869ff1030824d7d320b8d"
+      "sha256": "de5aa6e120b644f90eabaaf84bc06cdcf6d1b933ad59c9cc2d6a6b5976ff8360"
     },
     {
       "path": "06-figure/previews/FIG-Q4-SPACE-CONV-grayscale.png",
-      "sha256": "f341d9b8453dd7cab9d1210bc10c3a966204c34b9609b794dec635f1f77ad16e"
+      "sha256": "9e0746854b459ea21c32628e438cd1ceb690b020aa836390e2f5f5cef59c6c33"
     },
     {
       "path": "06-figure/previews/FIG-Q4-THRESHOLD-TRAJECTORY-color.png",
-      "sha256": "1bcc8bf26545728734dcb7a49c5c4a86420d188b07b3a1f0a0da9b9ad06c582e"
+      "sha256": "cb3f9f6c16edddba3d2b9de6b97a0e206e70baf275efb29f3cf5c3932b3c9cf0"
     },
     {
       "path": "06-figure/previews/FIG-Q4-THRESHOLD-TRAJECTORY-grayscale.png",
-      "sha256": "8285e93b15c35a1ed32f083cbb6df051e6e976b34c3991bdb52bf9d3334e9320"
+      "sha256": "fc2ddfac8cb6779a652e26e52a7bb1eaacb376b24fe5d63956cf5459e2945f4b"
     },
     {
-      "path": "06-figure/previews/FIG-VAL-BALANCE-RESIDUAL-color.png",
-      "sha256": "3eea48e4d1a4452531f48e81a26b4baf8e15e31bbfd422367704246c1b84713b"
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q1-C-FIELD.json",
+      "sha256": "1433234925b63dea22421b2c9972c10f63bb6d9215ee40489dd4abf494c33a30"
     },
     {
-      "path": "06-figure/previews/FIG-VAL-BALANCE-RESIDUAL-grayscale.png",
-      "sha256": "5cded361551dd1eb1e6e417c6d6bbdc4b87f0b3c0eda29b7bed5375b1c992638"
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q1-END-EFFECT.json",
+      "sha256": "e00177a0282b3e2010993f92f9a7c46a6d453092fa038ff1dc200a1dda809d6c"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q1-GRID-CONV.json",
+      "sha256": "82dd8156203139f4d739c01b4f1cb6499dd5fd2cf8ff519ec6e620a329a9eb28"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q2-C-PROFILES.json",
+      "sha256": "ce241d4bf0a1452e714884378720b798b8d503616c4154cac717e95bc7c2c052"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q2-GRID-CONV.json",
+      "sha256": "22102d7f9082473938c3a5d83a75ea8bd3872e9216056058a42c8383261cb06c"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q2-MODEL-ABLATION.json",
+      "sha256": "91a3c61d2785c2a568f7be3043aa7ac283c5dedb0183079bfc37814f54449fee"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q2-V02-MARGIN.json",
+      "sha256": "ac8530f35f954fa4c294c96bde13750cee98f787059298bd2fe87889f99831f8"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q3-BRACKET-ZOOM.json",
+      "sha256": "b158445d441dc7a9840ccfd4a886f97b3f5409978dbc7f7c42573f5ed37c1d27"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q3-COMBINED-BOUNDARY.json",
+      "sha256": "9fa274faa1cd59f8078484c507475845c2b9af0b81acefe832d22ab8a37f8e0b"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q3-SENS-ONEFACTOR.json",
+      "sha256": "a767c0fc37880cc7e6623517864fd3523ed6f25e7f5c7ad10c80f49fe85c0c38"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q3-SPACE-CONV.json",
+      "sha256": "461c58fa2ac26279b72cb85add313255b9ee1b6389a3f1697ce943861527ec73"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q3-THRESHOLD-TRAJECTORY.json",
+      "sha256": "d36a0ca2fea6d21f929103ae9588c8f003abe984729b9c42c77fced547f94452"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q3-TIME-CONV.json",
+      "sha256": "8f9bf97364f8631ce8e74fe7d793176b35188aa61214d4c744568db9dff8150e"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q4-BRACKET-ZOOM.json",
+      "sha256": "79be3c2a9274389700d3a07ce3234c72aed533750a7e188cd844471339dcf453"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q4-COMBINED-BOUNDARY.json",
+      "sha256": "1412018fcff69d2f00c16c0a9b60117dd44084b9b91c4f4bbe4c31c9aeaa5e8c"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q4-DRY-SOLID-CONTINUITY.json",
+      "sha256": "f66e5d272dc8fa0b0966badfd1a6c376b57dfde55f2ff8f6c7ce498b185a150a"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q4-IMPLEMENTATION-AGREEMENT.json",
+      "sha256": "6df0d457e9587830ba3572c0712edfea986f6725f420eb60a7f78c3bb9ef81ae"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q4-JACOBIAN-ABLATION.json",
+      "sha256": "6fc93ba43093639e8118c3bb46d6c9bde5dad40749d8ba319ed2ef117a67364a"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q4-RADIUS-TIME.json",
+      "sha256": "7a88a2bc270eb77c49a8d78e92a36586229da4c11295e35caa7b56ea379b1da3"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q4-SPACE-CONV.json",
+      "sha256": "4c7b889a1cc8b02c5c877b6084487ac472fbbb712724b6dcc68e9d6ff2dc5275"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-Q4-THRESHOLD-TRAJECTORY.json",
+      "sha256": "b830da75e7a6fb250f400f7003dc2fff3b599db06436a1b58cbea4bf9cdb0054"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/FIG-VAL-BALANCE-RESIDUAL.json",
+      "sha256": "bc5833b61a35b0a6b7585ec8ff766ea11732bb03c4c1e8cde90f5d643dc6c081"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/TAB-APPLICABILITY-FAILURE.json",
+      "sha256": "76ef5bc481f7cf6fc1fa5f8e27a25f968d958a09a83b73e0a9920e36275bc3ec"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/TAB-CLAIM-LIMIT.json",
+      "sha256": "e1c1ea262cd771b5f4bc21e561f1320d681d7bce6241dc8ab4c243c411708b63"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/TAB-Q2-MODEL-CONTRACT.json",
+      "sha256": "6033520a14cbed939874e4ece38a15dc67dd1f8a2dcec132295b7ec5b3c11896"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/TAB-STRATEGY-ASSUMPTION.json",
+      "sha256": "3682c59334476a1838134359e7d92a331d2c7a3f60bf13d45a55360de5495044"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/contracts/TAB-VAL-V01-V12.json",
+      "sha256": "99620957ec5c44c0d87cbf8283130f52cff2feafa6f6b4a44b89f859a7ea24e6"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q1-C-FIELD.csv",
+      "sha256": "b276251a72ca1c3430a90e44fbacb5ce0fadb987aa27c192d2d9d2a2ab868330"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q1-C-FIELD.meta.json",
+      "sha256": "b69ebe741a529b6bfddfb453e6580c74840f2127f1cbd4779a80a32e2141f77d"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q1-END-EFFECT.csv",
+      "sha256": "08ab35a912bb570679a60bdf2424744a2a7f7d081a15bbaecd6896582ae99cd7"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q1-END-EFFECT.meta.json",
+      "sha256": "348b185dad94370d1a7481974e97444b60ce976ea9cfaa22561d2d258c359662"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q1-GRID-CONV.csv",
+      "sha256": "2a27a39e026215fc9f12c99db55c58e459d3ebb958502a1d6a0459286a9a8fe1"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q1-GRID-CONV.meta.json",
+      "sha256": "ff659474dc6fb59b1dbd656c8c57a6a13d88706a3983afbcce101b3b40d7c40a"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q2-C-PROFILES.csv",
+      "sha256": "b999c781f36e8954478d5dd0163098a1dbe8861518a3b5d2eaa0ae37d4a650b6"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q2-C-PROFILES.meta.json",
+      "sha256": "25ba817e39b1ae57ae6008dec71b849c03c62e84f7ba2554c2f800d226ec547b"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q2-GRID-CONV.csv",
+      "sha256": "17a76fde0781d726253e56dff160c9534e21bc3f64b8ffce72f000a395981f02"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q2-GRID-CONV.meta.json",
+      "sha256": "7dd72ddeeac0545dfba2b97cfff706bb1509dc41d408548945b4721d60430d68"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q2-MODEL-ABLATION.csv",
+      "sha256": "45a2b1ca062c1564aa7c2704bbfaa77e432eeaccebb49cea69af921d34590eec"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q2-MODEL-ABLATION.meta.json",
+      "sha256": "42312153961b735172ef5bfb47cbf22bab3ea3ee3a6eb95f192f5abb1e147c18"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q2-V02-MARGIN.csv",
+      "sha256": "68388c3abc95f64f77232695b5922aa29b40740db64b1a3d61eceab22110df06"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q2-V02-MARGIN.meta.json",
+      "sha256": "5fa080e7d9d62853a4e49a26297a62545d6b513386b07d513246c4ddd98e6937"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q3-BRACKET-ZOOM.csv",
+      "sha256": "08eef3fe2c307387a0f4e24e998c678df29610cdefc3b1f6efca2fbe3628421b"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q3-BRACKET-ZOOM.meta.json",
+      "sha256": "a0e1b40452fc395c8cdbe67de8a9a2ab867e8b1d15bb452f2011ad5dd2cd538a"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q3-COMBINED-BOUNDARY.csv",
+      "sha256": "570d5f61006f91b5ced2b42270ee44b53272162caacb3a18c2fc74f261f13607"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q3-COMBINED-BOUNDARY.meta.json",
+      "sha256": "5b61d0c5f4af2d2de1e863ffda7d36fb62939305361e62f998935e3ec448feb5"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q3-SENS-ONEFACTOR.csv",
+      "sha256": "c187962815e1e839d9dd9547983d07e18308ac4e4827940a95db10a2994d340d"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q3-SENS-ONEFACTOR.meta.json",
+      "sha256": "16a56867c97995500681a66fcc318448083c972a0d91553c28d78e35f11fb283"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q3-SPACE-CONV.csv",
+      "sha256": "a80260c875f9f7d934ecd6487a13fcc0f90cd08dcab46ab2ad21622732532408"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q3-SPACE-CONV.meta.json",
+      "sha256": "fbcff1e4e438e8f7885100644ac586fde1933c2a02a253ed4f160bd23f2c76e1"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q3-THRESHOLD-TRAJECTORY.csv",
+      "sha256": "80162262fba9c98d091a59a029ba8f1b8b8fb673017a15cca3b08b8fcd148ad6"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q3-THRESHOLD-TRAJECTORY.meta.json",
+      "sha256": "aa6ccf88c438a3bf2dc2a1c35665a3e2d7fc58605d2c36aa2d29a80112db58a4"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q3-TIME-CONV.csv",
+      "sha256": "5089bf89f9236fbb56e54bd2590df4d40fed80879839e1dd7dd8417a4d3d5fe8"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q3-TIME-CONV.meta.json",
+      "sha256": "9f11cf019411b94ed60d1cf115837192669fd5c486c4144ba541f4203585909b"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-BRACKET-ZOOM.csv",
+      "sha256": "24e7ea34a654eff45e46e61e2af4d04f50aefd028f1e531369573a295c973ce8"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-BRACKET-ZOOM.meta.json",
+      "sha256": "122bdac301d4ae117597507beca04c2997818e3fae9022139a096133c5e579a3"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-COMBINED-BOUNDARY.csv",
+      "sha256": "a18a7d49340b9bf7ecc17ebcfaad9209c3d5ecf47986892639f56a51883863ec"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-COMBINED-BOUNDARY.meta.json",
+      "sha256": "ea0d942a188ef411d68c0d7ee41785a292a52f28931b4f2087e9a3ed73e2ff56"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-DRY-SOLID-CONTINUITY.csv",
+      "sha256": "a8f8317b603606263b48e634b128a2fdb42e22f152e680533214da37769eff22"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-DRY-SOLID-CONTINUITY.meta.json",
+      "sha256": "764eefa7ae6f2f9b0f7a65fac0cc2302e848999b7044efca6594bd50c07f3f12"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-IMPLEMENTATION-AGREEMENT.csv",
+      "sha256": "f6260edb022795e877c7480220958b69e0e9a80dfa27accdaa837f620fa14a60"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-IMPLEMENTATION-AGREEMENT.meta.json",
+      "sha256": "e7ee852c048d9a702dda9d612e94a445c560140761aca1a57f12e9530180236c"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-JACOBIAN-ABLATION.csv",
+      "sha256": "ccfd51c6f0f09d5be5966ff33b31e9fb9b2167d0757fcc8f8a3d7cf32461dced"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-JACOBIAN-ABLATION.meta.json",
+      "sha256": "3e0b0f250483c67c9fe95e1abcd9e86bc7b9987bc6bdf9a4118b68594111025a"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-RADIUS-TIME.csv",
+      "sha256": "926a97b600a4a0a83fd1124ec49fed82eac748ec02c89bd6ec43242ae6680651"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-RADIUS-TIME.meta.json",
+      "sha256": "9363c5bab9be9392abe17209ed995f012c072791b6f9492999ce70dc34aedd50"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-SPACE-CONV.csv",
+      "sha256": "09f6d990b9ff3943e03afa5bc9df9f8ff08ca3a10bf0c7a61cb6bf123a6a05c3"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-SPACE-CONV.meta.json",
+      "sha256": "45e59a716e8282cc17782ef028860372f63ed48d88977afca384336d7e4d0863"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-THRESHOLD-TRAJECTORY.csv",
+      "sha256": "252c7f82006103ed50f3f1bfc92880a69d4df2ccee6c2aed4b5f2177f0393fa2"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-Q4-THRESHOLD-TRAJECTORY.meta.json",
+      "sha256": "1e0bc9c512fda3c96d768b920e285daebb3eac5260e6e560d736ec1e82326661"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-VAL-BALANCE-RESIDUAL.csv",
+      "sha256": "fdc5fdd73fb4814721dcecb2eaba0e84fbfc4e66c88ddb13f953313bd7fbd63d"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/FIG-VAL-BALANCE-RESIDUAL.meta.json",
+      "sha256": "42df35d31485cd1d0bce5304009844d9c1acb6b778c742db778e716967208e97"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/TAB-APPLICABILITY-FAILURE.csv",
+      "sha256": "6efb97ff1a1068ae1e917f4a6ee50211e033723f891cd202c0fee06deb2bf4c8"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/TAB-APPLICABILITY-FAILURE.meta.json",
+      "sha256": "43bc144ef03f78d81f9b5f6cb3feea40cce666c7e6ed8a745871d66c5914f2d3"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/TAB-CLAIM-LIMIT.csv",
+      "sha256": "45dec3591e7face7125ced4e6e9da42391380110fc3ce3392a9f375ddab81051"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/TAB-CLAIM-LIMIT.meta.json",
+      "sha256": "c557b7218e2da14e72589e7fc9bce31e3dc2e942fb177e5969ad2e0337990f91"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/TAB-Q2-MODEL-CONTRACT.csv",
+      "sha256": "1749c364f678d3fb4b1e9495bee4ca3e77dd04d27a0ba8d597f69a630593cfdd"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/TAB-Q2-MODEL-CONTRACT.meta.json",
+      "sha256": "75730255b2a702184934c5b3954940c18d49fdc3dfde8e219d04b366ca624572"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/TAB-STRATEGY-ASSUMPTION.csv",
+      "sha256": "051365fb4a84193a363c1a6a3264fea17c482c8e4e107e6b99b8b31a2f079aa0"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/TAB-STRATEGY-ASSUMPTION.meta.json",
+      "sha256": "215197d4ad2e18d2707ce926b7d78b7a77f29760594212555a8326fc5002bc2c"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/TAB-VAL-V01-V12.csv",
+      "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/data-snapshots/TAB-VAL-V01-V12.meta.json",
+      "sha256": "a7dc1e9ee93f07276478a41e010a38e589a0f8b64b9d2864e907ccd2a5428f2b"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figure-manifest.json",
+      "sha256": "9624bd8d0d1897a99f60a784d390d35c0175775324b0c098677379cc02c4a274"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figure-register.json",
+      "sha256": "acb0e505388cd67ee2054d7c3b6aca4e5214ef987f2b72026d60f09a01170a57"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q1-C-FIELD.png",
+      "sha256": "c96d46c9f60c5d4eb2c6e68d0160898592bad340a7f99e2b9c947ded1fec59e6"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q1-C-FIELD.svg",
+      "sha256": "350254adbc6d0922e3823ed0e7da82226e1c5b5de8ab31299dfdb9ceba8835fa"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q1-END-EFFECT.png",
+      "sha256": "ab240c5420071c0c7085f19317c1b1928ddb6e307afac750fd7299d53b053b49"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q1-END-EFFECT.svg",
+      "sha256": "2923fc7ca5db2be044ed5dbbdc98508af6f6894f3d61675260e445f28bd0bebf"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q1-GRID-CONV.png",
+      "sha256": "fb063f9a1c41cee9d01461efc98707a85464050be5c3196a1866fcfbcd259f56"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q1-GRID-CONV.svg",
+      "sha256": "cd79978e93d1d6fe043ad75ee7939ab82e789a858f42a93907186400d1700b79"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q2-C-PROFILES.png",
+      "sha256": "aa2eb21e15e35dde6bb94af2a4e95e5a639fd562b69ce94a9b17f9d40346cf1e"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q2-C-PROFILES.svg",
+      "sha256": "066a47e77d722780135e441bd1a3b654799a61d067510186d7e0069d3e972ffc"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q2-GRID-CONV.png",
+      "sha256": "41a0dd1602b8ec265b29a7d28b9c20cd652c3730a8fc975c21e5f184a45e3589"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q2-GRID-CONV.svg",
+      "sha256": "4851831f865cd73d387d4eb36cc44e8d0057e7f4127de921d450e6f3aa3b5d89"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q2-MODEL-ABLATION.png",
+      "sha256": "dadda19f86ce9eca55129976b4b8f6f686b83630e23a1520060dc635e183c008"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q2-MODEL-ABLATION.svg",
+      "sha256": "8573e5f7dd92fc329fd3ad7764fff10df9a25d6481ffa4365b6a1916a2e2fa54"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q2-V02-MARGIN.png",
+      "sha256": "47025fe65f1700590c6840e563a9122bc4e46b89ebf8a2b3f1589c51c80ff3d5"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q2-V02-MARGIN.svg",
+      "sha256": "e0187a858498de44d17936f3f1851fafe647c4ad3869660d0eb6f6849c5aafd6"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q3-BRACKET-ZOOM.png",
+      "sha256": "1aa7d92d9e54c29f94d43fc1efa99cd5ce9687ba3aa22f305cb4b4fa876f1baa"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q3-BRACKET-ZOOM.svg",
+      "sha256": "8a5c6fe432fc1c304b486a706efe9a3dbe67613a546477f87f85c74640d0bea0"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q3-COMBINED-BOUNDARY.png",
+      "sha256": "fd96b79eebdfd9d258780de38c73f5a520761958b73ec9fff34186b2abc0cbf2"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q3-COMBINED-BOUNDARY.svg",
+      "sha256": "7a2568e17981a9438e44f1206af938a9864cdeacfe9e4fc17b4d20a66d5ff653"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q3-SENS-ONEFACTOR.png",
+      "sha256": "9ffe59bbf8c9ec5fb26e4ceaf9e7260796fde1ec11bdf807562a72dbc8c8edf6"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q3-SENS-ONEFACTOR.svg",
+      "sha256": "d09155b6a50228412fe07e93b8b48d5314353a552cf6bc7a39fda381c85ee270"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q3-SPACE-CONV.png",
+      "sha256": "a6c34598a0acce2bc85d91b6370570177f3294d0663ad16c23d5e0c514a9aa1f"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q3-SPACE-CONV.svg",
+      "sha256": "14aa52bbe18c9a99376ec95bc39df08bd74864a122fe39bbd0ac23fd0efd1789"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q3-THRESHOLD-TRAJECTORY.png",
+      "sha256": "469e997563cda499c37e2d10a8c799974b0259b2b18d1c9de5de30e9d3d47e01"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q3-THRESHOLD-TRAJECTORY.svg",
+      "sha256": "87aea3f3f67626db95b75c843118ed185ab60edd959bd6dfe87d3649e05d8d18"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q3-TIME-CONV.png",
+      "sha256": "ca30d93cd401be392d4fbdb2efddcb687db71b651f6612d94f257fdb02d602d4"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q3-TIME-CONV.svg",
+      "sha256": "9c75b4455497e22fa77f442936e620599d79e4537d6c16e483d1ed4c6f919295"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q4-BRACKET-ZOOM.png",
+      "sha256": "7b90fbeed2a960784603575b2fd6fc38bde930c3f98e210c6be7fe226178115e"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q4-BRACKET-ZOOM.svg",
+      "sha256": "6ea10cd36dfa8b7501e7ee430eca330ed888a1980b126031ec654178ee5f8275"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q4-COMBINED-BOUNDARY.png",
+      "sha256": "bf9de0936188d4c063f1747445339a77773161e89dcd2e5b934c84bd92be7588"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q4-COMBINED-BOUNDARY.svg",
+      "sha256": "3f0c4624de0f025a41e76efe1d1417815dd7f48268fc1f73c1c2d8a762b52323"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q4-DRY-SOLID-CONTINUITY.png",
+      "sha256": "1e887da12f6ffd715c0c6f6cc814fb111143c89522f606508a2db96de792dcc9"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q4-DRY-SOLID-CONTINUITY.svg",
+      "sha256": "a264ef28587b4f3899f3a78821612ce762e05819889a48cead3caeaa84df2a6c"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.png",
+      "sha256": "ac14dc6043d1d062f1c694cb558c22453207abfc076caadc3ae592ae7859f936"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.svg",
+      "sha256": "7477e1bb6ef0ed4f778f5a62cf6989851073795f5dd727a186f94800613ffb33"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q4-JACOBIAN-ABLATION.png",
+      "sha256": "7b28c3e6c8a04921537032864dee372b656c9b8d506823cdab128e6116019655"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q4-JACOBIAN-ABLATION.svg",
+      "sha256": "f6095c1405bb48fc48e1a962642230e33bbf3363edcb41558c4f70cbb54f6d62"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q4-RADIUS-TIME.png",
+      "sha256": "cf5218846f296d7f3049a4bbd772ad9e7082b3ccb1703ae35d3febaed696db06"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q4-RADIUS-TIME.svg",
+      "sha256": "0ac720ac63fee58714390835ede05f112c6d8653bf4bc28a28524ebec4905cb0"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q4-SPACE-CONV.png",
+      "sha256": "d75fc7ed3c073fa0c7803188fa38ad8f7267bd3ef8aa62098afd60defa5c0dba"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q4-SPACE-CONV.svg",
+      "sha256": "46ea56a11a98daa6ebf6c0ef9d87cc8e07656cde50116e8f5e949613e23e4c67"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q4-THRESHOLD-TRAJECTORY.png",
+      "sha256": "9eb7d46d10eb21e77d83e3d0fad43ad4b80454e30d725a17798be40fdd54824b"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-Q4-THRESHOLD-TRAJECTORY.svg",
+      "sha256": "6fda5539f10197d6e539ae0d6b2e17e4438b86c0cdc4b03103dbea820dc72d1e"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-VAL-BALANCE-RESIDUAL.png",
+      "sha256": "cc5a843bb373543bf576caaa68ec33f9cb156d8c37c37a598e44184d69110560"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/FIG-VAL-BALANCE-RESIDUAL.svg",
+      "sha256": "0f569f6853f88a1cdd7e3b184340f39aa83767e3e3bdc0ca13cc4f1816b86427"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/TAB-APPLICABILITY-FAILURE.csv",
+      "sha256": "6efb97ff1a1068ae1e917f4a6ee50211e033723f891cd202c0fee06deb2bf4c8"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/TAB-APPLICABILITY-FAILURE.md",
+      "sha256": "9532ae6c8ee0ba9f22bbe04f5052f469f872e344d009835ba8212f8de166ac35"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/TAB-CLAIM-LIMIT.csv",
+      "sha256": "45dec3591e7face7125ced4e6e9da42391380110fc3ce3392a9f375ddab81051"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/TAB-CLAIM-LIMIT.md",
+      "sha256": "d6624860d532809bc111d89a5e2eea7649a1cb6717870fb5d4ac175868e75507"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/TAB-Q2-MODEL-CONTRACT.csv",
+      "sha256": "1749c364f678d3fb4b1e9495bee4ca3e77dd04d27a0ba8d597f69a630593cfdd"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/TAB-Q2-MODEL-CONTRACT.md",
+      "sha256": "abfa7e51794a8d85dff85567b549246ed440d4a8d637d51ad57c226e9fc347ac"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/TAB-STRATEGY-ASSUMPTION.csv",
+      "sha256": "051365fb4a84193a363c1a6a3264fea17c482c8e4e107e6b99b8b31a2f079aa0"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/TAB-STRATEGY-ASSUMPTION.md",
+      "sha256": "f2d7840fb34649bf68d827e28f83cba18c61efadd19ee17fc116ce66e5a48635"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/TAB-VAL-V01-V12.csv",
+      "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/figures/TAB-VAL-V01-V12.md",
+      "sha256": "bc51233985830a84aef0d81573f48edc35fc776a72ca48d4edef830ae831a13f"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/logs/strict-qa.log",
+      "sha256": "0afe6b3d67a20fb305ea5197fdfbd780b1676498a526b52cacec81dac1e24623"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/new-takeover-verification.json",
+      "sha256": "fb9cbd563096107c6f940167018bf2c1f7110aa419ecd6dc5fa76955cd15dabb"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/contact-sheet-color.png",
+      "sha256": "b77d487b5349814e403982cd8b4ea42c7726de6526e6619f6650a716ca4b0fa7"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/contact-sheet-grayscale.png",
+      "sha256": "a515be984814a164572b083979bada064510158fabd38e3705907bc3381f27f9"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q1-C-FIELD-color.png",
+      "sha256": "851a5d61315a14e8508afa7c22a96e30c81009afd8f55689995dd7f03dbba0d6"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q1-C-FIELD-grayscale.png",
+      "sha256": "eabcf4c4e46da4d730b61ff9f094192dcf2e7a8597a0bcc0dd93b369ccdd168e"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q1-END-EFFECT-color.png",
+      "sha256": "a8b1abb93c69bd66c53739efe69d32864d99260eda14c20d28a660d2f5fdcc45"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q1-END-EFFECT-grayscale.png",
+      "sha256": "dde9cf7c79d9f332329c3b6d975eba1e78d2f521d69b73936d6903b2eed1f843"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q1-GRID-CONV-color.png",
+      "sha256": "1d038a63c9346f7c84dba82fcc617d6b0fc85350a5e3b0a562c744d0924e79c3"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q1-GRID-CONV-grayscale.png",
+      "sha256": "e8ed06041091b26e51128704f88f560fe6576cc6dc0f9a7765cdda1b75f4110a"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q2-C-PROFILES-color.png",
+      "sha256": "1c2f19c23f1b00aebcbdcc487796005ea8e5f59d6870edc3228d0f3c5e6b2cff"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q2-C-PROFILES-grayscale.png",
+      "sha256": "afeb10e441a387836e410456f3a674bee56ca845dcd6dc4445c7cd06df8691ff"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q2-GRID-CONV-color.png",
+      "sha256": "933b85e6f22ee4c36e91aad0a865ceae4fb7969d41fe7874120564c41db51697"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q2-GRID-CONV-grayscale.png",
+      "sha256": "b0a1ff4913fc78d01fe4407da2eb3e9cca736b6dd33d17032c880ff307c55668"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q2-MODEL-ABLATION-color.png",
+      "sha256": "fb64ce9becad81e1a68992edeff1714dee1643d53e2f5c460ad36646b0289f64"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q2-MODEL-ABLATION-grayscale.png",
+      "sha256": "5085ce7f0e59c8c9c95ecbdfffc4b1399fc0989b129474de54713e497860ee99"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q2-V02-MARGIN-color.png",
+      "sha256": "570247ef1ebe2037357ec52706fc11219846976b2c3660557ccf3f0505785a83"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q2-V02-MARGIN-grayscale.png",
+      "sha256": "40585daad45e141fe2a7e110b7364c70b2c66f75e4cfe25fa9a48f538c49f794"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q3-BRACKET-ZOOM-color.png",
+      "sha256": "685a63ec2d47b01eb8b6d2487aa1fad5b68ccf65e33ef328947b7fbfd5b01f32"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q3-BRACKET-ZOOM-grayscale.png",
+      "sha256": "cf04b9d181c5bf72e4ea9efa84f7c86a68da8b3fd1be51d2564235ab7a6edb15"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q3-COMBINED-BOUNDARY-color.png",
+      "sha256": "50ab9413bcfe4f1b116204f0ef564d624f91396f25b24976fc678a076d481dc3"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q3-COMBINED-BOUNDARY-grayscale.png",
+      "sha256": "d1029460adfc947b6f055b6554dd51829e3538ed58eabd2620e0d7345b991524"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q3-SENS-ONEFACTOR-color.png",
+      "sha256": "f41f07c6935007416d88aea1d5e5fa995d000354acdbcb2f0e67a07feb1e00f3"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q3-SENS-ONEFACTOR-grayscale.png",
+      "sha256": "40e67432532dbee4b59432c091c258f4698aa46d266340b6a4a7c9ac8cf19228"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q3-SPACE-CONV-color.png",
+      "sha256": "04d9f526d415d502a3136fc7f84ee714f7aee5d9420cd2a50c3743010b707232"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q3-SPACE-CONV-grayscale.png",
+      "sha256": "e26a7c6eb44f447e99631ac2aad657f8d50006d8fc9f038fb1a1fb94faeaced8"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q3-THRESHOLD-TRAJECTORY-color.png",
+      "sha256": "7c01a44cf1d71cee3940d4fa9cb72993d3c959d646f65a32c0075a0483035063"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q3-THRESHOLD-TRAJECTORY-grayscale.png",
+      "sha256": "abcb260a367f6fed0ff42bb17a9b87cd569a750a73142d95be12a95ba100f065"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q3-TIME-CONV-color.png",
+      "sha256": "15a090920dcea6251af3810d33df352bea9fdecc795f8d78ec1c4e2a700151e4"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q3-TIME-CONV-grayscale.png",
+      "sha256": "a47cd431de59d2c4b9fe2c61df2b55c0503138855f331abf25c159853e5d9c1e"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q4-BRACKET-ZOOM-color.png",
+      "sha256": "862f576dd204d3bdd2559de6743b6b870e0d8d3ff2f32c00f2a34183919d954d"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q4-BRACKET-ZOOM-grayscale.png",
+      "sha256": "40f784099c9a0de8677798abf4273bb02e8ac35f6a1ee84ba2c32a56e23d1d0c"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q4-COMBINED-BOUNDARY-color.png",
+      "sha256": "206f0f4b11e5ee57aa17e21d0c3f1b9cdcdb09e6aa3e0148420cc81daa9a0495"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q4-COMBINED-BOUNDARY-grayscale.png",
+      "sha256": "f3e807122b561ea1ba0d35db5537dab6ccfa625803a6b15f32cd427abf041178"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q4-DRY-SOLID-CONTINUITY-color.png",
+      "sha256": "6e6778ef552a692ab95f64095cac6372577c703185e28121a7439addd4227556"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q4-DRY-SOLID-CONTINUITY-grayscale.png",
+      "sha256": "b6893de5bd5796f009504c619ef1c57484b5626f7a60458b25247dd328945363"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q4-IMPLEMENTATION-AGREEMENT-color.png",
+      "sha256": "84f9489473419f1f720d178d3bf35151f6d63bb16b7d7236c4478d520169a973"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q4-IMPLEMENTATION-AGREEMENT-grayscale.png",
+      "sha256": "2a6e3911c34b7608d46e56dcd33e8b59688fe1a5498a5cd08637ead39ab14bae"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q4-JACOBIAN-ABLATION-color.png",
+      "sha256": "be9f726ba01cbc6dd1006df11eff6c2b8a176c4cb947489fd14ff1b654f77cce"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q4-JACOBIAN-ABLATION-grayscale.png",
+      "sha256": "741b00d91d58678fb11eb932d9999bc0155caab8f870d29336329d25be991cc9"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q4-RADIUS-TIME-color.png",
+      "sha256": "fdd877001c3e0b50bd6cd386ae720c5058cac68f29f1c191efe8be4aa640e28f"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q4-RADIUS-TIME-grayscale.png",
+      "sha256": "666ea35a962108e95ae0c2a3d91f17d78a9c76c4b5689603a05b1a2532153358"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q4-SPACE-CONV-color.png",
+      "sha256": "303affaf1fb75c908dafe3a2f74cf7c633ad308ea1783c6b1ec7ae41dd132176"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q4-SPACE-CONV-grayscale.png",
+      "sha256": "0f4803d787b05934dcd89c9f5f9e468c6b5688dda4adbb49c7a3998be73e98d9"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q4-THRESHOLD-TRAJECTORY-color.png",
+      "sha256": "108becda509ef53bd4ab1818a1f681c1ce811be967c78d28c35e5bcdffc75ed1"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-Q4-THRESHOLD-TRAJECTORY-grayscale.png",
+      "sha256": "2553bd230f43cdc288ab816a0c0e6c33248a5285a3e03305d919434f82f26174"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-VAL-BALANCE-RESIDUAL-color.png",
+      "sha256": "46cae4608e24224adcb0027a68fbc5fff7d65caf837b66c0a216fde20e7e3961"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/previews/FIG-VAL-BALANCE-RESIDUAL-grayscale.png",
+      "sha256": "7103f575cfea37b48939356e0d275772b0648b77989397b569c1363495d83f4a"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/scripts/finalize_from_compute.py",
+      "sha256": "b0040c4410d4c1759ceeac1676a447e878d913f1005aa2a989ea92bdaa18e5ec"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/scripts/prepare_from_compute.py",
+      "sha256": "de8df5f37012d6eaaf970a64aeed0a47bbecf811b28ccd2af9b8f8174a39fe01"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/scripts/render_from_compute.m",
+      "sha256": "173b2fa4c376981ae54030ab49538bf1dfc2bdde745399d6895ba7cb88ee7edd"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/scripts/verify_new_takeover.py",
+      "sha256": "2d493106ad127208576e90b4be93df9606a03b24e4bd5d34218ec289099ac4af"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/visual-audit.md",
+      "sha256": "7537e08464862ebe25babe7a6bc83e5fe8138072d04fd62b7a6e090ef7087053"
+    },
+    {
+      "path": "06-figure/rebuild-20260912/图注.md",
+      "sha256": "86f44d1ad6c925c93e469a31e13b800f586e15bac88cc0f0f350eb3a9cf97ed9"
+    },
+    {
+      "path": "06-figure/redraw-fig6-20260912/qa-report.json",
+      "sha256": "69d9f1abf788fb1d608ddbb5538048a4d99a4e69642fa86ce97588be296fc4e6"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/data-verification.json",
+      "sha256": "425e956649e3d018d667a242ed7e6a025effea1b88b379192c098551761929fc"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figure-register.json",
+      "sha256": "1e7fc417f3076621c1892905449e12410023b9483a1c286be2a3d2a38d1806fe"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q1-GRID-CONV.pdf",
+      "sha256": "669b4acd04399bcd60490e3f9e8b8dc2054379bcb3056079d980caa0061e48f3"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q1-GRID-CONV.png",
+      "sha256": "70f3bb6c5dd64015786505cc99b71339ab50e15fdc0ba87f624252f9a4d4cc54"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q1-GRID-CONV.svg",
+      "sha256": "31fd8e2b8f2892cff1e5055f7479d2b1b702af69d45a5242c216c8d7b6045e37"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q2-V02-MARGIN.pdf",
+      "sha256": "4db0d7945c9788d99ec633a914d5c09c8b5ca94d63e79b14cd73f4fa37e84e7c"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q2-V02-MARGIN.png",
+      "sha256": "e38983523aa3f6e9df5a99031793e769f8984c66732e7a306a0cfc6718384cd1"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q2-V02-MARGIN.svg",
+      "sha256": "1f9b61b60f5df3f1d32c96c36ce87fe5ff82aa02eecf89cb4c24bb95866bc72e"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q3-COMBINED-BOUNDARY.pdf",
+      "sha256": "011a44a2d36f8c1271b718079760cd9e020781af91bea008e01b96397d3d0c3b"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q3-COMBINED-BOUNDARY.png",
+      "sha256": "67a8bd85bc7675d84b84ce9ff08e43f62aa122569839c8d22315af259e4454bc"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q3-COMBINED-BOUNDARY.svg",
+      "sha256": "a144b3292619e197947877ad90718d0a6fe57c050404b1bce7f4a441b9c6c447"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q3-SENS-ONEFACTOR.pdf",
+      "sha256": "556b919955410554738bacf6aae4848b9aa82f1fa608ab7dfd1ef3473f513266"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q3-SENS-ONEFACTOR.png",
+      "sha256": "7945294d2c1301e656090bb806524a9de9363e96397b19149beb05d68f5fd6f1"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q3-SENS-ONEFACTOR.svg",
+      "sha256": "14809ffecdc20f6c63d429f22b7bc88970446457118e32336705a55e60f2179f"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q3-SPACE-CONV.pdf",
+      "sha256": "91f015e677bcb2de042cf8dcac4a148c53069685dc2fc7f8c9c8dd725a0b52af"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q3-SPACE-CONV.png",
+      "sha256": "6e6fb4644847c8b795d024b9a5a8b428673d26c324aaf61b24ae5d0080e5ecf9"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q3-SPACE-CONV.svg",
+      "sha256": "164be38a4f7e0f907bacf98da2b70327438dde2d25ba596c4908d61b1bd87e5e"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-BRACKET-ZOOM.pdf",
+      "sha256": "8b0331d07d816b5c7b35c21adb3153aa7d1222c9a51a04ec2379b953269833db"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-BRACKET-ZOOM.png",
+      "sha256": "c31a761a786146db3457adf5df9aa74153e711c5fce78beae497dd99b2a33b94"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-BRACKET-ZOOM.svg",
+      "sha256": "f7c2b5590cae86af9352284c2385ad4b7d5fde62aeaea2fae05e0ebfcedc5402"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-COMBINED-BOUNDARY.pdf",
+      "sha256": "42251e3ef739cc4e55cf0aac28bae57aae3da44c83d2efb093a52acf124686c4"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-COMBINED-BOUNDARY.png",
+      "sha256": "fd06347eba1ef5c4dddfa6fbea3e73b6094dfa1235cf949f7dfbddf838b81d5d"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-COMBINED-BOUNDARY.svg",
+      "sha256": "f051021ab8e783da28bee47ad37097764cfdc72b011c602d602800878d61956a"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-DRY-SOLID-CONTINUITY.pdf",
+      "sha256": "df524ebc30669da3f3ab5c7bfa3992c784c480b87a1a1f5e21530b4726381edd"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-DRY-SOLID-CONTINUITY.png",
+      "sha256": "e367f3a77209286f24605782e62e709dfec3b4a6212e7a85d8973777e935cac4"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-DRY-SOLID-CONTINUITY.svg",
+      "sha256": "0b64815f81813fdb1da82fec4329af66ec9d45c2b130ed87a444cd20cab96137"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.pdf",
+      "sha256": "2806e4fad7155ca9aed4cb39ea67c5bbd33d5a2fef2c7cb51ecc75d9e78c6488"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.png",
+      "sha256": "13a2a1c536734d5c34569da08250e6129d7cb01a203e86200781f51b31040dad"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.svg",
+      "sha256": "d52e2811a7c9a4c152e6a750f690eeb8a048cde9649394f4758328624c538ed2"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-JACOBIAN-ABLATION.pdf",
+      "sha256": "e206f139a4345dd8eb414a7426ff304387de2e3c080c16267fb20cd10a36ba65"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-JACOBIAN-ABLATION.png",
+      "sha256": "614d7dfe819af656af12c325cd7e262020f0eddfcbe43d41bf4286f82073a44e"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-JACOBIAN-ABLATION.svg",
+      "sha256": "2b109f6a60c1f89554b51bed021605f853b189f29dd3a595cab47582f5b4ddaf"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-RADIUS-TIME.pdf",
+      "sha256": "a75afea7dd2b375fd0144e3337469e4b19bb3d657501e194f3f184fe647dc8c8"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-RADIUS-TIME.png",
+      "sha256": "0beafbf043ddf09587f67976c795e2a5d3f18681fed1c621108cdc635aa026f5"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-RADIUS-TIME.svg",
+      "sha256": "65efc9e2e0001d0b0fb0395299302beb1db061233e758520a09acacce8046b2a"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-SPACE-CONV.pdf",
+      "sha256": "863e42df898d8c749651a1dc1529a514552a775c17f5f819d094bd04706516e3"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-SPACE-CONV.png",
+      "sha256": "8f5d9255dc0ee1dd555a377d86629cb32a5126bcdb805edb678c78cae92ad9d5"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-SPACE-CONV.svg",
+      "sha256": "f485934118e514c7643f60515ef65963d669ec4a7d68fb9b40857fba5748ce23"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-THRESHOLD-TRAJECTORY.pdf",
+      "sha256": "60b8484f6fb9ee19acd5afbc3f2390c1f544aba8232899324e76adbac7ec920c"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-THRESHOLD-TRAJECTORY.png",
+      "sha256": "3637253cc8584ef913e88000cbeb37c5b355a34540c62bd3492a18f4c50c3599"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-Q4-THRESHOLD-TRAJECTORY.svg",
+      "sha256": "2af075d2e816729fbfad93953703d91de199fbfec811e8ce98303b760c428a43"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-VAL-BALANCE-RESIDUAL.pdf",
+      "sha256": "9330c345a9f8b0d5940a14a3ea0a9a17f5e21843a8b610a4ec295a1b9856f784"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-VAL-BALANCE-RESIDUAL.png",
+      "sha256": "34b61590b024dfc5b0ac9e7fca2fcd1bf359f8d7e74c11e85543c4cc27b5ce8a"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/figures/FIG-VAL-BALANCE-RESIDUAL.svg",
+      "sha256": "192f67e87a1a8af06ff0b1d7028356b447737bba4dfa4bab7d85e21a065d33d4"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/contact-sheet-color.png",
+      "sha256": "a870a2b07de5d235f38fbdc66ecc495a2f827bc1079ffe8e70a8326c0992a769"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/contact-sheet-grayscale.png",
+      "sha256": "07aacf0848ac3c01dcb69d2d457ac736db8041f7a1036a0dc8d5882085a1613c"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q1-GRID-CONV-color.png",
+      "sha256": "3428181484cf9abb2d62ce1c3a0d074d38ec8122e4d7765ec952488e6727b637"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q1-GRID-CONV-grayscale.png",
+      "sha256": "aab40a9de12809ebcb13e354cb8fd0a395a63ee1220eb27f1612703dcaf9120c"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q2-V02-MARGIN-color.png",
+      "sha256": "e294b69e585c8e61734027352f39ab1444d8c38fe7fb5b7e60e31c5e90b49f1e"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q2-V02-MARGIN-grayscale.png",
+      "sha256": "5234afb50539a474bb062b56f4dcaa112c09d7744d78bfc6feeeaf67daf928bd"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q3-COMBINED-BOUNDARY-color.png",
+      "sha256": "d784800ff317f50c1dd785d0b29058ef86662c02ae78befcbe61f77deafc84ec"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q3-COMBINED-BOUNDARY-grayscale.png",
+      "sha256": "80a13468b4da1a783b22f376edb9b82de37579f2b9fdd89dab7e4239c9ebbb50"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q3-SENS-ONEFACTOR-color.png",
+      "sha256": "91c4c6e94c74d924defbde996c8a6f389015e8686d66189c14620efa7b516351"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q3-SENS-ONEFACTOR-grayscale.png",
+      "sha256": "91337b0ece33dc3cd7104cdf94acca9414bcb4e0145a53205cea645fc7447118"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q3-SPACE-CONV-color.png",
+      "sha256": "10f597b34aa2b9acee87141f7db7a3c97acf1bbaae1fa8855556497bb169a912"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q3-SPACE-CONV-grayscale.png",
+      "sha256": "15256c956b23335f36f578431c91e4c6da1eef2df354a459db91b6f94c859a82"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q4-BRACKET-ZOOM-color.png",
+      "sha256": "bb316588fff5d1d512d9dd10252c0299d3d79b90217d49da3b89424d48b21249"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q4-BRACKET-ZOOM-grayscale.png",
+      "sha256": "56a0c9855a0cdf05350cf1e86bc31793fafef04f24f9131ac7fbd9c27c6d480d"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q4-COMBINED-BOUNDARY-color.png",
+      "sha256": "c2dcf26e4b107f39c519eea2b0b81a96db115bdda24febc170050953d6fb135a"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q4-COMBINED-BOUNDARY-grayscale.png",
+      "sha256": "bd70b775d1dd634b94f17fbfaa9093fb1811cb336d981ae0e5876dc9ef13966b"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q4-DRY-SOLID-CONTINUITY-color.png",
+      "sha256": "53e9bc265a18387070a0ae031da98bb6c751728f58ee26e58beb1e85f6dda95d"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q4-DRY-SOLID-CONTINUITY-grayscale.png",
+      "sha256": "fe80f6d255463e86e8ffb88235a2a3bc01f4989fa7d1be009aa7133d074216b9"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q4-IMPLEMENTATION-AGREEMENT-color.png",
+      "sha256": "f63ae8cd9287a298c21c154f54ef9f95a550986feadfaaee4c35acbc2095759a"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q4-IMPLEMENTATION-AGREEMENT-grayscale.png",
+      "sha256": "e4c8c27a582f67fdd6341aa3cd3d744d1032c1ebe45e2328eeb26d0d99270a7d"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q4-JACOBIAN-ABLATION-color.png",
+      "sha256": "fd03617d61d24f5568065fa4d89988564c559be864c864e933755742c81f5993"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q4-JACOBIAN-ABLATION-grayscale.png",
+      "sha256": "5cb7f207530fa67ffa979b475ffc716039bd1afddc983871f1931a16b48c4d01"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q4-RADIUS-TIME-color.png",
+      "sha256": "4e7dad56f719ae2f04590a4c6dacc005709379836da9d394a317b4fb31c0d329"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q4-RADIUS-TIME-grayscale.png",
+      "sha256": "236a64861715f5e5c220b67f017001bf421fc3e78beb9f0a82258a2f96701993"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q4-SPACE-CONV-color.png",
+      "sha256": "de5aa6e120b644f90eabaaf84bc06cdcf6d1b933ad59c9cc2d6a6b5976ff8360"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q4-SPACE-CONV-grayscale.png",
+      "sha256": "9e0746854b459ea21c32628e438cd1ceb690b020aa836390e2f5f5cef59c6c33"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q4-THRESHOLD-TRAJECTORY-color.png",
+      "sha256": "cb3f9f6c16edddba3d2b9de6b97a0e206e70baf275efb29f3cf5c3932b3c9cf0"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-Q4-THRESHOLD-TRAJECTORY-grayscale.png",
+      "sha256": "fc2ddfac8cb6779a652e26e52a7bb1eaacb376b24fe5d63956cf5459e2945f4b"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-VAL-BALANCE-RESIDUAL-color.png",
+      "sha256": "1858989975f9dea4d3e0fd2defbc4eedf0594aa6b1e15d0f6fa48d69ed4442a1"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/previews/FIG-VAL-BALANCE-RESIDUAL-grayscale.png",
+      "sha256": "536b3e4c5ca4b12e4917c0a9e6f694e8d2fd418758fd0e99dc474f00f4951f39"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/qa/strict-figure-qa.log",
+      "sha256": "2000bc896f6362d0d8c9addd2821120ab67e3198b6494ee17ab75100add72586"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/render-record.json",
+      "sha256": "3c6a13aa22c443b57c58b016381bf0d7440e199d90d47dc052ba9f88f8fd8182"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q1-GRID-CONV.pre-redraw.pdf",
+      "sha256": "e74364eb3170968c14a73396e755f281a0ff89f5f3197dc74c374e7e538b5794"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q1-GRID-CONV.pre-redraw.png",
+      "sha256": "6aaa3d8810b75a612a2ea319a3d8a2f878feddb16b44d223aaf9d82bb9b91d7f"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q1-GRID-CONV.pre-redraw.svg",
+      "sha256": "b211ac08225ca0b1d0b3208f72a7e5edcee70a7a3a7e0439df65ac34fd617ad5"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q2-V02-MARGIN.pre-redraw.pdf",
+      "sha256": "2b50b598e791485a90dd2e74b90587797abb2d8561094936a3d7954449e2efa9"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q2-V02-MARGIN.pre-redraw.png",
+      "sha256": "0d76185c17a59ecd4e22c823b4dd9df8b639394af47e6f56864f4c865ada3897"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q2-V02-MARGIN.pre-redraw.svg",
+      "sha256": "ddbbafd80e4d8179800b6866729635fdd0740e1f1fbb3ab149a8061b08df2570"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q3-COMBINED-BOUNDARY.pre-redraw.pdf",
+      "sha256": "19eb854119ecb6d9c3361217217fbb655d23751a6ba6a9dc9cbb763800904a4a"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q3-COMBINED-BOUNDARY.pre-redraw.png",
+      "sha256": "4c62fa8662f5be64b0970613939e129e72f710dfb376d49881e917a478ff921e"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q3-COMBINED-BOUNDARY.pre-redraw.svg",
+      "sha256": "49cbb2091b6e2b4de59e7a51d081209cbbd1b0dcd6e36278b0892494a85415ec"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q3-SENS-ONEFACTOR.pre-redraw.pdf",
+      "sha256": "e110834f1cd079dd67f31ab2f16c3e60479d1720e772ed244b1fa4c36626d9ce"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q3-SENS-ONEFACTOR.pre-redraw.png",
+      "sha256": "3c8d7e0f9eb08f3bcee7e6c0d70c251a58050c031e75ffdcfec1637afdff8a65"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q3-SENS-ONEFACTOR.pre-redraw.svg",
+      "sha256": "de2ff21063b4188641560e302bb992e1e76122e87e5499dec06cd57dc3c3037f"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q3-SPACE-CONV.pre-redraw.pdf",
+      "sha256": "0cfcca0ad55a88c679510bd55be73af9423e600e9a06e9ee27db1ef826bc8c54"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q3-SPACE-CONV.pre-redraw.png",
+      "sha256": "9c7bd245473b6579c80469335cac874aa6d6331de850984232bc7d75c0ba9440"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q3-SPACE-CONV.pre-redraw.svg",
+      "sha256": "247bee57d15055eba9a36a3bb3d92f53ee7f098baec061000711d2a1ff6f6f5a"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-BRACKET-ZOOM.pre-redraw.pdf",
+      "sha256": "623ed8f388c3175c8c60edead228b1876746368b31b0fb3fb87d8e546ac289e3"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-BRACKET-ZOOM.pre-redraw.png",
+      "sha256": "bd324173184667a1c8f6de15510ba9c1f6c3c856efca4c9a188f2d4e5ab56964"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-BRACKET-ZOOM.pre-redraw.svg",
+      "sha256": "1d427da8354108e4d203117e8e9ffbd2f003bf72feded8f928a5ba50d1a3bf00"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-COMBINED-BOUNDARY.pre-redraw.pdf",
+      "sha256": "dd59e848dcf28a49a5092db0d39dcab4b4a41fd07a581562216b94090c685bff"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-COMBINED-BOUNDARY.pre-redraw.png",
+      "sha256": "72fdd9ec5f6790954d48d93043f1e7c9f514347cb246f7f80648c850a0819b1b"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-COMBINED-BOUNDARY.pre-redraw.svg",
+      "sha256": "4949107eba82acedbb891b1ebc255382613b3bedf8df7a951a024e5e3cc75700"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-DRY-SOLID-CONTINUITY.pre-redraw.pdf",
+      "sha256": "32291b894b2f52d49699b49fce8c4f31bccaea07ca029d1365394361781ac5c8"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-DRY-SOLID-CONTINUITY.pre-redraw.png",
+      "sha256": "6e63a9d4acd72d04fbb1dd1059b6422c9e9b7e03f68febc44ebe0d4022a14848"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-DRY-SOLID-CONTINUITY.pre-redraw.svg",
+      "sha256": "8821479a6cbded90a2c0899d170aef146731ff1c3742679a7ed80c81874ce62d"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-IMPLEMENTATION-AGREEMENT.pre-redraw.pdf",
+      "sha256": "6ced6a7b6e77fc06c430ecbf56e58bbee558e2b55636dcc633bc3de82bd166b4"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-IMPLEMENTATION-AGREEMENT.pre-redraw.png",
+      "sha256": "b9830d52124119012b31352838cde0aacae1010bd448ae2346d94fa9bcd9100e"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-IMPLEMENTATION-AGREEMENT.pre-redraw.svg",
+      "sha256": "b73025c613b52a3a7eea14edc9ffa3a3fe064fb19743a7cf6036cba8590b7ffd"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-JACOBIAN-ABLATION.pre-redraw.pdf",
+      "sha256": "823dcfcea7d9d6a96bcf74d9c45e287bd15596fb9cbd56e651819bec2e3cbdd8"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-JACOBIAN-ABLATION.pre-redraw.png",
+      "sha256": "a640d83d39c1af9c6c66b33f1f2014d084481e43f68c25c93776ce2521874b83"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-JACOBIAN-ABLATION.pre-redraw.svg",
+      "sha256": "a82f19c1a1138f3f141510c8114daa1688cb450a3e80a5ade51e30247055f15c"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-RADIUS-TIME.pre-redraw.pdf",
+      "sha256": "c011e78723a048c3d14d7f7555f31eafc6dd547b5b4160177fb950af69eb39d2"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-RADIUS-TIME.pre-redraw.png",
+      "sha256": "fd1e7864ca3cc05eb22079bc8f95a51ff534dd7d707593147dbc0a121093196d"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-RADIUS-TIME.pre-redraw.svg",
+      "sha256": "3371652773d31b6f55b6fde995b6b2b70ea3d6539c082bee851402c11342c190"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-SPACE-CONV.pre-redraw.pdf",
+      "sha256": "ea17d966fecd54ac5fbfe33fc76144757b467cee597189973ade2f3d5acd55f2"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-SPACE-CONV.pre-redraw.png",
+      "sha256": "50d9b52b8c6f09e16ebb42baab665e81487bf621f1dd59cfb262f2f0c5028e33"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-SPACE-CONV.pre-redraw.svg",
+      "sha256": "a3c7f6ca355c7ae53cc1b1e0cd24f3bc05887c5b8c59bc1c42bd0d24ed01e0e7"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-THRESHOLD-TRAJECTORY.pre-redraw.pdf",
+      "sha256": "73a0c4c909711928228972df8476e0c7ca773d015aeefa46f8bb87359fb39934"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-THRESHOLD-TRAJECTORY.pre-redraw.png",
+      "sha256": "a37ad7803cf06a95fa8c40a59b2fcfa42b4a71270c526ec6ff07dd40ad50d962"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-Q4-THRESHOLD-TRAJECTORY.pre-redraw.svg",
+      "sha256": "2a0474dd8001e7522865db92bfc7569cca386f4e04cd342eb3a921ec5e898692"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-VAL-BALANCE-RESIDUAL.pre-redraw.pdf",
+      "sha256": "7285ddb1309dd1c4180b094bedebe2d857baabd44b618be7c45f5336cefac1ae"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-VAL-BALANCE-RESIDUAL.pre-redraw.png",
+      "sha256": "eabbc21ee6ed5547e30470f396e45d67f30def31d8583925eaec580372afbfad"
+    },
+    {
+      "path": "06-figure/redraw-fig9-onward-20260912/superseded/FIG-VAL-BALANCE-RESIDUAL.pre-redraw.svg",
+      "sha256": "c4fa615456424e25cae129270e05660d598b80ab97a12f257effcd5763ea0420"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q1-C-FIELD.json",
+      "sha256": "9fd92747c5ae74d190e911fbd8b0cf488c8c01d1ae1149165df484793543c6a8"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q1-END-EFFECT.json",
+      "sha256": "52d261b689445ce9418be42cd76e266c842c6b50d540c6f9167e366d1050689d"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q1-GRID-CONV.json",
+      "sha256": "27146dd5a3f5721f4f0115d2bb09fa0bab283d63523a42644b8320c58ed0cd09"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q2-C-PROFILES.json",
+      "sha256": "c2f24b8c159b88fd2e66f2cde5d6d78bf2de21d2ab2ea35a8396a32f4b018bd2"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q2-GRID-CONV.json",
+      "sha256": "c6e5ecbe52c5c033116b9d22620204236156c600aeb7a385aa852b438eda1b4c"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q2-MODEL-ABLATION.json",
+      "sha256": "a45e3f4076aa2b786f9caf9f3ef4a95a1b93220ce686ba9ab99e65207a1255cd"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q2-V02-MARGIN.json",
+      "sha256": "24d52e0ecab9b34de9ca8cb6c9face0e7fda06eac97f6c347eeece8c6dd93cef"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q3-BRACKET-ZOOM.json",
+      "sha256": "bffd115f3dfe588c2b50ee685e5e5e225e78b4a521063df2cf3a1b7dc75b5258"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q3-COMBINED-BOUNDARY.json",
+      "sha256": "801006ae2a173cfb1cd01df0a4b4e12393cead3eda2e4b14c11f8d3e63ffbe19"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q3-SENS-ONEFACTOR.json",
+      "sha256": "474eb591b21d4458d178f5696de7b03bf4bd77431bfdf2c58040579777c7db92"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q3-SPACE-CONV.json",
+      "sha256": "a4931bb1052cc69b7ed9112c0e1fc0af40ef3effc2cdd56cc10c6e974595fbd6"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q3-THRESHOLD-TRAJECTORY.json",
+      "sha256": "2b667fd6b5f86bda9d7dc596769103b132ca53d85f01be60964f0b189f162839"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q3-TIME-CONV.json",
+      "sha256": "6020135b4716f9ace2843231702194e6a93f93af685c2a8736f00f13bfd067b2"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q4-BRACKET-ZOOM.json",
+      "sha256": "ddcc9f74bf3bf0f5325f0ddf443a0382f482eec0b93559510ae79b042eeb7f2b"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q4-COMBINED-BOUNDARY.json",
+      "sha256": "e4bb3534ea6d0567305a0764f85607fa6fbc2fa45420b79b8de2f90ffef30e72"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q4-IMPLEMENTATION-AGREEMENT.json",
+      "sha256": "00146b2649520d2292292e9d9896ca2eb522f8bfa37cfb04d1e645295f163153"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q4-JACOBIAN-ABLATION.json",
+      "sha256": "50c94e63b9a27086623689903dffcaff08692fad3ebd8e865167f5f3bf42141c"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q4-RADIUS-TIME.json",
+      "sha256": "7efd20885b38e1b904322159df3fe0fd8cee568c0004f4742d445cdfc12af166"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q4-SPACE-CONV.json",
+      "sha256": "d0535a4293d0b34c254b5f0d74c6366d5f2d2cf6961c8d73f8f5618f30616676"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-Q4-THRESHOLD-TRAJECTORY.json",
+      "sha256": "0b395bbe6e4a8d0aad27604103cadad561eadc44a6c3220f979f2ae1d6ab9cac"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/FIG-VAL-BALANCE-RESIDUAL.json",
+      "sha256": "6c8b4f11d943d7473c8d96ebd54c6bc39f2698965e1b69e106797120cf9b4935"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/TAB-APPLICABILITY-FAILURE.json",
+      "sha256": "1bab474a48b741569f3e15e26420b4e8596ccdb64d63d5e01ab2131d04773b8e"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/TAB-CLAIM-LIMIT.json",
+      "sha256": "26b1415e1f270de801e3a84776c66a1e565b0814babc853659a01450afd4ded5"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/TAB-Q2-MODEL-CONTRACT.json",
+      "sha256": "d94bd142e000207310704a20f0c4edad538bd90186a74d828352c7eab1adc52d"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/TAB-Q4-DRY-SOLID-CONTINUITY.json",
+      "sha256": "6cd3071daf0a697f1775d5d9b44ad17b52fd8422ab2f7f727c60093c000e0919"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/TAB-STRATEGY-ASSUMPTION.json",
+      "sha256": "5220945318b2fefb6e4c2266c8eed0df1192a15fc2e53c53c569e33467dac75b"
+    },
+    {
+      "path": "06-figure/revision-20260912/contracts/TAB-VAL-V01-V12.json",
+      "sha256": "3c37b73b42e6c8fe421504f6842f877f27660bd79dbff0ad1b45f1d57abde148"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q1-C-FIELD.csv",
+      "sha256": "370c0da992b7ada9cdcc517d33771a8908b0c7d357eae414e7af2f9541928436"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q1-C-FIELD.meta.json",
+      "sha256": "5df08e84ab56acd63f4f5c43677e67ed48908e670aae73bcb7f24867ffbbafa9"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q1-END-EFFECT.csv",
+      "sha256": "178c90b4878bc181df06ec83eb47bb039c3e9fffa848cef0fcd345c5f8244bd4"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q1-END-EFFECT.meta.json",
+      "sha256": "edfe350765517453ff2238d85f0405525e27c2ff99520ab4d995816b5ad19b93"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q1-GRID-CONV.csv",
+      "sha256": "ddfc3f2d562918c7bd2aa2f9a12b9e077f53d324768194d05d4da7045cce25b1"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q1-GRID-CONV.meta.json",
+      "sha256": "e1a471b13688fa6c45167807e86da5a517204ef10bed10a0eb17278ae85d38cd"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q2-C-PROFILES.csv",
+      "sha256": "a84c14955ec38a4de587203d6a9d3847678cdaf7b6850f6471eb1345410195ec"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q2-C-PROFILES.meta.json",
+      "sha256": "909ee68f545852e569ebe6d765120b0f9c593b158fce3de0615ed1219d2a2dd8"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q2-GRID-CONV.csv",
+      "sha256": "d8a9ca7c399aaa16357bf8e2b059484f92c733d950fd76b69ea6acc9ea1a7f0a"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q2-GRID-CONV.meta.json",
+      "sha256": "ce430c4aaad00dcaf2765f494a264d5169adf57e5d0327540348bc7c5eda4cdb"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q2-MODEL-ABLATION.csv",
+      "sha256": "6f9dd5e91af21297fd94794af20c75fb612cacc336f8f184badbf9deb9ccdd8e"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q2-MODEL-ABLATION.meta.json",
+      "sha256": "94edb1c64f7664f4c0d7769b4056b9e4029d4b901d0bdf5f3aeb6d0e81a9e8bb"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q2-V02-MARGIN.csv",
+      "sha256": "d0c895602a06a68c8b2b13a493b8b103a17772a540cdc8b1dc2c608f76dd81e4"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q2-V02-MARGIN.meta.json",
+      "sha256": "dbcf56afb85ce310fbae363e7ebb946d5108a6eb339176ba79430121bdbb2353"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q3-BRACKET-ZOOM.csv",
+      "sha256": "b51a0aacc15f76d188ebceff72682c775a6f6ef4c6cb450388679996a2852c7a"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q3-BRACKET-ZOOM.meta.json",
+      "sha256": "ce50b1b04cd2fe95552360db4f4e4c319f9018f0db314b35b16323d550331a97"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q3-COMBINED-BOUNDARY.csv",
+      "sha256": "2942685038a555e80d421dab645d507e6ab2ef96686090359639d8049c19f2e1"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q3-COMBINED-BOUNDARY.meta.json",
+      "sha256": "7c4ab588932296ff354610a453605d2efd4f3a3993d66073a196a5d56222ac13"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q3-SENS-ONEFACTOR.csv",
+      "sha256": "016ad45dc867253cbf13c7896eb4f0d2d570808ee2830405744179bda476690e"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q3-SENS-ONEFACTOR.meta.json",
+      "sha256": "71d1c29d3622be600ae75a1f7273e2688acb1a632fda6fe58f536b0c963eebeb"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q3-SPACE-CONV.csv",
+      "sha256": "d5a9efef37f2b88d3d1dec0ecdd2136a8928f66b5e9b5e0b269c08a1ee59b7d8"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q3-SPACE-CONV.meta.json",
+      "sha256": "bdbe911934534b3afade6db9419b9e8b345a0045573f034bfafd2947f9907eb1"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q3-THRESHOLD-TRAJECTORY.csv",
+      "sha256": "07bc0b0cfef1f8e42813fb0d739bab489d0a696a5ff38606343ec9a4ef8b5c06"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q3-THRESHOLD-TRAJECTORY.meta.json",
+      "sha256": "6e296a17594788f4e0061f751c5710ab8011114ae7a360c381bc0bea3c0f9ae9"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q3-TIME-CONV.csv",
+      "sha256": "dc736c4ccd654563f9ad39a0beca287c4340356ea71766770e3efa44a31ad4b1"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q3-TIME-CONV.meta.json",
+      "sha256": "63e4d0628fcfcefba7f5cb57dfbde0d43ab837ebe083abc8f7de6e901af1f395"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q4-BRACKET-ZOOM.csv",
+      "sha256": "a245bb0f1d00b81e61df9fba29bdd5485b6e61878341a5378327ad85f7585863"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q4-BRACKET-ZOOM.meta.json",
+      "sha256": "805dddf21594365906941c34642b235ddca7f6534c44a4b7b7a33df1b0423551"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q4-COMBINED-BOUNDARY.csv",
+      "sha256": "4503d311ddafeb5cc3c4b06494b52c09c7aa3205eec3f126e6a6f7513dfd30b7"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q4-COMBINED-BOUNDARY.meta.json",
+      "sha256": "f4da1458acebe24f7305a0ef2441c9022b4cfd026f626c53b0ba29a14c757b70"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q4-IMPLEMENTATION-AGREEMENT.csv",
+      "sha256": "5bc2e085945b05cbb8f4749ffe9e845e5426f888ec623577ca1e4b0d9f682b0c"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q4-IMPLEMENTATION-AGREEMENT.meta.json",
+      "sha256": "ae82e78da6344abfcb635aaa5149899d33ff3abf1a59a572418fd7bde20ba258"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q4-JACOBIAN-ABLATION.csv",
+      "sha256": "88a90c5dd230ecc1ea3a413b0bf14b190258a5721f6522e4f76c71c7de19d4f4"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q4-JACOBIAN-ABLATION.meta.json",
+      "sha256": "e743765db46df106ebfed62e468e0d079cd33b1a4be9b28c5bf98ec95cf7e051"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q4-RADIUS-TIME.csv",
+      "sha256": "c24229b30ed4f2fd02236eb572fc59c1cd35488d3e57ff0a49846111d09a4a76"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q4-RADIUS-TIME.meta.json",
+      "sha256": "4a972271fb9055f936add0137d02cbfd04fc7e3d00f5fd7af1345fb9d9337273"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q4-SPACE-CONV.csv",
+      "sha256": "3940dfcae8bfdfc6bf619d609aceebab537980ed4205ef2f9d3c50f1e07e5d88"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q4-SPACE-CONV.meta.json",
+      "sha256": "ee2b7f248c83462dfc8f57af3c4028221343ee79ef668c5e3473dd92d7cb2f9a"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q4-THRESHOLD-TRAJECTORY.csv",
+      "sha256": "16e83f9d135e255cb154561a9fa4fa1496177a0c752224ef9832f9d621c5d15a"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-Q4-THRESHOLD-TRAJECTORY.meta.json",
+      "sha256": "7ee788e12ee1720ac6f86df2a17849de6241e36539c16344253853d43bbef1f5"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-VAL-BALANCE-RESIDUAL.csv",
+      "sha256": "55f1681115b2899090b340a436d9165e7b836761c5b231627244f44123071eca"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/FIG-VAL-BALANCE-RESIDUAL.meta.json",
+      "sha256": "d8b592e3c90a2a0533667b8a235f477f5882f166f193a3aae4fe4eeff1c2c0e9"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/TAB-APPLICABILITY-FAILURE.csv",
+      "sha256": "6ea5ee992aa7fa96fc6f3036ec15d1c9b62d61898188b51acb206a77e56d8b8f"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/TAB-APPLICABILITY-FAILURE.meta.json",
+      "sha256": "e2815d932d7995b043e0bda527be1a67c15eae7ae66f416fa5b5f19c2926f707"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/TAB-CLAIM-LIMIT.csv",
+      "sha256": "797dc5c44ce125fa67d4ba06c9012f66924079fe3567bc0762f687c66b3f95dc"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/TAB-CLAIM-LIMIT.meta.json",
+      "sha256": "eb1519c48c5591b14375ac46f4b7221c0d77b16a09c99852fcc0eaf49d4d9e9a"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/TAB-Q2-MODEL-CONTRACT.csv",
+      "sha256": "185e1e8d6dcf1cef2487c2df489b0d54757ecb41c9f70c39c76cdda6f4ed4fee"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/TAB-Q2-MODEL-CONTRACT.meta.json",
+      "sha256": "9865d57f81563caa02e0dbca1df19ecfe65d9cb404f2ac0c2fa7b0ab452a9f11"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/TAB-Q4-DRY-SOLID-CONTINUITY.csv",
+      "sha256": "c68d7bfe7db8d351375ad71c296f6e187056968dcb93112bb19532ee68e4dfc9"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/TAB-Q4-DRY-SOLID-CONTINUITY.meta.json",
+      "sha256": "dc3768093c4aceff2d47e7800e57655e30c9ea77c855a2993a5256888acaaf47"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/TAB-STRATEGY-ASSUMPTION.csv",
+      "sha256": "1ea97dbbf4b2c2db60557d4bff0e4d845e78b2fd0578c84542a34a8d9053b217"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/TAB-STRATEGY-ASSUMPTION.meta.json",
+      "sha256": "9ee927819bade7bc65f982953c7898b65ef1e7c7c22844468b5a93c40bb69b4b"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/TAB-VAL-V01-V12.csv",
+      "sha256": "4bff2426f87fa1197d8f184dad9b372e702db81c01ae71027fd35ee51b18ecae"
+    },
+    {
+      "path": "06-figure/revision-20260912/data-snapshots/TAB-VAL-V01-V12.meta.json",
+      "sha256": "71a72df273f99c108193d2f9fb6e678fbe62032dce980415843baf712e099d4e"
+    },
+    {
+      "path": "06-figure/revision-20260912/figure-manifest.json",
+      "sha256": "6c6a8e0fd02de99113502c75f1de9acafd2cbf4cd8087a3df1b8fa1206c27297"
+    },
+    {
+      "path": "06-figure/revision-20260912/figure-register.json",
+      "sha256": "afdb611f512e4010ce9d95243146ec87d2139b94e94dc341e64ef91693ee9cc0"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q1-C-FIELD.png",
+      "sha256": "405f32f0c50b69bd4a10ffc2cddcebdbd0548a8b37eb1f894e0011aa61a4dc26"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q1-C-FIELD.svg",
+      "sha256": "19715c40b8b77445d0f824f3a01b9c5cc388d597924aba556c002536a6093720"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q1-END-EFFECT.png",
+      "sha256": "380962632000eb165d40791b696747cdb38655784592eb2be4efd9e0695aaabd"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q1-END-EFFECT.svg",
+      "sha256": "534d4aa5afea2c61a675c789a8fccdb479551a59775fb952a5814bde36db5c31"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q1-GRID-CONV.png",
+      "sha256": "5b36a1661ae11b4d9c6cba4772e45c32bdc7b6a0fdb8b8adae34c0f854f5aef2"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q1-GRID-CONV.svg",
+      "sha256": "acfeda9102f994ff732875568683675c732211fa1530789327c1e0fcaa2e55a6"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q2-C-PROFILES.png",
+      "sha256": "be1da9ab43b777b10ee289725cfc2d385b19def02681856deba79c61e9f68f4b"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q2-C-PROFILES.svg",
+      "sha256": "7ee0f97dfb8de27086cd15d89a30e095d2fa369684c83fb48f8efc4c32edc885"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q2-GRID-CONV.png",
+      "sha256": "166edf349cff234dd906ce2e026630a0c22a8e0858c7f2507792f35325839ea2"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q2-GRID-CONV.svg",
+      "sha256": "ae2cf44b4add1152dbcc2ed6a2bbb2f3050e83d82d55f7b039b1059e6734aa1f"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q2-MODEL-ABLATION.png",
+      "sha256": "7675743e316b4eac7b539c1d9ee986807e4471c13e250618c55d5fd4b03da3c0"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q2-MODEL-ABLATION.svg",
+      "sha256": "4091daf2e3a38cbd2900d6f0935cc3399707d5a6554b4a4383fbb56817b9fb35"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q2-V02-MARGIN.png",
+      "sha256": "194408d1d214fc98d8addc103f0172b7625c1019b60a016527a7d30de4a9ecef"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q2-V02-MARGIN.svg",
+      "sha256": "2427bb1b9de5ee19af0df7debb8bc4f41646df1d45e426969c5487165aabf3e3"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q3-BRACKET-ZOOM.png",
+      "sha256": "192efe0197d0695e3647da7b880e8bf6e8b563e1bdb41e5c4ff739134c6ef290"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q3-BRACKET-ZOOM.svg",
+      "sha256": "bd8eed77bfda0841ac3890a65821c997d39b59d2035a0e8e05eacc903524fe12"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q3-COMBINED-BOUNDARY.png",
+      "sha256": "3cf866b45c9614834303335c1a9cbe0ac346bd7296cccea7bb8d094ff1898ef9"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q3-COMBINED-BOUNDARY.svg",
+      "sha256": "6a1bed2e97db4fa300d01b5eb5f0eebb48236664b2abe286f82357d3e74e45c7"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q3-SENS-ONEFACTOR.png",
+      "sha256": "96d3dcda1ef6d78533ff5f15da05228d014c8030090c1ce4cf22e79f57e1d2b9"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q3-SENS-ONEFACTOR.svg",
+      "sha256": "811aa1bf7c6469ccf71e35bf233bcd0a05ec7d9e390e5519484c48d8b2da0370"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q3-SPACE-CONV.png",
+      "sha256": "3018dbe83d8e9f9764eab7f94abe7486bfe2ca9145d9f50c1696a7da968cf26f"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q3-SPACE-CONV.svg",
+      "sha256": "5b755cb03673a28f81599e112e4aca882e767e90023b1560141b572d87e038e5"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q3-THRESHOLD-TRAJECTORY.png",
+      "sha256": "265d39f9e47619de68ce15c2dfa2c7dff2379a04f40ad840d2ae695004164c36"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q3-THRESHOLD-TRAJECTORY.svg",
+      "sha256": "780ceadbbee49e5bab634b4195774e32404d8e7136f896961b4ee926546db11a"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q3-TIME-CONV.png",
+      "sha256": "611e19c33bfbfcd468d4ee13f616105d76d183f62b9f36fb0825096bdbb6475b"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q3-TIME-CONV.svg",
+      "sha256": "363b15068894da7c6455e3aa3c1cf374cc17bad31bed0e0c05feb6efe09e4544"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q4-BRACKET-ZOOM.png",
+      "sha256": "80015fd714b49454ce0a85c8b2304d0431e1d42b40f5401bd8368eca829ef5c8"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q4-BRACKET-ZOOM.svg",
+      "sha256": "f38bfa7426c7efbea84e72a2566f10e2c36b5530f51186f95ee16f19c6d7865f"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q4-COMBINED-BOUNDARY.png",
+      "sha256": "3e85dda18ce00a70ff4769c20e6ef7b3fbd25709395c20d909e834d6f06774f7"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q4-COMBINED-BOUNDARY.svg",
+      "sha256": "2ac40b6a58abf2f5e9d1ea4bdaf7b54b707be381a622352d27eb29a5c2bb5fc7"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.png",
+      "sha256": "807db46ee6c07dcad7803b1e67dc32d284ffaf0e9e31feb1c12d15f81454f6a9"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.svg",
+      "sha256": "1b90b8788b5664301f732581b9681b12b851714fae0afab640f51a1429dc273e"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q4-JACOBIAN-ABLATION.png",
+      "sha256": "9703ac9581d8585257f82d1e0e717977a4f9a77228bf1807bf7d8aa88b35926d"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q4-JACOBIAN-ABLATION.svg",
+      "sha256": "4b2ee3e9229656b0c15fbea240ceb32fcc722ab33a991cf4726a7647f3e2e393"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q4-RADIUS-TIME.png",
+      "sha256": "24241a0686d129952ebcca63794dd1521a19a1a9010c41117234a9f0df7bce2e"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q4-RADIUS-TIME.svg",
+      "sha256": "634d86d8989c86fe665edbb00629b9d70d6f550e0ab7ae125b5a4b808f24d12a"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q4-SPACE-CONV.png",
+      "sha256": "6ea671cf871c1230187143d63d6b614e886f8705d41a8151025d76492f790b3c"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q4-SPACE-CONV.svg",
+      "sha256": "9f4ca77101eb1364b2b38f031e018c5d94f4bb6e28fbe2dfe98d308d678c1aa5"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q4-THRESHOLD-TRAJECTORY.png",
+      "sha256": "0baa6f7d4ee786c7fd3ffdc6fe710e88104da47ba51bbb2e48862c8d0a269b23"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-Q4-THRESHOLD-TRAJECTORY.svg",
+      "sha256": "ee5f451673be693c0690a5349fd139430218a39e25f4707e2771614e60100d5b"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-VAL-BALANCE-RESIDUAL.png",
+      "sha256": "dd7410833dce523780e57ca48512718c4aa02de13903d0ed099773b6e783cce6"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/FIG-VAL-BALANCE-RESIDUAL.svg",
+      "sha256": "8eb3bac4df976f0a27e246fb78ef6952b9c35570726d184299583dea1b5ca1f6"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/TAB-APPLICABILITY-FAILURE.csv",
+      "sha256": "6ea5ee992aa7fa96fc6f3036ec15d1c9b62d61898188b51acb206a77e56d8b8f"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/TAB-APPLICABILITY-FAILURE.md",
+      "sha256": "b4b6afd205076d1ced81840a94399c4a81a14052908109f75a6e5fdcd4805cfb"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/TAB-CLAIM-LIMIT.csv",
+      "sha256": "797dc5c44ce125fa67d4ba06c9012f66924079fe3567bc0762f687c66b3f95dc"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/TAB-CLAIM-LIMIT.md",
+      "sha256": "76e901400b507c743c03b06c0b30bca3d9ae5a61868d76eeaff3d24b19ffad2c"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/TAB-Q2-MODEL-CONTRACT.csv",
+      "sha256": "185e1e8d6dcf1cef2487c2df489b0d54757ecb41c9f70c39c76cdda6f4ed4fee"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/TAB-Q2-MODEL-CONTRACT.md",
+      "sha256": "d4b0491e4055891b781055725c2b55694827c7d90b21e97db589a95530a05aa7"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/TAB-Q4-DRY-SOLID-CONTINUITY.csv",
+      "sha256": "c68d7bfe7db8d351375ad71c296f6e187056968dcb93112bb19532ee68e4dfc9"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/TAB-Q4-DRY-SOLID-CONTINUITY.md",
+      "sha256": "2119b5fa5509d281ea2aa145d429d3cb381228e57806435a181d2374a032a3e3"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/TAB-STRATEGY-ASSUMPTION.csv",
+      "sha256": "1ea97dbbf4b2c2db60557d4bff0e4d845e78b2fd0578c84542a34a8d9053b217"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/TAB-STRATEGY-ASSUMPTION.md",
+      "sha256": "3dba2ce839a4d8915097083673463b8fc8c45e83b7e34c7b6eb72832b476bd43"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/TAB-VAL-V01-V12.csv",
+      "sha256": "4bff2426f87fa1197d8f184dad9b372e702db81c01ae71027fd35ee51b18ecae"
+    },
+    {
+      "path": "06-figure/revision-20260912/figures/TAB-VAL-V01-V12.md",
+      "sha256": "ef5a19efc64cacb1561f6a8ee7d200727db2454ea92e3116d41c50452f19b1ca"
+    },
+    {
+      "path": "06-figure/revision-20260912/full-hash-verification.json",
+      "sha256": "65abf7da906d0df7fef9561d3643ce4aa1a672d77b1280f6f80401f8537f497a"
+    },
+    {
+      "path": "06-figure/revision-20260912/input-hash-verification.json",
+      "sha256": "414791a9d02568ff2c9c5b2d84c1a50924ea87e57ed79f0784756ceb2a47a2e4"
+    },
+    {
+      "path": "06-figure/revision-20260912/logs/strict-figure-qa.log",
+      "sha256": "60a93935222fc80da680eeb18dcfae960337bb8036767563c2261247d7946922"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/contact-sheet-color.png",
+      "sha256": "0a050a82ea1e1eae83c42d7f6da9158ddc6b3322640c9d86958998b188b951de"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/contact-sheet-grayscale.png",
+      "sha256": "bf77de95c514e28d53185bbc45bd8ea9d57cf4fdc15d27278296f2dd3555bfff"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q1-C-FIELD-color.png",
+      "sha256": "368e50b98d2010b8c6d2fd17381f9e9c7081a0be7248228ebe1b89669a2a9c94"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q1-C-FIELD-grayscale.png",
+      "sha256": "2bd375b9b64082b2374ee6dfdd6991a77d7945175f0ff526580f504bb3e38194"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q1-END-EFFECT-color.png",
+      "sha256": "73195ddce33a5d4e858549936aa5c53a0b1044991a9e3dd1385b02c06c478f4a"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q1-END-EFFECT-grayscale.png",
+      "sha256": "370ba6b32695a134c4728eb0c355be555b8225c9861ad1aa47df0bb4bf33f910"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q1-GRID-CONV-color.png",
+      "sha256": "8b090c96dbf129e11079966853e93a07c50cf18347fa107911707115bc424f6a"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q1-GRID-CONV-grayscale.png",
+      "sha256": "5672ac9f28f9ccf428665a233c017ac30c566403d7049b312564461e0332de98"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q2-C-PROFILES-color.png",
+      "sha256": "88115786b2f138b519cb9a981f7b0e850175b96a68e206f24f2f9ca476edb8e6"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q2-C-PROFILES-grayscale.png",
+      "sha256": "b9ab3776dc8783083981ef9dedc59da12cd6eb61c07c00283a9f611dec65f996"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q2-GRID-CONV-color.png",
+      "sha256": "d0bcb6c5e7dd175f9f6434251a3bc3935beaf72691e5e0bbef406f7baa9cc40e"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q2-GRID-CONV-grayscale.png",
+      "sha256": "3e92bbc452419c39fa154c0e56852de799e9f7b761948b2d38264179714e32ad"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q2-MODEL-ABLATION-color.png",
+      "sha256": "fb5eb8035a23244e8ce17d4f10430b5465c57ed31f4c763bb9e61e8f8d779d36"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q2-MODEL-ABLATION-grayscale.png",
+      "sha256": "56a51a2fbac9ac2eadb68bebfbd05c5c42fd9c4b823c9c8067a6136e78d449e5"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q2-V02-MARGIN-color.png",
+      "sha256": "209b32aaddb14198c6694db2d21b55ccba4b398df7e6c1ce9334ff41f5b63885"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q2-V02-MARGIN-grayscale.png",
+      "sha256": "d1be736d184cf12bb380b6547db4f665413c4b258bcd8c7ff1a30b8517d5c235"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q3-BRACKET-ZOOM-color.png",
+      "sha256": "ee006cf028f8ae28dde54a05855fb07ee022daf158d5c3ebf49a174675c931fe"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q3-BRACKET-ZOOM-grayscale.png",
+      "sha256": "d6f48fde97fdb274e958986d99c96db980cd9d4e30a2b10209d9a73991da0c5e"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q3-COMBINED-BOUNDARY-color.png",
+      "sha256": "bbce55e2c98388d91248714917c7c5bfd67540c396378bb62f269e43c54d8d5c"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q3-COMBINED-BOUNDARY-grayscale.png",
+      "sha256": "9b30769029fe2fc930bdd8f8d72d66d899a85b23ca552af03b5ca6630667a065"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q3-SENS-ONEFACTOR-color.png",
+      "sha256": "353fb98211531dde261b9dbbea6b0db54fd3f5322271100bbac56d56ae6f9a58"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q3-SENS-ONEFACTOR-grayscale.png",
+      "sha256": "b87c5748b624cd7319a5e84d4a4eb3ee1586beb03d4345c7f33d539ccc109245"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q3-SPACE-CONV-color.png",
+      "sha256": "47757249de6176e15c88913a845a4e18944e4d0167a4b6d0f8805408d1043a2c"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q3-SPACE-CONV-grayscale.png",
+      "sha256": "60eb96bc04c2c8c923235c9d7ff47605d967d38ea0318bb675e9820b0621d2ee"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q3-THRESHOLD-TRAJECTORY-color.png",
+      "sha256": "51414dacfed4a580a1baea99df844e2b22724d903916c2bfd97dab631585669d"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q3-THRESHOLD-TRAJECTORY-grayscale.png",
+      "sha256": "1e57aee1677956955ca852bbb36eed1e6063366d85217e4714e5b04027f3936f"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q3-TIME-CONV-color.png",
+      "sha256": "5855f1ccd833d95f4bc0b0a14383fe4af2c2c3bafc0490b537e0035649a40582"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q3-TIME-CONV-grayscale.png",
+      "sha256": "789ba685c55b560aff363c3b86a63c06cf5e63299af12775e73a25db2120eab1"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q4-BRACKET-ZOOM-color.png",
+      "sha256": "c76475f5242294888894a140d345f7d475c09022eb78d69a356c68246d448178"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q4-BRACKET-ZOOM-grayscale.png",
+      "sha256": "8728c542780bf000dc29e67c7cf4df937f845645769d57440dec26997956b15b"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q4-COMBINED-BOUNDARY-color.png",
+      "sha256": "2364f8a3253e8c794b27ff055c2a5c7b88e9c14464dac21bba0c01e9c60d587d"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q4-COMBINED-BOUNDARY-grayscale.png",
+      "sha256": "c612238832142a8a99349104574f3553d447968f852ec476f5ce79d34d9d5e70"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q4-IMPLEMENTATION-AGREEMENT-color.png",
+      "sha256": "cc4de37a7973f8c928d07604aa44d8e270e18db23b529451d5c0dd419959288a"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q4-IMPLEMENTATION-AGREEMENT-grayscale.png",
+      "sha256": "23e03348032882fe4dadd8b8f21b5cf1eb657fa890d1fdecc098a7de40c6d3ea"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q4-JACOBIAN-ABLATION-color.png",
+      "sha256": "d0976281cd609766c7b5793e9a309fb754cf8b3e3dd9836df5708ebb4e18221f"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q4-JACOBIAN-ABLATION-grayscale.png",
+      "sha256": "5de8a14fa92db6f342564297b96945e3940cfa57ebaee453d74d4ccf17b7c9af"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q4-RADIUS-TIME-color.png",
+      "sha256": "9aff9acb997c7b97324d10c856bf38c4107db8c171c4292c350782b5d1e504e1"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q4-RADIUS-TIME-grayscale.png",
+      "sha256": "0ae28b68d06ff5ec330f7df83d1acb16beb5dbfd2184321b5f79602054916a17"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q4-SPACE-CONV-color.png",
+      "sha256": "9910b1254eac46bd6d2d12223f9f36e0ae61a14184fdeebde2627cbda223e744"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q4-SPACE-CONV-grayscale.png",
+      "sha256": "efb5d40ad852a5860da3ee5c1f25184c0bca75d6c33bf423a7c3624a56b2b486"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q4-THRESHOLD-TRAJECTORY-color.png",
+      "sha256": "f84f0dbca1cd364c513776c84c411eccbb8b21bc92dfdad2ec47ea79d164254b"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-Q4-THRESHOLD-TRAJECTORY-grayscale.png",
+      "sha256": "1d4875a30fb422c141e6272d523577bf714ad22fda51025eaddab31c7b62e1ab"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-VAL-BALANCE-RESIDUAL-color.png",
+      "sha256": "4d8fdeea6a0a8d010fffc18133167818064f34c510fdc91a1c5e89b7b972cf4b"
+    },
+    {
+      "path": "06-figure/revision-20260912/previews/FIG-VAL-BALANCE-RESIDUAL-grayscale.png",
+      "sha256": "481748c6c6eb7651d4b4d56b0641d7583170295bd7f0c2a530195625fc3802a1"
+    },
+    {
+      "path": "06-figure/revision-20260912/scripts/finalize_revision.py",
+      "sha256": "9dcdc6120a3567a9d6e722f9b0ba1424759a1c894fe9fb6d13baec690fab2bd1"
+    },
+    {
+      "path": "06-figure/revision-20260912/scripts/render_all.m",
+      "sha256": "7977f9bcc5600b647be9034a31e870291f26a143b8aad5661f5c25179dcf52eb"
+    },
+    {
+      "path": "06-figure/revision-20260912/scripts/setup_revision.py",
+      "sha256": "497e72127eae92dd1ed4a6c7e8247713827dc7b070998a5165628391ed22ec29"
+    },
+    {
+      "path": "06-figure/revision-20260912/visual-audit.md",
+      "sha256": "a52790160b348a2c2a110bc2ebba305235a7afa8bfc02f96776c662dce52fc3b"
+    },
+    {
+      "path": "06-figure/revision-20260912/图注.md",
+      "sha256": "02e818f21226b5586ff6addde45da46332fb74f85d036f57135746b41e3d1757"
+    },
+    {
+      "path": "06-figure/revision-20260912/复现命令.md",
+      "sha256": "e28b4813d2577e72acfe6e90b36ebcf3a0358d3f285d8ec09f370ccb79aa625e"
+    },
+    {
+      "path": "06-figure/scripts/__pycache__/add_captioned_figures_20260912.cpython-312.pyc",
+      "sha256": "3523e80b4723d0be6f7c529455e5408dec0f745cb73314885048fdb86174a037"
+    },
+    {
+      "path": "06-figure/scripts/__pycache__/add_captioned_figures_20260912.cpython-314.pyc",
+      "sha256": "d5e25900ff8155bf1957951f956a59f8d65fc3da809fa34f66c74dbdc4a1d5a5"
+    },
+    {
+      "path": "06-figure/scripts/__pycache__/build_publication_figures.cpython-312.pyc",
+      "sha256": "68155f413511df0178911e6992f85783c06f125491f61dfb5a89078538f66903"
+    },
+    {
+      "path": "06-figure/scripts/__pycache__/finalize_figure_stage.cpython-312.pyc",
+      "sha256": "80b7246c46146e12ebf510fafb37f8e3b53c0d1e18f4263ed7409d263a7a63b5"
+    },
+    {
+      "path": "06-figure/scripts/__pycache__/redraw_fig9_onward.cpython-312.pyc",
+      "sha256": "da9c89a61ca1d5b6f4eb63748c6aad2aa6b1e0df028b1f6f00e95215c23d659a"
+    },
+    {
+      "path": "06-figure/scripts/__pycache__/redraw_fig9_onward.cpython-314.pyc",
+      "sha256": "f24a30cc222dbb56a39f6aee3505f63a6406f1fe2da95f2a5619815cfc77a969"
+    },
+    {
+      "path": "06-figure/scripts/__pycache__/redraw_q1_end_effect_time.cpython-312.pyc",
+      "sha256": "420f8210e2c8b410f8e6a4aab24d33d2631f1d1910f1a9bdd1584baec3e30046"
+    },
+    {
+      "path": "06-figure/scripts/add_captioned_figures_20260912.py",
+      "sha256": "a8f073980f45dc3e531729dd8877ffbc0b84554ed4cf7fcf68153dee524e6fa1"
     },
     {
       "path": "06-figure/scripts/build_publication_figures.py",
-      "sha256": "e4c5a62138c814d081d4842c89974f3427fa2906ac77c574a0b3a8bb1945704f"
+      "sha256": "7b16ea0806926da3637b1da6d81e40a000202e70b34c47b3ae6f43ef755eacc4"
     },
     {
       "path": "06-figure/scripts/finalize_figure_stage.py",
-      "sha256": "4ed620b001b3b3c165f79ce4bcd19acdf9fe9cb72fe862a0a1a4cf3f0c650a7c"
+      "sha256": "c719cd262353e12b65b929a79ed3c9c7e22983b28393ad0d54254f5a81f27d60"
+    },
+    {
+      "path": "06-figure/scripts/merge_q3_q4_space_conv.py",
+      "sha256": "57bee6f0b59bd72fb43bc42aa618428a6e9377d90f2e126d818318d827b79584"
+    },
+    {
+      "path": "06-figure/scripts/redraw_fig6.py",
+      "sha256": "3896dd2cdc75529a9290646667f0db43fa0dbf1b4d288525bfa0846fde9e8b1a"
+    },
+    {
+      "path": "06-figure/scripts/redraw_fig7.py",
+      "sha256": "b5a0a3669b0d440ee73ba93cfb72cf91e2768e04f3854258c15bb1a207bf81b7"
+    },
+    {
+      "path": "06-figure/scripts/redraw_fig9_onward.py",
+      "sha256": "a5c9fe1a529b46def06311ea8bfabca20ecd0ca91f5c790743008786ec443a70"
+    },
+    {
+      "path": "06-figure/scripts/redraw_q1_end_effect_time.py",
+      "sha256": "87ef2fd744de8cbd75cc58f1467d80fb6313db5478d9df24af39aad5e1c27eff"
+    },
+    {
+      "path": "06-figure/scripts/render_q2_profiles.py",
+      "sha256": "8c4d20d346703614dd454159260a7e61a55d8436828c6a032ec8765154fbb3a6"
+    },
+    {
+      "path": "06-figure/scripts/render_q2_profiles_3d.py",
+      "sha256": "239f7338746384bc54cb47b672b1afed887c0ea61f6eb984162e7cc1fb1efdc4"
+    },
+    {
+      "path": "06-figure/superseded-20260912/FIG-Q4-DRY-SOLID-CONTINUITY/canonical/contracts/FIG-Q4-DRY-SOLID-CONTINUITY.json",
+      "sha256": "0e77fe7004bab00aa5394c426a3c6066fc8036646e6806b7e76b28cc9a05d8eb"
+    },
+    {
+      "path": "06-figure/superseded-20260912/FIG-Q4-DRY-SOLID-CONTINUITY/canonical/data-snapshots/FIG-Q4-DRY-SOLID-CONTINUITY.csv",
+      "sha256": "b3ab35c24fca8d1dee6c8e855fe3bffa9da022deed80b75b31ced378c554bd50"
+    },
+    {
+      "path": "06-figure/superseded-20260912/FIG-Q4-DRY-SOLID-CONTINUITY/canonical/data-snapshots/FIG-Q4-DRY-SOLID-CONTINUITY.meta.json",
+      "sha256": "86898c62c4eec933c5bd99eca253f61987ba7f96575cbc35c3e5aa8e1b2cd251"
+    },
+    {
+      "path": "06-figure/superseded-20260912/FIG-Q4-DRY-SOLID-CONTINUITY/canonical/figures/FIG-Q4-DRY-SOLID-CONTINUITY.pdf",
+      "sha256": "df524ebc30669da3f3ab5c7bfa3992c784c480b87a1a1f5e21530b4726381edd"
+    },
+    {
+      "path": "06-figure/superseded-20260912/FIG-Q4-DRY-SOLID-CONTINUITY/canonical/figures/FIG-Q4-DRY-SOLID-CONTINUITY.png",
+      "sha256": "e367f3a77209286f24605782e62e709dfec3b4a6212e7a85d8973777e935cac4"
+    },
+    {
+      "path": "06-figure/superseded-20260912/FIG-Q4-DRY-SOLID-CONTINUITY/canonical/figures/FIG-Q4-DRY-SOLID-CONTINUITY.svg",
+      "sha256": "0b64815f81813fdb1da82fec4329af66ec9d45c2b130ed87a444cd20cab96137"
+    },
+    {
+      "path": "06-figure/superseded-20260912/FIG-Q4-DRY-SOLID-CONTINUITY/canonical/previews/FIG-Q4-DRY-SOLID-CONTINUITY-color.png",
+      "sha256": "53e9bc265a18387070a0ae031da98bb6c751728f58ee26e58beb1e85f6dda95d"
+    },
+    {
+      "path": "06-figure/superseded-20260912/FIG-Q4-DRY-SOLID-CONTINUITY/canonical/previews/FIG-Q4-DRY-SOLID-CONTINUITY-grayscale.png",
+      "sha256": "fe80f6d255463e86e8ffb88235a2a3bc01f4989fa7d1be009aa7133d074216b9"
+    },
+    {
+      "path": "06-figure/superseded-20260912/FIG-Q4-DRY-SOLID-CONTINUITY/captioned-20260912/figures/FIG-Q4-DRY-SOLID-CONTINUITY.png",
+      "sha256": "bbc683c201862ae6d5d15a1e330d9296d18c452bbbe5bac9984574c4afd52147"
+    },
+    {
+      "path": "06-figure/superseded-20260912/FIG-Q4-DRY-SOLID-CONTINUITY/revision-20260912/contracts/FIG-Q4-DRY-SOLID-CONTINUITY.json",
+      "sha256": "a2d06e8f5d195c136218b7d2a9c84475f988b93248fc3acb15eaa193beb49d0c"
+    },
+    {
+      "path": "06-figure/superseded-20260912/FIG-Q4-DRY-SOLID-CONTINUITY/revision-20260912/data-snapshots/FIG-Q4-DRY-SOLID-CONTINUITY.csv",
+      "sha256": "cd83e568f49e7524ce95cd4343a800bc08380e5d4429dbf78db99a787ed18b61"
+    },
+    {
+      "path": "06-figure/superseded-20260912/FIG-Q4-DRY-SOLID-CONTINUITY/revision-20260912/data-snapshots/FIG-Q4-DRY-SOLID-CONTINUITY.meta.json",
+      "sha256": "e7eafe868a0ade5490ce7293091534f2a012c6db8b26a329d307caa0475a561b"
+    },
+    {
+      "path": "06-figure/superseded-20260912/FIG-Q4-DRY-SOLID-CONTINUITY/revision-20260912/figures/FIG-Q4-DRY-SOLID-CONTINUITY.png",
+      "sha256": "5eef95a56e9b9db6a815d4b43e930d9e22d5fc889e214dfcae4b3d1fe0ab003f"
+    },
+    {
+      "path": "06-figure/superseded-20260912/FIG-Q4-DRY-SOLID-CONTINUITY/revision-20260912/figures/FIG-Q4-DRY-SOLID-CONTINUITY.svg",
+      "sha256": "220157ad5b94d7552d7cdc718805e0eb7638e9aa0e7684087a22d2ec92c46d9f"
+    },
+    {
+      "path": "06-figure/superseded-20260912/FIG-Q4-DRY-SOLID-CONTINUITY/revision-20260912/previews/FIG-Q4-DRY-SOLID-CONTINUITY-color.png",
+      "sha256": "e617f3040548c5d47a72ef472f4602fc1516eb7f184c0f344562b9ac8c735dc7"
+    },
+    {
+      "path": "06-figure/superseded-20260912/FIG-Q4-DRY-SOLID-CONTINUITY/revision-20260912/previews/FIG-Q4-DRY-SOLID-CONTINUITY-grayscale.png",
+      "sha256": "efa135b405c2019c3e54194f3b7075535d7ea4ff1751a762a4a13796acd65f21"
+    },
+    {
+      "path": "06-figure/user-selected-20260912/figures/FIG-Q2-C-PROFILES.png",
+      "sha256": "f8edb5f95d100e50d88083f43be5ddbc3b53916431321169d1a1ce81c6ae5b95"
+    },
+    {
+      "path": "06-figure/user-selected-20260912/figures/FIG-Q2-MODEL-ABLATION.png",
+      "sha256": "99a76426f68cefe1a754879f837c7dacc85fb624cda5deb51e2f25ebc59ea913"
+    },
+    {
+      "path": "06-figure/user-selected-20260912/superseded/FIG-Q2-C-PROFILES-2D-FIG-Q2-C-PROFILES-color.png",
+      "sha256": "8a2f0a0c6f34dcb54b7185c0101ae5e78c682314a5b672cc40885135e503ad79"
+    },
+    {
+      "path": "06-figure/user-selected-20260912/superseded/FIG-Q2-C-PROFILES-2D-FIG-Q2-C-PROFILES-grayscale.png",
+      "sha256": "e2b355c76fb6927454b191e5a03470927e5cc33328bcbb598045149b6aaeb67d"
+    },
+    {
+      "path": "06-figure/user-selected-20260912/superseded/FIG-Q2-C-PROFILES-2D-FIG-Q2-C-PROFILES.pdf",
+      "sha256": "87e8ce52e33957cab4ea7f36fe3dcf9e7ee45d4be5411dfc0f2a429fd15c8a64"
+    },
+    {
+      "path": "06-figure/user-selected-20260912/superseded/FIG-Q2-C-PROFILES-2D-FIG-Q2-C-PROFILES.png",
+      "sha256": "8a2f0a0c6f34dcb54b7185c0101ae5e78c682314a5b672cc40885135e503ad79"
+    },
+    {
+      "path": "06-figure/user-selected-20260912/superseded/FIG-Q2-C-PROFILES-2D-FIG-Q2-C-PROFILES.svg",
+      "sha256": "6e62c1ea7b6bcf4a8af3cc8efa0aa674d8ad019cf427df0de309f80f04c88ca3"
+    },
+    {
+      "path": "06-figure/user-selected-20260912/superseded/FIG-Q2-C-PROFILES-3D-v1-FIG-Q2-C-PROFILES-color.png",
+      "sha256": "72857a3046a71f174d16690c32444e6204eb5b835a95dc8bd7d390d8472f2675"
+    },
+    {
+      "path": "06-figure/user-selected-20260912/superseded/FIG-Q2-C-PROFILES-3D-v1-FIG-Q2-C-PROFILES-grayscale.png",
+      "sha256": "711d50bca68cf52036984a0320e246454b4e5f03e23fda3b0364cfc28d5e8c80"
+    },
+    {
+      "path": "06-figure/user-selected-20260912/superseded/FIG-Q2-C-PROFILES-3D-v1-FIG-Q2-C-PROFILES.pdf",
+      "sha256": "5b4c6f7c2ff6fa318dd10aeece226f1e07d001359cea77ae74926569f94d6b1b"
+    },
+    {
+      "path": "06-figure/user-selected-20260912/superseded/FIG-Q2-C-PROFILES-3D-v1-FIG-Q2-C-PROFILES.png",
+      "sha256": "72857a3046a71f174d16690c32444e6204eb5b835a95dc8bd7d390d8472f2675"
+    },
+    {
+      "path": "06-figure/user-selected-20260912/superseded/FIG-Q2-C-PROFILES-3D-v1-FIG-Q2-C-PROFILES.svg",
+      "sha256": "750327bf92b40a86dab578295ecc8a0bd3b229980096bbd1f49e5f283cdd49b4"
+    },
+    {
+      "path": "06-figure/user-selected-20260912/superseded/FIG-Q2-C-PROFILES-3D-v2-FIG-Q2-C-PROFILES-color.png",
+      "sha256": "54bfc0247197152dd44ea80eeb8fa9afe292549537b49b3eb687c0e12887ea46"
+    },
+    {
+      "path": "06-figure/user-selected-20260912/superseded/FIG-Q2-C-PROFILES-3D-v2-FIG-Q2-C-PROFILES-grayscale.png",
+      "sha256": "2f63651a4a92a58c45611ef74046ac1da0d52a68e42bfd2c0e458e9e86059ff4"
+    },
+    {
+      "path": "06-figure/user-selected-20260912/superseded/FIG-Q2-C-PROFILES-3D-v2-FIG-Q2-C-PROFILES.pdf",
+      "sha256": "88223ef6aab629c75b345cec0a395e06e4665ed2817257519a88600c5d43c896"
+    },
+    {
+      "path": "06-figure/user-selected-20260912/superseded/FIG-Q2-C-PROFILES-3D-v2-FIG-Q2-C-PROFILES.png",
+      "sha256": "54bfc0247197152dd44ea80eeb8fa9afe292549537b49b3eb687c0e12887ea46"
+    },
+    {
+      "path": "06-figure/user-selected-20260912/superseded/FIG-Q2-C-PROFILES-3D-v2-FIG-Q2-C-PROFILES.svg",
+      "sha256": "e37704ac8668403c577c3eb0a92c6fc17bc3f21fe0fbfb3b2b85002ebe3e70e6"
     },
     {
       "path": "06-figure/visual-audit.md",
-      "sha256": "b520d1e7411e7e0d89891f6bbfc05fd09665b2e8c6db2e9c23cf164c32f53896"
+      "sha256": "5c9ef46572c2744bd1380d883daaf97ba9b09f8c3a7f0c4410a74800bf5fbdd4"
     },
     {
       "path": "06-figure/图注.md",
-      "sha256": "1e396456e3b87970ac86fa1d2791223ddb1a34d72c48db2d7eda42b560204370"
+      "sha256": "28c7de9b672ac90b8ce8de99ea5bf848e82a6887b5b8613b9bc4453fc760d503"
+    },
+    {
+      "path": "06-figure/文字披露.md",
+      "sha256": "066d800755c3b9b73e88c686c9f18b1e00d46068cd292eac5510555c15675721"
     }
   ],
   "frozen_decisions": [
@@ -785,32 +3541,34 @@
     },
     {
       "path": "decisions/H3-claims.json",
-      "sha256": "f21ac63c8c778b2e6cb7c476bc82354aa99bf6a5f2a882f15bed6046d232c8a8"
+      "sha256": "75fa934828f09a4f9d1c59d02e4d7570370fbde4f91d5b695e8e4a52132d7ccb"
     }
   ],
   "assumptions": [
-    "Chinese core double-column working size 6.7 x 4.2 in; vector SVG and 600 DPI PNG retained.",
-    "All plotted values are frozen conditional simulations; no model output was recomputed."
+    "FIG-Q1-END-EFFECT was revised to display the approved M1/M2 base trajectories generated with the unchanged formal solver configurations.",
+    "No model definition, parameter, upstream COMPUTE result file, or other figure was changed.",
+    "All plotted values remain conditional simulations and do not constitute empirical accuracy validation."
   ],
   "unknowns": [
     "No internal experimental observations are available for empirical accuracy claims."
   ],
   "claims": [
-    "The H3-approved A+ controlled set is rendered as 16 main figures, 6 appendix figures, 3 main tables and 2 appendix tables.",
-    "V02/V06 narrow margins, all 72 h non-crossing scenarios, failed Jacobian ablation, conservation residuals and conditional-simulation limits are retained."
+    "The current team-selected controlled set is rendered as 13 main figures, 3 appendix figures, 3 main tables and 3 appendix tables.",
+    "V02 narrow margin is retained as a text-only disclosure; V06 narrow margin, all 72 h non-crossing scenarios, failed Jacobian ablation, conservation residuals and conditional-simulation limits are retained."
   ],
   "evidence": [
     "06-figure/figure-manifest.json",
     "06-figure/visual-audit.md",
-    "06-figure/图注.md"
+    "06-figure/图注.md",
+    "06-figure/文字披露.md"
   ],
   "warnings": [
-    "Do not present numerical verification as real-material validation.",
-    "Supplemental CFD, PINN, surrogate and pure-ML routes remain limitation text only (S0)."
+    "The time-series version supersedes the former endpoint dumbbell rendering for FIG-Q1-END-EFFECT.",
+    "Do not present the M1/M2 difference as an accuracy improvement without internal observations."
   ],
   "required_next_actions": [
     "Controller verifies every FIGURE output hash before advancing to PAPER.",
-    "PAPER uses the frozen manifest and captions without changing data or claim limits."
+    "PAPER uses the current frozen manifest, captions and text disclosure without changing data or claim limits."
   ],
-  "completed_at": "2026-09-11T23:57:56.352826+08:00"
+  "completed_at": "2026-09-12T16:31:46.815332+08:00"
 }

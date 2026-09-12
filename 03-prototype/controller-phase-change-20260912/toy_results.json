@@ -1,0 +1,59 @@
+{
+  "seed": 20260912,
+  "identifiability": [
+    {
+      "observation_set": "C_only",
+      "parameters": "a_v,k_evap,L_v,eq_scale",
+      "n_observations": 1201,
+      "rank_at_tol_1e-8": 3,
+      "condition_number_scaled": Infinity,
+      "singular_values": "1.730241e+00;7.883548e-02;7.229799e-03;0.000000e+00",
+      "decision": "NON_IDENTIFIABLE"
+    },
+    {
+      "observation_set": "C_T",
+      "parameters": "a_v,k_evap,L_v,eq_scale",
+      "n_observations": 2402,
+      "rank_at_tol_1e-8": 4,
+      "condition_number_scaled": 35.40583999456038,
+      "singular_values": "1.777862e+00;8.980790e-01;1.736067e-01;5.021381e-02",
+      "decision": "DIAGNOSTIC_ONLY"
+    },
+    {
+      "observation_set": "C_T_vapor",
+      "parameters": "a_v,k_evap,L_v,eq_scale",
+      "n_observations": 3603,
+      "rank_at_tol_1e-8": 4,
+      "condition_number_scaled": 11.060834174795142,
+      "singular_values": "1.568371e+00;8.869158e-01;8.564389e-01;1.417950e-01",
+      "decision": "DIAGNOSTIC_ONLY"
+    }
+  ],
+  "sensitivity": [
+    {
+      "factor": "a_v",
+      "relative_change": "x1.20",
+      "delta_C_final": -0.07307151847132504,
+      "delta_T_final": -0.016851376264732876
+    },
+    {
+      "factor": "k_evap",
+      "relative_change": "x1.20",
+      "delta_C_final": -0.018991836579555277,
+      "delta_T_final": -0.00744231749983415
+    },
+    {
+      "factor": "L_v",
+      "relative_change": "x1.20",
+      "delta_C_final": 0.0,
+      "delta_T_final": -0.027853639672609565
+    },
+    {
+      "factor": "eq_scale",
+      "relative_change": "x1.20",
+      "delta_C_final": -0.045800800454900426,
+      "delta_T_final": -0.021095188423532862
+    }
+  ],
+  "claim_limit": "dimensionless structural diagnostic only"
+}

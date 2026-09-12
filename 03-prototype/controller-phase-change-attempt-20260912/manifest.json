@@ -1,0 +1,232 @@
+{
+  "schema_version": "1.0",
+  "status": "BLOCKED",
+  "scope": "phase-change controlled attempt; primary route unchanged",
+  "seed": 20260912,
+  "runtime_s": 665.0258868999954,
+  "inputs": [
+    {
+      "path": "decisions/H1-problem.json",
+      "exists": true,
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d",
+      "bytes": 7372
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "exists": true,
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+      "bytes": 1837
+    },
+    {
+      "path": "decisions/H3-claims.json",
+      "exists": true,
+      "sha256": "75fa934828f09a4f9d1c59d02e4d7570370fbde4f91d5b695e8e4a52132d7ccb",
+      "bytes": 5977
+    },
+    {
+      "path": "02-design/handoff.json",
+      "exists": true,
+      "sha256": "5f2579e4fdad88eb19f68cfad1de065046e186b27e55d0d86422576be3f7ccc0",
+      "bytes": 3990
+    },
+    {
+      "path": "02-design/H2-优化审计与方向.md",
+      "exists": true,
+      "sha256": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33",
+      "bytes": 1979
+    },
+    {
+      "path": "02-design/验证计划.json",
+      "exists": true,
+      "sha256": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb",
+      "bytes": 3805
+    },
+    {
+      "path": "02-design/contracts/model-q23-fixed.json",
+      "exists": true,
+      "sha256": "b3f8327a02dba8de5e97906822641639b4c953aa48cfc6aaefda14986ace9fd1",
+      "bytes": 1166
+    },
+    {
+      "path": "02-design/contracts/model-q4-m1-reference.json",
+      "exists": true,
+      "sha256": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5",
+      "bytes": 1055
+    },
+    {
+      "path": "02-literature/文献阅读结果.md",
+      "exists": true,
+      "sha256": "31cb88d8a1cb8de37c193dfa5824f234e0097f96c0284037d82201f15ad915a8",
+      "bytes": 20053
+    },
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "exists": true,
+      "sha256": "a8e568085f51a00971ca8662b33e58b5ac34b2ffd7860dee407f2e76b4281257",
+      "bytes": 868
+    },
+    {
+      "path": "input/A题/附件/附件1.xlsx",
+      "exists": true,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586
+    },
+    {
+      "path": "input/A题/附件/附件2.xlsx",
+      "exists": true,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "bytes": 11485
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/handoff.json",
+      "exists": true,
+      "sha256": "5683c504e810230f19de2afdf421d2676c9c9fa55cb2aba9c2fe0b920f408ec3",
+      "bytes": 62058
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/energy-audit-summary.csv",
+      "exists": true,
+      "sha256": "2c434f787e90db2e941fc06e7a023d4aac2c91fe586186af5669b8bbfba4b3d8",
+      "bytes": 4359
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/parameter-sensitivity.csv",
+      "exists": true,
+      "sha256": "ee11aa5a4034006eb9e849f1b36029e7472676efe0ed75895a77363a161b189a",
+      "bytes": 4241
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/parameter-source-register.csv",
+      "exists": true,
+      "sha256": "820af40667947732febe6be0e05f9baa62f5694639b53ab45762d700d1324333",
+      "bytes": 1388
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/validation-register.csv",
+      "exists": true,
+      "sha256": "993a52641b9639dc8b254862a823df21dbd12e829b013c45e106cf9413a6c16a",
+      "bytes": 2005
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/H2-选择包.md",
+      "exists": true,
+      "sha256": "7b654d4a846ef78330af104ee54aed2f2a047cec9624c8805082851930874602",
+      "bytes": 5947
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/formal_compute_revision.py",
+      "exists": true,
+      "sha256": "b7cbae558d8b122b9fc6650bb1c8c8e82848188d005f29b16391523f469b9541",
+      "bytes": 48347
+    }
+  ],
+  "outputs": [
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/component-split-comparison.csv",
+      "sha256": "c2f8bb15aab1e12353c8df5d72728ef8dc27a690084e9a6397ac253c6495534e",
+      "bytes": 1990
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/component-validation-register.csv",
+      "sha256": "394460110d507699260c68f8b3f0a76051562a8f021061291ce938cdc83ba2a0",
+      "bytes": 954
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/environment.json",
+      "sha256": "717fd41256e950b112ed5a1a966b72c42f121d08ac2c6e43e902997fb88b0395",
+      "bytes": 370
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/finalize_outputs.py",
+      "sha256": "ae31504aa3729ef34c376f80a856ae439cf975c071f86d523370704aa74d4890",
+      "bytes": 4114
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/H2-选择包.md",
+      "sha256": "c687b4188820866622d7fe3d9ab71facc7d26bf258e30d92ba8bec0c12d48b9a",
+      "bytes": 2346
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/heat-audit.csv",
+      "sha256": "4d38e80a3b45486f83a4f527f6544d32b009b229e7455738330e8138ab494f11",
+      "bytes": 9129343
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/identifiability.csv",
+      "sha256": "94dde154acf5ae2674bf55109b8ba626d74e95aad3b9fbaebbca04487cd416db",
+      "bytes": 378
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/identifiability.json",
+      "sha256": "bcd994d4ba40cbf21badf2e93a4b64037c1f11fc3039fb291bf788feabf74b58",
+      "bytes": 960
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/latent-source-trace.csv",
+      "sha256": "8cfce40748f075b1aab2ae822f687ce19147d2e47fd7b3ad20575253652a5e21",
+      "bytes": 10129206
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/parameter-register.csv",
+      "sha256": "1bc2cf96012f1d48b753ba8c46f8bd2b3b7740f4c7b5f601b982b731a91e8a31",
+      "bytes": 1618
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/run.log",
+      "sha256": "1b2a219ff666fc95c477b95654b3d178e71785d72a5efb176239263876bd8b21",
+      "bytes": 91698
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/run_phase_change_attempt.py",
+      "sha256": "7df153abaab19d549a672e4ca1107ed6d9130f931d5099d63c7a4595ba7f0f04",
+      "bytes": 56913
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/space-time-refinement.csv",
+      "sha256": "4ce2f63a4d4201342eaf2da00e60259c339aed39a2e12fd4e940a9319409bfbd",
+      "bytes": 8008
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/validation-register.csv",
+      "sha256": "8d67d3e7d94f5641469de1a0261ff447f14e3418fc9ba62b1eaf1851f322ebe1",
+      "bytes": 2120
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/water-audit.csv",
+      "sha256": "de909995c9ebac9a479ebefe7a843e5437b6bc1bb7203fb4e9b40422a1886d78",
+      "bytes": 8561869
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/候选方案对比.md",
+      "sha256": "2737d9aa703b8f576fad0b908c0864514bb6aa1f8fcda9ae29eae621f14a1391",
+      "bytes": 10698
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/候选配对比较.csv",
+      "sha256": "3983f553e32f435c0c708bc88d0ebd509b8cbf8bced81799adcd4b6b049ed8d7",
+      "bytes": 5016
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/原始结果.csv",
+      "sha256": "99bd44cd60eda4a4b9b80215f957e2511b660c3309221cb30ae211e408c4b368",
+      "bytes": 31727
+    }
+  ],
+  "claims": [
+    "real no-latent versus moisture-loss-derived equivalent latent-heat paired runs completed where status PASS",
+    "Lv*proxy_scale sensitivity is engineering evidence only",
+    "mass-energy phase closure and separate parameter identification are unsupported"
+  ],
+  "unknowns": [
+    "no internal temperature observations",
+    "no material-specific Lv or phase-resolved Gamma/jw source",
+    "no phase-resolved water inventories or liquid-vapor-bound-water boundary split"
+  ],
+  "warnings": [
+    "j_w_proxy is an equivalent surface-gasification proxy, not a phase model",
+    "do not call Q_latent=0 a measurement",
+    "do not promote to formal COMPUTE"
+  ],
+  "completed_at": "2026-09-12T19:29:40+0800",
+  "finalized_at": "2026-09-12T19:36:06+0800"
+}

@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0",
   "status": "PASS",
-  "n_figures": 22,
-  "n_tables": 5,
+  "n_figures": 16,
+  "n_tables": 6,
   "main_figures": [
     "FIG-Q1-C-FIELD",
     "FIG-Q1-END-EFFECT",
@@ -16,25 +16,20 @@
     "FIG-Q3-COMBINED-BOUNDARY",
     "FIG-Q4-RADIUS-TIME",
     "FIG-Q4-THRESHOLD-TRAJECTORY",
-    "FIG-Q4-IMPLEMENTATION-AGREEMENT",
-    "FIG-Q4-JACOBIAN-ABLATION",
-    "FIG-Q4-COMBINED-BOUNDARY",
-    "FIG-VAL-BALANCE-RESIDUAL"
+    "FIG-Q4-COMBINED-BOUNDARY"
   ],
   "appendix_figures": [
     "FIG-Q1-GRID-CONV",
-    "FIG-Q2-V02-MARGIN",
     "FIG-Q3-SPACE-CONV",
-    "FIG-Q4-BRACKET-ZOOM",
-    "FIG-Q4-SPACE-CONV",
-    "FIG-Q4-DRY-SOLID-CONTINUITY"
+    "FIG-Q4-SPACE-CONV"
   ],
   "tables": [
     "TAB-Q2-MODEL-CONTRACT",
     "TAB-APPLICABILITY-FAILURE",
     "TAB-STRATEGY-ASSUMPTION",
     "TAB-VAL-V01-V12",
-    "TAB-CLAIM-LIMIT"
+    "TAB-CLAIM-LIMIT",
+    "TAB-Q4-DRY-SOLID-CONTINUITY"
   ],
   "items": [
     {
@@ -43,8 +38,12 @@
       "snapshot": "06-figure/data-snapshots/FIG-Q1-C-FIELD.csv",
       "svg": "06-figure/figures/FIG-Q1-C-FIELD.svg",
       "png": "06-figure/figures/FIG-Q1-C-FIELD.png",
-      "png_sha256": "c357b211c6fd5b535f3afb37dc1ebd48273fed26f3f16d07c7b17a9e7ff61d84",
-      "svg_sha256": "fa5c973c36f4815aba3ffa78728594abed47c52bbffeb74418dfdaff5736cec6"
+      "png_sha256": "bfda2cca846758b03c54d3f10a57b211881c0a1fa41b2066df5450ff383958be",
+      "svg_sha256": "51459653b837757ca78e87e33acfa65cb49ed0d67dd642b598ecf174938927a3",
+      "pdf": "06-figure/figures/FIG-Q1-C-FIELD.pdf",
+      "pdf_sha256": "73dab8c125cef9ea4367292ee2d83e5724c8bc41faeb348d17bec2fb75713591",
+      "visual_revision": "beautified-20260912",
+      "approval_status": "TEAM_APPROVED"
     },
     {
       "id": "FIG-Q1-END-EFFECT",
@@ -52,8 +51,8 @@
       "snapshot": "06-figure/data-snapshots/FIG-Q1-END-EFFECT.csv",
       "svg": "06-figure/figures/FIG-Q1-END-EFFECT.svg",
       "png": "06-figure/figures/FIG-Q1-END-EFFECT.png",
-      "png_sha256": "74fcad8992bbde7b6e4de90358776561ee65655d5c70ec0395229f18c4a18e00",
-      "svg_sha256": "9e659e2e15c454a2c0b54ed412929f64f1ea25c026b04f4a0f8cfa6986cec744"
+      "png_sha256": "12f896bba4fe24b0d6ab4f4a63d4918e63f497cd8701d073b65f5782108ca74d",
+      "svg_sha256": "cd20557fabffb17a309a897f97eb4fbda074b6e2318fa9d08f7df980c5f4eca5"
     },
     {
       "id": "FIG-Q2-C-PROFILES",
@@ -61,8 +60,12 @@
       "snapshot": "06-figure/data-snapshots/FIG-Q2-C-PROFILES.csv",
       "svg": "06-figure/figures/FIG-Q2-C-PROFILES.svg",
       "png": "06-figure/figures/FIG-Q2-C-PROFILES.png",
-      "png_sha256": "90d4e6d4e52d4a1186af7115131a6baa6ed291cccd722b6451c31b8cad129a0f",
-      "svg_sha256": "8cd120096cf2d9affc6dd7fb62b34f1bdd73bb26f88c61bda051fdd8e3504ef6"
+      "png_sha256": "8400fd124d99a2b5bb31df479fd66486638b2d2853806eb8abe27a01ab91c2c4",
+      "svg_sha256": "920b17897133ea396560c31379d14a8a42ccbf9bdd06badbcf24e224fcfd07cf",
+      "pdf": "06-figure/figures/FIG-Q2-C-PROFILES.pdf",
+      "pdf_sha256": "499e35711889cc904f345006606c4e287236339bb62e02107badab8f73ebdc52",
+      "visual_revision": "redraw-20260912-3d-orthographic-z-ticks-v3",
+      "data_claim_status": "unchanged"
     },
     {
       "id": "FIG-Q2-MODEL-ABLATION",
@@ -88,8 +91,12 @@
       "snapshot": "06-figure/data-snapshots/FIG-Q3-THRESHOLD-TRAJECTORY.csv",
       "svg": "06-figure/figures/FIG-Q3-THRESHOLD-TRAJECTORY.svg",
       "png": "06-figure/figures/FIG-Q3-THRESHOLD-TRAJECTORY.png",
-      "png_sha256": "5596b64e4b053f6dc1c94b53a96493e2917cabe9217b757a3e8e32527ac35a6a",
-      "svg_sha256": "4d1367d5a02a1b63d030d07b1f91c3d63c4c5873a4283db2011007e852ff636a"
+      "png_sha256": "e9cda2b02cf5d6a28267cd30f9f5f3ad899af0225f22be40a343195b143c0ef9",
+      "svg_sha256": "834678f71ded3a04e9738a7c2e78a0ca140924cdddcd6e99966b1a091bda7351",
+      "pdf": "06-figure/figures/FIG-Q3-THRESHOLD-TRAJECTORY.pdf",
+      "pdf_sha256": "5b74de850d578732a5f5f05d0e315a30db7f748e2a09b82602b175eb09ae3fd4",
+      "visual_revision": "redraw-fig6-20260912-title-simsun",
+      "data_claim_status": "unchanged"
     },
     {
       "id": "FIG-Q3-BRACKET-ZOOM",
@@ -97,8 +104,12 @@
       "snapshot": "06-figure/data-snapshots/FIG-Q3-BRACKET-ZOOM.csv",
       "svg": "06-figure/figures/FIG-Q3-BRACKET-ZOOM.svg",
       "png": "06-figure/figures/FIG-Q3-BRACKET-ZOOM.png",
-      "png_sha256": "85d8ba2805e509cf71a983582ad6289a0ba4914e4e8296df3c8fe7459140427e",
-      "svg_sha256": "6dd472b0c19d6159911957a679ca40e749a6801e2bc6a0c8651bb4eae4b2efc3"
+      "pdf": "06-figure/figures/FIG-Q3-BRACKET-ZOOM.pdf",
+      "png_sha256": "e10e6851f4f189831af1b11c8ad28c381c7240eb4f12123cfd7cb3ad09ce36e6",
+      "svg_sha256": "5355ff42ecb2ea038bafcaa4942decb491e556d95fb1e6cfd30a57d4601a5c31",
+      "pdf_sha256": "691237c701c794d2889f21121c237a8aafb8821a558573c111c36b68dcd0654f",
+      "visual_revision": "redraw-20260912-fig7-color-marker-solid",
+      "data_claim_status": "unchanged"
     },
     {
       "id": "FIG-Q3-TIME-CONV",
@@ -106,8 +117,12 @@
       "snapshot": "06-figure/data-snapshots/FIG-Q3-TIME-CONV.csv",
       "svg": "06-figure/figures/FIG-Q3-TIME-CONV.svg",
       "png": "06-figure/figures/FIG-Q3-TIME-CONV.png",
-      "png_sha256": "f9e2057d41053afb8d868d760e1173f01ab7b085136eac8c96ae1d87cb141bba",
-      "svg_sha256": "c2c122ff350eb25725620c4f21b29946d063abe3118d0ac9b5151ccc44f8b8c2"
+      "png_sha256": "611e1a2ab9e9b0ba2954935993fc10d1abcbd735ed486db2be66c88b372212f3",
+      "svg_sha256": "4cd81429ce5c692a183966bf0e9ec4fd56ad9d55f1fbd223dad478fb7e49e992",
+      "pdf": "06-figure/figures/FIG-Q3-TIME-CONV.pdf",
+      "pdf_sha256": "3c0a3daca6844fde9cd7c93a8483d04a6cc0ac428f02dbcc967defc6e01650c2",
+      "visual_revision": "beautified-20260912-fig8",
+      "data_claim_status": "unchanged"
     },
     {
       "id": "FIG-Q3-SENS-ONEFACTOR",
@@ -115,8 +130,16 @@
       "snapshot": "06-figure/data-snapshots/FIG-Q3-SENS-ONEFACTOR.csv",
       "svg": "06-figure/figures/FIG-Q3-SENS-ONEFACTOR.svg",
       "png": "06-figure/figures/FIG-Q3-SENS-ONEFACTOR.png",
-      "png_sha256": "3c8d7e0f9eb08f3bcee7e6c0d70c251a58050c031e75ffdcfec1637afdff8a65",
-      "svg_sha256": "de2ff21063b4188641560e302bb992e1e76122e87e5499dec06cd57dc3c3037f"
+      "png_sha256": "11ae0607d5d6d69f955be650cb10be5285ec8291259a06218d654113c448653c",
+      "svg_sha256": "12cf9b3fd820d919468ec1d3404af4bfe1a3c9870e6268d43dc96a3854a9779e",
+      "pdf": "06-figure/figures/FIG-Q3-SENS-ONEFACTOR.pdf",
+      "pdf_sha256": "e093889856b56634b63b4c51f2d4cb349989c9fd2a0d18e6e18c959ecd81d98f",
+      "visual_revision": "grouped-q3-sens-onefactor-20260912-dense-25points",
+      "data_claim_status": "unchanged",
+      "layout_note": "五面板组图；每组5个真实计算点；横轴标注具体倍数/分钟；各面板独立纵轴；72 h不是达标上限。",
+      "format_check": "SVG + PDF + PNG@600dpi + color/grayscale preview",
+      "font_spec": "SimSun for Chinese, variables, units, ticks and legend",
+      "non_data_color_spec": "black axes, grid, title, legend, ticks and text"
     },
     {
       "id": "FIG-Q3-COMBINED-BOUNDARY",
@@ -124,8 +147,15 @@
       "snapshot": "06-figure/data-snapshots/FIG-Q3-COMBINED-BOUNDARY.csv",
       "svg": "06-figure/figures/FIG-Q3-COMBINED-BOUNDARY.svg",
       "png": "06-figure/figures/FIG-Q3-COMBINED-BOUNDARY.png",
-      "png_sha256": "4c62fa8662f5be64b0970613939e129e72f710dfb376d49881e917a478ff921e",
-      "svg_sha256": "49cbb2091b6e2b4de59e7a51d081209cbbd1b0dcd6e36278b0892494a85415ec"
+      "png_sha256": "67a8bd85bc7675d84b84ce9ff08e43f62aa122569839c8d22315af259e4454bc",
+      "svg_sha256": "a144b3292619e197947877ad90718d0a6fe57c050404b1bce7f4a441b9c6c447",
+      "pdf": "06-figure/figures/FIG-Q3-COMBINED-BOUNDARY.pdf",
+      "pdf_sha256": "40f8d3660d1dfe9a0f74354a9fcd59bb290204fe2cb8013fd31fb950e74a557e",
+      "visual_revision": "redraw-fig9-onward-20260912-simsun-solid-marker",
+      "data_claim_status": "unchanged",
+      "format_check": "SVG + PDF + PNG@600dpi + color/grayscale preview",
+      "font_spec": "SimSun for Chinese, variables, units, ticks and legend",
+      "non_data_color_spec": "black axes, grid, title, legend, ticks and text"
     },
     {
       "id": "FIG-Q4-RADIUS-TIME",
@@ -133,8 +163,15 @@
       "snapshot": "06-figure/data-snapshots/FIG-Q4-RADIUS-TIME.csv",
       "svg": "06-figure/figures/FIG-Q4-RADIUS-TIME.svg",
       "png": "06-figure/figures/FIG-Q4-RADIUS-TIME.png",
-      "png_sha256": "fd1e7864ca3cc05eb22079bc8f95a51ff534dd7d707593147dbc0a121093196d",
-      "svg_sha256": "3371652773d31b6f55b6fde995b6b2b70ea3d6539c082bee851402c11342c190"
+      "png_sha256": "0beafbf043ddf09587f67976c795e2a5d3f18681fed1c621108cdc635aa026f5",
+      "svg_sha256": "65efc9e2e0001d0b0fb0395299302beb1db061233e758520a09acacce8046b2a",
+      "pdf": "06-figure/figures/FIG-Q4-RADIUS-TIME.pdf",
+      "pdf_sha256": "97d5694e06105abe0549e296d3f80b8dab29185a28912bee11731cb0ef93f59c",
+      "visual_revision": "redraw-fig9-onward-20260912-simsun-solid-marker",
+      "data_claim_status": "unchanged",
+      "format_check": "SVG + PDF + PNG@600dpi + color/grayscale preview",
+      "font_spec": "SimSun for Chinese, variables, units, ticks and legend",
+      "non_data_color_spec": "black axes, grid, title, legend, ticks and text"
     },
     {
       "id": "FIG-Q4-THRESHOLD-TRAJECTORY",
@@ -142,26 +179,15 @@
       "snapshot": "06-figure/data-snapshots/FIG-Q4-THRESHOLD-TRAJECTORY.csv",
       "svg": "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.svg",
       "png": "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.png",
-      "png_sha256": "a37ad7803cf06a95fa8c40a59b2fcfa42b4a71270c526ec6ff07dd40ad50d962",
-      "svg_sha256": "2a0474dd8001e7522865db92bfc7569cca386f4e04cd342eb3a921ec5e898692"
-    },
-    {
-      "id": "FIG-Q4-IMPLEMENTATION-AGREEMENT",
-      "contract": "06-figure/contracts/FIG-Q4-IMPLEMENTATION-AGREEMENT.json",
-      "snapshot": "06-figure/data-snapshots/FIG-Q4-IMPLEMENTATION-AGREEMENT.csv",
-      "svg": "06-figure/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.svg",
-      "png": "06-figure/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.png",
-      "png_sha256": "b9830d52124119012b31352838cde0aacae1010bd448ae2346d94fa9bcd9100e",
-      "svg_sha256": "b73025c613b52a3a7eea14edc9ffa3a3fe064fb19743a7cf6036cba8590b7ffd"
-    },
-    {
-      "id": "FIG-Q4-JACOBIAN-ABLATION",
-      "contract": "06-figure/contracts/FIG-Q4-JACOBIAN-ABLATION.json",
-      "snapshot": "06-figure/data-snapshots/FIG-Q4-JACOBIAN-ABLATION.csv",
-      "svg": "06-figure/figures/FIG-Q4-JACOBIAN-ABLATION.svg",
-      "png": "06-figure/figures/FIG-Q4-JACOBIAN-ABLATION.png",
-      "png_sha256": "a640d83d39c1af9c6c66b33f1f2014d084481e43f68c25c93776ce2521874b83",
-      "svg_sha256": "a82f19c1a1138f3f141510c8114daa1688cb450a3e80a5ade51e30247055f15c"
+      "png_sha256": "f7e18424321881d6bc240dec3ca773f80e9e4e33ca85e25a60571f7b2d04f637",
+      "svg_sha256": "06a41e04448d3128a5bf260e7834bf36af09e53e798d3243ef870871b2da5270",
+      "pdf": "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.pdf",
+      "pdf_sha256": "045ca3870c4f423fa2968112191a36160001b602795066c54af2d3051bad4759",
+      "visual_revision": "q4-threshold-refresh-20260912",
+      "data_claim_status": "unchanged",
+      "format_check": "SVG + PDF + PNG@600dpi + color/grayscale preview",
+      "font_spec": "SimSun for Chinese, variables, units, ticks and legend",
+      "non_data_color_spec": "black axes, grid, title, legend, ticks and text"
     },
     {
       "id": "FIG-Q4-COMBINED-BOUNDARY",
@@ -169,17 +195,15 @@
       "snapshot": "06-figure/data-snapshots/FIG-Q4-COMBINED-BOUNDARY.csv",
       "svg": "06-figure/figures/FIG-Q4-COMBINED-BOUNDARY.svg",
       "png": "06-figure/figures/FIG-Q4-COMBINED-BOUNDARY.png",
-      "png_sha256": "72fdd9ec5f6790954d48d93043f1e7c9f514347cb246f7f80648c850a0819b1b",
-      "svg_sha256": "4949107eba82acedbb891b1ebc255382613b3bedf8df7a951a024e5e3cc75700"
-    },
-    {
-      "id": "FIG-VAL-BALANCE-RESIDUAL",
-      "contract": "06-figure/contracts/FIG-VAL-BALANCE-RESIDUAL.json",
-      "snapshot": "06-figure/data-snapshots/FIG-VAL-BALANCE-RESIDUAL.csv",
-      "svg": "06-figure/figures/FIG-VAL-BALANCE-RESIDUAL.svg",
-      "png": "06-figure/figures/FIG-VAL-BALANCE-RESIDUAL.png",
-      "png_sha256": "eabbc21ee6ed5547e30470f396e45d67f30def31d8583925eaec580372afbfad",
-      "svg_sha256": "c4fa615456424e25cae129270e05660d598b80ab97a12f257effcd5763ea0420"
+      "png_sha256": "fd06347eba1ef5c4dddfa6fbea3e73b6094dfa1235cf949f7dfbddf838b81d5d",
+      "svg_sha256": "f051021ab8e783da28bee47ad37097764cfdc72b011c602d602800878d61956a",
+      "pdf": "06-figure/figures/FIG-Q4-COMBINED-BOUNDARY.pdf",
+      "pdf_sha256": "e0d57336eca62ea08e171a34f5ec9115280178dbca698be6a3f21cc2a7ae87c2",
+      "visual_revision": "redraw-fig9-onward-20260912-simsun-solid-marker",
+      "data_claim_status": "unchanged",
+      "format_check": "SVG + PDF + PNG@600dpi + color/grayscale preview",
+      "font_spec": "SimSun for Chinese, variables, units, ticks and legend",
+      "non_data_color_spec": "black axes, grid, title, legend, ticks and text"
     },
     {
       "id": "FIG-Q1-GRID-CONV",
@@ -187,17 +211,15 @@
       "snapshot": "06-figure/data-snapshots/FIG-Q1-GRID-CONV.csv",
       "svg": "06-figure/figures/FIG-Q1-GRID-CONV.svg",
       "png": "06-figure/figures/FIG-Q1-GRID-CONV.png",
-      "png_sha256": "6aaa3d8810b75a612a2ea319a3d8a2f878feddb16b44d223aaf9d82bb9b91d7f",
-      "svg_sha256": "b211ac08225ca0b1d0b3208f72a7e5edcee70a7a3a7e0439df65ac34fd617ad5"
-    },
-    {
-      "id": "FIG-Q2-V02-MARGIN",
-      "contract": "06-figure/contracts/FIG-Q2-V02-MARGIN.json",
-      "snapshot": "06-figure/data-snapshots/FIG-Q2-V02-MARGIN.csv",
-      "svg": "06-figure/figures/FIG-Q2-V02-MARGIN.svg",
-      "png": "06-figure/figures/FIG-Q2-V02-MARGIN.png",
-      "png_sha256": "0d76185c17a59ecd4e22c823b4dd9df8b639394af47e6f56864f4c865ada3897",
-      "svg_sha256": "ddbbafd80e4d8179800b6866729635fdd0740e1f1fbb3ab149a8061b08df2570"
+      "png_sha256": "70f3bb6c5dd64015786505cc99b71339ab50e15fdc0ba87f624252f9a4d4cc54",
+      "svg_sha256": "31fd8e2b8f2892cff1e5055f7479d2b1b702af69d45a5242c216c8d7b6045e37",
+      "pdf": "06-figure/figures/FIG-Q1-GRID-CONV.pdf",
+      "pdf_sha256": "15f0f5d5d8c0592ea13b6e2e2b47db780f55078755d85e704be6dc0fb4e557e5",
+      "visual_revision": "redraw-fig9-onward-20260912-simsun-solid-marker",
+      "data_claim_status": "unchanged",
+      "format_check": "SVG + PDF + PNG@600dpi + color/grayscale preview",
+      "font_spec": "SimSun for Chinese, variables, units, ticks and legend",
+      "non_data_color_spec": "black axes, grid, title, legend, ticks and text"
     },
     {
       "id": "FIG-Q3-SPACE-CONV",
@@ -205,17 +227,15 @@
       "snapshot": "06-figure/data-snapshots/FIG-Q3-SPACE-CONV.csv",
       "svg": "06-figure/figures/FIG-Q3-SPACE-CONV.svg",
       "png": "06-figure/figures/FIG-Q3-SPACE-CONV.png",
-      "png_sha256": "9c7bd245473b6579c80469335cac874aa6d6331de850984232bc7d75c0ba9440",
-      "svg_sha256": "247bee57d15055eba9a36a3bb3d92f53ee7f098baec061000711d2a1ff6f6f5a"
-    },
-    {
-      "id": "FIG-Q4-BRACKET-ZOOM",
-      "contract": "06-figure/contracts/FIG-Q4-BRACKET-ZOOM.json",
-      "snapshot": "06-figure/data-snapshots/FIG-Q4-BRACKET-ZOOM.csv",
-      "svg": "06-figure/figures/FIG-Q4-BRACKET-ZOOM.svg",
-      "png": "06-figure/figures/FIG-Q4-BRACKET-ZOOM.png",
-      "png_sha256": "bd324173184667a1c8f6de15510ba9c1f6c3c856efca4c9a188f2d4e5ab56964",
-      "svg_sha256": "1d427da8354108e4d203117e8e9ffbd2f003bf72feded8f928a5ba50d1a3bf00"
+      "png_sha256": "6e6fb4644847c8b795d024b9a5a8b428673d26c324aaf61b24ae5d0080e5ecf9",
+      "svg_sha256": "164be38a4f7e0f907bacf98da2b70327438dde2d25ba596c4908d61b1bd87e5e",
+      "pdf": "06-figure/figures/FIG-Q3-SPACE-CONV.pdf",
+      "pdf_sha256": "91f015e677bcb2de042cf8dcac4a148c53069685dc2fc7f8c9c8dd725a0b52af",
+      "visual_revision": "redraw-fig9-onward-20260912-simsun-solid-marker",
+      "data_claim_status": "unchanged",
+      "format_check": "SVG + PDF + PNG@600dpi + color/grayscale preview",
+      "font_spec": "SimSun for Chinese, variables, units, ticks and legend",
+      "non_data_color_spec": "black axes, grid, title, legend, ticks and text"
     },
     {
       "id": "FIG-Q4-SPACE-CONV",
@@ -223,17 +243,15 @@
       "snapshot": "06-figure/data-snapshots/FIG-Q4-SPACE-CONV.csv",
       "svg": "06-figure/figures/FIG-Q4-SPACE-CONV.svg",
       "png": "06-figure/figures/FIG-Q4-SPACE-CONV.png",
-      "png_sha256": "50d9b52b8c6f09e16ebb42baab665e81487bf621f1dd59cfb262f2f0c5028e33",
-      "svg_sha256": "a3c7f6ca355c7ae53cc1b1e0cd24f3bc05887c5b8c59bc1c42bd0d24ed01e0e7"
-    },
-    {
-      "id": "FIG-Q4-DRY-SOLID-CONTINUITY",
-      "contract": "06-figure/contracts/FIG-Q4-DRY-SOLID-CONTINUITY.json",
-      "snapshot": "06-figure/data-snapshots/FIG-Q4-DRY-SOLID-CONTINUITY.csv",
-      "svg": "06-figure/figures/FIG-Q4-DRY-SOLID-CONTINUITY.svg",
-      "png": "06-figure/figures/FIG-Q4-DRY-SOLID-CONTINUITY.png",
-      "png_sha256": "6e63a9d4acd72d04fbb1dd1059b6422c9e9b7e03f68febc44ebe0d4022a14848",
-      "svg_sha256": "8821479a6cbded90a2c0899d170aef146731ff1c3742679a7ed80c81874ce62d"
+      "png_sha256": "8f5d9255dc0ee1dd555a377d86629cb32a5126bcdb805edb678c78cae92ad9d5",
+      "svg_sha256": "f485934118e514c7643f60515ef65963d669ec4a7d68fb9b40857fba5748ce23",
+      "pdf": "06-figure/figures/FIG-Q4-SPACE-CONV.pdf",
+      "pdf_sha256": "863e42df898d8c749651a1dc1529a514552a775c17f5f819d094bd04706516e3",
+      "visual_revision": "redraw-fig9-onward-20260912-simsun-solid-marker",
+      "data_claim_status": "unchanged",
+      "format_check": "SVG + PDF + PNG@600dpi + color/grayscale preview",
+      "font_spec": "SimSun for Chinese, variables, units, ticks and legend",
+      "non_data_color_spec": "black axes, grid, title, legend, ticks and text"
     },
     {
       "id": "TAB-Q2-MODEL-CONTRACT",
@@ -264,6 +282,17 @@
       "contract": "06-figure/contracts/TAB-CLAIM-LIMIT.json",
       "csv": "06-figure/figures/TAB-CLAIM-LIMIT.csv",
       "markdown": "06-figure/figures/TAB-CLAIM-LIMIT.md"
+    },
+    {
+      "id": "TAB-Q4-DRY-SOLID-CONTINUITY",
+      "contract": "06-figure/contracts/TAB-Q4-DRY-SOLID-CONTINUITY.json",
+      "csv": "06-figure/figures/TAB-Q4-DRY-SOLID-CONTINUITY.csv",
+      "markdown": "06-figure/figures/TAB-Q4-DRY-SOLID-CONTINUITY.md"
     }
-  ]
+  ],
+  "last_visual_revision": {
+    "scope": "figure 9 onward (14 figures)",
+    "revision": "redraw-fig9-onward-20260912-simsun-solid-marker",
+    "data_claim_status": "unchanged"
+  }
 }

@@ -1,0 +1,5 @@
+﻿scope,family,level,nr,nz,dt_s,metric,value,adjacent_change_s,observed_order,runtime_s,max_linear_relative_residual,normalized_moisture_balance_error,status,source
+Q3,M3-time,1,210,36,60.0,interpolated_event_time_s,206818.71137262788,,,,,,COMPLETED_FORMAL,04-compute\results\threshold-grid-convergence.csv
+Q3,M3-time,2,210,36,30.0,interpolated_event_time_s,206723.71251173422,94.99886089365464,,,,,COMPLETED_FORMAL,04-compute\results\convergence.csv
+Q3,M3-time,3,210,36,15.0,interpolated_event_time_s,206676.14712249584,47.56538923838525,0.9979980305,,,,COMPLETED_FORMAL,04-compute\results\convergence.csv
+Q3,M3-time,4,210,36,7.5,interpolated_event_time_s,206652.27618125523,23.870941240602406,0.9946567305,574.5472874999978,5.0000084815274755e-11,1.678222425970245e-08,COMPLETED,04-compute\revision-grid-conv-20260912\logs\q3_time_extra.log

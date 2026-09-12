@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "figure_id": "FIG-Q4-THRESHOLD-TRAJECTORY",
+  "source": {
+    "path": "04-compute/results/q4-threshold-trajectory.csv",
+    "sha256": "b36f975078f97ccced81797dd27d4a89040132869a42a28108be776fc0365a6b"
+  },
+  "snapshot": {
+    "path": "06-figure/data-snapshots/FIG-Q4-THRESHOLD-TRAJECTORY.csv",
+    "sha256": "29fceee6d5486551077af7823070cf72fcc7c479d56a82f8dcc85706bc0bb959",
+    "rows": 3065,
+    "columns": [
+      "time_s",
+      "max_C",
+      "mean_C",
+      "center_C",
+      "surface_C"
+    ]
+  },
+  "surface_definition": "current moving-boundary Robin-reconstructed value; not the nearest fixed evaluation radius",
+  "outputs": {
+    "svg": {
+      "path": "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.svg",
+      "sha256": "06a41e04448d3128a5bf260e7834bf36af09e53e798d3243ef870871b2da5270"
+    },
+    "pdf": {
+      "path": "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.pdf",
+      "sha256": "045ca3870c4f423fa2968112191a36160001b602795066c54af2d3051bad4759"
+    },
+    "png": {
+      "path": "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.png",
+      "sha256": "f7e18424321881d6bc240dec3ca773f80e9e4e33ca85e25a60571f7b2d04f637"
+    }
+  },
+  "previews": {
+    "color": {
+      "path": "06-figure/previews/FIG-Q4-THRESHOLD-TRAJECTORY-color.png",
+      "sha256": "5751e85cbcc4b1ccb8204910caf87fdc7ca2cb2e88d4f5368ef55974dcd66735"
+    },
+    "grayscale": {
+      "path": "06-figure/previews/FIG-Q4-THRESHOLD-TRAJECTORY-grayscale.png",
+      "sha256": "502b7afc5b0a8012e4b80ff471c041a367580adf0a52a7a6b35fabc47b4e490f"
+    }
+  },
+  "renderer": "06-figure/scripts/redraw_fig9_onward.py; frozen snapshot input; no model recomputation"
+}

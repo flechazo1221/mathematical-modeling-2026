@@ -1,11 +1,11 @@
 {
   "figure_id": "FIG-Q4-THRESHOLD-TRAJECTORY",
   "snapshot": "06-figure/data-snapshots/FIG-Q4-THRESHOLD-TRAJECTORY.csv",
-  "snapshot_sha256": "16e83f9d135e255cb154561a9fa4fa1496177a0c752224ef9832f9d621c5d15a",
+  "snapshot_sha256": "29fceee6d5486551077af7823070cf72fcc7c479d56a82f8dcc85706bc0bb959",
   "sources": [
     {
       "path": "04-compute/results/q4-threshold-trajectory.csv",
-      "sha256": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8"
+      "sha256": "b36f975078f97ccced81797dd27d4a89040132869a42a28108be776fc0365a6b"
     }
   ],
   "rows": 3065,
@@ -15,5 +15,6 @@
     "mean_C",
     "center_C",
     "surface_C"
-  ]
+  ],
+  "surface_definition": "current moving-boundary Robin-reconstructed value; not the nearest fixed evaluation radius"
 }

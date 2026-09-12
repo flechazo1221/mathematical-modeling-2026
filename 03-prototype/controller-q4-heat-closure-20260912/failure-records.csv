@@ -1,0 +1,85 @@
+﻿scenario,axis,level,nr,nz,dt_s,status,error,traceback
+nominal_proxy,spatial,L,8,8,300.0,FAIL,RuntimeError('Picard failed in q4-closure-spatial-L at 300.0: 0.001071242254226945'),"Traceback (most recent call last):
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\03-prototype\controller-q4-heat-closure-20260912\corrected_heat_closure_audit.py"", line 611, in main
+    metrics, rows, trace = run_case(module, cfg, scenario)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\03-prototype\controller-q4-heat-closure-20260912\corrected_heat_closure_audit.py"", line 402, in run_case
+    result = module.simulate(cfg)
+             ^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\04-compute\temperature-field-revision-20260912\formal_compute_revision.py"", line 419, in simulate
+    if pic == 24 and delta >= PICARD_TOL: raise RuntimeError(f""Picard failed in {cfg.label} at {tnext}: {delta}"")
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Picard failed in q4-closure-spatial-L at 300.0: 0.001071242254226945
+"
+nominal_proxy,spatial,M,12,12,300.0,FAIL,RuntimeError('Picard failed in q4-closure-spatial-M at 300.0: 0.0024696171162190694'),"Traceback (most recent call last):
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\03-prototype\controller-q4-heat-closure-20260912\corrected_heat_closure_audit.py"", line 611, in main
+    metrics, rows, trace = run_case(module, cfg, scenario)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\03-prototype\controller-q4-heat-closure-20260912\corrected_heat_closure_audit.py"", line 402, in run_case
+    result = module.simulate(cfg)
+             ^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\04-compute\temperature-field-revision-20260912\formal_compute_revision.py"", line 419, in simulate
+    if pic == 24 and delta >= PICARD_TOL: raise RuntimeError(f""Picard failed in {cfg.label} at {tnext}: {delta}"")
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Picard failed in q4-closure-spatial-M at 300.0: 0.0024696171162190694
+"
+nominal_proxy,spatial,H,18,18,300.0,FAIL,RuntimeError('Picard failed in q4-closure-spatial-H at 300.0: 0.0015624840087298253'),"Traceback (most recent call last):
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\03-prototype\controller-q4-heat-closure-20260912\corrected_heat_closure_audit.py"", line 611, in main
+    metrics, rows, trace = run_case(module, cfg, scenario)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\03-prototype\controller-q4-heat-closure-20260912\corrected_heat_closure_audit.py"", line 402, in run_case
+    result = module.simulate(cfg)
+             ^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\04-compute\temperature-field-revision-20260912\formal_compute_revision.py"", line 419, in simulate
+    if pic == 24 and delta >= PICARD_TOL: raise RuntimeError(f""Picard failed in {cfg.label} at {tnext}: {delta}"")
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Picard failed in q4-closure-spatial-H at 300.0: 0.0015624840087298253
+"
+nominal_proxy,spatial,X,27,27,300.0,FAIL,RuntimeError('Picard failed in q4-closure-spatial-X at 300.0: 0.00012769537840995326'),"Traceback (most recent call last):
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\03-prototype\controller-q4-heat-closure-20260912\corrected_heat_closure_audit.py"", line 611, in main
+    metrics, rows, trace = run_case(module, cfg, scenario)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\03-prototype\controller-q4-heat-closure-20260912\corrected_heat_closure_audit.py"", line 402, in run_case
+    result = module.simulate(cfg)
+             ^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\04-compute\temperature-field-revision-20260912\formal_compute_revision.py"", line 419, in simulate
+    if pic == 24 and delta >= PICARD_TOL: raise RuntimeError(f""Picard failed in {cfg.label} at {tnext}: {delta}"")
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Picard failed in q4-closure-spatial-X at 300.0: 0.00012769537840995326
+"
+nominal_proxy,time,L,12,12,600.0,FAIL,RuntimeError('Picard failed in q4-closure-time-L at 600.0: 0.07167707363578302'),"Traceback (most recent call last):
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\03-prototype\controller-q4-heat-closure-20260912\corrected_heat_closure_audit.py"", line 611, in main
+    metrics, rows, trace = run_case(module, cfg, scenario)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\03-prototype\controller-q4-heat-closure-20260912\corrected_heat_closure_audit.py"", line 402, in run_case
+    result = module.simulate(cfg)
+             ^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\04-compute\temperature-field-revision-20260912\formal_compute_revision.py"", line 419, in simulate
+    if pic == 24 and delta >= PICARD_TOL: raise RuntimeError(f""Picard failed in {cfg.label} at {tnext}: {delta}"")
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Picard failed in q4-closure-time-L at 600.0: 0.07167707363578302
+"
+nominal_proxy,time,M,12,12,300.0,FAIL,RuntimeError('Picard failed in q4-closure-time-M at 300.0: 0.0024696171162190694'),"Traceback (most recent call last):
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\03-prototype\controller-q4-heat-closure-20260912\corrected_heat_closure_audit.py"", line 611, in main
+    metrics, rows, trace = run_case(module, cfg, scenario)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\03-prototype\controller-q4-heat-closure-20260912\corrected_heat_closure_audit.py"", line 402, in run_case
+    result = module.simulate(cfg)
+             ^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\04-compute\temperature-field-revision-20260912\formal_compute_revision.py"", line 419, in simulate
+    if pic == 24 and delta >= PICARD_TOL: raise RuntimeError(f""Picard failed in {cfg.label} at {tnext}: {delta}"")
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Picard failed in q4-closure-time-M at 300.0: 0.0024696171162190694
+"
+nominal_proxy,time,H,12,12,150.0,FAIL,RuntimeError('Picard failed in q4-closure-time-H at 150.0: 1.6457017750326486e-05'),"Traceback (most recent call last):
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\03-prototype\controller-q4-heat-closure-20260912\corrected_heat_closure_audit.py"", line 611, in main
+    metrics, rows, trace = run_case(module, cfg, scenario)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\03-prototype\controller-q4-heat-closure-20260912\corrected_heat_closure_audit.py"", line 402, in run_case
+    result = module.simulate(cfg)
+             ^^^^^^^^^^^^^^^^^^^^
+  File ""C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026\04-compute\temperature-field-revision-20260912\formal_compute_revision.py"", line 419, in simulate
+    if pic == 24 and delta >= PICARD_TOL: raise RuntimeError(f""Picard failed in {cfg.label} at {tnext}: {delta}"")
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Picard failed in q4-closure-time-H at 150.0: 1.6457017750326486e-05
+"

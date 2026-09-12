@@ -223,6 +223,7 @@
       "reader_question": "全域最大含水率何时接近判据？",
       "authoritative_source": "04-compute/results/q3-threshold-trajectory.csv",
       "source_fields": "time_s,max_C,mean_C,center_C,surface_C",
+      "surface_definition": "current moving-boundary Robin-reconstructed value; not the nearest fixed evaluation radius",
       "chart_type": "全程阈值轨迹",
       "axes_units": "x=time(h); y=C(kg/kg干基)",
       "series": "max/mean/center/surface",
@@ -402,23 +403,6 @@
       "priority": "P1",
       "set_role": "扩展集",
       "nonredundancy": "Q4专属空间证据"
-    },
-    {
-      "figure_id": "FIG-Q4-IMPLEMENTATION-AGREEMENT",
-      "kind": "figure",
-      "question_claim": "Q4 / Q4-OBS-01",
-      "reader_question": "reference与moving-FV能否复现同一事件？",
-      "authoritative_source": "04-compute/results/run-summary.csv; convergence.csv",
-      "source_fields": "label,interpolated_event_time_s,reported_event_time_s,scope,metric,absolute_change",
-      "chart_type": "配对点与差值放大",
-      "axes_units": "x=implementation; y=time(s)",
-      "series": "reference,moving-FV",
-      "key_annotations": "差5.82e-10s；均183840s",
-      "mandatory_limit": "一致性不等于现实准确性",
-      "placement": "主文",
-      "priority": "P0",
-      "set_role": "最小集+扩展集",
-      "nonredundancy": "只回答实现复现"
     },
     {
       "figure_id": "FIG-Q4-JACOBIAN-ABLATION",

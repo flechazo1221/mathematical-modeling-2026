@@ -3,11 +3,11 @@
 command=04-compute/src/formal_compute.py --mode extended
 python=3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]
 platform=Windows-11-10.0.26200-SP0
-START Q3-sens-pref-low-extended 2026-09-11T16:52:25.505782+00:00
+START Q3-sens-pref-low-extended 2026-09-12T09:08:30.406379+00:00
 DONE {"scope": "Q3", "factor": "pref", "level": "low", "value": 0.8, "interpolated_event_time_s": 264200.2505199322, "reported_event_time_s": 264240.0, "event_time_h": 73.4, "final_max_C": 0.1499903949258012, "final_mean_C": 0.12342381369014149, "threshold": 0.149999, "post_72h_boundary_policy": "terminal-window chamber values; final observed Q4 radius held constant"}
-START Q3-sens-exponent-high-extended 2026-09-11T16:52:29.639933+00:00
+START Q3-sens-exponent-high-extended 2026-09-12T09:08:37.703255+00:00
 DONE {"scope": "Q3", "factor": "exponent", "level": "high", "value": 1.2, "interpolated_event_time_s": 369690.7605725541, "reported_event_time_s": 369720.0, "event_time_h": 102.7, "final_max_C": 0.14999538969771767, "final_mean_C": 0.12711461015135583, "threshold": 0.149999, "post_72h_boundary_policy": "terminal-window chamber values; final observed Q4 radius held constant"}
-START Q3-combination-low-extended 2026-09-11T16:52:35.377268+00:00
+START Q3-combination-low-extended 2026-09-12T09:08:46.889600+00:00
 DONE {"scope": "Q3", "factor": "combined_boundary_empirical", "level": "low", "value": "(0.8, 0.8, 0.8, 1.2)", "interpolated_event_time_s": 461974.37903714814, "reported_event_time_s": 462000.0, "event_time_h": 128.33333333333334, "final_max_C": 0.14999646908985917, "final_mean_C": 0.12711532942255388, "threshold": 0.149999, "post_72h_boundary_policy": "terminal-window chamber values; final observed Q4 radius held constant"}
-START Q4-combination-low-extended 2026-09-11T16:52:42.635164+00:00
+START Q4-combination-low-extended 2026-09-12T09:08:57.802522+00:00
 DONE {"scope": "Q4", "factor": "combined_boundary_empirical", "level": "low", "value": "(0.8, 0.8, 0.8, 1.2)", "interpolated_event_time_s": 318323.6712576198, "reported_event_time_s": 318360.0, "event_time_h": 88.43333333333334, "final_max_C": 0.14999056247319387, "final_mean_C": 0.12056917506073725, "threshold": 0.149999, "post_72h_boundary_policy": "terminal-window chamber values; final observed Q4 radius held constant"}

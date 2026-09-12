@@ -1,14 +1,18 @@
 {
   "figure_id": "FIG-Q3-SENS-ONEFACTOR",
   "snapshot": "06-figure/data-snapshots/FIG-Q3-SENS-ONEFACTOR.csv",
-  "snapshot_sha256": "016ad45dc867253cbf13c7896eb4f0d2d570808ee2830405744179bda476690e",
+  "snapshot_sha256": "b3423bb03c4cee35bd33995f42dbf1cf7f88fbc26156094a1713c52387badee2",
   "sources": [
     {
-      "path": "04-compute/results/sensitivity.csv",
-      "sha256": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf"
+      "path": "04-compute/results/sensitivity-q3-dense.csv",
+      "sha256": "0e59c13ea76b7d98a367478155bb699409cfc6db7290f9a2ebf863811d3705a0"
+    },
+    {
+      "path": "04-compute/results/sensitivity-q3-dense-manifest.json",
+      "sha256": "dbc1c2057b7aca789c3d1d4c44538254f2713ef40f78870f3e261e274d532efe"
     }
   ],
-  "rows": 11,
+  "rows": 25,
   "columns": [
     "scope",
     "factor",
@@ -20,6 +24,7 @@
     "scenario",
     "time_h",
     "display_h",
-    "crossed"
+    "crossed",
+    "event_source"
   ]
 }

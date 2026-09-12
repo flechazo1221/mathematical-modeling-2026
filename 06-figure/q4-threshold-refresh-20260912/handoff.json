@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "stage": "FIGURE",
+  "status": "PASS",
+  "scope": "targeted refresh of FIG-Q4-THRESHOLD-TRAJECTORY after COMPUTE boundary-output correction",
+  "inputs": [
+    {
+      "path": "decisions/H3-claims.json",
+      "sha256": "75fa934828f09a4f9d1c59d02e4d7570370fbde4f91d5b695e8e4a52132d7ccb"
+    },
+    {
+      "path": "04-compute/handoff.json",
+      "sha256": "a4c722e49b2ea4112c46cae49fccaf208cf67609484796ab658b44224e569b2b"
+    },
+    {
+      "path": "04-compute/results/q4-threshold-trajectory.csv",
+      "sha256": "b36f975078f97ccced81797dd27d4a89040132869a42a28108be776fc0365a6b"
+    },
+    {
+      "path": "05-evidence/handoff.json",
+      "sha256": "b61c068f47445447660535269ce6393ac7538a1d4a4e8a834eeb7978fb280826"
+    },
+    {
+      "path": "05-evidence/正式图表需求.json",
+      "sha256": "d4d3885da0cb3d674c320442fa10fcecc203f9e6e588ea919e567d521a5fdafa"
+    },
+    {
+      "path": "06-figure/scripts/redraw_fig9_onward.py",
+      "sha256": "8487e947d68792ee6cd3d5d05e99ee0d457ebf56203843c59e8d90a5039aa6fb"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "06-figure/data-snapshots/FIG-Q4-THRESHOLD-TRAJECTORY.csv",
+      "sha256": "29fceee6d5486551077af7823070cf72fcc7c479d56a82f8dcc85706bc0bb959"
+    },
+    {
+      "path": "06-figure/data-snapshots/FIG-Q4-THRESHOLD-TRAJECTORY.meta.json",
+      "sha256": "7bd7af240b957738c05a052a60257faf24a388b731464a551cf69662bfa91223"
+    },
+    {
+      "path": "06-figure/contracts/FIG-Q4-THRESHOLD-TRAJECTORY.json",
+      "sha256": "4b226bcc0633bf227d4324aa1b8d33eb2c597eda44c43f4fccf685c4d862653f"
+    },
+    {
+      "path": "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.svg",
+      "sha256": "06a41e04448d3128a5bf260e7834bf36af09e53e798d3243ef870871b2da5270"
+    },
+    {
+      "path": "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.pdf",
+      "sha256": "045ca3870c4f423fa2968112191a36160001b602795066c54af2d3051bad4759"
+    },
+    {
+      "path": "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.png",
+      "sha256": "f7e18424321881d6bc240dec3ca773f80e9e4e33ca85e25a60571f7b2d04f637"
+    },
+    {
+      "path": "06-figure/previews/FIG-Q4-THRESHOLD-TRAJECTORY-color.png",
+      "sha256": "5751e85cbcc4b1ccb8204910caf87fdc7ca2cb2e88d4f5368ef55974dcd66735"
+    },
+    {
+      "path": "06-figure/previews/FIG-Q4-THRESHOLD-TRAJECTORY-grayscale.png",
+      "sha256": "502b7afc5b0a8012e4b80ff471c041a367580adf0a52a7a6b35fabc47b4e490f"
+    },
+    {
+      "path": "06-figure/figure-manifest.json",
+      "sha256": "7f0f1ae60b7f6e2c39f0a00c2dda3ebdf07eec52c2b2928aadec0bd7b80b7d7b"
+    },
+    {
+      "path": "06-figure/q4-threshold-refresh-20260912/refresh-report.json",
+      "sha256": "e713142904c29e610d478ce585d3388d4951a23dfdfd763b0a4bd2a8c5d327ef"
+    }
+  ],
+  "claims": [
+    "The Q4 surface series is sourced from the current moving-boundary Robin-reconstructed value, not the nearest fixed evaluation radius.",
+    "The figure refresh reads the frozen snapshot and does not rerun the model or change the Q4 metric.",
+    "The reported event remains 183840 s; the corrected surface series has no positive step in the 60 s trajectory records."
+  ],
+  "limitations": [
+    "This handoff covers only FIG-Q4-THRESHOLD-TRAJECTORY; unrelated active FIGURE revisions remain outside scope.",
+    "The PDF checker reports a font-embedding warning for SimSun; SVG and 600 DPI PNG pass strict checks.",
+    "The result is a conditional simulation and must not be presented as an observed physical time."
+  ],
+  "required_next_actions": [
+    "Team reviews the refreshed Q4 figure together with the approved H3 allocation before PAPER."
+  ],
+  "completed_at": "2026-09-12T17:31:23.248939+08:00"
+}

@@ -1,0 +1,9 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.3.5",
+  "seed": 20260912,
+  "source_baseline": "04-compute\\src\\formal_compute.py",
+  "source_candidate": "04-compute\\temperature-field-revision-20260912\\formal_compute_revision.py",
+  "generated_at": "2026-09-12T18:03:11.350318+08:00"
+}

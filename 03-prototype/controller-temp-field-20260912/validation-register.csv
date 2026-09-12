@@ -1,0 +1,9 @@
+﻿id,status,evidence
+V01-units-boundaries,PASS,"Both imported solvers use the frozen input workbooks, 28 C initial T, Kelvin in constitutive law, same h=25 and hm=8e-7, and the same boundary interpolation/extension."
+V02-fair-paired-run,PASS,Twelve identical Q2/Q3/Q4 coarse/spatial/time/refined configurations were run for both implementations.
+V03-temperature-equation,PASS,Candidate has nonzero internal-temperature solves and records fixed-domain storage-flux balance plus linear residual; baseline has zero internal-temperature solve calls by design.
+V04-moisture-balance,PASS,Maximum reported normalized moisture balance error across paired runs is recorded in 原始结果.csv.
+V05-threshold-event,PASS,"Q3/Q4 use max(C)<0.15-1e-6 and record the first bracket, interpolation and 60 s reporting."
+V06-convergence,INCONCLUSIVE,"Space-only and time-only changes are now separated in convergence.csv, but this minimal four-case ladder is not a substitute for the formal three-level V02/V06 validation."
+V07-identifiability,INCONCLUSIVE,"Temperature field is structurally identifiable as a numerical state only; no internal temperature observations identify k, rho or cp separately, and no latent heat is fit."
+V08-Q4-moving-energy,INCONCLUSIVE,"Q4 moving-domain raw storage-flux diagnostics are recorded, but a full moving-domain energy inventory contract is not declared PASS by this prototype."

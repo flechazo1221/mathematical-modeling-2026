@@ -1,0 +1,4 @@
+﻿scope,family,nr,nz,grid_strategy,fixed_dt_s,metric,value,adjacent_change
+Q2,M3,62,36,two-sided-local,5.0,final_max_C,1.7277178063454934,
+Q2,M3,93,36,two-sided-local,5.0,final_max_C,1.727806380573958,8.857422846442198e-05
+Q2,M3,140,36,two-sided-local,5.0,final_max_C,1.7278463919704832,4.001139652531904e-05

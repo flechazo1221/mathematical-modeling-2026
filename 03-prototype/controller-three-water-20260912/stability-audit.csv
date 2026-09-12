@@ -1,0 +1,18 @@
+﻿question,model,level_pair,metric,absolute_change,status,failure_count,evidence
+Q2,M0,L-M,final_max_total_C,0.004853241375116779,INCONCLUSIVE,,
+Q2,M0,M-H,final_max_total_C,0.002248945738048347,INCONCLUSIVE,,
+Q2,M1,L-M,final_max_total_C,0.007626116729830379,INCONCLUSIVE,,
+Q2,M1,M-H,final_max_total_C,0.003589510342799862,INCONCLUSIVE,,
+Q2,M2,L-M,final_max_total_C,0.007640457423975455,INCONCLUSIVE,,
+Q2,M2,M-H,final_max_total_C,0.0035902119259665355,INCONCLUSIVE,,
+Q3,M0,L-M,interpolated_event_time_s,8466.887819937954,INCONCLUSIVE,,
+Q3,M0,M-H,interpolated_event_time_s,3087.188711820403,INCONCLUSIVE,,
+Q3,M1,L-M,interpolated_event_time_s,9160.145536742813,INCONCLUSIVE,,
+Q3,M1,M-H,interpolated_event_time_s,3439.385761833488,INCONCLUSIVE,,
+Q3,M2,L-M,interpolated_event_time_s,9153.814338748227,INCONCLUSIVE,,
+Q3,M2,M-H,interpolated_event_time_s,3435.289646856574,INCONCLUSIVE,,
+Q4,M0,L-M,interpolated_event_time_s,3064.910420352011,INCONCLUSIVE,,
+Q4,M0,M-H,interpolated_event_time_s,1234.9520669904305,INCONCLUSIVE,,
+Q4,M1,,,,FAIL,3,RuntimeError('Picard failed at Q4 M1 t=300.0s update=8.121e-07')
+Q4,M2,L-M,interpolated_event_time_s,4544.165042600565,INCONCLUSIVE,,
+Q4,M2,M-H,interpolated_event_time_s,2038.7241493405018,INCONCLUSIVE,,

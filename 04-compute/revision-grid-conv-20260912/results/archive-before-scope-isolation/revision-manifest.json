@@ -1,0 +1,23 @@
+{
+  "revision": "GRID-CONV-20260912-v1",
+  "status": "candidate evidence; H3 and frozen publication figures unchanged",
+  "scope": "smoke",
+  "seed": 20260912,
+  "source_solver": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\04-compute\\src\\formal_compute.py",
+  "source_solver_sha256": "af3214f972eb874764323c76561025df1cc70f27d7f0985968b57b0b688b4644",
+  "inputs": [
+    {
+      "path": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\input\\A题\\附件\\附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\input\\A题\\附件\\附件2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    }
+  ],
+  "space_design": "five radial levels; field projection to a common normalized grid",
+  "time_design": "three time levels at the finest spatial level where applicable",
+  "field_tolerance": 5e-05,
+  "event_tolerance_s": 60.0,
+  "elapsed_s": 1.0465974999970058
+}

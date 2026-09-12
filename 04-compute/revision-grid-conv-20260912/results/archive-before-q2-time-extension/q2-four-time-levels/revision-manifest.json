@@ -1,0 +1,55 @@
+{
+  "revision": "GRID-CONV-20260912-v1",
+  "status": "candidate evidence; H3 and frozen publication figures unchanged",
+  "scope": "q2",
+  "seed": 20260912,
+  "source_solver": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\04-compute\\src\\formal_compute.py",
+  "source_solver_sha256": "af3214f972eb874764323c76561025df1cc70f27d7f0985968b57b0b688b4644",
+  "inputs": [
+    {
+      "path": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\input\\A题\\附件\\附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\input\\A题\\附件\\附件2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    }
+  ],
+  "output_dir": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\04-compute\\revision-grid-conv-20260912\\results\\q2",
+  "space_design": {
+    "levels": 5,
+    "refinement_axis": "radial nr; nz held fixed within each family",
+    "field_projection": "interior common normalized grid r=[0.03,0.97], z=[0.05,0.95]"
+  },
+  "time_design": {
+    "Q1-M1": [
+      0.5,
+      0.25,
+      0.125
+    ],
+    "Q1-M2": [
+      0.5,
+      0.25,
+      0.125
+    ],
+    "Q2-M3": [
+      10.0,
+      5.0,
+      2.5,
+      1.25
+    ],
+    "Q3-M3": [
+      60.0,
+      30.0,
+      15.0
+    ],
+    "Q4-reference": [
+      60.0,
+      30.0,
+      15.0
+    ]
+  },
+  "field_tolerance": 5e-05,
+  "event_tolerance_s": 60.0,
+  "elapsed_s": 675.6541055999987
+}

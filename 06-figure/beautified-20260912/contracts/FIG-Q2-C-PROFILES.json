@@ -1,0 +1,36 @@
+{
+  "figure_id": "FIG-Q2-C-PROFILES",
+  "claim_ids": [
+    "Q2-OBS-01"
+  ],
+  "question": "M3在0.5–3h的水分剖面如何变化？",
+  "source_files": [
+    {
+      "path": "04-compute/results/q2-samples.csv",
+      "sha256": "bf287f00761f6cba72f225c455d0ee1290d546874d135a7936ed8a4567dd4f21"
+    }
+  ],
+  "x": null,
+  "y": null,
+  "groups": [],
+  "uncertainty": null,
+  "required_comparisons": [
+    "多时刻径向剖面"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "recompute model",
+    "change metric",
+    "omit failures",
+    "present conditional simulation as observation"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "placement": "主文",
+  "mandatory_limit": "条件仿真非拟合",
+  "snapshot": "06-figure/beautified-20260912/data-snapshots/FIG-Q2-C-PROFILES.csv",
+  "snapshot_sha256": "a84c14955ec38a4de587203d6a9d3847678cdaf7b6850f6471eb1345410195ec"
+}

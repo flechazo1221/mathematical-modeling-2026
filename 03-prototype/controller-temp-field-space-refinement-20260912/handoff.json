@@ -1,0 +1,220 @@
+{
+  "schema_version": "1.0",
+  "stage": "PROTOTYPE-CANDIDATE-SPACE-REFINEMENT",
+  "status": "BLOCKED",
+  "review_status": "PENDING_CANDIDATE_REVIEW",
+  "scope": "partial Q3/Q4 spatial convergence extension; cost-bounded stop; no formal-stage writes",
+  "inputs": [
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/run_space_refinement.py",
+      "bytes": 16142,
+      "sha256": "362d2cd2970e336e4bb6c89d01379535df61ebe967e401dd9ef6565702bf7a3a"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/run.log",
+      "bytes": 14630,
+      "sha256": "36a92b396145d2fea4d9d96c1feff6bf4c34678ce92507a856dd12683cdc1f62"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/space-convergence.csv",
+      "bytes": 10640,
+      "sha256": "18334c8fd24a02c89283988079bdc72704d38d2c2eacb78a0483923cfd982a83"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/__pycache__/run_space_refinement.cpython-312.pyc",
+      "bytes": 22882,
+      "sha256": "e474b5d45961b4fc6d7d18bb9f005378c8b88f3cfd4478851ed794090a6327fa"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/checks-partial.json",
+      "bytes": 830,
+      "sha256": "b47b2ec642a36925140701aff6d9d0f7dd4987fce29adcea29fb060fa9cc7508"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/finalize_partial.py",
+      "bytes": 7301,
+      "sha256": "ec878cedf3d676ad3006732787d6c6c933a4858e96f6d833f32c909edaab01c4"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-baseline/Q3-spatial-V/metrics.json",
+      "bytes": 1388,
+      "sha256": "d0bd5f4d656288870f75592b87ad0ce2e7a3b03bc8032da663ad126407d6da48"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-baseline/Q3-spatial-V/raw-result.json",
+      "bytes": 20739,
+      "sha256": "645db115d11f99214654ace1870f83ccacaa7afac2c17efaced10f32be2e7d91"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-baseline/Q3-spatial-V/state-arrays.npz",
+      "bytes": 82289,
+      "sha256": "edf2fb74383ff38f38e90feaf161a3cd08ae63b7cce059cf6b64b4b67eab2f60"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-baseline/Q3-spatial-V/trajectory.csv",
+      "bytes": 8740,
+      "sha256": "96221ffc6de398d8f5fac78968f015fe66388b1893bfc10ab5f9565e8c182859"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-baseline/Q3-spatial-W/metrics.json",
+      "bytes": 1392,
+      "sha256": "ff5b9702c827d16b5d36264d8817de9f77ffd85d392c1b575cb9b6f0bef72335"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-baseline/Q3-spatial-W/raw-result.json",
+      "bytes": 20759,
+      "sha256": "5add23bbadd3cb32be6f3d59315b3ecea89e6fd0b32bca6484781c7e485d6a4b"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-baseline/Q3-spatial-W/state-arrays.npz",
+      "bytes": 37218,
+      "sha256": "63433c24171809521a0f33221116e0f9c579c779caf1512491f1d4e64d1975d9"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-baseline/Q3-spatial-W/trajectory.csv",
+      "bytes": 8754,
+      "sha256": "6c7f2a32e5ae04fd1457e68057515381f4e8b4ba0536acaba5c840e3e4e30faf"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-baseline/Q3-spatial-Z/metrics.json",
+      "bytes": 1388,
+      "sha256": "1fa3fba15e2cb7d9dbbd1d09725168db0dfe63dc72a7ec8df2882b35698df613"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-baseline/Q3-spatial-Z/raw-result.json",
+      "bytes": 20653,
+      "sha256": "4a919a71c6f46725bc2058b3edfe7bf647e572f4d1ac3e18d246a6aefa224736"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-baseline/Q3-spatial-Z/state-arrays.npz",
+      "bytes": 21294,
+      "sha256": "08e34ddc3aa56b309dba308fdea827e68bbe9c0988c3c8820956bd397260e256"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-baseline/Q3-spatial-Z/trajectory.csv",
+      "bytes": 8653,
+      "sha256": "e1a5981ef31edb9fdcfda49ac8b33256243a519ab6fb34a62b7a417d9fa57917"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-internal-temperature/Q3-spatial-W/energy-groups.csv",
+      "bytes": 192232,
+      "sha256": "8d88378749a2a670ce8e23a19ad71f59e651be692ac056e8919746028d9c3dbc"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-internal-temperature/Q3-spatial-W/metrics.json",
+      "bytes": 1428,
+      "sha256": "fb613c54e6c1bf63affe81a8df2cc4ecab88727a0412f4fd6867213485801be9"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-internal-temperature/Q3-spatial-W/raw-result.json",
+      "bytes": 20815,
+      "sha256": "2c90f346bbd86bfec5734ead9d8eed6821b87ebac59654b533f170f26d13016f"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-internal-temperature/Q3-spatial-W/state-arrays.npz",
+      "bytes": 53173,
+      "sha256": "f47b0cbcea824ffc47719a5cb9cb2ced1a0c6d1967784fb3801c8e17690db73d"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-internal-temperature/Q3-spatial-W/trajectory.csv",
+      "bytes": 8695,
+      "sha256": "4dfa524c08fe4dd5067f4b76de58aa1630510183032403cdacda9eaa23f82ba3"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-internal-temperature/Q3-spatial-Z/energy-groups.csv",
+      "bytes": 191978,
+      "sha256": "80032f8449567bd4c69e228d8e88cf132dce6a8f055b9318ec1b5daa91bf7492"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-internal-temperature/Q3-spatial-Z/metrics.json",
+      "bytes": 1425,
+      "sha256": "9d62d0317236596edc281b07b0f2ae6b9bd497f879b3997475e27a70f8f78152"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-internal-temperature/Q3-spatial-Z/raw-result.json",
+      "bytes": 20790,
+      "sha256": "d399a54e2358b1a68d972c6d25c94d0970ccd2c6d33ce55d3d937ef04a2019bb"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-internal-temperature/Q3-spatial-Z/state-arrays.npz",
+      "bytes": 29892,
+      "sha256": "9a4a754e4d5c25626334fb3a8a581f884f0c2e6e30bdcf4c3da395f958a4ab40"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/model-internal-temperature/Q3-spatial-Z/trajectory.csv",
+      "bytes": 8672,
+      "sha256": "513131725aee40a94f0c0d4a00e7cb3f45227b61d8d014fb37dfb9409b38b3b4"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/partial-report.md",
+      "bytes": 1211,
+      "sha256": "7e03018dd6ae1bfcbfb7afeb983d3bf28fcac3858fa396fc39dc14c49f29629d"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/partial-status.json",
+      "bytes": 936,
+      "sha256": "229f566423af97122d9ef4d95ffdac2b857c040fcddc722b3d505630037c4501"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/raw-results-partial.csv",
+      "bytes": 12266,
+      "sha256": "5046ed30285e963756c18c88b47f909e4e177868b5e4745fb7b91141ce8a3c77"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/run.log",
+      "bytes": 14630,
+      "sha256": "36a92b396145d2fea4d9d96c1feff6bf4c34678ce92507a856dd12683cdc1f62"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/run_space_refinement.py",
+      "bytes": 16142,
+      "sha256": "362d2cd2970e336e4bb6c89d01379535df61ebe967e401dd9ef6565702bf7a3a"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-space-refinement-20260912/space-convergence-partial.csv",
+      "bytes": 13145,
+      "sha256": "2bdf9f7deb6d98bfd4b14c65dd42f6c4450d6721d2a4d025bef9f4056afcd13c"
+    }
+  ],
+  "assumptions": [
+    "All completed Z/W/V results are real solver outputs and remain auditable.",
+    "Missing V/U cases are not inferred from a trend and are not counted as PASS."
+  ],
+  "unknowns": [
+    "Full spatial 60 s convergence for both implementations remains unresolved.",
+    "The candidate has no internal-temperature observations."
+  ],
+  "claims": [
+    "Time convergence passed the pre-registered 60 s adjacent-change check in the previous refinement package.",
+    "Spatial convergence remains INCONCLUSIVE after partial extension."
+  ],
+  "warnings": [
+    "Do not promote this candidate or overwrite formal-stage files.",
+    "Do not use extrapolated values for missing high-resolution cases."
+  ],
+  "required_next_actions": [
+    "Review partial-report.md, space-convergence-partial.csv, checks-partial.json, and raw-results-partial.csv.",
+    "If strict spatial PASS is required, resume only with an explicitly accepted compute budget."
+  ],
+  "validation_register": [
+    {
+      "id": "PS01-completed-results-retained",
+      "status": "PASS"
+    },
+    {
+      "id": "PS02-no-inferred-cases",
+      "status": "PASS"
+    },
+    {
+      "id": "PS03-space-60s",
+      "status": "INCONCLUSIVE"
+    },
+    {
+      "id": "PS04-candidate-review-stop",
+      "status": "PASS"
+    }
+  ],
+  "completed_at": "2026-09-12T22:05:47.958504+08:00"
+}

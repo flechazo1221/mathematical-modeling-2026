@@ -17,22 +17,22 @@
     {"path":"02-design/contracts/model-q4-m1-reference.json","sha256":"88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5"},
     {"path":"02-design/contracts/model-q4-m2-moving-fv.json","sha256":"c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f"},
     {"path":"03-prototype/handoff.json","sha256":"8d4f161cc4b4b3b84f679273f23db5bf674f610754727efaf7a53f7635ff07e6"},
-    {"path":"04-compute/handoff.json","sha256":"21b736c942d5aa79ea08c4da9a93129854271f101c89c426dcbb79d9da73eb95"},
-    {"path":"04-compute/复现清单.json","sha256":"291f65c629479ad44b2ef49096f525254b0c3a68653b3ee42ccb3c5db3d1bdee"},
-    {"path":"04-compute/证据索引.json","sha256":"1c33297088e7505845dbccea6bcdef4a8b8c31ff3855324e0ea85ca44d27a9f3"},
-    {"path":"04-compute/results/key-metrics.json","sha256":"584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"},
-    {"path":"04-compute/results/validation-register.csv","sha256":"cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb"},
-    {"path":"04-compute/results/run-summary.csv","sha256":"51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"},
-    {"path":"04-compute/results/convergence.csv","sha256":"a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f"},
-    {"path":"04-compute/results/field-grid-convergence.csv","sha256":"36e8cd85789d68c6c07efb304441425bd7948430473fbd14593c6c3fef3d57f5"},
-    {"path":"04-compute/results/threshold-grid-convergence.csv","sha256":"8ba2aa18d42e13169db3f569cb7a6c1d5e8fd836c7f6818a8d0eb42fefd811f6"},
-    {"path":"04-compute/results/sensitivity.csv","sha256":"6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf"},
-    {"path":"04-compute/results/q1-samples.csv","sha256":"e214e5f23b1c1787357c59ec841791d461414190d5b72379022c2e7db47bdc8d"},
-    {"path":"04-compute/results/q2-samples.csv","sha256":"bf287f00761f6cba72f225c455d0ee1290d546874d135a7936ed8a4567dd4f21"},
-    {"path":"04-compute/results/q3-threshold-trajectory.csv","sha256":"68d78e1922d192eac3d74b6056713b595371c29447c52ea37cc4874c1898f244"},
-    {"path":"04-compute/results/q4-threshold-trajectory.csv","sha256":"5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8"},
-    {"path":"04-compute/src/formal_compute.py","sha256":"e76fb6167449df6111a4d56b253878b60d71b582b9ddc474ceaab22bfc179975"},
-    {"path":"04-compute/src/finalize_compute.py","sha256":"db42bf1398722d58bf6be526d464896f232b4b827118793ad45b68631ee254d1"},
+    {"path":"04-compute/handoff.json","sha256":"a4c722e49b2ea4112c46cae49fccaf208cf67609484796ab658b44224e569b2b"},
+    {"path":"04-compute/复现清单.json","sha256":"239fb39a12db0ab3a1017c59579da5f33c1b0bc3f065d394d8399dc700357aef"},
+    {"path":"04-compute/证据索引.json","sha256":"e86a03fa5f610f7917291d20c5407c99f663c129a631d0f13ef1b8c33f6b0bb0"},
+    {"path":"04-compute/results/key-metrics.json","sha256":"a8e568085f51a00971ca8662b33e58b5ac34b2ffd7860dee407f2e76b4281257"},
+    {"path":"04-compute/results/validation-register.csv","sha256":"4bff2426f87fa1197d8f184dad9b372e702db81c01ae71027fd35ee51b18ecae"},
+    {"path":"04-compute/results/run-summary.csv","sha256":"31f4142f12f8997f7d9a39b28a3f5746b7da0656aa0b78e9f7ee8e2aa7605b42"},
+    {"path":"04-compute/results/convergence.csv","sha256":"2e5a010ad933d583d03720b66968019209a586f75139ead7ad9b5bbb93f93a26"},
+    {"path":"04-compute/results/field-grid-convergence.csv","sha256":"9399953b215209048db52bc0de3fb3ef627a153f41cc9f1ddd9f109d751abdce"},
+    {"path":"04-compute/results/threshold-grid-convergence.csv","sha256":"cb64d799d6d729705ec7333f21d21ba42ba4388d613997a2cb05378c51df55bb"},
+    {"path":"04-compute/results/sensitivity.csv","sha256":"b70593f893a7ca70368c86b08c8ee9c68e375590c303ff57b9578f87dfc1458e"},
+    {"path":"04-compute/results/q1-samples.csv","sha256":"d50a4dfd86e562bd7c8a2e42b556cd55cfe79292063d56bc874e4d476dd7dbee"},
+    {"path":"04-compute/results/q2-samples.csv","sha256":"56aa87b04dcb0bef6aa089155c3ce581f54b9cc77e624c5785621ae0847c3961"},
+    {"path":"04-compute/results/q3-threshold-trajectory.csv","sha256":"5184862127bdaebefab6b7b1518cce031e05b7d843a13bd9811b203f384dbf81"},
+    {"path":"04-compute/results/q4-threshold-trajectory.csv","sha256":"b36f975078f97ccced81797dd27d4a89040132869a42a28108be776fc0365a6b"},
+    {"path":"04-compute/src/formal_compute.py","sha256":"af3214f972eb874764323c76561025df1cc70f27d7f0985968b57b0b688b4644"},
+    {"path":"04-compute/src/finalize_compute.py","sha256":"6ffe9cf1f0caa14f9a4ee0101206dc32e957485d825d33d7bab76e2a1bc4c7e0"},
     {"path":"04-compute/supplemental-extensions/handoff.json","sha256":"e914ddfcdd81b2a53b0fe7861b893a1e7a471ffccffc916d7350c31b9b059186"},
     {"path":"04-compute/supplemental-extensions/summary.json","sha256":"8b26e207070d4e16cfd339f924ae7fba6c494913dcf5518535ab14d0578c41ef"},
     {"path":"04-compute/supplemental-extensions/复现清单.json","sha256":"39eb16882e79ffcd5dbd0880dc94d250a2a03187e845ba598a4e8fedd6492ca9"}
@@ -41,9 +41,9 @@
     {"path":"05-evidence/主张证据映射.json","sha256":"f2f3eab255f3e0a13fdc1f76d0e2c4e0d75e20023bd4c1203f11f07b54b83fc1"},
     {"path":"05-evidence/结果事实清单.json","sha256":"b908db65f229747f192b1e34b3011158cf1937eafd3ab305d1d3a67fe5fde256"},
     {"path":"05-evidence/摘要事实清单.json","sha256":"063913d219921e275109d004e3ac86bb28f5f05d994de4bf7d4188b06953cb83"},
-    {"path":"05-evidence/正式图表需求.json","sha256":"8c0464e43869ea3c775e05463561861b82a39330e2666775962ebd9da3c67078"},
-    {"path":"05-evidence/论文证据大纲.md","sha256":"df7b1c0ade72b008ddb655bf08ea5b8f15bdb0d0c241aa9bba93c40e134edae5"},
-    {"path":"05-evidence/H3-选择包.md","sha256":"ce410146bce7f1f54de4bcb4bf74a0399d03355cad16dca3691dc9c933932ac5"}
+    {"path":"05-evidence/正式图表需求.json","sha256":"d4d3885da0cb3d674c320442fa10fcecc203f9e6e588ea919e567d521a5fdafa"},
+    {"path":"05-evidence/论文证据大纲.md","sha256":"a93c2bdd170984477d2a4358b57bf77e0db31cd1d83cc1b1c800171722b8a478"},
+    {"path":"05-evidence/H3-选择包.md","sha256":"4dce3e4ee854c565e765ac6dea24fde36c548012f1e158c8a1113c29d6932583"}
   ],
   "frozen_decisions": [
     {"path":"decisions/H1-problem.json","sha256":"6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"},
@@ -57,13 +57,13 @@
   "unknowns": [
     "No internal experimental observations are available for empirical accuracy claims.",
     "Bounded sensitivity tests do not exhaust structural uncertainty.",
-    "The team has not yet selected final claims, figures or narrative at H3."
+    "The H3 claims and figure allocation are TEAM_APPROVED in decisions/H3-claims.json; final paper wording remains bounded by that decision."
   ],
   "claims": [
     "Q1-Q4 candidate claims are mapped to exact formal fields, rows and commands with claim class and limitations.",
     "V02 retains the narrow 4.00114e-5 versus 5e-5 margin; V06 retains 48 s versus the 60 s target.",
     "Non-crossing boundary cases and the failed Jacobian ablation are retained to prevent selective reporting.",
-    "The H3 package presents neutral alternatives and does not choose for the team.",
+    "The H3 package presents neutral alternatives; the team's approved selection is recorded separately in decisions/H3-claims.json.",
     "Publication requirements now contain 38 non-duplicative, traceable designs (31 figures and 7 tables), allocated as 20 main-text and 18 appendix candidates.",
     "Each H3 narrative option provides explicit main-text figures, main-text tables, appendix figures, appendix tables, and minimum/extended sets."
   ],
@@ -82,8 +82,8 @@
     "Do not hide narrow validation margins or non-crossing sensitivity cases."
   ],
   "required_next_actions": [
-    "A real team member reviews H3-选择包.md and records the selected claims, narrative, minimum/extended set, main-text/appendix allocation, supplemental S0-S3 choice and limitations in a new H3 decision.",
-    "Stop at H3; do not create publication figures or draft the full paper before TEAM_APPROVED H3."
+    "Team reviews the approved H3 decision and the refreshed Q4 figure before preparing PAPER; no new model outputs are authorized by this handoff.",
+    "Keep the corrected Q4 moving-boundary surface definition in the figure caption and evidence chain."
   ],
-  "completed_at": "2026-09-12T01:01:31.5042601+08:00"
+  "completed_at": "2026-09-12T17:31:00+08:00"
 }

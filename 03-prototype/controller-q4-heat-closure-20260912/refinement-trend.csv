@@ -1,0 +1,5 @@
+﻿scenario,axis,levels,legacy_max_relative_by_level,corrected_max_relative_by_level,linear_solver_max_relative_by_level,corrected_nonincreasing_L_to_X,legacy_omission_present,corrected_under_10_percent
+no_latent,spatial,L/M/H/X,1.46411564;1.46456971;1.46480353;1.4649137,2.73067125e-08;3.90547353e-08;4.58591186e-08;9.27039307e-08,4.83832851e-11;4.98199147e-11;4.93215521e-11;4.9479686e-11,False,True,True
+no_latent,time,L/M/H/X,1.40612083;1.46456971;1.48280266;1.48861101,3.6819505e-08;3.90547353e-08;4.07230451e-08;8.71811675e-08,4.8046184e-11;4.98199147e-11;4.90561889e-11;4.98567283e-11,False,True,True
+nominal_proxy,spatial,,,,,False,False,False
+nominal_proxy,time,X,0.657232039,8.3292967e-07,4.99974185e-11,True,True,True

@@ -1,0 +1,23 @@
+# 候选验证 runbook（本次未执行正式重跑）
+
+# 运行目录
+Set-Location 'C:\Users\Linza\Documents\CUMCM26.pre-pull-20260910-205420\mathematical-modeling-2026'
+$PY = 'C:\Users\Linza\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe'
+$SCRIPT = '03-prototype\controller-latent-promotion-20260912\候选脚本\run_latent_promotion_q4.py'
+
+# 1) 语法检查：只生成候选目录内的缓存文件，失败即停止
+& $PY -m py_compile $SCRIPT
+
+# 2) 候选 smoke：仅当语法和输入合同通过后执行
+& $PY $SCRIPT --smoke
+
+# 3) 候选完整 Q4：smoke 通过后才允许执行；仍然只写候选目录
+& $PY $SCRIPT
+
+# 4) 运行后的人工审计（候选目录内）
+Get-Content '03-prototype\controller-latent-promotion-20260912\validation-register.csv'
+Get-Content '03-prototype\controller-latent-promotion-20260912\handoff.json'
+
+# 正式阶段 runbook：未执行，必须先取得人工 H2 重开批准并保留旧结果备份。
+# 具体 formal_compute/evidence/figure 命令应以候选 handoff 和实际脚本接口为准，
+# 不得在 smoke/物理验证未通过时执行。

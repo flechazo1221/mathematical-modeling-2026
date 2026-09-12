@@ -1,0 +1,17 @@
+﻿id,status,evidence
+UPSTREAM-V03-three-level-space,INCONCLUSIVE,Temperature-field baseline handoff remains INCONCLUSIVE.
+UPSTREAM-V04-three-level-time,INCONCLUSIVE,Temperature-field baseline handoff remains INCONCLUSIVE.
+UPSTREAM-V08-energy-fixed-domain,INCONCLUSIVE,Baseline energy-audit-summary.csv records fixed-domain residuals near 1.9-2.0.
+UPSTREAM-V09-energy-moving-domain,INCONCLUSIVE,Baseline moving-domain energy residual does not clear formal upgrade.
+UPSTREAM-V10-parameter-identifiability,INCONCLUSIVE,Appendix 4 supplies rho/cp/k/D laws and Appendix 1-2 supply boundary histories; baseline V10 remains INCONCLUSIVE because Lv/Gamma phase closure and internal validation are not identified.
+UPSTREAM-V11-internal-temperature-validation,BLOCKED,No internal temperature observations are available.
+PC-V01-input-freeze,PASS,Input hashes and temperature-field handoff are recorded.
+PC-V02-real-run-completion,PASS,69 successful real solver runs; failures are retained in 原始结果.csv.
+PC-V03-latent-space-stability,INCONCLUSIVE,"H-M event changes=[3480.0, 2040.0]; 60 s is the preregistered reporting tolerance."
+PC-V04-latent-time-stability,INCONCLUSIVE,"Independent M-mesh time ladder recorded; H-M event changes=[420.0, 420.0]; target is 60 s."
+PC-V05-unit-check,PASS,j_w=rho_d*(C_surface-C_inf)/R_m has kg/m2/s; multiplying by Lv J/kg gives q_lat W/m2 and is inserted as an outward surface sink.
+PC-V06-mass-energy-closure,FAIL,The boundary j_w is derived from total C but no liquid/vapor/bound-water inventory or phase-resolved split is solved.
+PC-V07-identifiability,BLOCKED,Jacobian rank deficiency makes proxy_scale and Lv inseparable; see identifiability.csv.
+PC-V08-numerical-guards,PASS,All retained runs were finite and passed the linear solver residual guard; physical heat residual is reported separately.
+PC-V10-physical-heat-balance,PASS,Fixed-domain max relative heat residual=1.71598e-07; moving-domain=6.2837e-08; targets 5%/10%.
+PC-V09-formal-promotion,BLOCKED,"Formal promotion is blocked by failed closure and non-identifiability, irrespective of numerical deltas."

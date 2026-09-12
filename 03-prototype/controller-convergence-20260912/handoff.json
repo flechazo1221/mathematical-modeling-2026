@@ -1,0 +1,895 @@
+{
+  "schema_version": "1.0",
+  "stage": "PROTOTYPE",
+  "status": "BLOCKED",
+  "review_status": "PENDING_CANDIDATE_REVIEW",
+  "scope": "independent numerical convergence audit of the nominal equivalent latent-heat candidate; no formal-stage writes",
+  "inputs": [
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/run_phase_change_attempt.py",
+      "exists": true,
+      "bytes": 55500,
+      "sha256": "b1cc06bcc2c776274e7b8959713a496c58e7bee3e42d1038521e5e9570444ebd"
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/formal_compute_revision.py",
+      "exists": true,
+      "bytes": 48347,
+      "sha256": "b7cbae558d8b122b9fc6650bb1c8c8e82848188d005f29b16391523f469b9541"
+    },
+    {
+      "path": "input/A题/附件/附件1.xlsx",
+      "exists": true,
+      "bytes": 16586,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "input/A题/附件/附件2.xlsx",
+      "exists": true,
+      "bytes": 11485,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    },
+    {
+      "path": "decisions/H1-problem.json",
+      "exists": true,
+      "bytes": 7372,
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "exists": true,
+      "bytes": 1837,
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"
+    },
+    {
+      "path": "02-design/contracts/model-q23-fixed.json",
+      "exists": true,
+      "bytes": 1166,
+      "sha256": "b3f8327a02dba8de5e97906822641639b4c953aa48cfc6aaefda14986ace9fd1"
+    },
+    {
+      "path": "02-design/contracts/model-q4-m1-reference.json",
+      "exists": true,
+      "bytes": 1055,
+      "sha256": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5"
+    },
+    {
+      "path": "02-design/验证计划.json",
+      "exists": true,
+      "bytes": 3805,
+      "sha256": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "03-prototype/controller-convergence-20260912/candidate-review.md",
+      "bytes": 2517,
+      "sha256": "a0448f409ca897a13bb32ce58b5a324e5ce38f00fb72061e4efff06e545830cb"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/failures.csv",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/hm-checks.json",
+      "bytes": 46,
+      "sha256": "f94cc164a32bc2c2633eeec4bfa5b1966f614d4ed3418cc792c3a33263fdff00"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-H/heat-trace.csv",
+      "bytes": 15798,
+      "sha256": "7ea82b091b745e11ac570120105af8a3e47c9a8f5005408ede95383a4184b690"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-H/latent-trace.csv",
+      "bytes": 26569,
+      "sha256": "b0cf242323c98d61c1d2e90002fc0fb7ea5d059a347f04adfb3539311b356a51"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-H/result.json",
+      "bytes": 180566,
+      "sha256": "2d4856ef4d8105c090f50f2afc77df8ffb4954e3ceefcb18dcfe40c63756334e"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-H/state-arrays.npz",
+      "bytes": 4978,
+      "sha256": "6cfe9d70aaf129f2fdbb4af5a28b5dff63d0bf3547883da861c1ad3298c9cef6"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-H/trajectory.csv",
+      "bytes": 2752,
+      "sha256": "8bf0d6d87c7e64a6b98795185c8dce5be649216b3843f5a7e78a11805361fb74"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-H/water-trace.csv",
+      "bytes": 13595,
+      "sha256": "112f578dd93418b697d46f619e9a5f26f99bf4d44631431dcc91f8128b775fba"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-L/heat-trace.csv",
+      "bytes": 15845,
+      "sha256": "cb3b27aad02ec10d7eeede1f36362142c97168772581ddf92d3c8bc20facde84"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-L/latent-trace.csv",
+      "bytes": 26545,
+      "sha256": "16734ccb001e2b87ab95fe6f36bb232230f6e3dab51c6468d4f913dc961f92dd"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-L/result.json",
+      "bytes": 180579,
+      "sha256": "337fc4927fb39ec817648be771f366e33876c1ea2c7741c1f205447853c76382"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-L/state-arrays.npz",
+      "bytes": 1408,
+      "sha256": "9717be4beb8cfb5fc27d06ee807f25146f31c39d99f8f89a8a4ce01bee747e07"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-L/trajectory.csv",
+      "bytes": 2786,
+      "sha256": "c4d68b13091722de52a1ed0729a7b1c86b77bb01d6e2123b21c48ba6bc2395c6"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-L/water-trace.csv",
+      "bytes": 13556,
+      "sha256": "ad9e7572465eb345aa7609e8d6a4d034b9456ded07e4f669e5a3fde66fc92220"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-M/heat-trace.csv",
+      "bytes": 15835,
+      "sha256": "16a72e99e4510424efd34e5ea89f690ecf6975f29b7065c3306a07631ebd3f9c"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-M/latent-trace.csv",
+      "bytes": 26539,
+      "sha256": "31c71a2c051400ca11d45c8a32e236d89ce3637fc836edbae152b9f348827b06"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-M/result.json",
+      "bytes": 180600,
+      "sha256": "79c0eb254f6ac5d2cc0eeaabbb527c67ea9c52a27503dd3773e93c77feeb3987"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-M/state-arrays.npz",
+      "bytes": 2539,
+      "sha256": "3b4bac1916b50dca9c24444be6b15377b2e73d9e0772ac3e299e568d6e92f377"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-M/trajectory.csv",
+      "bytes": 2804,
+      "sha256": "67f5f6a7022c08fab05fff4d7b7c1fe5a393596cb33cd409684ce7e00560c098"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-M/water-trace.csv",
+      "bytes": 13570,
+      "sha256": "b93c136483d78c2176f8278e7977e3757d6a836c558203a8ad3d0a9c6ef80508"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-X/heat-trace.csv",
+      "bytes": 15764,
+      "sha256": "97bf7edbb556ec81be4eb192f1d6485814bb9a51e370e85d752737977669e7da"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-X/latent-trace.csv",
+      "bytes": 26578,
+      "sha256": "163ce2aaae587f436da5a39f313e15938ac9df8f0dab2eadfe56766de6f5fcff"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-X/result.json",
+      "bytes": 180512,
+      "sha256": "735b26bc34cc9e5459a942ff57b506ca23855f749abc13b0f1562473e33af8cd"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-X/state-arrays.npz",
+      "bytes": 10342,
+      "sha256": "19af11095e1c2e4d89b6e463b93b7da68cfe8cc4e4fba5764c50d1ef9808c0d8"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-X/trajectory.csv",
+      "bytes": 2728,
+      "sha256": "ef8435ba0f671ec5e420519697ef75e6965073e5f06864b1e676d708230611f9"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-space-X/water-trace.csv",
+      "bytes": 13588,
+      "sha256": "dd8c6d550a06502b89adbc6f54297898fb44a31f08219e50d58f159034d5e5d7"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-H/heat-trace.csv",
+      "bytes": 31360,
+      "sha256": "5554df972e4874420e7b83e78a34a0230da73d4ff0089f54aa0e8f77898e1181"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-H/latent-trace.csv",
+      "bytes": 52807,
+      "sha256": "6d5e1e6a451a4b1019d3c59b17e5895f0ebf734c75e30cf89967fc0129ad1fe3"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-H/result.json",
+      "bytes": 351902,
+      "sha256": "f840878797dfa321c974d69d9c6f610a0bd9141d63f36023c7872358fa3e7fa8"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-H/state-arrays.npz",
+      "bytes": 2544,
+      "sha256": "3a5313a58db789b1a026cf06624014441ed80baf777ea76173359c045a55c84a"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-H/trajectory.csv",
+      "bytes": 2797,
+      "sha256": "a7b5403185317b932a17c340d838635b1aba1250c902cae9dc5519b622544ffa"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-H/water-trace.csv",
+      "bytes": 26984,
+      "sha256": "3407818cd3b4dde620be35f84a12ba69bfb77dc54eb8dbf5103fd7274ab5d46f"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-L/heat-trace.csv",
+      "bytes": 8054,
+      "sha256": "56455ce3fb18719b001ecb623fc1669466da8772589139f8734d43cc6053d984"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-L/latent-trace.csv",
+      "bytes": 13466,
+      "sha256": "11ba74b32215e7c67fb783605a3cc0a25311785183a34181be2b3557e8231dbd"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-L/result.json",
+      "bytes": 94999,
+      "sha256": "aaa04e60e87737aca97abbae293315032acd0f7d4ac7a2c4115ce3bb4495aa60"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-L/state-arrays.npz",
+      "bytes": 2540,
+      "sha256": "f33ba5364b40dd547aeac2ef5c44fcbd7fb7665e0c41cb2a1da702fbb95c9805"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-L/trajectory.csv",
+      "bytes": 2788,
+      "sha256": "024436083c44e24f9b2ca9a5464ffbcef61430b31998cdfcc5d9b1dcf9084283"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-L/water-trace.csv",
+      "bytes": 6885,
+      "sha256": "131b7e1dceea98500691f94f5181757717d8116db5cbfb9a080dc259c617b136"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-M/heat-trace.csv",
+      "bytes": 15835,
+      "sha256": "16a72e99e4510424efd34e5ea89f690ecf6975f29b7065c3306a07631ebd3f9c"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-M/latent-trace.csv",
+      "bytes": 26539,
+      "sha256": "31c71a2c051400ca11d45c8a32e236d89ce3637fc836edbae152b9f348827b06"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-M/result.json",
+      "bytes": 180600,
+      "sha256": "87fd704eaadc1f43ff523e171f6af45f2620c53ad944e8e2e7a596ebe83b7b8a"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-M/state-arrays.npz",
+      "bytes": 2539,
+      "sha256": "3b4bac1916b50dca9c24444be6b15377b2e73d9e0772ac3e299e568d6e92f377"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-M/trajectory.csv",
+      "bytes": 2804,
+      "sha256": "67f5f6a7022c08fab05fff4d7b7c1fe5a393596cb33cd409684ce7e00560c098"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-M/water-trace.csv",
+      "bytes": 13570,
+      "sha256": "b93c136483d78c2176f8278e7977e3757d6a836c558203a8ad3d0a9c6ef80508"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-X/heat-trace.csv",
+      "bytes": 62665,
+      "sha256": "df154da0ca1a4ce5090d04d2ae4b5b0abdbbffb192a40fb47072d5534c1c25ce"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-X/latent-trace.csv",
+      "bytes": 105213,
+      "sha256": "bc12d61c9343df4c9bb4dbaf35e01f0faa84d7b42fb99011dc38bc1c9e7a0211"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-X/result.json",
+      "bytes": 694633,
+      "sha256": "68b3f8c94dd8472d8556da759c045e7ea0b57d2c028b6709685a02431564d6fc"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-X/state-arrays.npz",
+      "bytes": 2541,
+      "sha256": "c3614528f97d74cded9693d865ea7118e876f18628b92281292eb988f1985b91"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-X/trajectory.csv",
+      "bytes": 2804,
+      "sha256": "0f8e3d81ac36564512b37410680cb20bd22a45eded7240d9fd66eca7aa89cba5"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q2-time-X/water-trace.csv",
+      "bytes": 53798,
+      "sha256": "73dbb431de8367fdc1774912a556f624b0cd0a0c3d6c72bb00690fca1b802a5b"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-H/heat-trace.csv",
+      "bytes": 139628,
+      "sha256": "e3c6ed50860ca53668aa84a5abd2759188df5085c642c6545cf81b3849b18ece"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-H/latent-trace.csv",
+      "bytes": 234498,
+      "sha256": "8e4ea68192f165d50853a4001a78cbbe5fff2db3076063ea78c0b588b65fbf93"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-H/result.json",
+      "bytes": 1542095,
+      "sha256": "d21d918b43895185cd756158c6f9713079548b9fde0cb0600dd7bed4fb950db9"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-H/state-arrays.npz",
+      "bytes": 4765,
+      "sha256": "6fdab88dcdfb3d6b9b63a9c72e78032c0aa5a81c418bdf8609a876e71feae6ca"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-H/trajectory.csv",
+      "bytes": 10031,
+      "sha256": "494511f7a9f5dd9acd5099f446e2a8a45f44b16e50afed0bbcdb864b4914e719"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-H/water-trace.csv",
+      "bytes": 120242,
+      "sha256": "645aad0e5a322bcd46f053ab39a9c8276b72a8adff3f1847b3c00e4619cd0788"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-L/heat-trace.csv",
+      "bytes": 147273,
+      "sha256": "8ac4131ce70bf3eec67000dcbdf9ee59505a76806fa4de1ad9c1b52774b9082e"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-L/latent-trace.csv",
+      "bytes": 246979,
+      "sha256": "a55115dcd76aa024483e063fade13f0c9c3dfc0bb87d2bd3816ee75a7ef8d842"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-L/result.json",
+      "bytes": 1624046,
+      "sha256": "3f6b1af319aa65e07d955d1f6c79bed810a284f2d5a4ecf97310e827671e462a"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-L/state-arrays.npz",
+      "bytes": 1360,
+      "sha256": "27d09759e81ef447021a1d47fc0ca0be12bc81f3c812470d8f383ad6a960e6e1"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-L/trajectory.csv",
+      "bytes": 10489,
+      "sha256": "398037f2b138ea4b488ebfb06aba7bc096ed939c65ebb916dbfe64352d01cd15"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-L/water-trace.csv",
+      "bytes": 126801,
+      "sha256": "7c41a8f9007d6a031cb62e6d3c0fdb061e0efd1f1ef77afa4f39896b6f58cdd0"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-M/heat-trace.csv",
+      "bytes": 141652,
+      "sha256": "78fe97ecd9d1123de45c1dc5023061f1a4541a01ae59691a1102db329382a310"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-M/latent-trace.csv",
+      "bytes": 237760,
+      "sha256": "8914f82cc67a7483aa57df968a6d33f6e8dfa4b2a4d309a155e6c78e96f1d0b9"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-M/result.json",
+      "bytes": 1563009,
+      "sha256": "c3eac59152ea013e27ac7e04190fe858b9327ef3f6dd9a994593a10c9728cd08"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-M/state-arrays.npz",
+      "bytes": 2429,
+      "sha256": "1e1071e9a0ee86f96167d024bb0e4d3c2d67ced53eece1d145552fb9e1531909"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-M/trajectory.csv",
+      "bytes": 10032,
+      "sha256": "93f3ad8ea1dd8c9a9db34c600a51825ca1ccb83a395c4d0c9d09a93fd8032770"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-M/water-trace.csv",
+      "bytes": 121680,
+      "sha256": "28789e30173b13ce41789ef1b9b34d0f3aa1c7eda6d3d05dbf35e260f2761ab9"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-X/heat-trace.csv",
+      "bytes": 138836,
+      "sha256": "8854c61e1c5e2e95f88732f9c48e4009f57d67ecf12367cf020f9e38934ec1de"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-X/latent-trace.csv",
+      "bytes": 233042,
+      "sha256": "b13869c729c7235c320b4f43c328c2090e19fa0497c0405e0b8744dc15bf5d80"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-X/result.json",
+      "bytes": 1532363,
+      "sha256": "15ef96ee08fa3accf550dd66c085bf30cd0401bfc581f0c628b17d09df84cfcf"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-X/state-arrays.npz",
+      "bytes": 9971,
+      "sha256": "fccd659f170095d2cfdb8e62260574c3493bb3101db6a474c4b028bf92e9d728"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-X/trajectory.csv",
+      "bytes": 9847,
+      "sha256": "7c875174fb0e334180e5a5e0fe11dd4bb6d3d7930c95d277899298af03628a45"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-space-X/water-trace.csv",
+      "bytes": 119607,
+      "sha256": "c328bc7a5b5f2fa94dc1d69cf524fd1024ae83af711733ae74e9cc7b5bd9dacb"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-H/heat-trace.csv",
+      "bytes": 282663,
+      "sha256": "db33127d9cd8c921f3c2b53d71f72beaec7eafe594af6f83191563798e7e2144"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-H/latent-trace.csv",
+      "bytes": 474619,
+      "sha256": "d48ee3f54aadf9bde67fc3d135d400fe9be90697833077dea925ac854dede533"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-H/result.json",
+      "bytes": 3094910,
+      "sha256": "0391df0d1198c5c14345e312429694e24ba6a294c15fc7ea46d081e704e5bc53"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-H/state-arrays.npz",
+      "bytes": 2433,
+      "sha256": "f0ca7f524d49aca24cc52f1701f1aff51037e71dafcd4a468d63dfdef092b0bc"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-H/trajectory.csv",
+      "bytes": 10027,
+      "sha256": "7f4cdddcaa5e3bd10c76e01a63c319306d1f5a0475a94343e2cf0cb3030aa2b2"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-H/water-trace.csv",
+      "bytes": 243715,
+      "sha256": "c5895cdc6e6aeb60b3bb56590f78f510142bd53b23f0f2f42790e172a51d7e2c"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-L/heat-trace.csv",
+      "bytes": 71064,
+      "sha256": "8c1956fb3da1784ebe747a001719eee796bb5473bdb694f353dd3e0463a679c3"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-L/latent-trace.csv",
+      "bytes": 119560,
+      "sha256": "111e3e78ade1babb1c742bf5ba5ab7b17432f36f89195867cdbe45571ab9399a"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-L/result.json",
+      "bytes": 798185,
+      "sha256": "c8c2aa1df0129edbe230f7e776dcf634ba28d28ba27728ffee28615390e1ab36"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-L/state-arrays.npz",
+      "bytes": 2431,
+      "sha256": "2d6e9dfc8438fa41ee73ac0df53f7de922a54c980460b3ef12c53018f072fe7c"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-L/trajectory.csv",
+      "bytes": 10183,
+      "sha256": "972318c8efc1a64baa5035514de234e7b14fba5168b9b6bbc685d2f4b2cd0005"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-L/water-trace.csv",
+      "bytes": 61286,
+      "sha256": "bbd29a45a6aeabee32dcb6572ea61dcfa05c41d06f8c0de4ad53d17da10a804c"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-M/heat-trace.csv",
+      "bytes": 141652,
+      "sha256": "78fe97ecd9d1123de45c1dc5023061f1a4541a01ae59691a1102db329382a310"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-M/latent-trace.csv",
+      "bytes": 237760,
+      "sha256": "8914f82cc67a7483aa57df968a6d33f6e8dfa4b2a4d309a155e6c78e96f1d0b9"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-M/result.json",
+      "bytes": 1563008,
+      "sha256": "d1e5bf40a86fe8d3122a8c2aa6a0d94a7baec12020b0a243e44634a20cfb2040"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-M/state-arrays.npz",
+      "bytes": 2429,
+      "sha256": "1e1071e9a0ee86f96167d024bb0e4d3c2d67ced53eece1d145552fb9e1531909"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-M/trajectory.csv",
+      "bytes": 10032,
+      "sha256": "93f3ad8ea1dd8c9a9db34c600a51825ca1ccb83a395c4d0c9d09a93fd8032770"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-M/water-trace.csv",
+      "bytes": 121680,
+      "sha256": "28789e30173b13ce41789ef1b9b34d0f3aa1c7eda6d3d05dbf35e260f2761ab9"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-X/heat-trace.csv",
+      "bytes": 565958,
+      "sha256": "43e0167f8436436f5722004785ad31a8a6572d1d26ce75647c4f3c364099fcf1"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-X/latent-trace.csv",
+      "bytes": 947428,
+      "sha256": "91f86c57557ef2b36f65b685d5582defbbed8b29b9a370e9806f4921431a2751"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-X/result.json",
+      "bytes": 6158953,
+      "sha256": "7f69c9984a05cd09ab9546aeacb6bf1060d2d97077054d75f3bec59501509315"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-X/state-arrays.npz",
+      "bytes": 2428,
+      "sha256": "7641d76892000a4967578f02cdb26f13edb078699b6920a3885cfb2777a8ddb9"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-X/trajectory.csv",
+      "bytes": 10035,
+      "sha256": "df8150fe4c22bc9d121e9d06274dc2b38c584bbc1dd51a2bacc90fe675772a36"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q3-time-X/water-trace.csv",
+      "bytes": 487649,
+      "sha256": "6af364ca1ece541096620c19c02fe8c3e1ba9218e1f19c924edda8ab374a07ef"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-H/heat-trace.csv",
+      "bytes": 148120,
+      "sha256": "97f4c187966cb3e0e3fd51cca2c179db795cfc550ca313acaae2368a901ca64e"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-H/latent-trace.csv",
+      "bytes": 240531,
+      "sha256": "a3d4f1632e372f2891ad3514dd718cb15d9949d8c15de18eb696e40a154dc918"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-H/result.json",
+      "bytes": 1603964,
+      "sha256": "b8b0af21f1a939e819967872bfd9b656164f52d3667405114cad5b376e2ce402"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-H/state-arrays.npz",
+      "bytes": 4750,
+      "sha256": "dd77cade1d883f5c3b6868e0be9b8d23e4a0045218e766e2f092394fee452c12"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-H/trajectory.csv",
+      "bytes": 10298,
+      "sha256": "88d0a3196a4088f4121464ebb510b83452df34f37d5c88dc3e31f91c8ca1d5ce"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-H/water-trace.csv",
+      "bytes": 137394,
+      "sha256": "78e0df0df00e33ee45fec969ef44e2832fe128cc97991b8303ef3c754ccefb75"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-L/heat-trace.csv",
+      "bytes": 152360,
+      "sha256": "097e52847a31f02657d7ec20509ebcf2af96be9a69d68ac690135750ac6e5e4c"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-L/latent-trace.csv",
+      "bytes": 247098,
+      "sha256": "b5889b79f4dad5d1f0d96ee92f33d1f2d4c19cedabae0c4143d417af08f9a3e2"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-L/result.json",
+      "bytes": 1647470,
+      "sha256": "c17e61c85d3ef40b870da593b89bea0f54a8867a3e6b844eb636a0bdaca62777"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-L/state-arrays.npz",
+      "bytes": 1369,
+      "sha256": "ec0b5c9f4e41e89b8a5d66e418bcab98701e137cb1aaac478390cec2299009cd"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-L/trajectory.csv",
+      "bytes": 10630,
+      "sha256": "bb9abd928f529bc04cbee4e0684b7c02041376cbcc5aeb50408e5d0767d39793"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-L/water-trace.csv",
+      "bytes": 140970,
+      "sha256": "7f0ae64a0b4c2a98148e51bfb03cefb3bd9a0cdf06458c64c888e698da8dc03e"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-M/heat-trace.csv",
+      "bytes": 149572,
+      "sha256": "a2c2b88fe58606afdfc90849db99730560fad193b91e9fa5c6c681a6872b73f8"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-M/latent-trace.csv",
+      "bytes": 242788,
+      "sha256": "e1814377add0acd2f60c6ce0f7a8c4784e8efdee3473f03d0a68e66f58819132"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-M/result.json",
+      "bytes": 1618081,
+      "sha256": "1fc811b2f7209101fb048c990b466c1516bfab0d472b6dc8c3bc644feb57d9c2"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-M/state-arrays.npz",
+      "bytes": 2442,
+      "sha256": "874da3cc2d8ad1cc7a4d47418a50b01cc6be3a417b1a99d662950282e022eb2f"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-M/trajectory.csv",
+      "bytes": 10480,
+      "sha256": "ed51de3e4d268904516dcc7f54fe729856261dbe637ad1c92891cea6af08e27c"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-M/water-trace.csv",
+      "bytes": 138383,
+      "sha256": "09d56716945ff6966f64070e6f0e8be2453d0add8f323e5cafd2215d0455d258"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-X/heat-trace.csv",
+      "bytes": 147476,
+      "sha256": "228083db877b7a66a5d5c30fe394efdf1b24e8cfca1a30b6b978dacf11af617b"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-X/latent-trace.csv",
+      "bytes": 239371,
+      "sha256": "18d4162971d01855a5c87b91bb4d7ccd85b20b2b09733437da63a3ee4ce86f1f"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-X/result.json",
+      "bytes": 1596409,
+      "sha256": "2aff5a9820175e472407f164274a78ba3c20b5c53ef0f93ad2d5d008fe8df32c"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-X/state-arrays.npz",
+      "bytes": 9885,
+      "sha256": "779dffa6351357b899d1ec0a06feefb34e5999b5ec43525b0759d844de95b01a"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-X/trajectory.csv",
+      "bytes": 10306,
+      "sha256": "bf304bc87dcd3056696fdc19dbe0a597ca20081ff8f807099eabe737949cf441"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-space-X/water-trace.csv",
+      "bytes": 136797,
+      "sha256": "7fe55071780afdcf59ec1ffe2eaaee8ce318380dfacc2b597b160c1ad54b7212"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-H/heat-trace.csv",
+      "bytes": 297122,
+      "sha256": "21836330dbe7e712eb005d24e6c3578ae118824d48d8b4a2537c133453d43b17"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-H/latent-trace.csv",
+      "bytes": 483853,
+      "sha256": "4465d2bea707352d784a754b530f48a69d5eee46f540079357b83e1f8a5028a0"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-H/result.json",
+      "bytes": 3199992,
+      "sha256": "699cf77596e16e9228a2bc69168de1e24fc5329536e528fdb39e6c467ed332f4"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-H/state-arrays.npz",
+      "bytes": 2438,
+      "sha256": "e81b0900484b1da9acf36e2d93dbd59e7b7a7b749e2ee694ccccece5619c552c"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-H/trajectory.csv",
+      "bytes": 10519,
+      "sha256": "9b18a4f258cd4a5aec609c2683c3aa16fe48363323733a2eab64961ef96e9f68"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-H/water-trace.csv",
+      "bytes": 276424,
+      "sha256": "08985a407b8e5e05cdf68c0260b75af02589f4e5ac2250d9bca83a04dd147646"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-L/heat-trace.csv",
+      "bytes": 75035,
+      "sha256": "a125ff885bf9677737491de84641f7aaf53e2969ddab7e5266fb00de40b3b820"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-L/latent-trace.csv",
+      "bytes": 121797,
+      "sha256": "982083b529360ef0f9e30c55c24f12944ceafd81d412f00ff2dbc370fa0e6c59"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-L/result.json",
+      "bytes": 824868,
+      "sha256": "de5c99245c333ddf12ff10c75fda01c079425ff6481c5d4a500a409ce59ccec2"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-L/state-arrays.npz",
+      "bytes": 2435,
+      "sha256": "58b9e2837d8263d5a10eb09e0f99576339f59e52e35a92f89d7fc67d18dbbfaa"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-L/trajectory.csv",
+      "bytes": 10479,
+      "sha256": "b9d7e30a6f7c7a14ddec40f719a2d8e8b16832257156a085a0aee34ee7b2d8ff"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-L/water-trace.csv",
+      "bytes": 69599,
+      "sha256": "d1e71bc57b5c1acf9e4b3e6c641ac093e49b05728f56ad4710fcc3a25b60f3e1"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-M/heat-trace.csv",
+      "bytes": 149572,
+      "sha256": "a2c2b88fe58606afdfc90849db99730560fad193b91e9fa5c6c681a6872b73f8"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-M/latent-trace.csv",
+      "bytes": 242788,
+      "sha256": "e1814377add0acd2f60c6ce0f7a8c4784e8efdee3473f03d0a68e66f58819132"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-M/result.json",
+      "bytes": 1618081,
+      "sha256": "da0a8552b1428ce86c2b6942fac3bce4b2324f6cb41a118297bc478f5c1a3b4f"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-M/state-arrays.npz",
+      "bytes": 2442,
+      "sha256": "874da3cc2d8ad1cc7a4d47418a50b01cc6be3a417b1a99d662950282e022eb2f"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-M/trajectory.csv",
+      "bytes": 10480,
+      "sha256": "ed51de3e4d268904516dcc7f54fe729856261dbe637ad1c92891cea6af08e27c"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-M/water-trace.csv",
+      "bytes": 138383,
+      "sha256": "09d56716945ff6966f64070e6f0e8be2453d0add8f323e5cafd2215d0455d258"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-X/heat-trace.csv",
+      "bytes": 596651,
+      "sha256": "7bc1912d125b0071a37c69ba1ee529d2d0b9b3fdb8dbf9733f6f87483ec32773"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-X/latent-trace.csv",
+      "bytes": 966464,
+      "sha256": "4555fce3d102529d7c3d6799eba39cbcd649e004cbf427b2f790fb0816f5afb0"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-X/result.json",
+      "bytes": 6370168,
+      "sha256": "fbad03b8d8faebefa1bd81f85e031ed789f6bab46ec2cbfc5328937b88e565ad"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-X/state-arrays.npz",
+      "bytes": 2445,
+      "sha256": "5c5bcad8d097634711ac9f6171b82815fcde11a884b8b59d4c83fce9416ed6b9"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-X/trajectory.csv",
+      "bytes": 10505,
+      "sha256": "7bb790f0189ce82b2684de8685f43a385c11f7baacd9044bbdf0eabc2515f300"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results/Q4-time-X/water-trace.csv",
+      "bytes": 552748,
+      "sha256": "4ccc9a828577bb3a230291db414ab12825a3b63b5b24c56d234caceff75ce642"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/raw-results.csv",
+      "bytes": 13306,
+      "sha256": "a55d0ea9bef0630a4d79a543e24196b0c0e0c790dfeeba2e8b707e58fd239711"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/run.log",
+      "bytes": 38276,
+      "sha256": "94cec09ecf5e1700f1e54bdd9b8de8b2dbecf680ac5c1e34cb643bdd0ed86d08"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/run_controller_convergence.py",
+      "bytes": 24814,
+      "sha256": "8769b3404da838967d8cc36e4016da2aebe1341dcb5b632a62986d4587a500d1"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/space-convergence.csv",
+      "bytes": 7725,
+      "sha256": "965eda13e0f056a28d42e9d6ce3a9bbccdf68494a2291d2ba773e09199e17a14"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/summary.json",
+      "bytes": 393,
+      "sha256": "a7e2c4798c3353ff082073b7b1de66da134f05f91a3acf99626245c84f9978d5"
+    },
+    {
+      "path": "03-prototype/controller-convergence-20260912/time-convergence.csv",
+      "bytes": 7766,
+      "sha256": "8b1c0a30461a66aa09f1a5e5245fe1e90139759dc7659e84a60fec35905fc1c1"
+    }
+  ],
+  "frozen_decisions": [
+    {
+      "path": "decisions/H1-problem.json",
+      "exists": true,
+      "bytes": 7372,
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "exists": true,
+      "bytes": 1837,
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"
+    }
+  ],
+  "assumptions": [
+    "The existing nominal_proxy candidate is called read-only and uses the Appendix property laws, Attachment 1 environment history, and Attachment 2 radius history through the existing source solver.",
+    "Space L/M/H/X fixes the medium time step; time L/M/H/X fixes the medium 12x12 grid.",
+    "Q3/Q4 threshold remains exactly 0.15 - 1e-6 from the existing candidate source.",
+    "A failed case is evidence and remains in raw-results.csv, the convergence CSV, and its raw-results case directory."
+  ],
+  "unknowns": [
+    "The candidate still lacks phase-resolved liquid/vapor/bound-water inventories and mass-energy closure.",
+    "Numerical convergence does not provide internal-temperature observations or identify material-specific latent heat."
+  ],
+  "claims": [
+    "Independent Q2/Q3/Q4 spatial and temporal L/M/H/X runs are recorded with raw per-case outputs.",
+    "Q3/Q4 H-M event-time changes are explicitly compared with the 60 s tolerance when both runs complete.",
+    "This handoff stops at candidate review and does not select or promote the latent-heat candidate."
+  ],
+  "warnings": [
+    "Do not overwrite formal COMPUTE, EVIDENCE, FIGURE, PAPER, decisions, or workflow state.",
+    "Do not change the threshold or remove failed cases when interpreting this package.",
+    "Do not call the numerical candidate a validated multiphase latent-heat model."
+  ],
+  "required_next_actions": [
+    "Team reviews space-convergence.csv, time-convergence.csv, raw-results.csv, raw-results/, and hm-checks.json.",
+    "Keep this candidate blocked unless phase-resolved data and closure are separately supplied and approved."
+  ],
+  "validation_register": [
+    {
+      "id": "CV01-independent-space-ladder",
+      "status": "PASS"
+    },
+    {
+      "id": "CV02-independent-time-ladder",
+      "status": "PASS"
+    },
+    {
+      "id": "CV03-failure-retention",
+      "status": "PASS"
+    },
+    {
+      "id": "CV04-q3-q4-hm-60s",
+      "status": "PASS"
+    },
+    {
+      "id": "CV05-phase-closure",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "CV06-candidate-review-stop",
+      "status": "PASS"
+    }
+  ],
+  "completed_at": "2026-09-12T19:38:56.725625+08:00"
+}

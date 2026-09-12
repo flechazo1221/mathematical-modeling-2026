@@ -1,0 +1,99 @@
+{
+  "field": [
+    {
+      "family": "Q2-M3",
+      "metric": "final_max_C",
+      "levels": 5,
+      "values": [
+        1.727453873211908,
+        1.7276397893472275,
+        1.7277283498561156,
+        1.727768354298843,
+        1.7277860781121686
+      ],
+      "adjacent_changes": [
+        0.00018591613531948603,
+        8.856050888805811e-05,
+        4.0004442727337164e-05,
+        1.7723813325654092e-05
+      ],
+      "last_two_max": 4.0004442727337164e-05,
+      "field_linf_adjacent_changes": [
+        0.00019500766204538778,
+        8.811164579136666e-05,
+        4.266894426274703e-05,
+        1.7370733239818748e-05
+      ],
+      "field_linf_last_two_max": 4.266894426274703e-05,
+      "monotone": true,
+      "qualifies_scalar_threshold": true,
+      "qualifies_field_norm": true,
+      "qualifies_local_threshold": true,
+      "threshold": 5e-05
+    },
+    {
+      "family": "Q2-M3",
+      "metric": "final_mean_C",
+      "levels": 5,
+      "values": [
+        1.3063441168588512,
+        1.3062724587048402,
+        1.3062386630850593,
+        1.3062235454690674,
+        1.3062169000351198
+      ],
+      "adjacent_changes": [
+        7.165815401100062e-05,
+        3.37956197808964e-05,
+        1.5117615991933064e-05,
+        6.645433947571888e-06
+      ],
+      "last_two_max": 1.5117615991933064e-05,
+      "field_linf_adjacent_changes": [
+        0.00019500766204538778,
+        8.811164579136666e-05,
+        4.266894426274703e-05,
+        1.7370733239818748e-05
+      ],
+      "field_linf_last_two_max": 4.266894426274703e-05,
+      "monotone": true,
+      "qualifies_scalar_threshold": true,
+      "qualifies_field_norm": true,
+      "qualifies_local_threshold": true,
+      "threshold": 5e-05
+    }
+  ],
+  "threshold": [],
+  "time": [
+    {
+      "family": "Q2-M3",
+      "metric": "final_max_C",
+      "levels": 4,
+      "values": [
+        1.7279680699343563,
+        1.7278641290474162,
+        1.7278120917399604,
+        1.7277860781121686
+      ],
+      "adjacent_changes": [
+        0.0001039408869401015,
+        5.203730745573232e-05,
+        2.6013627791865446e-05
+      ],
+      "last_two_max": 5.203730745573232e-05,
+      "field_linf_adjacent_changes": [],
+      "field_linf_last_two_max": null,
+      "monotone": true,
+      "qualifies_scalar_threshold": false,
+      "qualifies_field_norm": null,
+      "qualifies_local_threshold": false,
+      "threshold": 5e-05
+    }
+  ],
+  "qualification_rules": {
+    "field_last_two_adjacent_changes_le": 5e-05,
+    "event_last_two_adjacent_changes_s_le": 60.0,
+    "requires_monotone_trend": true,
+    "requires_full_field_norm": "interior common-grid L_inf decreases over the last two refinements; scalar output tolerance is not reused for this norm"
+  }
+}

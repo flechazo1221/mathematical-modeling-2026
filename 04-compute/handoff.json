@@ -83,15 +83,15 @@
     },
     {
       "path": "04-compute/logs/extended.log",
-      "sha256": "0f6d90cb7d4b5f1d28f6d266f74135780cae7823d1060f78d522baaf11d26cfd"
+      "sha256": "9701221b700ebbdea2fe9ed81c7c37bcca60a22dae082cb86cb819b6403a369b"
     },
     {
       "path": "04-compute/logs/full.log",
-      "sha256": "4551645125f73031cbb49ad9a8bb38b4821d0ac92c98309bd2cf595d33b07acd"
+      "sha256": "934cc4471d4cf87ba41ace7d5ee1994271b593a55e45a53b8e8d538105f82a04"
     },
     {
       "path": "04-compute/logs/p1.log",
-      "sha256": "618efea6a7ce0914cdff5debc4ed85b31a25e7e821bab1de358921c13104aa28"
+      "sha256": "abcbfdffc51926d8b3a45df7acd0b3df00180905ead3a668aa1429b0b1be8d85"
     },
     {
       "path": "04-compute/logs/repair-probe-high.log",
@@ -106,36 +106,56 @@
       "sha256": "715be1eee4373762020a5b0f1042a291a9c28eec91193d36f9e87a6ffa9f7c87"
     },
     {
+      "path": "04-compute/repair-20260912/before/extended.log",
+      "sha256": "08c1e27dd2bf830fc1bfd9279f6e8f5b6de674356f591b8a052c5521022e03d5"
+    },
+    {
+      "path": "04-compute/repair-20260912/before/hashes.json",
+      "sha256": "35c69de674a32d9850034a56ce89911526d6be03a887f50d41116b9e903e7be8"
+    },
+    {
+      "path": "04-compute/repair-20260912/before/sensitivity-extended.csv",
+      "sha256": "b2a18452cccd050d38635ddc18bb85a95c7e1c63a1f068b64999a86a8f0cd66a"
+    },
+    {
+      "path": "04-compute/repair-20260912/before/复现清单.json",
+      "sha256": "ac85af019da06572da96525ee30b484cc8bd09f1b1b98dc3d89f7ff700b67b85"
+    },
+    {
+      "path": "04-compute/repair-20260912/repair-report.md",
+      "sha256": "7e26790b58bd9128cff912a8fd4f0167dd6619e5e24402b989197545323f26e2"
+    },
+    {
       "path": "04-compute/results/convergence.csv",
-      "sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f"
+      "sha256": "2e5a010ad933d583d03720b66968019209a586f75139ead7ad9b5bbb93f93a26"
     },
     {
       "path": "04-compute/results/field-grid-convergence.csv",
-      "sha256": "36e8cd85789d68c6c07efb304441425bd7948430473fbd14593c6c3fef3d57f5"
+      "sha256": "9399953b215209048db52bc0de3fb3ef627a153f41cc9f1ddd9f109d751abdce"
     },
     {
       "path": "04-compute/results/key-metrics.json",
-      "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"
+      "sha256": "a8e568085f51a00971ca8662b33e58b5ac34b2ffd7860dee407f2e76b4281257"
     },
     {
       "path": "04-compute/results/p1-check.csv",
-      "sha256": "0f5fa37d65fe761ae6a30ac811126fb229421091e7cf4522eb3c579cfc6b85f8"
+      "sha256": "ce3f2e1ab2a8b5a4cc1708bffdbc5bee27ade1c8239139cbbe5a5b09ebf5eafc"
     },
     {
       "path": "04-compute/results/q1-samples.csv",
-      "sha256": "e214e5f23b1c1787357c59ec841791d461414190d5b72379022c2e7db47bdc8d"
+      "sha256": "d50a4dfd86e562bd7c8a2e42b556cd55cfe79292063d56bc874e4d476dd7dbee"
     },
     {
       "path": "04-compute/results/q2-samples.csv",
-      "sha256": "bf287f00761f6cba72f225c455d0ee1290d546874d135a7936ed8a4567dd4f21"
+      "sha256": "56aa87b04dcb0bef6aa089155c3ce581f54b9cc77e624c5785621ae0847c3961"
     },
     {
       "path": "04-compute/results/q3-threshold-trajectory.csv",
-      "sha256": "68d78e1922d192eac3d74b6056713b595371c29447c52ea37cc4874c1898f244"
+      "sha256": "5184862127bdaebefab6b7b1518cce031e05b7d843a13bd9811b203f384dbf81"
     },
     {
       "path": "04-compute/results/q4-threshold-trajectory.csv",
-      "sha256": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8"
+      "sha256": "b36f975078f97ccced81797dd27d4a89040132869a42a28108be776fc0365a6b"
     },
     {
       "path": "04-compute/results/repair-probe.json",
@@ -143,23 +163,23 @@
     },
     {
       "path": "04-compute/results/result1.xlsx",
-      "sha256": "49eeb7192df9a50ed39377b0dc7cd2719e5a231fb847730b1c6e898f78841807"
+      "sha256": "5e5355a10f63bd08c18899234bf1d298f798cfbc7e54e8a242d1d68a999dad6a"
     },
     {
       "path": "04-compute/results/result2.xlsx",
-      "sha256": "dd70d05a2bbc245c1a1a2fffe7edcb5cb3409f0dce31d7e54063db3ce3d5078d"
+      "sha256": "1ec76435ff95b20ac3896639f60dc30fc325fd9633ec40e65f3ed3569c2d5833"
     },
     {
       "path": "04-compute/results/result3.xlsx",
-      "sha256": "661e8fcab835f9b42276010eb04e4d14149b0503eb3444e52a2d8c3f7c84b344"
+      "sha256": "0930829d2de3af993e27924d8c9310dda24a64be868002a392e7929b2f65f886"
     },
     {
       "path": "04-compute/results/result4.xlsx",
-      "sha256": "ddd95c812f50e78b5cfab1df7df522f32ff6dadb8d0e08a986c73d504a98ac7b"
+      "sha256": "dc3f10a25768d8d3031ea35a8ea425736bcda2f34b23f66c76a957dc77a77987"
     },
     {
       "path": "04-compute/results/run-summary.csv",
-      "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"
+      "sha256": "31f4142f12f8997f7d9a39b28a3f5746b7da0656aa0b78e9f7ee8e2aa7605b42"
     },
     {
       "path": "04-compute/results/sensitivity-extended.csv",
@@ -167,23 +187,23 @@
     },
     {
       "path": "04-compute/results/sensitivity.csv",
-      "sha256": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf"
+      "sha256": "b70593f893a7ca70368c86b08c8ee9c68e375590c303ff57b9578f87dfc1458e"
     },
     {
       "path": "04-compute/results/threshold-grid-convergence.csv",
-      "sha256": "8ba2aa18d42e13169db3f569cb7a6c1d5e8fd836c7f6818a8d0eb42fefd811f6"
+      "sha256": "cb64d799d6d729705ec7333f21d21ba42ba4388d613997a2cb05378c51df55bb"
     },
     {
       "path": "04-compute/results/validation-register.csv",
-      "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb"
+      "sha256": "4bff2426f87fa1197d8f184dad9b372e702db81c01ae71027fd35ee51b18ecae"
     },
     {
       "path": "04-compute/src/finalize_compute.py",
-      "sha256": "db42bf1398722d58bf6be526d464896f232b4b827118793ad45b68631ee254d1"
+      "sha256": "6ffe9cf1f0caa14f9a4ee0101206dc32e957485d825d33d7bab76e2a1bc4c7e0"
     },
     {
       "path": "04-compute/src/formal_compute.py",
-      "sha256": "e76fb6167449df6111a4d56b253878b60d71b582b9ddc474ceaab22bfc179975"
+      "sha256": "af3214f972eb874764323c76561025df1cc70f27d7f0985968b57b0b688b4644"
     },
     {
       "path": "04-compute/src/repair_probe.py",
@@ -243,11 +263,11 @@
     },
     {
       "path": "04-compute/复现清单.json",
-      "sha256": "291f65c629479ad44b2ef49096f525254b0c3a68653b3ee42ccb3c5db3d1bdee"
+      "sha256": "239fb39a12db0ab3a1017c59579da5f33c1b0bc3f065d394d8399dc700357aef"
     },
     {
       "path": "04-compute/证据索引.json",
-      "sha256": "1c33297088e7505845dbccea6bcdef4a8b8c31ff3855324e0ea85ca44d27a9f3"
+      "sha256": "e86a03fa5f610f7917291d20c5407c99f663c129a631d0f13ef1b8c33f6b0bb0"
     }
   ],
   "frozen_decisions": [
@@ -264,7 +284,8 @@
     "M4 is limited to the problem-identifiable temperature-dependent coefficient coupling and is used only as an ablation.",
     "The 4 h terminal environment uses the frozen one-hour mean base case and bounded 0.5/2 h window tests.",
     "For extended threshold runs after 72 h, the chamber continues at the approved terminal-window values and Q4 radius is held at the final observed attachment-2 radius.",
-    "Moving material cells use affine radial motion and dry-solid density continuity; no unsupported latent-heat source is introduced."
+    "Moving material cells use affine radial motion and dry-solid density continuity; no unsupported latent-heat source is introduced.",
+    "Q4 surface_C and surface_T_C are evaluated at the current moving boundary using the Robin boundary reconstruction; fixed-radius profile snapshots retain NA outside R(t)."
   ],
   "unknowns": [
     "No internal experimental observations are available, so numerical differences among M2/M3/M4 are not fit improvements.",
@@ -289,5 +310,5 @@
     "Independently verify this handoff schema and every declared SHA-256 before starting EVIDENCE.",
     "Stop here; do not create publication figures or paper text in this task."
   ],
-  "completed_at": "2026-09-11T23:40:17.016792+08:00"
+  "completed_at": "2026-09-12T17:11:43.712417+08:00"
 }

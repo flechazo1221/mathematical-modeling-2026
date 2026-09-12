@@ -1,0 +1,20 @@
+{
+  "figure_id": "FIG-Q1-END-EFFECT",
+  "snapshot": "06-figure/beautified-20260912/data-snapshots/FIG-Q1-END-EFFECT.csv",
+  "snapshot_sha256": "9db497f8ae95fcbdebe11afedf65c427ee567353f303c1f872390b768705626d",
+  "sources": [
+    {
+      "path": "04-compute/results/run-summary.csv",
+      "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"
+    },
+    {
+      "path": "04-compute/results/convergence.csv",
+      "sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f"
+    }
+  ],
+  "rows": 2,
+  "columns": [
+    "label",
+    "final_mean_C"
+  ]
+}

@@ -1,0 +1,4 @@
+observation_set,parameters,n_observations,rank_at_tol_1e-8,condition_number_scaled,singular_values,decision
+"C_only","a_v,k_evap,L_v,eq_scale","1201","3","inf","1.730241e+00;7.883548e-02;7.229799e-03;0.000000e+00","NON_IDENTIFIABLE"
+"C_T","a_v,k_evap,L_v,eq_scale","2402","4","35.40583999456038","1.777862e+00;8.980790e-01;1.736067e-01;5.021381e-02","DIAGNOSTIC_ONLY"
+"C_T_vapor","a_v,k_evap,L_v,eq_scale","3603","4","11.060834174795142","1.568371e+00;8.869158e-01;8.564389e-01;1.417950e-01","DIAGNOSTIC_ONLY"

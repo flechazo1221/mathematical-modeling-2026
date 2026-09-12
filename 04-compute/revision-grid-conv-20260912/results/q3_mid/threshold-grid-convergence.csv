@@ -1,0 +1,2 @@
+﻿scope,family,level,nr,nz,dt_s,duration_s,h_r,h_z,h_effective,metric,value,adjacent_change,field_linf_change,field_l2_relative_change,observed_order,runtime_s
+threshold,Q3-M3-midpoint,1,175,36,15,259200,0.009428371929578582,0.04676183033000947,0.04676183033000947,interpolated_event_time_s,206688.94230044854,,,,,274.3017472000065

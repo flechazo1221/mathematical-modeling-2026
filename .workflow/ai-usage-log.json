@@ -139,6 +139,237 @@
       ],
       "human_review": "等待论文阶段整合与最终团队复核",
       "recorded_at": "2026-09-11T23:59:17+08:00"
+    },
+    {
+      "stage": "FIGURE",
+      "tool_or_model": "Codex + math-modeling-figure",
+      "purpose": "按用户确认将 FIG-Q2-C-PROFILES 修订版纳入 FIGURE 工作流：删除右下角无用小字，保留原时间序列颜色、数据与主张，并更新 PNG/SVG/PDF、预览、清单和交接哈希。",
+      "affected_files": [
+        "06-figure/figure-manifest.json"
+      ],
+      "human_review": "用户已确认：删除右下角小字后可以加入当前工作流；本次仅为图稿呈现修订，等待论文阶段最终复核。",
+      "recorded_at": "2026-09-12T11:29:20+08:00"
+    },
+    {
+      "stage": "FIGURE",
+      "tool_or_model": "Codex + math-modeling-figure",
+      "purpose": "按用户复核修订 FIG-Q2-C-PROFILES：曲线统一为黑色实线，使用不同 marker 区分时间；坐标轴、网格、标题、图例和刻度统一黑色，中文文字优先使用宋体；数据与主张不变。",
+      "affected_files": [
+        "06-figure/figure-manifest.json"
+      ],
+      "human_review": "用户已提出并确认本轮视觉修订方向；等待论文阶段最终复核。",
+      "recorded_at": "2026-09-12T12:19:40+08:00"
+    },
+    {
+      "stage": "FIGURE",
+      "tool_or_model": "Codex + math-modeling-figure",
+      "purpose": "按用户澄清修订 FIG-Q2-C-PROFILES：恢复高对比彩色曲线，保持曲线统一实线；坐标系、网格、标题、图例、刻度和轴标签保持黑色，中文优先使用宋体；数据与主张不变。",
+      "affected_files": [
+        "06-figure/figure-manifest.json"
+      ],
+      "human_review": "用户已明确确认图线改为彩色、坐标系和文字保持黑色；等待论文阶段最终复核。",
+      "recorded_at": "2026-09-12T12:23:55+08:00"
+    },
+    {
+      "stage": "FIGURE",
+      "tool_or_model": "Codex + math-modeling-figure",
+      "purpose": "按用户确认调整 FIG-Q2-C-PROFILES 展示方向：横轴改为时间 t（h），按不同半径 r 分组绘制彩色曲线；统一实线，坐标系和文字保持黑色宋体，数据与主张不变。",
+      "affected_files": [
+        "06-figure/figure-manifest.json"
+      ],
+      "human_review": "用户已明确确认横轴使用时间、不同半径对应不同颜色线；等待论文阶段最终复核。",
+      "recorded_at": "2026-09-12T12:34:45+08:00"
+    },
+    {
+      "stage": "FIGURE",
+      "tool_or_model": "Codex + math-modeling-figure",
+      "purpose": "按用户要求调整 FIG-Q2-C-PROFILES 字体：全部坐标数字、含数字图例及标题 M3 使用 SimHei；中文说明继续使用 SimSun；数据、轴向和曲线样式不变。",
+      "affected_files": [
+        "06-figure/figure-manifest.json"
+      ],
+      "human_review": "用户已明确要求数字全部使用黑体；等待论文阶段最终复核。",
+      "recorded_at": "2026-09-12T12:44:07+08:00"
+    },
+    {
+      "stage": "FIGURE",
+      "tool_or_model": "Codex + math-modeling-figure",
+      "purpose": "按用户要求美观重绘主文图7 FIG-Q3-BRACKET-ZOOM：保留冻结6点数据、坐标范围、单位和主张；数据曲线统一实线，采样点使用高对比颜色与不同 marker，坐标轴、网格、图例、刻度和文字统一黑色宋体；输出 SVG、PDF、600 DPI PNG 及彩色/灰度预览，并完成源数据、程序和哈希核验。",
+      "affected_files": [
+        "06-figure/scripts/redraw_fig7.py",
+        "06-figure/contracts/FIG-Q3-BRACKET-ZOOM.json",
+        "06-figure/figures/FIG-Q3-BRACKET-ZOOM.svg",
+        "06-figure/figures/FIG-Q3-BRACKET-ZOOM.png",
+        "06-figure/figures/FIG-Q3-BRACKET-ZOOM.pdf",
+        "06-figure/previews/FIG-Q3-BRACKET-ZOOM-color.png",
+        "06-figure/previews/FIG-Q3-BRACKET-ZOOM-grayscale.png",
+        "06-figure/figure-manifest.json",
+        "06-figure/visual-audit.md",
+        "06-figure/handoff.json"
+      ],
+      "human_review": "本轮为图7视觉修订，不推进 PAPER；等待论文阶段最终复核。",
+      "recorded_at": "2026-09-12T12:44:19+08:00"
+    },
+    {
+      "stage": "FIGURE",
+      "tool_or_model": "Codex + math-modeling-figure",
+      "purpose": "按用户确认重绘 FIG-Q3-THRESHOLD-TRAJECTORY：数据曲线统一实线并用高对比颜色与 marker 区分；坐标轴、网格、图例、刻度和文字统一黑色宋体；删除无关图内备注并增加判据附近局部放大；数据、坐标范围和主张不变。",
+      "affected_files": [
+        "06-figure/scripts/redraw_fig6.py",
+        "06-figure/figures/FIG-Q3-THRESHOLD-TRAJECTORY.png",
+        "06-figure/figures/FIG-Q3-THRESHOLD-TRAJECTORY.svg",
+        "06-figure/figures/FIG-Q3-THRESHOLD-TRAJECTORY.pdf",
+        "06-figure/previews/FIG-Q3-THRESHOLD-TRAJECTORY-color.png",
+        "06-figure/previews/FIG-Q3-THRESHOLD-TRAJECTORY-grayscale.png",
+        "06-figure/figure-manifest.json",
+        "06-figure/handoff.json",
+        "06-figure/visual-audit.md"
+      ],
+      "human_review": "用户已明确确认本轮 FIGURE 视觉规范；不推进 PAPER，等待论文阶段最终复核。",
+      "recorded_at": "2026-09-12T12:48:00+08:00"
+    },
+    {
+      "stage": "FIGURE",
+      "tool_or_model": "Codex + math-modeling-figure",
+      "purpose": "按用户视觉约束重绘主文图8 FIG-Q3-TIME-CONV：保留30 s→15 s时间步细化数据、47.5654 s变化量和60 s验收目标；数据曲线使用高对比彩色实线与不同marker，非数据元素统一黑色，中文优先使用宋体。",
+      "affected_files": [
+        "06-figure/beautified-20260912/scripts/redraw_fig8.py",
+        "06-figure/beautified-20260912/contracts/FIG-Q3-TIME-CONV.json",
+        "06-figure/beautified-20260912/data-snapshots/FIG-Q3-TIME-CONV.csv",
+        "06-figure/beautified-20260912/figures/FIG-Q3-TIME-CONV.svg",
+        "06-figure/beautified-20260912/figures/FIG-Q3-TIME-CONV.png",
+        "06-figure/beautified-20260912/figures/FIG-Q3-TIME-CONV.pdf",
+        "06-figure/figures/FIG-Q3-TIME-CONV.svg",
+        "06-figure/figures/FIG-Q3-TIME-CONV.png",
+        "06-figure/figures/FIG-Q3-TIME-CONV.pdf",
+        "06-figure/previews/FIG-Q3-TIME-CONV-color.png",
+        "06-figure/previews/FIG-Q3-TIME-CONV-grayscale.png",
+        "06-figure/figure-manifest.json",
+        "06-figure/visual-audit.md",
+        "06-figure/handoff.json"
+      ],
+      "human_review": "用户已明确确认本轮视觉优先级；数据与主张未改变，图8重绘已纳入FIGURE交接，等待用户/团队最终复核，未推进后续阶段。",
+      "recorded_at": "2026-09-12T12:49:00+08:00"
+    },
+    {
+      "stage": "FIGURE",
+      "tool_or_model": "Codex + math-modeling-figure",
+      "purpose": "按用户反馈为主文图6补回黑色宋体标题“全域含水率随时间的变化”，调整上边距避免标题与图例重叠；数据、坐标范围、曲线样式和主张不变。",
+      "affected_files": [
+        "06-figure/scripts/redraw_fig6.py",
+        "06-figure/figures/FIG-Q3-THRESHOLD-TRAJECTORY.png",
+        "06-figure/figures/FIG-Q3-THRESHOLD-TRAJECTORY.svg",
+        "06-figure/figures/FIG-Q3-THRESHOLD-TRAJECTORY.pdf",
+        "06-figure/previews/FIG-Q3-THRESHOLD-TRAJECTORY-color.png",
+        "06-figure/previews/FIG-Q3-THRESHOLD-TRAJECTORY-grayscale.png",
+        "06-figure/figure-manifest.json",
+        "06-figure/visual-audit.md",
+        "06-figure/handoff.json"
+      ],
+      "human_review": "用户已明确要求补回标题；未推进 PAPER，等待最终复核。",
+      "recorded_at": "2026-09-12T12:52:00+08:00"
+    },
+    {
+      "stage": "FIGURE",
+      "tool_or_model": "Codex + math-modeling-figure",
+      "purpose": "按用户视觉约束仅重绘现有校正版 FIG-DATA-EXTENSION-WIDE：观测段和冻结延拓段统一使用实线，高对比颜色与不同 marker 区分；非数据元素统一黑色宋体；删除图内多余延拓起点标注；保留原始数据、坐标范围、单位和主张，并补齐 SVG、PDF、600 DPI PNG、彩色/灰度预览及哈希核验。",
+      "affected_files": [
+        "06-figure/corrected-20260912/scripts/render_extension_wide.py",
+        "06-figure/corrected-20260912/scripts/render_argument_figures.m",
+        "06-figure/corrected-20260912/contracts/FIG-DATA-EXTENSION-WIDE.json",
+        "06-figure/corrected-20260912/data-snapshots/FIG-DATA-EXTENSION-WIDE.csv",
+        "06-figure/corrected-20260912/figures/FIG-DATA-EXTENSION-WIDE.svg",
+        "06-figure/corrected-20260912/figures/FIG-DATA-EXTENSION-WIDE.png",
+        "06-figure/corrected-20260912/figures/FIG-DATA-EXTENSION-WIDE.pdf",
+        "06-figure/corrected-20260912/previews/FIG-DATA-EXTENSION-WIDE-color.png",
+        "06-figure/corrected-20260912/previews/FIG-DATA-EXTENSION-WIDE-grayscale.png",
+        "06-figure/corrected-20260912/figure-manifest.json",
+        "06-figure/corrected-20260912/visual-audit.md",
+        "06-figure/corrected-20260912/caption.md",
+        "06-figure/corrected-20260912/qa/FIG-DATA-EXTENSION-WIDE-qa.json",
+        "06-figure/handoff.json"
+      ],
+      "human_review": "本轮仅修订这一张图，不修改同目录其他图，不推进 PAPER；等待用户/团队最终复核。",
+      "recorded_at": "2026-09-12T13:01:46+08:00"
+    },
+    {
+      "stage": "FIGURE",
+      "tool_or_model": "Codex + math-modeling-figure",
+      "purpose": "按用户反馈仅修正 FIG-DATA-EXTENSION-WIDE 的图例对齐：统一两行的行中心、线段、marker 与文字锚点；数据、坐标范围、曲线、单位、颜色语义和主张不变，并重新生成 SVG、PDF、600 DPI PNG、彩色/灰度预览及哈希核验。",
+      "affected_files": [
+        "06-figure/corrected-20260912/scripts/render_extension_wide.py",
+        "06-figure/corrected-20260912/scripts/render_argument_figures.m",
+        "06-figure/corrected-20260912/figures/FIG-DATA-EXTENSION-WIDE.svg",
+        "06-figure/corrected-20260912/figures/FIG-DATA-EXTENSION-WIDE.png",
+        "06-figure/corrected-20260912/figures/FIG-DATA-EXTENSION-WIDE.pdf",
+        "06-figure/corrected-20260912/previews/FIG-DATA-EXTENSION-WIDE-color.png",
+        "06-figure/corrected-20260912/previews/FIG-DATA-EXTENSION-WIDE-grayscale.png",
+        "06-figure/corrected-20260912/previews/FIG-DATA-EXTENSION-WIDE-preview.png",
+        "06-figure/corrected-20260912/figure-manifest.json",
+        "06-figure/corrected-20260912/visual-audit.md",
+        "06-figure/corrected-20260912/qa/FIG-DATA-EXTENSION-WIDE-qa.json",
+        "06-figure/handoff.json"
+      ],
+      "human_review": "本轮仅修订这一张图的图例排版，不修改同目录其他图，不推进 PAPER；等待用户/团队最终复核。",
+      "recorded_at": "2026-09-12T13:11:00+08:00"
+    },
+    {
+      "stage": "FIGURE",
+      "tool_or_model": "Codex + math-modeling-figure",
+      "purpose": "按用户科研图重绘规范重绘图9至图22：仅读取冻结绘图快照，保持源数据、坐标范围、采样点、单位、数据主张和结论不变；统一宋体、黑色非数据元素、高对比彩色实线和不同 marker，输出 SVG、PDF、600 DPI PNG，并完成视觉、程序、数据和哈希核验。",
+      "affected_files": [
+        "06-figure/scripts/redraw_fig9_onward.py",
+        "06-figure/redraw-fig9-onward-20260912/figure-register.json",
+        "06-figure/redraw-fig9-onward-20260912/data-verification.json",
+        "06-figure/redraw-fig9-onward-20260912/render-record.json",
+        "06-figure/redraw-fig9-onward-20260912/qa/strict-figure-qa.log",
+        "06-figure/figures/FIG-Q3-SENS-ONEFACTOR.svg",
+        "06-figure/figures/FIG-Q3-SENS-ONEFACTOR.pdf",
+        "06-figure/figures/FIG-Q3-SENS-ONEFACTOR.png",
+        "06-figure/figures/FIG-Q3-COMBINED-BOUNDARY.svg",
+        "06-figure/figures/FIG-Q3-COMBINED-BOUNDARY.pdf",
+        "06-figure/figures/FIG-Q3-COMBINED-BOUNDARY.png",
+        "06-figure/figures/FIG-Q4-RADIUS-TIME.svg",
+        "06-figure/figures/FIG-Q4-RADIUS-TIME.pdf",
+        "06-figure/figures/FIG-Q4-RADIUS-TIME.png",
+        "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.svg",
+        "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.pdf",
+        "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.png",
+        "06-figure/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.svg",
+        "06-figure/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.pdf",
+        "06-figure/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.png",
+        "06-figure/figures/FIG-Q4-JACOBIAN-ABLATION.svg",
+        "06-figure/figures/FIG-Q4-JACOBIAN-ABLATION.pdf",
+        "06-figure/figures/FIG-Q4-JACOBIAN-ABLATION.png",
+        "06-figure/figures/FIG-Q4-COMBINED-BOUNDARY.svg",
+        "06-figure/figures/FIG-Q4-COMBINED-BOUNDARY.pdf",
+        "06-figure/figures/FIG-Q4-COMBINED-BOUNDARY.png",
+        "06-figure/figures/FIG-VAL-BALANCE-RESIDUAL.svg",
+        "06-figure/figures/FIG-VAL-BALANCE-RESIDUAL.pdf",
+        "06-figure/figures/FIG-VAL-BALANCE-RESIDUAL.png",
+        "06-figure/figures/FIG-Q1-GRID-CONV.svg",
+        "06-figure/figures/FIG-Q1-GRID-CONV.pdf",
+        "06-figure/figures/FIG-Q1-GRID-CONV.png",
+        "06-figure/figures/FIG-Q2-V02-MARGIN.svg",
+        "06-figure/figures/FIG-Q2-V02-MARGIN.pdf",
+        "06-figure/figures/FIG-Q2-V02-MARGIN.png",
+        "06-figure/figures/FIG-Q3-SPACE-CONV.svg",
+        "06-figure/figures/FIG-Q3-SPACE-CONV.pdf",
+        "06-figure/figures/FIG-Q3-SPACE-CONV.png",
+        "06-figure/figures/FIG-Q4-BRACKET-ZOOM.svg",
+        "06-figure/figures/FIG-Q4-BRACKET-ZOOM.pdf",
+        "06-figure/figures/FIG-Q4-BRACKET-ZOOM.png",
+        "06-figure/figures/FIG-Q4-SPACE-CONV.svg",
+        "06-figure/figures/FIG-Q4-SPACE-CONV.pdf",
+        "06-figure/figures/FIG-Q4-SPACE-CONV.png",
+        "06-figure/figures/FIG-Q4-DRY-SOLID-CONTINUITY.svg",
+        "06-figure/figures/FIG-Q4-DRY-SOLID-CONTINUITY.pdf",
+        "06-figure/figures/FIG-Q4-DRY-SOLID-CONTINUITY.png",
+        "06-figure/figure-manifest.json",
+        "06-figure/visual-audit.md",
+        "06-figure/handoff.json"
+      ],
+      "human_review": "本轮技术核验通过，待团队复核图9至图22正式视觉版本；不推进 APPENDIX 或 PAPER。",
+      "recorded_at": "2026-09-12T13:32:02+08:00"
     }
   ]
 }

@@ -1,0 +1,69 @@
+{
+  "tolerance_s": 60.0,
+  "checks": [
+    {
+      "implementation": "prescribed-T-baseline",
+      "question": "Q3",
+      "ladder": "spatial",
+      "last_level": "Y",
+      "last_adjacent_change_s": 459.13113133533625,
+      "within_60s": false
+    },
+    {
+      "implementation": "prescribed-T-baseline",
+      "question": "Q4",
+      "ladder": "spatial",
+      "last_level": "Y",
+      "last_adjacent_change_s": 183.84311330964556,
+      "within_60s": false
+    },
+    {
+      "implementation": "internal-temperature",
+      "question": "Q3",
+      "ladder": "spatial",
+      "last_level": "Y",
+      "last_adjacent_change_s": 459.3323962628201,
+      "within_60s": false
+    },
+    {
+      "implementation": "internal-temperature",
+      "question": "Q4",
+      "ladder": "spatial",
+      "last_level": "Y",
+      "last_adjacent_change_s": 184.10474402923137,
+      "within_60s": false
+    },
+    {
+      "implementation": "prescribed-T-baseline",
+      "question": "Q3",
+      "ladder": "time",
+      "last_level": "Z",
+      "last_adjacent_change_s": 59.655153263011016,
+      "within_60s": true
+    },
+    {
+      "implementation": "prescribed-T-baseline",
+      "question": "Q4",
+      "ladder": "time",
+      "last_level": "Z",
+      "last_adjacent_change_s": 44.505268642125884,
+      "within_60s": true
+    },
+    {
+      "implementation": "internal-temperature",
+      "question": "Q3",
+      "ladder": "time",
+      "last_level": "Z",
+      "last_adjacent_change_s": 59.11664280918194,
+      "within_60s": true
+    },
+    {
+      "implementation": "internal-temperature",
+      "question": "Q4",
+      "ladder": "time",
+      "last_level": "Z",
+      "last_adjacent_change_s": 44.52276100940071,
+      "within_60s": true
+    }
+  ]
+}

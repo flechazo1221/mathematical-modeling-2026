@@ -1,0 +1,17 @@
+{
+  "figure_id": "FIG-Q2-C-PROFILES",
+  "snapshot": "06-figure/beautified-20260912/data-snapshots/FIG-Q2-C-PROFILES.csv",
+  "snapshot_sha256": "a84c14955ec38a4de587203d6a9d3847678cdaf7b6850f6471eb1345410195ec",
+  "sources": [
+    {
+      "path": "04-compute/results/q2-samples.csv",
+      "sha256": "bf287f00761f6cba72f225c455d0ee1290d546874d135a7936ed8a4567dd4f21"
+    }
+  ],
+  "rows": 30,
+  "columns": [
+    "time_s",
+    "radius_cm",
+    "C_kg_per_kg"
+  ]
+}

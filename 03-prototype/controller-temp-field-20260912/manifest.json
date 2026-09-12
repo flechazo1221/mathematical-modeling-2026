@@ -1,0 +1,521 @@
+{
+  "inputs": [
+    {
+      "path": "02-design/H2-优化审计与方向.md",
+      "sha256": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33",
+      "bytes": 1979
+    },
+    {
+      "path": "02-design/handoff.json",
+      "sha256": "5f2579e4fdad88eb19f68cfad1de065046e186b27e55d0d86422576be3f7ccc0",
+      "bytes": 3990
+    },
+    {
+      "path": "02-design/候选模型方案.md",
+      "sha256": "ced11bfb105fad81a7e1690cbaa9b4edfcc077ab17dbda25924def4cfbc63c17",
+      "bytes": 15681
+    },
+    {
+      "path": "02-design/验证计划.json",
+      "sha256": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb",
+      "bytes": 3805
+    },
+    {
+      "path": "03-prototype/handoff.json",
+      "sha256": "8d4f161cc4b4b3b84f679273f23db5bf674f610754727efaf7a53f7635ff07e6",
+      "bytes": 6827
+    },
+    {
+      "path": "04-compute/src/formal_compute.py",
+      "sha256": "af3214f972eb874764323c76561025df1cc70f27d7f0985968b57b0b688b4644",
+      "bytes": 48642
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/formal_compute_revision.py",
+      "sha256": "b7cbae558d8b122b9fc6650bb1c8c8e82848188d005f29b16391523f469b9541",
+      "bytes": 48347
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/parameter-diagnosis-20260912.md",
+      "sha256": "56fe6f21958abfd3c4c45076552fac9f5387770271040ee30355e2b103793f46",
+      "bytes": 3321
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/README.md",
+      "sha256": "4d8149da64bf7f7d72d8ddad3031ec58aa386681347e6a923655fb1dcdb28fe7",
+      "bytes": 818
+    },
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d",
+      "bytes": 7372
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+      "bytes": 1837
+    },
+    {
+      "path": "decisions/H3-claims.json",
+      "sha256": "75fa934828f09a4f9d1c59d02e4d7570370fbde4f91d5b695e8e4a52132d7ccb",
+      "bytes": 5977
+    },
+    {
+      "path": "input/A题/附件/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586
+    },
+    {
+      "path": "input/A题/附件/附件2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "bytes": 11485
+    },
+    {
+      "path": "input/A题/附件/附件3/result1.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "bytes": 10073
+    },
+    {
+      "path": "input/A题/附件/附件3/result2.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "bytes": 10073
+    },
+    {
+      "path": "input/A题/附件/附件3/result3.xlsx",
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "bytes": 9345
+    },
+    {
+      "path": "input/A题/附件/附件3/result4.xlsx",
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+      "bytes": 9351
+    }
+  ],
+  "outputs": [
+    {
+      "path": "03-prototype/controller-temp-field-20260912/convergence.csv",
+      "sha256": "90df3ffa047549b9fd1271464c7c08bc4460d6f3883f468da82b449d00f19d52",
+      "bytes": 2794
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/environment.json",
+      "sha256": "b17f5d7955365267d7df2fe50d8cba1f97b084a7be844cdd3b662ce71218834c",
+      "bytes": 388
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/finalize_handoff.py",
+      "sha256": "a77390af7190cd2abc7dd7ace28fd4833c6a1b5a78a64764fe1814eb084da11f",
+      "bytes": 2536
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/H2-选择包.md",
+      "sha256": "c9f74e2a329d7fcf443fd19a2ae164bb89b8c0506ef93a101c0fdbfe52234a64",
+      "bytes": 4797
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/input-manifest.json",
+      "sha256": "f6e37093c8c783d1ba086968b75a1a88462c137be7b06760c397bc62ef8483d5",
+      "bytes": 3267
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q2-coarse/linear-balance-calls.json",
+      "sha256": "4df2e840643708dd86335e553efa609b835a7272bb5c3aea2af2d5547a969e55",
+      "bytes": 174381
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q2-coarse/metrics.json",
+      "sha256": "cd4616f16409339f61ea8842af8718aecf27fbac44709e81c2b077f760f79f9a",
+      "bytes": 1288
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q2-coarse/trajectory.csv",
+      "sha256": "6b33ac47423a337f0b22dda9a91567a7248ffbd6d875c0b0fb9c0baed4eea8ce",
+      "bytes": 2773
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q2-refined/linear-balance-calls.json",
+      "sha256": "31b15a5c3c973a621cfb658ff79eb0f9a6ee442411bdd2ae566ffc62612b81b9",
+      "bytes": 321575
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q2-refined/metrics.json",
+      "sha256": "22b380994260711389f430bfcf95a9f96860d05180c7c1f68f046a8e27de6577",
+      "bytes": 1287
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q2-refined/trajectory.csv",
+      "sha256": "706e3229ddf70f412839a98620dcefabc2bc6d808338e4c5a760cb39ad5d339d",
+      "bytes": 2708
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q2-spatial/linear-balance-calls.json",
+      "sha256": "ac6c9ca80f1aa48bc49c00781384f2c47d22fcd8cc33f39ff4cb9cc2f00d403f",
+      "bytes": 182244
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q2-spatial/metrics.json",
+      "sha256": "e885c840fb485ff0f179b5c7cd7a0f3a5b2e6aa14a28426ec1233f155a709eb2",
+      "bytes": 1289
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q2-spatial/trajectory.csv",
+      "sha256": "cf936ec4353a3775d7abbaf44e807f7f41f8a10689b00eb5bf587aab46680864",
+      "bytes": 2746
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q2-time/linear-balance-calls.json",
+      "sha256": "775df1bc86a6f6668c47f2a2ee2f3a330de2bab1c04eaba51de6146f6b766503",
+      "bytes": 309192
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q2-time/metrics.json",
+      "sha256": "38caf74c844fc06fe1a8f7d934ed3362b1f6b330e18de5c0dd5f034639e50502",
+      "bytes": 1286
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q2-time/trajectory.csv",
+      "sha256": "2f91526dc39cbac9cc3a009108c4ff44599d91be34b240441e7a6104bc8f12ab",
+      "bytes": 2761
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q3-coarse/linear-balance-calls.json",
+      "sha256": "a951aa8a468eccb63730d0d62c5de66cdb0541e71629d8a3ebf5ef5934edd833",
+      "bytes": 1292374
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q3-coarse/metrics.json",
+      "sha256": "4271fa961d2fd3849113467e0fc24ddede7e5ca93b11441288e837d073d000af",
+      "bytes": 1311
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q3-coarse/trajectory.csv",
+      "sha256": "9c96b04414cb08f6251b432c1324f8db9edc009bc6de79b226c8eb3f55b0c41d",
+      "bytes": 17790
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q3-refined/linear-balance-calls.json",
+      "sha256": "448c0d74ed861fdb5ff7eea78f6f3e6e0a70eecae9f2fe1730acd72292ea3e9d",
+      "bytes": 3014528
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q3-refined/metrics.json",
+      "sha256": "a1e0eeb9478f7782cc8cb9e9fb3bebbb20775ee87691f297e52a4839c7348bc9",
+      "bytes": 1312
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q3-refined/trajectory.csv",
+      "sha256": "07eec1bfa4e9e1d9cd9c755ea591ee4f659425a15dd6e6ab11d24ebaf0cb972f",
+      "bytes": 17287
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q3-spatial/linear-balance-calls.json",
+      "sha256": "1518163fe86d31985c3b9856a53ea7b30b5fb82c5ca37fe3dead21e653bb53b1",
+      "bytes": 1516630
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q3-spatial/metrics.json",
+      "sha256": "fdf08889a791e0f497478d5279a3b7167f97fe8a362d1d629f5a0a06d32585ae",
+      "bytes": 1313
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q3-spatial/trajectory.csv",
+      "sha256": "f6f66512ee3cd85a9eb62e4f16b11ec1ff31d85ef90a59d446d65fdceaedd9c4",
+      "bytes": 17460
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q3-time/linear-balance-calls.json",
+      "sha256": "3c319e22381b376874b8db0569bf1bd78a74b391c486370a534594af0e86d0ae",
+      "bytes": 2583567
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q3-time/metrics.json",
+      "sha256": "1f49c4d0fde6ba5a467c9f2185e5342427e2debc96aa734775d0b2c2c4a381e4",
+      "bytes": 1305
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q3-time/trajectory.csv",
+      "sha256": "b3e31fed05b443549e4bceb137e6ba5d169926f4bef8cbe911fafb3d6ab09d84",
+      "bytes": 17769
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q4-coarse/linear-balance-calls.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q4-coarse/metrics.json",
+      "sha256": "ccc6b3e14b996bcfe41ab886e19d6d6baf39e0bf119c7e8af6a18d58d2fb2f31",
+      "bytes": 1322
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q4-coarse/trajectory.csv",
+      "sha256": "3f8014a7d7add46cd5cd483c9e4ea0583c6624bcfbf66dabf843f6afa65cdfa9",
+      "bytes": 15863
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q4-refined/linear-balance-calls.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q4-refined/metrics.json",
+      "sha256": "cb35765604c7671ad8b47bf35b3271a5facdb8ee7b398e4f8aa0e54c9df788d4",
+      "bytes": 1331
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q4-refined/trajectory.csv",
+      "sha256": "f70d73ad172128cb63b7ea52c5d437e932a616b9e9f5f8daa9887ce25183c776",
+      "bytes": 15687
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q4-spatial/linear-balance-calls.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q4-spatial/metrics.json",
+      "sha256": "14ddacf272812ac318f986c1fb0a765c0ad8baefed5cbb1eb354dfbc1d660e73",
+      "bytes": 1328
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q4-spatial/trajectory.csv",
+      "sha256": "ad1d936ab31a055e1446c04e59aefbbd2d56d9194146afac5b48b4714a7c2a39",
+      "bytes": 15663
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q4-time/linear-balance-calls.json",
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "bytes": 2
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q4-time/metrics.json",
+      "sha256": "85d17a6188ca78a9874bc6f4a7fa43feaca9fbf406ea6f8069847a045d3f1a9f",
+      "bytes": 1328
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/Q4-time/trajectory.csv",
+      "sha256": "518e6e673798e27c0f17e269c5153ca347e6c8deac25e60125c07babd1d1eb4d",
+      "bytes": 15848
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-baseline/README.md",
+      "sha256": "2c7ce228a5b805c4fc140ea2b0485ce13d311f9f1421bbd5c4ee2940bc3dbc91",
+      "bytes": 438
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q2-coarse/linear-balance-calls.json",
+      "sha256": "ab989fae6f54a6fb949e247b0eff9bd5ecf1f7255f5e706c467e4c52a6811f52",
+      "bytes": 360910
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q2-coarse/metrics.json",
+      "sha256": "39b2c6389073d1c4570f0e846d0c0ad68fe8918fa088e788b0b713588883636a",
+      "bytes": 1357
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q2-coarse/trajectory.csv",
+      "sha256": "60b806dc83d2d79d69568a5228ee3a882cba3006adc7efb6304b22c3d38a42c9",
+      "bytes": 2776
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q2-refined/linear-balance-calls.json",
+      "sha256": "ad66d4530d960767fb53f909d8f79d40842d666c0bdb61434feb45408e9f12c5",
+      "bytes": 683415
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q2-refined/metrics.json",
+      "sha256": "6c850c2aaeeefcd0c505e877ca9300a44a4369a07448325c99591577191256f8",
+      "bytes": 1356
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q2-refined/trajectory.csv",
+      "sha256": "41269e225b2bebb27c5918939462044160140fe350c74036d1eea53996552fce",
+      "bytes": 2724
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q2-spatial/linear-balance-calls.json",
+      "sha256": "7520b5c83bb7d014922412aac61b4f00dd80f620dff92b6471aa0e4372d9b082",
+      "bytes": 364537
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q2-spatial/metrics.json",
+      "sha256": "bc89856c1198013f535cdf7d06a9c8db8a6064858faba31bea25a61db9c59def",
+      "bytes": 1362
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q2-spatial/trajectory.csv",
+      "sha256": "466eb4cb9e607a054d2bde8b91f94b533ef068269c94572312624a9424fc109a",
+      "bytes": 2763
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q2-time/linear-balance-calls.json",
+      "sha256": "25e65420a3d2cc156739e19733763fe47d35c00a350f0d0ef0ed87c2112a68d3",
+      "bytes": 656795
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q2-time/metrics.json",
+      "sha256": "f918895b18f7181ca33d69d5ef9b7bd3431bb2c9746a74e228ac7d811640e3c1",
+      "bytes": 1352
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q2-time/trajectory.csv",
+      "sha256": "3fe9eeefc10640d70f5e96e85e704c15540ea350096d678d810f47f9ad21f5a3",
+      "bytes": 2758
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q3-coarse/linear-balance-calls.json",
+      "sha256": "cd7cf2a6246f1e79e18dcc3693a7acf8cb6cb534c52adf74a4a6975a985ee94d",
+      "bytes": 2531876
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q3-coarse/metrics.json",
+      "sha256": "66584ae0901cbb7f377a425f35d695dcd1cb8941a84baf6678eb079aa59227d7",
+      "bytes": 1386
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q3-coarse/trajectory.csv",
+      "sha256": "54106281a88949b8b9145c6a3cd9ed4852e0b82deb3776c60058b9d255ac8132",
+      "bytes": 17856
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q3-refined/linear-balance-calls.json",
+      "sha256": "eee87f187c95fd79a40f10e6eac51c46001bb99e8eae1198ea87e0948a95fb9b",
+      "bytes": 5941700
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q3-refined/metrics.json",
+      "sha256": "088f435bb2f97f5908375f9945c19a6d2d9436468e404a7a9d5c39c6170d626a",
+      "bytes": 1384
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q3-refined/trajectory.csv",
+      "sha256": "27d83448f0dafb3d0a087649e606ce6e999fe111bb20af7ba617408932de32ce",
+      "bytes": 17480
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q3-spatial/linear-balance-calls.json",
+      "sha256": "85b110f39dd515499d1fc4be2e38192d61316f6833c3ad8d47f6c29ce0968f26",
+      "bytes": 3035680
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q3-spatial/metrics.json",
+      "sha256": "fbabc3d0e2e365ea473cdf1945c6e79ef70e00336867d114756af78212fecc36",
+      "bytes": 1386
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q3-spatial/trajectory.csv",
+      "sha256": "2d9da23aaccc12a57db65fa1346422dee353200f58ab129f7415dc65e124cfee",
+      "bytes": 17462
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q3-time/linear-balance-calls.json",
+      "sha256": "1aa8f514f6ec4ba283da3c86e10d1161c4c8dd3fab177d9d6ace6f358406d3a6",
+      "bytes": 5080855
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q3-time/metrics.json",
+      "sha256": "1527c8cfbf6882c2fa519a981acd6638f01e576034191cd7bf37bffc2b9814ca",
+      "bytes": 1384
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q3-time/trajectory.csv",
+      "sha256": "c4b4a9ec30be6a2f37893c876907a842d20d3b4526450e914e1d5bf7b90e95ca",
+      "bytes": 17812
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q4-coarse/linear-balance-calls.json",
+      "sha256": "8cf09b9add55405de03e9b14df1470d8f784a9f14aefc8b1aefa3ca95bc3d225",
+      "bytes": 1162295
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q4-coarse/metrics.json",
+      "sha256": "5517c684030de98fa5829f9123aa9643fa259f903105f0273a7d5cbb4fed6fa6",
+      "bytes": 1405
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q4-coarse/trajectory.csv",
+      "sha256": "b8a50d33895a9d69e335e6fb641a32040107029dcc2cf2e86b9ec05069b274c9",
+      "bytes": 15885
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q4-refined/linear-balance-calls.json",
+      "sha256": "a05b77fec93015f9fe1100e797a97e295f685f906548c6e8ec5648ff65fe0a20",
+      "bytes": 2687538
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q4-refined/metrics.json",
+      "sha256": "55be1cbf37609359823687f3233f609bb73ccebb3920e0b4e4ddd0e895000fbc",
+      "bytes": 1405
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q4-refined/trajectory.csv",
+      "sha256": "79b9c11ce046cdf5506bdf877993d6a4cb89398266db2385544e857fb2fedc86",
+      "bytes": 15720
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q4-spatial/linear-balance-calls.json",
+      "sha256": "6f78be21743a925ac2720896c30988f6d8b64a839811cdcab3923461de9677a6",
+      "bytes": 1439172
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q4-spatial/metrics.json",
+      "sha256": "e78d1f26c83fda8f4c52da854363e02c78319bf8d918c030d3d0767c4bd63a7f",
+      "bytes": 1402
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q4-spatial/trajectory.csv",
+      "sha256": "4f26a66e59d0dd932f790c5b71656d9badf235a0d56cefbbdfbf7862c16307e0",
+      "bytes": 15821
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q4-time/linear-balance-calls.json",
+      "sha256": "201b3937c49979234decba6d310b9b5a6ba6d10dd952849600cdd8d2decccd8e",
+      "bytes": 2425616
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q4-time/metrics.json",
+      "sha256": "d34916f0d8217909713e8410db0ecd9d60e3b0c221cdef9f7b507de835509ea7",
+      "bytes": 1399
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/Q4-time/trajectory.csv",
+      "sha256": "08b653ca66310238b1e49ce21d9a0f44b930ccc2958aa329ec5376683455e428",
+      "bytes": 15843
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/model-internal-temperature/README.md",
+      "sha256": "3214e2fb3c9619b6654380afaa71ea791de2a5f4a80fd7475f82350fc59080fb",
+      "bytes": 423
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/paired-comparison.csv",
+      "sha256": "34744980d82b1b6ab42b8cd1a6558cad24a7b196d5d95249a06b3e51ee68eaa1",
+      "bytes": 2737
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/run.log",
+      "sha256": "28aa4144be9ef54dcc2c99cd188ff2d280f4795441b58ddaf55b36c0b20aff47",
+      "bytes": 30343
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/run_protocol.py",
+      "sha256": "26fd8cdcc18b256ae7d49bf7c516d813bcee1370a23fcdf5468f2efa498ca2c4",
+      "bytes": 19342
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/validation-register.csv",
+      "sha256": "71c7d896c86109e70b4a5d93a9fa76f8aa1a8ef6aede1a654fc93bd1a00597a4",
+      "bytes": 1410
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/候选方案对比.md",
+      "sha256": "41ba4ae9fa4a44b8760d23f3654b33ec78bd58a7fde881d8be6ce57a20db9e2e",
+      "bytes": 9848
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/原始结果.csv",
+      "sha256": "44a9682805cb2a690efd43418815332f32d036daac332b2589c3fe6c69a6f7c7",
+      "bytes": 9751
+    }
+  ]
+}

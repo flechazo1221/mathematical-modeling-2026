@@ -1,0 +1,2 @@
+{"command": "04-compute\\revision-grid-conv-20260912\\grid_conv_revision.py --scope fields", "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]", "platform": "Windows-11-10.0.26200-SP0", "seed": 20260912}
+{"exit_code": 0, "elapsed_s": 3041.2769471000065, "field_rows": 30, "threshold_rows": 0, "time_rows": 9}

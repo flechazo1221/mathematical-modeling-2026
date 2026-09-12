@@ -1,20 +1,44 @@
 {
   "figure_id": "FIG-Q1-END-EFFECT",
   "snapshot": "06-figure/data-snapshots/FIG-Q1-END-EFFECT.csv",
-  "snapshot_sha256": "9db497f8ae95fcbdebe11afedf65c427ee567353f303c1f872390b768705626d",
+  "snapshot_sha256": "178c90b4878bc181df06ec83eb47bb039c3e9fffa848cef0fcd345c5f8244bd4",
   "sources": [
+    {
+      "path": "04-compute/src/formal_compute.py",
+      "sha256": "e76fb6167449df6111a4d56b253878b60d71b582b9ddc474ceaab22bfc179975"
+    },
     {
       "path": "04-compute/results/run-summary.csv",
       "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"
-    },
-    {
-      "path": "04-compute/results/convergence.csv",
-      "sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f"
     }
   ],
-  "rows": 2,
+  "rows": 62,
   "columns": [
-    "label",
-    "final_mean_C"
-  ]
+    "model",
+    "time_s",
+    "mean_C"
+  ],
+  "derived_metric": "solver record mean_C, volume-weighted mean dry-basis moisture",
+  "sampling": "every 60 s from t=0 to t=1800 s",
+  "configurations": {
+    "M1 一维基线": {
+      "rows": 31,
+      "nr": 122,
+      "nz": 1,
+      "dt_s": 0.5,
+      "duration_s": 1800,
+      "sample_every_s": 60.0,
+      "endpoint_mean_C": 2.293580557001432
+    },
+    "M2 二维主干": {
+      "rows": 31,
+      "nr": 93,
+      "nz": 54,
+      "dt_s": 0.5,
+      "duration_s": 1800,
+      "sample_every_s": 60.0,
+      "endpoint_mean_C": 2.2750348485276963
+    }
+  },
+  "endpoint_check": "matches 04-compute/results/run-summary.csv within 2e-10 kg/kg"
 }

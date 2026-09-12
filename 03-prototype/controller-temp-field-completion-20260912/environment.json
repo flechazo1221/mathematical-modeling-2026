@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.3.5",
+  "seed": 20260912,
+  "baseline_source": "04-compute/src/formal_compute.py",
+  "candidate_source": "04-compute/temperature-field-revision-20260912/formal_compute_revision.py",
+  "generated_at": "2026-09-12T18:48:17.751243+08:00",
+  "protocol": "run_completion.py",
+  "write_boundary": "03-prototype/controller-temp-field-completion-20260912"
+}

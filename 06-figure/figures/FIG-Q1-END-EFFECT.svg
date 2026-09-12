@@ -1,183 +1,70 @@
-<?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
-  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="388.26pt" height="274.333781pt" viewBox="0 0 388.26 274.333781" xmlns="http://www.w3.org/2000/svg" version="1.1">
- <metadata>
-  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-   <cc:Work>
-    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-09-11T23:57:19.790840</dc:date>
-    <dc:format>image/svg+xml</dc:format>
-    <dc:creator>
-     <cc:Agent>
-      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
-     </cc:Agent>
-    </dc:creator>
-   </cc:Work>
-  </rdf:RDF>
- </metadata>
- <defs>
-  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
- </defs>
- <g id="figure_1">
-  <g id="patch_1">
-   <path d="M 0 274.333781 
-L 388.26 274.333781 
-L 388.26 0 
-L 0 0 
-z
-" style="fill: #ffffff"/>
-  </g>
-  <g id="axes_1">
-   <g id="patch_2">
-    <path d="M 7.2 240.048 
-L 381.06 240.048 
-L 381.06 7.2 
-L 7.2 7.2 
-z
-" style="fill: #ffffff"/>
-   </g>
-   <g id="PathCollection_1">
-    <defs>
-     <path id="C0_0_0aab04d654" d="M 0 3.708099 
-C 0.983399 3.708099 1.926654 3.317391 2.622022 2.622022 
-C 3.317391 1.926654 3.708099 0.983399 3.708099 -0 
-C 3.708099 -0.983399 3.317391 -1.926654 2.622022 -2.622022 
-C 1.926654 -3.317391 0.983399 -3.708099 0 -3.708099 
-C -0.983399 -3.708099 -1.926654 -3.317391 -2.622022 -2.622022 
-C -3.317391 -1.926654 -3.708099 -0.983399 -3.708099 0 
-C -3.708099 0.983399 -3.317391 1.926654 -2.622022 2.622022 
-C -1.926654 3.317391 -0.983399 3.708099 0 3.708099 
-z
-"/>
-    </defs>
-    <g clip-path="url(#p793dd12e0f)">
-     <use xlink:href="#C0_0_0aab04d654" x="364.066364" y="123.624" style="fill: #0072b2; stroke: #0072b2"/>
-    </g>
-    <g clip-path="url(#p793dd12e0f)">
-     <use xlink:href="#C0_0_0aab04d654" x="24.193636" y="123.624" style="fill: #e69f00; stroke: #e69f00"/>
-    </g>
-   </g>
-   <g id="matplotlib.axis_1">
-    <g id="xtick_1">
-     <g id="line2d_1">
-      <defs>
-       <path id="mb3423ecf9a" d="M 0 0 
-L 0 3.5 
-" style="stroke: #000000; stroke-width: 0.8"/>
-      </defs>
-      <g>
-       <use xlink:href="#mb3423ecf9a" x="23.554995" y="240.048" style="stroke: #000000; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_1">
-      <text style="font-size: 7px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="23.554995" y="252.643625" transform="rotate(-0 23.554995 252.643625)">2.2750</text>
-     </g>
-    </g>
-    <g id="xtick_2">
-     <g id="line2d_2">
-      <g>
-       <use xlink:href="#mb3423ecf9a" x="69.370544" y="240.048" style="stroke: #000000; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_2">
-      <text style="font-size: 7px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="69.370544" y="252.643625" transform="rotate(-0 69.370544 252.643625)">2.2775</text>
-     </g>
-    </g>
-    <g id="xtick_3">
-     <g id="line2d_3">
-      <g>
-       <use xlink:href="#mb3423ecf9a" x="115.186093" y="240.048" style="stroke: #000000; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_3">
-      <text style="font-size: 7px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="115.186093" y="252.643625" transform="rotate(-0 115.186093 252.643625)">2.2800</text>
-     </g>
-    </g>
-    <g id="xtick_4">
-     <g id="line2d_4">
-      <g>
-       <use xlink:href="#mb3423ecf9a" x="161.001642" y="240.048" style="stroke: #000000; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_4">
-      <text style="font-size: 7px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="161.001642" y="252.643625" transform="rotate(-0 161.001642 252.643625)">2.2825</text>
-     </g>
-    </g>
-    <g id="xtick_5">
-     <g id="line2d_5">
-      <g>
-       <use xlink:href="#mb3423ecf9a" x="206.817191" y="240.048" style="stroke: #000000; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_5">
-      <text style="font-size: 7px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="206.817191" y="252.643625" transform="rotate(-0 206.817191 252.643625)">2.2850</text>
-     </g>
-    </g>
-    <g id="xtick_6">
-     <g id="line2d_6">
-      <g>
-       <use xlink:href="#mb3423ecf9a" x="252.63274" y="240.048" style="stroke: #000000; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_6">
-      <text style="font-size: 7px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="252.63274" y="252.643625" transform="rotate(-0 252.63274 252.643625)">2.2875</text>
-     </g>
-    </g>
-    <g id="xtick_7">
-     <g id="line2d_7">
-      <g>
-       <use xlink:href="#mb3423ecf9a" x="298.44829" y="240.048" style="stroke: #000000; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_7">
-      <text style="font-size: 7px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="298.44829" y="252.643625" transform="rotate(-0 298.44829 252.643625)">2.2900</text>
-     </g>
-    </g>
-    <g id="xtick_8">
-     <g id="line2d_8">
-      <g>
-       <use xlink:href="#mb3423ecf9a" x="344.263839" y="240.048" style="stroke: #000000; stroke-width: 0.8"/>
-      </g>
-     </g>
-     <g id="text_8">
-      <text style="font-size: 7px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="344.263839" y="252.643625" transform="rotate(-0 344.263839 252.643625)">2.2925</text>
-     </g>
-    </g>
-    <g id="text_9">
-     <text style="font-size: 8px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="194.13" y="265.098781" transform="rotate(-0 194.13 265.098781)">1800 s 平均干基含水率 (kg/kg)</text>
-    </g>
-   </g>
-   <g id="matplotlib.axis_2"/>
-   <g id="line2d_9">
-    <path d="M 364.066364 123.624 
-L 24.193636 123.624 
-" clip-path="url(#p793dd12e0f)" style="fill: none; stroke: #777777; stroke-width: 1.5; stroke-linecap: square"/>
-   </g>
-   <g id="patch_3">
-    <path d="M 7.2 240.048 
-L 7.2 7.2 
-" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="patch_4">
-    <path d="M 7.2 240.048 
-L 381.06 240.048 
-" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
-   </g>
-   <g id="text_10">
-    <text style="font-size: 8px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="194.13" y="105.624" transform="rotate(-0 194.13 105.624)">差值 0.0185457085</text>
-   </g>
-   <g id="text_11">
-    <text style="font-size: 8px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="364.066364" y="197.712" transform="rotate(-0 364.066364 197.712)">M1</text>
-   </g>
-   <g id="text_12">
-    <text style="font-size: 8px; font-family: 'Microsoft YaHei'; text-anchor: middle" x="24.193636" y="197.712" transform="rotate(-0 24.193636 197.712)">M2</text>
-   </g>
-  </g>
- </g>
- <defs>
-  <clipPath id="p793dd12e0f">
-   <rect x="7.2" y="7.2" width="373.86" height="232.848"/>
-  </clipPath>
- </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="6.7in" height="4.2in" viewBox="0 0 4020 2520">
+<rect width="100%" height="100%" fill="white"/>
+<rect x="400" y="260" width="3440" height="1790" fill="white" stroke="#222222" stroke-width="6"/>
+<text x="2120" y="2440" text-anchor="middle" font-family="SimHei,Microsoft YaHei,SimSun,sans-serif" font-size="96" font-weight="bold" fill="#000000">图2：一维与二维模型平均含水率随时间变化</text>
+<path d="M973 260V2050" stroke="#C7C7C7" stroke-width="2" stroke-dasharray="18 12"/>
+<path d="M1547 260V2050" stroke="#C7C7C7" stroke-width="2" stroke-dasharray="18 12"/>
+<path d="M2120 260V2050" stroke="#C7C7C7" stroke-width="2" stroke-dasharray="18 12"/>
+<path d="M2693 260V2050" stroke="#C7C7C7" stroke-width="2" stroke-dasharray="18 12"/>
+<path d="M3267 260V2050" stroke="#C7C7C7" stroke-width="2" stroke-dasharray="18 12"/>
+<path d="M400 1734H3840" stroke="#C7C7C7" stroke-width="2" stroke-dasharray="18 12"/>
+<path d="M400 1418H3840" stroke="#C7C7C7" stroke-width="2" stroke-dasharray="18 12"/>
+<path d="M400 1102H3840" stroke="#C7C7C7" stroke-width="2" stroke-dasharray="18 12"/>
+<path d="M400 786H3840" stroke="#C7C7C7" stroke-width="2" stroke-dasharray="18 12"/>
+<path d="M400 471H3840" stroke="#C7C7C7" stroke-width="2" stroke-dasharray="18 12"/>
+<path d="M400 2050V2032 M400 260V278" stroke="#222222" stroke-width="6"/>
+<text x="400" y="2120" text-anchor="middle" font-family="Arial,SimSun,sans-serif" font-size="78" fill="#222222">0</text>
+<path d="M973 2050V2032 M973 260V278" stroke="#222222" stroke-width="6"/>
+<text x="973" y="2120" text-anchor="middle" font-family="Arial,SimSun,sans-serif" font-size="78" fill="#222222">300</text>
+<path d="M1547 2050V2032 M1547 260V278" stroke="#222222" stroke-width="6"/>
+<text x="1547" y="2120" text-anchor="middle" font-family="Arial,SimSun,sans-serif" font-size="78" fill="#222222">600</text>
+<path d="M2120 2050V2032 M2120 260V278" stroke="#222222" stroke-width="6"/>
+<text x="2120" y="2120" text-anchor="middle" font-family="Arial,SimSun,sans-serif" font-size="78" fill="#222222">900</text>
+<path d="M2693 2050V2032 M2693 260V278" stroke="#222222" stroke-width="6"/>
+<text x="2693" y="2120" text-anchor="middle" font-family="Arial,SimSun,sans-serif" font-size="78" fill="#222222">1200</text>
+<path d="M3267 2050V2032 M3267 260V278" stroke="#222222" stroke-width="6"/>
+<text x="3267" y="2120" text-anchor="middle" font-family="Arial,SimSun,sans-serif" font-size="78" fill="#222222">1500</text>
+<path d="M3840 2050V2032 M3840 260V278" stroke="#222222" stroke-width="6"/>
+<text x="3840" y="2120" text-anchor="middle" font-family="Arial,SimSun,sans-serif" font-size="78" fill="#222222">1800</text>
+<path d="M400 2050H418 M3840 2050H3822" stroke="#222222" stroke-width="6"/>
+<text x="372" y="2072" text-anchor="end" font-family="Arial,SimSun,sans-serif" font-size="78" fill="#222222">2.24</text>
+<path d="M400 1734H418 M3840 1734H3822" stroke="#222222" stroke-width="6"/>
+<text x="372" y="1756" text-anchor="end" font-family="Arial,SimSun,sans-serif" font-size="78" fill="#222222">2.30</text>
+<path d="M400 1418H418 M3840 1418H3822" stroke="#222222" stroke-width="6"/>
+<text x="372" y="1440" text-anchor="end" font-family="Arial,SimSun,sans-serif" font-size="78" fill="#222222">2.36</text>
+<path d="M400 1102H418 M3840 1102H3822" stroke="#222222" stroke-width="6"/>
+<text x="372" y="1124" text-anchor="end" font-family="Arial,SimSun,sans-serif" font-size="78" fill="#222222">2.42</text>
+<path d="M400 786H418 M3840 786H3822" stroke="#222222" stroke-width="6"/>
+<text x="372" y="808" text-anchor="end" font-family="Arial,SimSun,sans-serif" font-size="78" fill="#222222">2.48</text>
+<path d="M400 471H418 M3840 471H3822" stroke="#222222" stroke-width="6"/>
+<text x="372" y="493" text-anchor="end" font-family="Arial,SimSun,sans-serif" font-size="78" fill="#222222">2.54</text>
+<path d="M400 260H418 M3840 260H3822" stroke="#222222" stroke-width="6"/>
+<text x="372" y="282" text-anchor="end" font-family="Arial,SimSun,sans-serif" font-size="78" fill="#222222">2.58</text>
+<polyline points="400,418 515,478 629,534 744,589 859,642 973,694 1088,745 1203,795 1317,843 1432,891 1547,939 1661,985 1776,1031 1891,1076 2005,1120 2120,1164 2235,1208 2349,1251 2464,1293 2579,1335 2693,1376 2808,1417 2923,1458 3037,1498 3152,1538 3267,1577 3381,1616 3496,1654 3611,1693 3725,1730 3840,1768" fill="none" stroke="#0072B2" stroke-width="7"/>
+<circle cx="400" cy="418" r="12" fill="#0072B2"/>
+<circle cx="973" cy="694" r="12" fill="#0072B2"/>
+<circle cx="1547" cy="939" r="12" fill="#0072B2"/>
+<circle cx="2120" cy="1164" r="12" fill="#0072B2"/>
+<circle cx="2693" cy="1376" r="12" fill="#0072B2"/>
+<circle cx="3267" cy="1577" r="12" fill="#0072B2"/>
+<circle cx="3840" cy="1768" r="12" fill="#0072B2"/>
+<circle cx="3840" cy="1768" r="12" fill="#0072B2"/>
+<polyline points="400,418 515,483 629,544 744,603 859,660 973,716 1088,770 1203,824 1317,876 1432,928 1547,979 1661,1029 1776,1078 1891,1126 2005,1174 2120,1221 2235,1267 2349,1313 2464,1359 2579,1403 2693,1448 2808,1492 2923,1535 3037,1578 3152,1620 3267,1662 3381,1704 3496,1745 3611,1785 3725,1826 3840,1866" fill="none" stroke="#D55E00" stroke-width="7" stroke-dasharray="16 10"/>
+<rect x="388" y="406" width="24" height="24" fill="#D55E00"/>
+<rect x="961" y="704" width="24" height="24" fill="#D55E00"/>
+<rect x="1535" y="967" width="24" height="24" fill="#D55E00"/>
+<rect x="2108" y="1209" width="24" height="24" fill="#D55E00"/>
+<rect x="2681" y="1436" width="24" height="24" fill="#D55E00"/>
+<rect x="3255" y="1650" width="24" height="24" fill="#D55E00"/>
+<rect x="3828" y="1854" width="24" height="24" fill="#D55E00"/>
+<rect x="3828" y="1854" width="24" height="24" fill="#D55E00"/>
+<text x="3055" y="370" font-family="SimSun,Microsoft YaHei,Arial,sans-serif" font-size="72" fill="#222222">M1 一维基线</text>
+<text x="3055" y="448" font-family="SimSun,Microsoft YaHei,Arial,sans-serif" font-size="72" fill="#222222">M2 二维主干</text>
+<path d="M2920 350H3025" stroke="#0072B2" stroke-width="7"/>
+<path d="M2920 428H3025" stroke="#D55E00" stroke-width="7" stroke-dasharray="16 10"/>
+<circle cx="2965" cy="350" r="12" fill="#0072B2"/>
+<rect x="2953" y="416" width="24" height="24" fill="#D55E00"/>
+<text x="2120" y="2238" text-anchor="middle" font-family="SimSun,Microsoft YaHei,Arial,sans-serif" font-size="88" fill="#222222">时间 t (s)</text>
+<text x="110" y="1260" text-anchor="middle" transform="rotate(-90 110 1260)" font-family="SimSun,Microsoft YaHei,Arial,sans-serif" font-size="88" fill="#222222">平均干基含水率 C (kg/kg)</text>
+<text x="3810" y="2020" text-anchor="end" font-family="Arial,Microsoft YaHei,sans-serif" font-size="58" fill="#444444">末值差 0.01855 kg/kg</text>
 </svg>

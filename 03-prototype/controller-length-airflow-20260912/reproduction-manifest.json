@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "task": "Q4 length shrinkage and external airflow candidate prototype",
+  "created_at": "2026-09-12T10:21:16.531389+00:00",
+  "seed": 20260912,
+  "project_root": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026",
+  "write_boundary": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\03-prototype\\controller-length-airflow-20260912",
+  "inputs": {
+    "attachment1": {
+      "path": "input/A题/附件/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    "attachment2": {
+      "path": "input/A题/附件/附件2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    }
+  },
+  "frozen_settings": {
+    "R_interpolation": "attachment-2 monotone PCHIP",
+    "environment_extension": "attachment-1 terminal one-hour mean after 4 h",
+    "R0_m": 0.02,
+    "L0_m": 0.25,
+    "rho_d0_kg_m3": 820.0,
+    "h_W_m2K": 25.0,
+    "hm_base_m_s": 8e-07,
+    "grid_base": {
+      "nr": 10,
+      "nz": 20,
+      "dt_s": 60.0,
+      "radial_strategy": "two-sided-local"
+    },
+    "threshold": 0.149999,
+    "report_resolution_s": 60,
+    "water_inventory": "q_w=rho_d*C; half-cylinder inventory consistently used"
+  },
+  "length_scenarios": {
+    "A": "alpha=0, L/L0=1; no axial shrink",
+    "B": "alpha=1, L/L0=R/R0; radius-proportional sensitivity only",
+    "C": "alpha=2, L/L0=(R/R0)^2; aggressive pre-registered envelope, not observed"
+  },
+  "airflow_correlation": {
+    "formula": "Sh=0.3+[0.62 Re^0.5 Sc^(1/3)/(1+(0.4/Sc)^(2/3))^0.25]*(1+(Re/282000)^(5/8))^(4/5)",
+    "mapped_effective_hm": "hm=hm_base*((Sh/d)/(Sh_ref/d_ref))",
+    "velocity_scenarios_m_s": [
+      0.0,
+      0.5,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "caveat": "relative scaling only; raw vapor Sh*Dv/d is not directly commensurable with frozen Cs-Cinf hm"
+  },
+  "radiation": {
+    "formula": "h_rad=epsilon*sigma*(T_sur+T_s)*(T_sur^2+T_s^2)",
+    "epsilon": 0.9,
+    "view_factor": 1.0,
+    "mode": "low-order linearized Robin extension; no CFD or radiative field solved"
+  },
+  "reproduction_commands": [
+    "\"C:\\Users\\Linza\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" 03-prototype/controller-length-airflow-20260912/model-q4-length-airflow/run_q4_sensitivity.py",
+    "\"C:\\Users\\Linza\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" 03-prototype/controller-length-airflow-20260912/model-q4-length-airflow/run_fine_length_controls.py"
+  ],
+  "comparison_rule": "Only rows with group=length_sensitivity, hm_fixed_interval, airflow_correlation or radiation_low_order are compared; convergence_control rows are not ranked.",
+  "outputs": [
+    "handoff.json",
+    "候选方案对比.md",
+    "原型结果.csv",
+    "H2-选择包.md",
+    "model-q4-length-airflow/*.json",
+    "results/scenario-results.csv",
+    "results/fine-length-controls.csv",
+    "results/trajectories-hourly.csv",
+    "results/failures.csv",
+    "logs/run.log",
+    "logs/fine-controls.log"
+  ],
+  "failures": []
+}

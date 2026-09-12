@@ -1,0 +1,12 @@
+﻿parameter,definition,unit,source,status
+C_total,"C_l+B, total dry-basis water concentration",kg/kg,题面定义; M2 local split,GIVEN_DEFINITION_WITH_ENGINEERING_SPLIT
+C_l,migratable liquid-water dry-basis concentration,kg/kg,M1/M2 engineering state variable; no phase-resolved attachment,ENGINEERING_ASSUMPTION
+B,immobile bound-water dry-basis reservoir,kg/kg,M2 engineering state variable; no phase-resolved attachment,ENGINEERING_ASSUMPTION
+bound_fraction,B(0)/C_total(0),1,"controlled values 0, 0.1, 0.2 requested by user",TOY_SENSITIVITY_NOT_MEASURED
+release_tau_s,first-order bound-water release time scale,s,"controlled values 1800, 7200, 21600 requested by user",TOY_SENSITIVITY_NOT_MEASURED
+L_v,latent heat per kg positive liquid surface gasification,J/kg,2.4e6 engineering scale borrowed as a placeholder; no material-specific DSC/enthalpy source,NOT_IDENTIFIED
+j_g,positive outward liquid-water Robin flux at outer/ends surfaces,kg/(m2 s),same frozen hm and Cs-Cinf boundary applied to C_l,ENGINEERING_PROXY
+rho_d,dry-solid density used in q_w=rho_d*C water inventory,kg/m3,650 fixed-domain convention; 820*(R0/R)^2 Q4 moving reference convention,CONVENTION_REQUIRES_VALIDATION
+rho/cp/k/D,state-dependent material laws,mixed,题目附录3/4 through frozen revision solver,GIVEN_BY_PROBLEM
+T_inf/C_inf,chamber temperature and moisture history,"degC, kg/kg","附件1, 241 data rows; source solver's terminal-window extension after 4 h",GIVEN_BY_ATTACHMENT
+R(t),Q4 radius history,m,"附件2, 145 data rows; source solver PCHIP",GIVEN_BY_ATTACHMENT

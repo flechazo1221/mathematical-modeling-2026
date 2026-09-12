@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "stage": "PROTOTYPE",
+  "status": "PASS",
+  "scope": "独立候选研究：Q4轴向长度收缩、外部气流传质与低阶辐射敏感性；不替代正式H2/H3结果",
+  "inputs": [
+    {
+      "path": "02-design/handoff.json",
+      "sha256": "5f2579e4fdad88eb19f68cfad1de065046e186b27e55d0d86422576be3f7ccc0"
+    },
+    {
+      "path": "02-design/候选模型方案.md",
+      "sha256": "ced11bfb105fad81a7e1690cbaa9b4edfcc077ab17dbda25924def4cfbc63c17"
+    },
+    {
+      "path": "02-design/验证计划.json",
+      "sha256": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb"
+    },
+    {
+      "path": "02-design/H2-优化审计与方向.md",
+      "sha256": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33"
+    },
+    {
+      "path": "02-design/contracts/model-q4-m1-reference.json",
+      "sha256": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5"
+    },
+    {
+      "path": "02-design/contracts/model-q4-m2-moving-fv.json",
+      "sha256": "c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f"
+    },
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"
+    },
+    {
+      "path": "decisions/H3-claims.json",
+      "sha256": "75fa934828f09a4f9d1c59d02e4d7570370fbde4f91d5b695e8e4a52132d7ccb"
+    },
+    {
+      "path": "03-prototype/handoff.json",
+      "sha256": "8d4f161cc4b4b3b84f679273f23db5bf674f610754727efaf7a53f7635ff07e6"
+    },
+    {
+      "path": "04-compute/src/formal_compute.py",
+      "sha256": "af3214f972eb874764323c76561025df1cc70f27d7f0985968b57b0b688b4644"
+    },
+    {
+      "path": "04-compute/results/q4-threshold-trajectory.csv",
+      "sha256": "b36f975078f97ccced81797dd27d4a89040132869a42a28108be776fc0365a6b"
+    },
+    {
+      "path": "05-evidence/handoff.json",
+      "sha256": "b61c068f47445447660535269ce6393ac7538a1d4a4e8a834eeb7978fb280826"
+    },
+    {
+      "path": "06-figure/handoff.json",
+      "sha256": "59250e4ce9bb0347ba09e3d9f904f242bced3e30df297ca896a284fe4115b23b"
+    },
+    {
+      "path": "input/A题/附件/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "input/A题/附件/附件2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "03-prototype/controller-length-airflow-20260912/候选方案对比.md",
+      "sha256": "a3e8330a4335284e31bc977b7267dfbde05b9ab1cac4ae4840d41e24ff9753de"
+    },
+    {
+      "path": "03-prototype/controller-length-airflow-20260912/原型结果.csv",
+      "sha256": "94037cb93014867a8b6413c1548f9957c030a7cccb04cdaeb8160863e3942da5"
+    },
+    {
+      "path": "03-prototype/controller-length-airflow-20260912/H2-选择包.md",
+      "sha256": "c07cc3bd275599b2663d91168e538545f4deb2d8df8d586d5839ce2a6d4237d4"
+    },
+    {
+      "path": "03-prototype/controller-length-airflow-20260912/reproduction-manifest.json",
+      "sha256": "db058c863fcc178ac7871483b608a423c6845c1ecc9943d5e1b8e95a3b145a51"
+    },
+    {
+      "path": "03-prototype/controller-length-airflow-20260912/model-q4-length-airflow/run_q4_sensitivity.py",
+      "sha256": "ed83bb306d97cb3bb2a4cfdab704b915f461db5d64af1861906e8b5d6fa2c4bc"
+    },
+    {
+      "path": "03-prototype/controller-length-airflow-20260912/model-q4-length-airflow/run_fine_length_controls.py",
+      "sha256": "dbd8b11407a542037c54b01c1968bd82ff9a9a8130169025a7c1b96b70bd7820"
+    },
+    {
+      "path": "03-prototype/controller-length-airflow-20260912/results/scenario-results.csv",
+      "sha256": "454db3fc612dbe96a826b7d3d0f0d6f3fae60509c2638d7f2ebb4c199fa89411"
+    },
+    {
+      "path": "03-prototype/controller-length-airflow-20260912/results/fine-length-controls.csv",
+      "sha256": "27cbc92d4fc6e0c2bd439952f3003585c3588170cbd17c30ab903079a3f34754"
+    },
+    {
+      "path": "03-prototype/controller-length-airflow-20260912/results/trajectories-hourly.csv",
+      "sha256": "ea841d719c0517ba40f7b22ceb31d059c15e4942221098ca5b057f1cd5023d42"
+    },
+    {
+      "path": "03-prototype/controller-length-airflow-20260912/results/failures.csv",
+      "sha256": "4c8a64275ad916b80982026a55f74ccf9c5cf455fcb73632531f0293cce13ce7"
+    },
+    {
+      "path": "03-prototype/controller-length-airflow-20260912/logs/run.log",
+      "sha256": "1d6a545854cb83a8341153c0f08e744255b43dbb77fa2e81d37681b5a12ab1fe"
+    },
+    {
+      "path": "03-prototype/controller-length-airflow-20260912/logs/fine-controls.log",
+      "sha256": "7756a36cfc8b014820f141167d3848c6fd9b862fa38452f3b34b2486d243239f"
+    }
+  ],
+  "frozen_decisions": [
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"
+    }
+  ],
+  "assumptions": [
+    "长度敏感性采用L/L0=(R/R0)^alpha，A/B/C分别为alpha=0/1/2；B为比例收缩敏感性，C为预注册的保守上包络，不是观测事实。",
+    "外部气流只通过相对Sherwood相关式缩放冻结hm；由于题面没有风速、姿态和边界层数据，结果是条件敏感性而非实测风场结论。",
+    "辐射采用线性化低阶Robin扩展，epsilon=0.9、view factor=1；未求解CFD或辐射场。",
+    "q_w=rho_d*C；半圆柱体积、暴露侧面和端面面积随R(t)、L(t)一致更新；干固体密度由几何守恒反推，仅用于闭合检查。",
+    "主比较沿用当前Q4一因素敏感性基准网格10x20、dt=60s，并以210x32作为长度方向分辨率控制。"
+  ],
+  "unknowns": [
+    "题面未提供轴向长度观测，无法从A/B/C识别真实L(t)。",
+    "题面未提供外部风速、流向、姿态、空气物性现场条件或有效传质边界层数据。",
+    "题面未提供表面/环境温度的独立辐射观测，低阶辐射结果只能作为量级敏感性。",
+    "内部含水率和温度观测缺失，不能用本原型判定模型优越性或进行参数校准。"
+  ],
+  "claims": [
+    "主比较14个情景全部真实运行完成，失败记录为空；水分库存与累计Robin边界通量相对误差最大约2.74e-9，几何、面积和干固体总量闭合至约1e-15量级。",
+    "A/B/C在210x32控制下的阈值时刻分别为183840s、183840s、183600s；C相对A提前240s，而A从10x20到210x32改变3120s，因此当前证据不支持轴向收缩方向升级为正式H2路线。",
+    "固定hm的0.8/1.0/1.2倍阈值时刻为189120/186960/185820s；hm及其边界条件对结果的影响明显大于A/B/C之间的当前差异。",
+    "相对气流相关式下，0.5/1/2/4m/s的阈值时刻为188700/186060/184740/184200s；0m/s在72h内未达到阈值。该排序仅是条件敏感性。",
+    "低阶辐射开关的阈值时刻为187260s与187200s，h_rad约5.59至6.90W/(m2K)，当前设置下影响约60s，不能据此宣称存在可识别辐射效应。"
+  ],
+  "evidence": [
+    "候选方案对比.md给出统一设置、A/B/C高分辨率控制、hm区间、气流相关式、辐射低阶对照及归因边界。",
+    "原型结果.csv提供情景级网格、阈值、边界、几何、面积、干固体和水分守恒指标；results目录保留逐小时轨迹、细网格长度控制和空失败表。",
+    "reproduction-manifest.json记录输入哈希、冻结设置、比较规则和可复现命令；logs目录保留两次运行日志。",
+    "H2-选择包.md按模型选择、优化方向和停止条件组织中性审阅材料，不写入TEAM_APPROVED或正式决策。"
+  ],
+  "warnings": [
+    "本独立目录的PROTOTYPE PASS只表示候选运行、闭合检查、报告和交接产物完成，不表示任何候选已经通过H2。",
+    "不得把C的保守上包络、气流相关式或低阶辐射扩展写成题面事实；B/C/气流/辐射只能作为论文敏感性或局限性，除非团队取得新数据并重开决策。",
+    "本任务未修改02-design、decisions、04-compute、05-evidence、06-figure或07-paper；正式Q4路线和既有结果保持不变。"
+  ],
+  "required_next_actions": [
+    "主控复核本handoff及reproduction-manifest中的输入/输出SHA-256。",
+    "团队审阅H2-选择包：当前建议保留正式Q4的A（无轴向收缩），将B/C作为敏感性；气流和辐射仅保留条件敏感性及数据需求说明。",
+    "若要把轴向收缩、气流或辐射纳入正式模型，先取得相应观测或边界条件，并在重新打开H2后补做空间/时间收敛、事件夹逼和边界闭合验证。"
+  ],
+  "completed_at": "2026-09-12T10:45:00+08:00"
+}

@@ -1,0 +1,40 @@
+{
+  "status": "BLOCKED",
+  "reason": "cost-bounded interruption after partial spatial refinement",
+  "planned_new_cases": 16,
+  "completed_new_cases": 5,
+  "completed_cases": [
+    {
+      "implementation": "prescribed-T-baseline",
+      "question": "Q3",
+      "level": "Z"
+    },
+    {
+      "implementation": "prescribed-T-baseline",
+      "question": "Q3",
+      "level": "W"
+    },
+    {
+      "implementation": "prescribed-T-baseline",
+      "question": "Q3",
+      "level": "V"
+    },
+    {
+      "implementation": "internal-temperature",
+      "question": "Q3",
+      "level": "Z"
+    },
+    {
+      "implementation": "internal-temperature",
+      "question": "Q3",
+      "level": "W"
+    }
+  ],
+  "interrupted_case": {
+    "implementation": "internal-temperature",
+    "question": "Q3",
+    "level": "V",
+    "mesh": "108x108"
+  },
+  "completed_at": "2026-09-12T22:05:47.895540+08:00"
+}

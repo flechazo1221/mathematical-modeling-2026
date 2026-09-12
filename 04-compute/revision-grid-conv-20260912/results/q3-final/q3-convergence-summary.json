@@ -1,0 +1,81 @@
+{
+  "revision": "Q3-CONV-20260912-v2",
+  "status": "PASS_CANDIDATE",
+  "question": "Q3 threshold event-time convergence",
+  "space": {
+    "levels": 5,
+    "nr": [
+      63,
+      93,
+      140,
+      175,
+      210
+    ],
+    "dt_s": 15.0,
+    "values_s": [
+      206914.14258538853,
+      206782.18053054292,
+      206711.22898934042,
+      206688.94230044854,
+      206676.14712249584
+    ],
+    "adjacent_changes_s": [
+      131.96205484561506,
+      70.95154120249208,
+      22.28668889187975,
+      12.795177952706581
+    ],
+    "adjacent_changes_relative_percent": [
+      0.06381693746871167,
+      0.03432398982357696,
+      0.010782719502953973,
+      0.006190931140748888
+    ],
+    "last_two_max_s": 22.28668889187975,
+    "monotone_decreasing": true,
+    "local_acceptance_s": 60.0,
+    "local_acceptance_pass": true
+  },
+  "time": {
+    "levels": 4,
+    "dt_s": [
+      60.0,
+      30.0,
+      15.0,
+      7.5
+    ],
+    "nr": 210,
+    "values_s": [
+      206818.71137262788,
+      206723.71251173422,
+      206676.14712249584,
+      206652.27618125523
+    ],
+    "adjacent_changes_s": [
+      94.99886089365464,
+      47.56538923838525,
+      23.870941240602406
+    ],
+    "adjacent_changes_relative_percent": [
+      0.04595450601162275,
+      0.023014455175707094,
+      0.011551259769171448
+    ],
+    "last_two_max_s": 47.56538923838525,
+    "monotone_decreasing_with_refinement": true,
+    "local_acceptance_s": 60.0,
+    "local_acceptance_pass": true
+  },
+  "diagnostics": {
+    "max_spatial_linear_relative_residual": 4.99999031292397e-11,
+    "max_spatial_normalized_balance_error": 8.593809077082077e-09,
+    "dt7p5_linear_relative_residual": 5.0000084815274755e-11,
+    "dt7p5_normalized_balance_error": 1.678222425970245e-08,
+    "finite_event_times": true
+  },
+  "pass_rule": "five spatial levels and four time levels; each sequence decreases; the last two adjacent event-time changes are <=60 s; residual and balance diagnostics remain finite and below formal thresholds",
+  "aborted_not_used": {
+    "label": "Q3-M3-L5-nr315-nz36",
+    "reason": "stopped after approximately 45 minutes without a DONE record; no result is used"
+  }
+}

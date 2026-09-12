@@ -1,0 +1,527 @@
+{
+  "inputs": [
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/run_completion.py",
+      "bytes": 53607,
+      "sha256": "1ee4f964afa0b2907e0c9c0e4cbe7113954c542b2f8b8b3bfd28a61db06fa3f1"
+    },
+    {
+      "path": "04-compute/src/formal_compute.py",
+      "bytes": 48642,
+      "sha256": "af3214f972eb874764323c76561025df1cc70f27d7f0985968b57b0b688b4644"
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/formal_compute_revision.py",
+      "bytes": 48347,
+      "sha256": "b7cbae558d8b122b9fc6650bb1c8c8e82848188d005f29b16391523f469b9541"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/H2-选择包.md",
+      "bytes": 5947,
+      "sha256": "7b654d4a846ef78330af104ee54aed2f2a047cec9624c8805082851930874602"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/handoff.json",
+      "bytes": 62058,
+      "sha256": "5683c504e810230f19de2afdf421d2676c9c9fa55cb2aba9c2fe0b920f408ec3"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/checks.json",
+      "bytes": 1818,
+      "sha256": "4318209ccd06f5347c3a1c33e80c0404ff93283f674f92dbc00648949c20fd02"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/environment.json",
+      "bytes": 484,
+      "sha256": "c3af253edab7978fb9ec2814fc150643dcbce13af05d30f1f73fe423434f6273"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/failures.csv",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-spatial-X/metrics.json",
+      "bytes": 1380,
+      "sha256": "83b139334db006bc37582125f02e0caf2fd79883965e68cd0d901c8e98735bc2"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-spatial-X/raw-result.json",
+      "bytes": 20993,
+      "sha256": "0fae50cdd705ed4675351cb366d7ba167c0856d237a2c9c0b9758d4e0640e008"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-spatial-X/state-arrays.npz",
+      "bytes": 5778,
+      "sha256": "288f2315af238899fba29c988b6fa067cddf5fd75ec18d1e4eb130f36ad315cb"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-spatial-X/trajectory.csv",
+      "bytes": 8806,
+      "sha256": "ceaa9ca5b1ccde5eb6def4af22f5dbb1aaa7983b91d1653047bba5d65d3b5de3"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-spatial-Y/metrics.json",
+      "bytes": 1380,
+      "sha256": "ab1ca48d7f6dd5c24e87a07d3d48107d4ca22454bfe17a1af9c1985096b547da"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-spatial-Y/raw-result.json",
+      "bytes": 20657,
+      "sha256": "af741289bb9c4c5fa6c3b5e9e9d4d259b34f105926fff540c93424ecda4c2a55"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-spatial-Y/state-arrays.npz",
+      "bytes": 9829,
+      "sha256": "6568cbd90cbeb092b96809dfb335a3607f57027117319d8a0db327853d01a6ad"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-spatial-Y/trajectory.csv",
+      "bytes": 8658,
+      "sha256": "0dea571d8f7729180574872ae4026cf9e9124380d75e1d76ead77181f0a6b2d0"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-time-X/metrics.json",
+      "bytes": 1374,
+      "sha256": "c5a26fe6ee371860a0b80c27ee98134dd30e860431052e89815aed1a9cb09112"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-time-X/raw-result.json",
+      "bytes": 21369,
+      "sha256": "dd277c0f8a7a77a4928e7aa4669c87a8fe71b84ba24df46b015ba3072e9b049a"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-time-X/state-arrays.npz",
+      "bytes": 1546,
+      "sha256": "7781d12bbcecc3107d1cb8f63558c83efdf766b4710291091d083e2c212b5cec"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-time-X/trajectory.csv",
+      "bytes": 8999,
+      "sha256": "063d2954082e2f43b12e4529ac952985334a1d452f7023cf1c659be5477c8718"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-time-Y/metrics.json",
+      "bytes": 1375,
+      "sha256": "ae4e5b408592853c20aa3bca3f5b0c4a551b11250dcadac8912b6c39d3423f97"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-time-Y/raw-result.json",
+      "bytes": 21037,
+      "sha256": "3df234d70e1d328235048b163879603627cd68b319a621aaa4679801d81fa772"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-time-Y/state-arrays.npz",
+      "bytes": 1543,
+      "sha256": "694e1365d4a361679224e215c16212712112d41fc1975727d8504f1fa32c2650"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-time-Y/trajectory.csv",
+      "bytes": 8855,
+      "sha256": "cb9f68e0281f6fe9e1069eaf21fdc9d51d2714246e57fd1943aed38826a97d68"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-time-Z/metrics.json",
+      "bytes": 1375,
+      "sha256": "c7d536250a5c1e8f5ee068c640e46a8d2fd7bf4bf33c57e730f9e05635892986"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-time-Z/raw-result.json",
+      "bytes": 21016,
+      "sha256": "fe53e1ce2845927f095e758031c48c3091a00a31432e26e05f2b9a7d7cc4da14"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-time-Z/state-arrays.npz",
+      "bytes": 1542,
+      "sha256": "605bd2905083ddc139edac6c1ebd0e1449e72d8b439f573d2e20a651ca4b8656"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q3-time-Z/trajectory.csv",
+      "bytes": 8835,
+      "sha256": "adb46b8047bf4762a2f498895119042c9cb35357df7ae4de9b40f48b8f0a895a"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-spatial-X/metrics.json",
+      "bytes": 1417,
+      "sha256": "53f83c157657ed14504e6c332bfd011304f63f7ee681d47dc62d68c6cd5ebb89"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-spatial-X/raw-result.json",
+      "bytes": 18785,
+      "sha256": "f86d9f8ebd02297b6a2f2505826f2fbb2138e662eda090058bb2865d92b49bda"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-spatial-X/state-arrays.npz",
+      "bytes": 5511,
+      "sha256": "232f8c404cae896d28ff323f3a8a09f8c936aac563fec8c569c6728a2d107477"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-spatial-X/trajectory.csv",
+      "bytes": 7883,
+      "sha256": "1f5977e538ef58ad9347bb353c08e4640e3881f5309f0a55c6515175a1678095"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-spatial-Y/metrics.json",
+      "bytes": 1417,
+      "sha256": "5b4a19ff80af7ed53d48143183dfe0f57a9f159901387abbb9cdc5d44e09c596"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-spatial-Y/raw-result.json",
+      "bytes": 18816,
+      "sha256": "517b0901512bc719ab478e75688dee5a4871407165c610877bd1edd8599b5011"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-spatial-Y/state-arrays.npz",
+      "bytes": 9320,
+      "sha256": "75eb3613d9f23df6781a277fae3abe071214b1c75df46c3bdcc102b7dfdd5a65"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-spatial-Y/trajectory.csv",
+      "bytes": 7915,
+      "sha256": "2ba9f2ed03a9c3cd08af300273fdc71890c19e7ec8b5ead2e4950d145992d1e9"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-time-X/metrics.json",
+      "bytes": 1409,
+      "sha256": "73845e902d15de76e7e3142d29d0653b27d472a0638c21a37f2b4faaaebc342c"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-time-X/raw-result.json",
+      "bytes": 18820,
+      "sha256": "dd6eea89977028582c291fcde8e46e219ae889530cbcc7816f46b295763af1ea"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-time-X/state-arrays.npz",
+      "bytes": 1508,
+      "sha256": "5d9e904ac3d2ce9ebff72a87f8001d435aa3a3fe5057d00fbd93a3b09fe38383"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-time-X/trajectory.csv",
+      "bytes": 7926,
+      "sha256": "d9c8cc905c15929c26f73311b3554ba57117256681eb78c282bbddd0c7302c27"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-time-Y/metrics.json",
+      "bytes": 1409,
+      "sha256": "6d813005cf8016cebd1bb071148b564fbbf6fbded19fdfc3b437ffe5da8323d7"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-time-Y/raw-result.json",
+      "bytes": 18803,
+      "sha256": "1ebfcecd89bfe80af9d65ffe61d9cc204a65696895ba6899d1339dc7a970ec61"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-time-Y/state-arrays.npz",
+      "bytes": 1508,
+      "sha256": "831b45af5d9921f44a7d74abeea9fcf17001653c823076f39bdf3714415b087e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-time-Y/trajectory.csv",
+      "bytes": 7911,
+      "sha256": "1da31ca3be37f36a8fe3d55255d17b79783ca4b627e2167b82ad36a5ae2567f0"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-time-Z/metrics.json",
+      "bytes": 1413,
+      "sha256": "81c6335b2b27698adb9b10e7a932e6914e143f28f43400a254534688eba236bc"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-time-Z/raw-result.json",
+      "bytes": 18806,
+      "sha256": "67da75a500a4728e2baba6522efec5592fec3de357947bd24bfab447e91bc0bd"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-time-Z/state-arrays.npz",
+      "bytes": 1503,
+      "sha256": "450f3804389e238a2681deed6f96a9d7a71c22882a694466e33603b49dd16864"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-baseline/Q4-time-Z/trajectory.csv",
+      "bytes": 7909,
+      "sha256": "feab43ac9885af447657375401262fdcb347a0b3ca6708de4091a44a68d10e29"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-spatial-X/energy-groups.csv",
+      "bytes": 192703,
+      "sha256": "f9550399ef05a4eaa5059f64b1d8c8546a6cc0b985a5acf96cb64a914aed9ab6"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-spatial-X/metrics.json",
+      "bytes": 1417,
+      "sha256": "47a6cc29c5c41ddd10a73457f32bdbdf0b0f8ca65fc759d6aecb52e5d318fc16"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-spatial-X/raw-result.json",
+      "bytes": 21105,
+      "sha256": "04426212c25978f05238d8ec815c137ecb6460502d2b597e5be1aabcb04e835e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-spatial-X/state-arrays.npz",
+      "bytes": 7094,
+      "sha256": "b2adb2e00eef7c97d0ead0c50b37467f5a9d703d9f100eafa52f379d057425b2"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-spatial-X/trajectory.csv",
+      "bytes": 8800,
+      "sha256": "07cd9a21973e342c00f6abf5c283de9293b78fa7ffecaeb6dd6b85da4ef7b468"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-spatial-Y/energy-groups.csv",
+      "bytes": 192499,
+      "sha256": "f16cfe53e261ba62d4342c01567594855024f1d63770bc9795da170f1e88f243"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-spatial-Y/metrics.json",
+      "bytes": 1418,
+      "sha256": "82d8e8a5d1f089ee70020f17a759e055425eea144fffac66d7582f0ed950e65b"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-spatial-Y/raw-result.json",
+      "bytes": 21118,
+      "sha256": "b30b0b263692afcdb8d771f4e3063f57fc738c2d00092416fa736bb0b81ef603"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-spatial-Y/state-arrays.npz",
+      "bytes": 12615,
+      "sha256": "4cd93189a48da3e755f9ee2c6a3689af50aa0e673d50e0e6bae2ec7cd61a322e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-spatial-Y/trajectory.csv",
+      "bytes": 8811,
+      "sha256": "a5b083cd9ad018217ab78bb5b9afd2a6bc600d0b3b7563e55c89451949eae52b"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-time-X/energy-groups.csv",
+      "bytes": 370728,
+      "sha256": "e1cfdb5dce351703a833de351e7e3b6f16d4722c985bf1831c06d3a9a4b41353"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-time-X/metrics.json",
+      "bytes": 1415,
+      "sha256": "495e7021b97adf94020b81affc303ac6fb2e287c3dc75826ec92d8ff95cabc42"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-time-X/raw-result.json",
+      "bytes": 21517,
+      "sha256": "12ddfe47ef6c362f1237bf64235ae58d6da5abb710b5985474d594e0a10f3479"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-time-X/state-arrays.npz",
+      "bytes": 1651,
+      "sha256": "6885ca2b29533ee2f3e20fa0a628e9f5ffe1adedb24f8c99d51631bd762615bb"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-time-X/trajectory.csv",
+      "bytes": 9028,
+      "sha256": "4d850fcc423ee7b51b6eb5a6ea470fa51a3a02464dec9755103c1959b00d2896"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-time-Y/energy-groups.csv",
+      "bytes": 566335,
+      "sha256": "c7142cec17d1a8516e60c5d5eb8e85b7caf566930fb3fb9a25821b95590b676a"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-time-Y/metrics.json",
+      "bytes": 1418,
+      "sha256": "955350166ec9a2abcc11cd485bdf22f86cc969d6fb1872446a46236adca6cc3b"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-time-Y/raw-result.json",
+      "bytes": 21471,
+      "sha256": "076c8cec0265eb1863bf787be7eb65c99f103f1ed1d61c58b14c66818ccab25a"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-time-Y/state-arrays.npz",
+      "bytes": 1700,
+      "sha256": "267e881f8d5e3baff4585e4864675219c6085c03ff10032d0f87a63e6a5af927"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-time-Y/trajectory.csv",
+      "bytes": 8981,
+      "sha256": "8f3c34dea241ed5f6bd1519b52c75e06e8650b78f7ddc4f1257e3b06e0f33d5f"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-time-Z/energy-groups.csv",
+      "bytes": 2175623,
+      "sha256": "2adf9de6b6efb9176e895a84546afcf2c88d0af0d4fb1c294b092a06b0ae5490"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-time-Z/metrics.json",
+      "bytes": 1415,
+      "sha256": "b358533d878d2aadb51ffa4bce5b2a4765b865a185ec7e2e35987ca42de2079f"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-time-Z/raw-result.json",
+      "bytes": 21486,
+      "sha256": "d718ae7367ad4f097d5253f21b1bc8a9af17f1865ae7a99cc769dd142ac964dd"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-time-Z/state-arrays.npz",
+      "bytes": 1713,
+      "sha256": "2cd6bd07d17077ba2d0c986604cfcbdc24008477295457a4e9af55c262147ee8"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q3-time-Z/trajectory.csv",
+      "bytes": 8997,
+      "sha256": "302920202216f53cf87500820d1ba281eea3b910483fda870f8cc9fd3ee5830a"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-spatial-X/energy-groups.csv",
+      "bytes": 180758,
+      "sha256": "68a819c5d7768eafa415b5ae0a0b780deceea48023c437bb35a3be00d03e302b"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-spatial-X/metrics.json",
+      "bytes": 1457,
+      "sha256": "d0a3452d30bd4aada4f5d88e5b76aaa23b8b545ed94256701c96b2ffed61cdc0"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-spatial-X/raw-result.json",
+      "bytes": 18900,
+      "sha256": "126d1c9dea0110eb161417cddce251b69464c468226b4c01cc6eddcf1f3436c5"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-spatial-X/state-arrays.npz",
+      "bytes": 6895,
+      "sha256": "7af63164f6f7a8d84f7d3cca6b89f38a5bc6c47150ce45def7c71e3d1704cb1e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-spatial-X/trajectory.csv",
+      "bytes": 7877,
+      "sha256": "62308d1077734993da125d8782a3f6a9e8f7c5157e9bdea1395f0b8cd16e3e64"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-spatial-Y/energy-groups.csv",
+      "bytes": 180755,
+      "sha256": "665d38646d489abc100cf1d13a47d6c03a9645fb371048237b5506c1f02f4d30"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-spatial-Y/metrics.json",
+      "bytes": 1457,
+      "sha256": "dd801cc6ccb8ee70b213e5d801c827030be9ded4cdbb4797d4b700dd2ec3011d"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-spatial-Y/raw-result.json",
+      "bytes": 18893,
+      "sha256": "7752016618c846cfbfe5f84143f70cb2a7a8d8659db959e49050ed39b9b49bdd"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-spatial-Y/state-arrays.npz",
+      "bytes": 12427,
+      "sha256": "8c746cad041a1378f99342c664871cc043daa1ca6c5f1abded250f7a7d455bc1"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-spatial-Y/trajectory.csv",
+      "bytes": 7871,
+      "sha256": "92d2c79517c97b67edd0ccca31a1b2fa2ece18b5e971c6acf788173b8168a133"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-time-X/energy-groups.csv",
+      "bytes": 393426,
+      "sha256": "f9d266486d6e242507cbb0316733847b4bc9976ef9439341579ec9dd332f9e0f"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-time-X/metrics.json",
+      "bytes": 1451,
+      "sha256": "f9a2c630a4094fc8619e193ed32d9d6bd018a6e16dfa23aa317074330564f224"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-time-X/raw-result.json",
+      "bytes": 18944,
+      "sha256": "765a1313c5655214c581131216850b3594bf4b0e7d1fd3e77d2571823c0245b9"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-time-X/state-arrays.npz",
+      "bytes": 1633,
+      "sha256": "579b983510349b178b8dcbf88b3a6c294f89b018f1235d99061dd5887390a801"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-time-X/trajectory.csv",
+      "bytes": 7931,
+      "sha256": "c7d8fcc3f7b69ab24dcb8b6d7ac3baa8108c2ec2f67b0cb7cce72da19210c0c4"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-time-Y/energy-groups.csv",
+      "bytes": 1191270,
+      "sha256": "5ba95b872b2e2fda15f830573257947fe74b9fbb4035c5b043fb9e6e018c1dbe"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-time-Y/metrics.json",
+      "bytes": 1451,
+      "sha256": "16bfd43118ce3169a8af1c002756a1a7c156eea21a3d1af48142e5767327ae32"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-time-Y/raw-result.json",
+      "bytes": 18934,
+      "sha256": "15c447650ebfcd5f6b9f8eb39314c69a85a81b35e755ebc92d07e8006925a496"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-time-Y/state-arrays.npz",
+      "bytes": 1624,
+      "sha256": "46eaab56c190428f2edd8f674fbd30d285cac90aac0d16bdda01fc9be288d9c4"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-time-Y/trajectory.csv",
+      "bytes": 7921,
+      "sha256": "a49cffee594963b897d4b8cf0f72ecf89dce7c15aa165ea1a6a19e13e4d7ef70"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-time-Z/energy-groups.csv",
+      "bytes": 2148057,
+      "sha256": "75de90c8f5b66642e496fd4b02ae15d8fc9889c370e95b8d270a417ffd626714"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-time-Z/metrics.json",
+      "bytes": 1455,
+      "sha256": "ef912075c054c307f289981a863c2937d82473e3498bfcae3f04a6bfaf6938ed"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-time-Z/raw-result.json",
+      "bytes": 18964,
+      "sha256": "f4fd47f9fbe03d534a99727ad3020477c1ebfdae804d90cc781cc6e6f96afa36"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-time-Z/state-arrays.npz",
+      "bytes": 1647,
+      "sha256": "764de88d358bdb19eafdd01a9b63fc7b2b93b002d42799cb95510e10a9f27811"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/model-internal-temperature/Q4-time-Z/trajectory.csv",
+      "bytes": 7947,
+      "sha256": "9e34e362b8126e1112a43d297f3a27def5186af5bd03c6c45260c8e944df64ff"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/raw-results.csv",
+      "bytes": 20946,
+      "sha256": "cb16fd80777f8ef587cf877c31fcb77478addb6d40fb455d7faaf896b32c93f3"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/refinement-report.md",
+      "bytes": 4489,
+      "sha256": "b93b0681bcaaac9654dc19cf239e2af1cf17d639bbcd245ea03f6c3983357fa7"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/run.log",
+      "bytes": 56160,
+      "sha256": "f3c3d95b62fb6f97177784be942d5163e2c83a866030515b184a5d13556b81be"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/run_refinement.py",
+      "bytes": 18393,
+      "sha256": "4ea901bcb040487f17dabe4679b5436ac8c24e44d8b7c7687bc447405c62fa2d"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/space-convergence.csv",
+      "bytes": 10640,
+      "sha256": "18334c8fd24a02c89283988079bdc72704d38d2c2eacb78a0483923cfd982a83"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-refinement-20260912/time-convergence.csv",
+      "bytes": 12432,
+      "sha256": "4519c994c6a034d6c5cd1f03758a4f650745b8a4dc1b4f8c8a27b3c920a6ad5f"
+    }
+  ],
+  "handoff_sha256": "4f7d6b6916c3095cceebec37714c337085aa1d3edaa83a8fcc59bce0adbb83df"
+}

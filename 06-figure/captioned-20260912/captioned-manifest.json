@@ -1,0 +1,427 @@
+{
+  "schema_version": "captioned-figures-1.0",
+  "status": "DRAFT_DERIVATIVE",
+  "note": "Presentation-only derivative; canonical figure data and handoffs were not overwritten.",
+  "caption_style": {
+    "font": "SimHei",
+    "weight": "bold",
+    "color": "black",
+    "alignment": "center",
+    "position": "below-image"
+  },
+  "n_figures": 18,
+  "figures": [
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\user-selected-20260912\\figures\\FIG-Q2-C-PROFILES.png",
+      "source_sha256": "f8edb5f95d100e50d88083f43be5ddbc3b53916431321169d1a1ce81c6ae5b95",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q2-C-PROFILES.png",
+      "output_sha256": "2429d2c925bd8a1bee9735434ae6f084578f76a77c6e3c3561705c59fd4b1415",
+      "source_size": [
+        4140,
+        3090
+      ],
+      "output_size": [
+        4140,
+        3090
+      ],
+      "caption": "图1：不同时刻的径向含水率分布",
+      "font": "SimHei (embedded in supplied image)",
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "preserved_user_supplied_caption": true,
+      "figure_id": "FIG-Q2-C-PROFILES",
+      "source_group": "user-selected-20260912"
+    },
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\beautified-20260912\\figures\\FIG-Q1-C-FIELD.png",
+      "source_sha256": "bfda2cca846758b03c54d3f10a57b211881c0a1fa41b2066df5450ff383958be",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q1-C-FIELD.png",
+      "output_sha256": "af68c4c3f5ecbd8d174ea34906810399f4442a73e677e7e25ed1b36cb27f32c3",
+      "source_size": [
+        4140,
+        3090
+      ],
+      "output_size": [
+        4140,
+        3254
+      ],
+      "caption": "图2：含水率的径向非均匀性",
+      "font": "SimHei",
+      "font_path": "C:\\Windows\\Fonts\\simhei.ttf",
+      "font_size_px": 104,
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "figure_id": "FIG-Q1-C-FIELD",
+      "source_group": "beautified-20260912"
+    },
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\beautified-20260912\\figures\\FIG-Q1-END-EFFECT.png",
+      "source_sha256": "81809052e11f4f0d5454119dfe7b9ffa5827593f2a080665f922ee8c621935ff",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q1-END-EFFECT.png",
+      "output_sha256": "c16e050e1ada377eca6dee2b17833bcf87fdc71423ad4590914e8baa9a1bf37d",
+      "source_size": [
+        3840,
+        2730
+      ],
+      "output_size": [
+        3840,
+        2884
+      ],
+      "caption": "图3：二维端面效应对总体含水率的影响",
+      "font": "SimHei",
+      "font_path": "C:\\Windows\\Fonts\\simhei.ttf",
+      "font_size_px": 96,
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "figure_id": "FIG-Q1-END-EFFECT",
+      "source_group": "beautified-20260912"
+    },
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\user-selected-20260912\\figures\\FIG-Q2-MODEL-ABLATION.png",
+      "source_sha256": "99a76426f68cefe1a754879f837c7dacc85fb624cda5deb51e2f25ebc59ea913",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q2-MODEL-ABLATION.png",
+      "output_sha256": "7297c6141f85f290285d3bc1152f93df5003374adfa88cdf9aa7251f9e67b47a",
+      "source_size": [
+        4140,
+        2760
+      ],
+      "output_size": [
+        4140,
+        2760
+      ],
+      "caption": "图4：三种模型在 3 h 时的全域最大干基含水率对比",
+      "font": "SimHei (embedded in supplied image)",
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "preserved_user_supplied_caption": true,
+      "figure_id": "FIG-Q2-MODEL-ABLATION",
+      "source_group": "user-selected-20260912"
+    },
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\beautified-20260912\\figures\\FIG-Q2-GRID-CONV.png",
+      "source_sha256": "be908212358e8a5c62c44cb3128b7725ef7d7cd2e4cebfbbb0aefc969cd588fa",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q2-GRID-CONV.png",
+      "output_sha256": "0f452a668e42419073ed9033b284f88e0e07ef7837a9638906c704d7f18048ff",
+      "source_size": [
+        3906,
+        2866
+      ],
+      "output_size": [
+        3906,
+        3021
+      ],
+      "caption": "图5：M3 终值的网格收敛性",
+      "font": "SimHei",
+      "font_path": "C:\\Windows\\Fonts\\simhei.ttf",
+      "font_size_px": 98,
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "figure_id": "FIG-Q2-GRID-CONV",
+      "source_group": "beautified-20260912"
+    },
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\figures\\FIG-Q3-THRESHOLD-TRAJECTORY.png",
+      "source_sha256": "e9cda2b02cf5d6a28267cd30f9f5f3ad899af0225f22be40a343195b143c0ef9",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q3-THRESHOLD-TRAJECTORY.png",
+      "output_sha256": "61c4035436d1f48a95dba44eb0c05f51d1622cd5b590eeb480ac13ddac610e18",
+      "source_size": [
+        3921,
+        2850
+      ],
+      "output_size": [
+        3921,
+        3005
+      ],
+      "caption": "图6：全域最大含水率接近判据的过程",
+      "font": "SimHei",
+      "font_path": "C:\\Windows\\Fonts\\simhei.ttf",
+      "font_size_px": 98,
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "figure_id": "FIG-Q3-THRESHOLD-TRAJECTORY",
+      "source_group": "canonical-06-figure"
+    },
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\figures\\FIG-Q3-BRACKET-ZOOM.png",
+      "source_sha256": "e10e6851f4f189831af1b11c8ad28c381c7240eb4f12123cfd7cb3ad09ce36e6",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q3-BRACKET-ZOOM.png",
+      "output_sha256": "b63d913939cfdf96e904d832020a0d072426b672551b6161c0fe565c123f7bbd",
+      "source_size": [
+        4020,
+        2520
+      ],
+      "output_size": [
+        4020,
+        2679
+      ],
+      "caption": "图7：插值时刻的前后点夹逼",
+      "font": "SimHei",
+      "font_path": "C:\\Windows\\Fonts\\simhei.ttf",
+      "font_size_px": 100,
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "figure_id": "FIG-Q3-BRACKET-ZOOM",
+      "source_group": "canonical-06-figure"
+    },
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\figures\\FIG-Q3-TIME-CONV.png",
+      "source_sha256": "611e1a2ab9e9b0ba2954935993fc10d1abcbd735ed486db2be66c88b372212f3",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q3-TIME-CONV.png",
+      "output_sha256": "2ee26acdf6dadf4f0f8604caa49eebbd6db90825299f6d4d2d3672f987ffb29f",
+      "source_size": [
+        3856,
+        1911
+      ],
+      "output_size": [
+        3856,
+        2064
+      ],
+      "caption": "图8：时间步细化结果",
+      "font": "SimHei",
+      "font_path": "C:\\Windows\\Fonts\\simhei.ttf",
+      "font_size_px": 96,
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "figure_id": "FIG-Q3-TIME-CONV",
+      "source_group": "canonical-06-figure"
+    },
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\figures\\FIG-Q3-SENS-ONEFACTOR.png",
+      "source_sha256": "7933905b91b5f57b57f412a7f00a685899757606cdb1f4cbe497abea518c3b7f",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q3-SENS-ONEFACTOR.png",
+      "output_sha256": "731697ada34d5051c85531ab3f646dadfdb6e07e6a0bdbb39b9da4739aee91c3",
+      "source_size": [
+        4178,
+        1609
+      ],
+      "output_size": [
+        4178,
+        1773
+      ],
+      "caption": "图9：单因素扰动下的达标与失败",
+      "font": "SimHei",
+      "font_path": "C:\\Windows\\Fonts\\simhei.ttf",
+      "font_size_px": 104,
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "figure_id": "FIG-Q3-SENS-ONEFACTOR",
+      "source_group": "canonical-06-figure"
+    },
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\figures\\FIG-Q3-COMBINED-BOUNDARY.png",
+      "source_sha256": "67a8bd85bc7675d84b84ce9ff08e43f62aa122569839c8d22315af259e4454bc",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q3-COMBINED-BOUNDARY.png",
+      "output_sha256": "9320e5fa442bd219e1acb8587c55e6f37dab9a7501c6db421dfad3eff7eb1bdb",
+      "source_size": [
+        3813,
+        1877
+      ],
+      "output_size": [
+        3813,
+        2027
+      ],
+      "caption": "图10：组合边界下的达标情况",
+      "font": "SimHei",
+      "font_path": "C:\\Windows\\Fonts\\simhei.ttf",
+      "font_size_px": 95,
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "figure_id": "FIG-Q3-COMBINED-BOUNDARY",
+      "source_group": "canonical-06-figure"
+    },
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\figures\\FIG-Q4-RADIUS-TIME.png",
+      "source_sha256": "0beafbf043ddf09587f67976c795e2a5d3f18681fed1c621108cdc635aa026f5",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q4-RADIUS-TIME.png",
+      "output_sha256": "38848fd2bb2ec027c48b5ee1be9160988731d10c8e7cdb14e0788271f7944c24",
+      "source_size": [
+        3464,
+        2189
+      ],
+      "output_size": [
+        3464,
+        2327
+      ],
+      "caption": "图11：移动边界半径收缩过程",
+      "font": "SimHei",
+      "font_path": "C:\\Windows\\Fonts\\simhei.ttf",
+      "font_size_px": 87,
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "figure_id": "FIG-Q4-RADIUS-TIME",
+      "source_group": "canonical-06-figure"
+    },
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\figures\\FIG-Q4-THRESHOLD-TRAJECTORY.png",
+      "source_sha256": "3637253cc8584ef913e88000cbeb37c5b355a34540c62bd3492a18f4c50c3599",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q4-THRESHOLD-TRAJECTORY.png",
+      "output_sha256": "1b623654665d4e12495470c8725233a87d984c49227b9dae7cbe9633862e3f98",
+      "source_size": [
+        3909,
+        2038
+      ],
+      "output_size": [
+        3909,
+        2193
+      ],
+      "caption": "图12：收缩域达到全域判据的过程",
+      "font": "SimHei",
+      "font_path": "C:\\Windows\\Fonts\\simhei.ttf",
+      "font_size_px": 98,
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "figure_id": "FIG-Q4-THRESHOLD-TRAJECTORY",
+      "source_group": "canonical-06-figure"
+    },
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\figures\\FIG-Q4-JACOBIAN-ABLATION.png",
+      "source_sha256": "614d7dfe819af656af12c325cd7e262020f0eddfcbe43d41bf4286f82073a44e",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q4-JACOBIAN-ABLATION.png",
+      "output_sha256": "b39a283abec24dd4053a5e59351790cfaff8925a04ae4fe516f0ecc702b4e066",
+      "source_size": [
+        4023,
+        1856
+      ],
+      "output_size": [
+        4023,
+        2016
+      ],
+      "caption": "图14：Jacobian 修正对守恒的影响",
+      "font": "SimHei",
+      "font_path": "C:\\Windows\\Fonts\\simhei.ttf",
+      "font_size_px": 101,
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "figure_id": "FIG-Q4-JACOBIAN-ABLATION",
+      "source_group": "canonical-06-figure"
+    },
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\figures\\FIG-Q4-COMBINED-BOUNDARY.png",
+      "source_sha256": "fd06347eba1ef5c4dddfa6fbea3e73b6094dfa1235cf949f7dfbddf838b81d5d",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q4-COMBINED-BOUNDARY.png",
+      "output_sha256": "07efd0c9885449d76e96ca3be5aa5757162018f0aa82cb7589d23ce1ecf1292f",
+      "source_size": [
+        3813,
+        1877
+      ],
+      "output_size": [
+        3813,
+        2027
+      ],
+      "caption": "图15：组合扰动下的成功与失败边界",
+      "font": "SimHei",
+      "font_path": "C:\\Windows\\Fonts\\simhei.ttf",
+      "font_size_px": 95,
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "figure_id": "FIG-Q4-COMBINED-BOUNDARY",
+      "source_group": "canonical-06-figure"
+    },
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\figures\\FIG-Q1-GRID-CONV.png",
+      "source_sha256": "70f3bb6c5dd64015786505cc99b71339ab50e15fdc0ba87f624252f9a4d4cc54",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q1-GRID-CONV.png",
+      "output_sha256": "97af63346cfad4fc84f235d9c9db56781923e4adf560fed4d7b3285a3a2409a7",
+      "source_size": [
+        4324,
+        1961
+      ],
+      "output_size": [
+        4324,
+        2133
+      ],
+      "caption": "图16：M1/M2 场量的空间网格收敛",
+      "font": "SimHei",
+      "font_path": "C:\\Windows\\Fonts\\simhei.ttf",
+      "font_size_px": 108,
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "figure_id": "FIG-Q1-GRID-CONV",
+      "source_group": "canonical-06-figure"
+    },
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\figures\\FIG-Q3-SPACE-CONV.png",
+      "source_sha256": "6e6fb4644847c8b795d024b9a5a8b428673d26c324aaf61b24ae5d0080e5ecf9",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q3-SPACE-CONV.png",
+      "output_sha256": "bebe9feda26c614f8fde33543b7371d452e21957ddc564db08c8f3ce11a8990a",
+      "source_size": [
+        3589,
+        2147
+      ],
+      "output_size": [
+        3589,
+        2290
+      ],
+      "caption": "图17：事件时刻的空间网格稳定性",
+      "font": "SimHei",
+      "font_path": "C:\\Windows\\Fonts\\simhei.ttf",
+      "font_size_px": 90,
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "figure_id": "FIG-Q3-SPACE-CONV",
+      "source_group": "canonical-06-figure"
+    },
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\figures\\FIG-Q4-BRACKET-ZOOM.png",
+      "source_sha256": "c31a761a786146db3457adf5df9aa74153e711c5fce78beae497dd99b2a33b94",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q4-BRACKET-ZOOM.png",
+      "output_sha256": "9de4e438b95ada415b6a77caa6b62732449dd34cf6b8856b15ceb880c0eb8832",
+      "source_size": [
+        3957,
+        1915
+      ],
+      "output_size": [
+        3957,
+        2073
+      ],
+      "caption": "图18：Q4 插值时刻与报告值对照",
+      "font": "SimHei",
+      "font_path": "C:\\Windows\\Fonts\\simhei.ttf",
+      "font_size_px": 99,
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "figure_id": "FIG-Q4-BRACKET-ZOOM",
+      "source_group": "canonical-06-figure"
+    },
+    {
+      "source": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\figures\\FIG-Q4-SPACE-CONV.png",
+      "source_sha256": "8f5d9255dc0ee1dd555a377d86629cb32a5126bcdb805edb678c78cae92ad9d5",
+      "output": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026\\06-figure\\captioned-20260912\\figures\\FIG-Q4-SPACE-CONV.png",
+      "output_sha256": "465094f6689d6732531b5c6f53a5227e0cdeab26afcb1b6e57d57e8be08068e0",
+      "source_size": [
+        3590,
+        2147
+      ],
+      "output_size": [
+        3590,
+        2290
+      ],
+      "caption": "图19：Q4 事件时刻的空间网格稳定性",
+      "font": "SimHei",
+      "font_path": "C:\\Windows\\Fonts\\simhei.ttf",
+      "font_size_px": 90,
+      "color": "black",
+      "alignment": "center",
+      "position": "below-image",
+      "figure_id": "FIG-Q4-SPACE-CONV",
+      "source_group": "canonical-06-figure"
+    }
+  ]
+}

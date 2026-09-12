@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "visual_style": {
+    "reference": "user-provided academic plot style",
+    "axes": "white background, thin four-sided frame, inward ticks, no grid",
+    "fonts": "Chinese axes in SimSun; digits and Latin labels in Arial; caption in SimHei",
+    "series": "restrained colored solid lines with direct labels",
+    "caption": "below plot; no extra note directly below caption"
+  },
+  "approved_figures": [
+    {
+      "figure_id": "FIG-Q1-C-FIELD",
+      "status": "TEAM_APPROVED",
+      "approved_at": "2026-09-12T10:38:53+08:00",
+      "note": "用户批准为最终图1方案；采用参考学术图风格，删除图题下方附加说明。",
+      "files": {
+        "png": {
+          "path": "06-figure/figures/FIG-Q1-C-FIELD.png",
+          "sha256": "bfda2cca846758b03c54d3f10a57b211881c0a1fa41b2066df5450ff383958be"
+        },
+        "svg": {
+          "path": "06-figure/figures/FIG-Q1-C-FIELD.svg",
+          "sha256": "51459653b837757ca78e87e33acfa65cb49ed0d67dd642b598ecf174938927a3"
+        },
+        "pdf": {
+          "path": "06-figure/figures/FIG-Q1-C-FIELD.pdf",
+          "sha256": "73dab8c125cef9ea4367292ee2d83e5724c8bc41faeb348d17bec2fb75713591"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,1138 @@
+{
+  "schema_version": "1.0",
+  "stage": "PROTOTYPE",
+  "status": "PASS",
+  "inputs": [
+    {
+      "path": "02-design/contracts/model-q23-fixed.json",
+      "sha256": "b3f8327a02dba8de5e97906822641639b4c953aa48cfc6aaefda14986ace9fd1"
+    },
+    {
+      "path": "02-design/contracts/model-q4-m1-reference.json",
+      "sha256": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5"
+    },
+    {
+      "path": "02-design/contracts/model-q4-m2-moving-fv.json",
+      "sha256": "c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f"
+    },
+    {
+      "path": "02-design/H2-优化审计与方向.md",
+      "sha256": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33"
+    },
+    {
+      "path": "02-design/handoff.json",
+      "sha256": "5f2579e4fdad88eb19f68cfad1de065046e186b27e55d0d86422576be3f7ccc0"
+    },
+    {
+      "path": "02-design/候选模型方案.md",
+      "sha256": "ced11bfb105fad81a7e1690cbaa9b4edfcc077ab17dbda25924def4cfbc63c17"
+    },
+    {
+      "path": "02-design/文献到模型映射.md",
+      "sha256": "ffa74c1b1cc37aeed4793b26fc3b95b412513f17a67e1a5d597dfbf06efecf42"
+    },
+    {
+      "path": "02-design/验证计划.json",
+      "sha256": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb"
+    },
+    {
+      "path": "02-literature/影响烘干蒸发圆柱体模型的物理量审查.md",
+      "sha256": "24b84d29a3e240ddffb14e1e0b3f530dc77f0a714971229ac17535eb18687fb6"
+    },
+    {
+      "path": "02-literature/文献阅读结果.md",
+      "sha256": "31cb88d8a1cb8de37c193dfa5824f234e0097f96c0284037d82201f15ad915a8"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/convergence.csv",
+      "sha256": "90df3ffa047549b9fd1271464c7c08bc4460d6f3883f468da82b449d00f19d52"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/H2-选择包.md",
+      "sha256": "c9f74e2a329d7fcf443fd19a2ae164bb89b8c0506ef93a101c0fdbfe52234a64"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/候选方案对比.md",
+      "sha256": "41ba4ae9fa4a44b8760d23f3654b33ec78bd58a7fde881d8be6ce57a20db9e2e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-20260912/原始结果.csv",
+      "sha256": "44a9682805cb2a690efd43418815332f32d036daac332b2589c3fe6c69a6f7c7"
+    },
+    {
+      "path": "03-prototype/handoff.json",
+      "sha256": "8d4f161cc4b4b3b84f679273f23db5bf674f610754727efaf7a53f7635ff07e6"
+    },
+    {
+      "path": "04-compute/src/formal_compute.py",
+      "sha256": "af3214f972eb874764323c76561025df1cc70f27d7f0985968b57b0b688b4644"
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/formal_compute_revision.py",
+      "sha256": "b7cbae558d8b122b9fc6650bb1c8c8e82848188d005f29b16391523f469b9541"
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/parameter-diagnosis-20260912.md",
+      "sha256": "56fe6f21958abfd3c4c45076552fac9f5387770271040ee30355e2b103793f46"
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/README.md",
+      "sha256": "4d8149da64bf7f7d72d8ddad3031ec58aa386681347e6a923655fb1dcdb28fe7"
+    },
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"
+    },
+    {
+      "path": "decisions/H3-claims.json",
+      "sha256": "75fa934828f09a4f9d1c59d02e4d7570370fbde4f91d5b695e8e4a52132d7ccb"
+    },
+    {
+      "path": "input/A题/附件/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "input/A题/附件/附件2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    },
+    {
+      "path": "input/A题/附件/附件3/result1.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "input/A题/附件/附件3/result2.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4"
+    },
+    {
+      "path": "input/A题/附件/附件3/result3.xlsx",
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859"
+    },
+    {
+      "path": "input/A题/附件/附件3/result4.xlsx",
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/energy-audit-summary.csv",
+      "sha256": "2c434f787e90db2e941fc06e7a023d4aac2c91fe586186af5669b8bbfba4b3d8"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/energy-audit.csv",
+      "sha256": "d7862b98e9e9eb4b1f69d37a680240caaf7f0ce8837eae6bcc838e9534bacefb"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/energy-refinement.csv",
+      "sha256": "2dfffe7b6f2eae98c6ef67b36e9715fe36738d944c5e7b9e3c4b4d589480ecdd"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/environment.json",
+      "sha256": "b5181abed1dc7663da1f3e60afd9811a3557819c89f19631fe736e1283bb83fe"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/finalize_handoff.py",
+      "sha256": "5d6383c4964734d2d994e6ec391934d279531496455e42cf5600257896561586"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/H2-选择包.md",
+      "sha256": "7b654d4a846ef78330af104ee54aed2f2a047cec9624c8805082851930874602"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/input-manifest.json",
+      "sha256": "e7ef9b7d1bb8e0930f2f9871f962965061ccd334ff3c980bdeead3d5fe58db35"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/joint-convergence.csv",
+      "sha256": "687ee5eaed5bec4d0023b9d02821495e315f156f3ff2e1ac3d11022360b7da94"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q2-joint-H/metrics.json",
+      "sha256": "c95abdd62638c241f1d93d2b6e45aac0622a3c305537d2de415acdd85c3c2dc5"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q2-joint-H/trajectory.csv",
+      "sha256": "03a99412dcf78ba6da94f6d9009644ae7f29b6554860cb4c9da51babf1e1a5aa"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q2-joint-L/metrics.json",
+      "sha256": "6162357006e4f91ad7cf35342fc8a71161eaae122c3f03c967b4902b6fb243ca"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q2-joint-L/trajectory.csv",
+      "sha256": "5b40cacf7194d05427fdd3ec19896b3e7807b886e8feddbd866db52dc14d5c0e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q2-spatial-H/metrics.json",
+      "sha256": "01e54285291a5c709ff14046a5486a243eae086ff28905498295ccba1aa3e82b"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q2-spatial-H/trajectory.csv",
+      "sha256": "e07736eea7a31c158986f3ed8c050b78cdb6db14eddbf226a4de8ed52ac45f71"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q2-spatial-L/metrics.json",
+      "sha256": "7d6ac5212198b981c07dc6587f65bfac2ce3930521d59d0a3c3764a2a70a376f"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q2-spatial-L/trajectory.csv",
+      "sha256": "a8b54603d13d7929cb25eafe617cf75ccea7f535da751bee19040969318b2aa9"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q2-spatial-M/metrics.json",
+      "sha256": "0ac60eacb79988e4bdee5fd9652237b98b9e369ed3a18d407c4ab631a51265ba"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q2-spatial-M/trajectory.csv",
+      "sha256": "6b33ac47423a337f0b22dda9a91567a7248ffbd6d875c0b0fb9c0baed4eea8ce"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q2-time-H/metrics.json",
+      "sha256": "89fb27fe5e41f866fb56fa0fe2935197bc3d23dc39e6b3aac1b3100d6d367914"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q2-time-H/trajectory.csv",
+      "sha256": "2f91526dc39cbac9cc3a009108c4ff44599d91be34b240441e7a6104bc8f12ab"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q2-time-L/metrics.json",
+      "sha256": "3382f2cdfb0c3300209805df1cc64590ae1315d93c9df9ed396ad0a5f2c60983"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q2-time-L/trajectory.csv",
+      "sha256": "9ccb70e8aba8117ecb7e6a9b980a42fe7a860b52d18ec9a38efec4afba2cea51"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q2-time-M/metrics.json",
+      "sha256": "4380c57f439b6ca024540b3625c6b4f66dbcdf866050f760cf36a7a860814aa0"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q2-time-M/trajectory.csv",
+      "sha256": "6b33ac47423a337f0b22dda9a91567a7248ffbd6d875c0b0fb9c0baed4eea8ce"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q3-joint-H/metrics.json",
+      "sha256": "9a7e0d7a9278b93ccede050c52385d16e35c3d0e3a5daa79adc4872b5a951beb"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q3-joint-H/trajectory.csv",
+      "sha256": "8f47a462036c72d989ec410b98aa8f330adf8e474cec5f489274ab8752f46b09"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q3-joint-L/metrics.json",
+      "sha256": "368cc081c29e228b3190cb6b65b4be0f93384f4eec6ea4bfe12ad51f2654c7c9"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q3-joint-L/trajectory.csv",
+      "sha256": "538b4510b987ba7782aeb7822ea8d4ec5831c000a2cba7367fe710bbc88dd31d"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q3-spatial-H/metrics.json",
+      "sha256": "f58c8d4c4cc4ab7032f6af9ffcb06059524de3a46e6b4c52e63fee46fe121b48"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q3-spatial-H/trajectory.csv",
+      "sha256": "0bac9da83a08232304a0d9217a0dcb3a1cc60c145a6261ab340fa0cafd89edfd"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q3-spatial-L/metrics.json",
+      "sha256": "9f266a6b5e850c6f548279d802b3eecf141c95fbb852ac17be1d30c3149fa2b3"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q3-spatial-L/trajectory.csv",
+      "sha256": "cd3fba7f1cb703c3b74f2ab18a66ed17094e547a2e1035d941f710e0c8c2cc39"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q3-spatial-M/metrics.json",
+      "sha256": "0aedb9bc9cf058532d3e595aeec02d94535966c344808152a332960e472a605c"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q3-spatial-M/trajectory.csv",
+      "sha256": "e400ff0d133161f92f190fbbe14a321d06edf8368eeaf5ac84d31e47c2cf115b"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q3-time-H/metrics.json",
+      "sha256": "eaccb764d7d6000ff3f5f33861aad9ec5b94f7772db46375cd0f36cc4731cded"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q3-time-H/trajectory.csv",
+      "sha256": "cd135cf51b880ef58cfdb7001210a3a1e222ad0082086e40c313fddcd56e8f95"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q3-time-L/metrics.json",
+      "sha256": "3575acde253abc5f044a304292cf0599b841e99d2a8593ff702d5001865e92aa"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q3-time-L/trajectory.csv",
+      "sha256": "19a0a036b1bbc7983f85ae65803fb488522a6c96da1ea3bd821b26a29648bc13"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q3-time-M/metrics.json",
+      "sha256": "c9d08f7b8d2a5212c6c9a58ef735fc84652a4a9d4b1058b0738aecfef26a06f5"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q3-time-M/trajectory.csv",
+      "sha256": "e400ff0d133161f92f190fbbe14a321d06edf8368eeaf5ac84d31e47c2cf115b"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q4-joint-H/metrics.json",
+      "sha256": "59fb1d062bc339575c56d2ffa3cb6a917da54d30660a5a3beacdd9206b8ddcc8"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q4-joint-H/trajectory.csv",
+      "sha256": "b2c825980363892289ad8dc42bae50ba1b1fc68a51795b0ddd6f332ad0393ad5"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q4-joint-L/metrics.json",
+      "sha256": "39126e1ca2010f789bae9056795eb1d324ff0339fd86dd9d8642ba503c352a04"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q4-joint-L/trajectory.csv",
+      "sha256": "0186439f7b93a74517b2c01ab38b23e5169b9502f0b477a5a257dc1fc6ecbd5d"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q4-spatial-H/metrics.json",
+      "sha256": "63560dfb76affeb9724f7095fa2a9a45da1f90ee48c994cc4d3cd7928eca9cee"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q4-spatial-H/trajectory.csv",
+      "sha256": "3e6fd855d708eeabb69fb3663df8cec2d76ca6a8ebc37285a30e5bf86b58a003"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q4-spatial-L/metrics.json",
+      "sha256": "2de6308534c70488b8e9b270c275eb694d916c159215ff4efbe66837adad58a1"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q4-spatial-L/trajectory.csv",
+      "sha256": "71e607af15db8c2276de16d3257d9daae9819929122a8909a0d15326f5de886d"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q4-spatial-M/metrics.json",
+      "sha256": "dd1620cc1094a7c58d20c8586dd4dffe84cd9e75619f8f2cbd2ea10ba9ddc6bb"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q4-spatial-M/trajectory.csv",
+      "sha256": "6c11f2cef6391f95bc2d54201f25a63e2e32ee4dc8321213dde30f9852d8f56e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q4-time-H/metrics.json",
+      "sha256": "4a387d6484acbf3cb864c4d33b2b91550cb6b03757c85d1957c08b65df88f366"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q4-time-H/trajectory.csv",
+      "sha256": "a07ee137fcbe1b6377fd21fd7456f7e987a2bd56dd2e5b6690c4a2113497cc2e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q4-time-L/metrics.json",
+      "sha256": "bb23f7b6332c5b4a1b474b0f2ea195b5070d89ea49fe2d6d5b5ef123cdd37c1f"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q4-time-L/trajectory.csv",
+      "sha256": "8c7533979daced9e29d6e64d67d5f69b3f7e1bf18cfb20a995d358ece8b6db06"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q4-time-M/metrics.json",
+      "sha256": "9e12af75778e5d63bf51e57e7d5828001c5ad09f2f53b842f03a3d53d5568fe0"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-baseline/Q4-time-M/trajectory.csv",
+      "sha256": "6c11f2cef6391f95bc2d54201f25a63e2e32ee4dc8321213dde30f9852d8f56e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-joint-H/energy-groups.csv",
+      "sha256": "5dd5c5083719c443070bb929538aecdad3de5af6154be1b2cce79b748efd8204"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-joint-H/metrics.json",
+      "sha256": "166f79b4f802611b57d444d37700e24d25ab23801e1cbfd406373407cbbb5c69"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-joint-H/trajectory.csv",
+      "sha256": "6682b4dbb35b6de248ce17b2a0d4c16658c0a5757f46b5765146f83f0cced95d"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-joint-L/energy-groups.csv",
+      "sha256": "82254db8e38f061f96f15ec71774f25f0d6cfc0e7a122a3ee026e6aaa16799bb"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-joint-L/metrics.json",
+      "sha256": "f58e5e8912e6c37cdae99cc587b6cb4922e61d1f81b08aaf1150644e125a3405"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-joint-L/trajectory.csv",
+      "sha256": "803240f849009863653ae5283435865eb8f073548e0de66e1f438960e81652b5"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-base/energy-groups.csv",
+      "sha256": "02fa342ce2975259ee2ab807dc476c4fb77b0010372adadc9c27215cebb72a05"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-base/metrics.json",
+      "sha256": "69ea021e98f76143ab7cedcff3c7a1d658f6dc5880bcb99df783471daab4e264"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-base/trajectory.csv",
+      "sha256": "ea4c421cd70c576f9b4d8e72115d677d17380735a9a14044d62461297c213c27"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-cp-high/energy-groups.csv",
+      "sha256": "16acfe43e858fb7d17c4c1f7e9844c1343213a18db3bbbd2d68fccab12a475fe"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-cp-high/metrics.json",
+      "sha256": "980ef39f9829e4f9edd6fc48dc18c4252a10d7e82db1bf3898c28854ebe1393f"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-cp-high/trajectory.csv",
+      "sha256": "db436099e2eaa16e7da6fa6ded30ae7a667be23f103e4921f39ce205472d345a"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-cp-low/energy-groups.csv",
+      "sha256": "ff1fc8ec121de05b53277b3a9a4f16450555c9635891424046960c543a903445"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-cp-low/metrics.json",
+      "sha256": "59e7ffd517d858ddf3e6033b665551538bbb1113f41bc61289c241bd174d435f"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-cp-low/trajectory.csv",
+      "sha256": "52783ff2cf3633f849510aa1437b8b97f03724916ced747cabe5454cebe8b5a9"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-h-high/energy-groups.csv",
+      "sha256": "e6b102dde545d8b6d4437f81976722c643ebb42325362c0e9d8afe4ef341efcb"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-h-high/metrics.json",
+      "sha256": "614c7ce6ca3749e654e56c561778004719008f14815ddf5341324faaed38ccc9"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-h-high/trajectory.csv",
+      "sha256": "6a17053fdad7c721caabb826e3f97d9098752fa1eafaa1d30afe33ee828ea98e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-h-low/energy-groups.csv",
+      "sha256": "68ca5346f6108b24b788634b115ecad9b0c1c7f3f50972a9226d5f406e3e9f27"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-h-low/metrics.json",
+      "sha256": "61d84f0c28bcd6563c4386568cee277ddf873848ec51a1fdbb0d2c808f932c13"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-h-low/trajectory.csv",
+      "sha256": "760379cdb8554da4172460113e44339d9ab1758ccf3e56da873517797d91efbf"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-hm-high/energy-groups.csv",
+      "sha256": "99a32882384219ad712ab3626758d50a00d1520f65fb5004d71de557899a6305"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-hm-high/metrics.json",
+      "sha256": "3e6e0edc01b0658f8f6af23bad1fb1f89d55b4befadc43aa7fe47732e5da579a"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-hm-high/trajectory.csv",
+      "sha256": "695f7ff0965e6d810f5972627db41929da84e936c4b028b3b6eaf2ce4775c3e3"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-hm-low/energy-groups.csv",
+      "sha256": "52966a2288d39ed40f214994facab4ebc9fb418e10c31bd5a19b4acba82e3c95"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-hm-low/metrics.json",
+      "sha256": "de7a2e602a0532c1d77fa2adbbc818040eef7da3733c84482417c6b7015a092b"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-hm-low/trajectory.csv",
+      "sha256": "e6637a89e2a90f4becfc5b6838544f9f4f9493fc3e0579afd684a483fc500ba1"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-k-high/energy-groups.csv",
+      "sha256": "d98352d3c4abcfedfb200a39fe5bc30fc78300fd2eaa1149e4ec0fd0b4b9afd9"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-k-high/metrics.json",
+      "sha256": "58d143c3af92868f736c8c45befda8c42cb8aaa8717135b7750587b4ec2ce55d"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-k-high/trajectory.csv",
+      "sha256": "a7ce9c90837ac7ee95824dfd8a2700ad77673be31b145bac48c21d5b826efcd7"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-k-low/energy-groups.csv",
+      "sha256": "a01c04f1b593b1a9130b5b1a9b4478375232a46f5b20181db53007ad749e8744"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-k-low/metrics.json",
+      "sha256": "585a7f7b8c657581c92749e70ef7b0133ba6e53007f1c8e0d93421041c20bb7e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-k-low/trajectory.csv",
+      "sha256": "35be473051f7f4032cd4bda454d3602255d9b551e51943cdcabe3e35350d201c"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-rho-high/energy-groups.csv",
+      "sha256": "67f2b4b14d175a9ef0bdda81f835643ed624b642394a4c525ab4932798798bee"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-rho-high/metrics.json",
+      "sha256": "36e29b13c9131dadade8ccdea3b4fcc23d3267733cd2c18228cdce594ccff8cb"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-rho-high/trajectory.csv",
+      "sha256": "62d6fd4623441cdfe7e47208232b945aa6f535bea9a9b52f1ffb2d90b2e3c528"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-rho-low/energy-groups.csv",
+      "sha256": "e1add3a0460aba5cfa98d6eaadc393ea6f6b81b476ce1b62648bed738cad507e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-rho-low/metrics.json",
+      "sha256": "ca102ab551b2d06dd31e15f334efa46f1dedf1b3d3083f0eaca3e4811c351171"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-sensitivity-rho-low/trajectory.csv",
+      "sha256": "e77e64acd9d2d79fe9c97e0480fb3edff96eed3ab23fa13124983adb04a7ba4a"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-spatial-H/energy-groups.csv",
+      "sha256": "022d20d6d2aa9ad1fab26859273f4ea573935316dccf64e6a618d8d5e3a6ffa5"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-spatial-H/metrics.json",
+      "sha256": "3e3065c5467e515fdd387c54b079a7ca6e36eee02815f53d45f5c8f7b808dd95"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-spatial-H/trajectory.csv",
+      "sha256": "6dc6c8fc7e56ddedce22dbd01f9240dcf6954a93dc9ea32c635d3766d4464987"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-spatial-L/energy-groups.csv",
+      "sha256": "02fa342ce2975259ee2ab807dc476c4fb77b0010372adadc9c27215cebb72a05"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-spatial-L/metrics.json",
+      "sha256": "dc41f6eec4349ea82e2a62b4be0a54485e9e6087f2a7e8574a0cfe3a2109e98e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-spatial-L/trajectory.csv",
+      "sha256": "f1e5c385c6cdfbd0a91f9ce7a444a0f8b1e0721a343db6c7f7e7a76daf9fd2df"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-spatial-M/energy-groups.csv",
+      "sha256": "c509ec88e2404e28c3c0517ad81aac931a400f18a0f693c9ff16d310cc870aa8"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-spatial-M/metrics.json",
+      "sha256": "b9bc6e8e13c3aff6d39ae973d18358c85464e2a14041fec91c6cb710ec935106"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-spatial-M/trajectory.csv",
+      "sha256": "60b806dc83d2d79d69568a5228ee3a882cba3006adc7efb6304b22c3d38a42c9"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-time-H/energy-groups.csv",
+      "sha256": "12ba2e339858c18e7886193132026acd4e1c19a2a696839e3ae199baed25cdb8"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-time-H/metrics.json",
+      "sha256": "d1cc017673506519c4561880ed6ce9ccd6968496da06e1d9e5daa4ed515424ff"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-time-H/trajectory.csv",
+      "sha256": "3fe9eeefc10640d70f5e96e85e704c15540ea350096d678d810f47f9ad21f5a3"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-time-L/energy-groups.csv",
+      "sha256": "0554896c190e6207f01fda2f6899cb13f4405bcecde1d32bad0b07073ab393b0"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-time-L/metrics.json",
+      "sha256": "e4ce96b45e4691569808244613f43b67593b713c5c2dbd904110f2a2eece37ec"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-time-L/trajectory.csv",
+      "sha256": "9e1be80613c4973694538ab00c7bf5fda70eac6adb821e48958139939c953153"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-time-M/energy-groups.csv",
+      "sha256": "c509ec88e2404e28c3c0517ad81aac931a400f18a0f693c9ff16d310cc870aa8"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-time-M/metrics.json",
+      "sha256": "daf0137c081d8156a7851e649cc709dbb50276b1332721f715f5953598a23417"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q2-time-M/trajectory.csv",
+      "sha256": "60b806dc83d2d79d69568a5228ee3a882cba3006adc7efb6304b22c3d38a42c9"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-joint-H/energy-groups.csv",
+      "sha256": "b05a1782bcbeb8a737553abbe8a96d981e0f8c6879174dc99940e6fa3bc63371"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-joint-H/metrics.json",
+      "sha256": "df1c479f11f17edca2470d2a015afe64396b161554bdebe56d5db109d6f41f11"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-joint-H/trajectory.csv",
+      "sha256": "b94a783fd84b42e035570df6e63b8fe37be6fc604ef1d15de42a659a64f3878d"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-joint-L/energy-groups.csv",
+      "sha256": "813285679b3c492aa44828b1fa76249822fe0a7bd1bbf4d661992f2e2bd02162"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-joint-L/metrics.json",
+      "sha256": "29f56ba9957dcef114d20f5bb697eb515cb0867c75f853c592376df4845643e8"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-joint-L/trajectory.csv",
+      "sha256": "c16798b406287830b7e5d08fefa09133addee76ea8288f5f8e4efbee968ddf3d"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-base/energy-groups.csv",
+      "sha256": "7fb9dc399fc4d30a01a4c932b96f151f25b84ca6626467217f006927f967e25f"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-base/metrics.json",
+      "sha256": "d562e53dc4604a5d3e45ba5266c863147ad458edef9061bd506f90044f753554"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-base/trajectory.csv",
+      "sha256": "1480f22c142a79e9c769673010c5a514a103b065fb7187548200d83ee3223cf7"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-cp-high/energy-groups.csv",
+      "sha256": "c8b9259dabc011c44eca274fa372f1ac1b8c1fccab4bd13ecfa85f81b2710f2f"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-cp-high/metrics.json",
+      "sha256": "a969d459c0d595fed2c65b28e928c45aed4a6cfa73030e674cd6e46601d73c29"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-cp-high/trajectory.csv",
+      "sha256": "e5ea1723a70e80c94383938f934bb13e5c82b8e3497152c4510698ffd7e1034c"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-cp-low/energy-groups.csv",
+      "sha256": "4dd1627c88365d752b8b700a2f7aac520271622182244c0f078eea08f16d60e7"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-cp-low/metrics.json",
+      "sha256": "3eea98e8cd24f2ccde3085f35f931c8cd60c843ef2516a8757a3b127fb5e3165"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-cp-low/trajectory.csv",
+      "sha256": "06de9a5867cfbb09cba5bc9c17929fcdfd543c5902f76473cd6756096b846084"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-h-high/energy-groups.csv",
+      "sha256": "64b43e8826d4822ec4daeac93a4d85b22366a69158fe804df82b79dffd604486"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-h-high/metrics.json",
+      "sha256": "8133c4c1204e521cab7a2e0a71c6844f101c1b4f7a6d5b0013f052021f61068d"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-h-high/trajectory.csv",
+      "sha256": "a46bf9446ba569fb97a0e782f2e7312ea51af0e4c9c34d069b287f4cfc3d9ada"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-h-low/energy-groups.csv",
+      "sha256": "3e7071ee3eeaefd1e40f605bdaa1f81afccf8e7618b906b65a6111527a0c2e27"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-h-low/metrics.json",
+      "sha256": "cd7f70452de8212cfa15086e12e7106043c6fc05efce545f2fc88854ec2a1fd9"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-h-low/trajectory.csv",
+      "sha256": "eb04d4cd6af278e7ba21e7c3a04b5e1205c5f318ac723f236b04f29c7dc28514"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-hm-high/energy-groups.csv",
+      "sha256": "243b5353f6de03dfbc0f43f7ac39dcc53356ad0d7a8330c45f2a9d85c6e39b2d"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-hm-high/metrics.json",
+      "sha256": "20b2ff21ba55eafd9ecad4382c5b5831cd63ef2b4329704e504871e6b127ea3f"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-hm-high/trajectory.csv",
+      "sha256": "aaa309bff2cd766674f52105e2bf07628654374fcaf4cc2c821b56c783c78fbb"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-hm-low/energy-groups.csv",
+      "sha256": "3692e0d2b055144fbc2354b070c7310586baf64807bfc8375c022936a55c6de6"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-hm-low/metrics.json",
+      "sha256": "19220e5336c76b1266a7c4427e381c348553b12ed21dc3c47d493d04766291e6"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-hm-low/trajectory.csv",
+      "sha256": "41167ee5bde3c8aaf1f7f0cb189a522e9cdcaf5ce4fc8da3281efd0d631a2ed2"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-k-high/energy-groups.csv",
+      "sha256": "91e9ecff39bb9a20c906d92ec2d0b0981cf1e26902e5a73d2801f0f2e91e30a9"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-k-high/metrics.json",
+      "sha256": "b46a81ebd4bbb3dbee93b096c363b4fcf6f305cabe066662bf5286a2f37b464f"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-k-high/trajectory.csv",
+      "sha256": "eda4b92ff46452e896f0a8488aac890db2c3b440b508365d4b44aa18a042248b"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-k-low/energy-groups.csv",
+      "sha256": "08d28c8257c77012818aeef13e472da073d14cb4fceb16c1159d7c170a62e318"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-k-low/metrics.json",
+      "sha256": "a4df7c14e779732f9da8733d967ade5d25f7cded0ac2f172cf3931627d3b004c"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-k-low/trajectory.csv",
+      "sha256": "a3cdb66f30f10fd8fb241babb34cca01b09f4cdbf3a45c1ace59ccc2d83219a6"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-rho-high/energy-groups.csv",
+      "sha256": "4d65054a24ca9c85e66142949453b2fcc6af70e473fbf053499d8cbfba9ab455"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-rho-high/metrics.json",
+      "sha256": "5c7ba9636fd3fffec6333992968c16aefe094e2679d240286d503dc4645d739d"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-rho-high/trajectory.csv",
+      "sha256": "681414e32f28a73259b26522fff6aecd23af0b3926fee848e35b5ea181602544"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-rho-low/energy-groups.csv",
+      "sha256": "b9ac7749a45037db2002e9e5394e1159f216be9f64b978ff471a9da4df17cce5"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-rho-low/metrics.json",
+      "sha256": "e6dc0e566cc4faeccc4dc49675c8b10ff0ead920d1d76df72c8f26d68809e606"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-sensitivity-rho-low/trajectory.csv",
+      "sha256": "6601f647dd49dc73d871ebe595de54eaf0054f19680803c78ae4c285cba48b79"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-spatial-H/energy-groups.csv",
+      "sha256": "3eef977cae0c0fd129ee48515b02e3f1cbc0be2a7d3e495e81d1c90f5c754d65"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-spatial-H/metrics.json",
+      "sha256": "b00fff9e76d038593d2190bc6b5a4e7319d9114f5ebe70c97d51b5f52793c055"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-spatial-H/trajectory.csv",
+      "sha256": "9c39ebffb97d4e83e23cb2319a6abb18b088e6acd680003453f79f657d2ac952"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-spatial-L/energy-groups.csv",
+      "sha256": "7fb9dc399fc4d30a01a4c932b96f151f25b84ca6626467217f006927f967e25f"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-spatial-L/metrics.json",
+      "sha256": "4848f0e14fa2729d303fd70bc2d81b680a20083cbb49b9125c4644e6e9f8cc89"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-spatial-L/trajectory.csv",
+      "sha256": "1480f22c142a79e9c769673010c5a514a103b065fb7187548200d83ee3223cf7"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-spatial-M/energy-groups.csv",
+      "sha256": "f4001c44647f7f83de392b081154d490fcc5c8e13e11c2fd96121e30ffc38e68"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-spatial-M/metrics.json",
+      "sha256": "ec027536ff0aedf4a64b4818f0b6457a18fd581be615c67cb465e08947ecea0c"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-spatial-M/trajectory.csv",
+      "sha256": "aa5eab6fa7667272a7a728a03604b22bc81f24ec7827c85a6a44c1d02765df64"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-time-H/energy-groups.csv",
+      "sha256": "31e81a9ccfd696e48361fae3df6ade5889956118b7002a1d5693e79e083479db"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-time-H/metrics.json",
+      "sha256": "491c51ab731b33b3d6d1194389edc5907ca535e2d02fb561a6654e2db2a4e9b8"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-time-H/trajectory.csv",
+      "sha256": "11a3d6d2aebe17cff482f56a10808becff6aa01aadea611a8bae9640334e306f"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-time-L/energy-groups.csv",
+      "sha256": "8663108803839bd2b378367ca414b53379d3530947f5b14397ef8f98e213d337"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-time-L/metrics.json",
+      "sha256": "36d5dc8bd46dfbfbad58cea71cb61a6c9b425a4a34275fa3c8279e56e6b4ab4d"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-time-L/trajectory.csv",
+      "sha256": "381718e5dfae7ebbc03a5e406cdaad75caef53191d05f08938685f5e7d7e092e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-time-M/energy-groups.csv",
+      "sha256": "f4001c44647f7f83de392b081154d490fcc5c8e13e11c2fd96121e30ffc38e68"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-time-M/metrics.json",
+      "sha256": "d08404f501fc818eacf434fedb7e0d94610f856b918232e78579fc28f06d0565"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q3-time-M/trajectory.csv",
+      "sha256": "aa5eab6fa7667272a7a728a03604b22bc81f24ec7827c85a6a44c1d02765df64"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-joint-H/energy-groups.csv",
+      "sha256": "9715bbd7bf78599c94b05ccceb5823293283176f376038263c64366fbe880472"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-joint-H/metrics.json",
+      "sha256": "2dc41bdf4bca88d2a46bbdfd03c69c25794542e43e36f58acc22585cc775a0de"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-joint-H/trajectory.csv",
+      "sha256": "d6c247dcb7b9675acddb448140d779c614a967e700b6530fa9c5d2c47c64af2a"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-joint-L/energy-groups.csv",
+      "sha256": "2dc2dd210c79f3fe84ac53c514643991b9c775ac378f3fe00da8573067eefd08"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-joint-L/metrics.json",
+      "sha256": "9e51a9542112661e6455db0166f5d11727c9f3736293468b19f5767e3dafc077"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-joint-L/trajectory.csv",
+      "sha256": "74245e86dec9da3ce988ad77994ed03bafef64a95bcf460a26a3a9446ca43780"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-base/energy-groups.csv",
+      "sha256": "9712f33c40a2d93e3cc3673fcb82112e98671ad68be494fe427999e28a7a772c"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-base/metrics.json",
+      "sha256": "5a38c08b5a578a8074561956fb89cca9f7cb99e7841544431ce30a75658be831"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-base/trajectory.csv",
+      "sha256": "495f2fb86d12f8b554fb83ad878d351740b9cc95689e2c86f12e834327ada5dd"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-cp-high/energy-groups.csv",
+      "sha256": "6d09a83629f7868373c29372558b7fead7f97172fc00c4aa53a51b04b61ca5ca"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-cp-high/metrics.json",
+      "sha256": "fd602e3a3a6405696e98be0d6ebdb8eeb19d63cf4f2371b5fe1c91d6cbc28fe4"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-cp-high/trajectory.csv",
+      "sha256": "c52ce676b3efad7eb883f1874c8f2dbccd95ff6bf13f30eb4f38ea0b97eff223"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-cp-low/energy-groups.csv",
+      "sha256": "7efaa1e8d36274d737aff3ee7b22b429fcba38661cfcafe1e10707cb3cff32e5"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-cp-low/metrics.json",
+      "sha256": "3d5912f30457371ba1a59e63acf6d0db5b3a7893d771760c4cca97e4486796e5"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-cp-low/trajectory.csv",
+      "sha256": "33c687a7989a0714f3fa4a23652aec1fc0fe5ddb196743a1b4323c1656de09bc"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-h-high/energy-groups.csv",
+      "sha256": "5c5c862a465f6c9fba52c869e7581e3ac6d76430899054fb76bebe003e1ec164"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-h-high/metrics.json",
+      "sha256": "7b8a920051b8130d00326ea7751bf87c096bc32b3ac647d6b7a91986db8efd2a"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-h-high/trajectory.csv",
+      "sha256": "273cdf0f8eafcbe59fd62e4ff8e89c3bfb08341487ade0b817c9a3585f4f75d2"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-h-low/energy-groups.csv",
+      "sha256": "e7d036833b41967a97ce0c28d361c212a19d8cf108d8b4fb07c56904a2d93213"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-h-low/metrics.json",
+      "sha256": "cbcdbb71cf2713a383528102d2947ecae74530d67f221301b844340d3c510b0d"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-h-low/trajectory.csv",
+      "sha256": "5c454079af823b3e5afe8d2e758ba49febe748f1af08f80d78f65f2df9814447"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-hm-high/energy-groups.csv",
+      "sha256": "b965e8d8b47bb4db38e8e231634c07901a04689e187f80d0b8c59c70f614c452"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-hm-high/metrics.json",
+      "sha256": "b8abc5d96891ec190ba68cd83c87fa240a99a72516d6930e21049c62ddf60ec6"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-hm-high/trajectory.csv",
+      "sha256": "2c54985c1d0001d337730ed7fc573461ed11850db0e844f1436b1931138aecd2"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-hm-low/energy-groups.csv",
+      "sha256": "a9e9c2332f47ca56d7ccb09a996a1cd6820f15922ddc0d28ec290c6068df42af"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-hm-low/metrics.json",
+      "sha256": "e1dc560defe67ee78abf12265f0e8af930160a72c6363cd4f83032116d257021"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-hm-low/trajectory.csv",
+      "sha256": "a49ac41ef038df376b29538b7e3ee0fbacbb656725bf41ff4e6e557bf8ab1fa0"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-k-high/energy-groups.csv",
+      "sha256": "e42c1ec2204f2441080281e1f2551c799d4932f82a6ae17b6c5b6328dd885c65"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-k-high/metrics.json",
+      "sha256": "e3e9ee6f018bb997c5d86b3d4a7aba0153fa25e43cf178eb5431d3b1da319e01"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-k-high/trajectory.csv",
+      "sha256": "ef5393431ea3236bf30df43df8713e0f5323d1152e9bb710cbd4ed53d24e5d8f"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-k-low/energy-groups.csv",
+      "sha256": "a98d83f81492b5146d1391063da003c806fbb18a3228d93a645451d192f226ac"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-k-low/metrics.json",
+      "sha256": "7b0b5f8e647975413e2515d140ae00d01ad8d022488197fb9a03f42c44e9f656"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-k-low/trajectory.csv",
+      "sha256": "d335249b32c931a4a2756bfef35362823e86422c538a131c10c45db16860baa2"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-rho-high/energy-groups.csv",
+      "sha256": "2885fbd614221964204c38539082d404823c9ad01748f998d549b56d08dd4b32"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-rho-high/metrics.json",
+      "sha256": "c0c0cbba317f0d9c9d8035c4c809a9863e08891d4165daf36b1d3af32be6a9c8"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-rho-high/trajectory.csv",
+      "sha256": "ed3bcd1dd4fe1dacf5f4e05ee2d51eecab40038484dea1a0b8c65dece56d3bb5"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-rho-low/energy-groups.csv",
+      "sha256": "e2d6ecda89589eeb391c974ec937e2c652d47b9a78f947ac2786c040b42c80ec"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-rho-low/metrics.json",
+      "sha256": "7a2c4c1bcf04e2b5e11564e53cbeb8f9e63e21a4f36305a6337ee27e3a2ed86b"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-sensitivity-rho-low/trajectory.csv",
+      "sha256": "7f270fc5f57bfdd52bab45fe7581a13a4a1cf09bfc5e6c9a29e11608d921a425"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-spatial-H/energy-groups.csv",
+      "sha256": "82710d01b5d600a1ae0b048629f413abca3f464999ed30716a73b038fec47bb1"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-spatial-H/metrics.json",
+      "sha256": "c0c25945d449db998a8ea8b6d74a365c05b15788eb0b3330b3181c6c02b8938e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-spatial-H/trajectory.csv",
+      "sha256": "5f2c7d7e7f1e49e93d10d163fe70d96e55d29cab02b3453d9e37c48016918d9e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-spatial-L/energy-groups.csv",
+      "sha256": "9712f33c40a2d93e3cc3673fcb82112e98671ad68be494fe427999e28a7a772c"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-spatial-L/metrics.json",
+      "sha256": "13e680738bc55d0113d0aae3c9c4c511914d3a54490a08ab0c0617690efeaf9b"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-spatial-L/trajectory.csv",
+      "sha256": "495f2fb86d12f8b554fb83ad878d351740b9cc95689e2c86f12e834327ada5dd"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-spatial-M/energy-groups.csv",
+      "sha256": "0a6783609d3b365b962b072fc50ab9b7edeb89cdedae56404fa2073c7cd1b90e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-spatial-M/metrics.json",
+      "sha256": "c406c943ef7e273817de7646ac3c6785c7cf885e5fce9c1f91524f035476f00c"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-spatial-M/trajectory.csv",
+      "sha256": "9d05374c51c8d5493d147cd72327c6f0a3bb0583601fadedf20e8cce11540f42"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-time-H/energy-groups.csv",
+      "sha256": "6750a49e405e815b846e16f050eae2f42160c00250609f156241bceeb05198de"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-time-H/metrics.json",
+      "sha256": "6035c2d04036147b7cfa048f357d3177f9cf8b28baa6cf058303f7e4a8f05355"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-time-H/trajectory.csv",
+      "sha256": "45dfecfbd5dbae614117ff16142963286fb99c8e1d7f693163a400100da7e12b"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-time-L/energy-groups.csv",
+      "sha256": "073f6dc295ebe18e2d01a78849317be1123c529b8df25d57db570c73d431aadf"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-time-L/metrics.json",
+      "sha256": "6fb20793617e431099e0c31c9d51a99f4ed942c04f4b777a4cec014c3646a5a8"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-time-L/trajectory.csv",
+      "sha256": "89673e481cb4f8b6b5e01df63d45d3d9a59be06c69fa2a7ae6534cec71e8ac7a"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-time-M/energy-groups.csv",
+      "sha256": "0a6783609d3b365b962b072fc50ab9b7edeb89cdedae56404fa2073c7cd1b90e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-time-M/metrics.json",
+      "sha256": "b565ba83193b780cf95dab5013d011ae4f13553bb2e092056e9eb44ffb9c61d7"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/model-internal-temperature/Q4-time-M/trajectory.csv",
+      "sha256": "9d05374c51c8d5493d147cd72327c6f0a3bb0583601fadedf20e8cce11540f42"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/paired-comparison.csv",
+      "sha256": "094a59fd3507ba3e4f0fdb999a9f56a1a5e505f5bdcedf7286b3d3ee7721f00f"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/parameter-sensitivity-summary.csv",
+      "sha256": "233cd5331a9115a263e9da28495014140a19241497eca72c0949ced1e9773656"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/parameter-sensitivity.csv",
+      "sha256": "ee11aa5a4034006eb9e849f1b36029e7472676efe0ed75895a77363a161b189a"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/parameter-source-register.csv",
+      "sha256": "820af40667947732febe6be0e05f9baa62f5694639b53ab45762d700d1324333"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/parameter-sources.md",
+      "sha256": "c50149bc22d89929543a2aaed2f710224a6f1c836147d1045b23a43880942f61"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/reproduction.md",
+      "sha256": "cd2c3f7003a9b521f1bc374b1ba3afbb21142de458df891a4cd2be5c03b1170e"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/run.log",
+      "sha256": "e91ae027309b37d4c97d351143611a08c18f6df6b2f038915ef21c270150ed47"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/run_completion.py",
+      "sha256": "735f252cb6dcbd602de14118a936714050a88eb70c0a6cdfa5b3ccc7e6c077b6"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/space-convergence.csv",
+      "sha256": "a1fb6c9e7388557f69e4032e31a53793c3322d4ace6f4c05f28376e7bc980b6c"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/time-convergence.csv",
+      "sha256": "4f0f8563d67e0e4aa3fff975c7e71fd4a7b75cc649f68ac94a3e753db098d7c7"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/validation-register.csv",
+      "sha256": "993a52641b9639dc8b254862a823df21dbd12e829b013c45e106cf9413a6c16a"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/候选方案对比.md",
+      "sha256": "866ad2763512c5f0c688a44e260fbb91a78eeda5933596b1da844234ea79e09f"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/原始结果.csv",
+      "sha256": "aa08bf7c95497f733c2fdca3db846723a23fa46f04681bac26dc9f9dd9bae425"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/参数区间敏感性.md",
+      "sha256": "43492d73083f52f1ee8c3137b7878835906b2f975fd440ffdb7923b6a8be6f1a"
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/移动域能量审计.md",
+      "sha256": "a180342692b8a69e8915c64a582cd6a1083ba976e9fb70e73fb3f85003b44dad"
+    }
+  ],
+  "frozen_decisions": [
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"
+    },
+    {
+      "path": "decisions/H3-claims.json",
+      "sha256": "75fa934828f09a4f9d1c59d02e4d7570370fbde4f91d5b695e8e4a52132d7ccb"
+    }
+  ],
+  "assumptions": [
+    "The baseline is the approved prescribed-chamber-temperature implementation; it has no heat PDE to audit.",
+    "The candidate solves the imported implicit conduction equation with approved constitutive formulas and no latent heat.",
+    "0.8/1.0/1.2 parameter factors are bounded audit perturbations, not identified physical intervals.",
+    "Q4 sensible-energy residual uses before/after actual moving volumes and explicitly reports any missing geometry/latent closure."
+  ],
+  "unknowns": [
+    "Current input has no internal temperature observations.",
+    "Current input has no independent, transferable rho/cp/k measurements for the target material.",
+    "Latent heat/enthalpy is not identifiable and is omitted.",
+    "Q4 moving-domain heat closure must be judged from energy-audit-summary.csv; it is not cleared by moisture balance alone."
+  ],
+  "claims": [
+    "The candidate numerically produces an internal temperature field and is fairly paired against the baseline.",
+    "Independent space, independent time, and joint refinement evidence are recorded without treating joint refinement as either independent ladder.",
+    "Parameter sensitivity ranks conditional risk but does not identify thermal properties.",
+    "The package offers support-for-numerical-state, evidence-insufficient-needing-measurement, and unsupported-formal-upgrade outcomes for team decision."
+  ],
+  "evidence": [
+    "原始结果.csv and paired-comparison.csv contain 48 core paired runs; space/time/joint CSVs separate the refinement controls.",
+    "energy-audit.csv and energy-refinement.csv separate linear solve residuals from physical sensible-inventory residuals.",
+    "parameter-source-register.csv and parameter-sensitivity.csv record source status and bounded perturbations for rho, cp, k, h and hm.",
+    "validation-register.csv records PASS, INCONCLUSIVE and BLOCKED gates without converting missing internal observations into validation."
+  ],
+  "warnings": [
+    "Do not overwrite formal 04-compute, 05-evidence, 06-figure, 07-paper, decisions, or workflow state.",
+    "Do not write TEAM_APPROVED or start COMPUTE from this handoff.",
+    "Do not call Q_latent=0 a physical measurement; it is an omitted term."
+  ],
+  "required_next_actions": [
+    "Team chooses A/B/C in H2-选择包.md; this task does not choose.",
+    "If B is considered, obtain internal temperature and independent thermal-property/enthalpy data, then rerun the preregistered gates.",
+    "If Q4 energy residual fails refinement, retain the candidate only as an ablation or reject it for the formal route."
+  ],
+  "completed_at": "2026-09-12T18:51:37.904383+08:00"
+}

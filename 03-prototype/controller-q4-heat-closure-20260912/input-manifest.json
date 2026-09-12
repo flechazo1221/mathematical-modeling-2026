@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-09-12T19:31:51.644607+08:00",
+  "inputs": [
+    {
+      "path": "04-compute/temperature-field-revision-20260912/formal_compute_revision.py",
+      "exists": true,
+      "sha256": "b7cbae558d8b122b9fc6650bb1c8c8e82848188d005f29b16391523f469b9541",
+      "bytes": 48347
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/heat-audit.csv",
+      "exists": true,
+      "sha256": "4d38e80a3b45486f83a4f527f6544d32b009b229e7455738330e8138ab494f11",
+      "bytes": 9129343
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/energy-audit-summary.csv",
+      "exists": true,
+      "sha256": "2c434f787e90db2e941fc06e7a023d4aac2c91fe586186af5669b8bbfba4b3d8",
+      "bytes": 4359
+    },
+    {
+      "path": "input/A题/附件/附件1.xlsx",
+      "exists": true,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586
+    },
+    {
+      "path": "input/A题/附件/附件2.xlsx",
+      "exists": true,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "bytes": 11485
+    },
+    {
+      "path": "02-design/contracts/model-q4-m1-reference.json",
+      "exists": true,
+      "sha256": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5",
+      "bytes": 1055
+    },
+    {
+      "path": "02-design/contracts/model-q4-m2-moving-fv.json",
+      "exists": true,
+      "sha256": "c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f",
+      "bytes": 1072
+    }
+  ]
+}

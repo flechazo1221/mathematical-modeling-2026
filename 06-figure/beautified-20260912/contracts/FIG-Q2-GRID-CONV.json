@@ -1,0 +1,40 @@
+{
+  "figure_id": "FIG-Q2-GRID-CONV",
+  "claim_ids": [
+    "Q2-OBS-02"
+  ],
+  "question": "M3终值随网格如何收敛？",
+  "source_files": [
+    {
+      "path": "04-compute/results/field-grid-convergence.csv",
+      "sha256": "36e8cd85789d68c6c07efb304441425bd7948430473fbd14593c6c3fef3d57f5"
+    }
+  ],
+  "x": "网格 nr×nz；nz固定为36",
+  "y": "3 h 最大干基含水率 C（kg/kg）",
+  "groups": [
+    "Q2 M3 网格层级"
+  ],
+  "uncertainty": "确定性数值解；相邻网格变化作为离散化诊断",
+  "required_comparisons": [
+    "网格收敛轨迹",
+    "最细相邻变化与5×10⁻⁵验收线"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "recompute model",
+    "change metric",
+    "omit the narrow-margin annotation",
+    "present conditional simulation as observation"
+  ],
+  "target_formats": [
+    "svg",
+    "pdf",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "placement": "主文",
+  "mandatory_limit": "必须标窄裕量PASS；数值收敛不等于现实准确性",
+  "snapshot": "06-figure/beautified-20260912/data-snapshots/FIG-Q2-GRID-CONV.csv",
+  "snapshot_sha256": "d8a9ca7c399aaa16357bf8e2b059484f92c733d950fd76b69ea6acc9ea1a7f0a"
+}

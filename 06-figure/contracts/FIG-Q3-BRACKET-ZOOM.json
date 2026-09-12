@@ -30,7 +30,8 @@
   ],
   "target_formats": [
     "svg",
-    "png"
+    "png",
+    "pdf"
   ],
   "minimum_dpi": 600,
   "placement": "主文",

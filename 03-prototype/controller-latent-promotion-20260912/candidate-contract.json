@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "stage": "PROTOTYPE",
+  "status": "BLOCKED",
+  "route_name": "internal_temperature_surface_equivalent_latent",
+  "numerical_run_status": "SMOKE_PASS_FULL_RUN_NOT_RUN",
+  "physical_validation_status": "BLOCKED",
+  "equations": {
+    "bound_water": "C_b=0",
+    "mobile_water": "C_l=C",
+    "internal_gas": "no_internal_gas_inventory",
+    "water_mass": "q_w=rho_d*C",
+    "surface_latent": "q_lat=Lv*j_v",
+    "nominal_Lv_J_per_kg": 2400000.0,
+    "sensitivity_Lv_J_per_kg": [1200000.0, 4800000.0],
+    "q4_geometry": "moving_domain with R(t) and separate geometry correction"
+  },
+  "interpretation_limits": [
+    "j_v is the existing total-moisture Robin surface flux used as an equivalent evaporation flux",
+    "surface cumulative export is bookkeeping only and is not an internal vapor state",
+    "C_inf is an external mass-transfer driving force, not a phase fraction",
+    "Lv is a sensitivity parameter, not an identified material property",
+    "numerical execution pass is not physical validation pass"
+  ],
+  "promotion_gate": "candidate verification plus human H2 reopen approval; never set TEAM_APPROVED in this directory"
+}

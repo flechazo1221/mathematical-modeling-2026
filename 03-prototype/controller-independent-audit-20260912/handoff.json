@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0",
+  "stage": "PROTOTYPE-INDEPENDENT-AUDIT",
+  "status": "BLOCKED",
+  "completed_at": "2026-09-12T19:35:34+08:00",
+  "scope": [
+    "03-prototype/controller-phase-change-attempt-20260912",
+    "03-prototype/controller-temp-field-completion-20260912",
+    "decisions/H2-model.json",
+    "decisions/H3-claims.json",
+    "04-compute/results/validation-register.csv",
+    "04-compute/temperature-field-revision-20260912/README.md",
+    "02-design/题目分析报告.md",
+    "02-design/supplemental-extensions/扩展模型设计.md"
+  ],
+  "verdict": {
+    "formal_promotion": "BLOCKED",
+    "paper_use": "SENSITIVITY_ONLY",
+    "direct_conclusion": "当前候选不能作为论文改进模型；只能作为明确标注的等效潜热敏感性或上界诊断。",
+    "m0": {
+      "found": false,
+      "note": "未找到正式 M0 文件、决策记录或独立 M0→M1→M2 潜热模型层级；no_latent 仅为配对基线标签。"
+    }
+  },
+  "frozen_decisions": [
+    {
+      "path": "decisions/H2-model.json",
+      "decision": "TEAM_APPROVED formal route is M1-M4; do not replace it with this candidate."
+    },
+    {
+      "path": "decisions/H3-claims.json",
+      "decision": "TEAM_APPROVED claims remain bounded to the formal M1-M4 route; supplemental candidates are not main-model evidence."
+    }
+  ],
+  "inputs": [
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/handoff.json",
+      "sha256": "931f1d620e3fb7a18baa5f46ebe4f0aacf066082dde46b283c5265566fbe1cef",
+      "bytes": 12087
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/原始结果.csv",
+      "sha256": "99bd44cd60eda4a4b9b80215f957e2511b660c3309221cb30ae211e408c4b368",
+      "bytes": 31727
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/heat-audit.csv",
+      "sha256": "4d38e80a3b45486f83a4f527f6544d32b009b229e7455738330e8138ab494f11",
+      "bytes": 9129343
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/water-audit.csv",
+      "sha256": "de909995c9ebac9a479ebefe7a843e5437b6bc1bb7203fb4e9b40422a1886d78",
+      "bytes": 8561869
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/identifiability.csv",
+      "sha256": "94dde154acf5ae2674bf55109b8ba626d74e95aad3b9fbaebbca04487cd416db",
+      "bytes": 378
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/handoff.json",
+      "sha256": "5683c504e810230f19de2afdf421d2676c9c9fa55cb2aba9c2fe0b920f408ec3",
+      "bytes": 62058
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/energy-audit-summary.csv",
+      "sha256": "2c434f787e90db2e941fc06e7a023d4aac2c91fe586186af5669b8bbfba4b3d8",
+      "bytes": 4359
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+      "bytes": 1837
+    },
+    {
+      "path": "decisions/H3-claims.json",
+      "sha256": "75fa934828f09a4f9d1c59d02e4d7570370fbde4f91d5b695e8e4a52132d7ccb",
+      "bytes": 5977
+    },
+    {
+      "path": "04-compute/results/validation-register.csv",
+      "sha256": "4bff2426f87fa1197d8f184dad9b372e702db81c01ae71027fd35ee51b18ecae",
+      "bytes": 1109
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/README.md",
+      "sha256": "4d8149da64bf7f7d72d8ddad3031ec58aa386681347e6a923655fb1dcdb28fe7",
+      "bytes": 818
+    },
+    {
+      "path": "02-design/题目分析报告.md",
+      "sha256": "d1104a85f464c6e7e4a0df361ff9a2be877c3dd27ddeed2d5207dfe8e49faa36",
+      "bytes": 23235
+    },
+    {
+      "path": "02-design/supplemental-extensions/扩展模型设计.md",
+      "sha256": "af0a359d8604b00e8b1ba6d1d623c5e3402fd68392076c6673adab2c2791827a",
+      "bytes": 6788
+    }
+  ],
+  "outputs": [
+    {
+      "path": "03-prototype/controller-independent-audit-20260912/审计报告.md",
+      "sha256": "a7d1cc8a8b9818d3b8993bb40b11509b5caa886e64fa92acfe2a41c7e82986d8",
+      "bytes": 5060
+    }
+  ],
+  "claims": [
+    "The phase-change attempt completed 69/69 retained solver runs and passed numerical finiteness and linear-residual guards.",
+    "The attempt is an equivalent surface latent-heat proxy from the existing total-C Robin boundary loss, not an independently solved liquid-vapor-bound-water model.",
+    "Total-C water balance is numerically small, but phase-resolved mass-energy closure fails because phase inventories and phase-resolved fluxes are absent.",
+    "Q2/Q3/Q4 identifiability has Jacobian rank 1 of 2 and infinite condition number; Lv and proxy_scale are inseparable.",
+    "Independent space and time event ladders exceed the preregistered 60 s tolerance.",
+    "The internal-temperature completion has Q2/Q3 fixed-domain energy residuals near 1.9 and Q4 residuals near 1.97-1.99, so it does not establish a reliable improved temperature model."
+  ],
+  "validation_register": [
+    {"id": "PC-V01-input-freeze", "status": "PASS"},
+    {"id": "PC-V02-real-run-completion", "status": "PASS"},
+    {"id": "PC-V03-latent-space-stability", "status": "INCONCLUSIVE"},
+    {"id": "PC-V04-latent-time-stability", "status": "INCONCLUSIVE"},
+    {"id": "PC-V05-unit-check", "status": "PASS"},
+    {"id": "PC-V06-mass-energy-closure", "status": "FAIL"},
+    {"id": "PC-V07-identifiability", "status": "BLOCKED"},
+    {"id": "PC-V08-numerical-guards", "status": "PASS"},
+    {"id": "PC-V10-physical-heat-balance", "status": "PASS"},
+    {"id": "PC-V09-formal-promotion", "status": "BLOCKED"},
+    {"id": "UPSTREAM-V11-internal-temperature-validation", "status": "BLOCKED"},
+    {"id": "AUDIT-code-result-provenance", "status": "INCONCLUSIVE"}
+  ],
+  "assumptions": [
+    "All audited candidate directories are treated as prototypes and not as authority to modify the formal route.",
+    "A small numerical heat residual for the proxy is not evidence of phase-resolved physical validity.",
+    "The direct classification uses the strongest demonstrated gate: formal promotion is blocked; paper use is sensitivity-only."
+  ],
+  "unknowns": [
+    "No internal temperature observations are available for validation.",
+    "No material-specific enthalpy/DSC, phase-resolved moisture, vapor RH/concentration, or independently measured phase-change kinetics are available in the audited inputs.",
+    "The existing files do not prove that the 19:29 raw run was executed by the later 19:33 script version; a frozen-source rerun is required for clean provenance."
+  ],
+  "warnings": [
+    "Do not promote this handoff to PASS or write TEAM_APPROVED from it.",
+    "The candidate report says the independent time ladder was not repeated, while the final raw results contain 24 space and 24 time rows; reconcile this wording before paper citation.",
+    "Do not call no_latent an M0 model."
+  ],
+  "required_next_actions": [
+    "If formal promotion is desired, implement independent liquid/vapor/bound-water inventories, phase-resolved boundary fluxes, and Gamma with a consistent moving-domain energy closure.",
+    "Obtain or freeze traceable material-specific phase parameters and internal/phase-resolved observations.",
+    "Freeze the source tree, rerun all 69 cases, regenerate all derived CSV/Markdown/manifest/handoff files, and then repeat the audit.",
+    "Until those gates pass, cite only the explicitly labelled equivalent latent-heat sensitivity/upper-bound diagnostic."
+  ]
+}

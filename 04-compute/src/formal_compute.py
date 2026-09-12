@@ -293,7 +293,8 @@ def axis_mid_value(field, grid: Grid):
     return float((line[0]*x2-line[1]*x1)/(x2-x1))
 
 
-def radial_profile(field, coeff, grid: Grid, conv, env, positions=EVAL_R):
+def radial_profile(field, coeff, grid: Grid, conv, env, positions=EVAL_R,
+                   return_boundary=False):
     j = 0
     if grid.nz>1:
         z1,z2=grid.zc[0]**2,grid.zc[1]**2
@@ -307,6 +308,8 @@ def radial_profile(field, coeff, grid: Grid, conv, env, positions=EVAL_R):
     pos = np.asarray(positions)
     vals = np.interp(np.minimum(pos, grid.radius), xp, fp)
     vals[pos > grid.radius + 1e-12] = np.nan
+    if return_boundary:
+        return vals, float(surface)
     return vals
 
 
@@ -356,12 +359,14 @@ def simulate(cfg: RunConfig, initial=None):
             if cfg.q == 1: rho, cp, k, d = props_q1(c)
             elif cfg.q in (2, 3): rho, cp, k, d = props_q23(c, temp, constant=(cfg.model == "M2"), pref=cfg.pref, exponent=cfg.exponent)
             else: rho, cp, k, d = props_q4(c, temp, pref=cfg.pref, exponent=cfg.exponent)
-            rp_c = radial_profile(c, d, grid, 8e-7 * cfg.hm_mult, cenv)
-            rp_t = radial_profile(temp, k, grid, 25 * cfg.h_mult, tenv)
+            rp_c, surface_c_boundary = radial_profile(
+                c, d, grid, 8e-7 * cfg.hm_mult, cenv, return_boundary=True)
+            rp_t, surface_t_boundary = radial_profile(
+                temp, k, grid, 25 * cfg.h_mult, tenv, return_boundary=True)
             rec = {"time_s": t, "radius_m": current_radius, "max_C": max(float(c.max()),axis_mid_value(c,grid)),
                    "min_C": float(c.min()), "mean_C": float(np.sum(c*grid.vol)/np.sum(grid.vol)),
-                   "center_C": float(rp_c[0]), "surface_C": float(rp_c[np.where(EVAL_R <= current_radius + 1e-12)[0][-1]]),
-                   "center_T_C": float(rp_t[0] - 273.15), "surface_T_C": float(rp_t[np.where(EVAL_R <= current_radius + 1e-12)[0][-1]] - 273.15)}
+                   "center_C": float(rp_c[0]), "surface_C": float(surface_c_boundary),
+                   "center_T_C": float(rp_t[0] - 273.15), "surface_T_C": float(surface_t_boundary - 273.15)}
             records.append(rec); states.append((t, rp_t - 273.15, rp_c))
             next_sample += cfg.sample_every
         current_max = max(float(c.max()),axis_mid_value(c,grid))
@@ -579,11 +584,17 @@ def full_suite(log):
         threshold_grid_rows.append({"scope":"Q3","nr":r["config"]["nr"],"nz":r["config"]["nz"],"grid_strategy":r["config"]["radial_strategy"],"fixed_dt_s":60,"interpolated_event_time_s":et,"reported_event_time_s":r["metrics"]["reported_event_time_s"],"adjacent_change_s":"" if prev is None else abs(et-prev["metrics"]["interpolated_event_time_s"])})
     convergence.append({"scope":"Q3","family":"M3","metric":"t_star_space","base":q3_space[-2]["metrics"]["interpolated_event_time_s"],"fine":q3["metrics"]["interpolated_event_time_s"],"absolute_change":abs(q3_space[-2]["metrics"]["interpolated_event_time_s"]-q3["metrics"]["interpolated_event_time_s"]),"acceptance_pair":True})
     convergence.append({"scope":"Q3","family":"M3","metric":"t_star_time","base":q3_time["metrics"]["interpolated_event_time_s"],"fine":q3_time_fine["metrics"]["interpolated_event_time_s"],"absolute_change":abs(q3_time["metrics"]["interpolated_event_time_s"]-q3_time_fine["metrics"]["interpolated_event_time_s"]),"acceptance_pair":True})
-    for window in (1800,3600,7200):
+    # Q3 单因素扫描采用低/中/高五级，避免只用 low/high 两个端点
+    # 就把响应趋势误读成线性；所有点均由正式求解器真实运行得到。
+    q3_window_levels = [("30 min", 1800), ("45 min", 2700), ("60 min", 3600),
+                        ("90 min", 5400), ("120 min", 7200)]
+    for level, window in q3_window_levels:
         r=execute(RunConfig(f"Q3-window-{window}",10,20,60,259200,3,"M3",window_s=window,stop_threshold=.15-1e-6,sample_every=3600))
-        sensitivity.append({"scope":"Q3","factor":"terminal_window_s","level":str(window),"value":window,"t_star_s":r["metrics"]["final_time_s"],"final_max_C":r["metrics"]["final_max_C"],"final_mean_C":r["metrics"]["final_mean_C"]})
+        sensitivity.append({"scope":"Q3","factor":"terminal_window_s","level":level,"value":window,"t_star_s":r["metrics"]["final_time_s"],"final_max_C":r["metrics"]["final_max_C"],"final_mean_C":r["metrics"]["final_mean_C"]})
+    q3_factor_levels = [("0.8x", .8), ("0.9x", .9), ("1.0x", 1.0),
+                        ("1.1x", 1.1), ("1.2x", 1.2)]
     for factor in ("h_mult","hm_mult","pref","exponent"):
-        for level,val in (("low",.8),("high",1.2)):
+        for level,val in q3_factor_levels:
             kw={factor:val}; r=execute(RunConfig(f"Q3-sens-{factor}-{level}",10,20,60,259200,3,"M3",stop_threshold=.15-1e-6,sample_every=3600,**kw))
             sensitivity.append({"scope":"Q3","factor":factor,"level":level,"value":val,"t_star_s":r["metrics"]["final_time_s"],"final_max_C":r["metrics"]["final_max_C"],"final_mean_C":r["metrics"]["final_mean_C"]})
     for level,vals in (("low",(.8,.8,.8,1.2)),("high",(1.2,1.2,1.2,.8))):

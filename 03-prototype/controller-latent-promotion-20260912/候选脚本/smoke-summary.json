@@ -1,0 +1,31 @@
+{
+  "status": "SMOKE_PASS",
+  "records": [
+    {
+      "scenario": "no_latent",
+      "question": "Q4",
+      "status": "PASS",
+      "runtime_s": 0.6598864999978105,
+      "max_linear_relative_residual": 4.8723071442981264e-11,
+      "normalized_moisture_balance_error": 7.093839167569682e-10,
+      "max_physical_heat_balance_relative": 1.8408866861909228e-09,
+      "heat_trace_count": 6,
+      "checks": "{\"finite_final_max_C\": true, \"nonnegative_final_max_C\": true, \"linear_residual_lt_1e-7\": true, \"water_balance_lt_1e-6\": true, \"heat_ledger_finite\": true, \"heat_balance_lt_10pct\": true}"
+    },
+    {
+      "scenario": "nominal_proxy",
+      "question": "Q4",
+      "status": "PASS",
+      "runtime_s": 1.0106660000019474,
+      "max_linear_relative_residual": 4.9340133800752864e-11,
+      "normalized_moisture_balance_error": 2.76293249195437e-10,
+      "max_physical_heat_balance_relative": 4.958774762842256e-10,
+      "heat_trace_count": 6,
+      "checks": "{\"finite_final_max_C\": true, \"nonnegative_final_max_C\": true, \"linear_residual_lt_1e-7\": true, \"water_balance_lt_1e-6\": true, \"heat_ledger_finite\": true, \"heat_balance_lt_10pct\": true}"
+    }
+  ],
+  "failures": [],
+  "runtime_s": 4.446393699996406,
+  "stop_rule": "do not start full run when input or numerical smoke fails",
+  "write_boundary": "03-prototype/controller-latent-promotion-20260912/候选脚本"
+}

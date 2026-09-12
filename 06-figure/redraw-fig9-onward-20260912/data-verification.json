@@ -1,0 +1,460 @@
+{
+  "status": "PASS",
+  "scope": "figure 9 onward",
+  "figures": {
+    "FIG-Q3-SENS-ONEFACTOR": {
+      "figure_id": "FIG-Q3-SENS-ONEFACTOR",
+      "snapshot": "06-figure/data-snapshots/FIG-Q3-SENS-ONEFACTOR.csv",
+      "snapshot_sha256": "016ad45dc867253cbf13c7896eb4f0d2d570808ee2830405744179bda476690e",
+      "source_checks": [
+        {
+          "path": "04-compute/results/sensitivity.csv",
+          "expected_sha256": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf",
+          "actual_sha256": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf",
+          "status": "PASS"
+        }
+      ],
+      "rows": 11,
+      "columns": [
+        "scope",
+        "factor",
+        "level",
+        "value",
+        "t_star_s",
+        "final_max_C",
+        "final_mean_C",
+        "scenario",
+        "time_h",
+        "display_h",
+        "crossed"
+      ],
+      "figure_size_inches": [
+        7.2,
+        4.25
+      ],
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    "FIG-Q3-COMBINED-BOUNDARY": {
+      "figure_id": "FIG-Q3-COMBINED-BOUNDARY",
+      "snapshot": "06-figure/data-snapshots/FIG-Q3-COMBINED-BOUNDARY.csv",
+      "snapshot_sha256": "2942685038a555e80d421dab645d507e6ab2ef96686090359639d8049c19f2e1",
+      "source_checks": [
+        {
+          "path": "04-compute/results/sensitivity.csv",
+          "expected_sha256": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf",
+          "actual_sha256": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf",
+          "status": "PASS"
+        }
+      ],
+      "rows": 2,
+      "columns": [
+        "scope",
+        "factor",
+        "level",
+        "value",
+        "t_star_s",
+        "final_max_C",
+        "final_mean_C",
+        "scenario",
+        "time_h",
+        "display_h",
+        "crossed"
+      ],
+      "figure_size_inches": [
+        6.7,
+        3.8
+      ],
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    "FIG-Q4-RADIUS-TIME": {
+      "figure_id": "FIG-Q4-RADIUS-TIME",
+      "snapshot": "06-figure/data-snapshots/FIG-Q4-RADIUS-TIME.csv",
+      "snapshot_sha256": "c24229b30ed4f2fd02236eb572fc59c1cd35488d3e57ff0a49846111d09a4a76",
+      "source_checks": [
+        {
+          "path": "04-compute/results/q4-threshold-trajectory.csv",
+          "expected_sha256": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8",
+          "actual_sha256": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8",
+          "status": "PASS"
+        }
+      ],
+      "rows": 3065,
+      "columns": [
+        "time_s",
+        "radius_m"
+      ],
+      "figure_size_inches": [
+        6.7,
+        3.8
+      ],
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    "FIG-Q4-THRESHOLD-TRAJECTORY": {
+      "figure_id": "FIG-Q4-THRESHOLD-TRAJECTORY",
+      "snapshot": "06-figure/data-snapshots/FIG-Q4-THRESHOLD-TRAJECTORY.csv",
+      "snapshot_sha256": "16e83f9d135e255cb154561a9fa4fa1496177a0c752224ef9832f9d621c5d15a",
+      "source_checks": [
+        {
+          "path": "04-compute/results/q4-threshold-trajectory.csv",
+          "expected_sha256": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8",
+          "actual_sha256": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8",
+          "status": "PASS"
+        }
+      ],
+      "rows": 3065,
+      "columns": [
+        "time_s",
+        "max_C",
+        "mean_C",
+        "center_C",
+        "surface_C"
+      ],
+      "figure_size_inches": [
+        6.7,
+        4.05
+      ],
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    "FIG-Q4-IMPLEMENTATION-AGREEMENT": {
+      "figure_id": "FIG-Q4-IMPLEMENTATION-AGREEMENT",
+      "snapshot": "06-figure/data-snapshots/FIG-Q4-IMPLEMENTATION-AGREEMENT.csv",
+      "snapshot_sha256": "5bc2e085945b05cbb8f4749ffe9e845e5426f888ec623577ca1e4b0d9f682b0c",
+      "source_checks": [
+        {
+          "path": "04-compute/results/run-summary.csv",
+          "expected_sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "actual_sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "status": "PASS"
+        },
+        {
+          "path": "04-compute/results/convergence.csv",
+          "expected_sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f",
+          "actual_sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f",
+          "status": "PASS"
+        }
+      ],
+      "rows": 2,
+      "columns": [
+        "implementation",
+        "event_time_s",
+        "reported_s"
+      ],
+      "figure_size_inches": [
+        7.2,
+        3.85
+      ],
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    "FIG-Q4-JACOBIAN-ABLATION": {
+      "figure_id": "FIG-Q4-JACOBIAN-ABLATION",
+      "snapshot": "06-figure/data-snapshots/FIG-Q4-JACOBIAN-ABLATION.csv",
+      "snapshot_sha256": "88a90c5dd230ecc1ea3a413b0bf14b190258a5721f6522e4f76c71c7de19d4f4",
+      "source_checks": [
+        {
+          "path": "04-compute/results/key-metrics.json",
+          "expected_sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91",
+          "actual_sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91",
+          "status": "PASS"
+        },
+        {
+          "path": "04-compute/results/validation-register.csv",
+          "expected_sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
+          "actual_sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
+          "status": "PASS"
+        }
+      ],
+      "rows": 2,
+      "columns": [
+        "route",
+        "balance_error"
+      ],
+      "figure_size_inches": [
+        6.7,
+        3.8
+      ],
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    "FIG-Q4-COMBINED-BOUNDARY": {
+      "figure_id": "FIG-Q4-COMBINED-BOUNDARY",
+      "snapshot": "06-figure/data-snapshots/FIG-Q4-COMBINED-BOUNDARY.csv",
+      "snapshot_sha256": "4503d311ddafeb5cc3c4b06494b52c09c7aa3205eec3f126e6a6f7513dfd30b7",
+      "source_checks": [
+        {
+          "path": "04-compute/results/sensitivity.csv",
+          "expected_sha256": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf",
+          "actual_sha256": "6277eb03d60b20c62fb4c6bc74cec2a476a0b796b1dffc907f07380218f5d2cf",
+          "status": "PASS"
+        }
+      ],
+      "rows": 2,
+      "columns": [
+        "scope",
+        "factor",
+        "level",
+        "value",
+        "t_star_s",
+        "final_max_C",
+        "final_mean_C",
+        "scenario",
+        "time_h",
+        "display_h",
+        "crossed"
+      ],
+      "figure_size_inches": [
+        6.7,
+        3.8
+      ],
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    "FIG-VAL-BALANCE-RESIDUAL": {
+      "figure_id": "FIG-VAL-BALANCE-RESIDUAL",
+      "snapshot": "06-figure/data-snapshots/FIG-VAL-BALANCE-RESIDUAL.csv",
+      "snapshot_sha256": "55f1681115b2899090b340a436d9165e7b836761c5b231627244f44123071eca",
+      "source_checks": [
+        {
+          "path": "04-compute/results/run-summary.csv",
+          "expected_sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "actual_sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "status": "PASS"
+        },
+        {
+          "path": "04-compute/results/key-metrics.json",
+          "expected_sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91",
+          "actual_sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91",
+          "status": "PASS"
+        }
+      ],
+      "rows": 62,
+      "columns": [
+        "label",
+        "normalized_moisture_balance_error",
+        "max_linear_relative_residual"
+      ],
+      "figure_size_inches": [
+        7.2,
+        4.05
+      ],
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    "FIG-Q1-GRID-CONV": {
+      "figure_id": "FIG-Q1-GRID-CONV",
+      "snapshot": "06-figure/data-snapshots/FIG-Q1-GRID-CONV.csv",
+      "snapshot_sha256": "ddfc3f2d562918c7bd2aa2f9a12b9e077f53d324768194d05d4da7045cce25b1",
+      "source_checks": [
+        {
+          "path": "04-compute/results/field-grid-convergence.csv",
+          "expected_sha256": "36e8cd85789d68c6c07efb304441425bd7948430473fbd14593c6c3fef3d57f5",
+          "actual_sha256": "36e8cd85789d68c6c07efb304441425bd7948430473fbd14593c6c3fef3d57f5",
+          "status": "PASS"
+        }
+      ],
+      "rows": 12,
+      "columns": [
+        "scope",
+        "family",
+        "nr",
+        "nz",
+        "grid_strategy",
+        "fixed_dt_s",
+        "metric",
+        "value",
+        "adjacent_change"
+      ],
+      "figure_size_inches": [
+        7.2,
+        3.75
+      ],
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    "FIG-Q2-V02-MARGIN": {
+      "figure_id": "FIG-Q2-V02-MARGIN",
+      "snapshot": "06-figure/data-snapshots/FIG-Q2-V02-MARGIN.csv",
+      "snapshot_sha256": "f9e00b1d03fc54f915419a12772a1860f7e238eeeeba4c76b9ea7f42b8e4400a",
+      "source_checks": [
+        {
+          "path": "04-compute/results/convergence.csv",
+          "expected_sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f",
+          "actual_sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f",
+          "status": "PASS"
+        },
+        {
+          "path": "04-compute/results/validation-register.csv",
+          "expected_sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
+          "actual_sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
+          "status": "PASS"
+        }
+      ],
+      "rows": 1,
+      "columns": [
+        "absolute_change",
+        "threshold",
+        "margin"
+      ],
+      "figure_size_inches": [
+        6.7,
+        3.5
+      ],
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    "FIG-Q3-SPACE-CONV": {
+      "figure_id": "FIG-Q3-SPACE-CONV",
+      "snapshot": "06-figure/data-snapshots/FIG-Q3-SPACE-CONV.csv",
+      "snapshot_sha256": "d5a9efef37f2b88d3d1dec0ecdd2136a8928f66b5e9b5e0b269c08a1ee59b7d8",
+      "source_checks": [
+        {
+          "path": "04-compute/results/threshold-grid-convergence.csv",
+          "expected_sha256": "8ba2aa18d42e13169db3f569cb7a6c1d5e8fd836c7f6818a8d0eb42fefd811f6",
+          "actual_sha256": "8ba2aa18d42e13169db3f569cb7a6c1d5e8fd836c7f6818a8d0eb42fefd811f6",
+          "status": "PASS"
+        }
+      ],
+      "rows": 3,
+      "columns": [
+        "scope",
+        "nr",
+        "nz",
+        "grid_strategy",
+        "fixed_dt_s",
+        "interpolated_event_time_s",
+        "reported_event_time_s",
+        "adjacent_change_s"
+      ],
+      "figure_size_inches": [
+        6.7,
+        3.7
+      ],
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    "FIG-Q4-BRACKET-ZOOM": {
+      "figure_id": "FIG-Q4-BRACKET-ZOOM",
+      "snapshot": "06-figure/data-snapshots/FIG-Q4-BRACKET-ZOOM.csv",
+      "snapshot_sha256": "a245bb0f1d00b81e61df9fba29bdd5485b6e61878341a5378327ad85f7585863",
+      "source_checks": [
+        {
+          "path": "04-compute/results/q4-threshold-trajectory.csv",
+          "expected_sha256": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8",
+          "actual_sha256": "5e78913190fd0cac172f68b76a80520e7a4fb41b147a8a59b7522cef652e2bb8",
+          "status": "PASS"
+        },
+        {
+          "path": "04-compute/results/run-summary.csv",
+          "expected_sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "actual_sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "status": "PASS"
+        }
+      ],
+      "rows": 6,
+      "columns": [
+        "time_s",
+        "max_C"
+      ],
+      "figure_size_inches": [
+        6.7,
+        3.8
+      ],
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    "FIG-Q4-SPACE-CONV": {
+      "figure_id": "FIG-Q4-SPACE-CONV",
+      "snapshot": "06-figure/data-snapshots/FIG-Q4-SPACE-CONV.csv",
+      "snapshot_sha256": "3940dfcae8bfdfc6bf619d609aceebab537980ed4205ef2f9d3c50f1e07e5d88",
+      "source_checks": [
+        {
+          "path": "04-compute/results/threshold-grid-convergence.csv",
+          "expected_sha256": "8ba2aa18d42e13169db3f569cb7a6c1d5e8fd836c7f6818a8d0eb42fefd811f6",
+          "actual_sha256": "8ba2aa18d42e13169db3f569cb7a6c1d5e8fd836c7f6818a8d0eb42fefd811f6",
+          "status": "PASS"
+        }
+      ],
+      "rows": 3,
+      "columns": [
+        "scope",
+        "nr",
+        "nz",
+        "grid_strategy",
+        "fixed_dt_s",
+        "interpolated_event_time_s",
+        "reported_event_time_s",
+        "adjacent_change_s"
+      ],
+      "figure_size_inches": [
+        6.7,
+        3.7
+      ],
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    "FIG-Q4-DRY-SOLID-CONTINUITY": {
+      "figure_id": "FIG-Q4-DRY-SOLID-CONTINUITY",
+      "snapshot": "06-figure/data-snapshots/FIG-Q4-DRY-SOLID-CONTINUITY.csv",
+      "snapshot_sha256": "b3ab35c24fca8d1dee6c8e855fe3bffa9da022deed80b75b31ced378c554bd50",
+      "source_checks": [
+        {
+          "path": "04-compute/results/validation-register.csv",
+          "expected_sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
+          "actual_sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
+          "status": "PASS"
+        },
+        {
+          "path": "04-compute/results/run-summary.csv",
+          "expected_sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "actual_sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "status": "PASS"
+        }
+      ],
+      "rows": 3,
+      "columns": [
+        "metric",
+        "value",
+        "plot_value"
+      ],
+      "figure_size_inches": [
+        6.7,
+        3.8
+      ],
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    }
+  },
+  "policy": "读取冻结快照；源文件仅用于 hash verification；不重新计算模型"
+}

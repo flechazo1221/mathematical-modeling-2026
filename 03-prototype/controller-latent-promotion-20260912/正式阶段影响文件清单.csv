@@ -1,0 +1,31 @@
+stage,path,planned_effect,write_policy,condition
+COMPUTE,04-compute/src/formal_compute.py,加入内部温度场与表面等效潜热边界的正式实现,未来重开后按审计修改;本次不写,候选数值与物理审计均通过且人工H2批准
+COMPUTE,04-compute/src/finalize_compute.py,重新汇总新路线结果并重建哈希,未来重开后运行;本次不写,正式COMPUTE完成
+COMPUTE,04-compute/results/q4-threshold-trajectory.csv,替换为新路线Q4阈值轨迹,旧文件先归档保留;本次不写,正式COMPUTE通过
+COMPUTE,04-compute/results/run-summary.csv,记录新路线全量运行与失败实例,旧文件先归档保留;本次不写,正式COMPUTE通过
+COMPUTE,04-compute/results/convergence.csv,更新Q4空间/时间细化证据,旧文件先归档保留;本次不写,独立空间/时间审计完成
+COMPUTE,04-compute/results/field-grid-convergence.csv,更新内部温度场网格细化,旧文件先归档保留;本次不写,空间细化完成
+COMPUTE,04-compute/results/threshold-grid-convergence.csv,更新阈值事件时刻细化,旧文件先归档保留;本次不写,60 s结果如实登记
+COMPUTE,04-compute/results/sensitivity.csv,加入Lv低/名义/高敏感性,旧文件先归档保留;本次不写,候选敏感性通过
+COMPUTE,04-compute/results/validation-register.csv,分开登记数值与物理验证,旧文件先归档保留;本次不写,候选handoff允许升级
+COMPUTE,04-compute/证据索引.json,重建COMPUTE输出索引与哈希,旧文件先归档保留;正式结果生成后
+COMPUTE,04-compute/复现清单.json,记录正式复现入口和环境,旧文件先归档保留;正式结果生成后
+COMPUTE,04-compute/handoff.json,由BLOCKED/候选交接转为正式阶段实际状态,本次不写;覆盖前需备份旧正式交接,COMPUTE全部审计通过
+EVIDENCE,05-evidence/主张证据映射.json,重建温度场/潜热/Q4主张证据关系,本次不写,COMPUTE handoff通过且人工H3选择
+EVIDENCE,05-evidence/结果事实清单.json,替换可引用数值事实并保留限制,本次不写,新结果哈希稳定
+EVIDENCE,05-evidence/摘要事实清单.json,更新摘要事实与Lv敏感性边界,本次不写,新证据审计通过
+EVIDENCE,05-evidence/正式图表需求.json,重列Q4热账/阈值/敏感性图需求,本次不写,H3批准图表范围
+EVIDENCE,05-evidence/论文证据大纲.md,同步模型变更和物理限制,本次不写,EVIDENCE交接通过
+EVIDENCE,05-evidence/H3-选择包.md,重新准备候选主张和图表选择包,本次不写,人工H3批准
+EVIDENCE,05-evidence/handoff.json,生成新的EVIDENCE交接,本次不写,EVIDENCE完整性检查通过
+FIGURE,06-figure/contracts/FIG-Q4-THRESHOLD-TRAJECTORY.json,更新Q4阈值轨迹图契约,本次不写,新的EVIDENCE需求冻结
+FIGURE,06-figure/contracts/FIG-Q4-SPACE-CONV.json,更新空间收敛图契约,本次不写,新的收敛表生成
+FIGURE,06-figure/contracts/FIG-Q4-COMBINED-BOUNDARY.json,加入表面热/质通量与潜热字段,本次不写,候选字段审计通过
+FIGURE,06-figure/contracts/FIG-Q4-RADIUS-TIME.json,确认R(t)和移动域几何仍一致,本次不写,新Q4结果生成
+FIGURE,06-figure/data-snapshots/FIG-Q4-THRESHOLD-TRAJECTORY.csv,替换为新证据快照,旧快照先保留,FIGURE数据审计通过
+FIGURE,06-figure/data-snapshots/FIG-Q4-SPACE-CONV.csv,替换为新空间细化快照,旧快照先保留,FIGURE数据审计通过
+FIGURE,06-figure/data-snapshots/FIG-Q4-COMBINED-BOUNDARY.csv,替换为新边界热质通量快照,旧快照先保留,字段和单位审计通过
+FIGURE,06-figure/data-snapshots/FIG-Q4-RADIUS-TIME.csv,按新COMPUTE重建或复核,旧快照先保留,移动域结果通过
+FIGURE,06-figure/figure-manifest.json,重建正式图表清单和哈希,旧manifest先归档保留,全部图表完成
+FIGURE,06-figure/handoff.json,生成新的FIGURE交接,本次不写,FIGURE视觉与数据审计通过
+PAPER,07-paper/*,下游同步新模型、事实、图注和限制,本次不写;具体文件由正式PAPER阶段实际输出确定,COMPUTE/EVIDENCE/FIGURE均通过

@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "status": "BLOCKED",
+  "scope": "independent latent-heat / liquid-vapor / bound-water candidate probe",
+  "seed": 20260912,
+  "command": "\"C:\\Users\\Linza\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe\" -B 03-prototype/controller-phase-change-20260912/run_controller_phase_change.py",
+  "runtime_s": 8.518371700003627,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\Linza\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.3.5"
+  },
+  "inputs": [
+    {
+      "path": "decisions/H1-problem.json",
+      "exists": true,
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "exists": true,
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"
+    },
+    {
+      "path": "decisions/H3-claims.json",
+      "exists": true,
+      "sha256": "75fa934828f09a4f9d1c59d02e4d7570370fbde4f91d5b695e8e4a52132d7ccb"
+    },
+    {
+      "path": "02-design/handoff.json",
+      "exists": true,
+      "sha256": "5f2579e4fdad88eb19f68cfad1de065046e186b27e55d0d86422576be3f7ccc0"
+    },
+    {
+      "path": "02-design/H2-优化审计与方向.md",
+      "exists": true,
+      "sha256": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33"
+    },
+    {
+      "path": "02-design/contracts/model-q23-fixed.json",
+      "exists": true,
+      "sha256": "b3f8327a02dba8de5e97906822641639b4c953aa48cfc6aaefda14986ace9fd1"
+    },
+    {
+      "path": "02-design/contracts/model-q4-m1-reference.json",
+      "exists": true,
+      "sha256": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5"
+    },
+    {
+      "path": "02-design/contracts/model-q4-m2-moving-fv.json",
+      "exists": true,
+      "sha256": "c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f"
+    },
+    {
+      "path": "02-design/supplemental-extensions/model-cfd.json",
+      "exists": true,
+      "sha256": "72d3004efe77b57cd9674fd1e59934501a6973d726b5be537600030fc3a74bd7"
+    },
+    {
+      "path": "02-design/supplemental-extensions/扩展模型设计.md",
+      "exists": true,
+      "sha256": "af0a359d8604b00e8b1ba6d1d623c5e3402fd68392076c6673adab2c2791827a"
+    },
+    {
+      "path": "02-design/supplemental-extensions/统一比较合同.json",
+      "exists": true,
+      "sha256": "51da4966459cc0515513e75bef86adbe3f361e11a5cfcb0c774154b40ce3b1ba"
+    },
+    {
+      "path": "02-literature/文献阅读结果.md",
+      "exists": true,
+      "sha256": "31cb88d8a1cb8de37c193dfa5824f234e0097f96c0284037d82201f15ad915a8"
+    },
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "exists": true,
+      "sha256": "a8e568085f51a00971ca8662b33e58b5ac34b2ffd7860dee407f2e76b4281257"
+    },
+    {
+      "path": "04-compute/results/validation-register.csv",
+      "exists": true,
+      "sha256": "4bff2426f87fa1197d8f184dad9b372e702db81c01ae71027fd35ee51b18ecae"
+    },
+    {
+      "path": "input/A题/附件/附件1.xlsx",
+      "exists": true,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    },
+    {
+      "path": "input/A题/附件/附件2.xlsx",
+      "exists": true,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "03-prototype/controller-phase-change-20260912/H2-选择包.md",
+      "sha256": "7bc3b94d61f1c2fac4cabcea2dcd24a43fc8db7492f7d7f0059d78eaffa3fdb2"
+    },
+    {
+      "path": "03-prototype/controller-phase-change-20260912/identifiability.csv",
+      "sha256": "079a6fabd20b2d0fe47a202ba26161ef3a002937ce21d0fac3997dcfcb16fbf2"
+    },
+    {
+      "path": "03-prototype/controller-phase-change-20260912/run.log",
+      "sha256": "5dd62a870a867e8508f2f6813893204b9ea3f61da164e5600f4522c8ec199336"
+    },
+    {
+      "path": "03-prototype/controller-phase-change-20260912/run_controller_phase_change.py",
+      "sha256": "6ad948bca7540084ea1e5b01454053d6620b938327fe398822e2e0e7967eaef5"
+    },
+    {
+      "path": "03-prototype/controller-phase-change-20260912/sensitivity.csv",
+      "sha256": "e8b4f3fd9f195a22613f96c52a2ec51f6815ed1d5e138d0f7b960d4bc9b77b8d"
+    },
+    {
+      "path": "03-prototype/controller-phase-change-20260912/source-audit.json",
+      "sha256": "54e33e89a9407a9a19a4e762ccd5c78d6fa6948e36603c40193e38207245d478"
+    },
+    {
+      "path": "03-prototype/controller-phase-change-20260912/symbolic_checks.json",
+      "sha256": "6554e43fdd9acc1f1030e99b83cbd58ed595e2cc7904c85eed87566ff7e1a272"
+    },
+    {
+      "path": "03-prototype/controller-phase-change-20260912/toy_results.json",
+      "sha256": "2938dd2557f2fab66e132ed94e65cb26fe8fe9546d387669f645ceb109ea6280"
+    },
+    {
+      "path": "03-prototype/controller-phase-change-20260912/候选方案对比.md",
+      "sha256": "ca939ef5a80f768bfad418cac08d9921d6af1604c622ffbe0e6c8a9cf36111b8"
+    }
+  ],
+  "claims": [
+    "symbolic and dimensional structure is internally consistent",
+    "current task data do not identify phase-resolved extension",
+    "toy evidence is diagnostic only"
+  ],
+  "unknowns": [
+    "no phase-resolved observations",
+    "no material-specific Lv/Gamma/equilibrium/porosity/permeability source",
+    "no independent internal T/C profiles"
+  ],
+  "warnings": [
+    "do not promote to M1-M4",
+    "do not treat toy parameters as physical values",
+    "do not infer reality from reduced CFD examples"
+  ]
+}

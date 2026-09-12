@@ -1,0 +1,95 @@
+{
+  "created_at": "2026-09-12T18:08:55.447087+08:00",
+  "inputs": [
+    {
+      "path": "02-design/H2-优化审计与方向.md",
+      "sha256": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33",
+      "bytes": 1979
+    },
+    {
+      "path": "02-design/handoff.json",
+      "sha256": "5f2579e4fdad88eb19f68cfad1de065046e186b27e55d0d86422576be3f7ccc0",
+      "bytes": 3990
+    },
+    {
+      "path": "02-design/候选模型方案.md",
+      "sha256": "ced11bfb105fad81a7e1690cbaa9b4edfcc077ab17dbda25924def4cfbc63c17",
+      "bytes": 15681
+    },
+    {
+      "path": "02-design/验证计划.json",
+      "sha256": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb",
+      "bytes": 3805
+    },
+    {
+      "path": "03-prototype/handoff.json",
+      "sha256": "8d4f161cc4b4b3b84f679273f23db5bf674f610754727efaf7a53f7635ff07e6",
+      "bytes": 6827
+    },
+    {
+      "path": "04-compute/src/formal_compute.py",
+      "sha256": "af3214f972eb874764323c76561025df1cc70f27d7f0985968b57b0b688b4644",
+      "bytes": 48642
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/formal_compute_revision.py",
+      "sha256": "b7cbae558d8b122b9fc6650bb1c8c8e82848188d005f29b16391523f469b9541",
+      "bytes": 48347
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/parameter-diagnosis-20260912.md",
+      "sha256": "56fe6f21958abfd3c4c45076552fac9f5387770271040ee30355e2b103793f46",
+      "bytes": 3321
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/README.md",
+      "sha256": "4d8149da64bf7f7d72d8ddad3031ec58aa386681347e6a923655fb1dcdb28fe7",
+      "bytes": 818
+    },
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d",
+      "bytes": 7372
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+      "bytes": 1837
+    },
+    {
+      "path": "decisions/H3-claims.json",
+      "sha256": "75fa934828f09a4f9d1c59d02e4d7570370fbde4f91d5b695e8e4a52132d7ccb",
+      "bytes": 5977
+    },
+    {
+      "path": "input/A题/附件/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586
+    },
+    {
+      "path": "input/A题/附件/附件2.xlsx",
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "bytes": 11485
+    },
+    {
+      "path": "input/A题/附件/附件3/result1.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "bytes": 10073
+    },
+    {
+      "path": "input/A题/附件/附件3/result2.xlsx",
+      "sha256": "23b261b295c1b787d000eebbca6521c37075107b6fcf78724f8d395ce1798ff4",
+      "bytes": 10073
+    },
+    {
+      "path": "input/A题/附件/附件3/result3.xlsx",
+      "sha256": "07e4793d620a7f899804c0298d49a16a197960440fd47f8bb780c57ec27e2859",
+      "bytes": 9345
+    },
+    {
+      "path": "input/A题/附件/附件3/result4.xlsx",
+      "sha256": "86e9300ffa3d30c43de895ea6723da943e85b8740b137bcae5af7107f076eeac",
+      "bytes": 9351
+    }
+  ]
+}

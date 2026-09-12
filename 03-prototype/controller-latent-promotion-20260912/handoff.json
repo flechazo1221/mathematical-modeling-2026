@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "stage": "PROTOTYPE",
+  "status": "BLOCKED",
+  "scope": "H2 reopen package only; formal results remain untouched",
+  "write_boundary": "03-prototype/controller-latent-promotion-20260912",
+  "numerical_run_status": "SMOKE_PASS_FULL_RUN_NOT_RUN",
+  "physical_validation_status": "BLOCKED",
+  "no_team_approved": true,
+  "inputs": [
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d",
+      "bytes": 7372
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+      "bytes": 1837
+    },
+    {
+      "path": "decisions/H3-claims.json",
+      "sha256": "75fa934828f09a4f9d1c59d02e4d7570370fbde4f91d5b695e8e4a52132d7ccb",
+      "bytes": 5977
+    },
+    {
+      "path": "02-design/H2-优化审计与方向.md",
+      "sha256": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33",
+      "bytes": 1979
+    },
+    {
+      "path": "02-design/contracts/model-q4-m1-reference.json",
+      "sha256": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5",
+      "bytes": 1055
+    },
+    {
+      "path": "02-design/contracts/model-q4-m2-moving-fv.json",
+      "sha256": "c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f",
+      "bytes": 1072
+    },
+    {
+      "path": "04-compute/handoff.json",
+      "sha256": "a4c722e49b2ea4112c46cae49fccaf208cf67609484796ab658b44224e569b2b",
+      "bytes": 13148
+    },
+    {
+      "path": "05-evidence/handoff.json",
+      "sha256": "b61c068f47445447660535269ce6393ac7538a1d4a4e8a834eeb7978fb280826",
+      "bytes": 7695
+    },
+    {
+      "path": "06-figure/handoff.json",
+      "sha256": "59250e4ce9bb0347ba09e3d9f904f242bced3e30df297ca896a284fe4115b23b",
+      "bytes": 162167
+    },
+    {
+      "path": "03-prototype/controller-q4-temp-latent-20260912/handoff.json",
+      "sha256": "870c00090ffa0e5ee26c0fe104e3b2c31624bdb94ab183aafb6eb15862ba6ddf",
+      "bytes": 12469
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/formal_compute_revision.py",
+      "sha256": "b7cbae558d8b122b9fc6650bb1c8c8e82848188d005f29b16391523f469b9541",
+      "bytes": 48347
+    }
+  ],
+  "outputs": [
+    {
+      "path": "03-prototype/controller-latent-promotion-20260912/复现命令.txt",
+      "sha256": "a68758424c65ce73651730765015f5b40b61c44103f184723125c48f4819f421",
+      "bytes": 1131
+    },
+    {
+      "path": "03-prototype/controller-latent-promotion-20260912/候选脚本/run_latent_promotion_q4.py",
+      "sha256": "75002fcb1128c9685e272e106a0723bae96166c217bbb78ee0cfdfb7b1249788",
+      "bytes": 63478
+    },
+    {
+      "path": "03-prototype/controller-latent-promotion-20260912/候选脚本/smoke-failures.csv",
+      "sha256": "f01a374e9c81e3db89b3a42940c4d6a5447684986a1296e42bf13f196eed6295",
+      "bytes": 5
+    },
+    {
+      "path": "03-prototype/controller-latent-promotion-20260912/候选脚本/smoke-results.csv",
+      "sha256": "1d03c393de4eccaf036e8fa841c31d1daec2c8e3767adecc0858f1d7cd01224c",
+      "bytes": 777
+    },
+    {
+      "path": "03-prototype/controller-latent-promotion-20260912/候选脚本/smoke-summary.json",
+      "sha256": "95d458633bc33676643a195d38f1b7efc3eb34a5800e63a4563a695ac6dc8a31",
+      "bytes": 1435
+    },
+    {
+      "path": "03-prototype/controller-latent-promotion-20260912/候选脚本/smoke.log",
+      "sha256": "650d5bc6f9cc27c884003edbb1c43ff28aa10e4ca2705e0d434ee0b1dc81a313",
+      "bytes": 1377
+    },
+    {
+      "path": "03-prototype/controller-latent-promotion-20260912/正式阶段影响文件清单.csv",
+      "sha256": "323761b1d52a00bd4ea7b66f21faa0ebb76917a5c461b04f6d20acf4718520cc",
+      "bytes": 4045
+    },
+    {
+      "path": "03-prototype/controller-latent-promotion-20260912/中文结论.md",
+      "sha256": "da3e7d59e5c6152b44c8bb3ec88c08c7c6f55a2b6dca126e8154ad1a0f654444",
+      "bytes": 1438
+    },
+    {
+      "path": "03-prototype/controller-latent-promotion-20260912/主模型变更清单.md",
+      "sha256": "ae3f8eca83c6a0c7a158e279a750947147c96520abfc1ea9a71db66e9df94305",
+      "bytes": 1804
+    },
+    {
+      "path": "03-prototype/controller-latent-promotion-20260912/candidate-contract.json",
+      "sha256": "77ff0b292b078fabd57ff30fe0beac558106d89587efb308427accd0d84ffff1",
+      "bytes": 1169
+    },
+    {
+      "path": "03-prototype/controller-latent-promotion-20260912/H2-重开包.md",
+      "sha256": "a4bca70f374f9bd3057964df21fbec0a7cf6b3c91c54b73bd669757c0b1ea464",
+      "bytes": 4171
+    },
+    {
+      "path": "03-prototype/controller-latent-promotion-20260912/input-freeze.json",
+      "sha256": "e2b652698085f159d9320b2aff74f469884cd612b3a207ed8d8c4c17df76fe56",
+      "bytes": 2768
+    },
+    {
+      "path": "03-prototype/controller-latent-promotion-20260912/validation-register.csv",
+      "sha256": "47efe94e6f3685da258bbb83d955fe1f0d1b61d9a183915bd8a8818eb2a62e51",
+      "bytes": 1809
+    },
+    {
+      "path": "03-prototype/controller-latent-promotion-20260912/manifest.json",
+      "sha256": "4d8926f861766ad2389b55bc6a6b904c21064af73102a3739fe8b212b0035a6b"
+    }
+  ],
+  "frozen_decisions": [
+    "H2 reopen boundary from user instruction; no new TEAM_APPROVED record created"
+  ],
+  "assumptions": [
+    "surface cumulative export is bookkeeping only, not an internal vapor inventory",
+    "Lv is sensitivity only",
+    "Q4 retains q_w=rho_d*C and moving-domain geometry ledger"
+  ],
+  "unknowns": [
+    "phase-resolved identification unavailable",
+    "new candidate full numerical run not yet executed",
+    "new candidate physical validation not yet available"
+  ],
+  "claims": [
+    "package is prepared for human H2 review",
+    "candidate syntax and short smoke passed",
+    "formal COMPUTE/EVIDENCE/FIGURE are future actions only"
+  ],
+  "warnings": [
+    "do not overwrite formal results",
+    "preserve prior Q4 60 s failure and phase-identification limits",
+    "run pass does not imply physical validation pass"
+  ],
+  "required_next_actions": [
+    "human H2 reopen decision",
+    "candidate full verification and audit",
+    "formal rerun only after approval and archival of old results"
+  ],
+  "validation_register": [
+    "PROMO-V01-scope-contract:PASS",
+    "PROMO-V05-candidate-syntax:PASS",
+    "PROMO-V06-candidate-smoke:PASS",
+    "PROMO-V07-candidate-full-run:BLOCKED",
+    "PROMO-V08-q4-space-60s:INCONCLUSIVE",
+    "PROMO-V09-q4-time-60s:INCONCLUSIVE",
+    "PROMO-V11-phase-resolved-identification:BLOCKED",
+    "PROMO-V13-formal-promotion:BLOCKED"
+  ],
+  "created_at": "2026-09-12T00:00:00+08:00"
+}

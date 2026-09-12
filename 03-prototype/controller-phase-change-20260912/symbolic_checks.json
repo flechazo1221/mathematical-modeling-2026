@@ -1,0 +1,19 @@
+{
+  "state_units": {
+    "m_l": "kg/m3_bulk",
+    "m_v": "kg/m3_bulk",
+    "m_b": "kg/m3_bulk",
+    "Gamma": "kg/m3/s"
+  },
+  "flux_units": {
+    "j_l": "kg/m2/s",
+    "j_v": "kg/m2/s",
+    "J_boundary": "kg/m2/s"
+  },
+  "energy_units": {
+    "C_h_dTdt": "W/m3",
+    "div_k_grad_T": "W/m3",
+    "Lv_Gamma": "W/m3"
+  },
+  "dimensionless_toy_warning": "toy parameters are not material values and must not enter M1-M4"
+}

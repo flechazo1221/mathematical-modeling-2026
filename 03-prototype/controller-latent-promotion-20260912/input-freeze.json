@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "status": "FROZEN_FOR_PROTOTYPE_ONLY",
+  "route": "internal_temperature_surface_equivalent_latent",
+  "write_boundary": "03-prototype/controller-latent-promotion-20260912",
+  "formal_write_prohibited": [
+    "04-compute",
+    "05-evidence",
+    "06-figure",
+    "07-paper",
+    "decisions",
+    ".workflow"
+  ],
+  "inputs": [
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d",
+      "bytes": 7372
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+      "bytes": 1837
+    },
+    {
+      "path": "decisions/H3-claims.json",
+      "sha256": "75fa934828f09a4f9d1c59d02e4d7570370fbde4f91d5b695e8e4a52132d7ccb",
+      "bytes": 5977
+    },
+    {
+      "path": "02-design/H2-优化审计与方向.md",
+      "sha256": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33",
+      "bytes": 1979
+    },
+    {
+      "path": "02-design/contracts/model-q4-m1-reference.json",
+      "sha256": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5",
+      "bytes": 1055
+    },
+    {
+      "path": "02-design/contracts/model-q4-m2-moving-fv.json",
+      "sha256": "c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f",
+      "bytes": 1072
+    },
+    {
+      "path": "04-compute/handoff.json",
+      "sha256": "a4c722e49b2ea4112c46cae49fccaf208cf67609484796ab658b44224e569b2b",
+      "bytes": 13148
+    },
+    {
+      "path": "05-evidence/handoff.json",
+      "sha256": "b61c068f47445447660535269ce6393ac7538a1d4a4e8a834eeb7978fb280826",
+      "bytes": 7695
+    },
+    {
+      "path": "06-figure/handoff.json",
+      "sha256": "59250e4ce9bb0347ba09e3d9f904f242bced3e30df297ca896a284fe4115b23b",
+      "bytes": 162167
+    },
+    {
+      "path": "03-prototype/controller-q4-temp-latent-20260912/handoff.json",
+      "sha256": "870c00090ffa0e5ee26c0fe104e3b2c31624bdb94ab183aafb6eb15862ba6ddf",
+      "bytes": 12469
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/formal_compute_revision.py",
+      "sha256": "b7cbae558d8b122b9fc6650bb1c8c8e82848188d005f29b16391523f469b9541",
+      "bytes": 48347
+    }
+  ],
+  "prior_q4_evidence": {
+    "path": "03-prototype/controller-q4-temp-latent-20260912",
+    "numeric_runs": "69 successful candidate solver runs; 0 solver failures",
+    "q4_space_hm_event_changes_s": [
+      3480,
+      2040
+    ],
+    "q4_time_hm_event_changes_s": [
+      420,
+      420
+    ],
+    "strict_60s": "NOT_MET",
+    "phase_resolved_identification": "UNAVAILABLE"
+  },
+  "created_at": "2026-09-12T00:00:00+08:00"
+}

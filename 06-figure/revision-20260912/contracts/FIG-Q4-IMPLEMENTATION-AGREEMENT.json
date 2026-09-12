@@ -19,7 +19,7 @@
   "groups": [],
   "uncertainty": null,
   "required_comparisons": [
-    "配对点与差值放大"
+    "归一化事件时刻对比与相对差值量级"
   ],
   "must_show_failures": false,
   "prohibited_operations": [

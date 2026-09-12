@@ -1,0 +1,69 @@
+{
+  "revision": "Q3-CONV-20260912-v2",
+  "status": "PASS_CANDIDATE",
+  "project_root": "C:\\Users\\Linza\\Documents\\CUMCM26.pre-pull-20260910-205420\\mathematical-modeling-2026",
+  "source_solver": "04-compute\\src\\formal_compute.py",
+  "source_solver_sha256": "af3214f972eb874764323c76561025df1cc70f27d7f0985968b57b0b688b4644",
+  "inputs": [
+    {
+      "path": "04-compute\\results\\convergence.csv",
+      "sha256": "2e5a010ad933d583d03720b66968019209a586f75139ead7ad9b5bbb93f93a26"
+    },
+    {
+      "path": "04-compute\\results\\threshold-grid-convergence.csv",
+      "sha256": "cb64d799d6d729705ec7333f21d21ba42ba4388d613997a2cb05378c51df55bb"
+    }
+  ],
+  "logs": [
+    {
+      "path": "04-compute\\revision-grid-conv-20260912\\logs\\q3.log",
+      "sha256": "7fffef5cf72b23a78270b0bd6c9527a37bc18490c3ac57bd2c67a8d3feb4cbf6"
+    },
+    {
+      "path": "04-compute\\revision-grid-conv-20260912\\logs\\q3_mid.log",
+      "sha256": "85674a1cc2735d48b4f2b9e6d70cc21f15668e6289dadac26a5a780c6ab67b40"
+    },
+    {
+      "path": "04-compute\\revision-grid-conv-20260912\\logs\\q3_time_extra.log",
+      "sha256": "f25e608f3bbff021b06892ad4b36b9553bc342f4b8119a0aa09a14d2d7c329d1"
+    }
+  ],
+  "commands": [
+    "python 04-compute/revision-grid-conv-20260912/grid_conv_revision.py --scope q3",
+    "python 04-compute/revision-grid-conv-20260912/grid_conv_revision.py --scope q3_mid",
+    "python 04-compute/revision-grid-conv-20260912/grid_conv_revision.py --scope q3_time_extra",
+    "python 04-compute/revision-grid-conv-20260912/finalize_q3_convergence.py"
+  ],
+  "space_design": {
+    "nr": [
+      63,
+      93,
+      140,
+      175,
+      210
+    ],
+    "nz": 36,
+    "dt_s": 15.0
+  },
+  "time_design": {
+    "nr": 210,
+    "nz": 36,
+    "dt_s": [
+      60.0,
+      30.0,
+      15.0,
+      7.5
+    ]
+  },
+  "event_tolerance_s": 60.0,
+  "completed_spatial_runs": [
+    "COMPLETED",
+    "COMPLETED",
+    "COMPLETED",
+    "COMPLETED",
+    "COMPLETED"
+  ],
+  "aborted_runs_excluded": [
+    "Q3-M3-L5-nr315-nz36"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "python_executable": "C:\\Users\\Linza\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.3.5",
+  "seed": 20260912,
+  "threshold": 0.149999,
+  "report_grid_s": 60.0,
+  "write_boundary": "03-prototype/controller-temp-field-refinement-20260912",
+  "generated_at": "2026-09-12T21:51:38.549978+08:00"
+}

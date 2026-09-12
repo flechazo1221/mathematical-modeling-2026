@@ -1,0 +1,32 @@
+{
+  "rule": "only the product L_v*proxy_scale enters the registered source",
+  "rows": [
+    {
+      "question": "Q2",
+      "parameters": "log(proxy_scale),log(L_v)",
+      "n_trace_points": 765,
+      "rank_at_tol_1e-10": 1,
+      "condition_number": Infinity,
+      "singular_values": "1.414214e+00;4.610681e-17",
+      "status": "BLOCKED_NON_IDENTIFIABLE"
+    },
+    {
+      "question": "Q3",
+      "parameters": "log(proxy_scale),log(L_v)",
+      "n_trace_points": 6814,
+      "rank_at_tol_1e-10": 1,
+      "condition_number": Infinity,
+      "singular_values": "1.414214e+00;8.525239e-16",
+      "status": "BLOCKED_NON_IDENTIFIABLE"
+    },
+    {
+      "question": "Q4",
+      "parameters": "log(proxy_scale),log(L_v)",
+      "n_trace_points": 6973,
+      "rank_at_tol_1e-10": 1,
+      "condition_number": Infinity,
+      "singular_values": "1.414214e+00;8.234050e-16",
+      "status": "BLOCKED_NON_IDENTIFIABLE"
+    }
+  ]
+}

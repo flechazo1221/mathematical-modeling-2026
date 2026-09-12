@@ -1,0 +1,12 @@
+﻿parameter,definition,unit,source,status
+j_w_proxy,proxy_scale*rho_d*(C_surface_pred-C_inf)/R_m,kg/m2/s,existing moisture Robin boundary flux; q_w=rho_d*C,ENGINEERING_PROXY
+proxy_scale,multiplier on existing moisture loss,1,controlled sensitivity 0.5/1/2; not independently identified,NOT_IDENTIFIED
+L_v,multiplier in -Lv*j_w_proxy surface heat flux,J/kg,2.4e6 engineering water scale; no project-specific enthalpy/DSC source,NOT_IDENTIFIED
+L_v_sensitivity,low/standard/high latent heat profiles,J/kg,controlled 1.2e6/2.4e6/4.8e6; transparent engineering range, not measured,SENSITIVITY_ONLY
+rho/cp/k/D,Appendix 4 constitutive laws used by formal revision,"kg/m3,J/kg/K,W/m/K,m2/s",题目附录4; D uses exp(-0.45/C) for Q2/Q3 and exp(-0.30/C) for Q4,GIVEN_BY_PROBLEM
+T_inf/C_inf,0-4 h environment temperature and moisture history,"degC,kg/kg","附件1, 241 data points; after 4 h terminal-window extension is contractual",GIVEN_BY_ATTACHMENT
+R(t),moving radius history,cm,"附件2, 145 data points over 0-72 h",GIVEN_BY_ATTACHMENT
+bound_fraction,1-exp(-t/tau) release toy scaling of total boundary flux,1,controlled low/nominal/high sensitivity 0/0.1/0.2; no phase-resolved measurement,TOY_NOT_IDENTIFIED
+release_tau_s,bound-water release time scale,s,controlled 21600/7200/1800 s sensitivity; no kinetic measurement,TOY_NOT_IDENTIFIED
+rho_d,dry-density factor in q_w=rho_d*C,kg/m3,650 kg/m3 Q2/Q3 dry intercept; 820 kg/m3 Q4 source convention,CONVENTION_REQUIRES_VALIDATION
+"phi,K,pc,krl,Dv_eff,bound-water kinetics",required full multiphase closures,various,not present in current A attachments,MISSING

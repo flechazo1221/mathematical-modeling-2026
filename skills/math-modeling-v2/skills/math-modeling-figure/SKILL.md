@@ -12,6 +12,12 @@ Read `../../shared/references/quality-principles.md`, `workflow-contract.md`, `r
 - **Workflow mode:** when `.workflow/` exists or the request names H3/FIGURE, require `decisions/H3-claims.json` with `TEAM_APPROVED`. Read verified results, evidence map, formal figure requirements, terminology, and official page dimensions. Write only `PROJECT_ROOT/06-figure/`.
 - **Standalone mode:** require a readable dataset or result table and a discernible comparison, relationship, distribution, or trend. Preserve the source file. Write to the user-requested output directory, or `PROJECT_ROOT/figures/` when none is given.
 
+For a revision after COMPUTE/EVIDENCE/H3/FIGURE already passed, treat the existing
+manifest, handoff, frozen snapshots, and approved claim list as the legacy baseline.
+Do not silently replace them. Create a versioned revision directory, rebuild only
+figures whose evidence dependencies changed, and require a new H3 approval before
+the revised figures become formal deliverables.
+
 ## Standalone first-draft interaction
 
 Do not begin with a questionnaire when the supplied data supports a defensible default. Profile the data, infer the most decision-relevant relationship, and generate exactly one clearly labelled draft figure with conservative defaults. Do not silently infer a causal claim, metric definition, aggregation rule, unit, or omitted category.
@@ -52,6 +58,42 @@ After confirmation:
 6. Inspect color and grayscale previews at intended paper size; fix clipping, overlap, missing glyphs, misleading axes, or inconsistent panels.
 7. Use no fixed minimum count for figures, categories, or chart types. Every retained figure must change understanding of an approved claim.
 8. Produce a contact sheet grouped by argument role—not file order—and audit whether the sequence reads as problem/data → model → computation → result → validation. A technically valid but narratively incoherent set is not PASS.
+
+## CUMCM publication profile
+
+When working in a CUMCM project's `06-figure/`, apply the following project
+profile in addition to the general rules:
+
+- Keep data curves high-contrast and colorblind-tolerant. Use black for axes,
+  grid, title, legend, ticks, and explanatory text. Keep one curve family on a
+  consistent solid-line convention and use color plus markers to distinguish
+  time or scenario when needed; verify grayscale separability.
+- Prefer Songti (or a verified equivalent) for Chinese publication text and keep
+  variable names, units, ticks, legends, and captions typographically consistent.
+  Remove redundant subtitles, decorative notes, and repeated explanations;
+  place limitations and conditions in the caption or paper text.
+- A visual revision may change layout, typography, annotation, or display-only
+  units, but must not change the source data, frozen snapshot, axis range,
+  sampled points, units, metric definition, failure cases, or claim category.
+  Never smooth, interpolate, delete, or recompute a curve merely to make it look
+  better. If the data shape is scientifically suspect, route the issue back to
+  COMPUTE/EVIDENCE.
+- Formal delivery uses SVG, PDF, and PNG. For this profile, PNG should be at
+  least 600 DPI unless an official rule requires another value, with both color
+  and grayscale previews. Check PDF font embedding when PDF is delivered.
+- Complete three QA layers: visual (clipping, overlap, glyphs, axes, legend,
+  panel consistency), programmatic (format, dimensions, DPI, font and JSON
+  validity), and data (source/snapshot hashes, output hashes, and claim-to-file
+  mapping). Record all warnings rather than hiding them.
+- Before cleaning a figure directory, compare the current manifest, contracts,
+  captions, paper/appendix references, and user-selected scope. Move clearly
+  superseded files to a recoverable archive; do not permanently delete files
+  solely because they are not in one manifest. Preserve historical revision
+  directories and never alter upstream evidence.
+- Render a batch with one controlled process. Do not launch overlapping renderers
+  that can race on the same output files; verify the final batch after rendering.
+  If Windows `python` resolves to the WindowsApps placeholder, use the bundled
+  runtime rather than changing the environment for a one-off figure task.
 
 ## Required workflow outputs
 

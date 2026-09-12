@@ -1,0 +1,21 @@
+{
+  "candidate": "nominal_proxy",
+  "case_count": 24,
+  "pass_count": 24,
+  "fail_count": 0,
+  "space_levels": [
+    "L",
+    "M",
+    "H",
+    "X"
+  ],
+  "time_levels": [
+    "L",
+    "M",
+    "H",
+    "X"
+  ],
+  "threshold_definition": "unchanged source candidate threshold 0.15 - 1e-6 for Q3/Q4; Q2 has no threshold stop",
+  "hm_checks": [],
+  "failure_case_ids": []
+}

@@ -1,0 +1,261 @@
+{
+  "schema_version": "1.0",
+  "status": "BLOCKED",
+  "scope": "phase-change controlled attempt; primary route unchanged",
+  "seed": 20260912,
+  "runtime_s": 778.9506426000007,
+  "inputs": [
+    {
+      "path": "decisions/H1-problem.json",
+      "exists": true,
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d",
+      "bytes": 7372
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "exists": true,
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+      "bytes": 1837
+    },
+    {
+      "path": "decisions/H3-claims.json",
+      "exists": true,
+      "sha256": "75fa934828f09a4f9d1c59d02e4d7570370fbde4f91d5b695e8e4a52132d7ccb",
+      "bytes": 5977
+    },
+    {
+      "path": "02-design/handoff.json",
+      "exists": true,
+      "sha256": "5f2579e4fdad88eb19f68cfad1de065046e186b27e55d0d86422576be3f7ccc0",
+      "bytes": 3990
+    },
+    {
+      "path": "02-design/H2-优化审计与方向.md",
+      "exists": true,
+      "sha256": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33",
+      "bytes": 1979
+    },
+    {
+      "path": "02-design/验证计划.json",
+      "exists": true,
+      "sha256": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb",
+      "bytes": 3805
+    },
+    {
+      "path": "02-design/contracts/model-q23-fixed.json",
+      "exists": true,
+      "sha256": "b3f8327a02dba8de5e97906822641639b4c953aa48cfc6aaefda14986ace9fd1",
+      "bytes": 1166
+    },
+    {
+      "path": "02-design/contracts/model-q4-m1-reference.json",
+      "exists": true,
+      "sha256": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5",
+      "bytes": 1055
+    },
+    {
+      "path": "02-literature/文献阅读结果.md",
+      "exists": true,
+      "sha256": "31cb88d8a1cb8de37c193dfa5824f234e0097f96c0284037d82201f15ad915a8",
+      "bytes": 20053
+    },
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "exists": true,
+      "sha256": "a8e568085f51a00971ca8662b33e58b5ac34b2ffd7860dee407f2e76b4281257",
+      "bytes": 868
+    },
+    {
+      "path": "input/A题/附件/附件1.xlsx",
+      "exists": true,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586
+    },
+    {
+      "path": "input/A题/附件/附件2.xlsx",
+      "exists": true,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "bytes": 11485
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/handoff.json",
+      "exists": true,
+      "sha256": "5683c504e810230f19de2afdf421d2676c9c9fa55cb2aba9c2fe0b920f408ec3",
+      "bytes": 62058
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/energy-audit-summary.csv",
+      "exists": true,
+      "sha256": "2c434f787e90db2e941fc06e7a023d4aac2c91fe586186af5669b8bbfba4b3d8",
+      "bytes": 4359
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/parameter-sensitivity.csv",
+      "exists": true,
+      "sha256": "ee11aa5a4034006eb9e849f1b36029e7472676efe0ed75895a77363a161b189a",
+      "bytes": 4241
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/parameter-source-register.csv",
+      "exists": true,
+      "sha256": "820af40667947732febe6be0e05f9baa62f5694639b53ab45762d700d1324333",
+      "bytes": 1388
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/validation-register.csv",
+      "exists": true,
+      "sha256": "993a52641b9639dc8b254862a823df21dbd12e829b013c45e106cf9413a6c16a",
+      "bytes": 2005
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/H2-选择包.md",
+      "exists": true,
+      "sha256": "7b654d4a846ef78330af104ee54aed2f2a047cec9624c8805082851930874602",
+      "bytes": 5947
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/formal_compute_revision.py",
+      "exists": true,
+      "sha256": "b7cbae558d8b122b9fc6650bb1c8c8e82848188d005f29b16391523f469b9541",
+      "bytes": 48347
+    }
+  ],
+  "outputs": [
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/__pycache__/run_coupled_enthalpy.cpython-312.pyc",
+      "sha256": "7b726532db7e0fef5860e46c3c0a5a2ad9903761fdb37b0c26a3d7cdb63cd015",
+      "bytes": 77591
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/component-split-comparison.csv",
+      "sha256": "22bcea393d13362e3a82b09e5ce053798e4e5be757b5a756fd9fd46327774b52",
+      "bytes": 1979
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/component-validation-register.csv",
+      "sha256": "394460110d507699260c68f8b3f0a76051562a8f021061291ce938cdc83ba2a0",
+      "bytes": 954
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/environment.json",
+      "sha256": "3af7900a0c7b78f1e2a1f496be86dc8e6a19826016a3d7991a9882723a54e76b",
+      "bytes": 369
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/H2-选择包.md",
+      "sha256": "ed7684ab358213c3e94f6a87875a758af2bacccc668d859685e963fb3b3deb01",
+      "bytes": 2355
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/heat-audit.csv",
+      "sha256": "1bc438d458622450c29773140519e40011c8fe5102114cc5fb82265b3288edff",
+      "bytes": 10253767
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/identifiability.csv",
+      "sha256": "238942a2cbcef01f3ddb861efdb65afdab84fd37b79db03919d700c78921fcfc",
+      "bytes": 378
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/identifiability.json",
+      "sha256": "7f5aa48893fa6af81976dfc0297c9fc2088a67b45ebaef1f6fc6f02eaefccb7f",
+      "bytes": 960
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/latent-source-trace.csv",
+      "sha256": "dfcb7457e568b0699416bf1cb32fb1990f1133267292cbb970a634662488c9f2",
+      "bytes": 14380853
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/parameter-register.csv",
+      "sha256": "b65d4a44680e82e5f3be4f75b84cfd6ff9c9c2d6223046c74806530d6258f5ab",
+      "bytes": 1622
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/run.log",
+      "sha256": "967065a61cad8d33830c1aa49ef237766255b69c4784ab196ebac5043f7f9194",
+      "bytes": 91383
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/run_coupled_enthalpy.py",
+      "sha256": "688bf4d17be48f46f7b04119d77e6f7628fcea6dbae2fd9bf86cbc6fd00f43f7",
+      "bytes": 63733
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/smoke-failures.csv",
+      "sha256": "f01a374e9c81e3db89b3a42940c4d6a5447684986a1296e42bf13f196eed6295",
+      "bytes": 5
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/smoke-heat-audit.csv",
+      "sha256": "050cad962d78ff41babf5c5c0040052f5a46d34b6642103f4d5939823ecf5d48",
+      "bytes": 514182
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/smoke-results.csv",
+      "sha256": "53785fd9791082fb995328cd8833e46956b60d2741b629a65c5a031efcd0ea3e",
+      "bytes": 942
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/smoke-summary.json",
+      "sha256": "22cdc171f35420744b6460de6f6f344ffb3917ea06b5e4ef81bdce015d978913",
+      "bytes": 82
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/smoke.log",
+      "sha256": "1271e4ecb4d312e14e0474188a1c1132204b05aab55017817cdf9d95135183e8",
+      "bytes": 2656
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/space-time-refinement.csv",
+      "sha256": "7895f5362498dc4cf2dff6f4db06c6fa666fc57a33f8129d68edceb8e225dc8d",
+      "bytes": 7803
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/validation-register.csv",
+      "sha256": "8bc2f3ff78ed1e8fe1a3dc96b437f131c6297cb63d6075052643d7a524995fa4",
+      "bytes": 2255
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/water-audit.csv",
+      "sha256": "0b3b40a72cccb29f0750fa8dc4d9028011e3d1bd0c77e8e9546ed4e59980488b",
+      "bytes": 8557136
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/修复说明.md",
+      "sha256": "f6d5b91634658c1564ec57f8def0c9ca09a80814a9cff5d08da2c6d59a3e7271",
+      "bytes": 1149
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/候选方案对比.md",
+      "sha256": "e3d787c7ddb1aac37f08d7d239034f06b72f0319dffd0091c6b7c02f6658dced",
+      "bytes": 10840
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/候选配对比较.csv",
+      "sha256": "14198682e0c5fd3d6b30618e2b77a049072857e49d165d11a6b0054931431b84",
+      "bytes": 5017
+    },
+    {
+      "path": "03-prototype/controller-temp-latent-coupled-20260912/原始结果.csv",
+      "sha256": "9d70fb5f69e212870e23db2c7a532a9e89823f7d83d3c13dda59fe68fe4add4a",
+      "bytes": 31480
+    }
+  ],
+  "claims": [
+    "real no-latent versus moisture-loss-derived equivalent latent-heat paired runs completed where status PASS",
+    "Lv*proxy_scale sensitivity is engineering evidence only",
+    "mass-energy phase closure and separate parameter identification are unsupported"
+  ],
+  "unknowns": [
+    "no internal temperature observations",
+    "no material-specific Lv or phase-resolved Gamma/jw source",
+    "no phase-resolved water inventories or liquid-vapor-bound-water boundary split"
+  ],
+  "warnings": [
+    "j_w_proxy is an equivalent surface-gasification proxy, not a phase model",
+    "do not call Q_latent=0 a measurement",
+    "do not promote to formal COMPUTE"
+  ],
+  "completed_at": "2026-09-12T20:23:34+0800"
+}

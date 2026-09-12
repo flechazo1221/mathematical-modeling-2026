@@ -1,0 +1,4 @@
+﻿scope,family,level,nr,nz,dt_s,duration_s,metric,value,adjacent_change,field_linf_change,field_l2_relative_change,observed_order,runtime_s
+field,SMOKE-Q2-M3,1,20,12,5,120,final_max_C,2.5500000000000003,,,,,0.040207700003520586
+field,SMOKE-Q2-M3,2,30,12,5,120,final_max_C,2.55,4.440892098500626e-16,0.004924101607922893,0.0004704102047065461,,0.0468947999906959
+field,SMOKE-Q2-M3,3,45,12,5,120,final_max_C,2.55,0.0,0.0023403301308757563,0.0002249997616265013,,0.065370600001188

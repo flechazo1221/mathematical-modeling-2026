@@ -1,0 +1,29 @@
+{
+  "figure_id": "FIG-DATA-EXTENSION-WIDE",
+  "claim_ids": ["H1-v2-8"],
+  "question": "4 h 后的温度边界如何按冻结末段稳健值延拓？",
+  "source_files": [
+    {
+      "path": "input/A题/附件/附件1.xlsx",
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+    }
+  ],
+  "snapshot": "06-figure/corrected-20260912/data-snapshots/FIG-DATA-EXTENSION-WIDE.csv",
+  "snapshot_sha256": "46ef8701170c7493daaf1a8b6d94984a46570520617e7c51939da9c40f9e898f",
+  "x": {"field": "time_h", "label": "时间 (h)", "range": [0, 10]},
+  "y": {"field": "temperature_C", "label": "温度边界 (°C)", "range": [25, 55]},
+  "groups": ["观测区间（分段线性）", "冻结延拓"],
+  "uncertainty": null,
+  "required_comparisons": ["0–4 h 观测区间与 4–8 h 冻结延拓"],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "recompute model",
+    "change source data or axes",
+    "omit source samples",
+    "use dashed data curves",
+    "put limitations or repeated explanations inside the figure"
+  ],
+  "target_formats": ["svg", "png", "pdf"],
+  "minimum_dpi": 600,
+  "scope_note": "仅为现有校正版 FIG-DATA-EXTENSION-WIDE 的呈现修订；不新增或改写 H3 官方 22 图清单。"
+}

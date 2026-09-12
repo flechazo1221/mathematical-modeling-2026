@@ -1,0 +1,15 @@
+{
+  "figure_id": "TAB-Q4-DRY-SOLID-CONTINUITY",
+  "claim_ids": ["Q4-DED-01"],
+  "question": "干固体、局部连续性与几何是否一致？",
+  "source_files": [
+    {"path": "04-compute/results/validation-register.csv", "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb"},
+    {"path": "04-compute/results/run-summary.csv", "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"}
+  ],
+  "required_comparisons": ["三项数值诊断表"],
+  "target_formats": ["csv", "md"],
+  "placement": "appendix",
+  "mandatory_limit": "数值诊断非真实性验证",
+  "snapshot": "06-figure/data-snapshots/TAB-Q4-DRY-SOLID-CONTINUITY.csv",
+  "snapshot_sha256": "c68d7bfe7db8d351375ad71c296f6e187056968dcb93112bb19532ee68e4dfc9"
+}

@@ -1,0 +1,33 @@
+{
+  "tolerance_s": 60.0,
+  "checks": [
+    {
+      "implementation": "prescribed-T-baseline",
+      "question": "Q3",
+      "last_level": "V",
+      "last_adjacent_change_s": 108.54873486293945,
+      "within_60s": false
+    },
+    {
+      "implementation": "prescribed-T-baseline",
+      "question": "Q4",
+      "last_level": "Y",
+      "last_adjacent_change_s": 183.84311330964556,
+      "within_60s": false
+    },
+    {
+      "implementation": "internal-temperature",
+      "question": "Q3",
+      "last_level": "W",
+      "last_adjacent_change_s": 136.5129036231665,
+      "within_60s": false
+    },
+    {
+      "implementation": "internal-temperature",
+      "question": "Q4",
+      "last_level": "Y",
+      "last_adjacent_change_s": 184.10474402923137,
+      "within_60s": false
+    }
+  ]
+}

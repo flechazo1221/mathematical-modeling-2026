@@ -1,13 +1,12 @@
 # 视觉与程序审计
 
-- 正式交付：22/22 图均含 SVG、600 DPI PNG、彩色与灰度预览；5/5 表均含 CSV 与 Markdown。
+- 正式交付：21/21 图均含 SVG、600 DPI PNG、彩色与灰度预览；6/6 表均含 CSV 与 Markdown。
+- 原图 `FIG-Q4-DRY-SOLID-CONTINUITY` 已按团队决定移除，三项数值改以附录表保留。
 - register validator：27/27 项 PASS；合同必需字段：27/27 PASS。
-- `check_figure.py --strict`：22 PNG 与 22 SVG 均无 FAIL。
-- 逐图视觉检查：在 166 mm × 105.4 mm 最终物理尺寸审阅彩色与灰度联系表，并放大复核高密标签、72 h 右删失、实现差异和对数残差图；未见缺字、裁切、文字/图例重叠、坐标误标或灰度不可分。
-- 修订留痕：修复 MATLAB 字符串逻辑解析、Windows 深色主题继承、边缘失败标注裁切、实现差异显示尺度与残差对数轴；均未改变冻结数据或科学意义。
+- `check_figure.py --strict`：21 PNG 与 21 SVG 均无 FAIL。
+- 逐图视觉检查：在 166 mm × 105.4 mm 最终物理尺寸审阅彩色与灰度联系表；未见缺字、裁切、文字/图例重叠、坐标误标或灰度不可分。
 - 完整披露：V02=4.00114e-5（阈值5e-5）、V06=47.5654 s（登记48 s，相对60 s裕量有限）、Q3三个及Q4一个72 h未达标情景、Jacobian消融失败、守恒残差均保留。
-- S0 边界：未将 CFD、PINN、代理或纯机器学习补充路线用于正式结果图。
-- 所有图均为条件仿真/数值验证，不构成真实药材实验验证。
+- 所有图表均为条件仿真/数值验证，不构成真实药材实验验证。
 
 - FIG-Q1-C-FIELD: PASS；PNG 600 DPI；SVG、彩色预览、灰度预览齐全。
 - FIG-Q1-END-EFFECT: PASS；PNG 600 DPI；SVG、彩色预览、灰度预览齐全。
@@ -30,4 +29,3 @@
 - FIG-Q3-SPACE-CONV: PASS；PNG 600 DPI；SVG、彩色预览、灰度预览齐全。
 - FIG-Q4-BRACKET-ZOOM: PASS；PNG 600 DPI；SVG、彩色预览、灰度预览齐全。
 - FIG-Q4-SPACE-CONV: PASS；PNG 600 DPI；SVG、彩色预览、灰度预览齐全。
-- FIG-Q4-DRY-SOLID-CONTINUITY: PASS；PNG 600 DPI；SVG、彩色预览、灰度预览齐全。

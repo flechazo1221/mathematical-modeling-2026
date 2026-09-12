@@ -1,0 +1,40 @@
+{
+  "figure_id": "FIG-Q1-END-EFFECT",
+  "claim_ids": [
+    "Q1-OBS-01"
+  ],
+  "question": "二维端面效应使总体含水率改变多少？",
+  "source_files": [
+    {
+      "path": "04-compute/results/run-summary.csv",
+      "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"
+    },
+    {
+      "path": "04-compute/results/convergence.csv",
+      "sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f"
+    }
+  ],
+  "x": null,
+  "y": null,
+  "groups": [],
+  "uncertainty": null,
+  "required_comparisons": [
+    "M1/M2哑铃图"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "recompute model",
+    "change metric",
+    "omit failures",
+    "present conditional simulation as observation"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "placement": "主文",
+  "mandatory_limit": "模型差异非精度提升",
+  "snapshot": "06-figure/beautified-20260912/data-snapshots/FIG-Q1-END-EFFECT.csv",
+  "snapshot_sha256": "9db497f8ae95fcbdebe11afedf65c427ee567353f303c1f872390b768705626d"
+}

@@ -1,0 +1,7 @@
+﻿id,status,evidence
+COMP-V01-total-C-single-field,PASS,"Existing C(C,t) solver and Appendix 4 D(C,T) are retained as the total-moisture baseline."
+COMP-V02-liquid-surface-gasification,INCONCLUSIVE,"Uses total C Robin flux as an equivalent surface gasification flux; numerical comparison is real, but liquid/vapor phase split is not measured."
+COMP-V03-bound-water-toy,INCONCLUSIVE,Low/nominal/high bound fractions and release times are transparent sensitivity assumptions; no bound-water inventory or release observation is available.
+COMP-V04-phase-mass-closure,FAIL,"No independent C_l, C_v, C_b inventories or phase-resolved boundary flux are solved."
+COMP-V05-D-double-counting,PASS,"The toy only scales the boundary latent heat flux; D(C,T) and the total C equation are not re-added."
+COMP-V06-paper-use,INCONCLUSIVE,"Usable only as an explicitly labelled engineering extension/sensitivity, not as an experimentally validated phase model."

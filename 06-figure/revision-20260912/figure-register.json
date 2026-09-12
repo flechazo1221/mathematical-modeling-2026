@@ -105,8 +105,8 @@
       "claim_or_question": "二维端面效应使总体含水率改变多少？",
       "source_data": [
         {
-          "path": "04-compute/results/run-summary.csv",
-          "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "path": "04-compute/src/formal_compute.py",
+          "sha256": "e76fb6167449df6111a4d56b253878b60d71b582b9ddc474ceaab22bfc179975",
           "fields": [
             "label",
             "final_mean_C",
@@ -117,8 +117,8 @@
           ]
         },
         {
-          "path": "04-compute/results/convergence.csv",
-          "sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f",
+          "path": "04-compute/results/run-summary.csv",
+          "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
           "fields": [
             "label",
             "final_mean_C",
@@ -1601,87 +1601,6 @@
       "confirmation": "TEAM_CONFIRMED_H3"
     },
     {
-      "id": "FIG-Q4-DRY-SOLID-CONTINUITY",
-      "kind": "figure",
-      "subproblem": "Q4",
-      "claim_or_question": "干固体、局部连续性与几何是否一致？",
-      "source_data": [
-        {
-          "path": "04-compute/results/validation-register.csv",
-          "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
-          "fields": [
-            "id",
-            "evidence",
-            "dry_solid_inventory_relative_error",
-            "geometry_relative_error",
-            "max_local_dry_continuity_relative_residual"
-          ]
-        },
-        {
-          "path": "04-compute/results/run-summary.csv",
-          "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
-          "fields": [
-            "id",
-            "evidence",
-            "dry_solid_inventory_relative_error",
-            "geometry_relative_error",
-            "max_local_dry_continuity_relative_residual"
-          ]
-        }
-      ],
-      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
-      "evidence_class": "quantitative",
-      "visual_family": "三指标对数棒棒糖",
-      "axes": [
-        {
-          "axis": "x",
-          "label": "x=metric; y=error/residual(-,log;0单标)",
-          "unit": "见标签",
-          "scale": "linear"
-        },
-        {
-          "axis": "y",
-          "label": "x=metric; y=error/residual(-,log;0单标)",
-          "unit": "见标签",
-          "scale": "log"
-        }
-      ],
-      "groups": [
-        "inventory,continuity,geometry"
-      ],
-      "uncertainty": {
-        "display": "none",
-        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
-        "sample_size": null
-      },
-      "annotations": [
-        "4.441e-16；2.384e-13；0"
-      ],
-      "expected_reading": "干固体、局部连续性与几何是否一致？",
-      "generation": {
-        "tool": "MATLAB",
-        "formats": [
-          "svg",
-          "png@600dpi"
-        ]
-      },
-      "placement": "appendix",
-      "provenance": {
-        "owner": "team",
-        "privacy": "internal",
-        "license": "team-generated"
-      },
-      "limitations": [
-        "数值诊断非真实性验证"
-      ],
-      "prohibited_interpretations": [
-        "不得改变模型、指标、数据、结论或证据类别",
-        "不得把数值验证表述为现实验证",
-        "不得隐藏失败案例或有限裕量"
-      ],
-      "confirmation": "TEAM_CONFIRMED_H3"
-    },
-    {
       "id": "TAB-Q2-MODEL-CONTRACT",
       "kind": "table",
       "subproblem": "VAL/H3",
@@ -1978,6 +1897,66 @@
       },
       "limitations": [
         "保持主张类别边界"
+      ],
+      "prohibited_interpretations": [
+        "不得改变模型、指标、数据、结论或证据类别",
+        "不得把数值验证表述为现实验证",
+        "不得隐藏失败案例或有限裕量"
+      ],
+      "confirmation": "TEAM_CONFIRMED_H3"
+    },
+    {
+      "id": "TAB-Q4-DRY-SOLID-CONTINUITY",
+      "kind": "table",
+      "subproblem": "VAL/H3",
+      "claim_or_question": "Q4 移动边界的干固体守恒、局部连续性与几何是否一致？",
+      "source_data": [
+        {
+          "path": "04-compute/results/validation-register.csv",
+          "sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
+          "fields": [
+            "frozen table fields"
+          ]
+        },
+        {
+          "path": "04-compute/results/run-summary.csv",
+          "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f",
+          "fields": [
+            "frozen table fields"
+          ]
+        }
+      ],
+      "model_result_version": "H2 TEAM_APPROVED + COMPUTE PASS + H3 TEAM_APPROVED",
+      "evidence_class": "quantitative",
+      "visual_family": "evidence table",
+      "axes": [],
+      "groups": [
+        "冻结登记组"
+      ],
+      "uncertainty": {
+        "display": "none",
+        "definition": "确定性数值仿真/压力测试；无抽样不确定性",
+        "sample_size": null
+      },
+      "annotations": [
+        "干固体存量误差4.441e-16；局部连续性残差2.384e-13；几何误差0"
+      ],
+      "expected_reading": "Q4 移动边界的干固体守恒、局部连续性与几何是否一致？",
+      "generation": {
+        "tool": "MATLAB",
+        "formats": [
+          "csv",
+          "md"
+        ]
+      },
+      "placement": "appendix",
+      "provenance": {
+        "owner": "team",
+        "privacy": "internal",
+        "license": "team-generated"
+      },
+      "limitations": [
+        "数值诊断非真实性验证"
       ],
       "prohibited_interpretations": [
         "不得改变模型、指标、数据、结论或证据类别",

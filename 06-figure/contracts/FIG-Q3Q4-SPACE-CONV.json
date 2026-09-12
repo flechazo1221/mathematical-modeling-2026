@@ -1,0 +1,58 @@
+{
+  "figure_id": "FIG-Q3Q4-SPACE-CONV",
+  "claim_ids": [
+    "Q3-OBS-01",
+    "Q4-OBS-01"
+  ],
+  "question": "Q3与Q4事件时刻随空间网格如何稳定？",
+  "source_files": [
+    {
+      "path": "04-compute/results/threshold-grid-convergence.csv",
+      "sha256": "8ba2aa18d42e13169db3f569cb7a6c1d5e8fd836c7f6818a8d0eb42fefd811f6"
+    }
+  ],
+  "source_snapshots": [
+    {
+      "figure_id": "FIG-Q3-SPACE-CONV",
+      "path": "06-figure/data-snapshots/FIG-Q3-SPACE-CONV.csv",
+      "sha256": "d5a9efef37f2b88d3d1dec0ecdd2136a8928f66b5e9b5e0b269c08a1ee59b7d8"
+    },
+    {
+      "figure_id": "FIG-Q4-SPACE-CONV",
+      "path": "06-figure/data-snapshots/FIG-Q4-SPACE-CONV.csv",
+      "sha256": "3940dfcae8bfdfc6bf619d609aceebab537980ed4205ef2f9d3c50f1e07e5d88"
+    }
+  ],
+  "panels": {
+    "a": {
+      "scope": "Q3",
+      "model_context": "固定半径",
+      "metric": "interpolated_event_time_s"
+    },
+    "b": {
+      "scope": "Q4",
+      "model_context": "收缩移动边界",
+      "metric": "interpolated_event_time_s"
+    }
+  },
+  "x": "nr",
+  "y": "interpolated_event_time_s / 3600",
+  "fixed_dt_s": 60,
+  "required_comparisons": [
+    "Q3/Q4双面板网格—事件收敛图"
+  ],
+  "prohibited_operations": [
+    "recompute model",
+    "change metric",
+    "merge Q3 and Q4 data into one model series",
+    "present conditional simulation as observation"
+  ],
+  "target_formats": [
+    "svg",
+    "pdf",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "placement": "附录",
+  "mandatory_limit": "仅证明空间离散数值稳定，不替代时间步验证、守恒检查或现实准确性验证"
+}

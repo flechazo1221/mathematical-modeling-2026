@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "figure_id": "FIG-Q3Q4-SPACE-CONV",
+  "revision": "merge-q3-q4-space-conv-20260912",
+  "source_snapshots": [
+    {
+      "figure_id": "FIG-Q3-SPACE-CONV",
+      "sha256": "d5a9efef37f2b88d3d1dec0ecdd2136a8928f66b5e9b5e0b269c08a1ee59b7d8"
+    },
+    {
+      "figure_id": "FIG-Q4-SPACE-CONV",
+      "sha256": "3940dfcae8bfdfc6bf619d609aceebab537980ed4205ef2f9d3c50f1e07e5d88"
+    }
+  ],
+  "source_file_sha256": "8ba2aa18d42e13169db3f569cb7a6c1d5e8fd836c7f6818a8d0eb42fefd811f6",
+  "data_claim_status": "unchanged",
+  "fixed_dt_s": 60,
+  "layout_qa": {
+    "status": "PASS",
+    "issues": []
+  },
+  "outputs": {
+    "svg": {
+      "path": "06-figure/merge-q3-q4-space-conv-20260912/figures/FIG-Q3Q4-SPACE-CONV.svg",
+      "sha256": "60de91f1c506ae639ab7984ac7b0a98571cb0ce4cc875137e9ed75fa2e2891b9"
+    },
+    "pdf": {
+      "path": "06-figure/merge-q3-q4-space-conv-20260912/figures/FIG-Q3Q4-SPACE-CONV.pdf",
+      "sha256": "820b4590294036543c1816af298b41b266a615c6cd97c11c0317e6110b0cb510"
+    },
+    "png": {
+      "path": "06-figure/merge-q3-q4-space-conv-20260912/figures/FIG-Q3Q4-SPACE-CONV.png",
+      "sha256": "3f7bd34d84be32e53962d038261e44ba12cbf895a1dca7887a0016b01d9b3f1d"
+    }
+  },
+  "previews": {
+    "color": "06-figure/merge-q3-q4-space-conv-20260912/previews/FIG-Q3Q4-SPACE-CONV-color.png",
+    "grayscale": "06-figure/merge-q3-q4-space-conv-20260912/previews/FIG-Q3Q4-SPACE-CONV-grayscale.png"
+  },
+  "created_at": "2026-09-12T15:26:49.288490+08:00",
+  "promotion_note": "本合并图为独立 FIGURE 版本；原 Q3/Q4 单图和 H3/EVIDENCE 清单未覆盖，待团队复核后决定是否替换。"
+}

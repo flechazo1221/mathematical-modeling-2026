@@ -270,6 +270,89 @@
       "at": "2026-09-11T23:59:18+08:00",
       "stage": "FIGURE",
       "next_stage": "APPENDIX"
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-12T11:29:20+08:00",
+      "stage": "FIGURE",
+      "affected_files": [
+        "06-figure/figure-manifest.json"
+      ]
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-12T12:19:40+08:00",
+      "stage": "FIGURE",
+      "affected_files": [
+        "06-figure/figure-manifest.json"
+      ]
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-12T12:23:55+08:00",
+      "stage": "FIGURE",
+      "affected_files": [
+        "06-figure/figure-manifest.json"
+      ]
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-12T12:34:45+08:00",
+      "stage": "FIGURE",
+      "affected_files": [
+        "06-figure/figure-manifest.json"
+      ]
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-12T12:44:07+08:00",
+      "stage": "FIGURE",
+      "affected_files": [
+        "06-figure/figure-manifest.json"
+      ]
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-12T12:44:19+08:00",
+      "stage": "FIGURE",
+      "affected_files": [
+        "06-figure/scripts/redraw_fig7.py",
+        "06-figure/figure-manifest.json",
+        "06-figure/handoff.json",
+        "06-figure/visual-audit.md"
+      ]
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-12T12:49:00+08:00",
+      "stage": "FIGURE",
+      "affected_files": [
+        "06-figure/beautified-20260912/scripts/redraw_fig8.py",
+        "06-figure/figures/FIG-Q3-TIME-CONV.svg",
+        "06-figure/figures/FIG-Q3-TIME-CONV.png",
+        "06-figure/figures/FIG-Q3-TIME-CONV.pdf",
+        "06-figure/previews/FIG-Q3-TIME-CONV-color.png",
+        "06-figure/previews/FIG-Q3-TIME-CONV-grayscale.png",
+        "06-figure/figure-manifest.json",
+        "06-figure/visual-audit.md",
+        "06-figure/handoff.json"
+      ]
+    },
+    {
+      "event": "AI_USAGE_RECORDED",
+      "at": "2026-09-12T13:32:02+08:00",
+      "stage": "FIGURE",
+      "affected_files": [
+        "06-figure/scripts/redraw_fig9_onward.py",
+        "06-figure/redraw-fig9-onward-20260912/figure-register.json",
+        "06-figure/redraw-fig9-onward-20260912/data-verification.json",
+        "06-figure/redraw-fig9-onward-20260912/render-record.json",
+        "06-figure/redraw-fig9-onward-20260912/qa/strict-figure-qa.log",
+        "06-figure/figure-manifest.json",
+        "06-figure/visual-audit.md",
+        "06-figure/handoff.json",
+        ".workflow/ai-usage-log.json"
+      ]
     }
   ]
 }

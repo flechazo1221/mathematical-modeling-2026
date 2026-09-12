@@ -7,8 +7,8 @@ for d in ['contracts','data-snapshots','figures','previews','scripts','logs']:
     (OUT/d).mkdir(parents=True,exist_ok=True)
 
 MAIN=['FIG-Q1-C-FIELD','FIG-Q1-END-EFFECT','FIG-Q2-C-PROFILES','FIG-Q2-MODEL-ABLATION','FIG-Q2-GRID-CONV','FIG-Q3-THRESHOLD-TRAJECTORY','FIG-Q3-BRACKET-ZOOM','FIG-Q3-TIME-CONV','FIG-Q3-SENS-ONEFACTOR','FIG-Q3-COMBINED-BOUNDARY','FIG-Q4-RADIUS-TIME','FIG-Q4-THRESHOLD-TRAJECTORY','FIG-Q4-IMPLEMENTATION-AGREEMENT','FIG-Q4-JACOBIAN-ABLATION','FIG-Q4-COMBINED-BOUNDARY','FIG-VAL-BALANCE-RESIDUAL']
-APP=['FIG-Q1-GRID-CONV','FIG-Q2-V02-MARGIN','FIG-Q3-SPACE-CONV','FIG-Q4-BRACKET-ZOOM','FIG-Q4-SPACE-CONV','FIG-Q4-DRY-SOLID-CONTINUITY']
-TABLES=['TAB-Q2-MODEL-CONTRACT','TAB-APPLICABILITY-FAILURE','TAB-STRATEGY-ASSUMPTION','TAB-VAL-V01-V12','TAB-CLAIM-LIMIT']
+APP=['FIG-Q1-GRID-CONV','FIG-Q2-V02-MARGIN','FIG-Q3-SPACE-CONV','FIG-Q4-BRACKET-ZOOM','FIG-Q4-SPACE-CONV']
+TABLES=['TAB-Q2-MODEL-CONTRACT','TAB-APPLICABILITY-FAILURE','TAB-STRATEGY-ASSUMPTION','TAB-VAL-V01-V12','TAB-CLAIM-LIMIT','TAB-Q4-DRY-SOLID-CONTINUITY']
 ALL=MAIN+APP+TABLES
 
 def sha(p):
@@ -17,14 +17,24 @@ def sha(p):
 # Reuse only the already frozen, H3-aligned snapshots/contracts; sources are re-hashed below.
 for fid in ALL:
     for suffix in ['.csv','.meta.json']:
-        shutil.copy2(OLD/'data-snapshots'/f'{fid}{suffix}',OUT/'data-snapshots'/f'{fid}{suffix}')
-    shutil.copy2(OLD/'contracts'/f'{fid}.json',OUT/'contracts'/f'{fid}.json')
+        src=OLD/'data-snapshots'/f'{fid}{suffix}'
+        if not src.exists(): src=OUT/'data-snapshots'/f'{fid}{suffix}'
+        dst=OUT/'data-snapshots'/f'{fid}{suffix}'
+        if src.resolve()!=dst.resolve(): shutil.copy2(src,dst)
+    src=OLD/'contracts'/f'{fid}.json'
+    if not src.exists(): src=OUT/'contracts'/f'{fid}.json'
+    dst=OUT/'contracts'/f'{fid}.json'
+    if src.resolve()!=dst.resolve(): shutil.copy2(src,dst)
 for fid in TABLES:
-    shutil.copy2(OLD/'figures'/f'{fid}.csv',OUT/'figures'/f'{fid}.csv')
-    shutil.copy2(OLD/'figures'/f'{fid}.md',OUT/'figures'/f'{fid}.md')
+    for suffix in ['.csv','.md']:
+        src=OLD/'figures'/f'{fid}{suffix}'
+        if not src.exists(): src=OUT/'figures'/f'{fid}{suffix}'
+        dst=OUT/'figures'/f'{fid}{suffix}'
+        if src.resolve()!=dst.resolve(): shutil.copy2(src,dst)
 
 req=json.loads((ROOT/'05-evidence'/'正式图表需求.json').read_text(encoding='utf-8'))
 reqmap={x['figure_id']:x for x in req['requirements']}
+reqmap['TAB-Q4-DRY-SOLID-CONTINUITY']={'reader_question':'Q4 移动边界的干固体守恒、局部连续性与几何是否一致？','key_annotations':'干固体存量误差4.441e-16；局部连续性残差2.384e-13；几何误差0','mandatory_limit':'数值诊断非真实性验证','placement':'附录'}
 style={
  'language':'zh-CN','fonts':{'cjk':'Microsoft YaHei','latin':'Times New Roman','math':'STIX Two Math'},
  'label_policy':'中文轴标题；变量与单位并列；关键数值直接标注；不设装饰性总标题',

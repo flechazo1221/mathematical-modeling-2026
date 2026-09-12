@@ -1,0 +1,33 @@
+{
+  "figure_id": "FIG-Q3-TIME-CONV",
+  "status": "REDRAW_READY_PENDING_TEAM_REVIEW",
+  "data_claim_status": "unchanged",
+  "source_snapshot_sha256": "dc736c4ccd654563f9ad39a0beca287c4340356ea71766770e3efa44a31ad4b1",
+  "source_files": {
+    "04-compute/results/convergence.csv": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f",
+    "04-compute/results/validation-register.csv": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb"
+  },
+  "plotted_time_pair": {
+    "base_time_step_s": 30,
+    "fine_time_step_s": 15,
+    "base_event_time_s": 206723.71251173425,
+    "fine_event_time_s": 206676.14712249584,
+    "absolute_change_s": 47.56538923838525,
+    "registered_change_s": 48,
+    "acceptance_target_s": 60
+  },
+  "visual_spec": {
+    "data_curves": "high-contrast color; solid line; distinct markers",
+    "non_data_elements": "black axes, grid, titles, legend, ticks and text",
+    "font": "SimSun",
+    "right_bottom_note": false,
+    "coordinate_semantics": "unchanged metrics and units; no model recomputation"
+  },
+  "outputs": {
+    "svg": "4cd81429ce5c692a183966bf0e9ec4fd56ad9d55f1fbd223dad478fb7e49e992",
+    "pdf": "3c0a3daca6844fde9cd7c93a8483d04a6cc0ac428f02dbcc967defc6e01650c2",
+    "png": "611e1a2ab9e9b0ba2954935993fc10d1abcbd735ed486db2be66c88b372212f3",
+    "color_preview": "488d247b7825969f724f343d36f55916db5c08ca61e3a94785179bd29dd61001",
+    "grayscale_preview": "2e8b4ef3d3d68facd83405814e87785e7b7025beec5077c28ac829908059d87d"
+  }
+}

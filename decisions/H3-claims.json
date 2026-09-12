@@ -7,17 +7,19 @@
     "采用A+叙事：以选项A的逐问求解、逐问验证为主体，吸收选项B的统一守恒框架与数值验证主线",
     "统一模型总览按Q1一维基线与二维端面效应、Q2物性升级与模型消融、Q3全域阈值时间及稳健性、Q4移动边界守恒与时间变化、统一验证适用边界和结论展开",
     "批准核心主张Q1-OBS-01/02、Q2-OBS-01/02、Q3-OBS-01/02、Q3-ROB-01、Q4-OBS-01、Q4-DED-01、Q4-ROB-01/02、VAL-OBS-01，全部保持原证据类别和限定语",
-    "采用受控最小图表集，并增强统一验证：主文图为FIG-Q1-C-FIELD、FIG-Q1-END-EFFECT、FIG-Q2-C-PROFILES、FIG-Q2-MODEL-ABLATION、FIG-Q2-GRID-CONV、FIG-Q3-THRESHOLD-TRAJECTORY、FIG-Q3-BRACKET-ZOOM、FIG-Q3-TIME-CONV、FIG-Q3-SENS-ONEFACTOR、FIG-Q3-COMBINED-BOUNDARY、FIG-Q4-RADIUS-TIME、FIG-Q4-THRESHOLD-TRAJECTORY、FIG-Q4-IMPLEMENTATION-AGREEMENT、FIG-Q4-JACOBIAN-ABLATION、FIG-Q4-COMBINED-BOUNDARY、FIG-VAL-BALANCE-RESIDUAL",
+    "采用受控最小图表集，并增强统一验证：主文图为FIG-Q1-C-FIELD、FIG-Q1-END-EFFECT、FIG-Q2-C-PROFILES、FIG-Q2-MODEL-ABLATION、FIG-Q2-GRID-CONV、FIG-Q3-THRESHOLD-TRAJECTORY、FIG-Q3-BRACKET-ZOOM、FIG-Q3-TIME-CONV、FIG-Q3-SENS-ONEFACTOR、FIG-Q3-COMBINED-BOUNDARY、FIG-Q4-RADIUS-TIME、FIG-Q4-THRESHOLD-TRAJECTORY、FIG-Q4-JACOBIAN-ABLATION、FIG-Q4-COMBINED-BOUNDARY、FIG-VAL-BALANCE-RESIDUAL",
     "主文表为TAB-Q2-MODEL-CONTRACT、TAB-APPLICABILITY-FAILURE，并新增TAB-STRATEGY-ASSUMPTION，用于列示一维降阶、状态相关物性、内部温度耦合、移动边界和经验参数的考虑原因、检验方式与当前结论",
     "附录图为FIG-Q1-GRID-CONV、FIG-Q2-V02-MARGIN、FIG-Q3-SPACE-CONV、FIG-Q4-BRACKET-ZOOM、FIG-Q4-SPACE-CONV、FIG-Q4-DRY-SOLID-CONTINUITY；附录表为TAB-VAL-V01-V12、TAB-CLAIM-LIMIT",
-    "补充实验采用S0：不进入结果图，仅在局限中说明CFD、PINN、代理和纯机器学习扩展路线未升级为正式主路线"
+    "补充实验采用S0：不进入结果图，仅在局限中说明CFD、PINN、代理和纯机器学习扩展路线未升级为正式主路线",
+    "团队复核后将Q4双实现一致性改为正文和证据表的文字量化分析，不保留独立正式图；保留183789.3317 s、183840 s、双实现差值及其相对于事件时刻仅约10^-15量级的分析，并保留实现一致性不等于现实准确性的限定"
   ],
   "reasons": [
     "A的逐问结构最符合竞赛阅卷的题号导航习惯，能够避免Q1和Q2被统一框架弱化为铺垫",
     "吸收B的统一守恒与验证主线，可把M1至M4解释为相容层级，并突出Q3/Q4的阈值、稳健性、失效边界和移动域守恒",
     "策略与假设检验表把模型简化、增强、验证证据和条件性结论放在同一位置，便于团队与评审追踪每项选择的依据",
     "最小图表集控制篇幅，同时保留V02、V06、72小时未达标情景、Jacobian消融失败和守恒残差，避免选择性报告",
-    "林子垚已明确表示附件内容是团队确定的H3决策，并授权修复交接链后写定和批准"
+    "林子垚已明确表示附件内容是团队确定的H3决策，并授权修复交接链后写定和批准",
+    "双实现一致性是单一数值比对，独立图会放大微小差异，改用正文与量化分析承载，保留证据边界"
   ],
   "accepted_assumptions": [
     "M1是一维低成本基线，不能完全替代二维模型；M2至M4构成逐步增强且可消融的统一二维相容框架",

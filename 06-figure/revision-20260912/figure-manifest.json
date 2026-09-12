@@ -24,15 +24,15 @@
     "FIG-Q2-V02-MARGIN",
     "FIG-Q3-SPACE-CONV",
     "FIG-Q4-BRACKET-ZOOM",
-    "FIG-Q4-SPACE-CONV",
-    "FIG-Q4-DRY-SOLID-CONTINUITY"
+    "FIG-Q4-SPACE-CONV"
   ],
   "tables": [
     "TAB-Q2-MODEL-CONTRACT",
     "TAB-APPLICABILITY-FAILURE",
     "TAB-STRATEGY-ASSUMPTION",
     "TAB-VAL-V01-V12",
-    "TAB-CLAIM-LIMIT"
+    "TAB-CLAIM-LIMIT",
+    "TAB-Q4-DRY-SOLID-CONTINUITY"
   ],
   "items": [
     {
@@ -288,25 +288,13 @@
       "snapshot": "06-figure/revision-20260912/data-snapshots/FIG-Q4-SPACE-CONV.csv"
     },
     {
-      "id": "FIG-Q4-DRY-SOLID-CONTINUITY",
-      "kind": "figure",
-      "placement": "appendix",
-      "png": "06-figure/revision-20260912/figures/FIG-Q4-DRY-SOLID-CONTINUITY.png",
-      "png_sha256": "5eef95a56e9b9db6a815d4b43e930d9e22d5fc889e214dfcae4b3d1fe0ab003f",
-      "svg": "06-figure/revision-20260912/figures/FIG-Q4-DRY-SOLID-CONTINUITY.svg",
-      "svg_sha256": "220157ad5b94d7552d7cdc718805e0eb7638e9aa0e7684087a22d2ec92c46d9f",
-      "png_dpi": 599.9988,
-      "contract": "06-figure/revision-20260912/contracts/FIG-Q4-DRY-SOLID-CONTINUITY.json",
-      "snapshot": "06-figure/revision-20260912/data-snapshots/FIG-Q4-DRY-SOLID-CONTINUITY.csv"
-    },
-    {
       "id": "TAB-Q2-MODEL-CONTRACT",
       "kind": "table",
       "placement": "body",
       "csv": "06-figure/revision-20260912/figures/TAB-Q2-MODEL-CONTRACT.csv",
-      "csv_sha256": "d96202c1f274197ce5ec0ac6e3cbd1f090793f0126ecdb357980a3ccaa03e44a",
+      "csv_sha256": "185e1e8d6dcf1cef2487c2df489b0d54757ecb41c9f70c39c76cdda6f4ed4fee",
       "markdown": "06-figure/revision-20260912/figures/TAB-Q2-MODEL-CONTRACT.md",
-      "markdown_sha256": "f7c93404a7a11b16008b6de3d0bf9ee827d269a0e51a1b195eddcef13e32972c",
+      "markdown_sha256": "d4b0491e4055891b781055725c2b55694827c7d90b21e97db589a95530a05aa7",
       "contract": "06-figure/revision-20260912/contracts/TAB-Q2-MODEL-CONTRACT.json",
       "snapshot": "06-figure/revision-20260912/data-snapshots/TAB-Q2-MODEL-CONTRACT.csv"
     },
@@ -315,9 +303,9 @@
       "kind": "table",
       "placement": "body",
       "csv": "06-figure/revision-20260912/figures/TAB-APPLICABILITY-FAILURE.csv",
-      "csv_sha256": "de7ae2d71af64f142ed86b5418d366cca8c8ba5b204f98b139c507ae0117cca8",
+      "csv_sha256": "6ea5ee992aa7fa96fc6f3036ec15d1c9b62d61898188b51acb206a77e56d8b8f",
       "markdown": "06-figure/revision-20260912/figures/TAB-APPLICABILITY-FAILURE.md",
-      "markdown_sha256": "a03f5c76218e6aca55a684cfc748d79e7b8f2d437c7ae879aa5b4e9ea18feb5d",
+      "markdown_sha256": "b4b6afd205076d1ced81840a94399c4a81a14052908109f75a6e5fdcd4805cfb",
       "contract": "06-figure/revision-20260912/contracts/TAB-APPLICABILITY-FAILURE.json",
       "snapshot": "06-figure/revision-20260912/data-snapshots/TAB-APPLICABILITY-FAILURE.csv"
     },
@@ -326,9 +314,9 @@
       "kind": "table",
       "placement": "body",
       "csv": "06-figure/revision-20260912/figures/TAB-STRATEGY-ASSUMPTION.csv",
-      "csv_sha256": "1105df681e4894204403abd4beb414456dda63972e63049eca6d888d94e9ca02",
+      "csv_sha256": "1ea97dbbf4b2c2db60557d4bff0e4d845e78b2fd0578c84542a34a8d9053b217",
       "markdown": "06-figure/revision-20260912/figures/TAB-STRATEGY-ASSUMPTION.md",
-      "markdown_sha256": "f97991c640ce8e61c082575dc46518a261a38bf37dfe09df3b6ef5e53eff091a",
+      "markdown_sha256": "3dba2ce839a4d8915097083673463b8fc8c45e83b7e34c7b6eb72832b476bd43",
       "contract": "06-figure/revision-20260912/contracts/TAB-STRATEGY-ASSUMPTION.json",
       "snapshot": "06-figure/revision-20260912/data-snapshots/TAB-STRATEGY-ASSUMPTION.csv"
     },
@@ -337,9 +325,9 @@
       "kind": "table",
       "placement": "appendix",
       "csv": "06-figure/revision-20260912/figures/TAB-VAL-V01-V12.csv",
-      "csv_sha256": "cbe1f68e380bc0a0820d38f1f599cc2b9c3cb7508da32f89dc988aae5e1074bb",
+      "csv_sha256": "4bff2426f87fa1197d8f184dad9b372e702db81c01ae71027fd35ee51b18ecae",
       "markdown": "06-figure/revision-20260912/figures/TAB-VAL-V01-V12.md",
-      "markdown_sha256": "1ac59fcc656bcde7190e5a5fbcbbc132a94233aed26658470b35fdb043ffd6b8",
+      "markdown_sha256": "ef5a19efc64cacb1561f6a8ee7d200727db2454ea92e3116d41c50452f19b1ca",
       "contract": "06-figure/revision-20260912/contracts/TAB-VAL-V01-V12.json",
       "snapshot": "06-figure/revision-20260912/data-snapshots/TAB-VAL-V01-V12.csv"
     },
@@ -348,11 +336,22 @@
       "kind": "table",
       "placement": "appendix",
       "csv": "06-figure/revision-20260912/figures/TAB-CLAIM-LIMIT.csv",
-      "csv_sha256": "ad0d620ee9a1c3cdaf6f0b4ccc76aa399be598ae703919a4422a940a7bfd0a58",
+      "csv_sha256": "797dc5c44ce125fa67d4ba06c9012f66924079fe3567bc0762f687c66b3f95dc",
       "markdown": "06-figure/revision-20260912/figures/TAB-CLAIM-LIMIT.md",
-      "markdown_sha256": "b605982238ba35e785b998f0529d23cdd894b0f39a6cdf1624e99b5826614e2d",
+      "markdown_sha256": "76e901400b507c743c03b06c0b30bca3d9ae5a61868d76eeaff3d24b19ffad2c",
       "contract": "06-figure/revision-20260912/contracts/TAB-CLAIM-LIMIT.json",
       "snapshot": "06-figure/revision-20260912/data-snapshots/TAB-CLAIM-LIMIT.csv"
+    },
+    {
+      "id": "TAB-Q4-DRY-SOLID-CONTINUITY",
+      "kind": "table",
+      "placement": "appendix",
+      "csv": "06-figure/revision-20260912/figures/TAB-Q4-DRY-SOLID-CONTINUITY.csv",
+      "csv_sha256": "c68d7bfe7db8d351375ad71c296f6e187056968dcb93112bb19532ee68e4dfc9",
+      "markdown": "06-figure/revision-20260912/figures/TAB-Q4-DRY-SOLID-CONTINUITY.md",
+      "markdown_sha256": "2119b5fa5509d281ea2aa145d429d3cb381228e57806435a181d2374a032a3e3",
+      "contract": "06-figure/revision-20260912/contracts/TAB-Q4-DRY-SOLID-CONTINUITY.json",
+      "snapshot": "06-figure/revision-20260912/data-snapshots/TAB-Q4-DRY-SOLID-CONTINUITY.csv"
     }
   ]
 }

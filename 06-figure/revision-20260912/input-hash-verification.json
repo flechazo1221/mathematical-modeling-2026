@@ -1,5 +1,5 @@
 {
-  "status": "PASS",
+  "status": "FAIL",
   "checks": [
     {
       "handoff": "04-compute/handoff.json",
@@ -145,8 +145,8 @@
           "section": "outputs",
           "path": "04-compute/logs/extended.log",
           "expected": "0f6d90cb7d4b5f1d28f6d266f74135780cae7823d1060f78d522baaf11d26cfd",
-          "actual": "0f6d90cb7d4b5f1d28f6d266f74135780cae7823d1060f78d522baaf11d26cfd",
-          "status": "PASS"
+          "actual": "31e63ded66638979c49846cb9b0af9508ff45b53e3cc18ecf17e34921d5d786f",
+          "status": "FAIL"
         },
         {
           "section": "outputs",
@@ -285,8 +285,8 @@
           "section": "outputs",
           "path": "04-compute/results/sensitivity-extended.csv",
           "expected": "f778eb33975d0df7eb3c25a54eb05cb46f3d5e2f797948cdbd7168eaf3038903",
-          "actual": "f778eb33975d0df7eb3c25a54eb05cb46f3d5e2f797948cdbd7168eaf3038903",
-          "status": "PASS"
+          "actual": "b2a18452cccd050d38635ddc18bb85a95c7e1c63a1f068b64999a86a8f0cd66a",
+          "status": "FAIL"
         },
         {
           "section": "outputs",
@@ -450,7 +450,22 @@
           "status": "PASS"
         }
       ],
-      "mismatches": []
+      "mismatches": [
+        {
+          "section": "outputs",
+          "path": "04-compute/logs/extended.log",
+          "expected": "0f6d90cb7d4b5f1d28f6d266f74135780cae7823d1060f78d522baaf11d26cfd",
+          "actual": "31e63ded66638979c49846cb9b0af9508ff45b53e3cc18ecf17e34921d5d786f",
+          "status": "FAIL"
+        },
+        {
+          "section": "outputs",
+          "path": "04-compute/results/sensitivity-extended.csv",
+          "expected": "f778eb33975d0df7eb3c25a54eb05cb46f3d5e2f797948cdbd7168eaf3038903",
+          "actual": "b2a18452cccd050d38635ddc18bb85a95c7e1c63a1f068b64999a86a8f0cd66a",
+          "status": "FAIL"
+        }
+      ]
     },
     {
       "handoff": "05-evidence/handoff.json",

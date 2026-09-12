@@ -1,0 +1,13 @@
+﻿id,status,evidence
+V01-input-and-freeze,PASS,"input-manifest.json hashes the approved decisions, design handoff, current candidate evidence, compute source, and A-topic workbooks."
+V02-fair-paired-convergence,PASS,Expected 48 core runs (3 questions x 2 implementations x 8 cases); raw outcomes are in 原始结果.csv.
+V03-three-level-space,INCONCLUSIVE,"Three independent fixed-dt spatial levels are recorded; PASS requires H-vs-M to meet the pre-registered 60 s event/report tolerance, not merely completion."
+V04-three-level-time,INCONCLUSIVE,"Three independent fixed-grid time levels are recorded; PASS requires H-vs-M to meet the pre-registered 60 s event/report tolerance, not merely completion."
+V05-joint-refinement,PASS,Joint L/M/H controls are recorded separately from the independent ladders; joint differences are not used to clear V03/V04.
+V06-temperature-equation,PASS,Internal candidate has nonzero temperature solver calls and a field range; baseline has no internal heat solve by definition.
+V07-moisture-and-moving-geometry,PASS,"Moisture inventory, dry-solid inventory, geometry, and local continuity metrics are retained per run."
+V08-energy-fixed-domain,INCONCLUSIVE,Q2/Q3 fixed-domain sensible-energy records and residuals are in energy-audit.csv and its summary.
+V09-energy-moving-domain,INCONCLUSIVE,"Q4 moving-domain inventory includes actual before/after volumes, boundary heat and residual; a nondecreasing or large residual blocks formal upgrade."
+V10-parameter-identifiability,INCONCLUSIVE,"Parameter-source-register.csv distinguishes approved formulas, non-transferable analog sources, and unsupported independent identification."
+V11-internal-temperature-validation,BLOCKED,No internal temperature observations are present in current inputs; numerical field generation is not empirical validation.
+V12-latent-heat,BLOCKED,Latent heat is omitted by design because no independent enthalpy/DSC source is frozen; Q_latent=0 is not an identified physical result.

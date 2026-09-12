@@ -1,0 +1,465 @@
+{
+  "schema_version": "1.0",
+  "status": "VALIDATED_PENDING_TEAM_REVIEW",
+  "revision": "redraw-fig9-onward-20260912",
+  "visual_spec": {
+    "language": "zh-CN",
+    "font": "SimSun",
+    "data_encoding": "high-contrast color + solid line + distinct marker",
+    "non_data_encoding": "black axes, grid, title, legend, ticks and text",
+    "formats": [
+      "svg",
+      "pdf",
+      "png@600dpi"
+    ],
+    "scope": "figure 9 onward; figure 1-8 unchanged",
+    "data_policy": "frozen snapshots only; no model recomputation, deletion or metric change"
+  },
+  "items": [
+    {
+      "figure_id": "FIG-Q3-SENS-ONEFACTOR",
+      "source_snapshot": "06-figure/data-snapshots/FIG-Q3-SENS-ONEFACTOR.csv",
+      "source_snapshot_sha256": "016ad45dc867253cbf13c7896eb4f0d2d570808ee2830405744179bda476690e",
+      "rows": 11,
+      "columns": [
+        "scope",
+        "factor",
+        "level",
+        "value",
+        "t_star_s",
+        "final_max_C",
+        "final_mean_C",
+        "scenario",
+        "time_h",
+        "display_h",
+        "crossed"
+      ],
+      "outputs": {
+        "svg": {
+          "path": "06-figure/figures/FIG-Q3-SENS-ONEFACTOR.svg",
+          "sha256": "bfef063740d2c16769e54c761466ba78a002c570b9810f9630a69332903756b7"
+        },
+        "pdf": {
+          "path": "06-figure/figures/FIG-Q3-SENS-ONEFACTOR.pdf",
+          "sha256": "67b3fd5f80040d387097df866817b1ef6d9b8e5465b216ce11f34892ec7e74c8"
+        },
+        "png": {
+          "path": "06-figure/figures/FIG-Q3-SENS-ONEFACTOR.png",
+          "sha256": "7933905b91b5f57b57f412a7f00a685899757606cdb1f4cbe497abea518c3b7f"
+        }
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "figure_id": "FIG-Q3-COMBINED-BOUNDARY",
+      "source_snapshot": "06-figure/data-snapshots/FIG-Q3-COMBINED-BOUNDARY.csv",
+      "source_snapshot_sha256": "2942685038a555e80d421dab645d507e6ab2ef96686090359639d8049c19f2e1",
+      "rows": 2,
+      "columns": [
+        "scope",
+        "factor",
+        "level",
+        "value",
+        "t_star_s",
+        "final_max_C",
+        "final_mean_C",
+        "scenario",
+        "time_h",
+        "display_h",
+        "crossed"
+      ],
+      "outputs": {
+        "svg": {
+          "path": "06-figure/figures/FIG-Q3-COMBINED-BOUNDARY.svg",
+          "sha256": "fe99e244462b471c01023ce9d5309cf59ca8fdb05b7978d1054f9b80c4a6b753"
+        },
+        "pdf": {
+          "path": "06-figure/figures/FIG-Q3-COMBINED-BOUNDARY.pdf",
+          "sha256": "40f8d3660d1dfe9a0f74354a9fcd59bb290204fe2cb8013fd31fb950e74a557e"
+        },
+        "png": {
+          "path": "06-figure/figures/FIG-Q3-COMBINED-BOUNDARY.png",
+          "sha256": "67a8bd85bc7675d84b84ce9ff08e43f62aa122569839c8d22315af259e4454bc"
+        }
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "figure_id": "FIG-Q4-RADIUS-TIME",
+      "source_snapshot": "06-figure/data-snapshots/FIG-Q4-RADIUS-TIME.csv",
+      "source_snapshot_sha256": "c24229b30ed4f2fd02236eb572fc59c1cd35488d3e57ff0a49846111d09a4a76",
+      "rows": 3065,
+      "columns": [
+        "time_s",
+        "radius_m"
+      ],
+      "outputs": {
+        "svg": {
+          "path": "06-figure/figures/FIG-Q4-RADIUS-TIME.svg",
+          "sha256": "f6a5d802f7e45b55093edfffa97835fb7e4a548ff0b1410988c53375674f0bb1"
+        },
+        "pdf": {
+          "path": "06-figure/figures/FIG-Q4-RADIUS-TIME.pdf",
+          "sha256": "97d5694e06105abe0549e296d3f80b8dab29185a28912bee11731cb0ef93f59c"
+        },
+        "png": {
+          "path": "06-figure/figures/FIG-Q4-RADIUS-TIME.png",
+          "sha256": "0beafbf043ddf09587f67976c795e2a5d3f18681fed1c621108cdc635aa026f5"
+        }
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "figure_id": "FIG-Q4-THRESHOLD-TRAJECTORY",
+      "source_snapshot": "06-figure/data-snapshots/FIG-Q4-THRESHOLD-TRAJECTORY.csv",
+      "source_snapshot_sha256": "16e83f9d135e255cb154561a9fa4fa1496177a0c752224ef9832f9d621c5d15a",
+      "rows": 3065,
+      "columns": [
+        "time_s",
+        "max_C",
+        "mean_C",
+        "center_C",
+        "surface_C"
+      ],
+      "outputs": {
+        "svg": {
+          "path": "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.svg",
+          "sha256": "0fad645410cf10d448f15040eb0ec07400aa82db6eb6e66f76a14bf90dcccebe"
+        },
+        "pdf": {
+          "path": "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.pdf",
+          "sha256": "400d682c07c6c8dea6148c62635b98eb47e5cebadf59cb59151e5c57f44267dd"
+        },
+        "png": {
+          "path": "06-figure/figures/FIG-Q4-THRESHOLD-TRAJECTORY.png",
+          "sha256": "3637253cc8584ef913e88000cbeb37c5b355a34540c62bd3492a18f4c50c3599"
+        }
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "figure_id": "FIG-Q4-IMPLEMENTATION-AGREEMENT",
+      "source_snapshot": "06-figure/data-snapshots/FIG-Q4-IMPLEMENTATION-AGREEMENT.csv",
+      "source_snapshot_sha256": "5bc2e085945b05cbb8f4749ffe9e845e5426f888ec623577ca1e4b0d9f682b0c",
+      "rows": 2,
+      "columns": [
+        "implementation",
+        "event_time_s",
+        "reported_s"
+      ],
+      "outputs": {
+        "svg": {
+          "path": "06-figure/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.svg",
+          "sha256": "576df3f0adde9e6287b6f30a59f6da4dc85d800d67fcefe0b5ad6d0c065a0f65"
+        },
+        "pdf": {
+          "path": "06-figure/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.pdf",
+          "sha256": "d92029b2f66f83e31c15ec375ba56ac15153cb10c10136636729e03b6e713213"
+        },
+        "png": {
+          "path": "06-figure/figures/FIG-Q4-IMPLEMENTATION-AGREEMENT.png",
+          "sha256": "902489e0fe83c8b88d734eefc1e13369cda04ae9cd25eaeab8ecc70e3a15640b"
+        }
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "figure_id": "FIG-Q4-JACOBIAN-ABLATION",
+      "source_snapshot": "06-figure/data-snapshots/FIG-Q4-JACOBIAN-ABLATION.csv",
+      "source_snapshot_sha256": "88a90c5dd230ecc1ea3a413b0bf14b190258a5721f6522e4f76c71c7de19d4f4",
+      "rows": 2,
+      "columns": [
+        "route",
+        "balance_error"
+      ],
+      "outputs": {
+        "svg": {
+          "path": "06-figure/figures/FIG-Q4-JACOBIAN-ABLATION.svg",
+          "sha256": "8dce73fa9a8fb2ae07f6a82e863a1ed66aeae3ae0efa3f2e52b7da48490407ca"
+        },
+        "pdf": {
+          "path": "06-figure/figures/FIG-Q4-JACOBIAN-ABLATION.pdf",
+          "sha256": "62a60308afcb8636ba4f0297575180e48f9359be10e1fec6998fe389fdc17d33"
+        },
+        "png": {
+          "path": "06-figure/figures/FIG-Q4-JACOBIAN-ABLATION.png",
+          "sha256": "614d7dfe819af656af12c325cd7e262020f0eddfcbe43d41bf4286f82073a44e"
+        }
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "figure_id": "FIG-Q4-COMBINED-BOUNDARY",
+      "source_snapshot": "06-figure/data-snapshots/FIG-Q4-COMBINED-BOUNDARY.csv",
+      "source_snapshot_sha256": "4503d311ddafeb5cc3c4b06494b52c09c7aa3205eec3f126e6a6f7513dfd30b7",
+      "rows": 2,
+      "columns": [
+        "scope",
+        "factor",
+        "level",
+        "value",
+        "t_star_s",
+        "final_max_C",
+        "final_mean_C",
+        "scenario",
+        "time_h",
+        "display_h",
+        "crossed"
+      ],
+      "outputs": {
+        "svg": {
+          "path": "06-figure/figures/FIG-Q4-COMBINED-BOUNDARY.svg",
+          "sha256": "c0583e9b7910635c64c6aea20d698787194cb6352dafab93e2de8f2db2042d5b"
+        },
+        "pdf": {
+          "path": "06-figure/figures/FIG-Q4-COMBINED-BOUNDARY.pdf",
+          "sha256": "e0d57336eca62ea08e171a34f5ec9115280178dbca698be6a3f21cc2a7ae87c2"
+        },
+        "png": {
+          "path": "06-figure/figures/FIG-Q4-COMBINED-BOUNDARY.png",
+          "sha256": "fd06347eba1ef5c4dddfa6fbea3e73b6094dfa1235cf949f7dfbddf838b81d5d"
+        }
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "figure_id": "FIG-VAL-BALANCE-RESIDUAL",
+      "source_snapshot": "06-figure/data-snapshots/FIG-VAL-BALANCE-RESIDUAL.csv",
+      "source_snapshot_sha256": "55f1681115b2899090b340a436d9165e7b836761c5b231627244f44123071eca",
+      "rows": 62,
+      "columns": [
+        "label",
+        "normalized_moisture_balance_error",
+        "max_linear_relative_residual"
+      ],
+      "outputs": {
+        "svg": {
+          "path": "06-figure/figures/FIG-VAL-BALANCE-RESIDUAL.svg",
+          "sha256": "192f67e87a1a8af06ff0b1d7028356b447737bba4dfa4bab7d85e21a065d33d4"
+        },
+        "pdf": {
+          "path": "06-figure/figures/FIG-VAL-BALANCE-RESIDUAL.pdf",
+          "sha256": "9330c345a9f8b0d5940a14a3ea0a9a17f5e21843a8b610a4ec295a1b9856f784"
+        },
+        "png": {
+          "path": "06-figure/figures/FIG-VAL-BALANCE-RESIDUAL.png",
+          "sha256": "34b61590b024dfc5b0ac9e7fca2fcd1bf359f8d7e74c11e85543c4cc27b5ce8a"
+        }
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "figure_id": "FIG-Q1-GRID-CONV",
+      "source_snapshot": "06-figure/data-snapshots/FIG-Q1-GRID-CONV.csv",
+      "source_snapshot_sha256": "ddfc3f2d562918c7bd2aa2f9a12b9e077f53d324768194d05d4da7045cce25b1",
+      "rows": 12,
+      "columns": [
+        "scope",
+        "family",
+        "nr",
+        "nz",
+        "grid_strategy",
+        "fixed_dt_s",
+        "metric",
+        "value",
+        "adjacent_change"
+      ],
+      "outputs": {
+        "svg": {
+          "path": "06-figure/figures/FIG-Q1-GRID-CONV.svg",
+          "sha256": "be3be5358042dbdbc3336e02c93683e4e257ee279aa51e72bfd50c78545bffd2"
+        },
+        "pdf": {
+          "path": "06-figure/figures/FIG-Q1-GRID-CONV.pdf",
+          "sha256": "15f0f5d5d8c0592ea13b6e2e2b47db780f55078755d85e704be6dc0fb4e557e5"
+        },
+        "png": {
+          "path": "06-figure/figures/FIG-Q1-GRID-CONV.png",
+          "sha256": "70f3bb6c5dd64015786505cc99b71339ab50e15fdc0ba87f624252f9a4d4cc54"
+        }
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "figure_id": "FIG-Q2-V02-MARGIN",
+      "source_snapshot": "06-figure/data-snapshots/FIG-Q2-V02-MARGIN.csv",
+      "source_snapshot_sha256": "f9e00b1d03fc54f915419a12772a1860f7e238eeeeba4c76b9ea7f42b8e4400a",
+      "rows": 1,
+      "columns": [
+        "absolute_change",
+        "threshold",
+        "margin"
+      ],
+      "outputs": {
+        "svg": {
+          "path": "06-figure/figures/FIG-Q2-V02-MARGIN.svg",
+          "sha256": "1f9b61b60f5df3f1d32c96c36ce87fe5ff82aa02eecf89cb4c24bb95866bc72e"
+        },
+        "pdf": {
+          "path": "06-figure/figures/FIG-Q2-V02-MARGIN.pdf",
+          "sha256": "4db0d7945c9788d99ec633a914d5c09c8b5ca94d63e79b14cd73f4fa37e84e7c"
+        },
+        "png": {
+          "path": "06-figure/figures/FIG-Q2-V02-MARGIN.png",
+          "sha256": "e38983523aa3f6e9df5a99031793e769f8984c66732e7a306a0cfc6718384cd1"
+        }
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "figure_id": "FIG-Q3-SPACE-CONV",
+      "source_snapshot": "06-figure/data-snapshots/FIG-Q3-SPACE-CONV.csv",
+      "source_snapshot_sha256": "d5a9efef37f2b88d3d1dec0ecdd2136a8928f66b5e9b5e0b269c08a1ee59b7d8",
+      "rows": 3,
+      "columns": [
+        "scope",
+        "nr",
+        "nz",
+        "grid_strategy",
+        "fixed_dt_s",
+        "interpolated_event_time_s",
+        "reported_event_time_s",
+        "adjacent_change_s"
+      ],
+      "outputs": {
+        "svg": {
+          "path": "06-figure/figures/FIG-Q3-SPACE-CONV.svg",
+          "sha256": "164be38a4f7e0f907bacf98da2b70327438dde2d25ba596c4908d61b1bd87e5e"
+        },
+        "pdf": {
+          "path": "06-figure/figures/FIG-Q3-SPACE-CONV.pdf",
+          "sha256": "91f015e677bcb2de042cf8dcac4a148c53069685dc2fc7f8c9c8dd725a0b52af"
+        },
+        "png": {
+          "path": "06-figure/figures/FIG-Q3-SPACE-CONV.png",
+          "sha256": "6e6fb4644847c8b795d024b9a5a8b428673d26c324aaf61b24ae5d0080e5ecf9"
+        }
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "figure_id": "FIG-Q4-BRACKET-ZOOM",
+      "source_snapshot": "06-figure/data-snapshots/FIG-Q4-BRACKET-ZOOM.csv",
+      "source_snapshot_sha256": "a245bb0f1d00b81e61df9fba29bdd5485b6e61878341a5378327ad85f7585863",
+      "rows": 6,
+      "columns": [
+        "time_s",
+        "max_C"
+      ],
+      "outputs": {
+        "svg": {
+          "path": "06-figure/figures/FIG-Q4-BRACKET-ZOOM.svg",
+          "sha256": "f7c2b5590cae86af9352284c2385ad4b7d5fde62aeaea2fae05e0ebfcedc5402"
+        },
+        "pdf": {
+          "path": "06-figure/figures/FIG-Q4-BRACKET-ZOOM.pdf",
+          "sha256": "8b0331d07d816b5c7b35c21adb3153aa7d1222c9a51a04ec2379b953269833db"
+        },
+        "png": {
+          "path": "06-figure/figures/FIG-Q4-BRACKET-ZOOM.png",
+          "sha256": "c31a761a786146db3457adf5df9aa74153e711c5fce78beae497dd99b2a33b94"
+        }
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "figure_id": "FIG-Q4-SPACE-CONV",
+      "source_snapshot": "06-figure/data-snapshots/FIG-Q4-SPACE-CONV.csv",
+      "source_snapshot_sha256": "3940dfcae8bfdfc6bf619d609aceebab537980ed4205ef2f9d3c50f1e07e5d88",
+      "rows": 3,
+      "columns": [
+        "scope",
+        "nr",
+        "nz",
+        "grid_strategy",
+        "fixed_dt_s",
+        "interpolated_event_time_s",
+        "reported_event_time_s",
+        "adjacent_change_s"
+      ],
+      "outputs": {
+        "svg": {
+          "path": "06-figure/figures/FIG-Q4-SPACE-CONV.svg",
+          "sha256": "f485934118e514c7643f60515ef65963d669ec4a7d68fb9b40857fba5748ce23"
+        },
+        "pdf": {
+          "path": "06-figure/figures/FIG-Q4-SPACE-CONV.pdf",
+          "sha256": "863e42df898d8c749651a1dc1529a514552a775c17f5f819d094bd04706516e3"
+        },
+        "png": {
+          "path": "06-figure/figures/FIG-Q4-SPACE-CONV.png",
+          "sha256": "8f5d9255dc0ee1dd555a377d86629cb32a5126bcdb805edb678c78cae92ad9d5"
+        }
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    },
+    {
+      "figure_id": "FIG-Q4-DRY-SOLID-CONTINUITY",
+      "source_snapshot": "06-figure/data-snapshots/FIG-Q4-DRY-SOLID-CONTINUITY.csv",
+      "source_snapshot_sha256": "b3ab35c24fca8d1dee6c8e855fe3bffa9da022deed80b75b31ced378c554bd50",
+      "rows": 3,
+      "columns": [
+        "metric",
+        "value",
+        "plot_value"
+      ],
+      "outputs": {
+        "svg": {
+          "path": "06-figure/figures/FIG-Q4-DRY-SOLID-CONTINUITY.svg",
+          "sha256": "0b64815f81813fdb1da82fec4329af66ec9d45c2b130ed87a444cd20cab96137"
+        },
+        "pdf": {
+          "path": "06-figure/figures/FIG-Q4-DRY-SOLID-CONTINUITY.pdf",
+          "sha256": "df524ebc30669da3f3ab5c7bfa3992c784c480b87a1a1f5e21530b4726381edd"
+        },
+        "png": {
+          "path": "06-figure/figures/FIG-Q4-DRY-SOLID-CONTINUITY.png",
+          "sha256": "e367f3a77209286f24605782e62e709dfec3b4a6212e7a85d8973777e935cac4"
+        }
+      },
+      "visual_qa": {
+        "status": "PASS",
+        "issues": []
+      }
+    }
+  ]
+}

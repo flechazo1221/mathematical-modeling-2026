@@ -1,0 +1,26 @@
+{
+  "figure_id": "FIG-DATA-EXTENSION-WIDE",
+  "source": "input/A题/附件/附件1.xlsx",
+  "source_sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+  "snapshot": "06-figure/corrected-20260912/data-snapshots/FIG-DATA-EXTENSION-WIDE.csv",
+  "snapshot_sha256": "46ef8701170c7493daaf1a8b6d94984a46570520617e7c51939da9c40f9e898f",
+  "columns": [
+    "series",
+    "source_kind",
+    "source_row",
+    "time_s",
+    "time_h",
+    "temperature_C"
+  ],
+  "observed_rows": 241,
+  "extension_rule": "4 h后采用末段冻结稳健值；本图保留现有a(end,2)口径",
+  "xlim_h": [
+    0.0,
+    10.0
+  ],
+  "ylim_C": [
+    25.0,
+    55.0
+  ],
+  "data_claim_status": "unchanged"
+}

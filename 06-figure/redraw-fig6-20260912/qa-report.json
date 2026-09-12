@@ -1,0 +1,55 @@
+{
+  "figure_id": "FIG-Q3-THRESHOLD-TRAJECTORY",
+  "visual_revision": "redraw-fig6-20260912-title-simsun",
+  "data_check": {
+    "source_path": "04-compute/results/q3-threshold-trajectory.csv",
+    "source_sha256": "68d78e1922d192eac3d74b6056713b595371c29447c52ea37cc4874c1898f244",
+    "snapshot_path": "06-figure/data-snapshots/FIG-Q3-THRESHOLD-TRAJECTORY.csv",
+    "snapshot_sha256": "07bc0b0cfef1f8e42813fb0d739bab489d0a696a5ff38606343ec9a4ef8b5c06",
+    "columns": [
+      "time_s",
+      "max_C",
+      "mean_C",
+      "center_C",
+      "surface_C"
+    ],
+    "rows": 3448,
+    "data_equal": true,
+    "max_abs_diff_after_csv_parse": 4.440892098500626e-16,
+    "time_range_s": [
+      0.0,
+      206820.0
+    ],
+    "reported_time_s": 206820.0,
+    "threshold": 0.149999
+  },
+  "visual_contract": {
+    "title": "全域含水率随时间的变化（黑色宋体）",
+    "data_curves": "高对比彩色、统一实线、marker 冗余编码",
+    "non_data_elements": "坐标轴、网格、刻度、轴标签、图例和标注统一黑色",
+    "font": "SimSun / 宋体",
+    "primary_xlim_h": [
+      0,
+      60.0
+    ],
+    "primary_ylim": [
+      0,
+      2.7
+    ],
+    "threshold": 0.149999,
+    "reported_time_s": 206820.0,
+    "note_policy": "删除图内无关备注；限制条件保留在正式图注/正文"
+  },
+  "outputs": {
+    "png_600dpi": "06-figure/figures/FIG-Q3-THRESHOLD-TRAJECTORY.png",
+    "svg": "06-figure/figures/FIG-Q3-THRESHOLD-TRAJECTORY.svg",
+    "pdf": "06-figure/figures/FIG-Q3-THRESHOLD-TRAJECTORY.pdf",
+    "color_preview": "06-figure/previews/FIG-Q3-THRESHOLD-TRAJECTORY-color.png",
+    "grayscale_preview": "06-figure/previews/FIG-Q3-THRESHOLD-TRAJECTORY-grayscale.png",
+    "png_sha256": "e9cda2b02cf5d6a28267cd30f9f5f3ad899af0225f22be40a343195b143c0ef9",
+    "svg_sha256": "834678f71ded3a04e9738a7c2e78a0ca140924cdddcd6e99966b1a091bda7351",
+    "pdf_sha256": "5b74de850d578732a5f5f05d0e315a30db7f748e2a09b82602b175eb09ae3fd4",
+    "color_preview_sha256": "181c0c2d6ac131ca9564c3822b4b49c8c97f6789e89f60bf5fde6b8ca827f640",
+    "grayscale_preview_sha256": "69a0bae0d96205ecd170c4ae60e1809e230d12476409bb4edd8a4eeddca7c185"
+  }
+}

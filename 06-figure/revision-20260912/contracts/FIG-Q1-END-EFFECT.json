@@ -3,29 +3,44 @@
   "claim_ids": [
     "Q1-OBS-01"
   ],
-  "question": "二维端面效应使总体含水率改变多少？",
+  "question": "一维与二维模型的平均含水率如何随时间变化？",
+  "title": "图2：一维与二维模型平均含水率随时间变化",
+  "title_font": "SimHei",
+  "title_position": "below_plot_center",
+  "grid": "gray dashed auxiliary gridlines",
   "source_files": [
+    {
+      "path": "04-compute/src/formal_compute.py",
+      "sha256": "e76fb6167449df6111a4d56b253878b60d71b582b9ddc474ceaab22bfc179975"
+    },
     {
       "path": "04-compute/results/run-summary.csv",
       "sha256": "51e8c52022ea34d80bc42a61c87bab2680eb0f65d96b6ffad8e7c02e9cb3330f"
-    },
-    {
-      "path": "04-compute/results/convergence.csv",
-      "sha256": "a3c1f2e1d3fa3243f914d01f59a8697efc543661572e9d8757f354cadaf6f66f"
     }
   ],
-  "x": null,
-  "y": null,
-  "groups": [],
+  "x": {
+    "field": "time_s",
+    "label": "时间 t",
+    "unit": "s"
+  },
+  "y": {
+    "field": "mean_C",
+    "label": "平均干基含水率 C",
+    "unit": "kg/kg"
+  },
+  "groups": [
+    "M1 一维基线",
+    "M2 二维主干"
+  ],
   "uncertainty": null,
   "required_comparisons": [
-    "M1/M2哑铃图"
+    "M1/M2随时间的平均含水率曲线"
   ],
   "must_show_failures": false,
   "prohibited_operations": [
-    "recompute model",
-    "change metric",
-    "omit failures",
+    "recompute with altered model parameters",
+    "change the moisture metric",
+    "omit one of the two base-model series",
     "present conditional simulation as observation"
   ],
   "target_formats": [
@@ -34,7 +49,8 @@
   ],
   "minimum_dpi": 600,
   "placement": "主文",
-  "mandatory_limit": "模型差异非精度提升",
+  "mandatory_limit": "模型差异非精度提升；曲线为条件仿真",
   "snapshot": "06-figure/data-snapshots/FIG-Q1-END-EFFECT.csv",
-  "snapshot_sha256": "9db497f8ae95fcbdebe11afedf65c427ee567353f303c1f872390b768705626d"
+  "snapshot_sha256": "178c90b4878bc181df06ec83eb47bb039c3e9fffa848cef0fcd345c5f8244bd4",
+  "snapshot_meta": "06-figure/data-snapshots/FIG-Q1-END-EFFECT.meta.json"
 }

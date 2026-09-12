@@ -1,0 +1,102 @@
+{
+  "schema_version": "1.0",
+  "status": "FAIL",
+  "inputs": [
+    {
+      "path": "04-compute/temperature-field-revision-20260912/formal_compute_revision.py",
+      "exists": true,
+      "sha256": "b7cbae558d8b122b9fc6650bb1c8c8e82848188d005f29b16391523f469b9541",
+      "bytes": 48347
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/heat-audit.csv",
+      "exists": true,
+      "sha256": "4d38e80a3b45486f83a4f527f6544d32b009b229e7455738330e8138ab494f11",
+      "bytes": 9129343
+    },
+    {
+      "path": "03-prototype/controller-temp-field-completion-20260912/energy-audit-summary.csv",
+      "exists": true,
+      "sha256": "2c434f787e90db2e941fc06e7a023d4aac2c91fe586186af5669b8bbfba4b3d8",
+      "bytes": 4359
+    },
+    {
+      "path": "input/A题/附件/附件1.xlsx",
+      "exists": true,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586
+    },
+    {
+      "path": "input/A题/附件/附件2.xlsx",
+      "exists": true,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "bytes": 11485
+    },
+    {
+      "path": "02-design/contracts/model-q4-m1-reference.json",
+      "exists": true,
+      "sha256": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5",
+      "bytes": 1055
+    },
+    {
+      "path": "02-design/contracts/model-q4-m2-moving-fv.json",
+      "exists": true,
+      "sha256": "c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f",
+      "bytes": 1072
+    }
+  ],
+  "outputs": [
+    {
+      "path": "03-prototype/controller-q4-heat-closure-20260912/comparison-results.csv",
+      "sha256": "0f06af622627478c47cd642cfdf312a5616d3613c7138e2a9c333c4aa92adf1f",
+      "bytes": 2709
+    },
+    {
+      "path": "03-prototype/controller-q4-heat-closure-20260912/corrected_heat_closure_audit.py",
+      "sha256": "6594fb1e208aab226639fd1145874f16a182a543aafd6cb5e4683fc5c678ccae",
+      "bytes": 37985
+    },
+    {
+      "path": "03-prototype/controller-q4-heat-closure-20260912/failure-records.csv",
+      "sha256": "152048c7b666a924ce699bb683c49e603aca2464f11858deb341bb33c074fb45",
+      "bytes": 8812
+    },
+    {
+      "path": "03-prototype/controller-q4-heat-closure-20260912/heat-audit.csv",
+      "sha256": "f6394fe05c978f2f374c84f8c2b9a00c21581c9c4dc200c41b456ee651f7d3b0",
+      "bytes": 7567621
+    },
+    {
+      "path": "03-prototype/controller-q4-heat-closure-20260912/heat-closure-report.md",
+      "sha256": "774ae78bf1619f294efbbcf83037ba30b6110704a1ed01367fea8973799b8dac",
+      "bytes": 4057
+    },
+    {
+      "path": "03-prototype/controller-q4-heat-closure-20260912/input-audit.json",
+      "sha256": "9f5ca858d29d441346af7afc0add725fac37556b57f8ed27c3698ff67c95cb95",
+      "bytes": 1074
+    },
+    {
+      "path": "03-prototype/controller-q4-heat-closure-20260912/input-manifest.json",
+      "sha256": "593a2a3e90cc38efc1e8923094a7b37c5b4eddca0c0a3e3d8fc7556a4eceddac",
+      "bytes": 1595
+    },
+    {
+      "path": "03-prototype/controller-q4-heat-closure-20260912/latent-source-trace.csv",
+      "sha256": "60fa69d422d1727c6ede6d1b7a50ac2f05379023b6569b51e1c80afc7b1bfdaf",
+      "bytes": 544717
+    },
+    {
+      "path": "03-prototype/controller-q4-heat-closure-20260912/refinement-trend.csv",
+      "sha256": "e4fec8f4567fb2b3d3539121e27ffb660e7e6b3a9f943f9d6fcb5250db5a0824",
+      "bytes": 734
+    },
+    {
+      "path": "03-prototype/controller-q4-heat-closure-20260912/run.log",
+      "sha256": "9d2dbaf8783ee7bb9f41a3223422c4421ce0ee690ecf28eafe883f3ddf3d1565",
+      "bytes": 12854
+    }
+  ],
+  "handoff_sha256": "caa9089ed1a32f9dec19d26d53c21ada2c132a846ede0c39c8587c99ec138b80",
+  "runtime_s": 117.78604790000827
+}

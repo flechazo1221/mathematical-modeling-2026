@@ -1,0 +1,72 @@
+{
+  "field": [
+    {
+      "family": "SMOKE-Q2-M3",
+      "metric": "final_max_C",
+      "levels": 3,
+      "values": [
+        2.5500000000000003,
+        2.55,
+        2.55
+      ],
+      "adjacent_changes": [
+        4.440892098500626e-16,
+        0.0
+      ],
+      "last_two_max": 4.440892098500626e-16,
+      "field_linf_adjacent_changes": [
+        0.004924101607922893,
+        0.0023403301308757563
+      ],
+      "field_linf_last_two_max": 0.004924101607922893,
+      "monotone": false,
+      "qualifies_scalar_threshold": true,
+      "qualifies_field_norm": true,
+      "qualifies_local_threshold": false,
+      "threshold": 5e-05
+    }
+  ],
+  "threshold": [
+    {
+      "family": "SMOKE-Q3",
+      "metric": "interpolated_event_time_s",
+      "levels": 1,
+      "values": [
+        null
+      ],
+      "adjacent_changes": [],
+      "last_two_max": null,
+      "field_linf_adjacent_changes": [],
+      "field_linf_last_two_max": null,
+      "monotone": false,
+      "qualifies_scalar_threshold": false,
+      "qualifies_field_norm": null,
+      "qualifies_local_threshold": false,
+      "threshold": 60.0
+    },
+    {
+      "family": "SMOKE-Q4",
+      "metric": "interpolated_event_time_s",
+      "levels": 1,
+      "values": [
+        null
+      ],
+      "adjacent_changes": [],
+      "last_two_max": null,
+      "field_linf_adjacent_changes": [],
+      "field_linf_last_two_max": null,
+      "monotone": false,
+      "qualifies_scalar_threshold": false,
+      "qualifies_field_norm": null,
+      "qualifies_local_threshold": false,
+      "threshold": 60.0
+    }
+  ],
+  "time": [],
+  "qualification_rules": {
+    "field_last_two_adjacent_changes_le": 5e-05,
+    "event_last_two_adjacent_changes_s_le": 60.0,
+    "requires_monotone_trend": true,
+    "requires_full_field_norm": "interior common-grid L_inf decreases over the last two refinements; scalar output tolerance is not reused for this norm"
+  }
+}

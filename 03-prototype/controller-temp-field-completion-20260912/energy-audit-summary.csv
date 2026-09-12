@@ -1,0 +1,49 @@
+﻿implementation,question,family,level,max_relative_residual,cumulative_residual_J,status,reason,row_count
+prescribed-T-baseline,Q2,spatial,L,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q2,spatial,M,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q2,spatial,H,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q2,time,L,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q2,time,M,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q2,time,H,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q2,joint,L,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q2,joint,H,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q3,spatial,L,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q3,spatial,M,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q3,spatial,H,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q3,time,L,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q3,time,M,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q3,time,H,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q3,joint,L,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q3,joint,H,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q4,spatial,L,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q4,spatial,M,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q4,spatial,H,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q4,time,L,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q4,time,M,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q4,time,H,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q4,joint,L,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+prescribed-T-baseline,Q4,joint,H,,,NOT_APPLICABLE,temperature prescribed; no heat equation,
+internal-temperature,Q2,spatial,L,1.914849266713341,-1935.626515478532,FAIL,,90
+internal-temperature,Q2,spatial,M,1.9053841354398804,-1939.3309187144494,FAIL,,90
+internal-temperature,Q2,spatial,H,1.9010115842619768,-1941.112794605546,FAIL,,90
+internal-temperature,Q2,time,L,1.960376610753705,-1918.4150956648025,FAIL,,45
+internal-temperature,Q2,time,M,1.9053841354398804,-1939.3309187144494,FAIL,,90
+internal-temperature,Q2,time,H,1.9768469183477348,-1950.98414317443,FAIL,,180
+internal-temperature,Q2,joint,L,1.9588485384370682,-1914.7446902612612,FAIL,,45
+internal-temperature,Q2,joint,H,1.9754987027685997,-1952.7740697204115,FAIL,,180
+internal-temperature,Q3,spatial,L,1.851153185796244,-6411.961526670032,FAIL,,231
+internal-temperature,Q3,spatial,M,1.8610423555709539,-6412.717585874847,FAIL,,273
+internal-temperature,Q3,spatial,H,1.8656710352561652,-6413.97588938078,FAIL,,534
+internal-temperature,Q3,time,L,1.9740434062499992,-6376.522695149547,FAIL,,241
+internal-temperature,Q3,time,M,1.8610423555709539,-6412.717585874847,FAIL,,273
+internal-temperature,Q3,time,H,1.8943675454524338,-6430.322772835269,FAIL,,571
+internal-temperature,Q3,joint,L,1.9778652027623593,-6375.643281402341,FAIL,,119
+internal-temperature,Q3,joint,H,1.8974055599942454,-6431.7255384850305,FAIL,,677
+internal-temperature,Q4,spatial,L,1.9701003990457442,-6962.280624267381,INCONCLUSIVE,,301
+internal-temperature,Q4,spatial,M,1.985567486581482,-6955.399777598074,INCONCLUSIVE,,314
+internal-temperature,Q4,spatial,H,1.9937205594976395,-6952.757084551973,INCONCLUSIVE,,413
+internal-temperature,Q4,time,L,1.5357407245771222,-6874.308768071423,INCONCLUSIVE,,218
+internal-temperature,Q4,time,M,1.985567486581482,-6955.399777598074,INCONCLUSIVE,,314
+internal-temperature,Q4,time,H,1.8547070131952197,-6994.70496070531,INCONCLUSIVE,,643
+internal-temperature,Q4,joint,L,1.5300163413979133,-6880.948152578912,INCONCLUSIVE,,157
+internal-temperature,Q4,joint,H,1.8473251252273246,-6991.925386469687,INCONCLUSIVE,,761

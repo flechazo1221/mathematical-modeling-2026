@@ -1,0 +1,39 @@
+{
+  "source_solver": "04-compute/temperature-field-revision-20260912/formal_compute_revision.py",
+  "attachment1": "input/A题/附件/附件1.xlsx",
+  "attachment2": "input/A题/附件/附件2.xlsx",
+  "attachment1_shape": [
+    241,
+    3
+  ],
+  "attachment2_shape": [
+    145,
+    2
+  ],
+  "attachment1_endpoints": [
+    0.0,
+    14400.0
+  ],
+  "attachment2_endpoints": [
+    0.0,
+    259200.0
+  ],
+  "radius_unit_conversion": "attachment2 cm / 100 -> m",
+  "radius_min_m": 0.01198,
+  "radius_max_m": 0.02,
+  "radius_monotone_nonincreasing": true,
+  "initial_volume_m3": 0.0003141592653589793,
+  "final_observed_volume_m3": 0.00011272065857006712,
+  "final_to_initial_volume_ratio": 0.358801,
+  "property_laws": {
+    "rho": "760+90*C kg/m3",
+    "cp": "1850+2150*C/(C+1) J/(kg K)",
+    "k": "0.12+0.20*C/(C+1) W/(m K)",
+    "D": "4.2e-4*exp(-0.30/C)*exp(-3850/T_K) m2/s"
+  },
+  "boundary_laws": {
+    "h_W_m2_K": 25.0,
+    "hm_m_s": 8e-07
+  },
+  "latent_candidate": "q_lat=L_v*j_w_proxy with L_v=2.4e6 J/kg; engineering proxy only"
+}

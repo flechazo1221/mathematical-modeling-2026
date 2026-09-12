@@ -1,0 +1,128 @@
+{
+  "pdf_appendix": {
+    "pages": 4,
+    "content_verified": true,
+    "key_items": [
+      "A题药材烘干",
+      "附录2 D=7e-9 exp(-0.89/C)",
+      "附录3 rho/cp/k/D",
+      "附录4 rho/cp/k/D"
+    ]
+  },
+  "attachment_1": {
+    "path": "input/A题/附件/附件1.xlsx",
+    "shape": [
+      241,
+      3
+    ],
+    "start": [
+      0,
+      28,
+      0.01963
+    ],
+    "end": [
+      14400,
+      50.165,
+      0.04986
+    ],
+    "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7"
+  },
+  "attachment_2": {
+    "path": "input/A题/附件/附件2.xlsx",
+    "shape": [
+      145,
+      2
+    ],
+    "start": [
+      0,
+      2.0
+    ],
+    "end": [
+      259200,
+      1.198
+    ],
+    "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+    "monotone_nonincreasing": true
+  },
+  "equations_used": {
+    "M0": "C_total single field with frozen moisture Robin boundary and zero latent heat",
+    "M1": "C_l moisture equation; q_lat=-Lv*j_g where j_g=max(outward liquid Robin flux,0)",
+    "M2": "C_total=C_l+B; B_new=B_old*exp(-dt/tau); release=(B_old-B_new)/dt enters C_l; same j_g from C_l",
+    "water_inventory": "q_w=rho_d*C_total, with Q4 rho_d=820*(R0/R)^2 convention"
+  },
+  "read_only_sources": [
+    {
+      "path": "input/A题/附件/附件1.xlsx",
+      "exists": true,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586
+    },
+    {
+      "path": "input/A题/附件/附件2.xlsx",
+      "exists": true,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "bytes": 11485
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/formal_compute_revision.py",
+      "exists": true,
+      "sha256": "b7cbae558d8b122b9fc6650bb1c8c8e82848188d005f29b16391523f469b9541",
+      "bytes": 48347
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/run_phase_change_attempt.py",
+      "exists": true,
+      "sha256": "7df153abaab19d549a672e4ca1107ed6d9130f931d5099d63c7a4595ba7f0f04",
+      "bytes": 56913
+    },
+    {
+      "path": "decisions/H1-problem.json",
+      "exists": true,
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d",
+      "bytes": 7372
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "exists": true,
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+      "bytes": 1837
+    },
+    {
+      "path": "02-design/H2-优化审计与方向.md",
+      "exists": true,
+      "sha256": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33",
+      "bytes": 1979
+    },
+    {
+      "path": "02-design/验证计划.json",
+      "exists": true,
+      "sha256": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb",
+      "bytes": 3805
+    },
+    {
+      "path": "02-design/contracts/model-q23-fixed.json",
+      "exists": true,
+      "sha256": "b3f8327a02dba8de5e97906822641639b4c953aa48cfc6aaefda14986ace9fd1",
+      "bytes": 1166
+    },
+    {
+      "path": "02-design/contracts/model-q4-m1-reference.json",
+      "exists": true,
+      "sha256": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5",
+      "bytes": 1055
+    },
+    {
+      "path": "input/A题/A题.pdf",
+      "exists": true,
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+      "bytes": 553320,
+      "note": "题目PDF实际文件夹名受旧编码影响，按唯一文件大小定位"
+    }
+  ],
+  "limitations": [
+    "Lv is an engineering placeholder",
+    "bound fraction and release tau are toy sensitivities",
+    "no phase-resolved boundary split or kinetics measurement",
+    "temperature solve remains the frozen appendix-law solver"
+  ]
+}

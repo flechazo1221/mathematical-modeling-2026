@@ -1,0 +1,36 @@
+{
+  "label": "Q4-temperature-field-nr140",
+  "config": {
+    "nr": 140,
+    "nz": 32,
+    "dt_s": 60,
+    "duration_s": 259200,
+    "moving_impl": "reference",
+    "radius_mode": "pchip",
+    "model": "M3",
+    "latent_heat_source": "omitted_by_design"
+  },
+  "metrics": {
+    "runtime_s": 119.59534849999181,
+    "max_cg_iterations": 421,
+    "max_linear_relative_residual": 5.010732191787905e-11,
+    "max_picard_iterations": 6,
+    "normalized_moisture_balance_error": 1.2194172282184523e-09,
+    "dry_solid_inventory_relative_error": 4.440892098500626e-16,
+    "geometry_relative_error": 0.0,
+    "max_local_dry_continuity_relative_residual": 1.5424116792902976e-13,
+    "interpolated_event_time_s": 184079.97393816215,
+    "reported_event_time_s": 184080.0,
+    "final_max_C": 0.14999898662005068,
+    "final_mean_C": 0.11622708929039433,
+    "temperature_field_solver": "implicit_backward_euler_conduction"
+  },
+  "last_record": {
+    "time_s": 184080,
+    "radius_m": 0.012,
+    "center_C": 0.14999898662005068,
+    "surface_C": 0.052607303176827575,
+    "center_T_C": 49.99893435347633,
+    "surface_T_C": 49.99893438599946
+  }
+}

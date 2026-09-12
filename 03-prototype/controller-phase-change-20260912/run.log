@@ -1,0 +1,7 @@
+status=BLOCKED
+seed=20260912
+command="C:\Users\Linza\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe" -B 03-prototype/controller-phase-change-20260912/run_controller_phase_change.py
+runtime_s=8.518372
+C_only_rank=3
+C_T_rank=4
+C_T_vapor_rank=4

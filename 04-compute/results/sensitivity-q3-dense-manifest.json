@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "stage": "COMPUTE",
+  "scope": "Q3 dense one-factor sensitivity",
+  "status": "PASS",
+  "levels": {
+    "terminal_window_s": [
+      1800,
+      2700,
+      3600,
+      5400,
+      7200
+    ],
+    "multipliers": [
+      0.8,
+      0.9,
+      1.0,
+      1.1,
+      1.2
+    ]
+  },
+  "guard_s": 2592000,
+  "threshold": 0.149999,
+  "rows": 25,
+  "inputs": [
+    {
+      "path": "04-compute/src/formal_compute.py",
+      "sha256": "af3214f972eb874764323c76561025df1cc70f27d7f0985968b57b0b688b4644"
+    },
+    {
+      "path": "04-compute/src/q3_dense_sensitivity.py",
+      "sha256": "a8299f6cb4b0c1d8e9ec349c55d725b92024bec69d34426f2ca53f176f196da4"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "04-compute/results/sensitivity-q3-dense.csv",
+      "sha256": "0e59c13ea76b7d98a367478155bb699409cfc6db7290f9a2ebf863811d3705a0"
+    },
+    {
+      "path": "04-compute/logs/q3-dense-sensitivity.log",
+      "sha256": "65f40eb5f522ad7d2a575322b83a227694ba5b7b0d22c6be7d086caf5a7edb7e"
+    }
+  ],
+  "command": "python 04-compute/src/q3_dense_sensitivity.py",
+  "completed_at": "2026-09-12T17:12:41.659225+08:00"
+}

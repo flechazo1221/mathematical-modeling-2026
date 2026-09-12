@@ -1,0 +1,4 @@
+﻿question,parameters,n_trace_points,rank_at_tol_1e-10,condition_number,singular_values,status
+Q2,"log(proxy_scale),log(L_v)",765,1,inf,1.414214e+00;2.943849e-16,BLOCKED_NON_IDENTIFIABLE
+Q3,"log(proxy_scale),log(L_v)",6815,1,inf,1.414214e+00;7.409616e-16,BLOCKED_NON_IDENTIFIABLE
+Q4,"log(proxy_scale),log(L_v)",6973,1,inf,1.414214e+00;1.591910e-16,BLOCKED_NON_IDENTIFIABLE

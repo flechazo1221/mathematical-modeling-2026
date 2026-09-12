@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "status": "REVISED_AUXILIARY",
+  "scope": "仅现有 FIG-DATA-EXTENSION-WIDE；不改变 H3 官方图表清单",
+  "items": [
+    {
+      "id": "FIG-DATA-EXTENSION-WIDE",
+      "contract": "06-figure/corrected-20260912/contracts/FIG-DATA-EXTENSION-WIDE.json",
+      "snapshot": "06-figure/corrected-20260912/data-snapshots/FIG-DATA-EXTENSION-WIDE.csv",
+      "svg": "06-figure/corrected-20260912/figures/FIG-DATA-EXTENSION-WIDE.svg",
+      "png": "06-figure/corrected-20260912/figures/FIG-DATA-EXTENSION-WIDE.png",
+      "pdf": "06-figure/corrected-20260912/figures/FIG-DATA-EXTENSION-WIDE.pdf",
+      "color_preview": "06-figure/corrected-20260912/previews/FIG-DATA-EXTENSION-WIDE-color.png",
+      "grayscale_preview": "06-figure/corrected-20260912/previews/FIG-DATA-EXTENSION-WIDE-grayscale.png",
+      "legacy_preview_alias": "06-figure/corrected-20260912/previews/FIG-DATA-EXTENSION-WIDE-preview.png",
+      "script": "06-figure/corrected-20260912/scripts/render_extension_wide.py",
+      "script_sha256": "71ea501e9834de1a2ba35e8ff3f0d3f304f49c0c15c8ca6a7a2e2d4ab44a7a42",
+      "qa_report": "06-figure/corrected-20260912/qa/FIG-DATA-EXTENSION-WIDE-qa.json",
+      "visual_revision": "revised-extension-wide-legend-alignment-20260912",
+      "data_claim_status": "unchanged",
+      "png_sha256": "450667c4d09eb803d6cce0a138d911518e8b620b4d14bf5aec193bb7a61b3b09",
+      "svg_sha256": "a4220953c0621ab9151f59424559d1cd96ed33b6cc5bbe02616b559b860001c2",
+      "pdf_sha256": "e1801811f7fdff7b1a893f56cd3f768cb1cfc0df3e78065799c63f8005b6f1f5",
+      "color_preview_sha256": "6681e64ea6e9833b96b2e7beca99140d1091c3260999cbadab4af587cf8cd49b",
+      "grayscale_preview_sha256": "1b18abcd46cdea4ef40097f339c0ffadc0071bb1254636ce27c560b3c6f69eb6"
+    }
+  ]
+}

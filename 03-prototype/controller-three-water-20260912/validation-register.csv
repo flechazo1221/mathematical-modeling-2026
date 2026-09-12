@@ -1,0 +1,9 @@
+﻿id,status,evidence
+TW01-inputs,PASS,"附件1/2 shapes, endpoints, monotone radius, PDF appendix and source hashes recorded in source-audit.json"
+TW02-nonnegative-water,FAIL,primary successful runs=29/33; primary failures=4
+TW03-total-water-closure,PASS,M_total=M_liquid+M_bound compared with signed boundary net flux in water-audit.csv
+TW04-phase-split,PASS,C_total-C_l-B residual recorded per accepted step
+TW05-latent-integral,PASS,latent-audit.csv integrates positive liquid gasification power; M0 is identically zero by definition
+TW06-nominal-space-stability,INCONCLUSIVE,M0/M1/M2 nominal space ladder in stability-audit.csv; Q3/Q4 event target is 60 s
+TW07-parameter-identifiability,BLOCKED,"No phase-resolved liquid/vapor/bound-water inventories, material-specific Lv, or bound-water kinetics in current attachments"
+TW08-promotion,BLOCKED,This is an isolated PROTOTYPE extension and does not update frozen decisions or formal stages

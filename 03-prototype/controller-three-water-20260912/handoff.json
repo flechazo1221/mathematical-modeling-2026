@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.0",
+  "stage": "PROTOTYPE",
+  "status": "BLOCKED",
+  "scope": "isolated three-water phase-change prototype; primary route unchanged",
+  "inputs": [
+    {
+      "path": "input/A题/附件/附件1.xlsx",
+      "exists": true,
+      "sha256": "7ef32870abeef420b89560b2530ff60dfe4255917805151d89988d0311af9dd7",
+      "bytes": 16586
+    },
+    {
+      "path": "input/A题/附件/附件2.xlsx",
+      "exists": true,
+      "sha256": "5563acbfa4b4afb10cc6c03e2207e5369bf39da27576672aff14cc5c32e704af",
+      "bytes": 11485
+    },
+    {
+      "path": "04-compute/temperature-field-revision-20260912/formal_compute_revision.py",
+      "exists": true,
+      "sha256": "b7cbae558d8b122b9fc6650bb1c8c8e82848188d005f29b16391523f469b9541",
+      "bytes": 48347
+    },
+    {
+      "path": "03-prototype/controller-phase-change-attempt-20260912/run_phase_change_attempt.py",
+      "exists": true,
+      "sha256": "7df153abaab19d549a672e4ca1107ed6d9130f931d5099d63c7a4595ba7f0f04",
+      "bytes": 56913
+    },
+    {
+      "path": "decisions/H1-problem.json",
+      "exists": true,
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d",
+      "bytes": 7372
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "exists": true,
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+      "bytes": 1837
+    },
+    {
+      "path": "02-design/H2-优化审计与方向.md",
+      "exists": true,
+      "sha256": "96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33",
+      "bytes": 1979
+    },
+    {
+      "path": "02-design/验证计划.json",
+      "exists": true,
+      "sha256": "37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb",
+      "bytes": 3805
+    },
+    {
+      "path": "02-design/contracts/model-q23-fixed.json",
+      "exists": true,
+      "sha256": "b3f8327a02dba8de5e97906822641639b4c953aa48cfc6aaefda14986ace9fd1",
+      "bytes": 1166
+    },
+    {
+      "path": "02-design/contracts/model-q4-m1-reference.json",
+      "exists": true,
+      "sha256": "88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5",
+      "bytes": 1055
+    },
+    {
+      "path": "input/A题/A题.pdf",
+      "exists": true,
+      "sha256": "052d8014bff5727c019b72e44fdffaf5c145ce04050dd938baaf3527db331736",
+      "bytes": 553320,
+      "note": "题目PDF实际文件夹名受旧编码影响，按唯一文件大小定位"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "03-prototype/controller-three-water-20260912/__pycache__/run_three_water.cpython-312.pyc",
+      "sha256": "c1fd65c37e335bd9d74b53f1b28e3eb2cb88edf5b0d582f1ff9f2fb5f16152d3",
+      "bytes": 64714
+    },
+    {
+      "path": "03-prototype/controller-three-water-20260912/environment.json",
+      "sha256": "3db107252c895b712f169333d5a2de6fa490b1be69628b29622b18750715a11d",
+      "bytes": 385
+    },
+    {
+      "path": "03-prototype/controller-three-water-20260912/H2-选择包.md",
+      "sha256": "0f683b699a54bd87417b4dbadf92f6b0d94629f15a6c7d264f8ee947acdc49b0",
+      "bytes": 1679
+    },
+    {
+      "path": "03-prototype/controller-three-water-20260912/latent-audit.csv",
+      "sha256": "af2e88285571fc94317b26f52a993f65257748d241e2a684ed766237d9346646",
+      "bytes": 6288876
+    },
+    {
+      "path": "03-prototype/controller-three-water-20260912/parameter-register.csv",
+      "sha256": "a3f878886c81971f0d819dbcb40ebc8a3402dbdb044dab527f831c990c868206",
+      "bytes": 1571
+    },
+    {
+      "path": "03-prototype/controller-three-water-20260912/run.log",
+      "sha256": "19a42d0917c3458632ecc86cc826d8256f991cbc8104a39cbfa312a43b542c33",
+      "bytes": 89174
+    },
+    {
+      "path": "03-prototype/controller-three-water-20260912/run_three_water.py",
+      "sha256": "361258ada27ddb761962b002b857f013fcd1e8a13083959300bdf436295e666f",
+      "bytes": 47102
+    },
+    {
+      "path": "03-prototype/controller-three-water-20260912/source-audit.json",
+      "sha256": "122b8c4518bdea6d6f2815d65bd93bd2e8d05d15c0c6af77e3d1061a736839b8",
+      "bytes": 3907
+    },
+    {
+      "path": "03-prototype/controller-three-water-20260912/stability-audit.csv",
+      "sha256": "36b0553ee01046de567b1b7637d4b49ac6d412ba2a3731a6e2d9c97d50361538",
+      "bytes": 1258
+    },
+    {
+      "path": "03-prototype/controller-three-water-20260912/validation-register.csv",
+      "sha256": "e69c0a2efec4f89d77384a37a9a2b8456e50c3f51de5b09285448b2d6820116f",
+      "bytes": 953
+    },
+    {
+      "path": "03-prototype/controller-three-water-20260912/water-audit.csv",
+      "sha256": "07e06315bc2e59dd3c82decf7c994fba61924fa60a345b4149ddcc65d074be80",
+      "bytes": 9815374
+    },
+    {
+      "path": "03-prototype/controller-three-water-20260912/三类模型对比.csv",
+      "sha256": "18901d7841f241564c6e4727a81be34055c8cb840ff4864f105ae05a20d7ba43",
+      "bytes": 21503
+    },
+    {
+      "path": "03-prototype/controller-three-water-20260912/候选方案对比.md",
+      "sha256": "07b2a538b098e6084eb6eb29854ac1564200c1012429c8dc15b5a7be02b97a87",
+      "bytes": 6250
+    },
+    {
+      "path": "03-prototype/controller-three-water-20260912/manifest.json",
+      "sha256": "327780bf077ffc71cec6ae08fa240cd3319efeb1943801ffede7a0c8dc269fce",
+      "bytes": 6067
+    }
+  ],
+  "frozen_decisions": [
+    {
+      "path": "decisions/H1-problem.json",
+      "exists": true,
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d",
+      "bytes": 7372
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "exists": true,
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba",
+      "bytes": 1837
+    }
+  ],
+  "assumptions": [
+    "M0 total-C single field is the paired numerical baseline",
+    "M1 applies positive liquid-water surface gasification flux as an equivalent latent sink",
+    "M2 uses a first-order immobile bound-water release pool with exact requested toy values",
+    "q_w=rho_d*C_total and Q4 dry-solid continuity convention are retained from the frozen source solver",
+    "all upstream and formal directories are read-only"
+  ],
+  "unknowns": [
+    "material-specific latent heat",
+    "phase-resolved liquid/vapor/bound-water boundary flux split",
+    "bound-water release kinetics",
+    "independent internal temperature observations"
+  ],
+  "claims": [
+    "M0/M1/M2 local candidates were run under the same appendix laws, initial data, boundaries and medium grid/time settings",
+    "M2 total-water inventory is closed against boundary net flux within the numerical audit tolerance where status PASS",
+    "latent totals are conditional on nominal Lv and are not identified measurements"
+  ],
+  "warnings": [
+    "M0/M1/M2 names are local three-water candidates and must not be confused with frozen H2 M1/M2",
+    "M2 toy parameters are not measured",
+    "do not promote to formal COMPUTE"
+  ],
+  "required_next_actions": [
+    "keep M1 as engineering fallback if M2 nominal stability fails",
+    "obtain or justify phase-resolved boundary and enthalpy/kinetic data before any promotion",
+    "if reopened, repeat independent space/time refinement after phase closure is supported"
+  ],
+  "validation_register": [
+    {
+      "id": "TW01-inputs",
+      "status": "PASS"
+    },
+    {
+      "id": "TW02-nonnegative-water",
+      "status": "FAIL"
+    },
+    {
+      "id": "TW03-total-water-closure",
+      "status": "PASS"
+    },
+    {
+      "id": "TW04-phase-split",
+      "status": "PASS"
+    },
+    {
+      "id": "TW05-latent-integral",
+      "status": "PASS"
+    },
+    {
+      "id": "TW06-nominal-space-stability",
+      "status": "INCONCLUSIVE"
+    },
+    {
+      "id": "TW07-parameter-identifiability",
+      "status": "BLOCKED"
+    },
+    {
+      "id": "TW08-promotion",
+      "status": "BLOCKED"
+    }
+  ],
+  "completed_at": "2026-09-12T19:53:12+0800"
+}
