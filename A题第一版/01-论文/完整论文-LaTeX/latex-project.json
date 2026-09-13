@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "contest": "cumcm",
+  "main_tex": "example.tex",
+  "template": {
+    "path": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\CUMCMThesis",
+    "source": "https://github.com/latexstudio/CUMCMThesis",
+    "version": "commit 38d1f21; 2026 AI update",
+    "sha256": "aab3b2f4b93ca53db97db121c7f8b0e08e445e9010bf6b4ed40fcdbce20a1519"
+  },
+  "template_files": {
+    ".git/config": "bec72d60284cb6fe0923fdb01202b57a40db1e3ca5f1112cba0fce910f840802",
+    ".git/description": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee",
+    ".git/HEAD": "f6f2b945f6c411b02ba3da9c7ace88dcf71b6af65ba2e0d89aa82900042b5a10",
+    ".git/hooks/applypatch-msg.sample": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7",
+    ".git/hooks/commit-msg.sample": "efc1401b0e99d1ff51494d154d98b46c1e99059bcd8bf9f73cecde19fd3eb23b",
+    ".git/hooks/fsmonitor-watchman.sample": "9159720099ad5595b8e66645cbfd47763c1e920f46e0b50ae75e642bbec57ef0",
+    ".git/hooks/post-update.sample": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5",
+    ".git/hooks/pre-applypatch.sample": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475",
+    ".git/hooks/pre-commit.sample": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b",
+    ".git/hooks/pre-merge-commit.sample": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53",
+    ".git/hooks/pre-push.sample": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a",
+    ".git/hooks/pre-rebase.sample": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3",
+    ".git/hooks/pre-receive.sample": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989",
+    ".git/hooks/prepare-commit-msg.sample": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619",
+    ".git/hooks/push-to-checkout.sample": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f",
+    ".git/hooks/sendemail-validate.sample": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92",
+    ".git/hooks/update.sample": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106",
+    ".git/index": "0aa90f4efefd155090ddae1e574f0f1f537d42eab273403b4989d64bc402f43c",
+    ".git/info/exclude": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1",
+    ".git/logs/HEAD": "08bfd7716f301c03e7cc2190cab3c10750bc4a1eb21db253845596b8a3d04247",
+    ".git/logs/refs/heads/master": "08bfd7716f301c03e7cc2190cab3c10750bc4a1eb21db253845596b8a3d04247",
+    ".git/logs/refs/remotes/origin/HEAD": "08bfd7716f301c03e7cc2190cab3c10750bc4a1eb21db253845596b8a3d04247",
+    ".git/objects/pack/pack-0832a8e0d8c35cec7610d92143bd771372fa5e9e.idx": "f65b5e6bf539d3df66c5ef6b3220198cac0ccf5b5d7321dafb1b987a55bf9f1c",
+    ".git/objects/pack/pack-0832a8e0d8c35cec7610d92143bd771372fa5e9e.pack": "4aab46036113bbfbb23d362846486c73adba0a5c8554df5a3a3f72d743c8ae54",
+    ".git/objects/pack/pack-0832a8e0d8c35cec7610d92143bd771372fa5e9e.rev": "dafd1dc357fe6ec7a830880211fad200b28096a68fc36c668c3e743d4b42e3ee",
+    ".git/packed-refs": "864e317ec258bab0d8e65b4328ab86e06962f496e34f4f80b994a5e77de31d02",
+    ".git/refs/heads/master": "58ced7a4dc1630edd21d7045c5348f9d3e5ee1cdc0d2e5c7372b6fa78b37f316",
+    ".git/refs/remotes/origin/HEAD": "cdc65e67690c4c6475174e5ec662b70655246a2f3924354778835ab3be70aa76",
+    ".gitignore": "18444da8c8e91daf9ed9c2206054b602c069e6136a866901b0d3f1262b576f7b",
+    "cumcm2026.sty": "0240d968a6b89cf1bd8d02b649c8311b3835388b6e3cb7b7a1f634f3fb477a1f",
+    "cumcmthesis.cls": "630968bcc97a5bfb296ae834298c28d1768f96b762e81bd8d267312c0a14bb92",
+    "example-1.png": "b7de7c0e9c6093f3f6b86c13ae8e900a1306005cf8499e78e839ad9e92f7a741",
+    "example.pdf": "a286c6afc23f9e98eade4a6fa21005139bf3c619692675df0b99ba5b1134ce1b",
+    "example.tex": "b32f4b419b4f88e96aaf43917490181656339513678ff5c402c848a33c6811de",
+    "figures/cat.pdf": "3d7400e3afb59649fc9cad9d84f5327032d8b5fa49053b55c26a79417d79c692",
+    "figures/f1.png": "b2e07e3a468aac6be045c32a31514e6d2293706b5318cbdf2f6660cc5b0a67e1",
+    "figures/gongzhonghao.jpg": "1cb29d6ed60fae1979872dfe3ee10ee2d5bc1212bdbdd0e2f20a5e02b36be7c7",
+    "figures/gongzhonghao2.png": "4d3714320f365ee7e1beb9c7900ecb09e5b5c478dc9843a73eec94751abf495c",
+    "figures/smokeblk.pdf": "e714d4e9a23dc935040a22a5a1e75fc7e9dea50203d771cd329c58a92256cfed",
+    "figures/upload.png": "c1f8fab8357169c0af18d18150fdaeab241117aa1e0e65b63e24b6a88582f64a",
+    "README.md": "cc927b008391af7a9e779db090331e5c007e859a457352bdf98ee59eac568d69"
+  },
+  "resource_bindings": [
+    {
+      "source": "figure-sources/FIG-Q1-C-FIELD.pdf",
+      "destination": "figures/FIG-Q1-C-FIELD.pdf",
+      "sha256": "73dab8c125cef9ea4367292ee2d83e5724c8bc41faeb348d17bec2fb75713591",
+      "hash_mode": "content",
+      "bound_at": "2026-09-12T17:58:25.028860+00:00"
+    },
+    {
+      "source": "figure-sources/FIG-Q1-END-EFFECT.png",
+      "destination": "figures/FIG-Q1-END-EFFECT.png",
+      "sha256": "12f896bba4fe24b0d6ab4f4a63d4918e63f497cd8701d073b65f5782108ca74d",
+      "hash_mode": "content",
+      "bound_at": "2026-09-12T17:58:25.124548+00:00"
+    },
+    {
+      "source": "figure-sources/FIG-Q2-C-PROFILES.pdf",
+      "destination": "figures/FIG-Q2-C-PROFILES.pdf",
+      "sha256": "499e35711889cc904f345006606c4e287236339bb62e02107badab8f73ebdc52",
+      "hash_mode": "content",
+      "bound_at": "2026-09-12T17:58:25.214933+00:00"
+    },
+    {
+      "source": "figure-sources/FIG-Q2-MODEL-ABLATION.pdf",
+      "destination": "figures/FIG-Q2-MODEL-ABLATION.pdf",
+      "sha256": "3d5482a2927362ceb4d0ba81e357a0c84f4d4078d625844f8636c101bb581ef5",
+      "hash_mode": "content",
+      "bound_at": "2026-09-12T17:58:25.310150+00:00"
+    },
+    {
+      "source": "figure-sources/FIG-Q2-GRID-CONV.pdf",
+      "destination": "figures/FIG-Q2-GRID-CONV.pdf",
+      "sha256": "ecb259ff6ff950874186d1d6725ea304c888a2fd87d8a7cdd794c4fc0c043d69",
+      "hash_mode": "content",
+      "bound_at": "2026-09-12T17:58:25.406653+00:00"
+    },
+    {
+      "source": "figure-sources/FIG-Q3-THRESHOLD-TRAJECTORY.pdf",
+      "destination": "figures/FIG-Q3-THRESHOLD-TRAJECTORY.pdf",
+      "sha256": "5b74de850d578732a5f5f05d0e315a30db7f748e2a09b82602b175eb09ae3fd4",
+      "hash_mode": "content",
+      "bound_at": "2026-09-12T17:58:25.500069+00:00"
+    },
+    {
+      "source": "figure-sources/FIG-Q3-BRACKET-ZOOM.pdf",
+      "destination": "figures/FIG-Q3-BRACKET-ZOOM.pdf",
+      "sha256": "691237c701c794d2889f21121c237a8aafb8821a558573c111c36b68dcd0654f",
+      "hash_mode": "content",
+      "bound_at": "2026-09-12T17:58:25.591144+00:00"
+    },
+    {
+      "source": "figure-sources/FIG-Q3-SENS-ONEFACTOR.pdf",
+      "destination": "figures/FIG-Q3-SENS-ONEFACTOR.pdf",
+      "sha256": "e093889856b56634b63b4c51f2d4cb349989c9fd2a0d18e6e18c959ecd81d98f",
+      "hash_mode": "content",
+      "bound_at": "2026-09-12T17:58:25.684483+00:00"
+    },
+    {
+      "source": "figure-sources/FIG-Q4-RADIUS-TIME.pdf",
+      "destination": "figures/FIG-Q4-RADIUS-TIME.pdf",
+      "sha256": "a75afea7dd2b375fd0144e3337469e4b19bb3d657501e194f3f184fe647dc8c8",
+      "hash_mode": "content",
+      "bound_at": "2026-09-12T17:58:25.776617+00:00"
+    },
+    {
+      "source": "figure-sources/FIG-Q4-THRESHOLD-TRAJECTORY.pdf",
+      "destination": "figures/FIG-Q4-THRESHOLD-TRAJECTORY.pdf",
+      "sha256": "045ca3870c4f423fa2968112191a36160001b602795066c54af2d3051bad4759",
+      "hash_mode": "content",
+      "bound_at": "2026-09-12T17:58:25.867942+00:00"
+    },
+    {
+      "source": "figure-sources/FIG-Q1-GRID-CONV.pdf",
+      "destination": "figures/FIG-Q1-GRID-CONV.pdf",
+      "sha256": "669b4acd04399bcd60490e3f9e8b8dc2054379bcb3056079d980caa0061e48f3",
+      "hash_mode": "content",
+      "bound_at": "2026-09-12T17:58:25.962252+00:00"
+    },
+    {
+      "source": "figure-sources/FIG-Q3-SPACE-CONV.pdf",
+      "destination": "figures/FIG-Q3-SPACE-CONV.pdf",
+      "sha256": "9de5986a5a99e6b38e5199323acaa4d3554078019e40cfc5749cef5760cf62e9",
+      "hash_mode": "content",
+      "bound_at": "2026-09-12T17:58:26.053503+00:00"
+    },
+    {
+      "source": "figure-sources/FIG-Q4-SPACE-CONV.pdf",
+      "destination": "figures/FIG-Q4-SPACE-CONV.pdf",
+      "sha256": "f0f8d1b8330156db5fdab405f14772d67a4d2524d5d7126d8931f259a859f588",
+      "hash_mode": "content",
+      "bound_at": "2026-09-12T17:58:26.147417+00:00"
+    }
+  ],
+  "created_at": "2026-09-12T17:56:31.571189+00:00"
+}

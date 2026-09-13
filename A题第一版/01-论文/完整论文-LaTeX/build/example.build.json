@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-12T18:12:43.340477+00:00",
+  "passed": true,
+  "main_tex": "example.tex",
+  "project_root": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\08-paper\\完整论文-LaTeX",
+  "source_sha256": "9b8c8c71b9e1d0e1920a8366fd8719b6131fb53f7b8531ef741a9023f316b364",
+  "compiled_source_sha256": "9b8c8c71b9e1d0e1920a8366fd8719b6131fb53f7b8531ef741a9023f316b364",
+  "post_build_source_sha256": "9b8c8c71b9e1d0e1920a8366fd8719b6131fb53f7b8531ef741a9023f316b364",
+  "pdf_sha256": "b6ee7b3863f48628407bde0928d518c5fd9f9af4f6eda5f1c603f5bfd75c4d9b",
+  "project_manifest_sha256": "3a220136bda4d1a8e72870c8764dfb7ac28d86fbff21aa425c4623b234f913ea",
+  "engine": "xelatex",
+  "tools": {
+    "latexmk": {
+      "path": "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\latexmk.EXE",
+      "version": "perl: warning: Setting locale failed."
+    },
+    "xelatex": {
+      "path": "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\xelatex.EXE",
+      "version": "MiKTeX-XeTeX 4.18 (MiKTeX 26.5)"
+    }
+  },
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\latexmk.EXE",
+        "-norc",
+        "-gg",
+        "-xelatex",
+        "-e",
+        "$xelatex = 'xelatex -no-shell-escape %O %S'",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-file-line-error",
+        "-outdir=build",
+        "example.tex"
+      ],
+      "cwd": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\08-paper\\完整论文-LaTeX",
+      "returncode": 0,
+      "duration_seconds": 5.813
+    }
+  ],
+  "warnings": [
+    "LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "LaTeX Font Warning: Font shape `TU/SimSun(1)/b/n' undefined",
+    "Overfull \\hbox (51.48883pt too wide) in paragraph at lines 168--169",
+    "Underfull \\hbox (badness 2080) in paragraph at lines 340--341",
+    "Underfull \\hbox (badness 1184) in paragraph at lines 340--341",
+    "Underfull \\hbox (badness 6526) in paragraph at lines 343--344",
+    "Underfull \\hbox (badness 2197) in paragraph at lines 343--344",
+    "Overfull \\hbox (33.64655pt too wide) in paragraph at lines 380--381",
+    "Package caption Warning: Unused \\captionsetup[sub] on input line 7.",
+    "LaTeX Font Warning: Some font shapes were not available, defaults substituted."
+  ],
+  "allowed_warnings": [
+    "LaTeX Font Warning: Font shape `TU/SimHei(0)/b/n' undefined",
+    "Package hyperref Warning: Token not allowed in a PDF string (Unicode):",
+    "LaTeX Font Warning: Font shape `TU/SimSun(1)/b/n' undefined",
+    "Overfull \\hbox (51.48883pt too wide) in paragraph at lines 168--169",
+    "Underfull \\hbox (badness 2080) in paragraph at lines 340--341",
+    "Underfull \\hbox (badness 1184) in paragraph at lines 340--341",
+    "Underfull \\hbox (badness 6526) in paragraph at lines 343--344",
+    "Underfull \\hbox (badness 2197) in paragraph at lines 343--344",
+    "Overfull \\hbox (33.64655pt too wide) in paragraph at lines 380--381",
+    "Package caption Warning: Unused \\captionsetup[sub] on input line 7.",
+    "LaTeX Font Warning: Some font shapes were not available, defaults substituted."
+  ],
+  "warning_override": {
+    "patterns": [
+      "Font shape",
+      "Token not allowed",
+      "Overfull \\\\hbox",
+      "Underfull \\\\hbox",
+      "Unused \\\\captionsetup",
+      "Some font shapes"
+    ],
+    "reason": "CUMCMThesis模板字体回退、中文PDF书签清理以及少量长段落盒子警告；已通过渲染复核，未发现公式或图件截断。"
+  },
+  "issues": [],
+  "reproduce": "C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe C:\\Users\\Lenovo\\.codex\\skills\\math-modeling-v2\\tools\\latex\\scripts\\latex_paper.py build C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\08-paper\\完整论文-LaTeX\\example.tex --engine xelatex --timeout 180 --publish C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\08-paper\\完整论文.pdf --allow-warning \"Font shape\" --allow-warning \"Token not allowed\" --allow-warning \"Overfull \\\\hbox\" --allow-warning \"Underfull \\\\hbox\" --allow-warning \"Unused \\\\captionsetup\" --allow-warning \"Some font shapes\" --override-reason CUMCMThesis模板字体回退、中文PDF书签清理以及少量长段落盒子警告；已通过渲染复核，未发现公式或图件截断。 --overwrite"
+}
