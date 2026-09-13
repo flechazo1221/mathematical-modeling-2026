@@ -1,0 +1,18 @@
+{
+  "figure_id": "FIG-TEMP-FIELD-Q2-PROFILES",
+  "claim": "表面先失水、中心后响应，实际温度场下的内部梯度随时间向中心推进",
+  "sources": [
+    {
+      "path": "04-compute\\revision-temp-field-20260913\\results\\Q2-M4-field-fine-profiles.csv",
+      "sha256": "7b02badad9af79f4cb7a917f70d242edba0026959b54bb687103c1c86386524e"
+    }
+  ],
+  "formats": [
+    "pdf",
+    "svg",
+    "png"
+  ],
+  "png_dpi": 600,
+  "backend": "python/matplotlib",
+  "units": "as labelled"
+}

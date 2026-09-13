@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "stage": "COMPUTE",
+  "status": "PASS",
+  "claims": [
+    {
+      "id": "C-Q1",
+      "claim": "M1 baseline and M2 2-D backbone were run under common boundary/physics conventions; dimensional effect and fixed-time-step radial convergence are separately recorded.",
+      "evidence": [
+        "04-compute/results/q1-samples.csv",
+        "04-compute/results/field-grid-convergence.csv",
+        "04-compute/results/convergence.csv"
+      ]
+    },
+    {
+      "id": "C-Q2",
+      "claim": "M3 state-law route was run for 3 h; M2 constant-law and M4 temperature-field cases are comparators, not observational-fit improvements.",
+      "evidence": [
+        "04-compute/results/q2-samples.csv",
+        "04-compute/results/key-metrics.json"
+      ]
+    },
+    {
+      "id": "C-Q3",
+      "claim": "The first full-domain moisture-threshold crossing was spatially stabilized, bracketed, interpolated, and checked at 30 s and 15 s time steps.",
+      "evidence": [
+        "04-compute/results/q3-threshold-trajectory.csv",
+        "04-compute/results/threshold-grid-convergence.csv",
+        "04-compute/results/convergence.csv"
+      ]
+    },
+    {
+      "id": "C-Q4",
+      "claim": "Moving-radius reference and moving-FV paths, radial/event convergence, geometry/dry-solid conservation, interpolation sensitivity and Jacobian ablation were executed.",
+      "evidence": [
+        "04-compute/results/q4-threshold-trajectory.csv",
+        "04-compute/results/threshold-grid-convergence.csv",
+        "04-compute/results/validation-register.csv",
+        "04-compute/results/sensitivity.csv"
+      ]
+    },
+    {
+      "id": "C-ROBUST",
+      "claim": "Boundary, empirical-law, terminal-window and radius-interpolation pressure tests are reported without claiming causal or observational validation. Formerly 72 h-censored cases were continued to their first threshold crossing.",
+      "evidence": [
+        "04-compute/results/sensitivity.csv",
+        "04-compute/results/sensitivity-extended.csv"
+      ]
+    }
+  ],
+  "key_values": {
+    "route": "H2-approved 2-D consistency route; M1 baseline, M2 backbone, M3 main, M4 ablation",
+    "q1_m2_final_mean_C": 2.2750348485276963,
+    "q2_m3_final_max_C": 1.7278463919704832,
+    "q2_m2_constant_final_max_C": 2.1599687487421537,
+    "q2_m4_final_max_C": 1.7645199232311275,
+    "q3_m3_t_star_s": 206820.0,
+    "q3_m4_ablation_t_star_s": 212640.0,
+    "q4_reference_t_star_s": 183840.0,
+    "q4_moving_fv_t_star_s": 183840.0,
+    "q4_jacobian_ablation_t_star_s": 187020.0,
+    "maximum_approved_route_balance_error": 9.645160999057141e-08,
+    "jacobian_ablation_balance_error": 0.5936318972871306,
+    "maximum_linear_residual": 5.000064734843475e-11,
+    "pressure_test": "4 h terminal-window and hm/prefactor sensitivity; see sensitivity.csv",
+    "interpretation_limit": "conditional simulation under problem-supplied empirical laws; no observational fit claim"
+  },
+  "validation_status": "PASS",
+  "failed_validations": [],
+  "diagnostic_figures": [
+    "04-compute/diagnostic-figures/diagnostic-threshold.png",
+    "04-compute/diagnostic-figures/diagnostic-convergence.png",
+    "04-compute/diagnostic-figures/diagnostic-sensitivity.png"
+  ]
+}

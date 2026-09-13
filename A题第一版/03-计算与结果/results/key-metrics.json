@@ -1,0 +1,17 @@
+{
+  "route": "H2-approved 2-D consistency route; M1 baseline, M2 backbone, M3 main, M4 ablation",
+  "q1_m2_final_mean_C": 2.2750348485276963,
+  "q2_m3_final_max_C": 1.7278463919704832,
+  "q2_m2_constant_final_max_C": 2.1599687487421537,
+  "q2_m4_final_max_C": 1.7645199232311275,
+  "q3_m3_t_star_s": 206820.0,
+  "q3_m4_ablation_t_star_s": 212640.0,
+  "q4_reference_t_star_s": 183840.0,
+  "q4_moving_fv_t_star_s": 183840.0,
+  "q4_jacobian_ablation_t_star_s": 187020.0,
+  "maximum_approved_route_balance_error": 9.645160999057141e-08,
+  "jacobian_ablation_balance_error": 0.5936318972871306,
+  "maximum_linear_residual": 5.000064734843475e-11,
+  "pressure_test": "4 h terminal-window and hm/prefactor sensitivity; see sensitivity.csv",
+  "interpretation_limit": "conditional simulation under problem-supplied empirical laws; no observational fit claim"
+}

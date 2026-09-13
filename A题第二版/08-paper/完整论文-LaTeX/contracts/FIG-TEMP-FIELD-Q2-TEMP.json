@@ -1,0 +1,18 @@
+{
+  "figure_id": "FIG-TEMP-FIELD-Q2-TEMP",
+  "claim": "实际温度场使中心温度和表面温度在升温阶段存在可辨差异",
+  "sources": [
+    {
+      "path": "04-compute\\revision-temp-field-20260913\\results\\Q2-M4-field-fine-trajectory.csv",
+      "sha256": "6490177996bdc1ddc67985b27e6fb0e81c2fdcbe4c43b4ad55e6175bd65ccaab"
+    }
+  ],
+  "formats": [
+    "pdf",
+    "svg",
+    "png"
+  ],
+  "png_dpi": 600,
+  "backend": "python/matplotlib",
+  "units": "as labelled"
+}

@@ -1,0 +1,5 @@
+﻿scope,nr,nz,grid_strategy,fixed_dt_s,interpolated_event_time_s,reported_event_time_s
+Q3,63,36,two-sided-local,60,207056.75374813215,207060.0
+Q3,175,36,two-sided-local,60,206831.52565542853,206880.0
+Q4,63,32,two-sided-local,60,183864.1636704488,183900.0
+Q4,175,32,two-sided-local,60,183792.69594218623,183840.0

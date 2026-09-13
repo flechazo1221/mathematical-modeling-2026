@@ -1,0 +1,108 @@
+{
+  "source": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\07-appendix\\appendix-draft.md",
+  "source_sha256": "d4ae76a658da4e8f7b407f62b03ace039a903f293954afcb592cc406756b4e4e",
+  "programs": [
+    {
+      "original_path": "04-compute/src/formal_compute.py",
+      "typeset_copy": "code/program-01.py",
+      "sha256": "f7784ae95e2f48b8c02cb12947e26e25f5efbd86edfabe07b95dc33639c7279d",
+      "lines": 783
+    },
+    {
+      "original_path": "04-compute/src/finalize_compute.py",
+      "typeset_copy": "code/program-02.py",
+      "sha256": "cb849be0d49819ebda7256f4323593feddeac4ce2a0ddc3d00d04a728c3c5af1",
+      "lines": 61
+    },
+    {
+      "original_path": "04-compute/src/q3_dense_sensitivity.py",
+      "typeset_copy": "code/program-03.py",
+      "sha256": "0b3691583992687692662cac97da0baf8b20da8ef4e66d4b7b3dd6a44fd26fb7",
+      "lines": 124
+    },
+    {
+      "original_path": "04-compute/src/repair_probe.py",
+      "typeset_copy": "code/program-04.py",
+      "sha256": "c34f2ac7f70c051e35b23ed064175ba435001dc7c9f34c67f823d81fe638270e",
+      "lines": 39
+    },
+    {
+      "original_path": "04-compute/revision-grid-conv-20260913/run_q2_grid_dt5.py",
+      "typeset_copy": "code/program-05.py",
+      "sha256": "94785302925eee69f148904f61a0facd6a8a667f3ac94f08151e0781a56cb50c",
+      "lines": 41
+    },
+    {
+      "original_path": "04-compute/revision-grid-conv-20260913/run_q2_model_trajectories.py",
+      "typeset_copy": "code/program-06.py",
+      "sha256": "0c09b5a6f166fd4d6100f7fe9162d03e9da2889d585051afac802942ffb5db8d",
+      "lines": 31
+    },
+    {
+      "original_path": "04-compute/revision-grid-conv-20260913/run_space_extra.py",
+      "typeset_copy": "code/program-07.py",
+      "sha256": "95dd7f3f53d1a9c15134295226839378788a7884735691196905ef2646d50b0f",
+      "lines": 35
+    },
+    {
+      "original_path": "06-figure/scripts/redraw_fig6.py",
+      "typeset_copy": "code/program-08.py",
+      "sha256": "71ba9c6b10a871503d15f8c9a3c2f7ca0afe30bd2085356a01983601258a59b6",
+      "lines": 336
+    },
+    {
+      "original_path": "06-figure/scripts/redraw_fig7.py",
+      "typeset_copy": "code/program-09.py",
+      "sha256": "dfd327f93b1ed7b19154f2e157c21be82c4f718da21c0b0115fa276e971a12fc",
+      "lines": 233
+    },
+    {
+      "original_path": "06-figure/scripts/redraw_fig9_onward.py",
+      "typeset_copy": "code/program-10.py",
+      "sha256": "a299a0aa31f9e05d6de2b36cd6c293783988f658474e380a0d29c785335c2127",
+      "lines": 830
+    },
+    {
+      "original_path": "06-figure/scripts/redraw_q1_end_effect_time.py",
+      "typeset_copy": "code/program-11.py",
+      "sha256": "84e4c84004ebf716e6576b2bfaadd09435c09cd5f46d2229ac93fe72dc1c953b",
+      "lines": 463
+    },
+    {
+      "original_path": "06-figure/scripts/render_q2_profiles.py",
+      "typeset_copy": "code/program-12.py",
+      "sha256": "87fea5117aa00d7d6164c7e86ee079bcdd0d353fa6ce353d5ae4457e38322fce",
+      "lines": 198
+    },
+    {
+      "original_path": "06-figure/scripts/render_q2_profiles_3d.py",
+      "typeset_copy": "code/program-13.py",
+      "sha256": "ff0dd00761d2376868a832b639d5d77ac07cd12f534fbfc3010445b2dd36f060",
+      "lines": 181
+    },
+    {
+      "original_path": "06-figure/scripts/revise_q2_figures_20260913.py",
+      "typeset_copy": "code/program-14.py",
+      "sha256": "dfde51e3b467fa0d176208956c1da5fb77247dda5c279cbadf1fe22c9d20b744",
+      "lines": 145
+    },
+    {
+      "original_path": "06-figure/scripts/update_figure_plan_20260913.py",
+      "typeset_copy": "code/program-15.py",
+      "sha256": "8fdbaf2307a59fd62cf157a6b3b39a454d081711d527abcd7a3498e513353ee6",
+      "lines": 33
+    },
+    {
+      "original_path": "06-figure/scripts/verify_current_pipeline.py",
+      "typeset_copy": "code/program-16.py",
+      "sha256": "a00f0ce22fd911be3c9c30e8c027fca33ae36abbc018cff9f4649f9195ee82f0",
+      "lines": 81
+    },
+    {
+      "original_path": "06-figure/scripts/make_official_contact_sheet.py",
+      "typeset_copy": "code/program-17.py",
+      "sha256": "e0527046a92a599a84278454efdb37495b7a279e7d8e913b68705f7f0cb0035d",
+      "lines": 38
+    }
+  ]
+}

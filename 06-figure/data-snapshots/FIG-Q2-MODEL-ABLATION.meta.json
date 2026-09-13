@@ -1,16 +1,18 @@
 {
   "figure_id": "FIG-Q2-MODEL-ABLATION",
   "snapshot": "06-figure/data-snapshots/FIG-Q2-MODEL-ABLATION.csv",
-  "snapshot_sha256": "6f9dd5e91af21297fd94794af20c75fb612cacc336f8f184badbf9deb9ccdd8e",
+  "snapshot_sha256": "9ecbd4ed394b3850a66e1038cadf3c720f96b2a9fe1f09aee57ec498ff0f0851",
   "sources": [
     {
-      "path": "04-compute/results/key-metrics.json",
-      "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"
+      "path": "04-compute/revision-grid-conv-20260913/results/q2-model-trajectories/q2-model-trajectories.csv",
+      "sha256": "c47f97fcbc2c7b601cd7e531d654e02bff0346720e25d424a94d320bf5376923"
     }
   ],
-  "rows": 3,
+  "rows": 57,
   "columns": [
     "model",
-    "final_max_C"
+    "time_s",
+    "max_C",
+    "mean_C"
   ]
 }

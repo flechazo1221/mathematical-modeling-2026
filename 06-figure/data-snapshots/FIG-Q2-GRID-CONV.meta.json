@@ -1,23 +1,24 @@
 {
   "figure_id": "FIG-Q2-GRID-CONV",
   "snapshot": "06-figure/data-snapshots/FIG-Q2-GRID-CONV.csv",
-  "snapshot_sha256": "d8a9ca7c399aaa16357bf8e2b059484f92c733d950fd76b69ea6acc9ea1a7f0a",
+  "snapshot_sha256": "a9903e25de05f88c03d5652b8c0cbc488979b2195b686871e5f0370fc053eb1a",
   "sources": [
     {
-      "path": "04-compute/results/field-grid-convergence.csv",
-      "sha256": "36e8cd85789d68c6c07efb304441425bd7948430473fbd14593c6c3fef3d57f5"
+      "path": "04-compute/revision-grid-conv-20260913/results/q2-space-dt5/field-grid-convergence.csv",
+      "sha256": "40975aa917479e2bbbd40a3289833b3458202e7ad7ad77d25759cd945e02ffe9"
     }
   ],
-  "rows": 3,
+  "rows": 6,
   "columns": [
     "scope",
     "family",
+    "level",
     "nr",
     "nz",
-    "grid_strategy",
     "fixed_dt_s",
     "metric",
     "value",
-    "adjacent_change"
+    "adjacent_change",
+    "runtime_s"
   ]
 }

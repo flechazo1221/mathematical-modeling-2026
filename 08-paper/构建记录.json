@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "stage": "PAPER",
+  "status": "PASS_REVIEWABLE_DRAFT",
+  "created_at": "2026-09-13T02:20:00+08:00",
+  "template": {
+    "source": "https://github.com/latexstudio/CUMCMThesis",
+    "version": "commit 38d1f21; 2026 AI update",
+    "manifest": "08-paper/完整论文-LaTeX/latex-project.json",
+    "sha256": "3a220136bda4d1a8e72870c8764dfb7ac28d86fbff21aa425c4623b234f913ea"
+  },
+  "source": {
+    "path": "08-paper/完整论文-LaTeX/example.tex",
+    "sha256": "c3a3a36e88b81ad9ffe99981af101686ffec4750858b07096990fbe0cac249d0",
+    "entrypoint": "example.tex"
+  },
+  "build": {
+    "engine": "xelatex",
+    "engine_version": "MiKTeX-XeTeX 4.18 (MiKTeX 26.5)",
+    "bibliography": "manual thebibliography",
+    "manifest": "08-paper/完整论文.build.json",
+    "manifest_sha256": "e1687129ac7a449ae546f574afa1649e7b249b12b03d6526139b766358d61a50",
+    "warnings": "模板字体回退、中文PDF书签清理及少量盒子溢出；已在构建覆盖说明中登记，并完成页面渲染复核。"
+  },
+  "outputs": [
+    {
+      "path": "08-paper/完整论文.pdf",
+      "sha256": "b6ee7b3863f48628407bde0928d518c5fd9f9af4f6eda5f1c603f5bfd75c4d9b",
+      "pages": 17,
+      "body_pages": 13,
+      "appendix_start_page": 15,
+      "min_image_dpi": 709
+    },
+    {
+      "path": "08-paper/AI使用声明.md"
+    }
+  ],
+  "validation": {
+    "command": "latex_paper.py validate example.tex --pdf 完整论文.pdf --contest cumcm --quality-checks --questions q1 q2 q3 q4 --min-content-units 5000 --min-pages 15 --max-pages 30 --body-start-page 2 --appendix-start-page 15",
+    "passed": true,
+    "metrics": {
+      "content_units": 5807,
+      "equations": 11,
+      "figures": 13,
+      "tables": 3,
+      "question_figure_coverage": {
+        "q1": true,
+        "q2": true,
+        "q3": true,
+        "q4": true
+      }
+    },
+    "threshold_overrides": {
+      "min_content_units": 5000,
+      "min_pages": 15,
+      "reason": "当前为可审阅初稿，采用紧凑CUMCM电子版模板；四问证据和图表已覆盖，后续可补充队伍信息、实测资料和最终支撑材料。"
+    }
+  },
+  "evidence_bindings": {
+    "compute_handoff": {
+      "path": "04-compute/handoff.json",
+      "sha256": "b9837da3d621181acd534fa64122554f42cf32ea4680113a4897f6b1d74ebdd7"
+    },
+    "evidence_handoff": {
+      "path": "05-evidence/handoff.json",
+      "sha256": "b61c068f47445447660535269ce6393ac7538a1d4a4e8a834eeb7978fb280826"
+    },
+    "figure_manifest": {
+      "path": "06-figure/figure-manifest.json",
+      "sha256": "8bc185da60dde80ac5f7e05273b46743e06129648d29c54cbedd7866a11a4fd6"
+    },
+    "appendix_handoff": {
+      "path": "07-appendix/handoff.json",
+      "sha256": "120523c6ac6a8b246fc921a91a3adbbcb80e9b2ea0fbbfad602100c0b03a1e9f"
+    }
+  },
+  "known_limits": [
+    "M2、M3及Q3/Q4-M3把内部温度直接取为烘房温度；M4仅求解显热温度场。",
+    "四个模型均未引入潜热项，所有结论均为题设经验律和给定边界下的条件仿真。",
+    "队伍成员信息、具体AI模型版本和最终AI工具详情PDF尚待提交前复核。"
+  ]
+}

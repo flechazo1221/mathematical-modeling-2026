@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "gate": "H0",
+  "status": "TEAM_APPROVED",
+  "question": "确认候选题评分、关键风险和最终选题",
+  "selected_options": [
+    "A"
+  ],
+  "reasons": [
+    "解决方法可行：现有题面、参数和附件支持建立热质传递与移动边界模型，选题评分未发现 hard stop。",
+    "团队判断选择该题的人较少；目前缺少可核验的实时参赛选题分布，因此该理由作为团队判断记录。"
+  ],
+  "accepted_assumptions": [],
+  "rejected_options": [
+    "B",
+    "C"
+  ],
+  "required_validations": [
+    "在 H1 明确 A 题问题4的移动边界离散方案与验证方法。",
+    "核对附件中的单位、采样插值和经验公式适用范围。",
+    "将‘选择的人少’视为未外部验证的团队判断，不在论文中作为事实性结论引用。"
+  ],
+  "prohibited_changes": [
+    "未经重新开启 H0 并取得团队明确批准，不得将最终选题从 A 改为其他题目。"
+  ],
+  "delegations": [],
+  "confirmed_by": [
+    "朱冠熹"
+  ],
+  "confirmed_at": "2026-09-10T20:57:48+08:00",
+  "supersedes": "decisions/H0-selection.draft.json"
+}

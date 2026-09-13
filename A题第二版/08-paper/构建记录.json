@@ -1,0 +1,37 @@
+{
+  "package": "A题第二版",
+  "paper_type": "CUMCM 2026 A题正式投稿包（待队伍最终确认）",
+  "source": "08-paper/完整论文-LaTeX/完整论文.tex",
+  "source_sha256": "C2F432EB9B53FC944E683F761DACBEFF105A0E99081E70A8CA23C46E0F39479E",
+  "tex_sha256": "63455704567C5401B13CFAFE1C3E47E3CF839BB76D841D035A2A0A8ACCBB26EA",
+  "pdf": "08-paper/完整论文.pdf",
+  "pdf_sha256": "8056751540599C0092B0E950DED660D2D2B68781A772EB79267781C77EFF2E5F",
+  "page_count": 39,
+  "engine": "xelatex",
+  "build_passed": true,
+  "validation": {
+    "latex_build": "PASS",
+    "source_quality_check": "PASS",
+    "question_coverage": ["q1", "q2", "q3", "q4"],
+    "figures": 8,
+    "tables": 3,
+    "equations": 10,
+    "image_dpi_check": "PASS; generated PNG figures are 600 dpi",
+    "visual_check": "PASS; front matter, model schematic, result figures and code appendix rendered with Poppler",
+    "pdf_audit_dependency": "pypdf unavailable; PDF existence, page count and rendered pages checked with Poppler"
+  },
+  "compute": {
+    "solver": "03-计算与结果/温度场计算/formal_compute_temp_field.py",
+    "solver_sha256": "FB5D92B8A824D9BA1A4E0124007ED5707218BC881E1A1ED083810ECD3F306EC2",
+    "summary": "03-计算与结果/温度场计算/results/temperature-field-summary.csv",
+    "summary_sha256": "ED65B67092F1A3E56F484BBE254BAFB8C2831B0B198806E6D425A46E29B885B3",
+    "route": "问题二至四同步求解无潜热显热温度场，并反馈给含水率扩散系数；问题四更新收缩移动域"
+  },
+  "preserved_original": "A题第一版/",
+  "submission_notes": [
+    "未填队伍编号、学校和成员信息，提交前必须由队伍补齐",
+    "本文不含汽化潜热；潜热模型所需参数和内部实测验证数据缺失",
+    "正文数值为已执行计算结果，结论限定于题设物性、边界延拓和离散配置"
+  ],
+  "created_at": "2026-09-13T00:00:00+08:00"
+}

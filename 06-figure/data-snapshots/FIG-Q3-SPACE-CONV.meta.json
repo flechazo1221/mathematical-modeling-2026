@@ -1,14 +1,14 @@
 {
   "figure_id": "FIG-Q3-SPACE-CONV",
   "snapshot": "06-figure/data-snapshots/FIG-Q3-SPACE-CONV.csv",
-  "snapshot_sha256": "d5a9efef37f2b88d3d1dec0ecdd2136a8928f66b5e9b5e0b269c08a1ee59b7d8",
+  "snapshot_sha256": "afd39662e2e66250c549d592c9cdff09393e1000fe7432930007a8a1b214c2ed",
   "sources": [
     {
-      "path": "04-compute/results/threshold-grid-convergence.csv",
-      "sha256": "8ba2aa18d42e13169db3f569cb7a6c1d5e8fd836c7f6818a8d0eb42fefd811f6"
+      "path": "04-compute/revision-grid-conv-20260913/results/space-extra-dt60/threshold-grid-extra.csv",
+      "sha256": "83cd08098b32d55c80a0c4dc3694e93103069cb45c0c3e15a94cfb4f58c3654c"
     }
   ],
-  "rows": 3,
+  "rows": 5,
   "columns": [
     "scope",
     "nr",

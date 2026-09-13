@@ -1,0 +1,12 @@
+{
+  "captured_at": "2026-09-12T01:01:31.5042601+08:00",
+  "algorithm": "SHA-256",
+  "files": [
+    {
+      "source": "05-evidence/handoff.json",
+      "backup": "05-evidence/repair-20260912/before/handoff.json",
+      "bytes": 7638,
+      "sha256": "1284675ab18eb26af31f0d4a3ae3c1be1df19b5e2ce5fc424f46b7b28a5ea3f5"
+    }
+  ]
+}

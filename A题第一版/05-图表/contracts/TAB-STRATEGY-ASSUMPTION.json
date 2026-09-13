@@ -1,0 +1,39 @@
+{
+  "figure_id": "TAB-STRATEGY-ASSUMPTION",
+  "claim_ids": [
+    "strategy"
+  ],
+  "question": "模型策略与假设如何被检验？",
+  "source_files": [
+    {
+      "path": "decisions/H3-claims.json",
+      "sha256": "f21ac63c8c778b2e6cb7c476bc82354aa99bf6a5f2a882f15bed6046d232c8a8"
+    },
+    {
+      "path": "04-compute/results/key-metrics.json",
+      "sha256": "584b703f75a824d2da2db9b30d2a40000afb8271504745c8a4a78feb391e3c91"
+    }
+  ],
+  "x": null,
+  "y": null,
+  "groups": [],
+  "uncertainty": null,
+  "required_comparisons": [
+    "策略假设表"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "recompute model",
+    "change metric",
+    "omit failures",
+    "present conditional simulation as observation"
+  ],
+  "target_formats": [
+    "svg"
+  ],
+  "minimum_dpi": 600,
+  "placement": "主文",
+  "mandatory_limit": "不新增优越性判断",
+  "snapshot": "06-figure/data-snapshots/TAB-STRATEGY-ASSUMPTION.csv",
+  "snapshot_sha256": "1ea97dbbf4b2c2db60557d4bff0e4d845e78b2fd0578c84542a34a8d9053b217"
+}

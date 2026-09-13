@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "stage": "PAPER",
+  "status": "PASS",
+  "review_state": "REVIEWABLE_DRAFT_NOT_APPROVED_FOR_SUBMISSION",
+  "completed_at": "2026-09-13T02:22:00+08:00",
+  "inputs": [
+    {"path": "02-design/handoff.json", "sha256": "5f2579e4fdad88eb19f68cfad1de065046e186b27e55d0d86422576be3f7ccc0"},
+    {"path": "04-compute/handoff.json", "sha256": "b9837da3d621181acd534fa64122554f42cf32ea4680113a4897f6b1d74ebdd7"},
+    {"path": "05-evidence/handoff.json", "sha256": "b61c068f47445447660535269ce6393ac7538a1d4a4e8a834eeb7978fb280826"},
+    {"path": "06-figure/handoff.json", "sha256": "759eb5e9d1aa24ffb178c49915bfe5dd0a2d5c305fe977c81a40e9df613271c3"},
+    {"path": "07-appendix/handoff.json", "sha256": "120523c6ac6a8b246fc921a91a3adbbcb80e9b2ea0fbbfad602100c0b03a1e9f"},
+    {"path": "06-figure/figure-manifest.json", "sha256": "8bc185da60dde80ac5f7e05273b46743e06129648d29c54cbedd7866a11a4fd6"}
+  ],
+  "outputs": [
+    {"path": "08-paper/完整论文-LaTeX/example.tex", "sha256": "c3a3a36e88b81ad9ffe99981af101686ffec4750858b07096990fbe0cac249d0"},
+    {"path": "08-paper/完整论文-LaTeX/latex-project.json", "sha256": "3a220136bda4d1a8e72870c8764dfb7ac28d86fbff21aa425c4623b234f913ea"},
+    {"path": "08-paper/完整论文.pdf", "sha256": "b6ee7b3863f48628407bde0928d518c5fd9f9af4f6eda5f1c603f5bfd75c4d9b"},
+    {"path": "08-paper/完整论文.build.json", "sha256": "e1687129ac7a449ae546f574afa1649e7b249b12b03d6526139b766358d61a50"},
+    {"path": "08-paper/AI使用声明.md", "sha256": "3bdef4739bd2c5098092d35f46df930d4527959fbde7e99bc246ca4751f8a081"},
+    {"path": "08-paper/构建记录.json", "sha256": "952e7d85c3bd3fedd0f3a9983c964c93588934960ea5ece30883daefa1d34878"}
+  ],
+  "frozen_decisions": [
+    {"path": "decisions/H1-problem.json"},
+    {"path": "decisions/H2-model.json"},
+    {"path": "decisions/H3-claims.json"}
+  ],
+  "assumptions": [
+    "论文只使用当前图表清单和计算快照，不调用已从活动清单移除的旧版图表。",
+    "M2/M3及Q3/Q4-M3的内部温度直接取烘房温度；M4为显热温度场消融。",
+    "四个模型均无潜热项，结果是冻结边界和题设经验律下的条件仿真。"
+  ],
+  "claims": [
+    "论文包含四问完整叙述、11个公式、13幅图、3张正文表和3幅附录图。",
+    "构建与质量校验通过：17页PDF、正文13页、最小图像分辨率709 DPI、Q1-Q4图件覆盖均为真。",
+    "论文明确披露模型简化、数值验证指标、V02窄裕量和Jacobian消融拒绝结果。"
+  ],
+  "unknowns": [
+    "队伍编号、学校和成员信息尚未填写。",
+    "具体AI模型版本需由参赛队在提交前核对。",
+    "AI工具详情Markdown仍需按规则转换为AI工具使用详情.pdf。"
+  ],
+  "warnings": [
+    "当前稿是可审阅初稿，不得直接标记为最终提交版。",
+    "构建中登记了模板字体回退、中文书签和少量盒子警告；页面渲染未见图表截断。"
+  ],
+  "required_next_actions": [
+    "在H4前进行独立最终审计，核对正文数字、图注、结果文件和源代码复现链。",
+    "补填队伍元数据并生成规则要求的AI工具使用详情.pdf。",
+    "若新增实测资料或模型机制，必须重新开放相应决策门并重新计算、制图和编译。"
+  ]
+}

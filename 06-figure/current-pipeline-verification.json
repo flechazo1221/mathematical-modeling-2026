@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "pipeline": "CURRENT_20260913",
+  "active_figure_count": 13,
+  "new_renderer": "06-figure/scripts/revise_q2_figures_20260913.py",
+  "checks": {
+    "FIG-Q2-MODEL-ABLATION": {
+      "rows": 57,
+      "rows_per_model": {
+        "M2 常物性": 19,
+        "M3 主路线": 19,
+        "M4 温度耦合消融": 19
+      }
+    },
+    "FIG-Q2-GRID-CONV": {
+      "radial_grids": [
+        42,
+        62,
+        93,
+        140,
+        175,
+        210
+      ],
+      "count": 6
+    },
+    "FIG-Q3-SPACE-CONV": {
+      "radial_grids": [
+        63,
+        93,
+        140,
+        175,
+        210
+      ],
+      "count": 5
+    },
+    "FIG-Q4-SPACE-CONV": {
+      "radial_grids": [
+        63,
+        93,
+        140,
+        175,
+        210
+      ],
+      "count": 5
+    }
+  },
+  "failures": []
+}

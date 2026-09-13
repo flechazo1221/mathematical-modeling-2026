@@ -1,0 +1,13 @@
+{
+  "figure_id": "FIG-TEMP-FIELD-MODEL-SCHEMATIC",
+  "claim": "展示r-z半域、对称边界、移动侧面R(t)、旧边界R₀及热湿边界通量",
+  "sources": [],
+  "formats": [
+    "pdf",
+    "svg",
+    "png"
+  ],
+  "png_dpi": 600,
+  "backend": "python/matplotlib",
+  "units": "as labelled"
+}

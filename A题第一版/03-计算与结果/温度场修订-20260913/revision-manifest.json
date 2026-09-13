@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "stage": "COMPUTE_REVISION",
+  "status": "REVIEWABLE_ISOLATED",
+  "purpose": "将问题二至四的内部温度由烘房温度改为显热温度场；仍不加入潜热；不覆盖冻结结果。",
+  "source": "04-compute/revision-temp-field-20260913/formal_compute_temp_field.py",
+  "source_sha256": "fb5d92b8a824d9ba1a4e0124007ed5707218bc881e1a1ed083810ecd3f306ec2",
+  "results": [
+    {
+      "label": "Q2-M4-field-fine",
+      "q": "2",
+      "nr": "140",
+      "nz": "36",
+      "dt_s": "5.0",
+      "duration_s": "10800",
+      "temp_mode": "field",
+      "center_T_C": "49.85041848738251",
+      "surface_T_C": "49.96703036150927",
+      "final_max_C": "1.7662268347493226",
+      "final_mean_C": "1.3277086790389783",
+      "interpolated_event_time_s": "",
+      "reported_event_time_s": "",
+      "normalized_moisture_balance_error": "2.0230128011181418e-08",
+      "max_linear_relative_residual": "5.000060587463528e-11",
+      "runtime_s": "65.24954819999766"
+    },
+    {
+      "label": "Q3-M4-field",
+      "q": "3",
+      "nr": "140",
+      "nz": "36",
+      "dt_s": "60.0",
+      "duration_s": "259200",
+      "temp_mode": "field",
+      "center_T_C": "49.99893437639537",
+      "surface_T_C": "49.99893439750076",
+      "final_max_C": "0.14999263073048913",
+      "final_mean_C": "0.12153407506921829",
+      "interpolated_event_time_s": "207158.11509752373",
+      "reported_event_time_s": "207180.0",
+      "normalized_moisture_balance_error": "1.6670158078361466e-09",
+      "max_linear_relative_residual": "5.01384037871783e-11",
+      "runtime_s": "104.00182610000047"
+    },
+    {
+      "label": "Q4-M4-field",
+      "q": "4",
+      "nr": "140",
+      "nz": "32",
+      "dt_s": "60.0",
+      "duration_s": "259200",
+      "temp_mode": "field",
+      "center_T_C": "49.99893435331825",
+      "surface_T_C": "49.9989343859084",
+      "final_max_C": "0.14999898662005068",
+      "final_mean_C": "0.11622708929039433",
+      "interpolated_event_time_s": "184079.97393816215",
+      "reported_event_time_s": "184080.0",
+      "normalized_moisture_balance_error": "1.2194172282184523e-09",
+      "max_linear_relative_residual": "5.010732191787905e-11",
+      "runtime_s": "85.97146009999778"
+    }
+  ],
+  "data_audit": {
+    "available_for_sensible_temperature": [
+      "初始温度 T0=301.15 K",
+      "附件1烘房温度 T_infty(t)",
+      "问题二/三 rho(C), cp(C), k(C)",
+      "问题四 rho(C), cp(C), k(C)",
+      "传热系数 h=25 W/(m^2 K)",
+      "几何尺寸及问题四半径 R(t)"
+    ],
+    "missing_for_latent_heat_coupling": [
+      "汽化潜热或等效相变焓 L_v(C,T)",
+      "蒸发/相变速率方程或气液平衡关系",
+      "内部蒸汽分压、孔隙率/渗透率等气相传输参数",
+      "多位置内部温度和含水率实测（用于验证，而非仅求解）"
+    ],
+    "conclusion": "无潜热显热温度场可以由现有数据计算；含潜热模型的参数和验证数据不完整，不能唯一确定。"
+  },
+  "limitations": [
+    "Q2--Q4修订仍使用题设经验扩散关系和4 h后环境恒定延拓。",
+    "修订结果与冻结主路线的差异包含温度处理和离散配置影响，不能直接当作单一机制的因果效应。",
+    "没有内部实测时，实际温度只能称为模型预测温度，不能称为实验真实值。"
+  ]
+}

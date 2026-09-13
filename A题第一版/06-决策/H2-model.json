@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "gate": "H2",
+  "status": "TEAM_APPROVED",
+  "question": "确认主模型、基线、评价指标、权重和验证要求",
+  "selected_options": [
+    "二维一致路线：以现有H2系列Markdown定义的统一相容性框架为准，M1保留为一维基线，M2作为二维基础主干，M3和M4按既有指引渐进增强与消融验证"
+  ],
+  "reasons": [
+    "林子垚明确批准PROTOTYPE后直接进入H2后一阶段，并要求下一阶段严格以现有H2对应Markdown为指引",
+    "PROTOTYPE已完成真实小型运行且29项交接输入、输出与冻结决议SHA-256复算全部匹配"
+  ],
+  "accepted_assumptions": [
+    "现有H2系列Markdown保持冻结，其模型定义、复杂度选择原则、数值方法和回退规则作为COMPUTE实施依据",
+    "原型结果仅用于确认可运行性和暴露风险，不把复杂模型的数值差异直接解释为拟合改进"
+  ],
+  "rejected_options": [
+    "脱离现有H2系列Markdown另行重写候选方案",
+    "在缺少物理依据时引入完整多孔多相CFD、PINN、GNN或纯机器学习作为主路线"
+  ],
+  "required_validations": [
+    "按H2-优化审计与方向.md完成单位、温标、轴心与边界残差及网格时间收敛",
+    "完成Q3/Q4全域阈值夹逼、60秒精度与4小时后窗口敏感性",
+    "完成Q4常半径回归、半径再现与质量几何守恒检查"
+  ],
+  "prohibited_changes": [
+    "不得修改或覆盖现有H2对应的一系列Markdown文件",
+    "不得改变已批准H1的统一二维母模型与M1至M4相容层级"
+  ],
+  "delegations": [
+    "COMPUTE仅负责按冻结H2指引实现、运行和验证，不得重选模型或回写上游方案"
+  ],
+  "confirmed_by": [
+    "林子垚"
+  ],
+  "confirmed_at": "2026-09-11T15:27:30+08:00",
+  "supersedes": null
+}

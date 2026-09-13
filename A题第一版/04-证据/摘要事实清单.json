@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "stage": "EVIDENCE",
+  "usage": "候选摘要事实；须由 H3 团队选择，不构成最终摘要或最终主张",
+  "facts": [
+    {"id":"A01","candidate_text":"在统一口径下，Q1 的 M2 模拟在 1800 s 得到平均含水率 2.27503485 kg/kg；M1 基线为 2.29358056 kg/kg。","source_ids":["F02","F03","F04"],"qualification":"模型对照，不是经验精度比较"},
+    {"id":"A02","candidate_text":"Q2 的 M3 模拟在 3 h 得到全域最大含水率 1.72784639 kg/kg。","source_ids":["F05","F08"],"qualification":"V02 仅以 4.00114e-5 对 5e-5 的窄裕量通过"},
+    {"id":"A03","candidate_text":"按全域阈值与 60 s 保守报告规则，Q3 的 M3 达标时间为 206820 s。","source_ids":["F09","F10","F12"],"qualification":"时间细化最大变化 48 s，对 60 s 目标裕量有限"},
+    {"id":"A04","candidate_text":"Q4 收缩域参考实现与 moving-FV 实现均给出 183840 s 的报告达标时间。","source_ids":["F13","F14","F15","F16"],"qualification":"实现一致性不等于实验验证"},
+    {"id":"A05","candidate_text":"批准路线最大归一化平衡误差为 9.65e-8；移除 Jacobian 修正后失衡增至 0.594。","source_ids":["F18","F19"],"qualification":"数值守恒证据，不是现实准确性证据"},
+    {"id":"A06","candidate_text":"有界敏感性检验出现 72 h 内仍不达标的 Q3/Q4 情景，说明时间结论依赖冻结的边界延拓和经验参数。","source_ids":["F24","F25"],"qualification":"不能把压力测试解释为概率区间"}
+  ],
+  "excluded_from_abstract_without_new_evidence": [
+    "M3/M4 提升真实预测准确率",
+    "所得参数或时间具有跨药材普适性",
+    "CFD、PINN、代理模型或纯机器学习优于并可替代 M1-M4",
+    "合成 PDE 标签属于真实实验数据"
+  ]
+}

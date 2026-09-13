@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "status": "REVIEWABLE_DRAFT_NOT_APPROVED_FOR_SUBMISSION",
+  "source": "完整论文-LaTeX/example.tex",
+  "pdf": "范文风格重写版.pdf",
+  "pdf_sha256": "2445af4116b13661d2d609093f036fe53b7fe8aa672cff01607e9b68d34182dd",
+  "pages": 73,
+  "body_start_page": 2,
+  "appendix_start_page": 20,
+  "code_programs": 17,
+  "code_lines": 3652,
+  "checks": {
+    "latex_build": "PASS",
+    "quality_validate": "PASS",
+    "page_render": "PASS",
+    "min_image_dpi": 709,
+    "unembedded_fonts": 0,
+    "blank_pages": 0
+  },
+  "known_limits": [
+    "队伍编号和成员信息尚未填写",
+    "时间步细化仍改变Q3/Q4报告值",
+    "当前结果为题设经验律、环境延拓和无潜热条件下的数值预测"
+  ],
+  "reference_style": "用户提供的《优秀论文》；未复制其具体模型参数或结果。"
+}

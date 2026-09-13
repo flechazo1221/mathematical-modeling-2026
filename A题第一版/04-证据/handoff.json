@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "stage": "EVIDENCE",
+  "status": "PASS",
+  "inputs": [
+    {"path":"decisions/H1-problem.json","sha256":"6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"},
+    {"path":"decisions/H2-model.json","sha256":"8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"},
+    {"path":"02-literature/handoff.json","sha256":"5681198a6ffaf434b0c8e4f0121d540b0609947906da04ed665b27f1a760e61e"},
+    {"path":"02-literature/文献清单.json","sha256":"23a86badf3ac8f35607b30ec45b48b5da7bcbed5761b2b5cdd1ddfaba19b2bbd"},
+    {"path":"02-literature/文献阅读结果.md","sha256":"31cb88d8a1cb8de37c193dfa5824f234e0097f96c0284037d82201f15ad915a8"},
+    {"path":"02-design/handoff.json","sha256":"5f2579e4fdad88eb19f68cfad1de065046e186b27e55d0d86422576be3f7ccc0"},
+    {"path":"02-design/候选模型方案.md","sha256":"ced11bfb105fad81a7e1690cbaa9b4edfcc077ab17dbda25924def4cfbc63c17"},
+    {"path":"02-design/H2-优化审计与方向.md","sha256":"96a2aae36f65dba4e38456be9a29fd545d935171aa1075191741afb1a13fcf33"},
+    {"path":"02-design/验证计划.json","sha256":"37215aa66cbc4be1d03a2ab5e7031fa261d976a3f15e784a157d42e69965b5eb"},
+    {"path":"02-design/contracts/model-q1-fixed.json","sha256":"8581a6ff4abe76ed7e4457a529a8fc5dd8062ec604133bb4d4d5b3630c502998"},
+    {"path":"02-design/contracts/model-q23-fixed.json","sha256":"b3f8327a02dba8de5e97906822641639b4c953aa48cfc6aaefda14986ace9fd1"},
+    {"path":"02-design/contracts/model-q4-m1-reference.json","sha256":"88aff744757dcc85e7c1e2778daf2f6cb11b00722c21a02284101803e2804fa5"},
+    {"path":"02-design/contracts/model-q4-m2-moving-fv.json","sha256":"c27b06e93cad6872dbda10588808662da152e6d965745dedb2a0920ff8b3069f"},
+    {"path":"03-prototype/handoff.json","sha256":"8d4f161cc4b4b3b84f679273f23db5bf674f610754727efaf7a53f7635ff07e6"},
+    {"path":"04-compute/handoff.json","sha256":"a4c722e49b2ea4112c46cae49fccaf208cf67609484796ab658b44224e569b2b"},
+    {"path":"04-compute/复现清单.json","sha256":"239fb39a12db0ab3a1017c59579da5f33c1b0bc3f065d394d8399dc700357aef"},
+    {"path":"04-compute/证据索引.json","sha256":"e86a03fa5f610f7917291d20c5407c99f663c129a631d0f13ef1b8c33f6b0bb0"},
+    {"path":"04-compute/results/key-metrics.json","sha256":"a8e568085f51a00971ca8662b33e58b5ac34b2ffd7860dee407f2e76b4281257"},
+    {"path":"04-compute/results/validation-register.csv","sha256":"4bff2426f87fa1197d8f184dad9b372e702db81c01ae71027fd35ee51b18ecae"},
+    {"path":"04-compute/results/run-summary.csv","sha256":"31f4142f12f8997f7d9a39b28a3f5746b7da0656aa0b78e9f7ee8e2aa7605b42"},
+    {"path":"04-compute/results/convergence.csv","sha256":"2e5a010ad933d583d03720b66968019209a586f75139ead7ad9b5bbb93f93a26"},
+    {"path":"04-compute/results/field-grid-convergence.csv","sha256":"9399953b215209048db52bc0de3fb3ef627a153f41cc9f1ddd9f109d751abdce"},
+    {"path":"04-compute/results/threshold-grid-convergence.csv","sha256":"cb64d799d6d729705ec7333f21d21ba42ba4388d613997a2cb05378c51df55bb"},
+    {"path":"04-compute/results/sensitivity.csv","sha256":"b70593f893a7ca70368c86b08c8ee9c68e375590c303ff57b9578f87dfc1458e"},
+    {"path":"04-compute/results/q1-samples.csv","sha256":"d50a4dfd86e562bd7c8a2e42b556cd55cfe79292063d56bc874e4d476dd7dbee"},
+    {"path":"04-compute/results/q2-samples.csv","sha256":"56aa87b04dcb0bef6aa089155c3ce581f54b9cc77e624c5785621ae0847c3961"},
+    {"path":"04-compute/results/q3-threshold-trajectory.csv","sha256":"5184862127bdaebefab6b7b1518cce031e05b7d843a13bd9811b203f384dbf81"},
+    {"path":"04-compute/results/q4-threshold-trajectory.csv","sha256":"b36f975078f97ccced81797dd27d4a89040132869a42a28108be776fc0365a6b"},
+    {"path":"04-compute/src/formal_compute.py","sha256":"af3214f972eb874764323c76561025df1cc70f27d7f0985968b57b0b688b4644"},
+    {"path":"04-compute/src/finalize_compute.py","sha256":"6ffe9cf1f0caa14f9a4ee0101206dc32e957485d825d33d7bab76e2a1bc4c7e0"},
+    {"path":"04-compute/supplemental-extensions/handoff.json","sha256":"e914ddfcdd81b2a53b0fe7861b893a1e7a471ffccffc916d7350c31b9b059186"},
+    {"path":"04-compute/supplemental-extensions/summary.json","sha256":"8b26e207070d4e16cfd339f924ae7fba6c494913dcf5518535ab14d0578c41ef"},
+    {"path":"04-compute/supplemental-extensions/复现清单.json","sha256":"39eb16882e79ffcd5dbd0880dc94d250a2a03187e845ba598a4e8fedd6492ca9"}
+  ],
+  "outputs": [
+    {"path":"05-evidence/主张证据映射.json","sha256":"f2f3eab255f3e0a13fdc1f76d0e2c4e0d75e20023bd4c1203f11f07b54b83fc1"},
+    {"path":"05-evidence/结果事实清单.json","sha256":"b908db65f229747f192b1e34b3011158cf1937eafd3ab305d1d3a67fe5fde256"},
+    {"path":"05-evidence/摘要事实清单.json","sha256":"063913d219921e275109d004e3ac86bb28f5f05d994de4bf7d4188b06953cb83"},
+    {"path":"05-evidence/正式图表需求.json","sha256":"d4d3885da0cb3d674c320442fa10fcecc203f9e6e588ea919e567d521a5fdafa"},
+    {"path":"05-evidence/论文证据大纲.md","sha256":"a93c2bdd170984477d2a4358b57bf77e0db31cd1d83cc1b1c800171722b8a478"},
+    {"path":"05-evidence/H3-选择包.md","sha256":"4dce3e4ee854c565e765ac6dea24fde36c548012f1e158c8a1113c29d6932583"}
+  ],
+  "frozen_decisions": [
+    {"path":"decisions/H1-problem.json","sha256":"6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"},
+    {"path":"decisions/H2-model.json","sha256":"8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"}
+  ],
+  "assumptions": [
+    "Formal M1-M4 outputs are authoritative; prototype values are route background only.",
+    "Supplemental CFD, PINN, surrogate and pure-ML results are non-replacing experiments.",
+    "All empirical-law results are conditional simulations, not observational validation."
+  ],
+  "unknowns": [
+    "No internal experimental observations are available for empirical accuracy claims.",
+    "Bounded sensitivity tests do not exhaust structural uncertainty.",
+    "The H3 claims and figure allocation are TEAM_APPROVED in decisions/H3-claims.json; final paper wording remains bounded by that decision."
+  ],
+  "claims": [
+    "Q1-Q4 candidate claims are mapped to exact formal fields, rows and commands with claim class and limitations.",
+    "V02 retains the narrow 4.00114e-5 versus 5e-5 margin; V06 retains 48 s versus the 60 s target.",
+    "Non-crossing boundary cases and the failed Jacobian ablation are retained to prevent selective reporting.",
+    "The H3 package presents neutral alternatives; the team's approved selection is recorded separately in decisions/H3-claims.json.",
+    "Publication requirements now contain 38 non-duplicative, traceable designs (31 figures and 7 tables), allocated as 20 main-text and 18 appendix candidates.",
+    "Each H3 narrative option provides explicit main-text figures, main-text tables, appendix figures, appendix tables, and minimum/extended sets."
+  ],
+  "evidence": [
+    "05-evidence/主张证据映射.json",
+    "05-evidence/结果事实清单.json",
+    "05-evidence/摘要事实清单.json",
+    "05-evidence/正式图表需求.json",
+    "05-evidence/论文证据大纲.md",
+    "05-evidence/H3-选择包.md"
+  ],
+  "warnings": [
+    "Do not describe synthetic PDE data as real experiments.",
+    "Do not describe model contrasts as empirical fit improvements.",
+    "Do not reuse diagnostic figures as publication figures.",
+    "Do not hide narrow validation margins or non-crossing sensitivity cases."
+  ],
+  "required_next_actions": [
+    "Team reviews the approved H3 decision and the refreshed Q4 figure before preparing PAPER; no new model outputs are authorized by this handoff.",
+    "Keep the corrected Q4 moving-boundary surface definition in the figure caption and evidence chain."
+  ],
+  "completed_at": "2026-09-12T17:31:00+08:00"
+}

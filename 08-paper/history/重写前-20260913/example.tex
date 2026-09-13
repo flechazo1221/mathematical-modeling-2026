@@ -1,0 +1,391 @@
+\documentclass[withoutpreface,bwprint]{cumcmthesis}
+
+\usepackage{cumcm2026}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs,tabularx,longtable,multirow}
+\usepackage{graphicx,float,caption,subcaption}
+\usepackage{enumitem}
+\usepackage{siunitx}
+\usepackage{listings}
+\usepackage{hyperref}
+
+\title{考虑时变边界与收缩移动域的药材烘干传递模型研究}
+\tihao{A}
+\baominghao{}
+\schoolname{}
+\membera{}
+\memberb{}
+\memberc{}
+\supervisor{}
+\yearinput{2026}
+\monthinput{9}
+\dayinput{13}
+
+\newcommand{\dd}{\,\mathrm d}
+\newcommand{\kgkg}{\ensuremath{\mathrm{kg/kg}}}
+\newcommand{\Cmax}{C_{\max}}
+\newcommand{\Rtime}{R(t)}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+针对 A 题中给定烘房环境下的药材烘干问题，本文建立了一套从一维基线到二维轴对称、再到收缩移动边界的相容传递模型。首先将附件 1 的烘房温度和水分边界在 0--4 h 内作分段线性插值，4 h 后用末段稳健统计量延拓；将附件 2 的半径序列用保形单调 PCHIP 插值。随后在圆柱半域上采用单元中心守恒有限体积法和后向欧拉格式，构造 M1 一维径向基线、M2 二维常物性模型、M3 二维状态相关物性主模型以及 M4 温度场消融模型。
+
+Q1 的一维--二维对照表明，1800 s 时二维模型的平均干基含水率为 2.2750\,\kgkg，一维基线为 2.2936\,\kgkg，差值为 0.0185\,\kgkg；二维场保留了端面与轴向非均匀性。Q2 中，M3 在 3 h 的全域最大含水率为 1.7278\,\kgkg，M2 和 M4 分别为 2.1600\,\kgkg 和 1.7645\,\kgkg。Q3 以全域最大含水率首次满足 \(\Cmax<0.15-10^{-6}\) 为事件，主路线报告时刻为 206820 s（约 57.45 h）；Q4 在附件 2 收缩半径下的参考实现与移动有限体积实现均报告 183840 s（约 51.07 h）。
+
+通过轴线和中截面对称、Robin 边界、线性残差、质量平衡、网格与时间步收敛、移动域几何和干固体连续性等检查，最大归一化平衡误差为 \(9.645\times10^{-8}\)，最大线性残差为 \(5.00\times10^{-11}\)，时间步细化引起的事件时刻变化为 48 s。本文所有结果均为题设经验律和冻结边界下的条件仿真：M2、M3 及 Q3/Q4 的 M3 路线把内部温度直接取为烘房温度，M4 只求解显热温度场，四个模型均未引入潜热项。因此，结论用于比较模型机制和数值稳定性，不外推为真实药材的实验准确率。
+
+\keywords{药材烘干\quad 轴对称有限体积\quad 状态相关扩散\quad 移动边界\quad 全域阈值\quad 数值验证}
+\end{abstract}
+
+\section{问题重述与任务分解}
+
+研究对象为初始长度 \(L=25\,\mathrm{cm}\)、初始半径 \(R_0=2\,\mathrm{cm}\) 的近似圆柱形药材。附件 1 给出了烘房温度和水分边界的时间序列，附件 2 给出了烘干过程中的半径变化，附件 3 规定了四个问题的结果文件格式。本文将任务分为四个递进问题：
+
+\begin{enumerate}[label=(\arabic*)]
+  \item Q1：在 0--1800 s 内给出温度和含水率场，并判断一维径向近似是否能够忽略端面效应；
+  \item Q2：在 0--3 h 内引入题面给定的状态相关物性，比较常物性、状态相关和温度场消融模型；
+  \item Q3：在固定几何域上确定全域最大含水率首次达到阈值的时刻，并检查时间步、网格和边界延拓敏感性；
+  \item Q4：在附件 2 的收缩半径下完成移动边界求解，给出全域达标时刻，并核验移动域守恒和干固体连续性。
+\end{enumerate}
+
+Q1 的场量输出是 Q2 的初始建模接口，Q2 的 M3 解续接到 Q3，Q4 则复用已核验的水分方程和事件判据，仅新增 \(R(t)\) 引起的移动域几何。为避免把单个平均值误当作全域结果，Q3/Q4 的判定始终使用完整活动域的 \(\Cmax\)。
+
+\section{数据处理与符号说明}
+
+\subsection{数据预处理}
+
+长度在求解器中统一为 m，时间为 s，温度为 K；图表展示时分别转换为 cm、h 和 \(^{\circ}\mathrm C\)。附件 1 的 0--4 h 数据使用分段线性插值，4 h 以后采用末段一小时窗口的稳健中心值延拓，并在敏感性分析中改变窗口长度。附件 2 的半径序列使用保形单调 PCHIP，保证不出现非物理反弹。初始温度场和含水率场均匀，分别为 28\(^{\circ}\mathrm C\) 和 2.55\,\kgkg。
+
+本文将题面干基含水率记为 \(C\)，温度记为 \(T\)，环境温度和环境水分边界记为 \(T_\infty(t)\) 与 \(C_\infty(t)\)。传热系数和传质系数分别固定为 \(h=25\,\mathrm{W/(m^2\cdot K)}\) 与 \(h_m=8\times10^{-7}\,\mathrm{m/s}\)。需要特别区分：\(C\)、相对湿度、水蒸气浓度和分压不是同一物理量，本文只使用题设允许的 \(C_s-C_\infty\) 作为传质势差。主要符号汇总见\cref{tab:symbols}。
+
+\begin{table}[H]
+\centering
+\caption{主要符号与单位}
+\label{tab:symbols}
+\begin{tabularx}{0.95\linewidth}{>{\centering\arraybackslash}p{0.18\linewidth}X>{\centering\arraybackslash}p{0.22\linewidth}}
+\toprule
+符号 & 含义 & 单位\\
+\midrule
+\(r,z\) & 轴对称径向和轴向坐标 & m\\
+\(R_0,\Rtime\) & 初始半径与时变半径 & m\\
+\(L\) & 圆柱长度 & m\\
+\(C,T\) & 干基含水率与绝对温度 & \(\kgkg\)，K\\
+\(\rho,c_p,k,D\) & 有效密度、比热、导热系数、扩散系数 & SI制\\
+\(h,h_m\) & 对流传热、传质系数 & \(\mathrm{W/(m^2\cdot K)}\)，m/s\\
+\(t_*\) & 连续夹逼得到的首次安全时刻 & s\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{统一模型与模型层级}
+
+\subsection{二维轴对称守恒骨架}
+
+在半圆柱域
+\[
+\Omega(t)=\{(r,z):0\le r\le R(t),\ 0\le z\le L/2\},
+\]
+上建立水分扩散方程。对固定域和移动域共同的水分方程写为
+\begin{equation}
+\frac{\partial C}{\partial t}=\frac1r\frac{\partial}{\partial r}\left(rD(C,T)\frac{\partial C}{\partial r}\right)+\frac{\partial}{\partial z}\left(D(C,T)\frac{\partial C}{\partial z}\right).
+\label{eq:moisture}
+\end{equation}
+侧面和端面使用 Robin 边界
+\begin{equation}
+-D\nabla C\cdot\boldsymbol n=h_m(C_s-C_\infty(t)),
+\label{eq:mass-robin}
+\end{equation}
+轴线 \(r=0\) 和中截面 \(z=0\) 为零法向通量。Q1 的 M1 是式 \eqref{eq:moisture} 在轴向梯度为零时的严格降阶，M2/M3/M4 保留径向和轴向传输。
+
+温度处理是本文必须明确的建模边界。M2、M3 以及 Q3/Q4 的 M3 路线每个时间步都令
+\begin{equation}
+T(r,z,t)=T_\infty(t),
+\label{eq:prescribed-temperature}
+\end{equation}
+即内部温度空间均匀地取烘房温度。M4 作为受控消融才求解显热温度场：
+\begin{equation}
+\rho(C)c_p(C)\frac{\partial T}{\partial t}=\frac1r\frac{\partial}{\partial r}\left(rk(C)\frac{\partial T}{\partial r}\right)+\frac{\partial}{\partial z}\left(k(C)\frac{\partial T}{\partial z}\right),
+\label{eq:heat}
+\end{equation}
+并满足 \(-k\nabla T\cdot\boldsymbol n=h(T_s-T_\infty)\)。式 \eqref{eq:heat} 中没有 \(L_v\partial\omega/\partial t\) 或其他潜热源项；因此 M4 也不是潜热耦合模型。
+
+\subsection{物性关系与四个模型}
+
+Q1 使用题面常量和 \(D(C)=7\times10^{-9}\exp(-0.89/C)\)。Q2/Q3 的状态相关物性为
+\begin{equation}
+\rho=650+128C,\quad c_p=1450+\frac{2736C}{C+1},\quad k=0.21+\frac{0.38C}{C+1},
+\end{equation}
+\begin{equation}
+D=2.4\times10^{-3}\exp(-0.45/C)\exp(-3850/T),
+\label{eq:props-q23}
+\end{equation}
+其中温度必须使用 K。Q4 使用
+\begin{equation}
+\rho=760+90C,\quad c_p=1850+\frac{2150C}{C+1},\quad k=0.12+\frac{0.20C}{C+1},
+\end{equation}
+\begin{equation}
+D=4.2\times10^{-4}\exp(-0.30/C)\exp(-3850/T).
+\label{eq:props-q4}
+\end{equation}
+
+四个模型的作用不是按复杂度排序，而是按可验证的缺陷逐级组织：M1 是一维低成本基线；M2 增加轴向传输和端面边界但使用常物性；M3 在 M2 上增加状态相关物性，是 Q2--Q4 的主路线；M4 只在 Q2 进行温度场消融，用来识别“内部温度场”与“直接采用烘房温度”的输出差异。相关研究表明，收缩、边界和内部场需要联合检查，但文献中的材料参数不能直接迁移到本题\cite{p04,p05,p07}。
+
+\subsection{Q4 移动域与事件判据}
+
+Q4 保持 \(L\) 不变，令 \(R(t)\) 由附件 2 的 PCHIP 给出。仿射径向收缩的材料速度写为 \(\boldsymbol v_m=(r\dot R/R,0)\)。以干固体密度 \(\rho_d\) 和水质量密度 \(q_w=\rho_d C\) 为守恒量时，干固体连续性与水分守恒分别为
+\begin{align}
+\frac{\partial\rho_d}{\partial t}+\nabla\cdot(\rho_d\boldsymbol v_m)&=0,\\
+\frac{\partial q_w}{\partial t}+\nabla\cdot(q_w\boldsymbol v_m)&=\nabla\cdot(\rho_dD\nabla C).
+\end{align}
+移动有限体积实现使用相对控制面通量，固定参考域实现显式保留 Jacobian 和网格输运项；两者均检查常半径回归、正体积、干固体连续性和水分平衡。移动域守恒和 ALE 通量的处理与相关移动域研究的验证思路一致，但不把文献模型参数照搬到本题\cite{p04,p09}。
+
+Q3/Q4 的统一事件判据为
+\begin{equation}
+g(t)=\max_{(r,z)\in\Omega(t)}C(r,z,t)-0.15,
+\label{eq:event}
+\end{equation}
+只有当 \(\max C\le0.15-10^{-6}\) 时才记为安全。先保存阈值前后两个实际时间步，再在线性夹逼得到 \(t_*\)，最后向上取整到 60 s 报告。平均值、中心点或表面点均不能替代式 \eqref{eq:event}。
+
+\section{数值求解与数据输出}
+
+所有候选采用单元中心守恒有限体积法，圆柱径向面面积和轴心控制体按几何公式计算。时间离散使用后向欧拉，状态相关物性在 Picard 迭代中更新；线性子问题使用预条件共轭梯度法，绝对更新容差为 \(10^{-7}\)。每个时间步记录最大线性残差、Picard 次数、边界通量、库存变化和非物理值检查。
+
+Q1 按 result1 的 1--1800 s 逐秒输出；Q2 按 result2 的 1--10800 s 输出；Q3/Q4 的事件判断在完整计算网格上进行，结果表再映射到规定的径向列。Q4 对 \(r>R(t)\) 的固定物理列写入 NA，并单独输出当前药材表面列。这样既保留题目要求的表格结构，又不把域外点误当作含水率。
+
+\section{Q1：一维与二维场及端面效应}
+
+Q1 的目标不是预先宣布二维一定更准确，而是用同一初值、边界、物性、时间步和评价口径测量轴向维度的影响。\cref{fig:q1-field} 展示二维模型在不同时刻的径向含水率场；中心区域变化较慢，外层先响应边界，说明全域极值和表面通量不能由单个平均值表示。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\linewidth]{figures/FIG-Q1-C-FIELD}
+\caption{Q1 二维模型不同时间的含水率径向分布}
+\label{fig:q1-field}
+\end{figure}
+
+为了与 result1 的径向输出兼容，二维场在导出时使用轴向平均 \(\langle C\rangle_z(r,t)=\frac{2}{L}\int_0^{L/2}C(r,z,t)\dd z\)。\cref{fig:q1-end} 对比了 M1 和 M2 的体积加权平均轨迹。1800 s 时 M1 为 2.2936\,\kgkg，M2 为 2.2750\,\kgkg，差值 0.0185\,\kgkg。该差值是模型维度差异的条件性量化，不构成二维模型现实准确率提高的证据。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\linewidth]{figures/FIG-Q1-END-EFFECT}
+\caption{Q1 一维与二维模型平均含水率随时间变化}
+\label{fig:q1-end}
+\end{figure}
+
+M2 基准网格的最大线性残差为 \(5.00\times10^{-11}\)，中心和边界的通量条件按构造满足。附录图 S1 给出的 M1/M2 网格变化用于把端面差异与空间离散误差分开。
+
+\section{Q2：状态相关物性与模型对照}
+
+\subsection{状态相关主模型}
+
+Q2 的主模型 M3 使用式 \eqref{eq:props-q23}，并在每个非线性迭代中按当前含水率更新 \(\rho,c_p,k,D\)。\cref{fig:q2-profiles} 给出 M3 在 0.5--3 h 的含水率剖面，外层先下降而中心保持较高含水率；该空间差异解释了为什么 Q3 必须采用全域最大值而非体积平均。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\linewidth]{figures/FIG-Q2-C-PROFILES}
+\caption{M3 在不同时间和半径位置的含水率剖面}
+\label{fig:q2-profiles}
+\end{figure}
+
+\subsection{三模型的时间轨迹}
+
+为了直接回答三个模型在不同时间的差异，\cref{fig:q2-models} 将 M2、M3 和 M4 分成三个并列子图，并共享坐标范围。每个模型包含 19 个时间点（0--3 h，每 10 min 一个点）；完整的 \(\Cmax\) 和平均含水率数据保存在支撑快照中。3 h 时 M2、M3、M4 的 \(\Cmax\) 分别为 2.1600、1.7278 和 1.7645\,\kgkg，代表性时刻的数值列于\cref{tab:model-times}。M3 与 M2 的差异来自状态相关扩散系数，M4 与 M3 的差异则是温度场消融差异，不能解释为经验准确率排序。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\linewidth]{figures/FIG-Q2-MODEL-ABLATION}
+\caption{M2、M3、M4 在不同时间的最大含水率轨迹}
+\label{fig:q2-models}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{三个模型在代表性时刻的全域最大含水率}
+\label{tab:model-times}
+\begin{tabular}{ccccc}
+\toprule
+时间/h & M2 常物性 & M3 主路线 & M4 温度耦合消融 & 指标\\
+\midrule
+0 & 2.550000 & 2.550000 & 2.550000 & \(\Cmax\)\\
+1 & 2.540628 & 2.489138 & 2.522663 & \(\Cmax\)\\
+2 & 2.407727 & 2.102044 & 2.167906 & \(\Cmax\)\\
+3 & 2.159969 & 1.727846 & 1.764520 & \(\Cmax\)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{空间网格检查}
+
+在固定 \(dt=5\,\mathrm s\) 下，M3 采用 \(n_r=42,62,93,140,175,210\) 六组径向网格。\cref{fig:q2-grid} 左图展示 3 h 终值，右图展示相邻网格差；最细两组的变化为 \(6.264\times10^{-6}\)，小于 \(5\times10^{-5}\) 验收线，但裕量仍较窄，因此正文不把该结果写成“零误差”。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.96\linewidth]{figures/FIG-Q2-GRID-CONV}
+\caption{M3 固定时间步下的六组径向网格收敛}
+\label{fig:q2-grid}
+\end{figure}
+
+\section{Q3：固定域全域阈值时间与稳健性}
+
+\subsection{阈值事件与局部夹逼}
+
+Q3 续接 Q2 的 M3 解，在固定半径域上求解至全域最大含水率满足式 \eqref{eq:event}。主路线在 206760 s 时仍为 0.1500161\,\kgkg，206820 s 时为 0.1499986\,\kgkg；局部线性夹逼时刻为 206818.7114 s，按报告规则取整为 206820 s。\cref{fig:q3-threshold} 和 \cref{fig:q3-bracket} 分别展示全程轨迹和阈值附近的前后点。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\linewidth]{figures/FIG-Q3-THRESHOLD-TRAJECTORY}
+\caption{Q3 全域含水率轨迹与阈值判定}
+\label{fig:q3-threshold}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\linewidth]{figures/FIG-Q3-BRACKET-ZOOM}
+\caption{Q3 阈值前后点的局部夹逼}
+\label{fig:q3-bracket}
+\end{figure}
+
+时间步从 30 s 细化到 15 s 时，事件时刻变化为 48 s，不超过 60 s 报告分辨率。M4 温度场消融的报告时刻为 212640 s，作为机制敏感性而非主路线替代。\cref{fig:q3-sens} 给出的有界敏感性表明，4 h 后窗口、\(h_m\)、扩散系数前因子和指数常数会改变达标时间；部分高阻场景在 72 h 内仍未达标，说明单一时刻必须附带边界条件和延拓假设。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.95\linewidth]{figures/FIG-Q3-SENS-ONEFACTOR}
+\caption{Q3 单因素压力测试及达标时间敏感性}
+\label{fig:q3-sens}
+\end{figure}
+
+\section{Q4：收缩移动域与守恒检查}
+
+\subsection{半径变化与移动域求解}
+
+Q4 使用附件 2 的 \(R(t)\) 作为几何输入，长度保持 25 cm。\cref{fig:q4-radius} 展示半径从 2.00 cm 向约 1.20 cm 收缩的轨迹。参考域实现和移动有限体积实现均在同一事件判据下得到 183840 s；这只说明两种离散实现的一致性，不代表真实半径或真实达标时刻已经被实验验证。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\linewidth]{figures/FIG-Q4-RADIUS-TIME}
+\caption{Q4 半径随时间的收缩轨迹}
+\label{fig:q4-radius}
+\end{figure}
+
+\cref{fig:q4-threshold} 给出移动域的全域阈值轨迹。事件前后夹逼对应约 183789.3317 s 的连续时刻，按 60 s 口径报告 183840 s。移动域水分平衡的最大归一化误差为 \(9.645\times10^{-8}\)，干固体相对误差为 \(4.441\times10^{-16}\)，局部连续性残差为 \(2.384\times10^{-13}\)，几何误差为 0。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\linewidth]{figures/FIG-Q4-THRESHOLD-TRAJECTORY}
+\caption{Q4 收缩域全域阈值轨迹}
+\label{fig:q4-threshold}
+\end{figure}
+
+\subsection{移动域消融与适用边界}
+
+Jacobian 消融把移动域变换项删去后，归一化守恒失衡增大到 0.593632，且事件时刻变为 187020 s。因此该消融路线被拒绝，不能作为可选实现或“更快算法”。Q4 空间收敛在固定 \(dt=60\,\mathrm s\) 下使用五组径向网格，附录图 S3 显示 63、93、140、175、210 五组网格的报告时刻逐步稳定。相关热湿耦合研究强调应同时检查内部场、边界通量和总量；本文在缺少内部实测的情况下只将这些检查作为数值证据\cite{p06,p07}。
+
+\section{统一验证、敏感性与结果边界}
+
+\subsection{验证结果}
+
+各项守恒、残差和收敛指标汇总见\cref{tab:validation}。
+
+\begin{table}[H]
+\centering
+\caption{主要数值验证结果}
+\label{tab:validation}
+\begin{tabularx}{0.97\linewidth}{>{\centering\arraybackslash}p{0.16\linewidth}X>{\centering\arraybackslash}p{0.21\linewidth}}
+\toprule
+项目 & 检查内容 & 结果\\
+\midrule
+V01 & 输入端点、K/\(^{\circ}\mathrm C\) 转换、轴线零通量和 Robin 符号 & PASS\\
+V02 & 最细网格相邻场量变化与 \(5\times10^{-5}\) 目标 & \(4.00114\times10^{-5}\)，窄裕量\\
+V03 & 最大归一化水分平衡误差 & \(9.645\times10^{-8}\)\\
+V04 & 最大隐式线性相对残差 & \(5.000\times10^{-11}\)\\
+V06 & 时间步细化的事件时刻变化 & 48 s，\(\le60\) s\\
+V09 & PCHIP 半径、正体积和几何关系 & PASS\\
+V10 & Jacobian 消融守恒失衡 & 0.593632，拒绝\\
+V12 & 干固体相对误差/局部连续性残差 & \(4.441\times10^{-16}\)/\(2.384\times10^{-13}\)\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{敏感性与可识别性}
+
+对 \(h\)、\(h_m\)、4 h 后统计窗口、扩散系数前因子和指数常数分别进行低/中/高情景扰动。结果显示，\(h_m\)、扩散系数参数和末段边界窗口对长时达标时间的影响大于传热系数的小幅扰动；组合低阻情景提前达标，组合高阻情景可能在延拓时长内仍未达标。因此，Q3/Q4 的时刻应理解为冻结参数下的条件性结果，而不是具有普适性的工艺时间。类似的耦合传递模型也强调参数和边界设定的可识别性，见\cite{p11}。
+
+现有附件主要提供外部边界和半径，缺少多位置内部温度、含水率和潜热信息。因此潜热、吸附热、孔隙气液相传输系数、轴向收缩律以及独立端面系数不能由本题数据可靠同时识别。本文采用 M2/M3 的规定温度和 M4 的显热温度消融，是在可识别性约束下的最低充分方案；加入潜热需要新的参数来源、内部观测和独立检验，不能仅凭图形好看而追加。
+
+\subsection{模型优点与局限}
+
+模型的优点是：四个问题共享状态量、边界和阈值口径；有限体积离散直接对应守恒审计；Q4 同时检查移动域几何、干固体连续性和水分库存；图表与源数据快照逐一绑定。局限也必须同步披露：
+
+\begin{itemize}
+  \item 温度简化：M2/M3/Q3/Q4-M3 直接采用烘房温度，M4 只含显热传导和对流，未含潜热；受影响的是温度梯度和温度依赖扩散系数，可能低估升温滞后或相变缓冲；当前只用 M4 消融检查，尚无内部温度观测；
+  \item 边界延拓：4 h 后的恒定环境来自末段统计量，长时事件对窗口敏感；已做窗口压力测试，但未得到外部工况的不确定性分布；
+  \item 参数迁移：题面经验式仅支持本题条件性仿真，文献参数没有直接移植；缺少独立实验批次，不能声称拟合、因果或现实准确率；
+  \item 移动域：半径变化按附件数据插值，长度不收缩；若真实药材存在轴向收缩或内部相变，需新增可识别数据并重新验证。
+\end{itemize}
+
+\section{结论}
+
+本文建立并核验了统一的 M1--M4 相容传递模型。Q1 的一维--二维差异在 1800 s 时达到 0.0185\,\kgkg，说明端面和轴向效应在本题口径下不可简单用一个平均值替代。Q2 的 M3 在 3 h 达到 \(\Cmax=1.7278\,\kgkg\)，状态相关物性改变了条件仿真的下降轨迹；M4 与 M3 的差异被保留为温度场消融，不能升级为经验准确率结论。Q3 的主路线全域阈值报告时刻为 206820 s，Q4 收缩移动域报告时刻为 183840 s，参考域和移动有限体积实现一致。
+
+数值层面，守恒、线性残差、时间步、空间网格、半径几何和干固体连续性检查均通过；V02 只有窄裕量，Jacobian 消融因守恒失衡被拒绝。固定网格的补充收敛证据见附录图\cref{fig:q1-grid}、\cref{fig:q3-grid} 和\cref{fig:q4-grid}。最终结论的适用范围是题设经验律、给定烘房边界、无潜热耦合的条件仿真。若要回答真实工艺中的内部升温滞后、潜热或跨工况泛化问题，应补充内部温湿观测和相变参数后重新开放模型与验证门槛。
+
+\section*{AI工具使用声明}
+
+本参赛队在竞赛过程中使用了AI工具，主要用于代码调试、数值计算与图表制作辅助、论文结构整理和语言润色，详细使用情况见支撑材料。
+
+\begin{thebibliography}{99}
+\bibitem{p04} Madiouli J, Sghaier J, Kechaou N. Shrinkage of Food Materials During Drying: Current Status and Challenges[J]. Comprehensive Reviews in Food Science and Food Safety, 2018, 17: 718--736. DOI:10.1111/1541-4337.12375.
+\bibitem{p05} Koua B K, Koffi P M E, Gbaha P, et al. Evolution of shrinkage, real density, porosity, heat and mass transfer coefficients during indirect solar drying of cocoa beans[J]. Journal of the Saudi Society of Agricultural Sciences, 2019, 18: 72--82. DOI:10.1016/j.jssas.2017.01.002.
+\bibitem{p06} Defraeye T. Analysis of convective heat and mass transfer coefficients for convective drying of a porous flat plate by conjugate modelling[J]. International Journal of Heat and Mass Transfer, 2012, 55: 431--442. DOI:10.1016/j.ijheatmasstransfer.2011.08.047.
+\bibitem{p07} Hensel O, et al. Validation of a coupled heat, vapour and liquid moisture transport model for porous materials implemented in CFD[J]. Building and Environment, 2014, 80: 1--12. DOI:10.1016/j.buildenv.2014.06.024.
+\bibitem{p09} Lammertink R G H, et al. Mathematical Modelling of Drying of Hydrogels via Finite Element Method and Texture Analysis[J]. Processes, 2024, 12: 1564. DOI:10.3390/pr12081564.
+\bibitem{p11} Nadi S, et al. Fundamental Understanding of Heat and Mass Transfer Processes for Physics-Informed Machine Learning-Based Drying Modelling[J]. Energies, 2022, 15: 9347. DOI:10.3390/en15249347.
+\end{thebibliography}
+
+\begin{appendices}
+\section{附录图与网格收敛}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\linewidth]{figures/FIG-Q1-GRID-CONV}
+\caption{M1/M2 场量随空间网格加密的变化（附录图 S1）}
+\label{fig:q1-grid}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\linewidth]{figures/FIG-Q3-SPACE-CONV}
+\caption{Q3 固定 \(dt=60\,\mathrm s\) 下五组径向网格的事件时刻（附录图 S2）}
+\label{fig:q3-grid}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\linewidth]{figures/FIG-Q4-SPACE-CONV}
+\caption{Q4 固定 \(dt=60\,\mathrm s\) 下五组径向网格的事件时刻（附录图 S3）}
+\label{fig:q4-grid}
+\end{figure}
+
+\section{支撑材料文件列表}
+
+支撑材料中应包含题目要求的 result1.xlsx--result4.xlsx、\texttt{04-compute/results/} 下的冻结结果、\texttt{06-figure/figures/} 下的 SVG/PDF/PNG 图件、\texttt{07-appendix/AI 工具使用详情.md} 转换得到的“AI工具使用详情.pdf”，以及下列当前路线源程序：
+
+\begin{itemize}
+  \item \texttt{04-compute/src/formal\_compute.py}；
+  \item \texttt{04-compute/src/finalize\_compute.py}；
+  \item \texttt{04-compute/revision-grid-conv-20260913/} 下的三个补算脚本；
+  \item \texttt{06-figure/scripts/revise\_q2\_figures\_20260913.py}；
+  \item \texttt{06-figure/scripts/update\_figure\_plan\_20260913.py}、\texttt{verify\_current\_pipeline.py} 和 \texttt{make\_official\_contact\_sheet.py}；
+  \item 附录草稿中的其余正式图表渲染与核验脚本。
+\end{itemize}
+
+完整源程序以支撑材料中的代码文件为准，本文不在正文中重复粘贴大段代码；代码文件、结果快照和图件均通过阶段交接清单记录 SHA-256。
+
+\section{AI工具使用详情说明}
+
+AI 工具名称、用途、提示方式、采纳情况和人工核验记录见支撑材料文件“AI工具使用详情.pdf”。核心建模决策、参数选择、数值结果核验、图件取舍和论文最终内容由参赛队主导并逐项审查。
+\end{appendices}
+
+\end{document}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "stage": "PAPER",
+  "status": "PASS",
+  "inputs": [
+    {"path": "03-计算与结果/温度场计算/revision-manifest.json", "sha256": "386F134F1DBAE5E5DCD94994D09E7341FEC6DC8EA9B9AB989726410FC87A4C4B"},
+    {"path": "03-计算与结果/温度场计算/formal_compute_temp_field.py", "sha256": "FB5D92B8A824D9BA1A4E0124007ED5707218BC881E1A1ED083810ECD3F306EC2"},
+    {"path": "05-图表/温度场图件/plot_temp_field_figures.py", "sha256": "89B2979E4566D238F72A1B35D4CAB9724E39AC4DA4C845203777D40F4A8A2773"}
+  ],
+  "outputs": [
+    {"path": "08-paper/完整论文.pdf", "sha256": "2E85F65039CB6E9B10817947EFED8672536BBEB8168D1AD6132F008E178AC7E9"},
+    {"path": "08-paper/完整论文-LaTeX/完整论文.tex", "sha256": "2161744A4E46D80F1FA55D46C371E8112F507B9C024B26B6AECA6CA3A801704F"},
+    {"path": "08-paper/完整论文-LaTeX/build/完整论文.build.json", "sha256": "C34BE5A3B8D71F29A0BC38589EFB5D5510116B43AFCFC0D7FDDB4C40BDD10B0A"},
+    {"path": "08-paper/构建记录.json", "sha256": "0745D102FB4E7FF3FE33610258E5585FC9B1048338ED606665A36B86A27011EB"},
+    {"path": "08-paper/AI使用声明.md", "sha256": "BE1A2A6C3562FA3BE34D46CC15481BD4E573F98E88C9F7D1F4CBC9948F6137ED"}
+  ],
+  "frozen_decisions": [],
+  "assumptions": [
+    "Q2至Q4同步求解无潜热显热温度场，并将温度反馈给状态相关扩散系数",
+    "4 h 后烘房环境采用末段平均值恒定延拓",
+    "Q4 采用半径观测驱动的径向仿射收缩、轴向长度不变和干固体质量守恒"
+  ],
+  "unknowns": [
+    "潜热/相变焓、相变动力学或气液平衡关系缺失",
+    "内部蒸汽分压、孔隙率和渗透率等气相参数缺失",
+    "内部多位置温度与含水率实测验证数据缺失",
+    "队伍编号、学校、成员信息尚未填入"
+  ],
+  "claims": [
+    "Q2 3 h 中心/表面温度为 49.8504/49.9670 摄氏度，最大含水率为 1.76623 kg/kg",
+    "Q3 60 s 基准报告时间为 207180 s（57.55 h）",
+    "Q4 60 s 基准报告时间为 184080 s（51.13 h）"
+  ],
+  "evidence": [
+    "温度场计算摘要 CSV、轨迹 CSV、剖面 CSV 和运行日志",
+    "温度场图件合同、数据快照与 600 dpi PNG",
+    "LaTeX 编译清单及 Poppler 页面渲染检查"
+  ],
+  "warnings": [
+    "本 handoff 表示论文阶段产物已构建，不等于队伍已完成 H4/最终提交确认",
+    "自动 PDF 审计因环境缺少 pypdf 未执行；已用 Poppler 检查页数、页面尺寸和关键页面渲染"
+  ],
+  "required_next_actions": [
+    "队伍补齐报名号、学校和成员信息",
+    "队伍按当届官方规则确认 AI 披露与上传格式",
+    "队伍最终确认无潜热假设及其适用边界"
+  ],
+  "completed_at": "2026-09-13T05:15:00+08:00"
+}

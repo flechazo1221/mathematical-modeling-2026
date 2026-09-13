@@ -1,0 +1,21 @@
+{
+  "status": "FROZEN_FOR_PAPER",
+  "backend": "Python/matplotlib",
+  "source_script": "plot_temp_field_figures.py",
+  "figures": [
+    "FIG-Q1-C-FIELD",
+    "FIG-Q1-END-EFFECT",
+    "FIG-TEMP-FIELD-Q2-TEMP",
+    "FIG-TEMP-FIELD-Q2-PROFILES",
+    "FIG-TEMP-FIELD-Q2-COMPARE",
+    "FIG-TEMP-FIELD-Q3-THRESHOLD",
+    "FIG-TEMP-FIELD-Q4-RADIUS",
+    "FIG-TEMP-FIELD-Q4-THRESHOLD"
+  ],
+  "formats": ["pdf", "svg", "png"],
+  "png_dpi": 600,
+  "contracts": "contracts/",
+  "data_sources": "../../03-计算与结果/温度场计算/results/",
+  "paper_binding": "figures/",
+  "note": "Q1 图件沿用已验证的二维温度场结果；Q2至Q4图件均由内部温度场计算结果重新生成。"
+}

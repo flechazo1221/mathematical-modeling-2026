@@ -1,5 +1,5 @@
 {
-  "status": "PASS",
+  "status": "FAIL",
   "generation": "NEW_PIPELINE_FROM_COMPUTE",
   "registered_items": 27,
   "matlab_quantitative_items": 27,
@@ -10,5 +10,20 @@
     "verify_new_takeover.py": "2d493106ad127208576e90b4be93df9606a03b24e4bd5d34218ec289099ac4af",
     "finalize_from_compute.py": "b0040c4410d4c1759ceeac1676a447e878d913f1005aa2a989ea92bdaa18e5ec"
   },
-  "failures": []
+  "failures": [
+    "FIG-Q1-END-EFFECT: bad source hash 04-compute/results/run-summary.csv",
+    "FIG-Q2-MODEL-ABLATION: bad source hash 04-compute/results/key-metrics.json",
+    "FIG-Q3-BRACKET-ZOOM: bad source hash 04-compute/results/run-summary.csv",
+    "FIG-Q4-RADIUS-TIME: bad source hash 04-compute/results/q4-threshold-trajectory.csv",
+    "FIG-Q4-THRESHOLD-TRAJECTORY: bad source hash 04-compute/results/q4-threshold-trajectory.csv",
+    "FIG-Q4-IMPLEMENTATION-AGREEMENT: bad source hash 04-compute/results/run-summary.csv",
+    "FIG-Q4-JACOBIAN-ABLATION: bad source hash 04-compute/results/key-metrics.json",
+    "FIG-VAL-BALANCE-RESIDUAL: bad source hash 04-compute/results/run-summary.csv",
+    "FIG-VAL-BALANCE-RESIDUAL: bad source hash 04-compute/results/key-metrics.json",
+    "FIG-Q4-BRACKET-ZOOM: bad source hash 04-compute/results/q4-threshold-trajectory.csv",
+    "FIG-Q4-BRACKET-ZOOM: bad source hash 04-compute/results/run-summary.csv",
+    "FIG-Q4-DRY-SOLID-CONTINUITY: bad source hash 04-compute/results/run-summary.csv",
+    "TAB-Q2-MODEL-CONTRACT: bad source hash 04-compute/results/key-metrics.json",
+    "TAB-STRATEGY-ASSUMPTION: bad source hash 04-compute/results/key-metrics.json"
+  ]
 }

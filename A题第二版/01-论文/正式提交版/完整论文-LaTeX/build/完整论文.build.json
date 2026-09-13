@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-12T21:19:54.424449+00:00",
+  "passed": true,
+  "main_tex": "完整论文.tex",
+  "project_root": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\A题第二版\\08-paper\\完整论文-LaTeX",
+  "source_sha256": "c2f432eb9b53fc944e683f761dacbeff105a0e99081e70a8ca23c46e0f39479e",
+  "compiled_source_sha256": "c2f432eb9b53fc944e683f761dacbeff105a0e99081e70a8ca23c46e0f39479e",
+  "post_build_source_sha256": "c2f432eb9b53fc944e683f761dacbeff105a0e99081e70a8ca23c46e0f39479e",
+  "pdf_sha256": "2e85f65039cb6e9b10817947efed8672536bbeb8168d1ad6132f008e178ac7e9",
+  "project_manifest_sha256": null,
+  "engine": "xelatex",
+  "tools": {
+    "latexmk": {
+      "path": "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\latexmk.EXE",
+      "version": "perl: warning: Setting locale failed."
+    },
+    "xelatex": {
+      "path": "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\xelatex.EXE",
+      "version": "MiKTeX-XeTeX 4.18 (MiKTeX 26.5)"
+    }
+  },
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\latexmk.EXE",
+        "-norc",
+        "-gg",
+        "-xelatex",
+        "-e",
+        "$xelatex = 'xelatex -no-shell-escape %O %S'",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-file-line-error",
+        "-outdir=build",
+        "完整论文.tex"
+      ],
+      "cwd": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\A题第二版\\08-paper\\完整论文-LaTeX",
+      "returncode": 0,
+      "duration_seconds": 5.744
+    }
+  ],
+  "warnings": [],
+  "allowed_warnings": [],
+  "warning_override": {
+    "patterns": [],
+    "reason": null
+  },
+  "issues": [],
+  "reproduce": "C:\\Users\\Lenovo\\Desktop\\python.exe C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\skills\\math-modeling-v2\\tools\\latex\\scripts\\latex_paper.py build C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\A题第二版\\08-paper\\完整论文-LaTeX\\完整论文.tex --engine xelatex --timeout 240 --publish C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\A题第二版\\08-paper\\完整论文.pdf --overwrite"
+}

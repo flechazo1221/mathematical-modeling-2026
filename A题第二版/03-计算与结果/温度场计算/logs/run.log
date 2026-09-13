@@ -1,0 +1,9 @@
+command=04-compute/revision-temp-field-20260913/run_temp_field.py
+python=3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]
+platform=Windows-11-10.0.26200-SP0
+START Q2-M4-field-fine 2026-09-12T19:47:11.626295+00:00
+DONE {"label": "Q2-M4-field-fine", "q": 2, "nr": 140, "nz": 36, "dt_s": 5.0, "duration_s": 10800, "temp_mode": "field", "center_T_C": 49.85041848738251, "surface_T_C": 49.96703036150927, "final_max_C": 1.7662268347493226, "final_mean_C": 1.3277086790389783, "interpolated_event_time_s": "", "reported_event_time_s": "", "normalized_moisture_balance_error": 2.0230128011181418e-08, "max_linear_relative_residual": 5.000060587463528e-11, "runtime_s": 64.3185283999992}
+START Q3-M4-field 2026-09-12T19:48:15.977396+00:00
+DONE {"label": "Q3-M4-field", "q": 3, "nr": 140, "nz": 36, "dt_s": 60.0, "duration_s": 259200, "temp_mode": "field", "center_T_C": 49.99893437639537, "surface_T_C": 49.99893439750076, "final_max_C": 0.14999263073048913, "final_mean_C": 0.12153407506921829, "interpolated_event_time_s": 207158.11509752373, "reported_event_time_s": 207180.0, "normalized_moisture_balance_error": 1.6670158078361466e-09, "max_linear_relative_residual": 5.01384037871783e-11, "runtime_s": 100.95997979999811}
+START Q4-M4-field 2026-09-12T19:49:56.951233+00:00
+DONE {"label": "Q4-M4-field", "q": 4, "nr": 140, "nz": 32, "dt_s": 60.0, "duration_s": 259200, "temp_mode": "field", "center_T_C": 49.99893435331825, "surface_T_C": 49.9989343859084, "final_max_C": 0.14999898662005068, "final_mean_C": 0.11622708929039433, "interpolated_event_time_s": 184079.97393816215, "reported_event_time_s": 184080.0, "normalized_moisture_balance_error": 1.2194172282184523e-09, "max_linear_relative_residual": 5.010732191787905e-11, "runtime_s": 85.13945190000231}

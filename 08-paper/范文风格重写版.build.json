@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-12T19:09:04.542745+00:00",
+  "passed": true,
+  "main_tex": "example.tex",
+  "project_root": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\08-paper\\完整论文-LaTeX",
+  "source_sha256": "2779b903168fc34d06cd55da308e1d8244aee94efb5f9e82f8b5a8d22924030f",
+  "compiled_source_sha256": "2779b903168fc34d06cd55da308e1d8244aee94efb5f9e82f8b5a8d22924030f",
+  "post_build_source_sha256": "2779b903168fc34d06cd55da308e1d8244aee94efb5f9e82f8b5a8d22924030f",
+  "pdf_sha256": "2445af4116b13661d2d609093f036fe53b7fe8aa672cff01607e9b68d34182dd",
+  "project_manifest_sha256": "11b9aa8682d28166ce3edc402aef0640581f30564e46e658e6cd9d255189bbdc",
+  "engine": "xelatex",
+  "tools": {
+    "latexmk": {
+      "path": "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\latexmk.EXE",
+      "version": "perl: warning: Setting locale failed."
+    },
+    "xelatex": {
+      "path": "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\xelatex.EXE",
+      "version": "MiKTeX-XeTeX 4.18 (MiKTeX 26.5)"
+    }
+  },
+  "commands": [
+    {
+      "command": [
+        "C:\\Users\\Lenovo\\AppData\\Local\\Programs\\MiKTeX\\miktex\\bin\\x64\\latexmk.EXE",
+        "-norc",
+        "-gg",
+        "-xelatex",
+        "-e",
+        "$xelatex = 'xelatex -no-shell-escape %O %S'",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-file-line-error",
+        "-outdir=build",
+        "example.tex"
+      ],
+      "cwd": "C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\08-paper\\完整论文-LaTeX",
+      "returncode": 0,
+      "duration_seconds": 36.328
+    }
+  ],
+  "warnings": [],
+  "allowed_warnings": [],
+  "warning_override": {
+    "patterns": [],
+    "reason": null
+  },
+  "issues": [],
+  "reproduce": "C:\\Users\\Lenovo\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe C:\\Users\\Lenovo\\.codex\\skills\\math-modeling-v2\\tools\\latex\\scripts\\latex_paper.py build C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\08-paper\\完整论文-LaTeX\\example.tex --engine xelatex --timeout 240 --publish C:\\Users\\Lenovo\\Documents\\ChatGPT\\CUMCM2026\\08-paper\\范文风格重写版.pdf --overwrite"
+}

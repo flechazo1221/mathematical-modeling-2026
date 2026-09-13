@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "stage": "EVIDENCE",
+  "units": {"C": "kg/kg dry basis", "time": "s", "temperature": "degC", "radius": "m unless file column states cm"},
+  "facts": [
+    {"id":"F01","scope":"route","value":"M1 baseline, M2 backbone, M3 main, M4 ablation","source":"04-compute/results/key-metrics.json#/route"},
+    {"id":"F02","scope":"Q1","metric":"M1 final mean C at 1800 s","value":2.293580557001432,"source":"04-compute/results/run-summary.csv[label=Q1-M1-base].final_mean_C"},
+    {"id":"F03","scope":"Q1","metric":"M2 final mean C at 1800 s","value":2.2750348485276963,"source":"04-compute/results/key-metrics.json#/q1_m2_final_mean_C"},
+    {"id":"F04","scope":"Q1","metric":"absolute M1-M2 mean difference","value":0.01854570847373571,"source":"04-compute/results/convergence.csv[scope=Q1,family=M1-vs-M2]"},
+    {"id":"F05","scope":"Q2","metric":"M3 final max C at 3 h","value":1.7278463919704832,"source":"04-compute/results/key-metrics.json#/q2_m3_final_max_C"},
+    {"id":"F06","scope":"Q2","metric":"M2 constant-law final max C","value":2.1599687487421537,"source":"04-compute/results/key-metrics.json#/q2_m2_constant_final_max_C"},
+    {"id":"F07","scope":"Q2","metric":"M4 ablation final max C","value":1.7645199232311275,"source":"04-compute/results/key-metrics.json#/q2_m4_final_max_C"},
+    {"id":"F08","scope":"V02","metric":"maximum registered field change","value":0.00004001139652531904,"target":0.00005,"margin_note":"narrow PASS","source":"04-compute/results/convergence.csv[scope=Q2,family=M3,metric=final_max_C]; validation-register.csv[V02]"},
+    {"id":"F09","scope":"Q3","metric":"finest-grid interpolated event time","value":206818.71137262788,"source":"04-compute/results/threshold-grid-convergence.csv[scope=Q3,nr=210]"},
+    {"id":"F10","scope":"Q3","metric":"formal reported event time","value":206820,"source":"04-compute/results/key-metrics.json#/q3_m3_t_star_s"},
+    {"id":"F11","scope":"Q3","metric":"M4 ablation reported event time","value":212640,"source":"04-compute/results/key-metrics.json#/q3_m4_ablation_t_star_s"},
+    {"id":"F12","scope":"V06","metric":"maximum event-time change under time refinement","value":48,"target":60,"exact_change":47.56538923838525,"margin_note":"PASS with limited margin","source":"04-compute/results/validation-register.csv[V06]; convergence.csv[Q3,M3,t_star_time]"},
+    {"id":"F13","scope":"Q4","metric":"finest-grid interpolated event time","value":183789.33174915268,"source":"04-compute/results/threshold-grid-convergence.csv[scope=Q4,nr=210]"},
+    {"id":"F14","scope":"Q4","metric":"formal reported event time","value":183840,"source":"04-compute/results/key-metrics.json#/q4_reference_t_star_s"},
+    {"id":"F15","scope":"Q4","metric":"moving-FV reported event time","value":183840,"source":"04-compute/results/key-metrics.json#/q4_moving_fv_t_star_s"},
+    {"id":"F16","scope":"Q4","metric":"reference/moving-FV implementation event-time difference","value":5.820766091346741e-10,"source":"04-compute/results/convergence.csv[scope=Q4,metric=t_star_implementation]"},
+    {"id":"F17","scope":"Q4","metric":"Jacobian-ablation reported event time","value":187020,"source":"04-compute/results/key-metrics.json#/q4_jacobian_ablation_t_star_s"},
+    {"id":"F18","scope":"conservation","metric":"maximum approved-route normalized balance error","value":9.645160999057141e-8,"source":"04-compute/results/key-metrics.json#/maximum_approved_route_balance_error"},
+    {"id":"F19","scope":"Q4 ablation","metric":"Jacobian-ablation normalized balance error","value":0.5936318972871306,"source":"04-compute/results/key-metrics.json#/jacobian_ablation_balance_error"},
+    {"id":"F20","scope":"solver","metric":"maximum linear residual","value":5.000064734843474e-11,"source":"04-compute/results/key-metrics.json#/maximum_linear_residual"},
+    {"id":"F21","scope":"Q4 geometry","metric":"dry-solid relative error","value":4.441e-16,"source":"04-compute/results/validation-register.csv[V12]"},
+    {"id":"F22","scope":"Q4 geometry","metric":"maximum local continuity residual","value":2.384e-13,"source":"04-compute/results/validation-register.csv[V12]"},
+    {"id":"F23","scope":"Q4 geometry","metric":"geometry error","value":0.0,"source":"04-compute/results/validation-register.csv[V12]"},
+    {"id":"F24","scope":"Q3 sensitivity","metric":"non-crossing cases by 72 h","value":["prefactor low","exponent high","combined low"],"source":"04-compute/results/sensitivity.csv"},
+    {"id":"F25","scope":"Q4 sensitivity","metric":"combined-low non-crossing by 72 h","value":true,"final_max_C":0.16697673404235358,"source":"04-compute/results/sensitivity.csv[scope=Q4,factor=combined_boundary_empirical,level=low]"},
+    {"id":"F26","scope":"supplemental PURE_ML","metric":"test/extrapolation event RMSE","value":[2808.0454447659977,4469.710856237006],"source":"04-compute/supplemental-extensions/summary.json#/PURE_ML"},
+    {"id":"F27","scope":"supplemental CFD","metric":"status","value":"INCONCLUSIVE_MECHANISM_PROBE","source":"04-compute/supplemental-extensions/summary.json#/CFD/status"},
+    {"id":"F28","scope":"supplemental PINN","metric":"status","value":"SUPPORTED_CANONICAL_ONLY","source":"04-compute/supplemental-extensions/summary.json#/PINN/status"},
+    {"id":"F29","scope":"supplemental surrogate","metric":"status","value":"RETAIN_INTERPOLATION_ONLY","source":"04-compute/supplemental-extensions/summary.json#/SURROGATE/status"}
+  ],
+  "interpretation_limits": [
+    "All values are conditional simulations under problem-supplied empirical laws.",
+    "No internal observational data support empirical accuracy or causal claims.",
+    "Sensitivity cases are bounded pressure tests, not probability distributions.",
+    "Supplemental labels are synthetic PDE outputs, not real experiments."
+  ]
+}

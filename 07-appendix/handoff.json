@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "stage": "APPENDIX",
+  "status": "PASS",
+  "inputs": [
+    {
+      "path": ".workflow/ai-usage-log.json",
+      "sha256": "805cf5bd6e266b23c9c225e1b4bb95127c70b578ca0957cca883a21449fadd02"
+    },
+    {
+      "path": "01-intake/官方规则与AI合规.md",
+      "sha256": "22fd8a06203f034f191ed3a69759b3f7d7a05ef596aa5b17e7bc13437ce774d9"
+    },
+    {
+      "path": "04-compute/handoff.json",
+      "sha256": "b9837da3d621181acd534fa64122554f42cf32ea4680113a4897f6b1d74ebdd7"
+    },
+    {
+      "path": "06-figure/handoff.json",
+      "sha256": "759eb5e9d1aa24ffb178c49915bfe5dd0a2d5c305fe977c81a40e9df613271c3"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "07-appendix/appendix-draft.md",
+      "sha256": "d4ae76a658da4e8f7b407f62b03ace039a903f293954afcb592cc406756b4e4e"
+    },
+    {
+      "path": "07-appendix/AI 工具使用详情.md",
+      "sha256": "c8dc12728b5fabc64a6a5ab8ef5cd4cebed388660d28bfc8b45a4aa02ac5b929"
+    },
+    {
+      "path": "07-appendix/自检记录.md",
+      "sha256": "75d1e9cbfc3e4d58832a8848c246edaecdea028465ecc70557750e04b7f14528"
+    }
+  ],
+  "frozen_decisions": [
+    {
+      "path": "decisions/H1-problem.json",
+      "sha256": "6cff0461b6cf0a29be5746dbe4c8ac653e4b0742007755524153615cb6590e6d"
+    },
+    {
+      "path": "decisions/H2-model.json",
+      "sha256": "8ec6fb7e912be0c6277fabf9d4c0a703481af53c76e49733a912b1d852d798ba"
+    },
+    {
+      "path": "decisions/H3-claims.json",
+      "sha256": "75fa934828f09a4f9d1c59d02e4d7570370fbde4f91d5b695e8e4a52132d7ccb"
+    }
+  ],
+  "assumptions": [
+    "AI 工具名称与使用阶段仅按 .workflow/ai-usage-log.json 和当前实际交互记录整理；未记录的具体模型型号不补写。",
+    "核心建模、参数选择、结果核验和最终提交责任由参赛队承担。",
+    "代码附录只收录当前最终路线和当前图表渲染入口；旧版总控脚本不属于活动工作流。"
+  ],
+  "unknowns": [
+    "支撑材料 PDF 的最终文件大小与提交压缩包布局尚未在 PAPER 阶段生成。",
+    "队伍尚未复核具体 Codex 模型型号和最终成员署名信息。"
+  ],
+  "claims": [
+    "已生成 AI 使用声明、详情四表和当前路线源程序清单。",
+    "附录材料保留对无潜热耦合、M2/M3温度处理等模型限制的真实披露。"
+  ],
+  "evidence": [
+    "07-appendix/appendix-draft.md",
+    "07-appendix/AI 工具使用详情.md",
+    "07-appendix/自检记录.md",
+    "01-intake/官方规则与AI合规.md"
+  ],
+  "warnings": [
+    "AI 工具使用详情在最终支撑材料中应转换为 PDF，文件名为 AI工具使用详情.pdf。",
+    "本附录不是最终论文排版；PAPER 阶段必须从 LaTeX 源统一生成论文和声明。"
+  ],
+  "required_next_actions": [
+    "PAPER 阶段读取本附录并将声明放在参考文献之前。",
+    "队伍在 H4 前复核具体 AI 模型型号、成员信息和支撑材料 PDF。"
+  ],
+  "completed_at": "2026-09-13T01:54:39.282764+08:00"
+}

@@ -1,0 +1,18 @@
+{
+  "figure_id": "FIG-TEMP-FIELD-Q3-THRESHOLD",
+  "claim": "全域最大含水率首次低于安全阈值的事件判定",
+  "sources": [
+    {
+      "path": "04-compute\\revision-temp-field-20260913\\results\\Q3-M4-field-trajectory.csv",
+      "sha256": "aac08f3289f92aa3c4ce87453eb10537acb74e5e62393380bea63d579f03975b"
+    }
+  ],
+  "formats": [
+    "pdf",
+    "svg",
+    "png"
+  ],
+  "png_dpi": 600,
+  "backend": "python/matplotlib",
+  "units": "as labelled"
+}

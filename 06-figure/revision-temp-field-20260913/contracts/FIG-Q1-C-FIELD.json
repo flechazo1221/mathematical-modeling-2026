@@ -1,0 +1,36 @@
+{
+  "figure_id": "FIG-Q1-C-FIELD",
+  "claim_ids": [
+    "Q1-OBS-02"
+  ],
+  "question": "含水率径向非均匀性如何形成？",
+  "source_files": [
+    {
+      "path": "04-compute/results/q1-samples.csv",
+      "sha256": "e214e5f23b1c1787357c59ec841791d461414190d5b72379022c2e7db47bdc8d"
+    }
+  ],
+  "x": null,
+  "y": null,
+  "groups": [],
+  "uncertainty": null,
+  "required_comparisons": [
+    "多时刻径向剖面"
+  ],
+  "must_show_failures": false,
+  "prohibited_operations": [
+    "recompute model",
+    "change metric",
+    "omit failures",
+    "present conditional simulation as observation"
+  ],
+  "target_formats": [
+    "svg",
+    "png"
+  ],
+  "minimum_dpi": 600,
+  "placement": "主文",
+  "mandatory_limit": "模型场，非实测",
+  "snapshot": "06-figure/data-snapshots/FIG-Q1-C-FIELD.csv",
+  "snapshot_sha256": "370c0da992b7ada9cdcc517d33771a8908b0c7d357eae414e7af2f9541928436"
+}
